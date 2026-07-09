@@ -1,0 +1,1037 @@
+\documentclass[output=paper,colorlinks,citecolor=brown
+% ,hidelinks
+% showindex
+]{langscibook}
+\ChapterDOI{10.5281/zenodo.20285204}
+\author{Kenneth S. Olson\affiliation{SIL}}
+\title{An overview of Nduga phonology}
+\abstract{I present an overview of the phonology of Nduga, a Sara-Bongo-Bagirmi language in Central African Republic. Nduga's consonant system includes implosives, prenasalized plosives, prenasalized fricatives, and labial-velar plosives. It has two rhotics, /r ɽ/. Nduga has eight oral monophthongs, one oral diphthong /ᵘa/, and five nasal vowels. Vowel length is contrastive. Oral vowels exhibit vowel harmony between /e o/ and /ɛ ɔ/. Final vowels often reduce to schwa or elide completely. Nduga has three tone levels. All nine combinations of tones occur on bisyllabic nominals. Verb infinitives have lexical tone, with the patterns HH, HM, MM, ML, and LL occurring on bisyllabic verbs.}
+
+\IfFileExists{../localcommands.tex}{
+   \addbibresource{../localbibliography.bib}
+   \input{../localpackages}
+   \input{../localcommands}
+   \input{../localhyphenation}
+   \boolfalse{bookcompile}
+   \togglepaper[21]%%chapternumber
+}{}
+
+\begin{document}
+\maketitle
+
+\section{Introduction}
+\label{sec:olson:introduction}
+
+In this chapter, I present an overview of the phonology of Nduga (pronounced [ndū.ɡā]), a speech variety found in the northcentral part of Central African Republic. It is found mostly in the Nana-Grébizi prefecture (Kaga Bandoro subprefecture), but it is also found on the eastern border of Ouham prefecture (Kabo subprefecture). More precisely, it is spoken in and around the villages of Ouandago, Konvi, and Bissekebou (aka Bissikibou) \citep[7]{moehama2021}.
+
+\textit{Ethnologue} considers Nduga to be a dialect of the Luto language (ISO 639-3 code: [ndy]), which as a whole is spoken by about 19,000 people in Central African Republic and Chad \citep{eberhard2024}. \textit{Ethnologue} lists five dialects of the Luto language: Luto, Nduga, Ndokoa, Wada, and Konga. The first four of these likely correspond to what \citet{boyeldieuetal2006} refer to as Luto (lto), Nduga (ndg), Ndoka (ndk), and Wad (wad), respectively. That source provides extensive wordlist data for these four varieties.\footnote{The data from \citet{boyeldieuetal2006} can be downloaded from the following URL: \url{https://en.wiktionary.org/wiki/Appendix:Proto-Sara-Bongo-Bagirmi\_reconstructions}.} The Nduga data therein were collected by Pierre Nougayrol and include about 460 lexical items.
+
+Nduga is currently classified as part of the Sara-Bongo-Bagirmi (SBB) group within the Central Sudanic family. \citet[343--344]{dimmendaal2019} consider SBB to be essentially the same as “West Central Sudanic.” More general information can be found in \textit{Ethnologue}\footnote{\url{https://www.ethnologue.com/language/ndy}}, as well as \textit{Glottolog}\footnote{\url{https://glottolog.org/resource/languoid/id/luto1241}} \citep{hammarstrom2024}.
+
+Some previous research exists on the various varieties of the Luto language. Linguistic descriptions include \citet{moundo1975} (Luto variety), \citet{ndoko1991} (Luto variety), and \citet{mololi2011} (Ndokoa variety). In addition, there is a language survey \citep{moehama2021}, demographic information in \citet[75--77]{nougayrol1990}, lexical data in \citet{boyeldieuetal2006}, a comparative paper looking at the evolution of labial-velar consonants \citep{olson2024} (Luto and Nduga varieties), and brief mention in several other articles by Boyeldieu and Nougayrol, as well as \citet[17]{tucker1956} (Ndokoa dialect) and \citet[34]{bender1997}. To my knowledge, the current work is the first to focus on Nduga phonology.
+
+My research was conducted in Bangui, Central African Republic, during three visits from 2012 to 2017, for a total of about four weeks. I worked with a team of three speakers, who are fluent in both the Luto and Nduga dialects. Unless otherwise noted, the data in the paper are from our consulting sessions. Part of the research was done in collaboration with Paul \& Jo Murrell and Brad \& Maria Festen.
+
+We collected mostly lexical data, but also some paradigms and texts. The wordlist in the appendix is based on the 204-item wordlist tool in \citet{monino1988}.
+
+I discuss consonants in \sectref{sec:olson:consonants}, vowels in \sectref{sec:olson:vowels}, tone in \sectref{sec:olson:tone}, syllable patterns in \sectref{sec:olson:syllable}, and word patterns in \sectref{sec:olson:word}. Additional discussion is provided in \sectref{sec:olson:discussion}, including addressing the question of how Nduga relates to the rest of SBB. Concluding remarks are given in \sectref{sec:olson:conclusion}.
+
+Phonemic forms are enclosed by forward slashes, e.g. /ᵑg͡b/, and phonetic forms are enclosed by square brackets, e.g. [ŋɡb]. Superscripts and tie bars are used in phonemic forms in order to help distinguish them visually from phonetic forms, as well as to help show the unitary nature of the phonemic digraphs and trigraphs. The phonetic data are transcribed using the extant International Phonetic Alphabet \citep{ipa2006}.
+
+\section{Consonants}
+\label{sec:olson:consonants}
+
+Nduga has 28 consonant phonemes, as shown in \tabref{tab:olson:consonants}.
+
+\begin{table}
+\caption{Consonant phonemes in Nduga}
+\label{tab:olson:consonants}
+\fittable{
+ \begin{tabular}{llllllll}
+  \lsptoprule
+            & Labial & Alveolar & Retr./Pal. & Velar & Labial-velar & Glottal\\
+  \midrule
+  Implosive & ɓ   & ɗ  &   & &  &\\
+  Plosive   & (p) & t  &   & k  & (k͡p) &\\
+            & (b)   & d  &   & g  & g͡b &\\
+            & (ᵐb)  & ⁿd &   & ᵑg & (ᵑg͡b) &\\
+  Fricative & (f)   & s  &   &    &     & (h)\\
+            & v   & z  &   &    &     &\\
+            & ᵐv  & ⁿz &   &    &     &\\
+  Nasal     & m   & n  &   &    &     &\\
+  Trill/flap &    & r  & ɽ &    &     &\\
+  Lateral   &     & l  &   &    &     &\\
+  Approximant &  &    & j &  & w     &\\ 
+            
+  \lspbottomrule
+ \end{tabular}
+ }
+\end{table}
+
+Labial-velar and prenasalized consonants are written with two or three symbols, but they pattern as unitary phonemes in Nduga. Parentheses indicate phonemes that are marginal to the phonological system.
+
+Sample contrasts between the consonants within the same broad category of place of articulation are given in \tabref{tab:olson:conscontrast}. Insofar as possible, I provide contrast between nouns in word-initial position with a following /a/.
+
+The period (full stop) symbol \mbox{< . >} indicates a syllable break. The hyphen \mbox{< - >} indicates a morpheme break. Glosses were obtained in French and translated into English for this paper. Corresponding entries in the wordlist are indicated by the number sign \mbox{< \# >} followed by the entry number. Corresponding entries in the \citet{boyeldieuetal2006} wordlist are given as N/[number] for nouns and V/[number] for verbs. Transcriptions from that source are unmodified.
+
+\begin{table}
+\caption{Consonant contrasts in Nduga}
+\label{tab:olson:conscontrast}
+ \begin{tabular}{llllll}
+  \lsptoprule
+            & Phoneme & Phone & Example & Gloss & No. \\
+  \midrule
+Labial & /ɓ/ & [ɓ] & [ɓā.rà] & rainy season & \# 163\\
+       & /p/ & [p] & [pì.píī] & hot pepper & \\
+       & /b/ & [b] & [bā.ŋɡàm] & sweet potato & \\
+       & /ᵐb/ & [mb] & [mbà.mbò] & one hundred & \\
+       & /f/ & [f] & [fã́ã̄] & type of tuber & \\
+       & /v/ & [v] & [và.ɗù] & pig & \\
+       & /ᵐv/ & [ɱv] & [ɱvá.lè] & flute (from horn) & \\
+       & /m/ & [m] & [mà.nɛ̀] & water & \# 54 \\
+       & /w/ & [w] & [wā] & granary & \\
+Alveolar & /ɗ/ & [ɗ] & [ɗá.rə́ tà.rú] & to stand & \# 47 \\
+       & /t/ & [t] & [tā.rà] & mouth & \# 14 \\
+       & /d/ & [d] & [dā.lā] & drum & \\
+       & /ⁿd/ & [nd] & [ndà.rā] & skin & \# 131 \\
+       & /s/ & [s] & [sà.ná] & type of basket & \\
+       & /z/ & [z] & [zā.rù] & civet & \\
+       & /ⁿz/ & [nz] & [nzā.mè] & ground squirrel & \\
+       & /n/ & [n] & [nā.nā]  & maternal uncle &  \# 126 \\
+       &     &     & \(\sim \) [nā.nū] &  & \\
+       & /l/ & [l] & [là.mú] & clothing & \\
+       & /r/ & [r] & [rā] & sky & \\
+Retr./Pal. & /ɽ/ & [ɽ] & [ɽā.ɗà] & type of net & \\
+       & /j/ & [j] & [jà.kú] & quick, fast & \\
+Velar  & /k/ & [k] & [kā.ɡā] & tree & \# 9 \\
+       & /g/ & [ɡ] & [ɡā.zù] & horn & \# 36 \\
+       & /ᵑg/ & [ŋɡ] & [ŋɡá.ɽā] & ground & \# 178 \\
+Lab.-velar & /k͡p/ & [kp] & [kpā.rù] & poison & \\
+       & /g͡b/ & [ɡb] & [ɡbā.ɡū] & wing & \# 3 \\
+       & /ᵑg͡b/ & [ŋɡb] & [ŋɡbā.ɽā] & assegai & \# 162 \\
+Glottal & /h/ & [h] & [hà] & pour & \\
+  \lspbottomrule
+ \end{tabular}
+\end{table}
+
+Several phonemes are rare: /p, ᵐb, h/ do not occur in the wordlist, while /b, f, k͡p, ᵑg͡b/ occur only once or twice. These phonemes are also the rarest ones in Nougayrol’s data, with 10 or fewer occurrences of each phoneme. The implosives /ɓ, ɗ/ are more common than their plain counterparts /b, d/ in the wordlist.
+
+\citet{boyeldieuetal2006} include a retroflex lateral [ɭ] in their transcriptions of the Luto varieties. I initially employed the same transcription. However, examination of the acoustic properties (cf. \figref{fig:olson:assegai}) showed that the sound exhibits a short closure period of about 30 ms, which is indicative of a tap or flap \citep[130]{catford1977} rather than a lateral. In addition, there is a significant reduction in intensity during closure. These properties lead me to consider the sound to be a retroflex flap [ɽ] and transcribe it accordingly.
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.8\linewidth]{figures/OlsonFig1.png}
+    \caption{Waveform and spectrogram of the word [ŋɡbā.ɽā] ‘assegai’ (\# 162)}
+    \label{fig:olson:assegai}
+\end{figure}
+
+In word-initial position, the retroflex flap [ɽ] is preceded by a short vowel-like segment, as shown in \figref{fig:olson:burn}. This prothetic segment is discussed by \citet[240--241]{ladefoged1996} for a post-alveolar flap in Walpiri. They state that the “segment assists in setting up the acoustic cues for the flap, which thus become comparable in both initial and intervocalic environments” (p. 240).
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.8\linewidth]{figures/OlsonFig2.png}
+    \caption{Waveform and spectrogram of the word [ɽū.ɡū] ‘to burn (transitive)’ (\# 18), with prothetic vowel-like segment}
+    \label{fig:olson:burn}
+\end{figure}
+
+A similar prothetic segment has been observed for the word-initial labiodental flap [ѵ] in Mono \citep[126]{olson2005}. It has also been attested for alveolar trills in several languages \citep{bolter2021} (cf. \citealt[219]{ladefoged1996} for Italian). However, the alveolar trill /r/ in Nduga is not accompanied by this prothetic segment.
+
+The phoneme /j/ is nasalized before a nasal vowel, as shown in \REF{ex:olson:nasalization}:
+
+\ea \label{ex:olson:nasalization}
+Nasalization of /j/ \\
+\phonr{/j/}{[j̃]}{Ṽ}
+\z
+
+The nasalized allophone [j̃] could potentially be interpreted instead as a phoneme /ɲ/ which causes a following vowel to become nasalized. \citet{boyeldieuetal2006} implicitly follow this analysis as they employ the symbol [ɲ] for the sound in their transcriptions of the Luto varieties.
+
+However, I opt to interpret [j̃] as an allophone of /j/ for a several reasons. First, nasal vowel phonemes are independently motivated in Nduga (cf. \sectref{sec:olson:vowels}). Second, I did not find other cases of nasalization on vowels occurring adjacent to a nasal consonant. Third, the speakers’ intuitions were that [j] and [j̃] comprise a single phoneme. Fourth, the Nduga speakers noted that the tongue does not touch the roof of the mouth during the articulation of the sound. Phonetically, the sound is [j̃], not [ɲ].
+
+Sample words that show the nasalization of /j/ are given in \tabref{tab:olson:nasalizedj}:
+
+\begin{table}
+\caption{Sample words with nasalized [j̃]}
+\label{tab:olson:nasalizedj}
+ \begin{tabular}{llll}
+  \lsptoprule
+    Phonemic & Phonetic & Gloss & Number\\
+  \midrule
+  /vī.jã̄/ & [vī.j̃ã̄] & goat & \# 27 \\
+  /zɔ̄.jɔ̃̀/ & [zɔ̄.j̃ɔ̃̀] & to bite & \# 110 \\
+  /jɛ̃́.lɛ̃̀/ & [j̃ɛ̃́.lɛ̃̀] & wind & \# 195 \\
+  /jã̀.lú/ & [j̃ã̀.lú] & rheum & \\
+  /jã̀.ɓū/ & [j̃ã̀.ɓū] & shea fruit & \\
+  \lspbottomrule
+ \end{tabular}
+\end{table}
+
+
+There is possibly a comparable rule for /w/, but our data are limited to one example: /kũ̄.wũ̀/ [kũ̄.w̃ũ̀] ‘to drink’ (\# 12).
+
+\section{Vowels}
+\label{sec:olson:vowels}
+
+Nduga has nine oral vowels and five nasal vowels. The oral vowels include eight monophthongs and one diphthong, as shown in \tabref{tab:olson:vowels}.
+
+\begin{table}
+\caption{Vowel phonemes in Nduga}
+\label{tab:olson:vowels}
+ \begin{tabular}{llll}
+  \lsptoprule
+            & Front & Central & Back\\
+  \midrule
+  Oral  & i &     & u \\
+        & e & ə & o \\
+        & ɛ &     & ɔ \\
+        &   & a   & (ᵘa) \\
+  \midrule
+  Nasal & (ĩ) &     & (ũ) \\
+        &   &     & \\
+        & (ɛ̃) &     & (ɔ̃) \\
+        &   & (ã)   & \\            
+  \lspbottomrule
+ \end{tabular}
+\end{table}
+
+Contrast between the oral vowels is given in \tabref{tab:olson:vowelcontrasts}. I provide contrast between vowels immediately following a word-initial /k/:
+
+\begin{table}
+\caption{Oral vowel contrasts in Nduga}
+\label{tab:olson:vowelcontrasts}
+ \begin{tabular}{lllll}
+  \lsptoprule
+Phoneme & Phone & Transcr. & Gloss & Number \\
+  \midrule
+/i/ & [i] & [k-ī.lì] & to be black & \# 117 \\
+/e/ & [e] & [kē.mè] & stomach & \# 196 \\
+/ɛ/ & [ɛ] & [k-ɛ́.ɽɛ̄] & to collect water, to bail & \\
+/ə/ & [ə] & [kə̀] & (grammatical particle) & \\
+/a/ & [a] & [kā.là] & alone, separately & \\
+/u/ & [u] & [kú.lù] & charcoal & \# 24 \\
+/o/ & [o] & [kō.lō] & type of tree & \\
+/ɔ/ & [ɔ] & [kɔ̄.lɔ̀] & giraffe & \\
+/ᵘa/ & [u̯a] & [k-u̯a᷆] & to die & \# 113 \\
+  \lspbottomrule
+ \end{tabular}
+\end{table}
+
+Nduga exhibits vowel harmony: The vowels /e o/ do not cooccur with /ɛ ɔ/ in the same root. There is very little affixation in Nduga, so the root is usually the same as the word.
+
+The vowels /ə/ and /ᵘa/ are somewhat rare in the wordlist, only occurring in a handful of words, as shown in \tabref{tab:olson:schwadiphthong}.
+
+\begin{table}
+\caption{Cases of /ə/ and /ᵘa/ in the wordlist}
+\label{tab:olson:schwadiphthong}
+ \begin{tabular}{llll}
+  \lsptoprule
+Phoneme & Transcription & Gloss & Number \\
+  \midrule
+/ə/ & [ɗá.rə́ tà.rú] & to stand (stay + upright) & \# 47 \\
+    & [mə̄]         & 1SG.SBJ                      & \# 96 \\
+    & [ŋɡé.ŋɡə̄ sá.kū] & panther (lion + little) & \# 130 \\
+/ᵘa/ & [k-ū.ɡu̯à] & to cut (with an axe) & \# 39 \\
+     & [nzū.ŋɡu̯à] & twin & \# 97 \\
+     & [k-u̯a᷆]     & to die & \# 113 \\
+     & [ní.ŋɡá ku̯â] & snake (thing + die) & \# 172 \\
+  \lspbottomrule
+ \end{tabular}
+\end{table}
+
+The rarity of /ə/ in the wordlist is due to its absence in monomorphemic words in major grammatical categories. Most of its occurrences involve the reduction of another vowel to schwa in word-final position before other words in a noun or verb phrase, as shown in \REF{ex:olson:vowelreduction}.
+
+\ea \label{ex:olson:vowelreduction}
+Vowel Reduction (before another word within a phrase) \\
+\phonr{V}{ə}{\# word}
+\z
+
+Examples of Vowel Reduction are shown in \tabref{tab:olson:vowelreduction}.
+
+\begin{table}
+\caption{Examples of vowel reduction}
+\label{tab:olson:vowelreduction}
+ \begin{tabular}{@{}l@{}lll}
+  \lsptoprule
+          & UR & SR & No. \\
+  \midrule
+ & [kā.ɡā] ‘tree’ + [ɡē] ‘PL’ & → [kā.ɡə̄ ɡē] ‘trees’ & \\
+ & [bē.ɡī] ‘shoulder’ + [má] ‘1SG.POSS’ & → [bē.ɡə̄ má] ‘my shoulder’ & \\
+ & [ŋɡé.ŋɡē] ‘lion’ + [sá.kū] ‘little’ & → [ŋɡé.ŋɡə̄ sá.kū] ‘panther’ & \# 130 \\
+  \lspbottomrule
+ \end{tabular}
+\end{table}
+
+In some cases, the reduced vowel is instead completely elided, as shown in \tabref{tab:olson:vowelelision}. \citet[106]{mololi2011} describes a similar process involving the plural morpheme in the Ndokoa variety.
+
+\begin{table}
+\caption{Example of Vowel Elision}
+\label{tab:olson:vowelelision}
+ \begin{tabular}{lllll}
+  \lsptoprule
+          & UR & & SR & No. \\
+  \midrule
+& /ɗá.rá/ ‘remain’ (V/094) &
+→ & [ɗá.rə́ tà.rú] ‘to stand’ & \# 47 \\
+& + /tà.rú/ ‘standing’ (N/063) & & \(\sim \) [ɗár tà.rú] & \\
+  \lspbottomrule
+ \end{tabular}
+\end{table}
+
+The only cases where schwa is not a reduced form of another vowel involve grammatical function words. Examples are shown in \tabref{tab:olson:schwa}.
+
+\begin{table}
+\caption{Schwa in grammatical function words}
+\label{tab:olson:schwa}
+ \begin{tabular}{llll}
+  \lsptoprule
+ & Phonetic & Gloss & Number \\
+  \midrule
+ & [mə̄]    & 1SG.SBJ & \# 96 \\
+ & [nzə̀]   & PFV & \\
+ & [má.nə̄] & FUT & \\
+ & [sə̀]    & this & \\
+ & [kə̀]    & (grammatical particle) & \\  
+  \lspbottomrule
+ \end{tabular}
+\end{table}
+
+This situation, in which a phoneme has a robust presence only in grammatical particles, is attested elsewhere. \citet{parker2009} mentions three languages in which a consonant phoneme only occurs in an affix, and never in a lexical root: Arammba [stk] (PNG), Awara [awx] (PNG), and Guambiano [gum] (Colombia), cf. \citet{quigley2003}, \citet{branks1973}.
+
+I consider /ᵘa/ [u̯a] to be a diphthong for several reasons. First, there are no other syllable medial approximant-vowel phonetic sequences in Nduga. Second, the approximant portion [u̯] of the phoneme is phonetically short. Third, on the two words in the wordlist that have falling tones on the phoneme ([k-u̯a᷆] ‘to die’ \# 113, [ní.ŋɡá ku̯â] ‘snake’ \# 172), the tone occurs on the [a] portion of the phoneme.
+
+\figref{fig:olson:vowels} shows an F1 vs. F2 plot of the Nduga oral monophthongs. Ten tokens of each vowel are plotted. A vowel symbol is given for each individual token. The axes are marked in Hertz but scaled on the Bark scale. The ellipses are centered on the mean for each vowel and have radii of two standard deviations \citep{maddieson1994}. There is reasonable separation between most of the vowels, indicating that the values of F1 and F2 are sufficient acoustic properties for distinguishing the vowels.
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.8\linewidth]{figures/OlsonFig3.png}
+    \caption{Plot of F1 vs. F2 for Nduga oral vowels}
+    \label{fig:olson:vowels}
+\end{figure}
+
+In addition to the oral vowels, Nduga also has a series of nasal vowels [Ṽ] and long vowels [Vː]. Not enough data were collected to provide contrast in the same environment for all possible nasal and long vowels. Tables \ref{tab:olson:nasalvowels} and \ref{tab:olson:longvowels} provide samples of the sounds.
+
+\begin{table}
+\caption{Nasal vowels in Nduga}
+\label{tab:olson:nasalvowels}
+ \begin{tabular}{llll}
+  \lsptoprule
+ Phoneme & Transcription & Gloss & Number \\
+  \midrule
+ /ĩ/ & [j̃ĩ̄ĩ̀] & scorpion & \\	
+ /ɛ̃/ & [j̃ɛ̃́.lɛ̀] & wind & \# 195 \\
+ /ã/ & [zã̄] & animal & \# 6 \\
+     & [hã̀] & galago & \\
+     & [fã́ã̄] & type of tuber & \\
+ /ũ/ & [k-ũ̄.w̃ũ̀] & to drink & \# 12 \\
+ /ɔ̃/ & [zɔ̄.j̃ɔ̃̀] & to bite & \# 110 \\
+     & [nɔ̃̄ɔ̃̄] & tears & \# 141 \\
+     & [nɔ̃́] & other & \\
+  \lspbottomrule
+ \end{tabular}
+\end{table}
+
+\begin{table}
+\caption{Long vowels in Nduga}
+\label{tab:olson:longvowels}
+ \begin{tabular}{llll}
+  \lsptoprule
+ Phoneme & Transcription & Gloss & Number \\
+  \midrule
+ /iː/ & [mìí] & five & \# 30 \\
+ /eː/ & — & & \\
+ /ɛː/ & — & & \\
+ /aː/ & [nzāà] & white & \# 11 \\
+      & [sāà] & smoke & \# 82 \\
+      & [māā] & thigh & \# 43 \\
+      & [bāà] & papa & \# 132 \\
+      & [kàà] & mother-in-law & \\
+      & [ɱvāà] & tsetse fly & \\
+ /uː/ & [k-ūù] & to swell & \# 59 \\
+ /oː/ & [kóò] & mother & \# 108 \\
+      & [tōō] & to blow & \# 174 \\
+      & [kóó tì.ɡì] & bee (mother + honey) & \# 1 \\
+ /ɔː/ & [ɗɔ̄ɔ̄] & war & \# 89 \\
+      & [sɔ̀ɔ́] & four & \# 151 \\
+      & [sɔ̄ɔ̄] & type of trap & \\
+  \lspbottomrule
+ \end{tabular}
+\end{table}
+
+\newpage
+Two lexical items in our data contain vowels which are both nasalized and lengthened, shown in \tabref{tab:olson:longnasalvowels}.
+
+\begin{table}
+\caption{Long nasal vowels in Nduga}
+\label{tab:olson:longnasalvowels}
+ \begin{tabular}{llll}
+  \lsptoprule
+  Phoneme & Transcription & Gloss & Number \\
+  \midrule
+ /ãː/ & [fã́ã̄] & type of tuber & \\
+ /ɔ̃ː/ & [nɔ̃̄ɔ̃̄] & tears & \# 141 \\
+  \lspbottomrule
+ \end{tabular}
+\end{table}
+
+The long vowels could be interpreted as either phonemic long vowels (Vː) or sequences of identical vowels (V₁V₁). I have chosen the first option, because there are no cases of dissimilar vowel sequences (i.e. V₁V₂) in Nduga, given that [u̯a] is considered to be a diphthong.
+
+The long vowels often bear two distinct level tones (cf. \tabref{tab:olson:longvowels}). The tone patterns attested on long vowels are: HH HM HL MM ML LH LL. Since long vowels can bear two tones, I generally write them with two identical vowel symbols in order to allow marking the two tones in a clear manner.
+
+Short vowels sometimes have contour tones, which I consider to be sequences of level tones. This is discussed further in  \sectref{sec:olson:tone}.
+
+\section{Tone}
+\label{sec:olson:tone}
+
+Nduga has three robust level tones: high (H), mid (M), and low (L). Sample contrasts are shown in \tabref{tab:olson:tonecontrasts}. 
+
+\begin{table}
+\caption{Tone contrasts in Nduga}
+\label{tab:olson:tonecontrasts}
+ \begin{tabular}{llll}
+  \lsptoprule
+         & Transcription & Gloss & Number \\
+  \midrule
+ H vs. M & [kpɔ́.rɔ̀] & flavor of a salt substitute & \\
+         & [kpɔ̄.rɔ̀] & path & \\
+ H vs. L & [kī.lá]  & tail & \# 152 \\
+         & [kū.là]  & work & \# 187 \\
+ M vs. L & [kī.rī]  & bundle of sticks & \# 67 \\
+         & [kē.rì]  & type of bird & \\ 
+  \lspbottomrule
+ \end{tabular}
+\end{table}
+
+In addition, several contour tones occur on short vowels. If these are analyzed as sequences of level tones, the patterns HM HL and ML are attested, as shown in \tabref{tab:olson:contour}.
+
+\begin{table}
+\caption{Contour tones in Nduga}
+\label{tab:olson:contour}
+ \begin{tabular}{llll}
+  \lsptoprule
+  & Transcription & Gloss & Number \\
+  \midrule
+ HM & [ja᷇]  & new  & \# 115 \\
+ HL & [wâ]  & sand & \# 161 \\
+    & [kí.ɽí.kî] & knee & \# 84 \\
+    & [ní.ŋɡá ku̯â] & snake & \# 172 \\
+ ML & [k-u̯a᷆] & to die & \# 113 \\
+    & [na᷆]  & who  & \# 153 \\
+    & [k-ū.lì ɱva᷆] & to nurse & \# 180 \\
+    & [ɓi᷆]  & to fly & \# 200 \\
+  \lspbottomrule
+ \end{tabular}
+\end{table}
+
+In the subsections that follow, I present several observations about tone in Nduga. There are likely other tonal phenomena in the language, which I leave for future research.
+
+\subsection{Lexical tone on nouns}
+
+Nouns have lexical tone. Eight of the  nine possible combinations of tones occur on bisyllabic nouns, as shown in \tabref{tab:olson:tonenouns}. The additional pattern (HH) is not attested on nouns, but it does occur on the numeral [zí.jó] ‘two’ (\# 49).
+
+\begin{table}
+\caption{Tone patterns on bisyllabic nominals}
+\label{tab:olson:tonenouns}
+ \begin{tabular}{llll}
+  \lsptoprule
+    & Transcription & Gloss & Number \\
+  \midrule
+ HH & [zí.jó] & two & \# 49 \\
+ HM & [kú.nū] & nose & \# 116 \\
+ HL & [kú.lù] & charcoal & \# 24 \\
+ MH & [kū.nzá] & chicken & \# 146 \\
+ MM & [ŋɡā.ŋɡā] & tooth & \# 48 \\
+ ML & [kā.ɓè] & egg & \# 124 \\
+ LH & [mà.sú] & blood & \# 166 \\
+ LM & [nì.jē] & female & \# 70 \\
+ LL & [mà.nɛ̀] & water & \# 54 \\
+  \lspbottomrule
+ \end{tabular}
+\end{table}
+
+\subsection{Lexical tone on verbs}
+
+Verbs exhibit lexical tone on infinitives. Five of the nine possible combinations of tones occur on bisyllabic verb infinitives, as shown in \tabref{tab:olson:toneverbs}.
+
+\begin{table}
+\caption{Tone patterns on bisyllabic verb infinitives}
+\label{tab:olson:toneverbs}
+ \begin{tabular}{llll}
+  \lsptoprule
+    & Transcription & Gloss & Number \\
+  \midrule
+ HH & [tá.zá]  & to count & \# 33 \\
+ HM & [nzí.lē] & to say & \# 50 \\
+ HL & — & & \\
+ MH & — & & \\
+ MM & [ndī.ɗī] & to cook & \# 42 \\
+ ML & [tɔ̄.ɗɔ̀]  & to sleep & \# 52 \\
+ LH & — & & \\
+ LM & — & & \\
+ LL & [ɡè.ɽì] & to know & \# 34 \\
+  \lspbottomrule
+ \end{tabular}
+\end{table}
+
+The most common patterns on infinitives are ML and LL. We did not find any infinitives that exhibit a pattern in which the second tone is higher than the first.
+
+\subsection{Tone on pronouns}
+
+Subject and object pronouns bear M tones on all syllables. For the corresponding possessive pronouns, the first syllable is H instead of M, as shown in \tabref{tab:olson:tonepronouns}.
+
+\begin{table}
+\caption{Tone patterns on pronouns}
+\label{tab:olson:tonepronouns}
+\fittable{
+ \begin{tabular}{lllll}
+  \lsptoprule
+ Person & Subject & Object & Inalienable Possessive & Alienable Possessive \\
+  \midrule
+ 1SG & mə̄ & mā & NOUN + má & NOUN + nā má \\
+ 2SG	& jī & jī & NOUN + i & NOUN + nā jí \\
+ 3SG & rō & rō & NOUN + ró & NOUN + nā ró \\
+ 1PL.INCL & zī.ɡī & zī.ɡī & NOUN + zí.ɡī & NOUN + nā zí.ɡī \\
+ 1PL.EXCL & zē & zē & NOUN + zé & NOUN + nā zé \\
+ 2PL & sē.ɡē & sē.ɡē & NOUN + sé.ɡē & NOUN + nā sé.ɡē \\
+ 3PL & rō.ɡē & rō.ɡē & NOUN + ró.ɡē & NOUN + nā ró.ɡē \\
+  \lspbottomrule
+ \end{tabular}
+ }
+\end{table}
+
+For the 2SG inalienable possessive pronoun, the vowel /i/ replaces the final vowel of the noun and takes its tone, e.g. [kú.nū] ‘nose’ + [i] ‘2SG.POSS’ → [kú.nī] ‘your (sg.) nose’.
+
+\subsection{H-spread}
+
+For nouns with a /HL/ tone pattern, the L changes to H when the plural clitic /gē/ is attached, as shown in \tabref{tab:olson:hspread}.
+
+\begin{table}
+\caption{Examples of H-spread in Nduga}
+\label{tab:olson:hspread}
+ \begin{tabular}{lllll}
+  \lsptoprule
+ & Singular & Plural & Gloss & Number\\
+  \midrule
+ & [mú.mù] & [mú.mú ɡē] & fog & \# 16 \\
+ & [kú.lù] & [kú.lú ɡē] & charcoal & \# 24 \\
+ & [ɗɔ́.vɔ̀] & [ɗɔ́.vɔ́ ɡē] & road & \# 26 \\
+ & [bí.sì] & [bí.sí ɡē] & dog & \# 28 \\
+ & [ká.ɱvà] & [ká.ɱvá ɡē] & leaf & \# 73 \\
+  \lspbottomrule
+ \end{tabular}
+\end{table}
+
+In an autosegmental analysis, this would likely be construed as the spread of the H from the first syllable to the second syllable, accompanied by the delinking of the L.
+
+More research is necessary to determine if this process is more widespread in Nduga.
+
+\section{Syllable patterns}
+\label{sec:olson:syllable}
+
+Nduga has the following syllable patterns: V, CV, CṼ, CVː, CṼː, Cu̯a, and CVC, as shown in \tabref{tab:olson:syllables}. The most common syllable pattern is CV.
+
+\begin{table}
+\caption{Nduga syllable patterns}
+\label{tab:olson:syllables}
+ \begin{tabular}{llll}
+  \lsptoprule
+ & Transcription & Gloss & Number\\
+  \midrule
+ V  & [á.nɛ̄] & this & \# 19 \\
+ CV & [zī] & arm & \# 15 \\
+ CṼ & [zã̄] & animal & \# 6 \\
+ CVː & [mìí] & five & \# 30 \\
+ CṼː & [fã́ã̄] & type of tuber & \\
+ Cu̯a & [k-u̯a᷆] & to die & \# 113 \\
+     & [nzū.ŋɡu̯à] & twin & \# 97 \\
+ CVC & [kèm] & in & \\
+     & [kàm] & in front of & \\
+     & [bà.ŋɡàm] & sweet potato & N/757 \\
+     & [ɡbèr.ŋɡē] & support (put on head to carry wood) & \\
+  \lspbottomrule
+ \end{tabular}
+\end{table}
+
+Since Cu̯a includes a diphthong (as discussed in \sectref{sec:olson:vowels}), it could be considered to fit in the CV syllable pattern. The syllable patterns Cu̯a and CVC do not occur with nasal or long vowels.
+
+Most cases of the CVC syllable pattern result from the loss of a word-final vowel in a CV.CV word pattern, as shown in \tabref{tab:olson:origin}.
+
+\begin{table}
+\caption{Sample origins of words with CVC syllable pattern}
+\label{tab:olson:origin}
+ \begin{tabular}{llll}
+  \lsptoprule
+ & Transcription & Gloss & Source \\
+  \midrule
+ & [kèm] & in & < [kè.mè] ‘stomach’ (\# 196) \\
+ & [kàm] & in front of, spread out on & < [kā.mù] ‘eye’ (\# 123) \\
+ & [ɓól̄] \(\sim \) [ɓó.lō] & to be bitter (\# 5) & < SBB *ɓɔlɔ (N/370) \\
+ & [ɓāl] \(\sim \) [ɓā.là] & year (\# 7) & < SBB *ɓala (N/355) \\
+  \lspbottomrule
+ \end{tabular}
+\end{table}
+
+The coda position in the CVC syllable pattern is usually filled by a sonorant. In one case in the wordlist, a fricative occurs in the coda position due to the elision of a word-final vowel: [k-ō.sò] ‘pierce’ (\# 186) + [ká] ‘action of crying’ → [k-ōs.-ká] ‘to cry’ (\# 141).
+
+Consonant clusters are very rare in Nduga, and they always span a syllable boundary. The only example I found that may be monomorphemic was [ɡbèr.ŋɡē] `support'. 
+
+An alternative analysis that might fit the data would involve treating the CVː and CṼː patterns as bisyllabic. In this case, CVː would be divided into CV and V, and CṼː would be divided into CṼ and Ṽ. This would reduce the number of syllable patterns in the language by one while maintaining the same number of word patterns. One advantage of my analysis is that it matches native speaker intuitions.
+
+A couple of additional phonetic syllable patterns occur very rarely: [Ci̯a] and [Cu̯i]. These occur as the result of the shortening of some two-syllable words to one syllable in casual speech, as shown in \tabref{tab:olson:examples}.
+
+\begin{table}
+\caption{Examples of [Ci̯a] and [Cu̯i] syllables}
+\label{tab:olson:examples}
+ \begin{tabular}{llll}
+  \lsptoprule
+ &  &  & Gloss \\
+  \midrule
+ & [ŋɡī.jà mā] & → [ŋɡi̯à mā] & myself \\
+ & [ɽī.jā] & → [ɽi̯ā] & type of gourd \\
+ & [ɡū.jī] & → [ɡu̯ī] & beyond \\
+  \lspbottomrule
+ \end{tabular}
+\end{table}
+
+\section{Word patterns}
+\label{sec:olson:word}
+
+Nduga has the word patterns shown in \tabref{tab:olson:wordpatterns}. The most common word pattern is CV.CV.
+
+\begin{table}
+\caption{Word patterns in Nduga}
+\label{tab:olson:wordpatterns}
+\fittable{
+ \begin{tabular}{llll}
+  \lsptoprule
+ & Transcription & Gloss & No. \\
+  \midrule
+CV & [zī] & arm/hand & \# 15 \\
+CṼ & [zã̄] & animal & \# 6 \\
+CVː & [mìí] & five & \# 30 \\ 
+CṼː & [nɔ̃̄ɔ̃̄] & tears & \# 141 \\
+Cu̯a & [k-u̯a᷆] & to die & \# 113 \\
+CVC & [kèm] & in & \\
+V.CV & [ā.nɛ̀] & this & \# 19 \\
+V.Cu̯a & [ù.ku̯à] & take (cf. V/088) & \# 80 \\
+CV.CV & [kā.ɡā] & tree & \# 9 \\
+CṼ.CV & [j̃ɛ̃́.lɛ̀] & wind & \# 195 \\
+CV.CṼ & [vī.j̃ã̄] & goat & \# 27 \\
+CV.CVː & [pì.píī] & hot pepper & \\
+CV.Cu̯a & [k-ū.ɡu̯à] & to chop (axe) & \# 39 \\
+CVC.CV & [ɡbèr.ŋɡē] & support (cloth put on head to carry wood) & \\
+CV.CVC & [bā.ŋɡàm] & sweet potato & \\
+CV.CV.CV & [kí.ndà.ɡú] & star & \# 63 \\
+  \lspbottomrule
+ \end{tabular}
+ }
+\end{table}
+
+There is a robust set of monosyllabic lexical words in Nduga. Examples are shown in \tabref{tab:olson:monosyllabic}. This indicates that there is no minimal word restriction in the language.
+
+\begin{table}
+\caption{Monosyllabic lexical words in Nduga}
+\label{tab:olson:monosyllabic}
+ \begin{tabular}{llll}
+  \lsptoprule
+ & Transcription & Gloss & No. \\
+  \midrule
+ & [zã̄] & animal & \# 6 \\
+ & [zī] & arm & \# 15 \\
+ & [tá] & to finish & \# 75 \\
+ & [wà] & heavy & \# 102 \\
+ & [ɽī] & name & \# 118 \\
+ & [dè] & person & \# 133 \\
+ & [wâ] & sand & \# 161 \\
+ & [zò] & head & \# 179 \\
+ & [ɓē] & village & \# 198 \\
+  \lspbottomrule
+ \end{tabular}
+\end{table}
+
+The V syllable pattern only occurs word-initially. The CVː and Cu̯a syllable patterns only occur word-finally. Many of the words that we originally thought had more than two syllables turned out to be multimorphemic. For example, [nzà.kú.zì] ‘bottom’ (\# 44) likely derives from [nzà] ‘foot’ (\# 136) + [kú.zì] ‘house’ (\# 104). Four 3-syllable words in the wordlist appear to be monomorphemic: [kí.ndà.ɡú] ‘star’ (\# 63), [kí.ɽí.kî] ‘knee’ (\# 84), [dà.vú.là] ‘man’ (\# 91), and [ɽí.kí.zī] ‘nail/claw’ (\# 127).
+
+As mentioned in \sectref{sec:olson:syllable}, most  words with a CVC word pattern can be traced to words with a CV.CV word pattern. For example, the function words [kèm] ‘in’ and [kàm] ‘in front of’ appear to come from [kē.mè] ‘stomach’ (\# 196) and [kā.mù] ‘eye’ (\# 123), respectively. Lexical words with an optional CVC pattern are more commonly pronounced CV.CV, e.g. [ɓól̄] \(\sim \) [ɓó.lō] ‘be bitter (\# 5) and [ɓāl] \(\sim \) [ɓā.là] ‘year’ (\# 7). The Proto-SBB pattern for these words was CV.CV: *ɓɔlɔ (N/370) and *ɓala (N/355), respectively.
+
+\section{Discussion}
+\label{sec:olson:discussion}
+
+Nduga is well-situated within the SBB family \citetext{\citealp{boyeldieu2006}; \citealp{dimmendaal2019}}. It has prenasalized stops, labial-velar stops, and implosives, all of which are common in SBB. It has closed syllables that result from the erosion of a final vowel *CVCV > CVC. One unique aspect of its consonant inventory is the absence of /tʃ/ and /dʒ/.
+
+Nduga shares some characteristics with Sara and others with Bongo-Bagirmi. Like Sara, it has contrastive nasal vowels and a three-tone system. Like Bongo-Bagirmi, on the other hand, it has vowel harmony and a more robust set of fricatives than is typical of Sara. This harmonizes with \citet[4]{boyeldieu2006}'s view that Nduga is closely related to Sara, but it forms a separate branch.
+
+Most verbs in our data begin with [k]. The same verbs in the wordlist found in \citet{boyeldieuetal2006} are given as vowel initial, without the [k]. Some forms from the two sources are compared in \tabref{tab:olson:initialk}.
+
+\begin{table}
+\caption{Nduga words that begin with /k-/ in our wordlist, with corresponding forms in \citet{boyeldieuetal2006}}
+\label{tab:olson:initialk}
+ \begin{tabular}{lllll}
+  \lsptoprule
+ Our data & Boyeldieu et al. & Gloss & Number & Boyeldieu ref. no. \\
+  \midrule
+ k-à.ɓà & àɓ & to go & \# 4 & V/051 \\
+ k-ù.zà & ùzà (parfois ūzà) & to attach & \# 10 & V/011 \\
+ k-ū.jà & ūjà & to cut & \# 38 & V/098 \\
+ k-ū.ɗì & ūɗì & to dig & \# 41 & V/241 \\
+ k-à.dà & àd & to give & \# 51 & V/024 \\
+ k-ō.jò & ɔ̄yˋ & to give birth & \# 58 & V/147 \\
+ k-ɔ̀ & ò (òː ?) & to hear & \# 60 & V/018 \\
+ k-ū.là & ūlà & to send & \# 61 & V/085 \\
+ k-ì.nà & ìnà & to throw & \# 98 & V/203 \\
+ ké.sī & ké.sū & to cough & \# 184 & V/110 \\
+  \lspbottomrule
+ \end{tabular}
+\end{table}
+
+This suggests that when the root has an initial vowel, the infinitive is marked by a prefix /k-/, and when the root has an initial consonant it is marked as /∅-/.
+
+The very last example in \tabref{tab:olson:initialk} shows a case where the initial /k/ appears to be an integral part of the verb root and not a prefix.
+
+\section{Conclusion}
+\label{sec:olson:conclusion}
+
+This paper makes a significant contribution to our understanding of a speech variety that has received very little attention in the literature. I’ve provided information about Nduga consonants, vowels, tone, syllable patterns, and word patterns.
+
+At the same time, it is a modest first step in the large task of describing a language. There are many possible topics for further research. The tonal system of Nduga warrants a more in-depth investigation, especially how tone is realized in the tense-aspect-mood system. A deeper examination of H-spreading could determine if the process extends to other environments. Examining in more detail the relationship between the extant Nduga forms and those of Proto-SBB would inform our understanding of the historical development of the language. The occurrence of vowel reduction/elision at the phrasal level suggests the possibility of metrical structure in the language. The H-spreading process suggests that tonal feet may be present. Finally, it would be fruitful to examine morpho-syntactically complex forms in more detail to uncover possible additional phonological alternations in the language.
+
+\section*{Abbreviations}
+
+Abbreviations in this chapter follow the Leipzig Glossing Rules, with the following additions.\medskip
+
+\begin{tabularx}{.45\textwidth}{lQ}
+ H  &  High tone                         \\
+ L  &  Low tone                          \\
+ M  &  Mid tone                          \\
+ C  &  Consonant                         \\
+ Lab.  &  Labial                         \\
+ \end{tabularx}
+\begin{tabularx}{.45\textwidth}{lQ}
+ n.  &  Noun                             \\
+ No.  &  Number                          \\
+ Pal.  &  Palatal                        \\
+ PNG  &  Papua New Guinea                \\
+ ref.  &  Reference                      \\
+ \end{tabularx}
+
+\begin{tabularx}{.45\textwidth}{lQ}
+ Retr.  &  Retroflex                     \\
+ SBB  &  Sara, Bongo,  Bagirmi          \\
+ SR  &  Surface representation           \\
+ \end{tabularx}
+\begin{tabularx}{.45\textwidth}{lQ}
+ UR  &  Underlying representation        \\
+ V  &  Vowel                             \\
+ vb.  &  Verb                            \\
+ \end{tabularx}
+
+
+\section*{Acknowledgements}
+
+I wish to thank Philippe NDocko-N’doukoua, Kagzima Emmanuel Ngalave, and Benjamin Ouangara for sharing their language and for their friendship, Paul \& Jo Murrell, and Brad \& Maria Festen for their collaboration and friendship, participants at CALL 43 \citep{olson2013}\footnote{I gave the presentation at CALL after my first research visit. Subsequent fieldwork fine-tuned the analysis significantly and clarified that the variety under consideration was Nduga.} \& ACAL 54 and two anonymous reviewers for helpful comments (all errors are my responsibility), the \textit{Association Centrafricaine pour la Traduction de la Bible et l’Alphabétisation} (ACATBA) for taking care of the logistics for my research trips to Bangui, the \textit{Institut de Linguistique Appliquée} at the University of Bangui for helpful feedback on my research, and
+the SIL Central African Republic Service Group for funding. This paper is dedicated to the memory of Kagzima Emmanuel Ngalave.
+
+\sloppy %this command eliminates a quirk that appears in the bibliography, you can just leave it here.
+
+\printbibliography[heading=subbibliography,notkeyword=this]
+
+\begin{paperappendix}
+\section{Nduga Wordlist}
+\label{sec:olson:appendix}
+
+In this appendix, I present a 204-item wordlist of Nduga (ISO 639-3 code [ndy]). It is based on the 204-item wordlist tool from Moñino (1988). The French glosses are from the source and were used as prompts in collecting the data. The English translations are mine.
+
+\begin{table}
+\caption{204-item wordlist (001–034)}
+\label{tab:olson:wordlist}
+ \begin{tabular}{lllll}
+  \lsptoprule
+ & French & English & Phonetic form & Notes \\
+  \midrule
+001 & abeille & bee & kóó tì.ɡì & ‘mother’ + ‘honey’ \\
+002	& acide (vb.) & to be tart & ɗú.sū & \\
+003	& aile & wing & ɡbā.ɡū & \\
+004 & aller & to go & k-à.ɓà & \\
+005	& amer (vb.) & to be bitter & ɓó.lō & \\
+006	& animal & animal & zã̄ & \\
+007	& année	& year & ɓā.là & \\
+008	& appeler & to call & ɓɔ̄.rɔ̄ & \\
+009	& arbre & tree & kā.ɡā & \\
+010	& attacher; lier & to attach & k-ù.zà & \\
+011	& blanc	& to be white & nzāà & \\
+012	& boire	& to drink & k-ũ̄.w̃ũ̀ & \\
+013	& bon (être) & to be good & ɡà.ɽà & \\
+014	& bouche & mouth & tā.rà & \\
+015	& bras & arm & zī & \\
+016	& brouillard & mist; fog & mú.mù & \\
+017	& brûler (INTR) & to burn (INTR) & ɽū.ɡū & \\
+018	& brûler (TR) & to burn (TR) & ɽū.ɡū & \\
+019	& ceci & this & á.nɛ̄ & \\
+020	& cela & that & á.nɛ̄ ɗá & \\
+021	& ce (en question) & this & á.nɛ̄ & \\
+022	& cendres & ash & vī.tī & \\
+023	& champ & garden & mē.ɡè & \\
+024	& charbon & charcoal & kú.lù & \\
+025	& chaud	& to be hot & tù.mà \(\sim \) k-ù.mà & \\
+026	& chemin & path & ɗɔ́.vɔ̀ & \\
+027	& chèvre / bouc & goat & vī.j̃ã̄ & \\
+028	& chien & dog & bí.sì & \\
+029	& chose & thing & ní.ŋɡà & \\
+030	& cinq & five & mìí & \\
+031	& cœur & heart & ŋɡā.lā & \\
+032	& colline & hill & kó.ŋɡō & \\
+033	& compter & to count & tá.zá & \\
+034	& connaître & to know & ɡè.ɽì & \\
+  \lspbottomrule
+ \end{tabular}
+\end{table}
+
+\begin{table}
+\caption{204-item wordlist (035–065)}
+\label{tab:olson:wordlist2}
+ \begin{tabularx}{\textwidth}{llllQ}
+  \lsptoprule
+ & French & English & Phonetic form & Notes \\
+  \midrule
+035	& corde & cord & kū.là & \\
+036	& corne & horn & ɡā.zù & \\
+037	& cou & neck & mí.ndì & \\
+038	& couper (couteau) & to cut (knife) & k-ū.jà & \\
+039	& couper (hache) & to chop (axe) & k-ū.ɡu̯à & \\
+040	& cracher & to spit & tī.ɓī & \\
+041	& creuser & to dig & k-ū.ɗì & \\
+042	& cuire & to cook & ndī.ɗī & \\
+043	& cuisse & thigh & māā & \\
+044	& cul; fondement & bottom & nzà kú.zì & ‘foot’ + ‘house’ \\
+045	& cultiver & to cultivate & nzà.kà & \\
+046	& danser & to dance & k-ū.zì & \\
+047	& debout (être) & to stand & ɗá.rə́ tà.rú & ‘stay’ + ‘upright’ \\
+    &               &          & \(\sim \) ɗár tà.rú & \\
+048	& dent & tooth & ŋɡā.ŋɡā & incisors \\
+    &      &       & ɡō.ɡò & premolars, molars \\
+049	& deux & two & zí.jó & \\
+050	& dire & to say & nzí.lē & \\
+051	& donner & to give & k-à.dà & \\
+052	& dormir & to sleep & tɔ̄.ɗɔ̀ & \\
+053	& droite (à) & right & kā vú.lā & \\
+054	& eau & water & mà.nɛ̀ & \\
+055	& écorce & bark & mà.mù & \\
+056	& éléphant & elephant & kì.zì & \\
+057	& enfant & child & ŋɡō.nō & \\
+058	& enfanter & to give birth & k-ō.jò & \\
+059	& enfler & to swell & k-ūù & \\
+060	& entendre & to hear & k-ɔ̀ & \\
+061	& envoyer & to send & k-ū.là & \\
+062	& épine & thorn & kó.nō, mɔ́.ɗɔ̀ & \\ 
+063	& étoile & star & kí.ndà.ɡú & \\
+064	& étranger & stranger & ŋɡbā & \\
+065	& excréments & excrement & kí.zī & \\
+  \lspbottomrule
+ \end{tabularx}
+\end{table}
+
+\begin{table}
+\caption{204-item wordlist (066–093)}
+\label{tab:olson:wordlist3}
+ \begin{tabularx}{\textwidth}{llllQ}
+  \lsptoprule
+ & French & English & Phonetic form & Notes \\
+  \midrule
+066	& façonner (pot) & to make (clay pot) & k-ù.ɓà & \\
+067	& fagot & firewood & kī.rī & \\
+068	& faim & hunger & ɓō & \\
+069	& farine & flour & ndù.zú & \\
+070	& femme & female & nī.jé & \\
+071	& fer & iron & tē.ɱvē & \\
+072	& feu & fire & fú.ɗū & \\
+073	& feuille & leaf & ká.ɱvà & \\
+074	& filet & net & bá.ndà & \\
+075	& finir & to finish & tá & \\
+076	& flèche & arrow & kù.rà & \\
+077	& foie & liver & wū.rù & \\
+078	& forger & to forge & k-ō.kù & \\
+079	& frapper; battre & to hit & k-ū.ndà & \\
+080	& froid (être) & to be cold & kū.lī ù.ku̯à dè & \\
+081	& fructifier & to bear fruit & k-à.nù & bear fruit (trees, grain…) \\
+    &            &               & vā.kà & become numerous \\
+082	& fumée & smoke & sāà & \\
+    &       &       & sì.lí & \\
+083	& gauche (à) & left & kā ɡí.lī & \\
+084	& genou & knee & kí.ɽí.kî & \\
+085	& graisse & fat & kē.ɱvì & \\
+    & huile & oil & kù.ɓù & \\
+086	& grand & big & ɓō.ɽì & \\
+087	& gratter (se) & to scrape & k-ū.ɡù & \\
+088	& griller & to grill & ɽū.ɡū & \\
+    & faire frire & to fry & nzī.kò & \\
+089	& guerre & war & ɗɔ̄ɔ̄ & \\
+090	& herbe & grass & ŋɡì.lì & \\
+091	& homme & male & dà vú.là & \\
+092	& hyène & hyena & ɓɔ̀.ŋɡɔ̀ & \\
+093	& il & he/she & rō & \\
+  \lspbottomrule
+ \end{tabularx}
+\end{table}
+
+\begin{table}
+\caption{204-item wordlist (094–125)}
+\label{tab:olson:wordlist4}
+ \begin{tabularx}{\textwidth}{lQlll}
+  \lsptoprule
+ & French & English & Phonetic form & Notes \\
+  \midrule
+094	& ils & they & rō.ɡē & \\
+095	& intestins & intestines & tì.kpì & \\
+096	& je & I (SBJ) & mə̄ & \\
+    & me & me (OBJ) & mā & \\
+097	& jumeaux & twins & nzū.ŋɡu̯à & \\
+098	& lancer; jeter & to throw & k-ì.nà & \\
+099	& langue (organe) & tongue & nzò & \\
+    & langue (langage) & language & tà.rà ɓē & \\
+100	& laver & to wash & nzì.ɡbò & \\
+101	& long & tall & kā.wù & \\
+102	& lourd & heavy & wà & \\
+103	& lune & moon & nzó.jì & \\
+104	& maison & house & kú.zì & \\
+105	& manger & to eat & k-ū.sà & \\
+106	& marcher & to walk & ndí.ɡā & \\
+107	& mauvais (être) & to be bad & kà.sù & \\
+108	& mère & mother & kóò & \\
+109	& montagne & mountain & kó.ŋɡō & \\
+110	& mordre & to bite & zɔ̄.j̃ɔ̃̀& \\
+111	& mortier & mortar & vì.ɗì & \\
+112	& mouche & fly & jú.lū & \\
+113	& mourir & to die & k-u̯a᷆ & \\
+114	& ne…pas & not & ɡù.nú & \\
+115	& neuf; nouveau & new & ja᷇ & \\
+116	& nez & nose & kó.nū & \\
+117	& noir & to be black & k-ī.lì & \\
+118	& nom & name & ɽī & \\
+119	& nombreux (être) & to be many & vā.kà & \\
+120	& nombril & navel & kū.mū & \\
+121	& nous (INCL) & we & zī.ɡī & \\
+122	& nuit & night & ndū.rí & \\
+123	& œil/visage & eye/face & kā.mù & \\
+124	& œuf & egg & kā.ɓè & \\
+125	& oiseau & bird & jì.lì & \\
+  \lspbottomrule
+ \end{tabularx}
+\end{table}
+
+\begin{table}
+\caption{204-item wordlist (126–156)}
+\label{tab:olson:wordlist5}
+ \begin{tabularx}{\textwidth}{llllQ}
+  \lsptoprule
+ & French & English & Phonetic form & Notes \\
+  \midrule
+126	& oncle (maternel) & uncle & nā.nā \(\sim \) nā.nū & \\
+127	& ongle/griffe & nail & ɽí.kí.zī & \\
+128	& oreille & ear & ɱvī & \\
+129	& os & bone & jī.ŋɡō & \\
+130	& panthère & panther & ŋɡé.ŋɡə̄ sá.kū & ‘lion’ + ‘little’ \\
+131	& peau & skin/fur & ndà.rā & \\
+132	& père & father & vū.ɽà & \\
+133	& personne & person & dè & \\
+134	& petit & small & sá.kū & \\
+135	& peur & fear & ɓè.lè & \\
+136	& pied & foot & nzà & \\
+137	& pierre & rock & kɔ̄.sɔ̄ & \\
+138	& plaie & wound & dī.jò & \\
+139	& planter (arbre) & to plant (tree) & k-ū.dù & \\
+    & semer & to sow (seed) & k-ù.sì & \\
+140	& plein & full & ɗɔ̄.sɔ̀ & \\
+141	& pleurer (pleurs) & to cry & k-ōs-ká & ‘pierce’ + ‘action of crying’ \\
+    & larme/pleurs & tears & nɔ̃̄ɔ̃̄ & \\
+142	& pluie & rain & nzī & \\
+143	& poil/plume & hair/feathers & vè.lé & \\
+144	& poisson & fish & kā.nzē & \\
+145	& pou & louse & ŋɡí.sā & \\
+146	& poule & chicken & kū.nzá & \\
+147	& pourrir & to rot & nzū.mù & \\
+148	& prendre & to take & k-ū.nù & \\
+149	& profond (être) & to be deep & k-ū.lì & \\
+150	& puiser & to draw (water) & k-ō.dò & \\
+151	& quatre & four & sɔ̄ɔ́ & \\
+152	& queue & tail & kī.lá & \\
+153	& qui ? & who & na᷆ & \\
+154	& quoi ? & what & ɗī & \\
+155	& racine & root & ŋɡī.rà & \\
+156	& respirer & to breathe & k-à.vò & \\
+  \lspbottomrule
+ \end{tabularx}
+\end{table}
+
+\begin{table}
+\caption{204-item wordlist (157–186)}
+\label{tab:olson:wordlist6}
+ \begin{tabularx}{\textwidth}{llllQ}
+  \lsptoprule
+ & French & English & Phonetic form & Notes \\
+  \midrule
+157	& rester & to stay & k-ī.nzì & \\
+    & s’asseoir & to sit down & k-ī.nzì ŋɡá.ɽā & ‘stay’ + ‘ground’ \\
+158	& rire & to laugh & tí.ɡbō & \\
+159	& rosée & dew & tā.lù & \\
+160	& rouge & to be red & k-ā.kɛ̀ & \\
+161	& sable & sand & wâ & \\
+162	& sagaie & spear & ŋɡbā.ɽā & \\
+163	& saison des pluies & rainy season & ɓā.rà & \\
+164	& saison seche & dry season & ɓā.lā & \\
+165	& salive & saliva & wɔ̄.rɔ̄ & \\
+166	& sang & blood & má.sù & \\
+167	& sec (être) & to be dry & nzū.tù & \\
+168	& sein & breast & ɱvà & \\
+169	& sel & salt & kà.tà & \\
+170	& semence/graine & seed/grain & kī.jō & \\
+171	& sentir (INTR) & to smell & k-ā.tù & \\
+172	& serpent & snake & ní.ŋɡá ku̯â & ‘thing’ + ‘die’ \\
+173	& soleil & sun & kā.zà & \\
+174	& souffler & to blow & tōō j̃ɛ̃́.lɛ̀ & ‘blow’ (V/186) + ‘wind’ \\
+175	& sucer & to suck & tá.nū & \\
+176	& sucré (être) & to be sweet & ndī.tɛ̄ & \\
+177	& termite & termite & ŋɡɔ̄.ɽɔ̀ & \\
+178	& terre; sol & earth; soil & ŋɡá.ɽā & \\
+179	& tête & head & zò & \\
+180	& téter & nurse & k-ū.lì ɱva᷆ & ‘suckle’ (V/095) + ‘breast’ \\
+181	& tomber & fall & k-ì.sò & \\
+182	& tortue & turtle & jí.kò & \\
+183	& tous; tout & all & dū.tū & \\
+184	& tousser & to cough & ké.sī & \\
+185	& tranchant (être) & to be sharp & k-ā.tù & \\
+186	& transpercer & to pierce; to stab & k-ō.sò & \\
+  \lspbottomrule
+ \end{tabularx}
+\end{table}
+
+\newpage
+
+\begin{table}
+\caption{204-item wordlist (187–204)}
+\label{tab:olson:wordlist7}
+ \begin{tabularx}{\textwidth}{lllll}
+  \lsptoprule
+ & French & English & Phonetic form & Notes \\
+  \midrule
+187	& travail & work & kū.là & \\
+188	& trois & three & mù.tá & \\
+189	& trou & hole & ɡɔ̄.tɔ̀ & \\
+190	& tu & you (2SG) & jī & \\
+191	& tuer & to kill & tā.lā & \\
+192	& un & one & ɗɔ́.jí & \\
+193	& urine & urine & kí.zī kà.rɛ̄ & ‘urine’ + ? \\
+194	& venir & to come & k-ī.ɗè & \\
+195	& vent & wind & j̃ɛ̃́.lɛ̀ & \\
+196	& ventre & stomach & kē.mè & \\
+197	& viande/chair & meat/flesh & zã̄, tá.ɗù & \\
+198	& village & village & ɓē & \\
+199	& voir & to see & k-ā.kù & \\
+200	& voler (oiseau) & to fly & ɓi᷆ & \\
+201	& voler; dérober & to steal & ɓō.ɡò & \\
+202	& vomir & to vomit & tú.ɗē & \\
+203	& vouloir & to want & ndī.ɡì & \\
+204	& vous & you (2PL) & sè.ɡè & \\
+  \lspbottomrule
+ \end{tabularx}
+\end{table}
+
+\end{paperappendix}
+
+\end{document}

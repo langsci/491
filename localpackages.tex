@@ -1,0 +1,235 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%% From LSP %%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{tabularx,multicol}
+\usepackage{url}
+\urlstyle{same}
+
+\usepackage{langsci-optional}
+\usepackage{langsci-lgr}
+\usepackage{langsci-gb4e}
+
+% NOTE THAT THE FOLLOWING PACKAGES ARE BANNED: 
+% - pstricks
+% - tipa
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%% From ACAL LaTeX template %%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%For stacking text, used here in autosegmental diagrams
+\usepackage{stackengine}
+
+%To combine rows in tables
+\usepackage{multirow}
+
+%Gives some extra formatting options, e.g. underlining/strikeout
+\usepackage[normalem]{ulem}
+
+%Use package/command below to create a double-spaced document, if you want one. Uncomment BOTH the package and the command (\doublespacing) to create a doublespaced document, or leave them as is to have a single-spaced document.
+%\usepackage{setspace}
+%\doublespacing 
+
+ 
+
+%use for special OT tableaux symbols like bomb and sad face. must be loaded early on because it doesn't play well with some other packages
+\usepackage{fourier-orns}
+
+%Basic math symbols 
+\usepackage{pifont}
+\usepackage{amssymb}
+
+%%%Gives shortcuts for glossing. The use of this package is NOT explained in the Quick Reference Guide, but the documentation is on CTAN for those that are interested. MJKD finds it handy for glossing. (https://ctan.org/pkg/leipzig?lang=en)
+\usepackage{leipzig}
+
+%Tables
+% \usepackage{caption} %For table captions 
+
+%For OT-style tableaux
+\usepackage[notipa]{ot-tableau}
+
+%highlights text with \hl{text}
+\usepackage{color, soul} %note that soul sometimes eats Unicode text witouth telling you. 
+
+%Drawing Syntax Trees
+\usepackage[linguistics]{forest}
+
+%This specifies some formatting for the forest trees to make them nicer to look at. Unfortunately this was borrowed by Michael Diercks from someone a while ago and he can't remember who. Apologies and if someone lets him know he will update this.
+\forestset{
+  nice nodes/.style={
+    for tree={
+      inner sep=0pt,
+      fit=band,
+    },
+  },
+  default preamble=nice nodes,
+}
+
+%A couple of packages that seemed to prefer being called toward the end of the preamble
+
+%This package provides macros for typesetting SPE-style phonological rules. I've redefined the \oneof command here, so that there the rule includes a right brace. 
+\usepackage{phonrule}
+\renewcommand{\oneof}[2][c]{\ensuremath{
+    ~\left\{
+    \begin{tabular}{#1#1}#2\end{tabular}
+    \right\}
+    }}
+
+%For using Greek letters outside of math mode.
+% \usepackage{textgreek}
+
+
+%Random, lets us use the XeLaTeX logo. Not important to the template at all.
+% \usepackage{metalogo}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%% From Smith paper %%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usetikzlibrary{positioning}
+\usetikzlibrary{trees}
+% \usepackage{pstricks} %pstricks is banned. Use tikz instead. 
+% \usepackage{pst-node}
+%\usepackage{tikz}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%% From Gluckman paper %%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{amsmath}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%% From Kandybowicz paper %%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%These are in the .tex, but there's nothing in the "Figures" folder so I'm not sure that it's actually doing anything. 
+ 
+% \graphicspath{ {./Figures/} }
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%% From Matte paper %%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%% From Grollemund paper %%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \usepackage{lscape}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%% From Burns paper %%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+% \usepackage{url}
+% \urlstyle{same}
+
+\usepackage{listings}
+\lstset{basicstyle=\ttfamily,tabsize=2,breaklines=true}
+
+%MJKD commented out - these are standard for chapters in edited volumes, I don't think we need them here in the preamble. 
+
+% \usepackage{tabularx,multicol}
+% \usepackage{langsci-basic}
+% \usepackage{langsci-gb4e}
+% \bibliography{localbibliography}
+% \newcommand{\orcid}[1]{}
+% \pagenumbering{roman}
+
+% \IfFileExists{../localcommands.tex}{%hack to check whether this is being compiled as part of a collection or standalone
+%    \input{../localpackages}
+%    \input{../localcommands}
+%    \input{../localhyphenation}
+%     \bibliography{localbibliography}
+%     \togglepaper[23]
+% }{}
+
+% %custom footer for preprints
+% \papernote{\scriptsize\normalfont
+%     Change author.
+%     Change title.
+%     To appear in:
+%     Change Volume Editor.  
+%     Change volume title.  
+%     Berlin: Language Science Press. [preliminary page numbering]
+% }
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%% From Feibig paper %%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{tikz-qtree}
+\usepackage{tikz-qtree-compat}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%% From Olson paper %%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%MJKD - TIPA is forbidden lol. Commenting out for now but we'll have to address this in the Olson paper
+
+%\usepackage[tone]{tipa}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%% From Caragine paper %%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{placeins}
+% \usepackage{graphicx}
+% \usepackage{float} %Overleaf suggested this as a solution
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%% From Kieffer paper %%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{array}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%% From Payne paper %%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{enumerate}
+\usepackage{array,ragged2e}
+\usepackage{pgfplots}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%% From Diercks paper %%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \usepackage{cgloss}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%% From Li paper %%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%% From Myers paper %%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+\usepackage{tikz-qtree}
+\usepackage{tikz-qtree-compat}
+
+
+%Package that makes glossing slightly easier.
+\RequirePackage{leipzig}
+%\RequirePackage{mathtools} % for \mathrlap
+
+% % % Shortcuts (various borrowed from Jason Zentz)
+\RequirePackage{xspace}
+\xspaceaddexceptions{]\}}
+\usepackage{langsci-textipa}
+\usepackage{langsci-branding}
+\usepackage{tabto}

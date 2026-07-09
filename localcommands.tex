@@ -1,0 +1,169 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%% From LSP %%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+% \newcommand*{\orcid}{}
+
+
+\makeatletter
+\let\thetitle\@title
+\let\theauthor\@author
+\makeatother
+
+\newcommand{\togglepaper}[1][0]{
+   \bibliography{../localbibliography}
+   \papernote{\scriptsize\normalfont
+     \theauthor.
+     \titleTemp.
+     To appear in:
+     E. Di Tor \& Herr Rausgeberin (ed.).
+     Booktitle in localcommands.tex.
+     Berlin: Language Science Press. [preliminary page numbering]
+   }
+   \pagenumbering{roman}
+   \setcounter{chapter}{#1}
+   \addtocounter{chapter}{-1}
+}
+
+\newbool{bookcompile}
+\booltrue{bookcompile}
+\newcommand{\bookorchapter}[2]{\ifbool{bookcompile}{#1}{#2}}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%% From ACAL LaTeX template %%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\usepackage{tikz}
+
+\newcommand{\circled}[1]{\begin{tikzpicture}[baseline=(word.base)]
+\node[draw, rounded corners, text height=8pt, text depth=2pt, inner sep=2pt, outer sep=0pt, use as bounding box] (word) {#1};
+\end{tikzpicture}
+}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Useful Ling Shortcuts
+
+
+%This makes the \emptyset command be a nicer one
+\let\oldemptyset\emptyset
+\let\emptyset\varnothing
+\newcommand{\nothing}{$\emptyset$}
+
+%Not all of these are explained in the Quick Reference Guide, but they are here bc they are relevant to some of our students. 
+\newcommand{\xbar}{\ensuremath{'}\xspace}
+\newcommand{\xhead}{\ensuremath{^\circ}\xspace}
+\newcommand{\Lb}[1]{$\text{[}_{\text{#1}}$ } %A more convenient left bracket
+\newcommand{\Rb}[1]{$\text{]}_{\text{#1}}$ } %A more convenient left bracket
+\newcommand{\gap}{\underline{\hspace{1.2em}}}
+\newcommand{\vP}{\emph{v}P}
+\newcommand{\lilv}{\emph{v}}
+\newcommand{\Abar}{A$'$-} %A more convenient A-bar notation
+\newcommand{\ph}{$\varphi$\xspace} %A more convenient phi
+\newcommand{\pro}{\emph{pro}\xspace}
+\newcommand{\subs}[1]{\textsubscript{#1}} %A more convenient subscript
+\newcommand{\spells}{$\Longleftrightarrow$} %spellout arrow for morph spellout rules
+\newcommand{\tr}[1]{\textit{t}\textsubscript{\textit{#1}}} %easy traces with subscript
+\newcommand{\supers}[1]{\textsuperscript{#1}}
+
+%These are borrowed/modified from Andrew Mackenzie's ling-macros package. We have copied them in here (instead of just using the package itself) to avoid a minor clash that was generating an error.
+
+
+% Abbreviations for glossing, based on Leipzig
+\newleipzig{hab}{hab}{habitual}
+\newleipzig{rem}{rem}{remote}
+\newleipzig{sm}{sm}{subject marker}
+\newleipzig{t}{t}{tense}
+\newleipzig{aa}{aa}{anti-agreement}
+\newleipzig{pron}{pron}{pronoun}
+\newleipzig{rec}{rec}{recent}
+\newleipzig{om}{om}{object marker}
+%\newleipzig{ipfv}{ipfv}{imperfective}
+\newleipzig{asp}{asp}{aspect}
+\newleipzig{lk}{lk}{linker}
+\newleipzig{pcl}{pcl}{particle}
+\newleipzig{stat}{stat}{stative}
+\newleipzig{ints}{ints}{intensive}
+\newleipzig{ascl}{ascl}{assertive subject clitic}
+\newleipzig{nascl}{nascl}{non-assertive subject clitic}
+\newleipzig{ta}{ta}{tense and/or aspect}
+\newleipzig{assoc}{assoc}{associative marker}
+\newleipzig{hon}{hon}{honorific}
+%\newleipzig{whprt}{wh}{\wh particle}
+\newleipzig{sa}{sa}{subject agreement}
+\newleipzig{conj}{conj}{conjunction}
+%\newleipzig{loc}{loc}{locative}
+\newleipzig{expl}{expl}{expletive}
+\newleipzig{rcm}{rcm}{reciprocal marker}
+\newleipzig{pers}{pers}{persistive}
+\newleipzig{fv}{fv}{final vowel}
+%\newleipzig{}{}{} %this is just to copy for when I want to add more
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%% From Gluckman paper %%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\pcite}[1]{\citeauthor{#1}'s (\citeyear{#1})}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%% From Myers paper %%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%% hspace over width of something without showing it
+\newcommand*{\hspaceThis}[1]{\settowidth{\LSPTmp}{#1}\hspace*{\LSPTmp}}
+% use \hphantom{} for this
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%% From Matte paper %%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%mjkd commented this out in case it's breaking something right now. 
+% \newcounter{xlistex}
+% \newcommand{\footnoteex}{\stepcounter{xlistex}(\roman{xlistex})}
+
+\newleipzig{sp}{sp}{speaker} %a new leipzig glossing command
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%% From GamFranich paper %%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%MJKD commented these out - both will be provided by the overall LSP book template 
+
+% \bibliography{localbibliography}
+% \newcommand{\orcid}[1]{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%% From Diercks paper %%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\abar}{$\bar{\text{A}}$\xspace} % this one is different to the \Abar command in Mike's shortcuts doc
+\newcommand{\topFeat}{[\textsc{top}]\xspace}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%% From Kinchsular paper %%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%% From Chen paper %%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcounter{savedex}
+\makeatletter
+\newcommand*{\saveex}{\setcounter{savedex}{\value{\@xnumctr}}}
+\newcommand*{\resumeex}{\setcounter{\@xnumctr}{\value{savedex}}}
+\makeatother
+

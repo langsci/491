@@ -1,0 +1,901 @@
+\documentclass[output=paper,colorlinks,citecolor=brown,
+% hidelinks,
+% showindex
+]{langscibook}
+\ChapterDOI{10.5281/zenodo.20285214}
+
+%This is where you put the authors and their affiliations
+\author{Patrick Kinchsular\affiliation{New York University}}
+
+%Insert your title here
+\title{Phonosemantic conditioning in Kirundi loanword noun class allocation}  
+\abstract{This paper examines the phonological and semantic factors in the noun class allocation of loanwords in Kirundi. I provide a formal account of the criteria used in determining the noun class of loanwords during the lexicalization process. The data indicates an interaction between phonological and semantic factors. I formalize the relevant factors as Optimality Theory constraints and describe a ranking capable of predicting the noun class allocation of novel loanwords in Kirundi. The analysis taken here calls for greater unity between the disciplines of semantics and phonology, traditionally taken to be distinct save for certain phenomena, such as prosody.}
+
+
+% \input{AcalProceedingsTemplatePackages.tex}
+% \input{AcalProceedingsTemplateCommands.tex}
+
+% \input{localpackages.tex}
+% \input{localcommands.tex}
+
+% \IfFileExists{../localcommands.tex}{%hack to check whether this is being compiled as part of a collection or standalone
+%   \input{../localpackages}
+%   \input{../localcommands} 
+% \togglepaper[23]
+% }{}
+
+\begin{document}
+\maketitle
+
+\section{Introduction}
+\label{sec:kinchsular:intro}
+
+This paper examines the noun class allocation of loanwords in Kirundi, a Bantu language of Burundi, providing a semantic and phonological account of the noun class loanwords are assigned. Kirundi employs a noun class system expressed through noun class prefixes. Noun class pairings are pairs of noun classes that nouns typically alternate between to express number. Generally, Kirundi loanwords appear in class 9/10 \citep{zorc2007kinyarwanda, niyondagara1993kirundi, niyonkuru}. However, there are several other semantic and phonologically motivated factors in determining noun class. I present examples where semantic factors override phonological criteria. Restrictions on semantic content within a noun class may block nouns whose phonological form would otherwise condition them to appear with a different prefix. I demonstrate instances where phonological factors place nouns in noun classes inconsistent with their semantic properties. Neither phonological, perceptive, nor semantic factors solely account for the allocation of noun class in Kirundi loanwords. The data indicate a clear interaction between phonological and semantic constraints on faithfulness and markedness. A formal ranking is provided, capable of predicting the noun class allocation of novel loanwords in Kirundi.
+
+\sectref{sec:kinchsular:nounclasses} provides a brief background of Kirundi's noun class system. \sectref{sec:kinchsular:phonconditioning} presents data on loanwords in Kirundi and identifies core morphological and phonological factors in determining noun class of Kirundi loanwords. In \sectref{sec:kinchsular:formalaccount}, I formalize these morphophonological factors in an Optimality Theory (OT) framework by supplying constraints and justifying their ranking. \sectref{sec:kinchsular:semanticfactors} presents apparent irregularities in allocating Kirundi loanwords to the noun class system, where semantic aspects of noun classes affect phonological principles. \sectref{sec:kinchsular:interface} accounts for semantic effects by providing formal semantic constraints ranked critically with morphophonological constraints discussed in \sectref{sec:kinchsular:formalaccount}. I show a clear interaction between semantic, morphological, and phonological constraints and advocate for a single merged interface accounting for noun class allocation, the implications of which are discussed in \sectref{sec:kinchsular:implications}. In \sectref{sec:kinchsular:conclusion}, I summarize the findings and provide a conclusion.
+
+
+\section{The noun class system}
+\label{sec:kinchsular:nounclasses}
+
+A prominent feature of many Bantu languages is their noun class system. \citet{Velde2019} defines the Bantu noun class system as a grouping of nouns which trigger the same agreement pattern. Bantu noun classes are often seen as analogous to grammatical gender. \citet{Maho09} notes that, on average, most Bantu languages have about fifteen noun classes. This number excludes locative noun classes, generally glossed as any noun class greater than 15. I do not consider locative noun classes in my analysis.
+
+In Kirundi, noun classes are realized overtly by a noun class prefix. These appear on most nouns, although some proper and human-denoting nouns may appear without the prefix. The Kirundi noun class prefixes are shown in \tabref{tab:kinchsular:nounclasses}, where single noun classes appear on the left and plural/ non-individuated prefixes appear on the right\footnote{Note that I use {\textsc{n}} to refer to a homorganic nasal unspecified for place of articulation. This is either realized as prenasalization or a nasal stop whose place is determined by the following vowel.}. I display the augment in brackets in \tabref{tab:kinchsular:nounclasses} to capture that it does not appear in all environments, discussed below in \sectref{sec:kinchsular:augment}.\footnote{As noted by an anonymous reviewer, the appearance or lack of the augment is conditioned by the syntactic and/or phonological environment it appears in. While the augment may not be truly `optional' in that nouns in certain environments may appear augmentless, the crucial consideration for my analysis is that the augment is not a part of the noun in the same way as noun class prefixes. All nouns in Kirundi surface bearing a noun class prefix (though it may be covert) regardless of their syntactic environment. The same cannot be said for the augment, as there are certain environments where nouns must be augmentless. I refer the reader to \citet{ndayiragije2012augment} and \citet{shanks2023spelling} for in-depth discussions on factors conditioning the appearance of the augment in Kirundi.} I omit the augment from later discussion for sake of clarity.\footnote{While some may object to the omission of the augment from later discussion, the fact that the augment is conditioned by its syntactic environment lead me to assume it is not a fundamental aspect of nouns in the same way as noun class prefixes.} Nouns are often inherently associated with a particular noun class but may shift for derivational purposes (\cite{Givon1972}; as cited in \cite{Harjula}). I later discuss this in \sectref{sec:kinchsular:absdim}.
+
+\begin{table}
+\caption{Kirundi noun class prefixes}
+\label{tab:kinchsular:nounclasses}
+\begin{tabular}{llllll}
+  \lsptoprule
+        Class & Prefix & & Class & Prefix \\
+        \midrule
+         1 & (u)mu- & & 2 & (a)βa- \\
+         3 & (u)mu- & & 4 & (i)mi- \\
+         5 & (i)Ø / (i)ri- & & 6 & (a)ma- \\
+         7 & (i)ki- / (i)gi- & & 8 & (i)βi- \\
+         9 & (i){\textsc{n}}- / (i)Ø- & & & \\  
+         10 & (i){\textsc{n}}- / (i)Ø- & & & \\         
+         11 & (u)ru- & & & \\
+         12 & (a)ka- / (a)ga- & & 13 & (u)tu- / (u)du- \\ 
+         14 & (u)βu- & & & \\
+  \lspbottomrule
+\end{tabular}
+\end{table}
+
+Kirundi expresses number opposition through noun class shift. Odd-numbered noun class prefixes generally refer to singular entities, while corresponding even-numbered noun class prefixes express plurality \citep[, a.o.]{ndayiragije2012augment, Velde2019, zorc2007kinyarwanda}\footnote{For an alternative analysis, see \citet{Mufwene1980NumberCA}.}. In (\ref{ex:kinchsular:sgpl}), we see an alternation between singular and plural interpretations of the noun with class 1 and class 2 prefixes. In the proceeding sections, I refer to individual noun classes simply as ‘class 1’, for example, and the corresponding noun class pairing as ‘class 1/2’.
+
+\ea \label{ex:kinchsular:sgpl}
+\begin{xlist}
+
+\ex \label{ex:kinchsular:sg}
+\gll u-mu-gaβo
+\\ A-\textsc{cl1}-man \\
+\glt `man'
+
+\ex \label{ex:kinchsular:pl}
+\gll a-βa-gaβo
+\\ A-\textsc{cl2}-man \\
+\glt `men'
+
+\end{xlist}
+
+\z 
+
+\subsection{The augment} \label{sec:kinchsular:augment}
+
+The last relevant piece of background for Bantu noun class systems is the augment. The exact nature of the augment in Bantu languages is contentious, and \citet{Velde2019} claims the role and function of the augment must be evaluated on the basis of individual Bantu languages. All that must be said of the augment now is that its form is of an initial vowel appearing before the noun class prefix on nouns. The augment’s realization in Kirundi is determined by the following noun class prefix, copying the vowel quality of the vowel in the noun class prefix. The sole exception is in the class 9/10 prefixes, which appear either as prenasalization or as a null element. In this case, the form of the augment is [i]. 
+
+With this background being established, the next section describes the set of phonological generalizations regarding noun class allocation for loanwords. I first present the clear phonological patterns in \sectref{sec:kinchsular:phonconditioning} and propose an initial analysis for them in \sectref{sec:kinchsular:formalaccount} before moving on to discuss the interaction of semantic factors in \sectref{sec:kinchsular:semanticfactors}.
+
+
+\section{Phonological conditioning in noun class allocation} 
+\label{sec:kinchsular:phonconditioning}
+
+Most Kirundi loanwords are lexicalized in class 9/10, as seen in the examples in \tabref{tab:kinchsular:class910} below. For clarity, I present all forms without the augment. I assume that the augment is added subsequent to noun class prefixes in the derivation. 
+
+\begin{table}
+\caption{Kirundi loanwords in class 9/10}
+\label{tab:kinchsular:class910}
+\begin{tabular}{llllll}
+  \lsptoprule
+        & {Kirundi} & {Gloss} & {Source} \\
+        \midrule
+         a. & Ø\textsubscript{9}-maʃiːne & `machine' & French, /maʃin/ \\
+         b. & Ø\textsubscript{9}-sukari & `sugar' & French, /sykr/ \\
+         c. & Ø\textsubscript{9}-farine & `flour' & French, /farin/ \\
+         d. & Ø\textsubscript{9}-fero & `iron' & French, /fɛr/ \\
+         e. & Ø\textsubscript{9}-kurudʒeti & `zucchini' & French, /kurʒɛt/ \\
+         f. & Ø\textsubscript{9}-ko\textsuperscript{n}dʒe & vacation & French, /k\~{o}ʒe/ \\
+  \lspbottomrule
+\end{tabular}
+\end{table}
+
+An analysis of Kirundi loanword allocation would be quite simple if loanword nouns always appear in class 9/10. There are exceptions to this pattern, however. The first situation is loanwords with initial segments resembling existing noun class prefixes in Kirundi. In such cases, the initial segment sequence in the loanword is “reanalyzed” as a noun class prefix, allocating the loanword to the corresponding noun class \citep{niyondagara1993kirundi, niyonkuru}. \tabref{tab:kinchsular:reanalysis} shows examples of this, where the initial segments are repurposed.
+
+\begin{table}
+\caption{Reanalysis of initial segment as noun class prefix}
+\label{tab:kinchsular:reanalysis}
+\begin{tabular}{llllll}
+  \lsptoprule
+        & {Kirundi} & {Gloss} & {Source} \\
+         a. & mu\textsubscript{3}-sigiti & `mosque' & Arabic, /masdʒid/ \\ 
+            b. & ma\textsubscript{6}-joneze & `mayonnaise' & French, /mɛjonɛs/ \\ 
+             c. & ki\textsubscript{7}-ro & `kilogram' & French, /kilo/\\
+            d. & βu\textsubscript{14}-re\textsuperscript{n}geti & `blanket' & English, /bleɪnkɪt/  \\
+            e. & ki\textsubscript{7}-nini & `pill' & French, /kinin/  \\
+  \lspbottomrule
+\end{tabular}
+\end{table}
+
+Kirundi also disallows consonant clusters and has several strategies for resolving them in loanwords, such as vowel epenthesis. Different criteria may determine the form of the epenthesized vowel. In some cases, the epenthesized vowel is a copy of an adjacent vowel or is derived from place features of the preceding consonant. However, we see instances of the epenthesized vowel differing from what's expected if another vowel could form a recognizable noun class prefix. I provide a deeper analysis of epenthetic vowel forms in \sectref{sec:kinchsular:epenthetic}.
+\par The reader may immediately notice the apparent disparity between the forms (a) and (b) in Table (\ref{tab:kinchsular:reanalysis}). Both source words begin with the same CV sequence, yet only (b) in \tabref{tab:kinchsular:reanalysis} allows that sequence to be repurposed as a noun class prefix. I will argue that it is the different semantic categories of the two nouns that allow repurposing of (b) but not (a). Specifically, I argue in \sectref{sec:kinchsular:cumulativity} that \textit{ma\textsubscript{6}-joneze} is realized as class 6 due to its having cumulative reference, while \textit{Ø-maʃi:ne} is blocked from class 6 for its lack of cumulative reference.
+
+In the proceeding section, I argue that a simple ranking of alignment constraints and constraints on the realization of morphemes can account for this described behaviour. 
+
+\section{A formal account of phonological factors} \label{sec:kinchsular:formalaccount}
+
+\subsection{Spellout and boundaries} \label{sec:kinchsular:spellout}
+
+An observed commonality between the nouns in \tabref{tab:kinchsular:class910} and those in \tabref{tab:kinchsular:reanalysis} has to do with word boundaries. The word-initial segments in all examples from the source language’s input maintain their position as left-aligned to word boundaries in the loanword, only preceded by the augment. Compare the forms in \tabref{tab:kinchsular:class910} and \tabref{tab:kinchsular:reanalysis} with the ill-formed candidates in \tabref{tab:kinchsular:illformed1}. 
+
+\begin{table}
+\caption{Ill-formed candidates}
+\label{tab:kinchsular:illformed1}
+\begin{tabular}{llllll}
+  \lsptoprule
+        & {Kirundi} & {Gloss} & {Source} \\
+         a. & *mu\textsubscript{3}-maʃiːne & `machine' & French, /maʃin/ \\
+            b. & *mu\textsubscript{3}-sukari & `sugar' & French, /sykr/ \\ 
+            c. & *ki\textsubscript{7}-farine & `flour' & French, /farin/  \\
+            d. & *ki\textsubscript{7}-fero & `iron' & French, /fɛr/ \\
+            e. & *ki\textsubscript{7}-kurudʒeti & `zucchini' & French, /kurʒɛt/ \\
+           f. & *mu\textsubscript{3}-ko\textsuperscript{n}dʒe & vacation & French, /k\~{o}dʒe/ \\
+  \lspbottomrule
+\end{tabular}
+\end{table}
+
+The ill-formed candidates in \tabref{tab:kinchsular:illformed1} have extra phonological material between the source word’s input and the word edge in the form of an overt noun class prefix. I posit the ill-formedness of these candidates is explained as the violation of an alignment constraint maintaining word boundaries. This constraint is formalized as:
+
+\ea \label{ex:kinchsular:fasb}
+       \textbf{\textsc{Faith-Align-SB}} \\
+        Maintain word boundaries from the source language in the base language (i.e. the receiving language)\footnotemark{}
+\z 
+
+    \footnotetext{An anonymous reviewer asks if repurposing forms such as those in \tabref{tab:kinchsular:reanalysis} violate \textsc{Faith-Align-SB}. For the alignment constraint in (\ref{ex:kinchsular:fasb}) to work as intended, there is a necessary assumption that Kirundi nominals only form a complete prosodic word when prefixed with noun class prefixes. Thus, the forms in \tabref{tab:kinchsular:reanalysis} would constitute a violation of \textsc{Faith-Align-SB} only if the root were a prosodic unit. However, I assume that \textsc{Faith-Align-SB} is evaluated of a prosodic word with the noun class prefix already attached.}
+
+    This simple constraint predicts which class most loanwords fall. Class 9/10 is the most common noun class for loanwords, as its prefix is phonologically null in most cases. Class 9/10's null prefixes avoid violation of \textsc{Faith-Align-SB} while ensuring the noun still receives proper nominal morphology. \textsc{Faith-Align-SB} explains the relative prominence of loanword allocation to class 9/10 when no existing segments are available for repurposing. 
+
+This constraint alone cannot account for the forms seen in \tabref{tab:kinchsular:reanalysis}. It would certainly be notably easier to assign all loanwords to a single noun class. Thus, it must be explained why existing segments are reinterpreted as class prefixes when applicable rather than simply assigning every loanword to class 9/10. The analysis should account for the ill-formedness of \tabref{tab:kinchsular:illformed2} compared to \tabref{tab:kinchsular:reanalysis} for not effectively utilizing the existing phonological material given by the source language as a prefix.
+
+\begin{table}
+\caption{Ill-formed candidates}
+\label{tab:kinchsular:illformed2}
+\begin{tabular}{llllll}
+  \lsptoprule
+        & {Kirundi} & {Gloss} & {Source} \\
+         a. & *Ø\textsubscript{9}-musigiti & `mosque' & Arabic, /masdʒid/ \\ 
+            b. & *Ø\textsubscript{9}-majoneze & `mayonnaise' & French, /mɛjonɛs/ \\ 
+            c. & *Ø\textsubscript{9}-kiro & `kilogram' & French, /kilo/ \\
+            d. & *Ø\textsubscript{9}-βure\textsuperscript{n}geti & `blanket' & English, /bleɪnkɪt/  \\
+         e. & *Ø\textsubscript{9}-kinini & `pill' & French, /kinin/ \\
+  \lspbottomrule
+\end{tabular}
+\end{table}
+
+To resolve this issue, I follow \citeauthor{Aissen1999}’s (\citeyear{Aissen1999}) proposal for a constraint *{Ø}, which penalizes null morphology. This constraint states that morphological categories must be overtly realized. 
+
+\ea \label{ex:kinchsular:nonull}
+     \textbf{*Ø}
+    \\ No null morphology
+\z 
+
+I account for Kirundi's preference to utilize existing phonological material for class prefixes with the constraint *{Ø}. \textsc{Faith-Align-SB} must outrank *{Ø} to explain why violations of *{Ø} are licensed to avoid violations of \textsc{Faith-Align-SB}, as demonstrated in \tabref{tab:kinchsular:kilotableau} and \tabref{tab:kinchsular:batterytableau}. If *{Ø} were higher, we would expect every loanword to have an overt class prefix.
+
+\begin{table}
+\ShadingOn
+  \caption{Evaluation of /kilo/}
+  \label{tab:kinchsular:kilotableau}
+  
+\begin{tableau}{c|c} 
+
+\inp{\ips{kilo}} 
+\const{Faith-Align-SB}
+\const{*{Ø}}
+\cand [\Optimal]{\normalfont{ki\textsubscript{7}-ro}} \vio{} \vio{}  
+\cand{\normalfont{{Ø}\textsubscript{9}-kiro}} \vio{} \vio{*!}  
+\cand{\normalfont{mu\textsubscript{3}-kiro}} \vio{*!} \vio{}  
+\cand{\normalfont{ki\textsubscript{7}-kiro}} \vio{*!} \vio{}  
+\end{tableau}
+\end{table}
+
+\begin{table}
+\ShadingOn
+  \caption{Evaluation of /bætəɹi/}
+  \label{tab:kinchsular:batterytableau}
+  
+\begin{tableau}{c|c} 
+
+\inp{\ips{\normalfont{bætəɹi}}} 
+\const{Faith-Align-SB}
+\const{*{Ø}}
+\cand [\Optimal]{\normalfont{Ø\textsubscript{9}-βatiri}} \vio{} \vio{*}  
+\cand{\normalfont{ki\textsubscript{7}-βatiri}} \vio{*!} \vio{}  
+\cand{\normalfont{mu\textsubscript{3}-βatiri}} \vio{*!} \vio{}  
+\end{tableau}
+\end{table}
+
+\subsection{Consonant and vowel alternation} \label{sec:kinchsular:cvalternation}
+
+Compare the attested forms in \tabref{tab:kinchsular:attestedunattested} (\textsc{I}) and (\textsc{II}) with the ill-formed candidates in \tabref{tab:kinchsular:attestedunattested} (\textsc{III}) and (\textsc{IV}).
+
+\begin{table}
+\caption{Attested and unattested candidates}
+\label{tab:kinchsular:attestedunattested}
+\begin{tabular}{llllll}
+  \lsptoprule
+        & & {Kirundi} & {Gloss} & {Source} \\
+       \textsc{I}. & a. & {Ø}\textsubscript{9}-farine & `flour' & French, /farin/ \\ 
+            & b. & {Ø}\textsubscript{9}-pine & `tire' & French, /pn∅/ \\ 
+            & c. & {Ø}\textsubscript{9}-faːta & `Fanta' & English, /fænta/ \\ \midrule
+        \textsc{II}. & a. & *ma\textsubscript{6}-rine & `flour' & French, /farin/ \\ 
+            & b. & *βi\textsubscript{8}-ne & `tire' & French, /pn∅/ \\ 
+            & c. & *ma\textsubscript{6}-ːta & `Fanta' & English, /fænta/  \\ \midrule
+        \textsc{III}. & a. & mu\textsubscript{3}-dari & `medal' & French, /mədajə/ \\ 
+            & b. & mu\textsubscript{3}-sigiti & `mosque' & Arabic, /masdʒid/  \\ 
+            & c. & mu\textsubscript{3}-doka & `car' & English, /moɾəɹkɑɹ/  \\
+            & e. & {Ø}\textsubscript{9}-kurudʒeti & `zucchini' & French, /kurʒɛt/ \\
+           &  d. & {Ø}\textsubscript{9}-ko\textsuperscript{n}dʒe & vacation & French, /k\~{o}ʒe/ \\ \midrule 
+        \textsc{IV}. & a.  & *ki\textsubscript{7}-rudʒeti & `zucchini' & French, /kurʒɛt/ \\
+           &  b. & *ki\textsubscript{7}-\textsuperscript{n}dʒe & vacation & French, /k\~{o}ʒe/ \\
+  \lspbottomrule
+\end{tabular}
+\end{table}
+
+ To avoid the potential problematic candidates in \tabref{tab:kinchsular:attestedunattested} (\textsc{III}), it is crucial to determine the ranking of faithfulness constraints relative to the aforementioned \textsc{Faith-Align-SB} and *{Ø}. Kirundi loanwords could conceivably alter some segments in the input for it to resemble a class prefix. Indeed, forms such as those in \tabref{tab:kinchsular:attestedunattested} (\textsc{II}, a-c) indicate this happens with certain vowels. This does not happen to all vowels and does not happen for any consonants, however. There is no evidence that rounding is a contrastive feature in Kirundi vowels, so it is nonessential for our analysis. I propose the constraints \textsc{IdentV(Bk)-SB}, \textsc{IdentV(Hi)-SB}, and \textsc{Ident}C-SB, for back and high vowels and consonants, respectively. 
+
+ \ea \label{ex:kinchsular:faithfulnessconstraints}
+\begin{xlist}
+
+\ex \textbf{\textsc{IdentV(Bk)-SB}}\\ 
+        Do not change the backness of any vowels from the source language in the base language\\
+
+\ex \textbf{\textsc{IdentV(Hi)-SB}}\\
+        Do not change the height of any vowels from the source language in the base language\\ 
+
+ \ex \textbf{\textsc{Ident}C-SB} \\
+        Do not change any consonants from the source language in the base language
+
+\end{xlist}
+
+\z 
+
+As the consonant never changes to match a class prefix, \textsc{IdentC-SB} must outrank both \textsc{Faith-Align-SB} and *{Ø}. Given that vowel quality can change to match some existing class prefix, some vowel faithfulness constraint should be ranked lower than \textsc{Faith-Align-SB} and *{Ø}. In \tabref{tab:kinchsular:attestedunattested} (\textsc{II}), we see only vowel height change and not backness, suggesting *{Ø} outranks \textsc{IdentV(Bk)-SB}. This is demonstrated in the tableau below.
+
+\begin{table}
+\ShadingOn
+  \caption{Evaluation of /kilo/}
+  \label{tab:kinchsular:kilotableau2}
+  
+\begin{tableau}{c|c|c:c} 
+\inp{\ips{\normalfont{kilo}}} 
+\const{IdentC} \const{Faith-Align}
+\const{*{Ø}} \const{IdentV(Bk)}
+\cand [\Optimal]{\normalfont{Ø\textsubscript{9}-kiro}} \vio{} \vio{} \vio{*} \vio{} 
+\cand{\normalfont{ma\textsubscript{6}-kiro}} \vio{*!} \vio{}  \vio{} \vio{} 
+\cand{\normalfont{βa\textsubscript{2}-kiro}} \vio{*!} \vio{}  \vio{} \vio{} 
+\end{tableau}
+\end{table}
+
+However, we do find some forms with variation. For example, (a) and (b) in \tabref{tab:kinchsular:variation} show it is possible to change the vowel to fit some existing class prefix, but also acceptable to keep a faithful vowel while adding covert class prefixes. We can stipulate that there is some level of variable ranking between *{Ø} and \textsc{IdentV(Hi)} amongst speakers. This would mean that for different speakers (and possibly different varieties), either candidate in \tabref{tab:kinchsular:variation} may be optimal. The tableau in \tabref{tab:kinchsular:motorcartableau} shows that both possible forms are attested.  
+
+\begin{table}
+\caption{Variation in forms}
+\label{tab:kinchsular:variation}
+\begin{tabular}{llllll}
+  \lsptoprule
+        & {Kirundi} & {Gloss} & {Source} \\
+         a. & {Ø}\textsubscript{9}-modoka & `car' & English, /motɚkɑɹ/ \\
+         b. & mu\textsubscript{3}-doka & `car' & English, /motɚkɑɹ/ \\
+  \lspbottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}
+\ShadingOn
+  \caption{Evaluation of /motɚkɑɹ/}
+  \label{tab:kinchsular:motorcartableau}
+  
+\begin{tableau}{c|c|c:c} 
+\inp{\ips{\normalfont{motɚkɑɹ}}} 
+\const{IdentC-SB} \const{Faith-Align-SV}
+\const{*{Ø}} \const{IdentV(Hi)-SB}
+\cand [\Optimal]{\normalfont{mu\textsubscript{3}-doka}} \vio{} \vio{} \vio{} \vio{*} 
+\cand [\Optimal]{\normalfont{Ø\textsubscript{9}-modoka}} \vio{} \vio{} \vio{*} \vio{} 
+\cand{\normalfont{ki\textsubscript{7}-modoka}} \vio{} \vio{*!} \vio{} \vio{} 
+\cand{\normalfont{βu\textsubscript{14}-modoka}}\vio{*!} \vio{} \vio{} \vio{} 
+\end{tableau}
+\end{table}
+
+I account for the observed asymmetry between back and front vowels by distinguishing \textsc{IdentV(Bk)}-SB and \textsc{IdentV(Hi)}-SB. In \tabref{tab:kinchsular:attestedunattested} (\textsc{II}, a-c), back vowels can change in height to resemble a class prefix. Examples in \tabref{tab:kinchsular:attestedunattested} (\textsc{II}, d-e) and \tabref{tab:kinchsular:attestedunattested} (\textsc{IV}, a-b) show that back vowels cannot be fronted for the same result. Thus, \textsc{IdentV(Bk)}-SB outranks at least *{Ø}, as demonstrated in the tableaux below.
+
+\begin{table}
+\ShadingOn
+  \caption{Evaluation of /kurʒɛt/}
+  \label{tab:kinchsular:zucchinitableau}
+  
+\begin{tableau}{c|c|c:c} 
+\inp{\ips{\normalfont{kurʒɛt}}} 
+\const{IdentC-SB} \const{Faith-Align-SV}
+\const{*{Ø}} \const{IdentV(Hi)-SB}
+\cand [\Optimal]{\normalfont{Ø\textsubscript{9}-kurudʒeti}} \vio{} \vio{} \vio{*} \vio{} 
+\cand{\normalfont{ki\textsubscript{7}-rudʒeti}} \vio{} \vio{*!} \vio{} \vio{} 
+\end{tableau}
+\end{table}
+
+
+\subsection{Epenthetic vowels} \label{sec:kinchsular:epenthetic}
+
+Kirundi loanwords often use vowel epenthesis to break up complex syllable sequences \citep{niyondagara1993kirundi}. \citet{niyondagara1993kirundi} claims that the Kirundi syllable structure is best characterized as (C)V(V), the second V being an additional mora in long vowels. Kirundi also allows glides to follow consonants in onsets. \tabref{tab:kinchsular:epenthesis} shows examples of vowel epenthesis breaking up syllable clusters.
+
+\begin{table}
+\caption{Vowel epenthesis}
+\label{tab:kinchsular:epenthesis}
+\begin{tabular}{llllll}
+  \lsptoprule
+        & {Kirundi} & {Gloss} & {Source} \\
+         a. & {Ø}$_9$-peteroːri & `gasoline' & French, /pɛtrɔl/ \\
+            b. & {Ø}$_9$-poːsita & `post office' & French, /pɔstə/ \\
+  \lspbottomrule
+\end{tabular}
+\end{table}
+
+Epenthetic vowels in Kirundi can appear in several potential forms. The two most common strategies involve copying an adjacent vowel or using the epenthetic vowel [i]. Example (a) in \tabref{tab:kinchsular:epenthesis} shows the epenthesized vowel [e] as a copy of the previous syllable’s nucleus. Kirundi loanwords show that the copied vowel can be on the left or right side of the epenthetic vowel. The other strategy, shown in (b) in \tabref{tab:kinchsular:epenthesis}, uses an epenthetic vowel [i]. \citet{niyondagara1993kirundi} notes that the most common epenthetic vowel in Kirundi is [i] and is the form seen when the consonant that would form the potential onset of a newly created syllable is /s/. We also see some instances in Kirundi where the epenthetic vowel is variable, giving two possible forms derived from the same source word. This is seen in (a-b) in \tabref{tab:kinchsular:epenthesis2}, both acceptable and attested forms. Thus, we must account for (a) and (b) in \tabref{tab:kinchsular:epenthesis2} being variable. I deal with this variability in \sectref{sec:kinchsular:semanticfactors}.
+
+\begin{table}
+\caption{Vowel epenthesis}
+\label{tab:kinchsular:epenthesis2}
+\begin{tabular}{llllll}
+  \lsptoprule
+        & {Kirundi} & {Gloss} & {Source} \\
+         a. & βu\textsubscript{14}-re\textsuperscript{n}geti & `blanket' & English, /bleɪnkɪt/ \\
+        b. & βi\textsubscript{8}-re\textsuperscript{n}geti & `blanket' & English, /bleɪnkɪt/  \\ 
+  \lspbottomrule
+\end{tabular}
+\end{table}
+
+I refer to \citet{Rose}'s constraints and ranking to account for epenthesis in Kirundi loanwords. \citeauthor{Rose} focus on Sesotho consonant cluster resolution, but I briefly show that their analysis can be successfully applied to Kirundi with minor modifications. The relevant constraints and ranking they suggest for Sesotho are: 
+
+ \ea \label{ex:kinchsular:sesothoconstraints}
+ \textbf{OK($\sigma$) >> \textsc{CrispEdge}(CV, $\sigma$) >> D\textsc{ep}(VP\textsc{l}) >> \textsc{Agr}L(VP\textsc{l}) >> \textsc{Agr}L(CP\textsc{l}) >> \textsc{Agr}R(VP\textsc{l})}  
+
+\z 
+
+D\textsc{ep}(VP\textsc{l}) states that no new vowel place features may be added. In other words, if a vowel is added to the source word’s input, it should avoid new features by using the same features of some adjacent segment. \textsc{Agr}L(VP\textsc{l}) and \textsc{Agr}R(VP\textsc{l}) are constraints indicating which side’s vowel the epenthetic position is a copy of. \textsc{Agr}L(CP\textsc{l}) states that segments should agree with consonants to the left. \textsc{CrispEdge}(CV, $\sigma$) (shown in tableaux as CE((CV, $\sigma$)) prevents consonant-vowel agreement across syllable boundaries. Thus vowels only agree with the features of consonants in their syllable’s onset. These constraints are given in (\ref{ex:kinschular:dep}-\ref{ex:kinschular:ok}) and the success of this ranking is shown in the tableaux in \tabref{tab:kinchsular:petroltableau}.
+
+ \ea \label{ex:kinchsular:sesothoconstraints2}
+\begin{xlist}
+        \ex \label{ex:kinschular:dep} \textbf{D\textsc{ep}(VP\textsc{l})} \hfill \citep{Rose} \\  Every output VPlace specification has an input correspondent
+        \ex \label{ex:kinschular:agrvl} \textbf{\textsc{AgrL(VPl)}} \\
+         The place feature of the epenthetic vowel must agree with the place feature of the vowel immediately to its left.
+        \ex \label{ex:kinschular:agrvl2} \textbf{\textsc{AgrL(VPl)}} \\
+         The place feature of the epenthetic vowel must agree with the place feature of the vowel immediately to its left.
+         \ex \label{ex:kinschular:agrcl}\textbf{\textsc{AgrL(CPl)}} \\
+         The place feature of the epenthetic vowel must agree with the place feature of the consonant immediately to its left.
+        \ex \label{ex:kinschular:ce}\textbf{\textsc{CrispEdge}(CV, $\sigma$)} \\ Consonant–vowel feature sharing cannot occur across syllables.
+        \ex \label{ex:kinschular:ok} \textbf{OK($\sigma$)}\\ Portmanteau constraint ensuring syllable well-formedness in output (adapted) forms
+\end{xlist}
+\z 
+
+\begin{table}
+\ShadingOn
+  \caption{Evaluation of /pɛtrɔl/}
+  \label{tab:kinchsular:petroltableau}
+
+\fittable{
+\begin{tableau}{c|c|c|c|c|c} 
+\inp{\ips{\normalfont{pɛtrɔl}}} 
+\const{OK$\sigma$} \const{CE(CV,$\sigma$)}
+\const{Dep(VPl)} \const{AgrL(VPl)} \const{AgrL(CPl)} \const{AgrR(VPl)}
+\cand [\Optimal]{\normalfont{Ø\textsubscript{9}-petero\textlengthmark{ri}}} \vio{} \vio{} \vio{} \vio{} \vio{} \vio{*} 
+\cand {\normalfont{Ø\textsubscript{9}-petro\textlengthmark{ri}}} \vio{*!} \vio{} \vio{} \vio{} \vio{} \vio{} 
+\cand {\normalfont{Ø\textsubscript{9}-petoro\textlengthmark{ri}}} \vio{} \vio{} \vio{} \vio{*!} \vio{*} \vio{} 
+\cand {\normalfont{Ø\textsubscript{9}-petiro\textlengthmark{ri}}} \vio{} \vio{} \vio{} \vio{*!} \vio{} \vio{*} 
+\cand {\normalfont{Ø\textsubscript{9}-petaro\textlengthmark{ri}}} \vio{} \vio{} \vio{*!} \vio{*} \vio{*} \vio{*} 
+\cand {\normalfont{Ø\textsubscript{9}-peturo\textlengthmark{ri}}} \vio{} \vio{} \vio{*!} \vio{*} \vio{*} \vio{*} 
+\end{tableau}
+}
+\end{table}
+
+\citet{Rose} do not discuss the role of vowel length in epenthetic forms. From the data, Kirundi epenthetic vowels do not seem to agree with long vowels to their left. To understand this, I adopt the theory of syllable structure and agreement relations shown in (\ref{syll}). In this structure, long vowels consist of two morae, the latter floating without being inherently associated to a vowel but becoming linked to the preceding segment \citep{zec1995role}.
+
+\begin{exe}
+    
+\ex \label{syll}\begin{xlist}
+
+\ex \label{syll2}\phantom{ } \\ \begin{forest}
+for tree={s sep=10mm, inner sep=0, l=0}
+[,phantom, s sep=5mm,
+[$\sigma$ 
+[C [,phantom]]
+[V, name=V
+[$\mu$ ]]
+]
+[$\sigma$ 
+[C [,phantom]]
+[\phantom{\textsubscript{{Ø}ple}}V\textsubscript{{Ø}place}
+[$\mu$, name=M2]]
+]
+]
+]
+\draw[->, dashed] (M2) to[out=south west, in=south west, looseness=1.5] (V);
+\end{forest}
+
+\ex \label{syll1} \phantom{ } \\ \begin{forest}
+for tree={s sep=10mm, inner sep=0, l=0}
+[,phantom, s sep=5mm,
+[$\sigma$ 
+[C [,phantom]]
+[V, name=V
+[$\mu$ ]]
+[Ø [$\mu$, name=M]]
+]
+[$\sigma$ 
+[C [,phantom]]
+[\phantom{\textsubscript{{Ø}ple}}V\textsubscript{{Ø}place}
+[$\mu$, name=M2]]
+]
+]
+]
+\draw[dashed] (M) --  (V);
+\draw[->, dashed] (M2) to[out=south west, in=south west, looseness=1.5] node[]{\textsf{ X}} (V);
+\end{forest}
+
+\end{xlist}
+\end{exe}
+
+The structure in (\ref{syll2}) shows an acceptable agreement relationship between two vowels. The structure in (\ref{syll1}) shows an ill-formed agree relationship between two vowels. By understanding long vowels as a vowel associated with two morae,  we add the boundary of an additional mora that is not inherently associated with a vowel between the epenthetic site and the preceding vowel. This unspecified mora blocks the epenthetic vowel from probing backwards for a vowel to copy its place features from. Agreement between the epenthetic vowel and the left adjacent vowel is no longer possible, and a new agreement target is sought. This evaluation is shown in \tabref{tab:kinchsular:posttableau}. No candidates trigger a violation of \textsc{AgrL(VPl)} as the input does not see any vowel immediately left of the epenthetic site\footnote{I leave the augment in tableaux to make the noun class more explicit, but it can be omitted and should not be seen as a potential goal for agreement.}.
+
+\begin{table}
+\ShadingOn
+  \caption{Evaluation of /pɔstə/}
+  \label{tab:kinchsular:posttableau}
+\fittable{
+\begin{tableau}{c|c|c|c|c|c} 
+\inp{\ips{\normalfont{pɔstə}}} 
+\const{OK$\sigma$} \const{CE(CV,$\sigma$)}
+\const{Dep(VPl)} \const{AgrL(VPl)} \const{AgrL(CPl)} \const{AgrR(VPl)}
+\cand [\Optimal]{\normalfont{Ø\textsubscript{9}-po\textlengthmark{sita}}} \vio{} \vio{} \vio{} \vio{} \vio{} \vio{*} 
+\cand {\normalfont{Ø\textsubscript{9}-po\textlengthmark{sta}}} \vio{*!} \vio{} \vio{} \vio{} \vio{} \vio{} 
+\cand {\normalfont{Ø\textsubscript{9}-po\textlengthmark{sata}}} \vio{} \vio{} \vio{} \vio{*!} \vio{*} \vio{} 
+\cand {\normalfont{Ø\textsubscript{9}-po\textlengthmark{sota}}} \vio{} \vio{} \vio{} \vio{*!} \vio{} \vio{*} 
+\end{tableau}
+}
+\end{table}
+
+\begin{table}
+\caption{}
+\label{tab:kinchsular:president}
+\begin{tabular}{llllll}
+  \lsptoprule
+        {Kirundi} & {Gloss} & {Source} \\
+         mu\textsubscript{1}-perezida & `president' & French, /prezidə/ \\
+  \lspbottomrule
+\end{tabular}
+\end{table}
+
+I propose a final constraint to account for forms such as those in \tabref{tab:kinchsular:president}. The class prefix \textit{mu-} is not a potential goal for vowel agreement, avoiding the form [mupurezida]. I propose the constraint *\textsc{AgrMorphBd(Pl)}. This rules out the epenthetic vowel agreeing with the noun class prefix vowel, shown in the tableaux in \tabref{tab:kinchsular:presidenttableau}. This constraint outranks \textsc{AgrL(VPl)}, but its relative ranking to lower constraints is not crucial.
+
+\begin{exe}
+    \ex \textbf{*\textsc{AgrMorphBd(Pl)}} \\ Do not agree with the place of segments across morpheme boundaries.
+\end{exe}
+
+\begin{table}
+\ShadingOn
+  \caption{Evaluation of /prezidə/}
+  \label{tab:kinchsular:presidenttableau}
+\fittable{
+\begin{tableau}{c|c|c|c|c|c|c} 
+\inp{\ips{\normalfont{prezidə}}} 
+\const{OK$\sigma$} \const{CE(CV,$\sigma$)} \const{*AgrMoBd(Pl)}
+\const{Dep(VPl)} \const{AgrL(VPl)} \const{AgrL(CPl)} \const{AgrR(VPl)}
+\cand [\Optimal]{\normalfont{mu\textsubscript{9}-perezida}} \vio{} \vio{} \vio{} \vio{} \vio{*} \vio{*} \vio{} 
+\cand {\normalfont{mu\textsubscript{9}-prezida}} \vio{*!} \vio{} \vio{} \vio{} \vio{} \vio{} \vio{} 
+\cand {\normalfont{mu\textsubscript{9}-purezida}}  \vio{} \vio{} \vio{} \vio{} \vio{} \vio{} \vio{} 
+\end{tableau}
+}
+\end{table}
+
+\section{Semantic factors in noun class allocation} \label{sec:kinchsular:semanticfactors}
+
+Kirundi noun class allocation of loanwords is additionally conditioned by various semantic factors. Although Bantu noun classes are rarely entirely semantically coherent, we see strong restrictions and general tendencies affecting a noun’s class allocation. Thus, we cannot account for the distribution of noun class prefixes to loanwords with phonological criteria alone.\par  In this section, I outline notable patterns in the semantic effects of noun class allocation in Kirundi loanwords. In \sectref{sec:kinchsular:interface}, I propose an analysis reconciling the conflict between semantics and phonology, demonstrating a capability for one unified interface. 
+
+\subsection{Animacy} \label{sec:kinchsular:animacy} 
+
+I first view the effect of animacy on Kirundi noun class allocation for a simple reason: [$\pm$human] is the only semantic feature that correlates perfectly with a particular noun class. \citeauthor{zorc2007kinyarwanda} (\citeyear{zorc2007kinyarwanda}; among others) note that nouns of class 1/2 always denote human entities. Not all human nouns belong in class 1/2, but every noun in this class is a human. 
+
+There is a general tendency for Kirundi loanwords to be allocated to class 1/2 when denoting a human. Often, this involves adding the class 1 prefix to an existing input to mark that noun as belonging to that noun class, as seen in \tabref{tab:kinchsular:class1loans}. In (a) in \tabref{tab:kinchsular:class1loans}, the overt class 1 prefix, /umu-/ is added to the source word.
+
+In other cases, loanwords with initial segment sequences resembling a class 1/2 prefix may have their initial CV sequence repurposed when denoting human nouns. In (d) in \tabref{tab:kinchsular:class1loans}, the loanword /mυs.l{ə}m/ is incorporated to the language as /mu$_1$-silamu/, using phonological material from the source word for the class 1 prefix.
+
+\begin{table}
+\caption{}
+\label{tab:kinchsular:class1loans}
+\begin{tabular}{llllll}
+  \lsptoprule
+        & {Kirundi} & {Gloss} & {Source} \\
+         a. & mu\textsubscript{1}-perezida & `president' & French, /prezidə/ \\
+         b. & mu\textsubscript{1}-furatiri & `brother' & Latin, /frater/ \\
+         c. & mu\textsubscript{1}-kirisito & `christian' & Christian \\     
+         d. & mu\textsubscript{1}-silamu & `muslim' & Arabic, /mʊs.ləm/ \\         
+         e. & mu\textsubscript{1}-se\textlengthmark{}neri & `mister' & French, /məsj∅/ \\            
+  \lspbottomrule
+\end{tabular}
+\end{table}
+
+Because class 1/2 is reserved solely for human nouns, loanwords with initial segment sequences resembling a class 1/2 prefix are put into other classes. This is shown in (a) in \tabref{tab:kinchsular:class3loans}, where the homophonous class 3 prefix is used instead of the class 1 prefix. In (\ref{tab:kinchsular:class3loans}b), the class 2 prefix is avoided.
+
+\begin{table}
+\caption{}
+\label{tab:kinchsular:class3loans}
+\begin{tabular}{llllll}
+  \lsptoprule
+        & {Kirundi} & {Gloss} & {Source} \\
+         a. & mu\textsubscript{3}-sigiti & `mosque' & Arabic, /mas.dʒid/ \\
+         b. & Ø\textsubscript{10}-βata & `duck' & Swahili, /bata/ \\       
+  \lspbottomrule
+\end{tabular}
+\end{table}
+
+We can establish that those nouns in \tabref{tab:kinchsular:class1loans} are given class 1 prefixes rather than the class 3 prefixes on the basis of noun class agreement with other elements in the sentence and their non-singular noun class alternation.  
+
+\ea \label{ex:kinchsular:ancl1}
+\begin{xlist}
+
+\ex \label{ex:kinchsular:ancl1a}
+\gll U-mu-se\textlengthmark{neri} a-fis-e a-βa-ána be-nshi. \\ 
+\textsc{a}-\textsc{cl1}-mister \textsc{1sm}-have-\textsc{pfv} \textsc{a}-\textsc{cl2}-child \textsc{cl2}-many \\
+\glt `The man has many children.'
+
+\ex \label{ex:kinchsular:ancl1b}
+\gll A-βa-se\textlengthmark{neri} ba-fis-e a-βa-ána be-nshi. \\ 
+\textsc{a}-\textsc{cl2}-mister \textsc{2sm}-have-\textsc{pfv} \textsc{a}-\textsc{cl2}-child \textsc{cl2}-many  \\
+\glt `The men have many children.'
+
+\end{xlist}
+
+\z 
+
+\ea \label{ex:kinchsular:ancl3}
+\begin{xlist}
+
+\ex \label{ex:kinchsular:ancl3a}
+\gll U-mu-sigiti mu-fis-e a-βa-ntu be-nshi. \\ 
+\textsc{a}-\textsc{cl3}-mosque \textsc{3sm}-have-\textsc{pfv} \textsc{a}-\textsc{cl2}-person \textsc{cl2}-many \\
+\glt `The mosque has many people.'
+
+\ex \label{ex:kinchsular:ancl3b}
+\gll I-mi-sigiti i-fis-e a-βa-ntu be-nshi. \\ 
+\textsc{a}-\textsc{cl4}-mosque \textsc{4sm}-have-\textsc{pfv} \textsc{a}-\textsc{cl2}-person \textsc{cl2}-many  \\
+\glt `The mosques have many people.'
+
+\end{xlist}
+
+\z 
+
+In (\ref{ex:kinchsular:ancl1a}), \textit{umuseːneri} triggers class 1 verbal subject agreement. In (\ref{ex:kinchsular:ancl1b}), the same noun is given a class 2 prefix, triggering class 2 subject agreement on the verb. In (\ref{ex:kinchsular:ancl3a}), \textit{umusigiti} triggers class 3 subject agreement on the verb and alternates with the class 4 prefix when plural in (\ref{ex:kinchsular:ancl3b}).
+
+\subsection{Cumulativity} \label{sec:kinchsular:cumulativity} 
+
+Another mostly semantically coherent aspect of noun class is cumulativity. \citet{Oliver} note that even-numbered noun classes in Kirundi all denote entities with cumulative reference\footnote{Noun classes above 10 are exceptions to this rule. However, this is a consequence of them being derivational classes and thus should not be understood as regular in regard to the individuated/non-individuated contrast.}. Only pluralities or non-atomic entities are found in these classes. Class 6 is often where substance-denoting nouns are found and is understood as a ‘polyplural’ class in Bantu languages \citep{Maho09,zorc2007kinyarwanda,Oliver}. Cumulative reference is shared by individuated plural nouns and non-individuated/mass nouns.
+
+Instances where nouns with cumulative reference have initial segment sequences reanalyzed as noun class prefixes are seen in \tabref{tab:kinchsular:cumulativity} (\textsc{I}). Other noun classes beyond class 6 may also show cumulative reference. There are also instances where loanwords with sounds resembling a non-individuated noun class prefix may not be interpreted as those class prefixes when lacking cumulative reference. Instead, these nouns either take an overt prefix or take the covert class 9 prefix. This is seen in \tabref{tab:kinchsular:cumulativity} (\textsc{II}). Unlike human-denoting nouns allocated to class 1, we do not see instances of nouns with cumulative reference being automatically allocated to class 6.
+
+\begin{table}
+\caption{}
+\label{tab:kinchsular:cumulativity}
+\begin{tabular}{llllll}
+  \lsptoprule
+        & & {Kirundi} & {Gloss} & {Source} \\
+        \textsc{I}. & a. & ma\textsubscript{6}-joneze & `mayonnaise' & French, /mɛjonɛs/ \\
+        & b. & Ø\textsubscript{10}-βata & `ducks' & Swahili, /bata/ \\       
+        \textsc{II}. & a. & Ø\textsubscript{9}-mandata & `mandate' & French, /mɑ̃da/ \\    
+        & b. & Ø\textsubscript{9}-maʃi\textlengthmark{ne} & `machine' & French, /maʃin/ \\            
+  \lspbottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Abstract and diminutive nouns} \label{sec:kinchsular:absdim}
+
+Less semantically coherent but still salient semantic categories are those of abstract nouns and diminutives. \citet{zorc2007kinyarwanda} observe that class 14 is largely comprised of abstract nouns, while classes 12 and 13 are primarily nouns with diminutive meanings. 
+
+\ea \label{ex:kinchsular:ad1}
+\begin{xlist}
+
+\ex \label{ex:kinchsular:ad1a}
+\gll i-gi-tabo \\ 
+\textsc{a}-\textsc{cl7}-book \\
+\glt `book'
+
+\ex \label{ex:kinchsular:ad1b}
+\gll a-ga-tabo \\ 
+\textsc{a}-\textsc{cl12}-book  \\
+\glt `pamphlet'
+
+\end{xlist}
+
+\z 
+
+\section{Phonosemantic interface} \label{sec:kinchsular:interface}
+
+In this section, I use an optimality theoretic approach, with crucially ranked phonological and semantic constraints to account for the interaction of phonological and semantic factors. Kirundi's noun classes are not usually fully semantically cohesive. However, an optimality theoretic ranking system is well-equipped to handle the lack of complete semantic cohesion, allowing for violations of noun class constraints to prevent a violation of some higher-ranked constraint.
+
+In sections \ref{sec:kinchsular:human}-\ref{sec:kinchsular:absdimconstraints}, I propose constraints and crucial rankings that account for the semantic factors described above. In \ref{sec:kinchsular:implications}, I consider and argue against an alternative analysis where a division between the semantic and phonological interfaces is upheld.
+
+\subsection{Human constraints} \label{sec:kinchsular:human}
+
+I first propose a constraint to derive the human semantics of class 1/2. To capture that human nouns are strongly preferred in class 1/2 and that only human nouns can comprise class 1/2, I use the following constraint:
+
+\begin{exe}
+    \ex \label{hum1}\textbf{\textsc{Human{$\leftrightarrow$}{1/2}}} \\ 
+    All and only human nouns in class 1/2.
+\end{exe}
+
+As noted in \ref{sec:kinchsular:animacy}, there are instances where human-denoting nouns beginning with segments resembling class 1/2 prefixes may have those segments reinterpreted as class 1/2 prefixes. Some examples of this are repeated in \tabref{tab:kinchsular:animacy}.
+
+\begin{table}
+\caption{} \label{tab:Kinchsular:MuslimMisterTable}
+\label{tab:kinchsular:animacy}
+\begin{tabular}{llllll}
+  \lsptoprule
+        & {Kirundi} & {Gloss} & {Source} \\
+        a. & mu\textsubscript{1}-silamu & `Muslim' & Arabic, /mʊs.ləm/ \\
+        b. & mu\textsubscript{1}-se\textlengthmark{neri} & `mister' & French, /məsj∅/ \\
+  \lspbottomrule
+\end{tabular}
+\end{table}
+  
+I have also noted cases where human-denoting nouns without any segments that resemble class 1/2 prefixes can have an overt prefix assigned. This happens when human denoting loanwords have no initial sequence resembling a class 1/2 prefix. Examples are given in \tabref{tab:kinchsular:animacy2}.
+
+\begin{table}
+\caption{}
+\label{tab:kinchsular:animacy2}
+\begin{tabular}{llllll}
+  \lsptoprule
+        & {Kirundi} & {Gloss} & {Source} \\
+        a. & mu\textsubscript{1}-perezida & `president' & French, /prezidə/ \\
+        b. & mu\textsubscript{1}-furatiri & `brother' & Latin, /frater/ \\
+        c. & mu\textsubscript{1}-kirisito & `christian' & Christian \\        
+  \lspbottomrule
+\end{tabular}
+\end{table}
+
+It becomes clear from this evidence that our semantic constraint must interact with the previous constraints proposed. The preference to have human nouns in class 1/2 apparently takes precedent over the preference for loanwords to appear in class 9/10 without disrupting word boundaries. To capture this, we need only rank \textsc{Human{$\leftrightarrow$}{1/2}} higher than *ø and \textsc{Faith-Align-SB}. In [umuperezida], for example, a violation of \textsc{Faith-Align-SB} is incurred to avoid triggering a potential violation of \textsc{Human{$\leftrightarrow$}{1/2}} that would arise without assigning the noun to class 1/2. If \textsc{Faith-Align-SB} were ranked higher, we would expect the noun to be allocated to class 9/10 with a covert noun class marker. 
+
+\begin{table}
+\ShadingOn
+  \caption{Evaluation of /prezidə/}
+  \label{tab:kinchsular:presidenttableau2}
+\fittable{
+\begin{tableau}{c|c|c|c|c|} 
+\inp{\ips{\normalfont{prezidə}}} 
+\const{Hum{$\leftrightarrow$}{1/2}} 
+\const{IdentC-SB} \const{*Ø} \const{FaithAlign-SB} \const{IdentV-SB}
+\cand [\Optimal]{\normalfont{mu\textsubscript{9}-perezida}} \vio{} \vio{} \vio{} \vio{*} \vio{}
+\cand {\normalfont{Ø\textsubscript{9}-perezida}}  \vio{*!} \vio{} \vio{*} \vio{} \vio{}
+\end{tableau}
+}
+\end{table}
+
+\subsection{Cumulative constraints} \label{sec:kinchsular:cumulativeconstraints}
+
+ To contain the discussion of correlation between even numbered and cumulative noun classes, I only consider class 6 loanwords. Class 6 houses many substance-denoting nouns and serves as the irregular plural for many. I introduce the following constraint to account for this property of class 6;
+
+\begin{exe}
+    \ex \textbf{C\textsc{umulative{$\leftrightarrow$}{6}}}\\ All and only nouns with cumulative reference are allocated to class 6
+\end{exe} 
+
+Not all substance-denoting loanwords are in class 6, as seen in \tabref{tab:kinchsular:sugartableau}, where the substance-denoting noun [isukari] (‘sugar’) is realized with a class 10 prefix. A possible alternative would have this noun be realized as [*amasukari]. That [isukari] is the preferred form suggests that the constraint penalizing candidates with unfaithful word boundaries outranks our semantic constraint for class 6. 
+
+\begin{table}
+\ShadingOn
+  \caption{Evaluation of /sykr/}
+  \label{tab:kinchsular:sugartableau}
+\fittable{
+\begin{tableau}{c|c|c|c|c|} 
+\inp{\ips{\normalfont{sykr}}} 
+\const{IdentC-SB} \const{FaithAlign-SB} \const{Cumul$\leftrightarrow$6} \const{*Ø} \const{IdentV-SB}
+\cand [\Optimal]{\normalfont{Ø\textsubscript{9}-sukari}} \vio{} \vio{} \vio{*} \vio{*} \vio{}
+\cand {\normalfont{mu\textsubscript{9}-sukari}}  \vio{} \vio{*!} \vio{} \vio{} \vio{}
+\end{tableau}
+}
+\end{table}
+
+Cumulative-reference nouns with initial segments resembling the class 6 prefix can have initial segments repurposed as a class prefix. Nouns without cumulative reference resembling the class 6 prefix cannot, as seen in \tabref{tab:Kinchsular:MuslimMisterTable}. This suggests that \textsc{Cumulative{$\leftrightarrow$}{6}} outranks *{Ø}, as violations of *{Ø} can occur to avoid violations of \textsc{Cumulative{$\leftrightarrow$}{6}}. The difference is shown in \tabref{tab:kinchsular:mayonnaisetableau} and \tabref{tab:kinchsular:machinetableau}. 
+
+\begin{table}
+\ShadingOn
+  \caption{Evaluation of /mɛjonɛsə/}
+  \label{tab:kinchsular:mayonnaisetableau}
+\fittable{
+\begin{tableau}{c|c|c|c|c|} 
+\inp{\ips{\normalfont{mɛjonɛsə}}} 
+\const{IdentC-SB} \const{FaithAlign-SB} \const{Cumul$\leftrightarrow$6} \const{*Ø} \const{IdentV-SB}
+\cand [\Optimal]{\normalfont{ma\textsubscript{6}-joneze}} \vio{} \vio{} \vio{} \vio{} \vio{*}
+\cand {\normalfont{Ø\textsubscript{9}-mejoneze}}  \vio{} \vio{} \vio{*!} \vio{*} \vio{}
+\end{tableau}
+}
+\end{table}
+
+\begin{table}
+\ShadingOn
+  \caption{Evaluation of /maʃinə/}
+  \label{tab:kinchsular:machinetableau}
+\fittable{
+\begin{tableau}{c:c|c|c|c|} 
+\inp{\ips{\normalfont{maʃinə}}} 
+\const{IdentC-SB} \const{FaithAlign-SB} \const{Cumul$\leftrightarrow$6} \const{*Ø} \const{IdentV-SB}
+\cand [\Optimal]{\normalfont{Ø\textsubscript{9}-maʃine}} \vio{} \vio{} \vio{} \vio{*} \vio{}
+\cand {\normalfont{ma\textsubscript{6}-ʃine}}  \vio{} \vio{} \vio{*!} \vio{} \vio{}
+\end{tableau}
+}
+\end{table}
+
+\subsection{Abstract and diminutive constraints} \label{sec:kinchsular:absdimconstraints} 
+
+ I now consider some of the derivational noun classes in Kirundi. Classes 12/13 and 14 behave differently from other Kirundi noun classes. Class 12/13 is the diminutive noun class. As demonstrated previously in \REF{ex:kinchsular:ad1}, nouns in class 12/13 are given diminutive interpretations. Class 14 is mostly reserved for abstract nouns. Abstract qualities can be expressed by replacing the inherent class prefix of other roots with the class 14 prefix. \par
+The number of nouns inherently belonging to either class is highly limited and are often lexicalized nouns that can be traced back to some derived form \citep{zorc2007kinyarwanda}. I discuss these noun classes as their derivation use makes them clearly semantically cohesive. Following similar treatment for previous noun classes considered, I introduce the following two constraints to account for these classes’ semantic cohesion:
+
+\begin{exe}
+     \ex \textbf{\textsc{Diminutive{$\leftrightarrow$}{12/13}}} \\
+        All and only diminutive nouns in class 12/13 \\ 
+        \ex \textbf{\textsc{Abstract{$\leftrightarrow$}{14}}} \\
+        All and only abstract nouns in class 14
+\end{exe}
+
+We have examples of loanwords that begin with sequences of segments resembling class 12/13 or class 14 prefixes that are not semantically cohesiveness with other nouns in those classes. With [imaʃiːne], the semantic constraint overrides the phonological constraint to ensure the noun is not inappropriately allocated to class 6. We see the opposite with class 12/13 and 14 loanwords, where semantic constraints are clearly violated. For example, in \tabref{tab:kinchsular:english}, [akaβati] (‘cabinet’) is allocated to class 12 without having any diminutive sense, and [uβu\textsubscript{14}re\textsuperscript{n}geti] (‘blanket’) is allocated to class 14, despite being a concrete noun. The semantic constraints for class 12/13 and class 14 therefore must be outranked by phonological constraints. This is shown in \tabref{tab:kinchsular:blankettableau} and \tabref{tab:kinchsular:cabinettableau}.
+
+\begin{table}
+\caption{}
+\label{tab:kinchsular:english}
+\begin{tabular}{|c|c|c|c|c|c|}
+  \lsptoprule
+        & {Kirundi} & {Gloss} & {Source} \\
+        a. & ka\textsubscript{12}-βati & `cabinet' & English, /kæbnɪt/ \\
+        b. & ka\textsubscript{12}-βare & `cabaret' & English, /kæbəreɪ/ \\
+        c. & βu\textsubscript{14}-reⁿgeti & `blanket' & English, /bleɪnkɪt/ \\       
+  \lspbottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}
+\ShadingOn
+  \caption{Evaluation of /bleɪnkɪt/}
+  \label{tab:kinchsular:blankettableau}
+\fittable{
+\begin{tableau}{c|c|c|c:c:c|} 
+\inp{\ips{\normalfont{bleɪnkɪt}}} 
+\const{OK($\sigma$)} \const{FaithAlign-SB} \const{*Ø} \const{AgrL(CPl)} \const{Abst$\leftrightarrow$14} \const{Dim$\leftrightarrow$12/13}
+\cand [\Optimal]{\normalfont{βu\textsubscript{14}-βureⁿgeti}} \vio{} \vio{} \vio{} \vio{*} \vio{} \vio{}
+\cand {\normalfont{Ø\textsubscript{9}-βureⁿgeti}}  \vio{} \vio{} \vio{*!} \vio{} \vio{} \vio{}
+\cand {\normalfont{ki\textsubscript{7}-reⁿgeti}}  \vio{} \vio{*!} \vio{} \vio{} \vio{} \vio{}
+\end{tableau}
+}
+\end{table}
+
+\begin{table}
+\ShadingOn
+  \caption{Evaluation of /kæbnɪt/}
+  \label{tab:kinchsular:cabinettableau}
+\fittable{
+\begin{tableau}{c|c|c|c:c|} 
+\inp{\ips{\normalfont{kæbnɪt}}} 
+\const{OK($\sigma$)} \const{FaithAlign-SB} \const{*Ø} \const{Abst$\leftrightarrow$14} \const{Dim$\leftrightarrow$12/13}
+\cand [\Optimal]{\normalfont{ka\textsubscript{14}-βati}} \vio{} \vio{} \vio{} \vio{} \vio{*} 
+\cand {\normalfont{Ø\textsubscript{9}-kaβati}} \vio{} \vio{} \vio{*!} \vio{} \vio{} 
+\end{tableau}
+}
+\end{table}
+
+Semantic and phonological constraints relevant to noun class allocation can vary in ranking, with the hierarchy in (\ref{hier1}). This further supports the proposal that the semantic and phonology interface work as one in noun class allocation. 
+
+    
+
+
+\begin{exe}
+    \ex \label{hier1}\textbf{\textsc{Human{$\leftrightarrow$}{1/2}}, \textsc{IdentC-SB} » \textsc{FaithAlign-SB} » C\textsc{umulative{$\leftrightarrow$}{6}} » *{Ø} » \textsc{Abstract{$\leftrightarrow$}{14}}, \textsc{Diminutive{$\leftrightarrow$}{12/13}}}
+    \end{exe}
+
+
+
+
+Considering the abstract class 14, we also gain insight into the relative ranking of semantic and phonological constraints determining vowel epenthesis. As noted in \sectref{sec:kinchsular:phonconditioning}, [uβu\textsubscript{14}reⁿgeti] and [iβi\textsubscript{8}reⁿgeti] are both accepted forms in Kirundi. As a vowel must be epenthesized to resolve the consonant cluster in `blanket', the relevant phonological constraint for determining the form of that vowel is \textsc{AgrL(CPl)}. In [uβu\textsubscript{14}reⁿgeti], the epenthetic vowel is rounded to agree with the consonant, but [iβi\textsubscript{8}reⁿgeti] triggers a violation of \textsc{AgrL(CPl)}. Considering semantic constraints, 
+[uβu\textsubscript{14}reⁿgeti] incurs a violation of \textsc{Abstract{$\leftrightarrow$}{14}}, as the noun is not abstract in nature, while [iβi\textsubscript{8}reⁿgeti] avoids violating the constraint by allocating the noun to a different class. 
+
+Accounting for variation between these candidates, we can assert there is no critical ranking between \textsc{AgrL(CPl)} and \textsc{Abstract{$\leftrightarrow$}{14}}. This is demonstrated in \tabref{tab:kinchsular:blankettableau2}. 
+
+\begin{table}
+\ShadingOn
+  \caption{Evaluation of /bleɪnkɪt/}
+  \label{tab:kinchsular:blankettableau2}
+  \fittable{
+\begin{tableau}{c|c|c|c:c:c:c|} 
+\inp{\ips{\normalfont{bleɪnkɪt}}} 
+\const{OK($\sigma$)} \const{Hum$\leftrightarrow$1/2} \const{FaithAlign-SB} \const{*Ø} \const{AgrL(VPl)} \const{Abst$\leftrightarrow$14} \const{AgrL(CPl)}
+\cand [\Optimal]{\normalfont{βu\textsubscript{14}-βureⁿgeti}} \vio{} \vio{} \vio{} \vio{} \vio{} \vio{*} \vio{}
+\cand {\normalfont{β\textsubscript{8}-reⁿgeti}}  \vio{} \vio{} \vio{} \vio{} \vio{} \vio{} \vio{*}
+\cand {\normalfont{Ø\textsubscript{9}-βureⁿgeti}}  \vio{} \vio{*!} \vio{} \vio{*} \vio{} \vio{} \vio{}
+\cand {\normalfont{Ø\textsubscript{9}-βreⁿgeti}}  \vio{*!} \vio{} \vio{} \vio{} \vio{} \vio{} \vio{}
+\cand {\normalfont{βu\textsubscript{2}-reⁿgeti}}  \vio{} \vio{*!} \vio{} \vio{} \vio{} \vio{} \vio{}
+\cand {\normalfont{βi\textsubscript{8}-βureⁿgeti}}  \vio{} \vio{} \vio{*!} \vio{} \vio{} \vio{} \vio{}
+\end{tableau}
+}
+\end{table}
+
+\section{Interface implications} \label{sec:kinchsular:implications} 
+
+In the preceding sections, I have argued that semantics and phonology can be construed as using one and the same interface. Using an Optimality Theory framework, I have demonstrated that semantic and phonological factors and constraints can be ranked in relation to each other in the same way that simple phonological constraints can. I consider an alternative analysis for the data presented. An alternate analysis may posit that phonology and semantics do not interact directly, but one ‘feeds’ the other, giving it input for evaluation. I evaluate the shortcomings of this approach and show that a unified phonosemantic interface is favourable. I return to  [imaʃiːne] as an example to illustrate an important behaviour lending support to a unified system.
+
+If we consider the analysis where phonology feeds the semantic interface, we could explain much of the data observed as simple cases of derivation. In such a hypothetical analysis, we might assume that loanwords are first allocated to a particular noun class based on phonological principles. Once allocated, some semantic evaluation system determines whether that loanword class allocation is acceptable based on its lexical content. If deemed acceptable, the loanword maintains the given class prefix. If unacceptable, the noun is reallocated to a more suitable noun class. Crucially, this would involve phonology incorporating the noun into the morphological system before the semantic interface could evaluate the noun class allocation. However, I argue this cannot be the case, and phonology and semantic considerations must work in tandem to determine noun class allocation. Consider how such an account would apply to the loanword [imaʃiːne].
+
+In [imaʃiːne], the sequence resembling the class 6 prefix is retained, and the source word is simply augmented with a class 9 prefix. The approach described above cannot account for this behaviour. We must realize that both semantic and phonological constraints can be violated in favour of the other.
+
+If there were indeed two distinct interfaces, we would expect [*iʃiːne]. The phonological interface could first analyze the existing sequence of segments in /maʃin{ə}/. After the appropriate sound changes occur, we would expect the morphophonological form to enter the Kirundi lexicon as /ma\textsubscript{6}-ʃiːne/. The tableaux in \tabref{tab:kinchsular:phonologyeval} and \tabref{tab:kinchsular:semanticeval} demonstrate \textsc{eval} within this approach, where semantic constraints do not interact with phonology. This would separate the loanword into root and affix before any semantic factors are considered. The semantic interface could then evaluate the lexical item [ma\textsubscript{6}-ʃiːne], determine that class 6 is not a semantically appropriate class for the item in question, and replace the prefix with any prefix that does not indicate cumulative reference. This could give us the form [Ø\textsubscript{9}-ʃiːne], to which the augment would be added afterward. 
+
+\begin{table}
+\ShadingOn
+  \caption{Phonology Eval}
+  \label{tab:kinchsular:phonologyeval}
+\begin{tableau}{c|c|c:c} 
+\inp{\ips{\normalfont{maʃinə}}} \const{IdentC-SB} \const{FaithAlign-SB} \const{*Ø} \const{IdentV-SB}
+\cand [\Optimal]{\normalfont{Ø\textsubscript{9}-maʃine}} \vio{} \vio{} \vio{*!} \vio{} 
+\cand {\normalfont{ma\textsubscript{6}-ʃine}} \vio{} \vio{} \vio{} \vio{} 
+\end{tableau}
+\end{table}
+
+\begin{table}
+\ShadingOn
+  \caption{Semantic Eval}
+  \label{tab:kinchsular:semanticeval}
+\begin{tableau}{c|c|c:c} 
+\inp{\ips{\normalfont{maʃinə}}} \const{Human$\leftrightarrow$1/2} \const{Cumulative$\leftrightarrow$6} 
+\cand [\Optimal]{\normalfont{Ø\textsubscript{5}-ʃine}} \vio{} \vio{} 
+\cand {\normalfont{ma\textsubscript{6}-ʃine}} \vio{} \vio{*!} 
+\cand {\normalfont{mu\textsubscript{1}-ʃine}} \vio{*!} \vio{} 
+\end{tableau}
+\end{table}
+
+The forms we see suggest that specific phonological and semantic constraints can be overridden by the other. The only way to properly account for these forms is by concluding one of two things. I propose that semantics and phonology either have the same interface, where semantic and phonological constraints are crucially ranked with respect to each other, or the distinct interfaces are intertwined to the degree that it becomes undesirable and ineffective to view them separately.
+
+\section{Conclusion}
+\label{sec:kinchsular:conclusion}
+
+In the preceding sections, I hope to have shown an analysis of Kirundi loanwords that demonstrates a unity between semantics and phonology is possible within an optimality theory framework. I have focused on how semantic and phonological factors contribute to the allocation of Kirundi loanwords into the rich noun class system. 
+
+In \sectref{sec:kinchsular:phonconditioning} and \sectref{sec:kinchsular:formalaccount}, I first focused on phonological patterns in Kirundi noun class allocation of loanwords. The tendency for loanwords in Kirundi to be allocated primarily to noun classes with null prefix morphemes or to use existing phonological material in the source language can be understood as primarily the result of constraints seeking to maintain faithful word boundaries from source to the base language and constraints requiring that morphology must be overt. These constraints, in addition to other faithfulness constraints penalizing the alteration of segments, can fairly reliably predict the designation of Kirundi loanwords to the noun class system. 
+
+In addition, epenthesis and syllable structure constraints interact with these faithfulness constraints. The restrictions set on well-formed syllables in Kirundi often lead loanwords to require some sort of syllable restructuring. In the process of incorporating these loanwords into the noun class system, Kirundi can exploit some syllabification processes to ensure that the output fits well within the noun class system. 
+
+In \sectref{sec:kinchsular:semanticfactors}, I showed that semantic conditioning and noun class restrictions factor into determining how a loanword is assigned a noun class. Semantic factors of the loanword can cause irregularities in the phonological patterns of noun class allocation described in the previous section. In \sectref{sec:kinchsular:interface}, I addressed this by providing an account of Kirundi loanword allocation that takes both semantic and phonological factors into consideration. The analysis I proposed is one where phonology and semantic conditioning of noun classes essentially play different roles in the same system. 
+
+An asymmetric ranking of semantic noun class constraints within an optimality theoretic approach accounts for the observed asymmetry in the semantic cohesion of Kirundi noun classes. Therefore, certain tendencies of Kirundi noun classes to be stronger than others are explained by constraints that may be violated to avoid violating higher-ranked constraints, whether semantic or phonological. There are numerous instances both of higher-ranked semantic constraints leading to the violation of some phonological constraints and the violation of lower semantic constraints incurred by avoiding the violation of phonological constraints. 
+
+This paper is by no means a conclusive study of the phonology of Kirundi noun class prefixes or the semantic factors of Kirundi noun classes. I hope to have made some small contribution towards an understanding that semantics and phonology can be interconnected to a greater degree than is regularly granted. The analysis I have proposed lends credence to an argument that semantic and phonological patterns can be accounted for within the same system, and there is a clear benefit to doing such, as any alternative can not as effectively capture the interaction between the two.
+
+
+
+
+% \section*{Abbreviations}
+% KRR: missing
+
+
+\section*{Acknowledgements}
+The data used for this paper was taken from a variety of sources. \citeauthor{cox1969dictionary}'s (\citeyear{cox1969dictionary}) dictionary, \citeauthor{zorc2007kinyarwanda}'s (\citeyear{zorc2007kinyarwanda}) grammar, \citeauthor{niyondagara1993kirundi}'s (\citeyear{niyondagara1993kirundi}) dissertation, and \citet{Rwamo2019} supplied a large portion of the data on loanwords. In addition, I consulted native speakers for their judgement of loanwords discussed in those sources. Extra data points were found for Kirundi loanwords by referring to \citet{Kayigema} for Kinyarwanda loanwords and confirming with a native speaker of Kirundi that those loans exist in Kirundi as well. I would like to extend a sincere thank you to native speakers of Kirundi who have helped me on this project. This would not have been possible without their generosity.
+
+
+\sloppy %this command eliminates a quirk that appears in the bibliography, you can just leave it here.
+
+\printbibliography[heading=subbibliography,notkeyword=this]
+
+\end{document}
+
+%To be added to the ACAL \LaTeX{} template, someday: glossing with leipzig, advanced instructions for arrows

@@ -1,0 +1,423 @@
+\documentclass[output=paper,colorlinks,citecolor=brown
+% ,hidelinks
+% showindex
+]{langscibook}
+\ChapterDOI{10.5281/zenodo.20285200}
+\author{Han Li\affiliation{Stony Brook University}}
+
+
+%Insert your title here
+\title{The interaction between tone and intonation in Hausa \textit{wh-}questions}
+
+\abstract{\citet{newmangrammar} suggests that in Hausa, question-word questions (WHQs) are marked by a sentence-final Q-morpheme which lengthens a final short vowel and add a L(ow) tone to the final H(igh)-toned vowel. The current work seeks phonetic evidence of the L-tone and the vowel-lengthening effects potentially induced by the Q-morpheme in WHQs. A production test was conducted to compare final syllables ending in CV, CVV, and CVO syllables bearing H, L, and HL tones in both statements and WHQs. The results indicate that while WHQs generally display a register raise from statements, only final H-toned syllables show an F0 drop compared to the penultimate syllable. Moreover, all final syllables, except for CVV-HL, experience lengthening. The lengthening of CV syllables, which neutralizes the contrast between short and long vowels, is due to the length component of the Q-morpheme, while the lengthening of CVO and CVV syllables is likely the result of phonetic regulation. The investigation shows that the Hausa WHQ pattern is influenced by both phonological effect (the Q-morpheme) and phonetic effects (final lengthening and overall pitch raise).}
+
+
+\IfFileExists{../localcommands.tex}{
+   \addbibresource{../localbibliography.bib}
+   \input{../localpackages}
+   \input{../localcommands}
+   \input{../localhyphenation}
+   \boolfalse{bookcompile}
+   \togglepaper[15]%%chapternumber
+}{}
+
+\begin{document}
+\maketitle
+\section{Introduction}
+The interaction between tone and intonation has been an important topic in the interface study of phonology and phonetics: how does a tone language regulate the pitch patterns associated with intonational melodies while implementing the pitch target for word-level tones? Studies have shown that African tone languages also use intonation at the sentence level, which sometimes interacts with tones, for example, in Embosi \citep{embosi}, Shingazidja \citep{patin2017tone} and Akan \citep{kugler2017tone}. \citet[p.2]{downing} argue that intonation in tone languages is commonly realized by register change, downdrift, expansion, and boundary tone to mark focus, interrogatives, or syntactic boundaries at the sentence level (see also \citealt{cruttenden1997intonation}, \citealt{yipbook}, and \citealt{ladd2008intonational}).
+
+%Editor's note: changed citet used by the author to citealt to avoid multiple parenthesis as in (see also \citealt{cruttenden1997intonation}, \citealt{yipbook}, and \citealt{ladd2008intonational})
+
+The current study examines the interaction of tone and intonation in Hausa, a tone language spoken in West Africa by more than 50 million speakers. Specifically, I will focus on the intonation of question-word questions (commonly shortened as WHQs). \citet{newmangrammar} describes the intonation of Hausa WHQs as having a declarative contour (an overall downward slope) and an optional pitch raising (see also \citealt{kk}). Compared with statements, a sentence-final H tone in WHQs has a lower pitch, and a final short vowel is lengthened into a long vowel.
+
+
+\citet{newmangrammar} argues that the final falling end and vowel lengthening in Hausa WHQs are due to a separate morpheme attaching to the end, known as the \textit{Q-morpheme} (also referred to as the \textit{Question Morpheme q} in \citet{newmans1981q}). The affixation of the Q-morpheme will lengthen a final short vowel (\ref{tab:Li:Qmorph1}\textcolor{red}{a} and \ref{tab:Li:Qmorph1}\textcolor{red}{b}), and add a L tone if the final vowel carries a H tone (\ref{tab:Li:Qmorph1}\textcolor{red}{a} and \ref{tab:Li:Qmorph1}\textcolor{red}{c}). If neither condition is met, the Q-morpheme will apply vacuously (\ref{tab:Li:Qmorph1}\textcolor{red}{d}). 
+
+\eabox{ \label{tab:Li:Qmorph1}
+\begin{tabular}{llll}
+  &Underlying Form &  WHQ-final Form & Translation \\
+a.&fìtá &  wâ: zâi \textbf{fìtâ:}&``Who will go out?" \\
+b.&háihù  & yàushè tá \textbf{háihù:}&``When will she give birth?"\\
+c.&sáyá\~r & mè: súkà \textbf{sáyâ\~r} &``What did they sell?" \\
+d.&yá:ròn & ìná: ká gá \textbf{yá:ròn} & ``Where did you see the boy?"\\
+\end{tabular}
+}
+
+
+The Q-morpheme analysis is different from other works where the falling end of WHQs is analyzed as a downdrift intonation with modification on the final tone \citep{miller, lindau1986}. One analysis from a prosodic perspective that also reflects Newman's Q-morpheme is ``lax question prosody" \citep{ClementRialland2008,rialland2009lax}. This term refers to a set of yes/no question markers typically characterized by a falling contour, open vowels, vowel lengthening, and a breathy voice, which is considered an areal feature in the Macro-Sudan Belt \citep{rialland2009lax, Guldemann2008, Guldemann2018}. Among these features, the final falling contour and the vowel lengthening effects align with Newman's Q-morpheme, even though these prosodic characteristics are associated with YNQs while the Q-morpheme is specifically obligatory for WHQs.
+
+Both analyses predict vowel lengthening and pitch-lowering effects but differ in their scope of application. The Q-morpheme proposal suggests that the L-tone effect applies exclusively to H-toned final vowels, while the lengthening effect is limited to vowels in CV syllables. However, if it is a prosodic or intonational effect, these two effects would not be restricted to H-toned vowels or CV syllables. Despite empirical studies on Hausa, the factors influencing the WHQ pattern remain unclear. On one hand, the results on pitch contours are inconsistent, with some studies reporting rising intonation in WHQs \citep{dresel1977,meyers1976aspects}. On the other hand, there is limited research on duration changes in final vowels in WHQs.
+
+The current work investigates the fit between the patterns of vowel length and pitch predicted by Newman's Q-morpheme analysis, and seeks phonetic evidence from eight native speakers of Hausa. Following Newman's proposal, I hypothesize that when a statement is converted into a WHQ, pitch lowering occurs exclusively among H-toned final syllables, and a duration increase occurs only among final CV syllables. An acoustic analysis was carried out to compare the pitch and duration of the final vowels in WHQs with those in corresponding statements.  
+
+The linguistic data presented in this paper are transcribed in orthography according to \citet{newmangrammar} and the Hausa database \citep{wold-4} in the World Loanword Database (WOLD)  \citep{wold}. Long monophthongs are indicated by a colon, e.g. \textit{shá}: ``tea''. L tone is marked with a grave accent \textit{à}, H with an acute accent \textit{á}, and HL with a circumflex caret \textit{â}. Tones of CVV and CVC syllables are marked on the nucleus vowel, e.g. \textit{mâi} ``oil'', \textit{yàushè} ``when'', \textit{bâs} ``bus''.
+
+\section{Tone and intonation in Hausa}
+\subsection{Tone and syllable structure}
+Hausa has five basic vowels with short and long counterparts /i, i:, e, e:, a, a:, u, u:, o, o:/ and two diphthongs /ai, au/. There are three different types of syllable structures: CV, CVV, CVC. Among them, a CVV syllable contains either a long monophthong or a diphthong, and a CVC syllable consists of a short vowel with a consonant coda which could either be a sonorant coda such as /n, \~r/ or a voiceless obstruent /k, t, p, s/ in limited situations.
+
+In terms of the tone system, Hausa has two contrastive tones: H and L, both of which can appear on all syllable types. Tones function to differentiate lexical meanings as in (\ref{ex:Li:lex}) and grammatical meanings as in (\ref{ex:Li:gram}).
+
+\begin{multicols}{2}
+\ea \label{ex:Li:lex} k\'ap\'a\quad``gap" \\
+    k\`ap\'a\quad``to hang"	
+\z
+
+\ea \label{ex:Li:gram}
+    t\'a:\quad``she (completive aspect)"\\
+    t\^a:\quad``she (future tense)"
+\z
+\end{multicols}
+
+When H and L appear on a single heavy syllable, they will be phonetically realized as a falling (HL or F) tone. Therefore, HL tones only occur in heavy syllables (CVV or CVC) shown in (\ref{ex:Li:ftone}-\ref{ex:Li:loan}). CVC syllables bearing HL closed by an voiceless obstruent coda /k, t, p, s/ are usually loanwords from English or French as in (\ref{ex:Li:loan}). Monosyllabic rising or three-toned contours are not permitted. 
+
+\begin{multicols}{2}
+\ea \label{ex:Li:ftone}
+mâi \quad ``oil''
+
+yâ:rá:\quad ``children''
+
+nân\quad ``here"
+
+sádáúkâr̃wáá\quad ``the sacrifice''
+\z
+\end{multicols}
+
+
+\begin{multicols}{2}
+\ea\label{ex:Li:loan}
+kwât  \quad ``coat''  \\  
+bâs \quad ``bus''  
+ 
+jîp\quad ``skirt'' (jupe)\\ 
+bîs\quad ``screw'' (vis)\z
+\end{multicols}
+
+These facts support that the tone-bearing unit (TBU) in Hausa is the mora, and coda consonants are moraic. Since Hausa syllables can only bear up to two moras, contour tones can only occur in bimoraic syllables. \tabref{tab:Li:dresel}, adapted from \citet{dresel1977}, shows the relationship between the syllable weight and the vowel duration. The bimoraic syllable CVC, although considered as heavy, contains a short vowel referred to as a ``half vowel" by \citet[p. 711]{newmangrammar}.
+
+\begin{table}
+\begin{tabular}{llll}
+\lsptoprule
+ Phonological weight  	& 	Syllable 	& 	Phonetic duration  	& 	Tone\\
+ \midrule
+  light (monomoraic) 		& 	CV				& {short} 	& H, L\\
+%  \cline{1-2} \cline{4-4}
+heavy (bimoraic) & CVC& 	short	&  H, L, HL\\
+% \cline{3-3}
+heavy (bimoraic)    		    & CVV	& long &	H, L, HL	\\
+\lspbottomrule
+\end{tabular}
+
+\caption{Syllable weight and duration}
+\label{tab:Li:dresel}
+\end{table}
+\subsection{WHQ pattern in Hausa}
+\citet[p.~612]{newmangrammar} summarizes that Hausa applies four intonational patterns at the sentence level: declarative, interrogative, sympathetic address, and vocative, of which the first two are relevant to this study. The declarative pattern, common in both statements and WHQs in African tone languages, is characterized by a gradual downward slope in pitch (known as \textit{downdrift}) \citep{downing}. Specifically, several studies have reported that the final H tone often changes into a falling tone in WHQs \citep{kk,miller,newmangrammar}. However, as shown in \tabref{tab:Li:whqpattern}, some observations report nearly opposite findings, with the final syllable described as either having a rising pattern \citep{dresel1977} or being raised overall \citep{meyers1976aspects}.
+
+\begin{table}
+
+{\begin{tabularx}{\textwidth}{lQ}
+\lsptoprule
+Source & WHQ patterns \\
+\midrule
+\citet{kk} &overall higher-pitched declarative pattern with final H becoming F \\
+\tablevspace
+\citet{meyers1976aspects}& raised pitch in the final syllable  \\
+\tablevspace
+\citet[p.101]{dresel1977} & final rising \\
+\tablevspace
+\citet{lindau1986}& less slopes and optional final rising\\
+\tablevspace
+\citet{miller} & final H becomes F \\
+\tablevspace
+\citet[p.~613]{newmangrammar}  & {mandatory Q-morpheme and optional key raising} \\
+\lspbottomrule
+\end{tabularx}}
+\caption{Descriptions of intonation patterns}
+\label{tab:Li:whqpattern}
+\end{table}
+
+Different than other analyses, Newman proposes a separate morpheme, the \textit{Q-morpheme}, to account for the final syllable change in WHQs.\footnote{In \citet{newmans1981q}, the Q-morpheme is proposed to appear in both YNQs and WHQs with the same effects. In the later work, \citet[p. 497]{newmangrammar} clarifies that the L tone component is optional for YNQs in Standard Hausa but mandatory for WHQs.} This Q-morpheme has two effects \REF{ex:Li:effects} on the final syllable to which it is attached.
+
+\ea \label{ex:Li:effects}
+\begin{xlist}
+    \ex \label{ex:Li:L-tone} L-tone: The Q-morpheme will add a L tone if the final syllable bears a H tone, thereby producing a HL. If the final syllable ends in L or HL, the L-tone component will apply vacuously. \\
+    \ex \label{ex:Li:Lengthening} Lengthening: The Q-morpheme lengthens a short vowel in a final CV syllable; otherwise, the length component has no surface effect.
+\end{xlist}
+ \z
+
+\citet[p. 497]{newmangrammar} argues that historically the Q-morpheme had a segmental shape, possibly \emph{*à}, of which the vowel length and L tone are the only vestiges of the modern-day Hausa. Similar markers can be found in other languages in West and Central Africa such as /yà/ in Galambu (I.A.2) and Ron (I.A.4). \tabref{tab:Li:qmorpheme} lists how syllable structures interact with the Q-morpheme in WHQs where the CV-H syllable has both effects, whereas CVC-L has neither.
+%editor note: \emph added to highlight '*a'.
+\begin{table}
+	\begin{tabular}{p{0.2\textwidth}p{0.42\textwidth}p{0.2\textwidth}} \lsptoprule
+		Final syllable &  UR $\rightarrow$ SR after Q affixation  & Q effect(s) \\\midrule
+		\multirow{2}{*}{CV-H} & \textit{wà: záì \textbf{fìtá} $\rightarrow$ \textbf{fìtâ:}} \newline ``Who will go out?''& \multirow{2}{*}{length + L tone} \\ \midrule
+		
+		\multirow{2}{*}{CV-L} &\textit{yàùshè tá \textbf{háìhù}} $\rightarrow$ \textbf{\textit{háìhù:}}\newline ``When did she give birth?'' & \multirow{2}{*}{length}\\ \midrule
+		
+		\multirow{2}{*}{CVV-H} & \textit{kú\texthtd ín wánnàn dáwà \textbf{né:} $\rightarrow$\textbf{nê:}} \newline ``How much does it cost?''  &\multirow{2}{*}{L tone} \\\midrule
+		
+		\multirow{2}{*}{CVC-L}& \textit{ìná: ká gá \textbf{yá:ròn} $\rightarrow$ \textbf{yá:ròn}} \newline ``Where did you see the boy?'' &  \multirow{2}{*}{vacuous addition}\\
+		\lspbottomrule
+	\end{tabular}
+	\caption{Q-morpheme effects on final vowels in WHQs}
+	\label{tab:Li:qmorpheme}
+\end{table}
+
+% and part of the pitch assignment in questions should be ascribed to the tonemic/phonological level regardless of the type of intonation employed.
+
+Both the lengthening and the L-tone effect largely reflect what is termed as \textit{lax question prosody} by \citet{rialland2009lax}, which makes use of falling pitch contour, breathy termination, final open vowel, and vowel lengthening to prosodically signal YNQs. This prosody is commonly found along the Macro-Sudan Belt, and specifically among Niger-Congo, Nilo-Saharan, and Afro-Asiatic families \citep{Guldemann2008}. Hausa has not been reported to use lax prosody in YNQs. The effects induced by the Q-morpheme, although similar to lax prosodic features, are only obligatory in WHQs.
+
+There is no definitive conclusion from previous phonetic studies on whether the falling glide is an intonational effect or due to the potential Q-morpheme. In fact, \citet{dresel1977} notes that there is a significant rise in the final syllable followed by a breathy voice at the end of WHQs, which might have given the impression of a fall. In addition, there is no comparison concerning the duration of the final vowel between WHQs and statements.
+
+\subsection{The current study}
+Building upon Newman's Q-morpheme, this study aims to test two effects potentially induced by the Q-morpheme. The first hypothesis (H1) posits that if the Q-morpheme consists of a L-tone component, the pitch-lowering effect will only apply to the H-toned vowel at the end of WHQs. Therefore, the pitch values of the final H-toned vowel in WHQs will be lower than those in the corresponding statements. To verify H1, the pitch values of final vowels in WHQs will be compared to those in statements.
+
+The second hypothesis (H2) suggests that the Q-morpheme triggers a vowel-lengthening effect that only surfaces on final short vowels in CV syllables, thereby neutralizing the contrast between long and short vowels. To verify H2, the duration of final vowels will be measured and compared between statements and WHQs, as well as across different syllable types.
+
+\section{Phonetic experiment}
+
+\subsection{Participants}
+Eight Hausa speakers participated in the study. Two male speakers (age 25--30) were recorded in a soundproof booth in the Phonetics Lab in the Linguistics Department at Stony Brook University. Participants were given enough time for preparation to get familiar with the reading sample. The rest of the speakers (six females, age between 25--40) were asked to record themselves remotely by using their own phone in a quiet room and save their audio as .wav files.
+
+\subsection{Material}
+The reading material selected for recording consisted of 12 WHQs and 12 corresponding statements. These two types of sentences differ only in the first lexical item: statements featured the content word \textit{kàntí:} “(in the) store”, whereas WHQs included the question word \textit{ìná:} “where”. To avoid placing the target word in the utterance-final position, a carrier sentence \textit{tá cê:} ``she said" was used following the target word. Two examples are provided in \tabref{tab:Li:reading}.
+
+\begin{table}
+\caption{Examples from the reading material}
+\label{tab:Li:reading}
+\small
+{\begin{tabular}{@{}ll@{}}
+  \lsptoprule
+   WHQ & Statement \\ 
+\midrule
+\parbox{.48\textwidth}{
+\gll ìná:   tá  gá  \textbf{àgó:gó}, tá  cê: \\
+where she see-\textsc{pt} clock-\textsc{sg}? she say-\textsc{pt}\\
+  \glt `{}``where did she see a clock?'' she said.'
+  }
+&
+\parbox{.5\textwidth}{
+        \gll kàntí:  tá gá \textbf{àgó:gó}, tá cê:\\
+            Store she see-\textsc{pt} clock-\textsc{sg}, she say-\textsc{pt} \\
+  	\glt `{}``In the store, she saw a clock." she said.'\\
+}
+\\
+  	\lspbottomrule
+ \end{tabular}}
+\end{table}
+
+The target word list consists of 12 words varying in their final syllable structures (4 with CV, 6 with CVV, and 2 with CVO) and final tones (4 for each H, L, HL group), as shown in \tabref{tab:Li:wordlist}. The penultimate syllables in the target words were kept consistent with a H-toned heavy syllable. While efforts were made to create a balanced list, three combinations are missing from the list, namely CV-HL, CVO-H and CVO-L. The absence of CV-HL is due to the fact that the contour HL is only associated with heavy syllables. CVO-H and CVO-L are absent because word-final consonant codas are rare in Hausa and seldom carry H or L tones. There are only three CVO-H/L lexical items out of 1668 core words in WOLD, none of which have a H-toned penultimate heavy syllable or can be properly embedded into the carrier sentences. The total number of tokens is 192 (= 8 speakers × 12 words × 2 sentence types). 
+
+\begin{table}
+	\caption{List of target words selected for the reading material}
+	\begin{tabular}{llll}
+		\lsptoprule
+		Syllable & H & L & HL \\
+		\midrule
+		CV &  {\textit{àgó:gó} `clock'  }& \textit{sàrbé:tì} `towel' & -- \\
+                   &   \textit{àbíncí} `meal' & \textit{bá:bà} `aunt' & --\\
+		\midrule
+		CVV &  {\textit{ká:tá:kó:} `board' } & {\textit{zó:bè:} `ring' }&\textit{àbín shâ:} `drinks' \\
+                    &    \textit{bú:tú:tú:} `chimney' & \textit{bú:kè:} `helmet' & \textit{bákín sâ:} `black ox'\\
+		\midrule
+		CVO & -- & --&    \textit{bákín bût} `black boot'\\
+		     &   &   &     \textit{bákín kwât} `black coat'\\
+		\lspbottomrule
+	\end{tabular}
+	\label{tab:Li:wordlist}
+\end{table}
+
+Although vowel quality should ideally be controlled, as it might interact with vowel duration, it is difficult to balance vowel quality, syllable structure, and tone while also maintaining sufficient tokens. Additionally, intrinsic duration differences due to vowel quality are less significant in a language such as Hausa where vowel length is contrastive.
+
+\subsection{Data collection}
+The data collection involved three major steps: auto-segmentation, manual inspection, and data extraction. Firstly, the Montreal Forced Aligner (MFA) tool \citep{mfa} was used for automatic phonetic alignment. Once the segmental annotation was completed by MFA, TextGrid files were automatically generated based on this segmentation.
+
+Secondly, a manual inspection was conducted using Praat \citep{praat2022} to verify the accuracy of the segmentation boundaries. The inspection process followed a basic principle: the onset and offset of the vowel were defined as the start and end points of the region where at least two formants could be clearly traced, and a stable formant band with relatively high amplitude can be observed in between. Aspiration and transitional phases of preceding consonants were excluded from the vowel phase. For CVO syllables, the vowel was identified as ending before the silent phase of the obstruent. 
+
+Finally, data extraction was completed by a Praat script \citep{anja}. The target token for analysis was the last vowel in each sentence. The script extracted duration, intensity, and F0 at 10 equidistant points per sonorant phase. All extracted data were saved in a .csv format file and further analyzed in R \citep{rstudio}. Outlier data points were filtered out, such as F0 values below 100Hz or above 350Hz, and duration longer than 200 ms, leaving 83.5\% of the original data. Linear mixed-effects models were used for statistical analysis, with acoustic parameters (F0 or duration) as the response variable and participants treated as the random effect. Fixed effects included sentence type (Q or S), tone (HL, H, or L), and syllable type (CV, CVO, CVV).
+
+\section{Results}
+\subsection{Overall contours}
+\figref{fig:Li_fig1:8speaker} displays the contours of the final syllables from eight speakers. The horizontal panels represent H, L, and HL tones, and the vertical panels indicate the individual speakers.  The first observation is that, although there are individual differences among the speakers, none of them shows a noticeable rising contour, except Speaker 4, who shows a slight rising ``upflip" towards the end of HL-ending statements. All speakers have an overall falling contour for both statements and WHQs, though the steepness of the slope differs across tones and speakers. Three speakers (S4, S6, S7) demonstrate a steeper falling slope for all three tones. Five speakers (S1, S2, S3, S5, S8) show a relatively less steep slope for the level tones, especially for the H tone.
+
+The second observation is an overall higher pitch in WHQs compared to statements, especially among H-tone vowels. Speakers S3, S4, S6, S7, and S8 display a notably higher pitch for WHQs, particularly in H-tone endings. In the L-tone columns, S3, S6, and S7 also have higher pitch patterns in WHQs. There is greater variation among the HL-toned vowels: one speaker (S1) has a higher pitch in statements, while others have the opposite pattern (S2, S3, S7), and some do not show remarkable differences. Generally, the pitch contours for WHQs and statements are largely similar, but WHQs tend to have a slightly higher pitch overall.
+
+\begin{figure}
+	\includegraphics[scale=0.55]{figures/LiFig1.png}
+	\caption{Final vowel contours from eight speakers}
+	\label{fig:Li_fig1:8speaker}
+\end{figure}
+
+
+\figref{fig:Li_fig2:2speaker} shows two distinct patterns on the sentence level from two speakers (S2 male and S7 female). The speaker S2 shows little difference between two sentence types while S7 displays a pitch raise in WHQs. Two sentence pairs, ending with a CV-H syllable \textit{àgó:gó} and a CVV-H syllable \textit{ká:tá:kó:} respectively, were selected to see whether a final falling can be observed in the H-toned WHQs as Newman stated. The first lexical items in the sentence pair,\textit{ ìná:} in WHQs and \textit{kàntí:} in statements, were excluded in \figref{fig:Li_fig2:2speaker}. It can be seen that the starting point of the WHQ (blue) is consistently positioned above the statement (red) for both speakers in both sentence pairs. However, for the male speaker S2, the final syllables in both sentence pairs do not differ markedly from each other. For the female speaker S7, a greater pitch difference can be seen throughout the sentences, and a sharp fall is captured at the end of both sentences, especially in the sentence ending with \textit{ká:tá:kó:}. In addition, the higher pitch of WHQs is most apparent at the beginning of the pitch contour corresponding to the lexical items \textit{tá gá} (``she saw"), particularly for the male speaker S2.\footnote{The author, who is not a native speaker of Hausa, noted that it was generally possible to identify a recording as statement or WHQ based on the pitch of \textit{tá gá.}}
+
+\begin{figure}
+\includegraphics[scale=0.48]{figures/LiFig2mod.pdf}
+\caption{Questions (blue) and statements (red) ended with a CV-H syllable \textit{àgó:gó} (upper) and a CVV-H syllable \textit{ká:tá:kó:} (bottom) from a male speaker S2 (left) and a female speaker S7 (right)}
+\label{fig:Li_fig2:2speaker} 
+\end{figure}
+
+\subsection{F0 Results}
+Two different types of F0 values of the final syllable were measured: absolute F0 values F0$_{abs}$, which are obtained directly from data, and referenced F0 values F0$_{ref}$, which are derived from the ratio of the F0 of the final syllable to the F0 of the penultimate syllable.
+
+Both F0$_{abs}$ and F0$_{ref}$ were fitted into a linear mixed effect model, where the fixed effects included \textit{Tone} (H, L, HL), \textit{Sentence Type} (\textit{Q} for WHQs,\textit{ S} for statements), and \textit{Duration} (ms) of the vowels. The random effect was \textit{Participants}. The best-fitted model was selected by comparing different models using ANOVA with the lowest AIC values and the highest likelihood. 
+
+The best fitted linear mixed-effects model with the lowest AIC values for F0 analysis revealed that \textit{Sentence Type} and \textit{Tone} were significant predictors (\textit{p}= 0.004** and <2.2e-16***, respectively). \tabref{tab:Li:f0abs} presents the results of the post-hoc analysis using Tukey's test for comparing the difference between Q and S in three different tone groups. In all three types of final tones, the difference between Q and S (indicated by \textit{Diff Q-S }in \tabref{tab:Li:f0abs}) has always been positive values (estimate >0), meaning the pitch value for Q is higher than S. Specifically, H-toned syllables were found to have a greatest difference between Q-S (5.79Hz), while HL-toned syllables have the least (2.55Hz). L-toned syllables, being in the middle, has a Q-S difference of 3.07 Hz.
+
+\begin{table}
+\begin{tabular}{lrrrrr}
+\lsptoprule
+Diff Q-S & estimate & SE & df & t.ratio & p.value\\
+\midrule
+H & 5.79& 1.283 &1868 &  4.513&  <.0001***\\
+L  & 3.07 &0.777& 1868 &  3.951&  0.0001***\\
+HL& 2.55 &1.029 &1868 &  2.475&  0.0134*~~~~\\
+\lspbottomrule
+\end{tabular}
+\caption{Absolute F0 difference between Q and S with Tukey's test}
+\label{tab:Li:f0abs}
+\end{table}
+
+The comparison of the pitch in final syllables appears to contradict Newman’s predictions that a L-tone morpheme is added in WHQs. Rather, all final syllables have a higher pitch in WHQs than statements. This is more similar to what has been called a register raise \citep{inkelas} or key raising \citep{newmangrammar} documented in Hausa intonation. The raising is quite common for YNQs in many tone languages such as Mandarin \citep{Shih} and Embosi \citep{embosi}.
+
+Since the overall raising might cancel out the pitch lowering potentially induced by the Q-morpheme, a referenced F0 ratio was also examined to observe how the pitch of final syllables varies relative to the preceding syllable. This is feasible because in all tokens, the penultimate syllables were controlled as a bimoraic H-toned syllable. 
+
+\ea
+$F0_{\text{ref}} =  \frac{\text{final\ mean\ f0\ (Hz)}}{\text{penultimate \ mean \ f0\ (Hz)}}$
+\z
+
+Likewise, F0$_{ref}$ was fitted into the linear mixed-effects model where \textit{Tone} was a significant predictor (\textit{p} =9.680e-06***). The post-hoc analysis in \tabref{tab:Li:f0ref} reveals a significant F0$_{ref}$ difference between Q and S exclusively in H-tone group. This can be seen from the estimate of -0.037 in \tabref{tab:Li:f0ref}, which indicates that H-toned vowels in WHQs have a lower pitch compared to those in statements. \figref{fig:Li_fig3:pitch} shows two types of F0 values across three tone groups where the significance levels indicate the differences between WHQs and statements.
+
+\begin{table}
+\begin{tabular}{lrrrrr}
+\lsptoprule
+Diff Q-S & estimate & SE & df & t.ratio & p.value\\ 
+\midrule
+H & -0.037& 0.013& 1873&  -2.839 & 0.005**\\
+
+L &-0.002 &0.008& 1870&  -0.318&  0.751~~~~\\
+
+HL &0.007& 0.010& 1870  & 0.703 & 0.482~~~~\\
+\lspbottomrule
+\end{tabular}
+\caption{Referenced F0 difference between Q and S with Tukey's test}
+\label{tab:Li:f0ref}
+\end{table}
+
+The result from the F0$_{ref}$ aligns with Newman’s proposal that only H-toned final syllables are subject to the L-tone effect when a Q-morpheme is attached. An overall pitch raise was observed across all three groups, with the H-toned group showing the greatest increase and the L-toned group the least. It is likely that the pitch lowering of H-toned syllables could be obscured by the overall raising if not compared with the penultimate syllable.
+
+\begin{figure}
+\centering
+\includegraphics[scale=0.62]{figures/LiFig3.pdf} 
+\caption{Violin plots showing Absolute and Referenced F0 values across three tone groups. Significance levels in both plots correspond to the \textit{p}-values from Tables \ref{tab:Li:f0abs} and \ref{tab:Li:f0ref}, indicating the F0 differences between WHQs and statements.}
+\label{fig:Li_fig3:pitch} 
+\end{figure}
+
+\subsection{Duration}
+To verify whether the Q-morpheme causes lengthening of a final short vowel, a referenced duration was used to balance individual speech rates and account for the influence of tone shape \citep{gordon, zhang} and syllable position \citep{dresel1977} on vowel duration. Referenced duration Dur$_{ref}$ is defined as the proportion of the duration of the final sonorous phase relative to the total duration of the last two sonorous phases. For instance, the referenced duration of the final vowel in  \textit{ká:tá:kó:} is calculated by dividing the duration of the final /ó:/ by the sum of the duration of both the final /ó:/ and the penultimate vowel /á:/.
+
+\ea
+$Dur_{\text{ref}} =  \frac{\text{final\ sonourance\ Duration\ (ms)}}{\text{penultimate\ sonourance\ Duration\ (ms) + final \ sonourance\ Duration\ (ms)}}$
+\z
+
+The best fitted linear mixed-effects model indicated significant main effects of \textit{Sentence}, \textit{Tone}, and \textit{Syllable} ($p$ <2.2e-16*** for all three factors). Additionally, interaction effects were observed between \textit{Tone$\sim$Sentence} ($p$ =1.744e-05***), and \textit{Sentence$\sim$Syllable} ($p$ =9.536e-07***). \tabref{tab:Li:duration} and \figref{fig:Li_fig4:duration} demonstrate that all groups, except CVV-HL, show a significantly greater duration in WHQs than statements. In terms of the Q-S differences among syllable types, the largest duration increase was observed in CV-H (0.054) followed by CVO (0.043). CV-L, CVV-H, and CVV-L have very close Q-S differences (from 0.023 to 0.027). CVV-HL is the only group that does not show a significant Q-S difference, with Q being slightly lower than S, hence the negative estimate (-0.008). 
+\begin{table}
+    \begin{tabular}{lrrrrr}
+        \lsptoprule
+        Diff Q-S &  estimate & SE & df & t.ratio & p.value \\    \midrule
+CV-H   & 0.054  & 0.008  & 1868  & 7.053  & <.0001*** \\
+CV-L   & 0.023  & 0.007  & 1868  & 3.325  & 0.0009*** \\
+CVO-HL & 0.043  & 0.009  & 1868  & 4.935  & <.0001*** \\
+CVV-H  & 0.027  & 0.007  & 1868  & 3.602  & 0.0003*** \\
+CVV-L  & 0.020  & 0.005  & 1868  & 3.954  & 0.0001*** \\
+CVV-HL & -0.008 & 0.006  & 1868  & -1.324 & 0.1856~~\,\,~ \\
+
+        \lspbottomrule
+        \end{tabular}
+    \caption{Duration changes in tone and syllable combinations}
+    \label{tab:Li:duration}
+\end{table}
+
+\begin{figure}
+	\includegraphics[width =0.95\textwidth]{figures/LiFig4.png}
+	\caption{Bar plots showing Referenced Duration across all tone and syllable combinations. Significance levels correspond to the p-values from Table \ref{tab:Li:duration}, indicating the duration differences between WHQs and statements.}
+	\label{fig:Li_fig4:duration}
+\end{figure}
+
+Moreover, to examine if there is any length neutralization, \tabref{tab:Li:durneutral} compares short vowels in CV and CVO syllables (in both questions and statements, labeled as CV(Q), CVO(Q), CV(S), and CVO(S), respectively) and long vowels in CVV syllables (only in statements, labeled as CVV(S)). For both H- and L-toned vowels, there is a significant duration difference between CV(S) and CVV(S), indicating that in neutral conditions (before the possible affixation of the Q-morpheme), CV syllables have a shorter vowel duration than CVV syllables. However, when the short vowels appear in WHQs sentence-finally, the difference between CV(Q) and CVV(S) is neutralized (\textit{p}-value = 1 for H-toned, and 0.651 for L-toned CV(Q)- CVV(S)), possibly due to the vowel-lengthening effect of the Q-morpheme.
+
+For the HL-toned group, the neutralization pattern was not observed. The duration difference between CVO(S) and CVV(S) confirms that the vowel in CVO is significantly shorter than that in a CVV syllable in a neutral context. However, unlike the H- and L-toned groups, this difference was not neutralized after the CVO was placed in WHQs, as indicated by the \textit{p}-value of HL-toned CVO(Q) - CVV(S) still remaining <0.001.
+
+This confirms that the Q-morpheme lengthens the short vowels in CV syllables in WHQs regardless of tone quality, thereby neutralizing the duration difference between short and long vowels. This aligns with Newman's predictions, and further suggests that the Q-morpheme adds one mora of length to the CV syllable. Although the vowels in CVO syllables are also phonetically short and get lengthened in WHQs, they do not undergo a length neutralization.
+ 
+\begin{table}
+\begin{tabular}{llrrrrr}
+    \lsptoprule
+    Tone & Comparison & Estimate & SE & df & t.ratio & p.value \\ \midrule
+    \multirow{2}{*}{H} & CV(S) - CVV(S) & -0.056 & 0.008 & 1868 & -7.350 & <.001*** \\
+                       & CV(Q) - CVV(S) & -0.002 & 0.008 & 1868 & -0.195 & 1.000~~~~~ \\ \midrule
+    \multirow{2}{*}{L} & CV(S) - CVV(S) & -0.036 & 0.006 & 1868 & -5.927 & <.001*** \\
+                       & CV(Q) - CVV(S) & -0.013 & 0.006 & 1868 & -2.060 & 0.651~~~~~ \\ \midrule
+    \multirow{2}{*}{HL} & CVO(S) - CVV(S) & -0.094 & 0.008 & 1868 & -12.003 & <.001*** \\
+                    & CVO(Q) - CVV(S) & -0.051 & 0.007 & 1868 & -6.979 & <.001*** \\\lspbottomrule
+
+\end{tabular}
+    \caption{Comparisons between monomoraic syllable in WHQs and bimoraic syllables in Statement with the same tone}
+    \label{tab:Li:durneutral}
+\end{table}
+
+
+
+
+\section{Discussion}
+Two hypotheses based on the Q-morpheme were tested. Hypothesis H1 states that the pitch of the final vowel in WHQs will be lower than the statement counterparts due to the L-tone effect of the Q-morpheme. To verify this, two types of F0 values, F0$_{abs}$ and F0$_{ref}$, were examined. The results show that F0$_{abs}$ in WHQs is consistently higher than statements across three different tone groups (Diff Q-S = 5.79Hz for H; 3.07Hz for L; and 2.55Hz for HL). This confirms that an overall pitch raise applies to WHQs, with different tones reacting differently, but it does not directly verify the L-tone effect of the Q-morpheme. A referenced F0, which compares the pitch of the final vowel to that of the preceding syllable, was also measured. The result shows that F0$_{ref}$ is lower in WHQs than in statements exclusively among H-toned vowels. Therefore, it shows that WHQs exhibit both a key raising as an intonation effect and a local L-tone effect due to the Q-morpheme. However, the pitch-lowering effect might be obscured by the overall pitch raise. The F0 results reflect two possible tone-intonation interactions: intonation interacts with underlying lexical tones and with tones introduced by phonological affixation.
+
+Hypothesis H2 predicts that the final vowel duration will be longer in WHQs than in statement counterparts, and this prolonging can only be observable for short vowels. The result, however, shows a significant duration increase occurs in all groups except for the CVV-HL group. Notably, different types of syllables have varying degrees of duration increase: CV has undergone the greatest duration increase (mostly CV-H), followed by CVO syllables, and lastly CVV. I will argue that there are two causes of vowel lengthening. One is the phonological increase induced by the affixation of the Q-morpheme, which is categorical and can result in length neutralization. The other is phonetic lengthening, likely from intonational effects like final lengthening, which does not change short vowels into long ones but only increases the duration that the current syllable can accommodate. The Q-morpheme only applies to CV syllables, while the increase seen in CVO and CVV is caused by phonetic regulation. 
+
+
+First of all, the duration increase seen in the CV group in WHQs is likely caused by the mora affixation from the Q-morpheme. An important duration neutralization is found between CV(Q) and CVV(S), which supports \citet{newmans1981q}'s observation that the length component of the Q-morpheme produces neutralization of the contrast between long and short final vowels. Therefore, the lengthening of CV can be ascribed to the length component of the Q-morpheme. Moreover, the neutralization indicates that the Q-morpheme adds one mora length to the final CV syllable that it attaches to.
+
+In the CVV group, a lengthening effect is observed in simple-toned CVV syllables (H- and L-toned) but not in contour-toned CVV syllables (HL-toned). Regarding the absence of lengthening in CVV-HL syllables, \figref{fig:Li_fig4:duration} shows that CVV-HL syllables in statements have the longest duration among all groups. These syllables may have reached their maximum duration limit both phonologically and phonetically, which prevents any further lengthening from the Q-morpheme or additional phonetic adjustments.
+
+In contrast, an increase was found among the H-toned and L-toned CVV groups, which does not align with Newman's prediction. For simple-toned CVV syllables, the length component (an extra mora) of the Q-morpheme remains unrealized, as seen in the CVV-HL group, because the syllable is fully occupied and leaves no space for affixation. However, there may be a phonetic lengthening that increases vowel duration without altering the current syllable structure. This could also explain why CVV-HL does not undergo lengthening, as the vowels bearing the HL contours are already at their maximum duration. 
+
+Similar to simple-toned CVV syllables, the duration increase in CVO syllables is likely due to a phonetic effect rather than a phonological lengthening induced by the Q-morpheme. This is supported by the fact that vowels in CVO syllables in WHQs remain significantly shorter than long vowels in CVV syllables in statements. The phonetic lengthening is possible because CVO syllables have an obstruent coda, which occupies one mora but may not be optimal for bearing a tone. This allows for greater flexibility in lengthening the short vowel without altering the current syllable structure, for example, by shortening or removing the coda. Future research could explore the duration changes of consonants to better understand how CVO syllables respond to WHQ intonation.
+
+Overall, the production test confirms a local L-tone effect induced by the Q-morpheme on the H-toned vowels at the end of WHQs, which also undergo a pitch raise at the same time. Regarding duration, varying degrees of lengthening are observed in all groups except for the CVV-HL. The lengthening of the CV group is likely due to the Q-morpheme's length component, which results in length neutralization. The lengthening observed in the CVO and simple-toned CVV groups is likely due to phonetic adjustment that does not alter syllable weight but only lengthens the vowel to the extent that the current syllable can accommodate. 
+
+\section{Conclusion}
+The present study focused on Newman’s Q-morpheme in Hausa, which stands for a good example of how phonology intersects with phonetics in shaping intonation in a tonal language. The production test shows that the Q-morpheme lowers the pitch of the final H-toned vowel relative to the preceding syllable. Additionally, there is an overall rise in pitch in WHQs, possibly due to key raising at the sentence level. This demonstrates that a local L-tone effect interacts with the pitch-raising effect, which likely explains why the L-tone effect is not easily captured at the sentence level.
+
+For the duration change, I argued that there are two types of lengthening in Hausa WHQs. One is phonological and categorical lengthening, which applies to CV syllables and neutralizes the contrast between short and long vowels, as predicted by \citet{newmans1981q}. The other type of lengthening, seen in CVO and simple-toned CVV syllables, should not be considered as the same lengthening effect from the Q-morpheme, as it does not alter the syllable weight. Rather, it may be an intonational effect that phonetically increases the final vowel duration while still fitting within the current syllable structure.
+
+These results confirm that the WHQ pattern in Hausa cannot be attributed solely to the Q-morpheme since the pitch-lowering affects only H-toned vowels but lengthening is not limited to CV syllables. Besides, an overall pitch raise was observed in syllables bearing all three tones, and a non-categorical lengthening was significant in both CVO and simple-toned CVV syllables. These observations suggest that, in addition to the Q-morpheme, other phonetic adjustments or intonational effects are influencing the WHQ patterns in Hausa. Although the current work does not determine which method is more prominent, it reveals that Hausa WHQs are influenced by both phonetic and phonological factors, and indicates an interaction between tone and intonation. 
+
+There are possibly other factors contributing to the observed patterns of Hausa WHQs. One of them could be the focus realization or the word order in the statement carrier sentences: the statement carrier sentences used in this study are similar to “In the store, she saw…” rather than “She saw a… in the store.” One speaker confirmed that this word order is correct but perhaps sounds literary. Besides, the current data also show that H-toned syllables are generally shorter than L-toned syllables in Hausa, suggesting that the correlation between tone and length should be considered when examining syllable duration. Whether this is individual variation or a systematic pattern is worth further exploration.
+
+In future research, it would be valuable to investigate breathy voice, as reported by \citet{dresel1977}, which is considered a key feature of lax prosody. Additionally, a perception test on WHQs could help determine whether phonological affixation or phonetic adjustment has a more dominant effect on perception.
+\section*{Abbreviations}
+\begin{multicols}{2}
+\noindent
+F  \quad Falling tone\\
+F0\quad Fundamental frequency\\
+H \quad High tone \\
+L \quad  Low tone\\
+PT \quad Past tense\\
+Q  \quad Question\\
+SG \quad Singular\\ 
+WHQ\quad  Question-word sentence\\
+YNQ\quad  Yes/no question
+
+\end{multicols}
+
+\section*{Acknowledgements}
+I want to express my gratitude to Ellen Broselow, Marie Huffman, Jiwon Yun, and Lori Repetti for their valuable feedback on this work. I am also deeply thankful to all Hausa speakers who participated in this study, especially to Huzaifa Dokaji for generously sharing his time and insights. Additionally, I would like to thank two anonymous reviewers for their detailed feedback and suggestions.
+
+\sloppy %this command eliminates a quirk that appears in the bibliography, you can just leave it here.
+
+\printbibliography[heading=subbibliography,notkeyword=this]
+
+\end{document}
+
+%To be added to the ACAL \LaTeX{} template, someday: glossing with leipzig, advanced instructions for arrows

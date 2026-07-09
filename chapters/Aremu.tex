@@ -1,0 +1,956 @@
+\documentclass[output=paper,colorlinks,citecolor=brown,draftmode
+% ,hidelinks
+% showindex
+]{langscibook}
+\ChapterDOI{10.5281/zenodo.20285228}
+\author{Daniel Aremu\affiliation{Goethe-Universität Frankfurt}}
+
+%*I’d like to thank my informants Fedelis Adda and Emmanuel Ayiredaga Apebuga for providing data and judgements. All remaing errors are mine.
+
+%Insert your title here
+\title{Focus and the association with focus sensitive particle \textit{yerane} in Kasem}
+%\title{The syntax of focus sensitive particle \textit{only} in Kasem}
+\abstract{This paper investigates the syntax of focus and the focus sensitive particle \textit{yerane} `only' in Kasem (Mabia, formerly Gur). I begin by discussing focus realization in Kasem, and sketched an analysis for it. Next, I discuss the syntactic position of the exclusive particle \textit{yerane} by comparing it with the German's \textit{nur}, and argue that unlike German's Extended Verbal Projection (EVP) claim by \citet{buring2001syntax}, Kasem's \textit{yerane} is adnominal in nature.\footnote{The term \textit{adnominal} is used interchangeably with \textit{adfocal} in this paper. However, the latter is used in a more wholistic way, i.e. when discussing adjunction to both nominals and non-nominals.} However, I show that \citeauthor{buring2001syntax}'s \citeyearpar{buring2001syntax} EVP analysis for \textit{nur} may be extended to Kasem, but with an important additional assumption: that \textit{yerane} is licensed by a high covert exclusive operator (Op\textsubscript{only}) which occupies an EVP position, and is responsible for the exclusive semantics. Thus, following earlier studies, I assume that this is a bipartite analysis which requires that the exclusive interpretation comes from the high exclusive operator [Op] instead of the adnominal-\textit{yerane} itself \citep[see][a.o.]{bayer1996directionality, bayer1999bound, bayer2018criterial, lee2004syntax, barbiers2010focus, quek2017severing, sun2021bipartite, branan2023anti}. In order to link the high exclusive Op with the adnominal-\textit{yerane}, I assume a purely syntactic agreement system.
+%Therefore, the paper does not only provide a syntactic analysis for \textit{yerane}, but also a cross-linguistic support for the bipartite approach to the exclusive focus particle \textit{only}.
+%This article investigates the syntactic distribution and the associative nature of the focus-sensitive operator \textit{yerane} ('only') in Kasem.
+
+%-----------------------------------------------------------------------------------------
+
+%Because of their importance to the study and understanding of focus systems and realization, focus-sensitive particles have received considerable attention, cross-linguistically. However, most of this attention is geared toward Indo-European languages such as English, Dutch, German, French, Greek, etc. Some other non-Indo-European languages with similar attention include Mandarin Chinese, Vietnamese, Japanese, etc. African languages have received very little exploration with regard to the nature of focus-sensitive particles.
+}
+
+\IfFileExists{../localcommands.tex}{
+   \addbibresource{../localbibliography.bib}
+   \input{../localpackages}
+   \input{../localcommands}
+   \input{../localhyphenation}
+   \boolfalse{bookcompile}
+   \togglepaper[23]%%chapternumber
+}{}
+
+\begin{document}
+\maketitle
+
+%temporary hack from MJKD to fix example numbering not restarting
+% \setcounter{exx}{0}
+
+\section{Introduction}
+
+Because of their significance to the study and understanding of focus system and realization, focus-sensitive particles have received considerable attention, cross-linguistically. However, most of these studies are geared towards Indo-European languages such as English, Dutch, German, French, Greek, and so on \citep[cf.][]{rooth1985association, rooth1992theory, bayer1996directionality, bayer1999bound, kayne1998overt, barbiers2010focus, barbiers2014syntactic, iatridou2016our, quek2017severing}. Some non-Indo-European languages that have equally received some amount of attention include Mandarin Chinese, Vietnamese, Japanese, and so on \citep[cf.][]{lee2004syntax, hole2017crosslinguistic, erlewine2014a, erlewine2014b, erlewine2018focus, sun2021bipartite}. African languages have received very little attention with regard to the nature of the focus-sensitive particles like \textit{even}, \textit{also} and \textit{only}. See for instance, \citet{HartmannZimmermann2008}, \citet{Grubic2015} and \citet{carstens2020only} for studies on Bura, Ngamo and Nguni respectively. When it comes to the syntax of focus sensitive particles, African languages, or at least West African languages present interesting questions. This is partly because of the kinds of focus strategies that these groups of languages employ. For instance, while languages like English and German mark focus prosodically, most West African languages primarily mark focus morphosyntactically. There is usually a dedicated morphological focus marker that is present when an element is focalized. A focus constituent can also be fronted to the left periphery for interpretive purposes \citep{kiss1998identificational, cruschina2009syntactic, cruschina2012discourse, bianchi2016focus}. These different strategies and different focus positions leave us with questions such as what is/are the syntactic position(s) of focus sensitive particles like \textit{even}, \textit{also} and \textit{only}?\footnote{\citet{beaver2008sense} categorizes these three FSPs as \textit{Conventional Association Particles} because, according to them, they require the presence of a focus constituent in their scope. \citep[cf.][a.o.]{erlewine2014b}} Does the syntactic position of the focus sensitive particles suffice for the syntactic requirement of association with focus? This study aims to answer these questions by focusing on the exclusive focus sensitive particle (FSP) \textit{yerane} `only' in Kasem.
+%The phenomenon of focus sensitivity has received a lot of attention, first in the field of semantics, and also in the field of syntactic. 
+
+
+%There is a consensus (to a very large extent) in the literature about what a focus is. Semantically, a focus signals the availability of other alternatives (apart from the focus itself) \citep[see][]{rooth1985association, rooth1992theory, krifka2008basic, beaver2008sense}.\footnote{I use both the word \textit{focus} and \textit{focused constituent} in this paper to mean the constituent that is in focus. Both are used interchangeably.} Syntactically, a focus is that part of a sentence that is assigned prominence or give more salient information in comparison to the other parts (the background) \citep[see][]{abohetal2007focus, jackendoff1972semantic}. There are certain particles whose use presupposes the presence of a focus in a discourse. They are often called Focus Sensitive Particles (henceforth FSP).\footnote{In the literature, they are also called \textit{focus sensitive operators}, \textit{focus operators} and \textit{alternative sensitive particles} \citep[cf.][]{HartmannZimmermann2008}. I will use \textit{focus sensitive particle (FSP)} in this paper for clarity sake.} Some of the FSPs include \textit{also}, \textit{even} and \textit{only}.\footnote{\citet{beaver2008sense} categorizes these three FSPs as \textit{Conventional Association Particles} because, according to them, they require the presence of a focus constituent in their scope. \citep[cf.][]{erlewine2014b}} They are sensitive to the focus in a discourse, and the phenomenon is widely called Association with Focus (henceforth AwF). Importantly, however, the so-called association is an indirect one. In other words, the particles act upon the set alternative that the focus invokes, and not the focus itself.
+
+Let us begin with focus, which is the foundation for AwF. Consider the sentences below. The interrogative sentence in (\ref{ex:Aremu:English OF question}) has a \textit{wh}-phrase whose answer is a focused constituent in (\ref{ex:Aremu:English OF ans}).\footnote{Small caps is used to represent the constituents that are focused in the English translation.} The focus indicates the presence of other contextually determined set of alternatives such as [bread, avocado, banana, fries, ...]. In other words, John could have eaten something else apart from a \textsc{sandwich}. 
+
+\ea \label{ex:Aremu:English focus} 
+
+\begin{xlist}
+
+\ex What did John eat? \label{ex:Aremu:English OF question}
+\ex John ate \textsc{a sandwich}. \label{ex:Aremu:English OF ans}
+
+\end{xlist} 
+\z
+
+
+If we add an FSP like \textit{only} to the focus answer as in (\ref{ex:Aremu:English OF AwF}), we get the assertion and the truth condition in (\ref{ex:Aremu:English AwF: Assertion and truth-cond}). The presence of the FSP \textit{only} does not change the assertion of the focus sentence. It however affects the truth condition of the sentence: the sentence is true iff John ate a sandwich and nothing else. FSPs act upon the salient alternatives that the focus evokes. What happens with \textit{only} as an exclusive particle is that it excludes all other salient alternatives except the focus constituent.\footnote{The other conventional association particles (additive \textit{also} and scalar additive \textit{even}) do not affect the truth-condition of the proposition as in (\ref{ex:Aremu:English AwF even and also}). They however presuppose that apart from the focus constituent (sandwich), there is at least one other alternative that is contextually relevant that John ate. The only difference between the two has to do with scalarity. While \textit{also} is non-scalar (\ref{ex:Aremu:English OF AwF 'also'}), \textit{even} is a scalar particle (\ref{ex:Aremu:English OF AwF 'even'}). For example, in (\ref{ex:Aremu:English OF AwF 'even'}), the presence of \textit{even} presupposes that the focus associate is ranked high on the scale of what John is likely not going to eat (in comparison to other salient alternative(s)). In other words, while the focus associate is high on the relevant scale, the alternatives are ranked low. Thus, the lower we go on the relevant scale, the more likely the alternatives become \citep[see a.o.,][]{konig1991meaning, jacobs1983fokus, beaver2008sense, hole2017crosslinguistic}.
+
+\ea \label{ex:Aremu:English AwF even and also} 
+
+\begin{xlist}
+
+\ex John also ate a \textsc{sandwich} \label{ex:Aremu:English OF AwF 'also'}.
+\ex John even ate \textit{only} a \textsc{sandwich}. \label{ex:Aremu:English OF AwF 'even'}
+
+\end{xlist} 
+\z
+}
+
+\ea \label{ex:Aremu:English AwF} 
+
+\begin{xlist}
+
+\ex Did John eat a sandwich and a banana? \label{ex:Aremu:English OF question2}
+\ex John ate \textit{only} a \textsc{sandwich}. \label{ex:Aremu:English OF AwF}
+
+\end{xlist} 
+\z
+
+\ea \label{ex:Aremu:English AwF: Assertion and truth-cond} 
+
+\begin{xlist}
+
+\ex Asserts: John ate a sandwich \label{ex:Aremu:English OF Assertion}
+\ex Entails: John ate nothing else (apart from a sandwich) \label{ex:Aremu:English OF truth-condition}
+
+\end{xlist} 
+\z
+
+
+Kasem is a Mabia (formerly Gur) language that is spoken predominantly in Northern Ghana, Burkina Faso, and Togo. It is an SVO language with noun classes. Interaction between the noun classes and number is reflected on the choice of the determiner \citep[see][]{awedoba1996kasem}. The sentence in \REF{ex:Aremu:Canonical word order} shows a canonical word order in Kasem. The canonical word order structure is represented in \REF{ex:Aremu:Word order structure}; showing the post-verbal position of the internal argument and the pre-verbal position of the external argument respectively. The T head can be filled with past tense morphemes. When the aspect is imperfective, it is morphologically realized as a suffix to the verb as \textit{-id} as in \REF{ex:Aremu:Canonical word order}. However, in perfective clauses, there is no overt morpheme. The left periphery of the clause (between ForceP and TP) houses the informational structural phrases like TopP and FocP, hence the three dots [...] in the structure in \REF{ex:Aremu:Word order structure}.
+
+\ea \label{ex:Aremu:Kusaal: SVO}
+\begin{xlist}
+
+\ex Tell me something (that I need to know).
+
+\ex \label{ex:Aremu:Canonical word order}
+\gll Adam pa'a kɔdig-id nua.\\
+ Adam \textsc{imm.pst} slaughter-\textsc{ipfv} fowl\\
+\glt `Adam was slaughtering a fowl.'	
+
+\end{xlist}
+\z
+
+\ea \label{ex:Aremu:Word order structure}
+ [\textsubscript{ForceP} ... [\textsubscript{TP} DP\textsubscript{EA} [\textsubscript{T'} T [AspP V+v+Asp [\textsubscript{vP} $\langle$DP$_{EA}\rangle$ [\textsubscript{v'} $\langle$V+v$\rangle$ [\textsubscript{VP} $\langle$V$\rangle$ DP\textsubscript{IA} ]]]]]]]
+\z
+
+
+Lastly, there are a few linguistic studies on Kasem, which makes it a ``fertile ground'' for linguistic research. See \citet{awedoba1996kasem} and some of the references therein for a list of studies on Kasem. See also \citet{bodomo2020mabia} and the other studies in that collection for a survey of Mabia languages in general.
+
+Having given a brief introduction to focus, AwF, and the syntax of the language, the remaining part of this paper is based on the following sections. \sectref{sec:Aremu:FocusRealization} begins with a description of focus realization in Kasem, and then an analysis would be proposed which sets the stage for AwF. In \sectref{sec:Aremu:FocusAssociation}, I discuss the syntactic property of \textit{yerane} and show that it indeed has an \textit{adnominal} realization. A bipartite analysis with agreement between a high exclusive Op and \textit{yerane} is provided in \sectref{sec:Aremu:ProposedAnalysis}. Lastly, a summary and areas for further research are presented in \sectref{sec:Aremu:Conclusions}.
+
+\section{Focus realization} \label{sec:Aremu:FocusRealization}
+\largerpage
+%As discussed earlier, the use of \textit{only} in a sentence, indicates the presence of a focus in that sentence. Therefore, it is important to know how focus is realized in the language before association with focus can surface. This is why in the first subsection of this section I will briefly describe the focus system in the language. After this, I will introduce and also discuss the data which shows association between FSP \textit{yerane}. At the end of this section, I will argue that \textit{yerane} is an \textit{adfocal} FSP.
+
+\subsection{Focus marking strategy}
+In Kasem, a constituent is marked as focused with the use of a morphological focus marker \textit{mo}. \textit{Mo} forms a constituent with the focus DP, PP, VP and adjunct. All these focus constituents can be realized either in their canonical position (in-situ) or at the left periphery of the clause (ex-situ). For instance, when an object \textit{wh-}question like (\ref{ex:Aremu:object wh-question}) is asked, the answer can be in the form of the sentence in (\ref{ex:Aremu:in-situ object focus ans}) where the focus answer remains in its canonical position followed by \textit{mo}, or it can be fronted to the left periphery as in (\ref{ex:Aremu:ex-situ object focus ans2}). The latter case also has \textit{mo} following the focus constituent.\footnote{I will use the square bracket plus F-marking [XP]$_F$ to distinguish the focus constituent from the background. The focus marker \textbf{mo} will be in bold and it is obligatory.}
+
+\ea \label{ex:Aremu:FirstEx}
+\begin{xlist}
+
+\ex \label{ex:Aremu:object wh-question}
+\gll Bɛ *(\textbf{mo}) Adam go-a?\\
+     what \textsc{foc} Adam slaughter-\textsc{disj}\\
+\glt  `What did Adam slaughter?' 
+
+\ex \label{ex:Aremu:in-situ object focus ans}
+\gll  Adam go [chworo]$_F$ *(\textbf{mo}).\\
+	    Adam slaughter fowl \textsc{foc}\\
+\glt  `Adam slaughtered \textsc{a fowl}.'
+
+\ex \label{ex:Aremu:ex-situ object focus ans2}
+\gll  [Chworo]$_F$ *(\textbf{mo}) Adam go-a.\\
+		fowl \textsc{foc} Adam slaughter-\textsc{disj}\\
+\glt 	`Adam slaughtered \textsc{a fowl}.'
+
+\end{xlist}
+
+\z 
+
+The same strategy is used with regard to adjunct focus. The adverbial focus answer is followed by \textit{mo}. The resulting constituent can be in an in-situ position (\ref{ex:Aremu:in-situ adjunct focus ans}) or an ex-situ position (\ref{ex:Aremu:ex-situ adjunct focus ans}), respectively.
+
+\ea \label{ex:Aremu:2ndEx}
+\begin{xlist}
+
+\ex \label{ex:Aremu:adjunct wh-question}
+    \gll Maŋ-kɔ̄ \textbf{mo} Adam go chworo kom?\\
+		time-which \textsc{foc} Adam slaughter fowl \textsc{def}\\
+	\glt `When did Adam slaughter the fowl?'
+  
+    \ex \label{ex:Aremu:in-situ adjunct focus ans}
+    \gll Adam go chworo kom [diim]$_F$ \textbf{mo}.\\
+		Adam slaughter fowl \textsc{def} yesterday \textsc{foc}\\
+	\glt `Adam slaughtered the fowl \textsc{yesterday}.'
+  
+	\ex \label{ex:Aremu:ex-situ adjunct focus ans}
+    \gll [Diim]$_F$ \textbf{mo} Adam go chworo kom.\\
+	    yesterday \textsc{foc} Adam slaughter fowl \textsc{def}\\
+	\glt  `Adam slaughtered the fowl \textsc{yesterday}.'
+
+\end{xlist}
+
+\z 
+
+
+With respect to V(P) focus, the focus marker \textit{mo} immediately follows the verb if it is an intransitive verb (\ref{ex:Aremu:Kasem Verb focus ans}), i.e. without any internal argument. However, if the verb is transitive, \textit{mo} follows the direct object instead (\ref{ex:Aremu:Kasem VP focus ans}). The consequence of this is ambiguity. The focus could be on the verb itself, the whole verb phrase, or even the direct object. The only way to distinguish between what seems to be ambiguous on the surface is through the current question that the structure answers.
+
+\ea \label{ex:Aremu:3rdEx}
+\begin{xlist}
+
+\ex \label{ex:Aremu:Kasem VP focus} 
+    \gll Bɛ \textbf{mo} Adam kea dīīm?\\
+	   what \textsc{foc} Adam do yesterday\\
+	\glt`What did Adam do yesterday?'
+
+\ex \label{ex:Aremu:Kasem Verb focus ans} 
+     \gll Adam [toŋe]$_F$ \textbf{mo} dīīm.\\
+	Adam  worked \textsc{foc} yesterday\\
+	\glt `Adam \textsc{worked} yesterday.'
+
+\ex \label{ex:Aremu:Kasem VP focus ans} 
+\gll Adam [go chworo kom]$_F$ \textbf{mo} dīīm.\\
+	   Adam slaughter fowl \textsc{def} \textsc{foc} yesterday\\
+ \glt	 `Adam \textsc{slaughtered the fowl} yesterday.'
+
+ \end{xlist}
+\z 
+
+
+The verb and/or verb phrase cannot be fronted in Kasem, whether the verb is doubled (\ref{ex:Aremu:Kasem: Ex-situ V(P) focus}) or not (\ref{ex:Aremu:Kasem: Ex-situ V(P) focus 2}). They remain in their external merged position when they are focused.\footnote{This is unlike other Mabia languages like Kusaal and Likpakpaanl that have verb focus fronting only if the fronted verb is norminalized and have an overt copy in its base position.}
+
+\ea \label{ex:Aremu:4thEx}
+\begin{xlist}
+
+\ex 
+\gll Bɛ mo Adam kea?\\
+	   what \textsc{foc} Adam do\\
+\glt	`What did Adam do?'
+    
+\ex
+\gll *[Toŋe]$_F$ \textbf{mo} Adam toŋe.\label{ex:Aremu:Kasem: Ex-situ V(P) focus}\\
+	   worked \textsc{foc} Adam work\\
+\glt `Adam \textsc{worked}.'
+
+\ex
+\gll *[Toŋe]$_F$ \textbf{mo} Adam \textit{t} .\label{ex:Aremu:Kasem: Ex-situ V(P) focus 2}\\
+	   worked \textsc{foc} Adam \\
+\glt `Adam \textsc{worked}.'
+
+\end{xlist}
+\z 
+
+\subsection{Focus analysis}
+
+For the focus analysis, I assume that \textit{mo} forms a constituent with the focus phrase. Consider the sentences below. They show the different possible placement of \textit{mo} in the clause; it obligatorily follows whatever is the focus constituent. \textit{Mo} follows the direct object in (\ref{ex:Aremu:Kasem: DO focus}), the indirect object in (\ref{ex:Aremu:Kasem: IO focus}), and the adverb in (\ref{ex:Aremu:Kasem: Adv focus}). On the first glance, this examples suggest that \textit{mo} forms a constituent with the focus. As a reviewer pointed out, the post-focal position of \textit{mo} can still be derived via various movements in examples (\ref{ex:Aremu:Kasem: DO focus}) and (\ref{ex:Aremu:Kasem: IO focus}). For instance, assuming that \textit{mo} is the head of a VP-internal FocP and the focused DP moves to Spec,FocP, we could derive (\ref{ex:Aremu:Kasem: IO focus}) by assuming that the direct object moves to a position higher than FocP.
+
+
+
+\ea \label{ex:Aremu:Const}
+\begin{xlist}
+
+\ex \label{ex:Aremu:Kasem: DO focus}
+\gll Adam pɛ [sabu kom]$_F$ \textbf{mo} John diim.\\
+	Adam give money \textsc{def} \textsc{foc} John yesterday\\
+\glt  `Adam gave \textsc{the money} to John yesterday.'
+    
+\ex \label{ex:Aremu:Kasem: IO focus}
+\gll Adam pɛ sabu kom [John]$_F$ \textbf{mo} diim.\\
+	Adam give money \textsc{def} John \textsc{foc} yesterday\\
+\glt `Adam gave \textsc{john} the money yesterday.'
+
+\ex \label{ex:Aremu:Kasem: Adv focus}
+\gll Adam pɛ sabu kom John [diim]$_F$ \textbf{mo}.\\
+	Adam give money \textsc{def} John yesterday \textsc{foc}\\
+\glt `Adam gave John the money \textsc{yesterday}.'
+
+\end{xlist}
+\z 
+
+
+While this is a plausible analysis, the challenge with such an analysis would be to determine the position that the direct object moves to. We would need to assume probably an FP to accommodate the direct object in order to derive the linear order. Such movements would be unmotivated.
+
+Perhaps, example (\ref{ex:Aremu:Kasem: Adv focus}) offers a better evidence for the constituent status of \textit{mo}. Here, we have a case of adverbial focus with \textit{mo} following it. Again, if we wish to derive such a structure by assuming a VP-internal FocP, then we would need two positions to move both the direct object and the indirect object into. 
+
+
+Ex-situ focus offers convincing evidence for our constituency claim here. The fact that each of the focus phrases that are in-situ in (\ref{ex:Aremu:Const}) can be fronted, as in (\ref{ex:Aremu:Const-1}), with an obligatory \textit{mo} following them supports the view that both \textit{mo} and focus phrases form a constituent.
+
+\ea \label{ex:Aremu:Const-1}
+\begin{xlist}
+
+\ex \label{ex:Aremu:Kasem: Ex-situ DO focus}
+\gll [Sabu kom]$_F$ \textbf{mo} Adam pɛ  John diim.\\
+	  money \textsc{def} \textsc{foc} Adam give John yesterday\\
+\glt  `Adam gave \textsc{the money} to John yesterday.'
+    
+\ex \label{ex:Aremu:Kasem: Ex-situ IO focus}
+\gll [John]$_F$ \textbf{mo} Adam pɛ sabu kom diim.\\
+	  John \textsc{foc} Adam give money \textsc{def} yesterday\\
+\glt `Adam gave \textsc{john} the money yesterday.'
+
+\ex \label{ex:Aremu:Kasem: Ex-situ Adv focus}
+\gll [Diim]$_F$ \textbf{mo} Adam pɛ sabu kom John.\\
+	 yesterday \textsc{foc} Adam give money \textsc{def} John \\
+\glt `Adam gave John the money \textsc{yesterday}.'
+
+\end{xlist}
+\z 
+
+
+In order to derive the in-situ focus structure, I use the focus answer in (\ref{ex:Aremu:In-situ OF Ans}) as a template. The assumption is that \textit{mo} adjoins to the focus DP and then projects a functional phrase called \textit{mo}P (\figref{fig:Aremu:Kasem: mo-adjunction}).\footnote{The number [3] is only an index notation that represent feature valuation. We can as well use \textit{val} (which equally stand for a valued feature), à la \citet{PesetskyTorrego2007}.} Nothing hinges on the name of this projection. It can as well be called a DP. It is within the nominal domain, and the features on the focus DP are present at \textit{mo}P.
+
+\ea \label{ex:Aremu:5thEx}
+\begin{xlist}
+
+\ex %\label{ex:Aremu:object wh-question}
+\gll Bɛ *(\textbf{mo}) Adam go-a?\\
+     what \textsc{foc} Adam slaughter-\textsc{disj}\\
+\glt  `What did Adam slaughter?' 
+
+\ex \label{ex:Aremu:In-situ OF Ans}
+\gll  Adam go [chworo]$_F$ *(\textbf{mo}).\\
+	    Adam slaughter fowl \textsc{foc}\\
+\glt  `Adam slaughtered \textsc{a fowl}.'
+
+%\ex \label{ex-situ object focus ans}
+%\gll  [Chworo]$_F$ *(\textbf{mo}) Adam go-a.\\
+%		fowl \textsc{foc} Adam slaughter-\textsc{compl}\\
+%\glt 	`Adam slaughtered \textsc{a fowl}.'
+
+\end{xlist}
+
+\z 
+
+\begin{figure}[p]
+\begin{forest}
+%for tree={s sep=1mm, inner sep=0, l-=1mm}
+[\textit{mo}P
+        [DP
+            [NP\\ chworo\textsubscript{[\textit{u}Foc:3]}\\fowl, name=CompD]
+            [D\\ \varnothing]
+        ]
+        [mo]
+] 
+%\draw[->] (CompV) to[out=south west, in=south] (DP);
+%\draw[semithick,dashed,<-] (CompD) to[out=south west, in=south] (Foc);
+\end{forest}    \caption{\textit{Mo-}adjunction}
+    \label{fig:Aremu:Kasem: mo-adjunction}
+\end{figure}
+
+
+\begin{figure}[p]
+\begin{forest}
+for tree={s sep=0mm, inner sep=0, l-=5mm}
+[FocP
+[Foc\\ {[\textit{i}Foc:\uline{3}]}, name=Foc]
+[TP
+    [DP\\ Adam]
+    [T'
+        [T\\ ${[\textsc{pst}]}$]
+        [vP
+            [DP\\ $\langle$Adam$\rangle$]
+            [v'
+                [v\\ go\\slaughter]
+                [VP
+                    [V\\ $\langle$go$\rangle$]
+                    [\textit{mo}P
+        [DP
+            [NP\\ chworo\textsubscript{[\textit{u}Foc:3]}\\fowl, name=CompD]
+            [D\\ \varnothing]
+        ]
+        [mo]
+]
+                ]
+            ]
+        ]
+    ]
+]]
+%\draw[->] (CompV) to[out=south west, in=south] (DP);
+\draw[semithick,dashed,o-o] (CompD) |- +(0.0,-0.9) -| (Foc);
+%\draw[semithick,dashed,o-o] (CompD) to[out=south west, in=south west] (Foc);
+\end{forest}
+\caption{In-situ focus structure}
+    \label{fig:Aremu:InSituObjFocusTree}
+\end{figure}
+
+
+Next, the structure is built up to the TP level. Then, a FocP is projected in the left periphery (\figref{fig:Aremu:InSituObjFocusTree}). The head of the FocP is null but has an interpretable unvalued feature. It is interpretable because it licenses the focus phrase and is responsible for the focus semantics. \textit{Mo} is more or less the exponent for the valued feature on the focus DP. The unvalued feature on the focus head probes for valuation. Foc finds the focus DP which has a valued feature, and then Agrees with it. This results in a shared feature value [3].\footnote{Notice that the valuation index [\uline{3}] is underlined. This is after valuation has taken place. Before valuation, it looks like this: [iFoc:\uline{\hspace{0.2cm}}].} I assume that in in-situ focus, Foc lacks an EPP. So, only agreement took place. The focus does not move to Spec,FocP, at least overtly.
+
+
+A reviewer wonders how an unvalued feature can be interpretable. This may only seem to be an odd assumption based on \citeauthor{chomsky2000minimalist}'s \citeyearpar{chomsky2000minimalist, chomsky2001derivation} initial view of Agree (specifically in the Minimalist Inquiries/Derivation by Phase framework) which is summed up with the \textit{biconditional} statement below.\footnote{MI = Minimalist Inquiry; DbP = Derivation by Phase} Based on (\ref{ex:Aremu:Bicond}), the prediction is that an uninterpretable feature cannot be valued, and an interpretable feature cannot be unvalued.
+
+\ea \label{ex:Aremu:Bicond} \textbf{Biconditional of Valuation \& Interpretability} \citep[5]{chomsky2001derivation}\\
+A feature F is uninterpretable iff F is unvalued.
+\z
+
+However, subsequent work (beginning notably with \citet{PesetskyTorrego2007}) has argued for the possibility of an intepretable but unvalued feature by eliminating the biconditional view of Chomsky. Pesetsky \& Torrego's types of feature combination is giving below. The types in boldface are the novel types they added, and only the two types in the lower line can act as probes. In short, only unvalued features act as probes. Therefore, the assumption in this paper falls exactly within the purview of Pesetsky \& Torrego's view of Agree (also Chomsky's based on unvalued feature = probe).\footnote{See \citet{PesetskyTorrego2007}, and the references they cited, for empirical evidence supporting such a wider view of Agree possibilities.}
+
+
+\ea \textbf{\citeauthor{PesetskyTorrego2007}'s \citeyearpar{PesetskyTorrego2007} types of features}\\
+\textbf{\textit{u}F \textit{val} uninterpretable}, valued \hspace{0.7cm} \textit{iF val} interpretable, valued\\
+\textit{uF} [ ] uninterpretable, unvalued \hspace{0.5cm} \textbf{\textit{i}F [ ] interpretable, unvalued}
+\z
+
+
+For the ex-situ focus strategy, the head of the left peripheral FocP is specified with an EPP feature which requires the fronting of the focus constituent. Consider the repeated ex-situ example below.
+
+\ea \label{ex:Aremu:ExSituObjFocAns}
+\gll  [Chworo]$_F$ *(\textbf{mo}) Adam go-a.\\
+		fowl \textsc{foc} Adam slaughter-\textsc{disj}\\
+\glt 	`Adam slaughtered \textsc{a fowl}.'
+\z
+
+\largerpage
+The structure is given in \figref{fig:Aremu:Kasem: ex-situ focus object tree}. The head of FocP is still covert but has both an unvalued focus feature and an EPP. The unvalued focus feature causes the head to probe downward and Agrees with the goal (object focus). Next, the whole of \textit{mo}P moves to Spec,FocP in the left periphery. So, agreement feeds movement. 
+
+\begin{figure}
+\fittable{
+\begin{forest}
+for tree={s sep=2mm, inner sep=-1, l-=1mm}
+[FocP
+[\textit{mo}P
+        [DP
+            [NP\\ Chworo\textsubscript{[\textit{u}Foc:3]}\\fowl, name=CompD]
+            [D\\ \varnothing]
+        ]
+        [mo]
+]
+[Foc'
+[Foc\\ {[\textit{i}Foc:\uline{3}; EPP]}\\ \varnothing]
+[TP
+    [DP\\ Adam]
+    [T'
+        [T\\ ${[\textsc{pst}]}$]
+        [vP
+            [DP\\ $\langle$Adam$\rangle$]
+            [v'
+                [v\\ goa\\slaughter]
+                [VP
+                    [V\\ $\langle$goa$\rangle$]
+                 [$\langle$\textit{mo}P$\rangle$, name=CompV]   
+                ]
+            ]
+        ]
+    ]
+]]]
+%\draw[->] (CompV) to[out=south west, in=south] (DP);
+%\draw[->] (CompV) to[out=south west, in=south] (CompD);
+\end{forest}
+}
+    \caption{Agreement and focus fronting}
+    \label{fig:Aremu:Kasem: ex-situ focus object tree}
+\end{figure} 
+
+
+So far, I have discussed the focus construction in Kasem and provided an analysis for it. The stage is now set for the next section which concerns the association with focus, with the exclusive focus-sensitive particle \textit{yerane} (`only') as the case study.
+
+
+\section{FSP \textit{yerane} and the association with focus} \label{sec:Aremu:FocusAssociation}
+
+\subsection{\textit{Yerane} associating with focus}
+\largerpage[-3]
+The exclusive focus-sensitive particle \textit{yerane} and its focus associate are contiguous. \textit{Yerane} follows the focus associate but precedes the focus marker \textit{mo}. This position is constant regardless of whether the associate is a subject, an object, or an adjunct.\footnote{The focus categories that show a different distribution of \textit{yerane} are VP and TP. For instance, when the focus is on a transitive verb, both \textit{yerane} and \textit{mo} follow the direct object, and not the verb (\ref{ex:Aremu:Kasem: AwF verb focus}).
+
+\ea
+\begin{xlist}
+    
+\ex 
+\gll Adam yeigi lɔɔre dem mo naa o kwei lɔɔre dem o yeigi mo.\\
+	Adam buy car \textsc{def} \textsc{foc} \textsc{disj} 3\textsc{sg} pick car \textsc{def} 3\textsc{sg} sell \textsc{foc}\\
+\glt `Did Adam \textbf{buy} the car or \textbf{sell} the car?'
+
+\ex \label{ex:Aremu:Kasem: AwF verb focus}
+\gll Aawo, O [yeigi]$_F$ lɔɔre dem \textbf{yerane} \textbf{mo}.\\
+	no 3\textsc{sg} buy car \textsc{def} only \textsc{foc}\\
+\glt `No, he only \textsc{bought} the car.'
+
+\end{xlist}
+\z
+
+}
+With a context like (\ref{ex:Aremu:Kasem: Subject AwF question}), the answer involves a subject focus (\ref{ex:Aremu:Kasem: Subject AwF}) with the exclusive \textit{yerane} occurring between the subject focus and \textit{mo}.\footnote{Just like the focus marker, I will use a boldface for the exclusive particle \textbf{yerane}.} The presence of the focus marker is obligatory in all cases.
+
+\ea 
+\begin{xlist}
+
+\ex \label{ex:Aremu:Kasem: Subject AwF question}
+\gll Wɔ mo toŋe? Adam *(mo) naa John *(mo)?\\
+	 who \textsc{foc} work.\textsc{pfv} Adam \textsc{foc} \textsc{disj} John \textsc{foc}\\
+\glt `Who worked: Adam or John?'
+
+\ex \label{ex:Aremu:Kasem: Subject AwF}
+\gll [Adam]$_F$ \textbf{yerane} \textbf{mo} toŋe.\\
+	 Adam only \textsc{foc} work.\textsc{pfv}\\
+\glt `Only \textsc{adam} worked.'
+
+\end{xlist}
+\z
+
+Association with an object focus has the same structure of [associate < yerane < mo]. This structure is retained when the focus associate is in a post-verbal position (\ref{ex:Aremu:Kasem: In-situ Object Awf}) or when it is fronted (\ref{ex:Aremu:Kasem: Ex-situ Object Awf}). The same thing applies to association with adjunct focus as in (\ref{ex:Aremu:Kasem: AwF Adjunct}).  This leads to the proposal that \textit{yerane} further forms a complex constituent with the local FocP that was derived in \sectref{sec:Aremu:FocusRealization}. I will come back to this soon.
+
+\ea
+\begin{xlist}
+
+\ex \label{ex:Aremu:Kasem: In-situ Object Awf}
+\gll Adam go [chworo]$_F$ \textbf{yerane} *(\textbf{mo}).\\
+	Adam kill.\textsc{pfv} fowl only \textsc{foc}\\
+\glt `Adam only slaughtered \textsc{a fowl}.'
+
+\ex \label{ex:Aremu:Kasem: Ex-situ Object Awf}
+\gll [Chworo]$_F$ \textbf{yerane} *(\textbf{mo}) Adam go-a.\\
+	fowl only \textsc{foc} Adam kill.\textsc{pfv}-\textsc{disj}\\
+\glt `Adam only slaughtered \textsc{a fowl}.'
+    
+\end{xlist}
+\z
+
+\ea \label{ex:Aremu:Kasem: AwF Adjunct}
+\begin{xlist}
+    
+\ex   
+\gll Adam toŋe [diim]$_F$ \textbf{yerane} *(\textbf{mo}).\\
+	Adam work.\textsc{pfv} yesterday only \textsc{foc}\\
+\glt `Adam only worked \textsc{yesterday}.'
+
+\ex
+\gll [[Diim]$_F$ \textbf{yerane} *(\textbf{mo})]$_i$ Adam toŋe \uline{\hspace{0.5cm}}$_i$.\\
+   yesterday only \textsc{foc} Adam work.\textsc{pfv}\\
+\glt `Adam only worked \textsc{yesterday}.'   
+
+\end{xlist}
+\z
+   
+
+\subsection{Is \textit{yerane} adnominal, adverbial or both?}
+\largerpage[2]
+Based on the structural position of the exclusive particle \textit{only} in the clause, there are two groups of linguists who posit that \textit{only} can either have an \textit{adverbial} property \citep{jacobs1983fokus, jacobs1986syntax, buring2001syntax} or a \textit{mixed} property \citep{bayer1996directionality, bayer1999bound, bayer2018criterial, reis2005syntax, barbiers2014syntactic, smeets2018reconstructing}. In other words, while the former involves \textit{only} adjoining to an Extended Verbal Projection (henceforth EVP), the latter involves both an adverbial (EVP) and an adnominal adjunction of \textit{only}. In German, for instance, \citet{buring2001syntax} have argued that \textit{nur} `only' adjoins to the EVPs regardless of whether the focus is a DP argument or a non-DP argument (VP, TP, CP) (\ref{ex:Aremu:German: AwF only}) \citep[see also][]{Mursell2021ISagreement}.
+
+
+\ea \label{ex:Aremu:German: AwF only} %Adapted from \cite[][p.229]{buring2001syntax}
+\gll Ich habe [\textsubscript{VP} \textbf{nur} [\textsubscript{VP} [\textsubscript{DP} einen Roman]$_F$ gelesen]]\\
+     I have {} only {} {} a novel read\\
+\glt `I have only read \textsc{a novel}.' \citep[][231]{buring2001syntax}
+\z
+
+Due to the V2 property of German, the auxiliary verb \textit{habe} occupies the V2 position, and causes the main verb \textit{gelesen} to be in a sentence-final position. This makes it look as though \textit{nur} is adnominal on the surface in the example above.\footnote{This view of \textit{nur} in German is not without its own challenges. In fact, there are others who have argued that German rather involves a mixed-analysis- adverbial and adnominal \citep[see][among others]{reis2005syntax, meyer2009pragmatic, bayer1996directionality, bayer2018criterial, hole2015distributed, smeets2018reconstructing}. I will not go through their interesting arguments here.}. However, according to \cite[][233]{buring2001syntax} if \textit{nur} adjoins to a DP complement of a preposition (\ref{ex:Aremu:German: AwF inside PP}) or inside a complex DP (\ref{ex:Aremu:German: AwF inside complex DP}), the constructions are ungrammatical. The reasoning behind this is that these constructions should be fine if \textit{nur} is adnominal.
+
+\ea \label{ex:Aremu:German: AwF inside PP}
+\begin{xlist}
+    
+\ex 
+\gll*mit \textbf{nur} Hans\\
+     with only Hans\\
+\glt `with only Hans'
+
+\ex *[\textsubscript{PP} P FP DP]
+
+\end{xlist}
+\z
+
+\ea \label{ex:Aremu:German: AwF inside complex DP}
+\begin{xlist}
+\ex 
+\gll *der Bruder \textbf{nur} des Grafen\\
+    the brother only the-\textsc{gen} count-\textsc{gen}\\
+\glt `the brother of only the count'
+
+\ex *[\textsubscript{DP} D FP DP]
+
+\end{xlist}
+\z
+
+In contrast, English, for example, uses the mixed-analysis where \textit{only} can either adjoin to the focus associate itself (\ref{ex:Aremu:English: adnominal Awf}) or an EVP (\ref{ex:Aremu:English: adverbial Awf}) \citep{konig1991meaning, erlewine2014b}.\footnote{See also \citet{konig1991meaning} on Bengali.}
+
+\ea
+\begin{xlist}
+
+\ex \label{ex:Aremu:English: adnominal Awf} John ate \textbf{only} [rice]$_F$.
+
+\ex \label{ex:Aremu:English: adverbial Awf} John \textbf{only} ate [rice]$_F$.
+    
+\end{xlist}
+\z
+
+Kasem's \textit{yerane} is strictly adnominal with regard to its position. If we adjoin \textit{yerane} to the DP complement of a preposition (as done for German above), the result is a grammatical structure (\ref{ex:Aremu:Kasem: AwF inside PP}).
+
+\ea
+\begin{xlist}
+
+\ex
+\gll Adam di wodiu kom de dúrú de seo diim na?\\
+	Adam eat.\textsc{pfv} food \textsc{def} with spoon \textsc{conj} knife yesterday \textsc{q}\\
+\glt `Did Adam eat the food with a spoon and a knife yesterday?'
+
+\ex \label{ex:Aremu:Kasem: AwF inside PP}
+\gll Aawo, o di wodiu kom [\textsubscript{PP} de  [dúrú]$_F$ \textbf{yerane} \textbf{mo}] diim.\\
+		no 3\textsc{sg} eat.\textsc{pfv} food \textsc{def} {} with spoon only \textsc{foc} yesterday.\\
+\glt `No, he only ate the food with \textsc{a spoon} yesterday.'
+
+\end{xlist}
+\z
+
+However, this does not tell us much because of the position of \textit{yerane} and \textit{mo}: they seem to be in the clause-final position. It could be argued that they adjoin to an EVP. This is unlike English and German where \textit{only} and \textit{nur} precedes the focus DP but follows the preposition. Nevertheless, there is other evidence that supports the adnominal nature of \textit{yerane}. First is the fact that the same complex constituent that we find in the postverbal (in-situ) position is also present in the left periphery of the clause (\ref{ex:Aremu:Kasem: focus fronting with yerane}). 
+
+
+\ea \label{ex:Aremu:Kasem: focus fronting with yerane}
+
+\gll [[Chworo]$_F$ \textbf{yerane} \textbf{mo}] Adam go-a.\\
+	fowl only \textsc{foc} Adam kill.\textsc{pfv-disj}\\
+\glt `Adam only slaughtered \textsc{a fowl}.'
+
+\z
+
+
+
+Secondly, the focus associate cannot be fronted leaving \textit{yerane} stranded (\ref{ex:Aremu:Kasem: focus fronting without yerane}).\footnote{A reviewer highlighted an important point that needs to be addressed here. In English, where \textit{only} can adjoin to the EVP, if a constituent is moved out of \textit{only}'s c-command domain (as in \ref{ex:Aremu:Eng:FF}), this would only mean that association between \textit{only} and the dislocated element is lost (see \citealt{erlewine2014a, erlewine2014b} on why there is a lack of backward association with \textit{only} in English). However, \textit{only} can still associate with the verb or even the indirect object. But the same is not true for Kasem because \textit{yerane} is adnominal in (\ref{ex:Aremu:Kasem: focus fronting without yerane}). Once its focus associate is fronted, stranding \textit{yerane} does not result in association with the verb \textit{go} `to kill' in (\ref{ex:Aremu:Kasem: focus fronting without yerane}).
+
+\ea\label{ex:Aremu:Eng:FF} A new bicycle John \textbf{only} loaned to Mary.
+\z
+}
+
+
+\ea \label{ex:Aremu:Kasem: focus fronting without yerane}
+
+\gll *[Chworo]$_F$ \textbf{mo} Adam go \textbf{yerane}.\\
+	fowl \textsc{foc} Adam kill.\textsc{pfv} only\\
+\glt `Adam only slaughtered \textsc{a fowl}.'
+
+\z
+
+
+In contrast, the focus associate can move to the `prefield' position in German, leaving \textit{nur} behind. This should not be possible if both form a constituent. Consider the German sentence from \cite[196]{Mursell2021ISagreement} \citep[citing][43]{jacobs1983fokus} below.\footnote{Again, the whole picture is not as simple as it seems. Several studies have argued for the presence of ad-focal \textit{nur} in German \citep[see][a.o.]{reis2005syntax, meyer2009pragmatic, hole2015distributed}. But for the sake of our analysis here, I follow \citet{buring2001syntax} to assume an adverbial \textit{nur}.}
+%Mursell (2020:196) citing Jacobs (1983:43)
+
+\ea \label{ex:Aremu:German: focus fronting without nur}
+
+\gll Der MENSCH interessiert ihn \textbf{nur}, (nicht die Arbeit).\\
+   the human interest.3\textsc{sg} him only not the work\\
+\glt `Only the \textsc{human} interests him, not the work.'
+
+\z
+
+Finally, there is indirect evidence from the language with regard to the behaviour of another FSP \textit{maŋe} `even'.\footnote{In the presence of the additive scalar particle \textit{maŋe}, the focus marker \textit{mo} is optional when the focus associate is in an in-situ position, but obligatory when the focus associate is fronted. Compare the examples (\ref{ex:Aremu:Kasem: AwF maŋe 2}) and (\ref{ex:Aremu:Kasem: AwF maŋe 3}).} The additive scalar particle \textit{maŋe} behaves like an adverbial-\textit{even} in English because it does not form a constituent with the focus associate (\ref{ex:Aremu:Kasem: AwF maŋe 2}). In fact, it allows the focus associate to move to the left periphery of the clause while it remains in its pre-verbal position (\ref{ex:Aremu:Kasem: AwF maŋe 3}) (see \citet{erlewine2014a} and the references therein for the arguments on why backward association with \textit{even} is possible in English). It does not move to the left periphery with the focus associate (\ref{ex:Aremu:Kasem: AwF maŋe 4}). It behaves more like the German \textit{nur} case, and not like \textit{yerane}.\footnote{An interesting phenomenon is observed in association with \textit{maŋe} 'even', which is the presence of a lower copy subject pronoun. Why this is so is unclear at this point. A reviewer asked whether \textit{maŋe} could be an auxiliary. This is a possibility because modal auxiliaries in the language have similar structures. For example, the sentence in (\ref{ex:Aremu:modal}) with the modal \textit{wae} `may' involves a pronoun which resumes the subject. This is an interesting phenomenon which I leave for a future research.
+
+\ea	 \label{ex:Aremu:modal}
+\gll Adam wae *(o) go chworo.\\
+	Adam may 3\textsc{sg} kill.\textsc{pfv} fowl\\
+\glt `Adam may slaughter a fowl.'
+\z
+}
+
+\ea
+\begin{xlist}
+
+\ex \label{ex:Aremu:Kasem: AwF maŋe 1}
+\gll Napog nɛ vara dedɛ diim.\\
+	Napog see.\textsc{pfv} animal many yesterday\\
+\glt `Napog saw many animals yesterday.'
+		
+\ex \label{ex:Aremu:Kasem: AwF maŋe 2}
+\gll O \textbf{maŋe} o na [teiri]$_F$.\\
+	3\textsc{sg} even 3\textsc{sg} see pig\\
+\glt `He even saw \textsc{a pig}.'
+        
+\ex \label{ex:Aremu:Kasem: AwF maŋe 3}
+\gll [[Teiri]$_F$ *(\textbf{mo})]$_i$ o \textbf{maŋe} o na \uline{\hspace{0.5cm}}$_i$.\\
+	pig \textsc{foc} 3\textsc{sg} even 3\textsc{sg} see\\
+\glt `He even saw \textsc{a pig}.'
+
+\ex \label{ex:Aremu:Kasem: AwF maŋe 4}
+\gll *[[Teiri]$_F$ \textbf{maŋe} *(\textbf{mo})]$_i$ o \uline{\hspace{0.5cm}} o na \uline{\hspace{0.5cm}}$_i$.\\
+	pig even \textsc{foc} 3\textsc{sg} {} 3\textsc{sg} see\\
+\glt `He even saw \textsc{a pig}.'
+
+\end{xlist}
+\z
+
+So far, I have shown that the exclusive particle \textit{yerane} is adnominal in Kasem. Next is the proposed analysis. 
+
+%There is another exclusive particle that behaves like an \textit{adverbial-only}, however.
+
+\section{Proposed analysis} \label{sec:Aremu:ProposedAnalysis}
+
+In this section, I will propose a syntactic analysis for \textit{yerane}. I will show that \citeauthor{buring2001syntax}'s \citeyearpar{buring2001syntax} EVP proposal may still be extended to Kasem. The only thing is that we need to assume that \textit{yerane} is an ad-focal (embeds the adnominal property) operator whose semantics depends on a covert exclusive operator (Op\textsubscript{only}) which can occupy the EVP positions proposed by \citet{buring2001syntax}.\footnote{In fact, this is also the position of \citet{hole2015distributed} for German. \citet{hole2015distributed} argues that the German \textit{nur} have instances of both adverbial (v-level, in his words) exclusives and ad-focal exclusives where either of them can be covert depending on a rule he called \textit{First Come, First Spell-Out}. See particularly \citet{hole2015distributed} section 3.3, for nice arguments.} I will begin by showing that this idea is technically a bipartite or concord analysis which is similar to the negative concord analysis \citep[cf.][a.o.]{zeijlstra2004sentential}, and has also received cross-linguistic considerations \citep[a.o.]{quek2017severing, sun2021bipartite, branan2023anti}.
+
+
+
+\subsection{Introducing the bipartite analysis}
+Considering languages like English that have a mixed-analysis for \textit{only} viz: \textit{adverbial}-only and \textit{adnominal}-only, it has been argued that there is a higher position for \textit{only} in the form of an exclusive operator (henceforth Op\textsubscript{only}) that could be (c)overt. This is similar to what has been proposed for negation for example, where a higher Neg Op Agrees with a lower Neg(s) in languages with negative concord and/or negative indefinites \citep[see a.o.,][]{zeijlstra2004sentential, zeijlstra2008negative, zeijlstra2011syntactically, penka2011negative}. This is a case of doubling. In the case of \textit{only-}doubling, it is argued that the complex constituent of the \textit{adnominal}-only plus its focus associate raises to the Spec of a higher \textit{Op\textsubscript{only}} which is seen as a scope position. This movement could either be \textit{covert} or \textit{overt} as shown in \figref{fig:Aremu:Op AwF} \citep[cf.][]{bayer1996directionality, bayer1999bound, kayne1998overt, erlewine2018focus, sun2021bipartite}. Thus, the exclusive interpretation actually comes from the Op\textsubscript{only}, and the \textit{adnominal}-only is only a semantically vacuous concord marker.
+
+\begin{figure}
+\begin{forest}
+%for tree={s sep=1mm, inner sep=0, l-=1mm}
+[CP/TP
+    [XP]
+    [FocP
+        [QP\\ Only\textsubscript{adn} + DP, name=SpecQP]
+        [Foc'
+            [Op\textsubscript{only}]
+            [vP
+                [v]
+                [VP
+                    [V]
+                    [DP [$\langle$Only\textsubscript{adn} + DP$\rangle$, name=CompV, roof]]
+                ]
+            ]
+        ]
+    ]
+] 
+\draw[->] (CompV) to[out=south west, in=south] (SpecQP);
+%\draw[<-] (SpecFoc) to[out=south west, in=south] (CompD);
+%\draw[semithick,dashed,<-] (CompD) to[out=south west, in=south] (Foc);
+\end{forest}
+\caption{(C)overt raising of \textit{adnominal}-only + DP}
+    \label{fig:Aremu:Op AwF}
+\end{figure}
+
+Another approach that has been proposed for the bipartite analysis is \REF{ex:Aremu:agreement}. Under this approach, the \textit{adnominal-}only enters into the syntax with an uninterpretable exclusive feature [\textit{u}Excl], and Agrees with the Op\textsubscript{only} which has an interpretable exclusive feature [\textit{i}Excl]. The agreement occurs under a Spec-Head relationship (\ref{ex:Aremu:agreement}) \citep{sun2021bipartite, hole2017crosslinguistic, quek2017severing, Yip2024agreeing}. The advantage of these approaches is the provision of a unified analysis in which `only', as a propositional operator, is really adverbial and is interpreted in an EVP position in the sense of \citet{buring2001syntax}. The adfocal particles are more or less concord-like elements.
+
+\ea \label{ex:Aremu:agreement}
+[CP/TP [FocP [QP only\textsubscript{[\textit{u}Excl]} + DP]$_i$ [Op\textsubscript{[\textit{i}Excl]} [vP ... t$_i$ ]]]]
+\z
+
+One argument for these approaches is the ability of the \textit{adnominal-}only to realize an ambiguous scope reading in the presence of modals \citep[cf.][]{taglicht1984message, bayer1999bound, quek2017severing}. Although, on the surface, the position of the \textit{adnominal-}only is lower in the clause, it can scope not only below the modal, but also above it. The sentence in (\ref{ex:Aremu:Split-scope}) can have the two readings in (\ref{ex:Aremu:The readings}), depending on the scope of \textit{only}.
+
+\ea \label{ex:Aremu:Split-scope}
+John \textit{may} slaughter \textit{only} \textsc{a hen}. \hfill [only > may; may > only]
+\z
+
+
+\ea \label{ex:Aremu:The readings}
+\begin{xlist}
+\ex {[may > only]}: \\ John is allowed to not slaughter any animal other than a hen.
+
+\ex {[only > may]}: \\ John is not allowed to slaughter any animal other than a hen.
+\end{xlist}
+
+\z
+
+Not only modals, but also other quantificational elements like negation and quantificational adverbs can trigger a ambiguous scope reading for \textit{adnominal-}only.  With this in mind, it therefore seems that there is a null Op in the clausal spine that accommodates the observed ambiguity. This has been observed in other languages such as Vietnamese, Mandarin, Cantonese, German, and Dutch \citep[see a.o.,][]{bayer1996directionality, bayer1999bound, lee2004syntax, barbiers2010focus, barbiers2014syntactic, hole2017crosslinguistic, sun2021bipartite, Yip2024agreeing}.
+
+
+\subsection{Extending the bipartite analysis to Kasem}
+
+The bipartite analysis can be extended to the Kasem AwF case. The adnominal-\textit{yerane} can have an ambiguous scope reading. First, I will discuss the ambiguous scope reading in relation to adnominal-\textit{yerane} with a modal and a higher predicate. Secondly, I will adopt a downward Agree system to the bipartite analysis (and not Spec-head Agree), as this will account for the post-verbal AwF context.
+
+\subsubsection{Adnominal-\textit{yerane} with modals}
+
+In \REF{ex:Aremu:Kasem split-scope}, the presence of the modal auxiliary \textit{wae} `may/can' creates an environment for the ambiguous scope reading. The exclusive particle could either scope above or below the modal verb \REF{ex:Aremu:Kasem split-scope readings}. This supports the claim for the presence of an empty exclusive \textit{Op} in a higher position, which means that it is not \textit{a what you see is what you get} case. The ambiguous scope suggests that the exclusive interpretation comes from a higher position instead of the adnominal position of \textit{yerane}.\footnote{It is important to point out here that the ambiguous scope property of \textit{yerane} may also be analyzed with a quantifier-raising approach, instead of a bipartite agreement analysis that is proposed in the next section. However, \citet{aremu2024towards} argues against such a QR-approach with strong evidence. See \citet{aremu2024towards} for an extended discussion.}
+
+
+\ea	 \label{ex:Aremu:Kasem split-scope} [only > may; may > only] \\
+\gll Adam wae *(o) go [chworo]$_F$ \textbf{yerane} *(\textbf{mo}).\\
+	Adam may 3\textsc{sg} kill.\textsc{pfv} fowl only \textsc{foc}\\
+\glt `Adam may slaughter only \textsc{a fowl}.'
+\z
+
+\ea \label{ex:Aremu:Kasem split-scope readings}
+\begin{xlist}
+\ex {[may > only]}: \\ Adam is allowed to not slaughter any animal other than a fowl.
+
+\ex {[only > may]}: \\ Adam is not allowed to slaughter any animal other than a fowl.
+\end{xlist}
+
+\z
+
+\subsubsection{Adnominal-\textit{yerane} with higher predicates}
+The ambiguous scope is also realized when an adnominal-\textit{yerane} occurs within the infinite CP complement of a higher predicate like \textit{require} \citep[à la][]{taglicht1984message}. In the data in \REF{ex:Aremu:split-scope with higher predicate}, \textit{yerane} adjoins to the object of the embedded non-finite verb. The two possible readings that are derived are given in \REF{ex:Aremu:split-scope with higher predicate readings}.
+
+\ea \label{ex:Aremu:split-scope with higher predicate} [only > require; require > only] \\
+\gll Adam jege se o di [mumuna]$_F$ \textbf{yerane} \textbf{mo}.\\
+	Adam require to 3\textsc{sg} eat rice only \textsc{foc}\\ 
+\glt `Adam is required to eat only \textsc{rice}.'
+
+\z
+
+\ea \label{ex:Aremu:split-scope with higher predicate readings}
+\begin{xlist}
+    
+\ex {[only > require]}: \\ The only requirement is that Adam eat rice (no other requirement).
+
+\ex {[require > only]}: \\ The requirement is for Adam to eat only rice.
+ 
+\end{xlist}
+\z
+
+\subsubsection{Agreement}
+
+I will now propose an agreement system for my analysis. The agreement mechanism provides the possibility of linking different syntactic positions for interpretive reasons. Usually, these positions carry identical feature(s) which can be \textit{interpretable} or \textit{uninterpretable}. When agreement takes place, the result is that two (or more) syntactic elements or positions share the same feature that Agree acted upon. An important implication of Agree is that it creates non-local syntactic relations \citep{chomsky2000minimalist, chomsky2001derivation}.
+
+In order to apply the agreement mechanism, there is a need to first propose a syntactic structure for AwF. I will use the in-situ object focus in \REF{ex:Aremu: In-situ Object Awf 2} as a template.
+
+\ea \label{ex:Aremu: In-situ Object Awf 2}
+\gll Adam go [chworo]$_F$ \textbf{yerane} \textbf{mo}.\\
+	Adam kill.\textsc{pfv} fowl only \textsc{foc}\\
+\glt `Adam only slaughtered \textsc{a fowl}.'
+    
+\z
+
+As indicated earlier, I assume that while the adnominal-\textit{yerane} projects a \textbf{Particle Phrase} (\textbf{PrtP}) above the focus associate, but below \textit{mo}P, the exclusive Op\textsubscript{only} heads an \textbf{Exclusive Phrase} (\textbf{ExclP}) that is merged between the CP/TP and the vP \figref{fig:Aremu: Op and yerane positions}. In \figref{fig:Aremu: Op and yerane positions}, the Prt head is specified with a valued uninterpretable exclusive feature [uExcl:\uline{2}]. The Excl head (Op\textsubscript{only}) on the other hand, has an unvalued interpretable exclusive feature [iExcl:\uline{\hspace{0.3cm}}]. The idea is that the exclusive interpretation comes from the null Op\textsubscript{only}. The agreement is on the basis of feature valuation. Thus, it is the unvalued feature on Excl that serves as the probe. It probes downward for a suitable goal and finds the valued Prt head. The latter then values the exclusive feature on the Excl head.
+
+\begin{figure}
+    \begin{forest}
+for tree={s sep=1mm, inner sep=0, l-=1mm}
+[CP/TP
+    [XP]
+    [ExclP
+            [Excl\\ Op\textsubscript{only}\\ {[\textit{i}Excl:\uline{\hspace{0.3cm}}]}, name=Excl]
+            [vP
+                [v]
+                [VP
+                    [V]
+                    [\textit{mo}P
+    [PrtP
+        [DP [associate, roof]]
+        [Prt\\ yerane\\ {[\textit{u}Excl:2]}, name=Prt]
+        ]
+        [mo]
+]
+                ]
+            ]
+    ]
+] 
+%\draw[->] (CompV) to[out=south west, in=south] (SpecQP);
+%\draw[<-] (SpecFoc) to[out=south west, in=south] (CompD);
+\draw[semithick,dashed,->] (Excl) to[out=south west, in=south] (Prt);
+\end{forest}
+    \caption{Agreement of Op\textsubscript{only} and \textit{yerane}}
+    \label{fig:Aremu: Op and yerane positions}
+\end{figure}
+
+
+The tree in \figref{fig:Aremu: Op and yerane positions} shows when the probe searches for the goal, and \figref{fig:Aremu: AwF structure after feature valuation} shows when the value has been copied to the probe in the form of [2]. The agreement mechanism here maintains a downward Agree as in the focus derivation.\footnote{Unlike a few of the previous studies \citep[cf.][a.o.]{sun2021bipartite, Yip2024agreeing}, here there is no movement of the adnominal-\textit{yerane} to Spec,ExclP for Spec-head agreement, or an upward Agree between \textit{yerane} and Op\textsubscript{only}.} Similarly, feature valuation serves as the probe.
+
+\begin{figure}
+\begin{forest}
+for tree={s sep=1mm, inner sep=0, l-=1mm}
+[CP/TP
+    [XP]
+    [ExclP
+            [Excl\\ Op\textsubscript{only}\\ {[\textit{i}Excl:\uline{2}]}, name=Excl]
+            [vP
+                [v]
+                [VP
+                    [V]
+                    [\textit{mo}P
+    [PrtP
+        [DP [associate, roof]]
+        [Prt\\ yerane\\ {[\textit{u}Excl:2]}, name=Prt]
+        ]
+        [mo]
+]
+                ]
+            ]
+    ]
+] 
+%\draw[->] (CompV) to[out=south west, in=south] (SpecQP);
+%\draw[<-] (SpecFoc) to[out=south west, in=south] (CompD);
+%\draw[semithick,dashed,->] (Excl) to[out=south west, in=south] (Prt);
+\end{forest}
+\caption{AwF structure after feature valuation}
+    \label{fig:Aremu: AwF structure after feature valuation}
+\end{figure}
+
+{\noindent}The tree in \figref{fig:Aremu:Kasem: Full in-situ tree with AwF} shows what a full TP structure with an association with direct object focus looks like. 
+
+%with both the focus feature agreement that we saw in section \ref{sec:Aremu:FocusRealization} and the exclusive feature agreement that is proposed above. 
+%\pagebreak
+
+\begin{figure}
+\begin{forest}
+for tree={s sep=5mm, inner sep=-1, l-=3mm}
+[TP
+    [DP\\ Adam]
+    [T'
+        [T\\ \textsc{pst}]
+        [ExclP
+            [Excl\\ Op\textsubscript{only}\\ {[iExcl:\uline{2}]}]
+            [vP
+                [DP\\ $\langle$Adam$\rangle$]
+                [v'
+                    [v\\ go]
+                    [VP
+                        [V\\ $\langle$go$\rangle$]
+                        [\textit{mo}P
+    [PrtP
+        [DP [chworo, roof]]
+        [Prt\\ yerane\\ {[uExcl:2]}, name=Prt]
+        ]
+        [mo]
+]
+                    ]
+                ]
+            ]
+        ]
+    ]
+] 
+%\draw[->] (CompV) to[out=south west, in=south] (DP);
+%\draw[<-] (SpecFoc) to[out=south west, in=south] (CompD);
+%\draw[semithick,dashed,<-] (CompD) to[out=south west, in=south] (Foc);
+\end{forest}
+\caption{Full AwF structure}
+    \label{fig:Aremu:Kasem: Full in-situ tree with AwF}
+\end{figure}
+
+\subsection{Extending to other Mabia languages}
+
+Although this study situates Kasem in a pool of other studies that have adopted the bipartite analysis, it is the first of its kind among the Mabia languages as far as I know. The prediction is that the analysis that is proposed here for Kasem may be extended to the other Mabia languages. For example, Kusaal, another Mabia language, behaves similarly to Kasem with regard to the behaviour of `only'. In Kusaal, the adnominal-`only' is \textit{ma'aa}. It always follows the focus associate whether in an in-situ position \REF{ex:Aremu:Kusaal in-situ AwF} or in an ex-situ position \REF{ex:Aremu:Kusaal ex-situ AwF}.\footnote{In Kusaal, the in-situ focus marker is \textit{nɛ}, while the ex-situ focus marker is \textit{ka}, as seen in the examples.} The only difference is that while the in-situ focus marker follows the focus associate and the exclusive particle in Kasem, the in-situ focus marker precedes the focus associate and the exclusive particle in Kusaal \REF{ex:Aremu:Kusaal in-situ AwF}. I do not think that this constitutes any problem for the bipartite analysis that I assume in this paper. So, I propose that the same analysis can be extended to Kusaal, and other Mabia languages as well.\footnote{See \citet{abubakari2018aspects, abubakari2019contrastive} for some descriptions of the Kusaal focus system and association with focus.} I leave this for a future study.
+
+\ea
+\begin{xlist}
+    
+\ex \label{ex:Aremu:Kusaal in-situ AwF}
+\gll Adam kɔdig \textbf{nɛ} [nua]$_F$ \textbf{ma'aa}.\\
+	 Adam kill.\textsc{pfv} \textsc{foc} fowl only\\
+\glt `Adam slaughtered only \textsc{a fowl}.'
+
+\ex \label{ex:Aremu:Kusaal ex-situ AwF}
+\gll [Nua]$_F$ \textbf{ma'aa} \textbf{ka} Adam kɔdig.\\
+	 fowl only \textsc{foc} Adam kill\\
+\glt `Adam slaughtered only \textsc{a fowl}.'
+
+\end{xlist}
+\z
+%The prediction is that the use of \textit{adverbial-}only would result in an unambiguous reading therefore. This prediction is borne out. When the adverbial form of \textit{only} in the language \textit{weeni} is used alone, the ambiguity disappears. 
+
+%\pagebreak
+%Although \textit{yerane} symmetrically c-commands \textit{chworo}, however, if we agree that \textit{mo} is what makes \textit{chworo} focalized, and a focus sensititve particle needs to c-command what is in focus, then the structure is problematic. In other words, in so far as the two generation for AwF in (\ref{Two generalizations for AwF}) must be met for association with focus to take place, then the structure in (\ref{Kasem: In-situ tree with AwF}) comes with a price.
+
+%\begin{enumerate}
+ %   \item Start with PLA
+  %  \item And then propose a structure for the \textit{adfocal} yerane
+  %  \item And then, say why this might be difficult wrt. PLA
+   % \item Introduce the bipartite approach therefore....
+%\end{enumerate}
+
+%\begin{itemize}
+ %   \item {\noindent}\textbf{Add the sentence below add the end of section 4 or in section 5 = conclusion.}
+  %  \begin{itemize}
+   %     \item While the bipartite analysis accounts for the split-scope property in the language, it also (in)directly solves the problem of association (c-command).
+    %\end{itemize}
+%\end{itemize}
+
+
+
+\section{Conclusion} \label{sec:Aremu:Conclusions}
+In this paper, I have described the syntactic property of the exclusive focus sensitive particle \textit{yerane} in relation with narrow focus. As a way of setting the stage for the discussion on association with focus, I first described the focus marking strategies in Kasem, and went further to propose a syntactic analysis for focus in the language. I argued that the contiguous nature of the focus marker \textit{mo} in the language allows for a constituent analysis with the focus DP. In other words, the focus marker forms a complex constituent with the focalized element. Having done this, I introduced the data on the exclusive particle \textit{yerane} and argued that it has an \textit{adnominal}-only syntactic positioning. This is in contrast to the \textit{adverbial-}only analysis that has been proposed for \textit{nur} in German, for example \citep{jacobs1983fokus, buring2001syntax, Mursell2021ISagreement}. I argue that we can maintain the EVP proposal only by assuming that \textit{yerane} is an ad-focal particle which is licensed by a high covert exclusive Op\textsubscript{only}. This leads us to a bipartite analysis which means that there is a high exclusive Op which heads an ExclP and is responsible for the exclusive interpretation. \textit{Yerane} on the other hand is a semantically inert functional head of PrtP.\footnote{Whether the adfocal particle is indeed semantically inert is a topic for a future research. But, for now, I leave it as such.} Evidence for such a claim comes from the ability of the \textit{adnominal-}only to trigger an ambiguous reading in the presence of modals and higher predicates. Thus, in order to link the Op\textsubscript{only} to \textit{yerane}, I assume an Agree system which requires the latter (which is uninterpretable but valued) to value the former (which is interpretable but unvalued). At the end, I predicted the possibility of extending the analysis that was developed for Kasem to the other Mabia languages. Finally, this study provides cross-linguistic support (from a West African language) for the bipartite approach to the syntax of \textit{only}. %As far as I know, this is the first time an (West) African language is analyzed with such an approach.
+
+
+\section*{Abbreviations}
+\begin{tabularx}{.45\textwidth}{lQ}
+AwF & association with focus\\
+\textsc{def} & definite\\
+\textsc{det} & determiner\\
+\textsc{disj} & disjunct\\
+\textsc{epp} & extended projection principle\\
+\textsc{excl} & exclusive\\
+\textsc{foc} & focus\\
+\end{tabularx}
+\begin{tabularx}{.45\textwidth}{lQ}
+\textsc{n} & noun\\
+\textsc{imm} & immediate \\
+\textsc{ipfv} & imperfective\\
+\textsc{neg} & negation, negative\\
+\textsc{pfv} & perfective\\
+\textsc{pl} & plural\\
+\textsc{pla} & principle of lexical association\\
+\end{tabularx}
+
+\begin{tabularx}{.45\textwidth}{lQ}
+\textsc{prt} & particle\\
+\textsc{pst} & past\\
+\textsc{q} & question particle\\
+\textsc{qp} & quantifier phrase\\
+\end{tabularx}
+\begin{tabularx}{.45\textwidth}{lQ}
+\textsc{sg} & singular\\
+\textsc{top} & topic\\
+3 & third person\\
+\\
+\end{tabularx}
+
+
+\section*{Acknowledgements}
+First, I want to thank my language consultants: Mr. Fedelix Addah and Mr. Emmanuel Ayiredaga Apebuga for sharing their language with me. I am grateful to Katharina Hartmann, Johannes Mursell, Anke Himmelreich, and Samuel Acheampong for discussions of various parts of this paper. I also appreciate the two reviewers and the editors for their helpful comments and suggestions. Lastly, but not the least, I want to say a big thank you to the audience of ACAL54, Connecticut, for their great comments. This research is funded by the DFG-funded project on the ``VP-periphery of the Mabia languages" (PI: Katharina Hartmann). 
+
+
+\sloppy %this command eliminates a quirk that appears in the bibliography, you can just leave it here.
+
+\printbibliography[heading=subbibliography,notkeyword=this]
+
+\end{document}
+

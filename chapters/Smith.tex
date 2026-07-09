@@ -1,0 +1,734 @@
+\documentclass[output=paper,colorlinks,citecolor=brown,draftmode
+% ,hidelinks
+% showindex
+]{langscibook}
+\ChapterDOI{10.5281/zenodo.20285226}
+\author{Jason Smith\affiliation{Michigan State University} and Saidu Challay \affiliation{Njala University} and  Sahr Jimissa \affiliation{Milton Margai Technical Univeristy}}
+
+%Insert your title here
+\title{Deriving OV word order in Kono}  
+\abstract{The Mande languages are known for their strict SOVX word order \citep{Gensler1994reconstructing, creissels2005sovx, nikitina2009syntax}. Following analyses laid out in \citet{koopman1992absence} and \citet{SmithCLS, SmithDiss}, we argue that Kono’s surface OV word order is derived from underlying VO order. Evidence includes a class of complex predicates whose internal arguments obligatorily follow the verb, CP complements which occur post-verbally, and coordinated direct objects, in which the coordinator and second conjunct can occur post-verbally. The internal arguments of canonical verbs raise for Case-licensing, while the internal arguments of complex predicates remain post-verbal as they are Case-licensed by their encoding adposition.
+}
+
+\IfFileExists{../localcommands.tex}{
+   \addbibresource{../localbibliography.bib}
+   \input{../localpackages}
+   \input{../localcommands}
+   \input{../localhyphenation}
+   \boolfalse{bookcompile}
+   \togglepaper[23]%%chapternumber
+}{}
+
+\begin{document}
+\maketitle
+
+
+
+\section{Introduction}
+
+The Mande languages of West Africa have been noted for their strict SOVX word order \citep{Gensler1994reconstructing, creissels2005sovx, nikitina2009syntax}. In this paper we suggest that Kono (ISO 639-3 kno), a Mande language spoken in Sierra Leone, has canonical O-V word order, which surfaces only in a specific (albeit frequent) context, namely with DP objects of canonical verbs. We show three contexts in which the verb precedes its internal argument, including particle-verb-like constructions (V- [O – Prt]), verbs with CP complements, and split direct objects (O\subs{1} - V – \textit{and} O\subs{2}).  We argue that these non-canonical constructions point towards an underlying VO order. 
+
+Typical of the Mande family, Kono has canonical OVX word order, as in \REF{ex:Kono:Canonical} where the object \textit{Mɛli} precedes the verbs \textit{yian} ‘introduce’ and \textit{yen} ‘see.’ Dative objects always appear post-verbally, as in \REF{ex:Kono:Canonical with Dative}, while \REF{ex:Kono:Canonical with Temporal} shows a post-verbal temporal adverb, and \REF{ex:Kono:Canonical with Locative} shows a post-verbal locative.\footnote{The third author is a native Kono speaker, and we use his grammaticality judgments. Given that this is new research on the language, we do not have every word glossed.}  
+
+\ea \label{ex:Kono:Canonical}
+\begin{xlist}
+
+\ex \label{ex:Kono:Canonical with Dative}
+SOVX - Dative \\
+\gll Pìtà à \textbf{Jɔ̀n} yìàn Mɛ̀lì yà. \\
+Peter  \textsc{pfv} John introduce Mary to\\
+\glt `Peter introduced John to Mary.'
+
+\ex \label{ex:Kono:Canonical with Temporal}
+SOVX - Temporal Adjunct \\
+\gll Pìtà nàà	\textbf{Mɛ́lì} yén-fán	kùnù. \\
+Peter \textsc{pfv} Mary saw-\textsc{foc} yesterday \\
+\glt `Peter saw Mary yesterday.' 
+
+\ex \label{ex:Kono:Canonical with Locative}
+SOVX - Locative Adjunct \\
+\gll Pìtà nàà	\textbf{Mɛ́lì} yén màkìtì yɔ̀. \\
+Peter \textsc{pfv} Mary saw market at \\
+\glt `Peter saw Mary at the market.' 
+\end{xlist}
+
+\z 
+
+The data in \REF{ex:Kono:Complex Predicate fan} and \REF{ex:Kono:Complex Predicate beya}, however, show that the verbs \textit{chian} ‘fear’ and \textit{beya} ‘follow’ obligatorily take their internal argument in a post-verbal position, encoded in a phrase headed by the “particles” \textit{ma} and \textit{fɛ} respectively, which otherwise function as postpositions in the language. The data in \REF{ex:Kono:*chian x ma} further illustrates that the internal argument cannot precede the verb, whether \textit{ma} surfaces with it or not, while the data in \REF{ex:Kono:Complex Predicate beya} show that the internal argument occurs post-verbally, but can surface above or below various adjuncts.\footnote{Following \citet{kaiser2011grammar}, we mark \textit{fan} as \textsc{foc}, a focus marker. Further evidence that \textit{fan} is a focus marker is that it cannot co-occur in wh-constructions or with negation, as seen in (\ref{ex:Kono: Consistent OV}) below. See \citet{SmithDiss} and \citet{smith2024absence} for a similar analysis in Mende.}
+
+\ea \label{ex:Kono:Complex Predicate fan}
+Complex Predicate
+\begin{xlist}
+
+\ex \label{ex:Kono:chian x ma}
+\gll Pìtà nàà	chìàn-fán	\textbf{Mɛ́lì} mà.  \\
+Peter \textsc{pfv} fear-\textsc{foc} Mary \textsc{prt} \\
+\glt `Peter feared Mary.' 
+
+\ex \label{ex:Kono:*chian x ma}
+\gll *Pìtà nàà	Mɛ́lì (mà) chìàn-fán. \\
+Peter  \textsc{pfv} Mary \textsc{prt} fear-\textsc{foc}\\
+\glt `Peter feared Mary.'
+
+\end{xlist}
+\z 
+
+\newpage
+\ea \label{ex:Kono:Complex Predicate beya}
+Complex Predicate
+\begin{xlist}
+
+\ex \label{ex:Kono:beya temporal}
+\gll Pìtà à béyà \{kùnù\} Mɛ̀lì fɛ́ \{kùnù\}. \\
+Peter  \textsc{pfv} follow yesterday Mary \textsc{prt} yesterday\\
+\glt `Peter followed Mary yesterday.'
+
+\ex \label{ex:Kono:beya locative}
+\gll Pìtà à béyà \{mákìtì yɔ\} Mɛ̀lì fɛ́ \{mákìtì yɔ\}. \\
+Peter  \textsc{pfv} follow market at Mary \textsc{prt} market at\\
+\glt `Peter followed Mary at the market.'
+
+\ex \label{ex:Kono:beya adverb}
+\gll Pìtà à béyà \{núndɔ\} Mɛ̀lì fɛ́ \{núndɔ\}. \\
+Peter  \textsc{pfv} follow secretly Mary \textsc{prt} secretly\\
+\glt `Peter secretly followed Mary.'
+
+\end{xlist}
+\z 
+
+Descriptively, we propose that Kono has two classes of verbs: the first is represented by verbs like \textit{yian} ‘introduce’ and \textit{yen} ‘see,’ while the second is represented by \textit{chian} ‘fear’ and \textit{beya} ‘follow.’ We label these classes as canonical verbs and complex predicates respectively. We argue that these classes are distinguished by how the verb’s internal argument is case-licensed. Empirically, our objective is to demonstrate that Kono is canonically, but not strictly, OV. Analytically, our objective is to argue that Kono has an underlying VO word order and that its surface OV word order is derived via Case-driven, leftward movement \citep{kayne1994antisymmetry, kandybowicz2003directionality}. 
+
+The analysis for which we argue is set out in  \figref{fig:Canonical Verb Structure}. In brief, we propose that the verb’s internal argument raises from a post-verbal underlying position, surfacing in the specifier position of a Kase Phrase. The subject subsequently raises into a higher position. 
+
+
+  \begin{figure}
+  \caption{Canonical verb structure}
+    \label{fig:Canonical Verb Structure}
+  \Forest{
+  [KP 
+      [DP [direct object, roof, name = DO Surface]] 
+      [Kase'
+        [Kase \xhead \\] [\dots
+                [vP
+                    [DP [\tr{subj}]] [v'
+                            [v \xhead \\ [verb]] [VP
+                                [v'
+                                    [V\xhead \\ [\tr{v}]] [DP [\st{direct object}, roof, name = DO Merge]]]]]]]]]
+  ] 
+  \draw[->] (DO Merge) to[out=south west,in=south] (DO Surface); 
+}
+  \end{figure}
+
+
+The remainder of this paper is structured as follows. \sectref{sec:Background Data} is background data on Kono, as well as a brief review of analyses of OV word order in Mande languages. \sectref{sec:Canonical Verbs} considers canonical verbs, while \sectref{sec:Complex Predicates} investigates complex predicates. \sectref{sec:CP Complements} looks at CP complements, and \sectref{sec:Coordinated Direct Objects} introduces coordinated direct objects. \sectref{sec:Conclusion} is a conclusion. 
+
+\section{Background data}
+\label{sec:Background Data}
+There are roughly 340,000 Kono speakers, mostly in eastern Sierra Leone. Kono is a Western Mande language with two major dialects \textendash{} Northern Kono and Central Kono \citep{EthnologueSmith}  \textendash{} and is closely related to Vai \citep{kaiser2011grammar}, though the two languages are geographically separated by Mende. Kono is not taught in the public school system of Sierra Leone, and \citet{kaiser2011grammar} claims that it is commonly spoken in the home in rural areas, while not spoken as frequently at home in urban areas. Given the pressure to speak English in the country, along with the prevalence of Krio and English, the language is at risk of losing speakers due to language shift (cf. \citealt{kanu6languages, gellman2020mother} on language loss in Sierra Leone). \citet{manyeh1983aspects} also asserts that Kono is much less studied than other Sierra Leonean languages such as Mende, Themne, Limba, and Krio, noting that it has a short and poor literary history. 
+
+To this point there has been no syntactic analysis of Kono. Descriptive work includes a grammar by \citet{kaiser2011grammar}. Most other work has focused on phonology \citep{manyeh1983aspects, foday1985phonetics}, and tense \citep{ jimissatense}. 
+%JoeVowelsandConsonants FoudayPhonetics, Saquee 
+
+Within the broader Mande language family, there is also a dearth of syntactic analyses of word order. We highlight two analyses to give perspective on how Mande OV word order has been analyzed. The first analysis is \citet{nikitina2019verb}, an analysis of Wan, a Mande language spoken in the Ivory Coast. Typical of Mande languages, Wan has OV word order. 
+
+\ea \label{ex:Wan: OV}
+Wan \citep[\#1]{nikitina2019verb} \\
+\gll È sɔ́ klā [\textsc{pp} sógò tā]. \\
+\textsc{3sg} cloth put:\textsc{pst} {} horse on \\
+\glt `He covered the horse with cloth (= put cloth on the horse).'
+\z
+
+Nikitina argues that Wan is head-final, such that the DP object \textit{sɔ́} ‘cloth’ merges into a pre-verbal position. She further argues that all post-verbal material, such as the PP \textit{sógò tā} ‘on the horse’  adjoins at the IP level and does not form a constituent with the verb phrase.  Her analysis is laid out in \figref{fig:Clausal Structure of Wan}. 
+
+
+ \begin{figure}
+ \caption{Clausal structure of Wan (adapted from \citealt[\#19]{nikitina2009syntax})}
+   \label{fig:Clausal Structure of Wan} 
+ \Forest{
+ [IP 
+     [IP
+        [NP\subs{\textsc{subj}}]
+        [T'
+            [VP] [T
+                    [NP\subs{\textsc{obj}}] [V]]]]
+     [PP] 
+ ] 
+ }
+ \end{figure}
+
+We argue that this analysis cannot work for Kono. In Kono, a PP modifier of the internal argument can in some cases appear in a pre-verbal position adjacent to the argument \REF{ex:Kono:Pied-Piped PP} or can surface in an extraposed position to the right of the verb  \REF{ex:Kono:In-situ PP}. As seen in \REF{ex:Kono:PN PP}, however, the 3rd person plural pronoun \textit{an} can replace the entire DP object, that is, the pre-verbal DP object \textit{mango-nu} ‘the mangoes’ and post-verbal PP modifier \textit{tebu} \textit{ma} ‘on the table’.\footnote{See \citet{SmithDiss} for similar data and analysis in Mende.}  Based on this, we argue that the DP is a constituent. 
+
+
+\ea \label{ex:Kono:Complex Predicate constituency}
+Constituency
+\begin{xlist}
+
+\ex \label{ex:Kono:Pied-Piped PP}
+\gll Jɔ́n á \textbf{mángò-nù} \textbf{tébù} \textbf{mà} à àn dàún fán. \\
+John \textsc{pfv} mango-\textsc{pl} table on \textsc{a} \textsc{an} eat \textsc{foc}\\
+\glt `John ate the mangoes on the table.'
+
+\ex \label{ex:Kono:In-situ PP}
+\gll Jɔ́n á \textbf{mángò-nù} à àn dàún fán \textbf{tébù} \textbf{mà}. \\
+John \textsc{pfv} mango-\textsc{pl} \textsc{a} \textsc{an} eat \textsc{foc} table on\\
+\glt `John ate the mangoes on the table.'
+
+\ex \label{ex:Kono:PN PP}
+\gll Jɔ́n á \textbf{àn}  dàún fán. \\
+John \textsc{pfv} \textsc{3pl} eat \textsc{foc}\\
+\glt `John ate them.'
+
+\end{xlist}
+\z 
+
+The analysis that we set out in this paper is based on \citet{koopman1992absence}, an investigation of Bambara, and \citet{SmithDiss}, an investigation of Mende. Koopman argues that Bambara is underlyingly VO and that its OV word order results from Case-driven movement, with the object moving to SpecVP and the subject moving to SpecIP respectively. 
+
+She presents data on two types of verbs – those that select for an NP object and those that select for a PP object. Verbs such as \textit{min} ‘drink’ in \REF{ex:Bambara:Canonical} select an NP object which raises from its post-verbal position into SpecVP to be assigned accusative case. Verbs such as \textit{bò} ‘visit’ select for a PP, which does not need to receive case and remains post-verbal \REF{ex:Bambara:PV}. 
+
+
+\ea \label{ex:Bambara}
+Bambara (\citealt[6a and 7a]{koopman1992absence})\footnote{Koopman suggests that the two allomorphs of the PFV aspect marker \textit{ye} and \textit{ra} are conditioned by the licensing of the verb’s internal argument.  The marker \textit{-ra} appears with transitive verbs that select a prepositional phrase encoded DO and which do not assign structural accusative case, while the dummy INFL marker \textit{ye} appears with transitive verbs that do assign it.}
+\begin{xlist}
+
+\ex \label{ex:Bambara:Canonical}
+\gll Den ye \textbf{jin} min. \\
+child \textsc{pfv} water drink \\
+\glt `The child drank water.'
+
+\ex \label{ex:Bambara:PV}
+\gll N bò-ra \textbf{i} ye. \\
+\textsc{1sg} visit-\textsc{pfv} \textsc{2sg} at \\
+\glt `I visited you.'
+
+\end{xlist}
+\z 
+
+Based on Koopman’s analysis of Bambara, \citet{SmithCLS, SmithDiss} proposes a similar analysis for Mende. Mende is canonically OV but has two classes of complex predicates. The verb \textit{lɔ} ‘see’ is a canonical verb with a pre-verbal internal argument \REF{ex:Mende:Canonical}, while the verb \textit{ja} ‘touch’ takes its internal argument in a post-verbal phrase headed by the preposition \textit{a} \REF{ex:Mende:aV}, and the verb \textit{lema} ‘forget’ takes its internal argument in a post-verbal phrase headed by the postposition \textit{ma} \REF{ex:Mende:maV}. 
+
+\newpage
+\ea \label{ex:Mende:3 Classes}
+Mende
+\begin{xlist}
+
+\ex \label{ex:Mende:Canonical}
+\gll Kpàná \textbf{níkè-í-síà} lɔ̀-í lɔ̀. \\
+Kpana cow-\textsc{def}-\textsc{pl} see-\textsc{pfv} \textsc{nf}  \\
+\glt `Kpana saw the cows.'
+
+\ex \label{ex:Mende:aV}
+\gll Kpàná jà-í lɔ̀ à \textbf{níkè-í-síà}. \\
+Kpana touch-\textsc{pfv} \textsc{nf} at cow-\textsc{def}-\textsc{pl} \\
+\glt `Kpana touched the cows.'
+
+\ex \label{ex:Mende:maV}
+\gll Kpàná lemà-í lɔ̀ \textbf{níkè-í-síà} mà. \\
+Kpana forget-\textsc{pfv} \textsc{nf} cow-\textsc{def}-\textsc{pl} on \\
+\glt `Kpana forgot the cows.'
+
+\end{xlist}
+\z 
+
+
+
+\citet{SmithCLS, SmithDiss} argues that the objects of canonical verbs raise for Case, while the objects of complex predicates remain in a post-verbal position, where they are assigned Case by the encoding adposition (cf. \citealt{stowell1981origins, mcfadden2004position, asbury2008morphosyntax}). In this paper, we extend this analysis of Mende to Kono, proposing that the objects of canonical verbs raise for Case, while the objects of complex predicates do not raise. Instead, they are Case-licensed by their adposition. 
+
+
+
+\section{Canonical verbs}
+\label{sec:Canonical Verbs}
+In this section, we investigate canonical verbs, that is, verbs whose internal argument precedes them. In doing so, we compare the variation between OV and VO word order in Kono with Gungbe and Dutch, languages in which  an OV – VO variation also surfaces. Crucially, in the tense and aspect configurations that we have studied in Kono, the internal arguments of canonical verbs always precede the verb.\footnote{While we have not yet investigated every tense / aspect construction, in those that we have, when there is a canonical verb, the order remains OV. See \citet{SmithDiss} for a similar argument for Mende.}\textsuperscript{,}\footnote{We follow \citet{kaiser2011grammar} in marking ɛ́ in \REF{ex:Kono:Progressive} and \REF{ex:Kono:Future} as being a copula.}
+
+
+\ea \label{ex:Kono:3 Tenses}
+\begin{xlist}
+
+\ex \label{ex:Kono:Perfective}
+Perfective \\
+\gll Jɔ́n nàà \textbf{mángò-nù} dàún fán. \\
+John \textsc{pfv} mango-\textsc{pl} eat \textsc{foc} \\
+\glt `John ate the mangoes.'
+
+\ex \label{ex:Kono:Progressive}
+Progressive \\
+\gll Jɔ́n ɛ́ \textbf{mángò-nú} dàún dà. \\
+John \textsc{cop} mango-\textsc{pl} eat \textsc{vsuxf} \\
+\glt `John is eating the mangoes.'
+
+\ex \label{ex:Kono:Future}
+Future \\
+\gll Jɔ́n ɛ́ \textbf{mángò-nú} dàún dà wán. \\
+John \textsc{cop} mango-\textsc{pl} eat \textsc{vsuxf} \textsc{foc}\\
+\glt `John will eat the mangoes.'
+
+\end{xlist}
+\z 
+
+This differentiates Kono from the Gbe languages \citet{aboh2004morphosyntax} and Nupe \citet{kandybowicz2003directionality}, where the aspectual status of the clause determines whether the object precedes or follows the verb. 
+
+
+\ea \label{ex:Gungbe}
+Gungbe \citep[192]{aboh2004morphosyntax}
+\begin{xlist}
+
+\ex \label{ex:Gungbe:imperfective}
+Imperfective (OV) \\
+\gll Kɔ̀jɔ́ tò [\subs{\textsc{dp}} 	àmì	lɔ́ ] zân.	 \\
+Kojo \textsc{imperf} [{} oil \textsc{spf[+def]} ] use-\textsc{nr} \\
+\glt `Kojo is using the specific oil.'
+
+\ex \label{ex:Gungbe:perfective}
+Perfective (VO) \\
+\gll Kɔ̀jɔ́ tò [\textsc{dp} 	àmì	lɔ́ ].  \\
+Kojo use-\textsc{prf}  [{} oil \textsc{spf[+def]} ]  \\
+\glt `Kojo used the specific oil.'
+
+\end{xlist}
+\z 
+
+In Kono, neither an indefinite object \REF{ex:Kono:indefinite}, negation \REF{ex:Kono:negation}, nor a wh-construc\-tion \REF{ex:Kono:WH}, affect the word order. Note, further, that in \REF{ex:Kono:negation} and \REF{ex:Kono:WH}, there is no focus marker, and the OV word order remains.
+
+
+\ea \label{ex:Kono: Consistent OV}
+\begin{xlist}
+
+\ex \label{ex:Kono:indefinite}
+Indefinite \\
+\gll Jɔ́n nàà \textbf{mángò-nù} dàún fán kùnù. \\
+John \textsc{pfv} mango-\textsc{pl} eat \textsc{foc} yesterday \\
+\glt `John ate mangoes yesterday.'
+
+\ex \label{ex:Kono:negation}
+Negation \\
+\gll Jɔ́n nàà má \textbf{mángò-nú} dàún-ní kùnù. \\
+John \textsc{pfv} \textsc{neg} mango-\textsc{pl} eat-\textsc{neg} yesterday \\
+\glt `John did not eat the mangoes yesterday.'
+
+\newpage %longdistance
+\ex \label{ex:Kono:WH}
+Wh-question \\
+\gll Jɔ́n  nà \textbf{fén} 	 	dàún	kùnù.  \\
+John \textsc{pfv} what eat yesterday\\
+\glt `What did John eat yesterday?'
+
+\end{xlist}
+\z 
+
+Distinguishing Kono from the Germanic languages, whether the verb surfaces in a matrix clause (e.g. \REF{ex:Kono:indefinite}) or an embedded context \REF{ex:Kono: Embedded}, the internal argument of a canonical verb precedes the verb. 
+
+
+\ea \label{ex:Kono: Embedded}
+Embedded \\
+\gll Mɛ̀lì àà mìn mbɛ́ John  á nàà  mángò-nú dàun fán. \\
+Mary \textsc{3sg.pfv} hear \textsc{c} John \textsc{3sg.pfv}	\textsc{pfv} mango-\textsc{pl} eat \textsc{foc} \\
+\glt `Mary heard that John ate the mangoes.'
+\z
+
+
+Contrastingly, in Dutch the internal argument follows the verb in a main clause \REF{ex:Dutch:VO} but precedes it in an embedded clause \REF{ex:Dutch:OV}.
+
+
+\ea \label{ex:Dutch}
+\begin{xlist}
+
+\ex \label{ex:Dutch:VO}
+Main Clause VO \citep[22]{zwart2012morphosyntax} \\
+\gll Jan kust Marie. \\
+John kisses Mary \\
+\glt `John kisses Mary.'
+
+\ex \label{ex:Dutch:OV}
+Embedded Clause: OV \citep[24]{zwart2012morphosyntax} \\
+\gll dat Jan Marie kust \\
+that John Mary kisses  \\
+\glt `... that John kisses Mary.'
+
+\end{xlist}
+\z 
+
+
+In summary, we suggest that word order for canonical verb constructions in Kono is not influenced by tense, aspect, negation, wh-questions, definiteness/indefiniteness, or whether it surfaces in a matrix or embedded clause. Whenever there is a canonical verb with a non-coordinated DP object, the DP object will occur in a pre-verbal position. 
+
+
+
+\section{Complex predicates} 
+\label{sec:Complex Predicates}
+
+While the internal arguments of canonical verbs in Kono always occur in a pre-verbal position, the internal arguments of complex predicates always occur in a post-verbal position, encoded in an adpositional phrase. The data in \REF{ex:Kono:forget} shows that the verb \textit{nyina} ‘forget’ has a post-verbal internal argument encoded in a phrase headed by the particle \textit{ma}. \REF{ex:Kono:forgetUG} shows that the internal argument cannot appear pre-verbally, whether or not the particle surfaces with it, while \REF{ex:Kono:forgetUGPS} demonstrates that the internal argument cannot appear pre-verbally with the particle stranded in a post-verbal position.\footnote{Additional complex predicates in Kono include \textit{beya} ‘follow,’ \textit{chinjinda} ‘forgive,’ \textit{tuwa} ‘touch,’ \textit{fɛnebiwa} ‘surprise,’ \textit{tawa} ‘visit,’ \textit{ayinachiwa} ‘remember,’ \textit{tumuwa} ‘need,’ \textit{komu} ‘obey,’ \textit{ka} ‘avoid,’  \textit{biya} ‘chase,’ and \textit{suawa} ‘defend.’ We suggest that these verbs are lexically unpredictable, though there is a great degree of overlap with the two classes of complex predicates in Mende, which include \textit{lema} ‘forget,’ \textit{to} ‘follow,’ \textit{manu} ‘forgive,’ \textit{gɔla} ‘surprise,’ \textit{folo} ‘visit,’ \textit{kpei}, ‘need’, and \textit{kolo} ‘obey’, which all take post-verbal objects headed by a postposition. The verbs \textit{ja} ‘touch’ and \textit{ngi} ‘remember’ both take post-verbal objects headed by a preposition (see \citealt{SmithCLS, SmithDiss} for more on the two classes of complex predicates in Mende). Neither the list of Kono nor Mende verbs is comprehensive, and further description and analysis should be fruitful.}
+
+
+\ea \label{ex:Kono: nyina VO}
+Complex Predicates
+\begin{xlist}
+
+\ex \label{ex:Kono:forget}
+\gll Jɔ́n à nyìnà wàn \textbf{Mɛ́lì} *(ma).  \\
+John \textsc{pfv} forget \textsc{foc} Mary \textsc{prt} \\
+\glt `John forgot Mary.'
+
+\ex \label{ex:Kono:forgetUG}
+\gll *Jɔ́n à \textbf{Mɛ́lì} (ma) nyìnà wàn.   \\
+John \textsc{pfv} Mary \textsc{prt} forget \textsc{foc}  \\
+\glt `John forgot Mary.'
+
+\ex \label{ex:Kono:forgetUGPS}
+\gll *Jɔ́n à \textbf{Mɛ́lì} nyìnà wàn  (ma).  \\
+John \textsc{pfv} Mary forget \textsc{foc}  \textsc{prt} \\
+\glt `John forgot Mary.'
+
+\end{xlist}
+\z 
+
+
+As was the case with canonical verbs, tense, negation, and wh-constructions do not alter the position of a complex predicate preceding its DP internal argument. 
+
+
+\ea \label{ex:Kono: Consistent VO}
+\begin{xlist}
+
+\ex \label{ex:Kono:Complex: Present}
+Present Tense \\
+\gll Jɔ́n nyìnà dìmù \textbf{Mɛ́lì} mà. \\
+John forget \textsc{dimu} Mary \textsc{prt} \\
+\glt `John forgets Mary.'
+
+\ex \label{ex:Kono:Complex: Negation}
+Negation \\
+\gll Jɔ́n ní má nyìnà \textbf{Mɛ́lì} mà.    \\
+John \textsc{ni} \textsc{neg} forget Mary \textsc{prt} \\
+\glt `John did not forget Mary.'
+
+\newpage
+\ex \label{ex:Kono:Complex: WH}
+Wh-Question \\
+\gll Jɔ́n nà nyìnà \textbf{nyɔ̀} mà.  \\
+John \textsc{pfv} forget who \textsc{prt} \\
+\glt `Who did John forget?'
+
+\ex \label{ex:Kono:Complex: Embedded}
+Embedded Clause \\
+\gll Mélì à mín mbɛ́ Pìtá bèyà wàn \textbf{dèn} \textbf{mùsù} \textbf{nɛ́} fɛ̀.	  \\
+Mary \textsc{pfv} hear \textsc{C} Peter follow \textsc{foc} female child \textsc{nɛ} \textsc{prt} \\
+\glt `Mary heard that Peter followed the girl.'
+
+\end{xlist}
+\z 
+
+Thus far, we have argued that there are two distinct classes of verbs in Kono – canonical verbs and complex predicates, distinguished by the context in which their internal argument surfaces. We turn next to the particle, investigating its lexical contribution, as well as its relationship to the verb and the argument. 
+
+We first highlight that different verbal predicates occur with different particles. For instance, the verb \textit{chian} in \REF{ex:Kono:PV fear ma} can only encode its internal argument with the particle \textit{mà}. The verbs \textit{butuneche} ‘attack’ \REF{ex:Kono:PV attack a} and \textit{beya} ‘follow’ \REF{ex: Kono:PV follow fɛ} likewise use the particles \textit{à} and \textit{fɛ́}, respectively. This points to a selection relationship between the verb and the particle. 
+
+\ea \label{ex:Kono:PV fear ma} 
+\gll Jɔ́n chìán dìmú \textbf{Mɛ́lì} mà	/ *à / *fɛ́. \\
+John fear \textsc{dimu} Mary \textsc{prt} {} \textsc{prt} {} \textsc{prt} \\
+\glt `John fears Mary.'
+\z
+
+\ea \label{ex:Kono:PV attack a}
+\gll Jɔ́n à bùtùnɛ̀chɛ́ yáá à	/ *mà / *fɛ́. \\
+John \textsc{pfv} attack lion \textsc{prt} {} \textsc{prt} {} \textsc{prt} \\
+\glt `John attacked the lion.'
+\z
+
+\ea \label{ex: Kono:PV follow fɛ}
+\gll Jɔ́n a béyà \textbf{Mɛ́lì} fɛ́ 	/ *à  / *mà. \\
+John \textsc{pfv} follow Mary \textsc{prt} {} \textsc{prt} {} \textsc{prt} \\
+\glt `John followed Mary.'
+\z
+
+
+Crucially, each of these particles also functions as a postposition in the language. In the following data, we see that when they function as postpositions \textit{mà} means ‘on’ \REF{ex: Kono: Postpo ma}, while \textit{ɔ̀} means `at'  \REF{ex: Kono: Postpo a} and \textit{fɛ́} means ‘beside’ \REF{ex: Kono: Postpo fɛ}.
+
+\ea \label{ex: Kono: Postpo ma}
+\gll Jɔ́n nàà mángò-nú yén fán 	[tébù 	\textbf{mà}]. \\
+John \textsc{pfv} mango-\textsc{pl} see \textsc{foc} table on \\
+\glt `John  saw the mangoes on the table.'
+\z
+
+\ea \label{ex: Kono: Postpo a}
+\gll Jɔ́n nàà Mɛ́lì yén fán [màchìtì \textbf{ɔ̀}]. \\
+John \textsc{pfv} Mary see \textsc{foc} market at \\
+\glt `John saw Mary at the market.'
+\z
+
+\ea \label{ex: Kono: Postpo fɛ}
+\gll Jɔ́n nàà Mɛ́lì yén fán [màchìtì \textbf{fɛ́}]. \\
+John \textsc{pfv} Mary see \textsc{foc} market beside\\
+\glt `John saw Mary beside the market.'
+\z
+
+
+
+As noted earlier, we assume that adpositions are able to assign Case. As such, we propose that the objects of complex predicates do not raise for Case, as their encoding particle is a postposition and assigns Case within its functional structure instead \citep{stowell1981origins,mcfadden2004position,asbury2008morphosyntax}. 
+
+Our analysis of canonical and complex predicates is laid out as follows. The initial portion of the derivation of the sentence in \REF{ex:Kono: Canonical for Tree} with the canonical verb \textit{yen} ‘see’ is shown in \figref{fig:Derivation of Canonical Verb in Kono}. We propose that the DP internal argument merges as the complement of the verb before raising into SpecKaseP for Case-licensing.\footnote{Two reviewers raise the question of where the Kase Phrase is located and how the DO arrives in that position. We acknowledge that the details of this need to be worked out. Our goal at this point is to simply propose that it is Case-driven movement which generates the OV word order. More research is necessary to understand the specific process which generates that order. }
+
+\ea \label{ex:Kono: Canonical for Tree}
+\gll Pìtà nàà Mɛ́lì yén fán.  \\
+Peter \textsc{pfv} Mary see \textsc{foc}\\
+\glt `Peter saw Mary.'
+\z
+
+ \begin{figure}
+ \caption{Derivation of canonical verb in Kono}
+    \label{fig:Derivation of Canonical Verb in Kono} 
+ \Forest{
+ [KaseP 
+     [DP, [Mɛli, roof, name = DO Surface] ]  [Kase'
+            [Kase \xhead \\] [\dots
+                [vP
+                    [DP [\tr{Peter}]] [v'
+                                [v\xhead \\ [yen \\`see', name = V Surface]] [VP
+                                    [V\xhead \\ [\tr{v}] [DP [\st{Mɛli}, roof, name = DO Merge ]]]]]]]]]
+  \draw[->] (DO Merge) to[out=south west,in=south] (DO Surface);  
+ }
+ \vspace{-12mm}
+ \end{figure}
+
+The complex predicate \textit{chian} ‘fear’ in \REF{ex:Kono:V O PRT} takes a post-verbal internal argument, encoded in an adpositional phrase. Paralleling the movement of the DP object of the canonical verb, we suggest that the DP object of a complex predicate merges as a complement to the encoding postposition, before raising into a specifier of its extended projection, a KasePhrase for Case licensing (\figref{fig:Derivation of Complex Predicate in Kono}). Since it no longer needs to raise above the verb for Case-licensing, it yields a V [O Prt] surface structure. 
+
+\ea \label{ex:Kono:V O PRT}
+\gll Pìtà nàà chìàn fán Mɛ́lì mà.  \\
+Peter \textsc{pfv} fear \textsc{foc} Mary \textsc{prt}\\
+\glt `Peter feared Mary.'
+\z
+
+ \begin{figure}
+ \caption{Derivation of complex predicate in Kono}
+       \label{fig:Derivation of Complex Predicate in Kono} 
+ \Forest{
+                [vP
+                    [DP \xhead \\ [Peter]] [v'
+                        [v \xhead \\ [chian\\`fear']] [VP
+                                [V \xhead \\ [\tr{v}]]  [FP\textsc{kase}
+                                        [DP [Mɛli, roof, name = PObj Surface]] [F'
+                                                [F \xhead \\] [PP
+                                                                [P [ma]] [DP [\st{Mɛli}, roof, name = PObj Merge]]]]]]]]
+      \draw[->] (PObj Merge) to[out=south west,in=south] (PObj Surface); 
+    }
+ \end{figure}
+
+
+
+\section{CP complements}
+\label{sec:CP Complements}
+Thus far we have sought to account for the distinction between canonical (OV) and complex (VO) word orders in Kono. In this section, we turn to CP complements, showing that they obligatorily occur in a post-verbal position. The verb \textit{min} ‘hear’ is a canonical verb, and \REF{ex:Kono: CanonicalDPO} shows that its DP internal argument \textit{faniya} ‘the lie’ must surface in a pre-verbal position. 
+
+\begin{samepage}
+\ea \label{ex:Kono: CanonicalDPO}
+DP Object \\
+\gll Mɛ́lì à fànìyà mín fán \{*fànìyà mà/à/fɛ́\}.  \\
+Mary \textsc{pfv} lie hear \textsc{foc} \phantom{\{*}lie \textsc{prt} \\
+\glt `Mary heard the lie.'
+\z
+\end{samepage}
+
+When the verb’s complement is a CP, instead of a DP, it must surface in a post-verbal position \REF{ex:Kono: CanonicalCPO}. Adopting Stowell's (1981) Case Resistance Principle, we suggest that since the CP is [+tense], it does not need to receive Case.
+
+
+\ea \label{ex:Kono: CanonicalCPO}
+CP Object \\
+\gll Mɛ́lì à \{mín\} [mbé Jɔ́n ànná mángò-nú dàún] \{*mín\}.  \\
+Mary \textsc{pfv} hear  \textsc{c} John \textsc{3.pfv} mango-\textsc{pl} eat hear \\
+\glt `Mary heard that John ate the mangoes.'
+\z
+
+The verb \textit{nyina} ‘forget,’ being a complex predicate, has a post-verbal object \REF{ex:Kono: ComplexDPO}. When the verb in a complex predicate takes a CP complement, the CP surfaces in a post-verbal position, and, significantly, there is no postposition \REF{ex:Kono: ComplexCPO} . 
+
+
+\ea \label{ex:Kono: ComplexDPO}
+DP Object \\
+\gll Mɛ́lì à \{*mángò-nú 	mà\} nyìnà  \{mángò-nú 	mà\}.	 \\
+Mary \textsc{pfv} mango-\textsc{pl} \textsc{prt} forget mango-\textsc{pl} \textsc{prt} \\
+\glt `Mary forgot the mangoes.'
+\z
+
+
+\ea \label{ex:Kono: ComplexCPO}
+CP Object \\
+\gll Mɛ́lì à nyìnà [mbé Jɔ́n ànná mángò-nú dàún] (*mà). \\
+Mary \textsc{pfv} forget \textsc{c} John \textsc{3sg.pfv} mango-\textsc{pl} eat \textsc{prt} \\
+\glt `Mary forgot that John ate the mangoes.'
+\z
+
+These data are significant for two reasons. First, the post-verbal position of the CP aligns with our proposal that all verbal complements begin in a post-verbal position. Second, the absence of the postposition suggests that its purpose is Case-licensing. If the postposition Case-licenses the verb’s internal argument in complex predicate constructions, there must be a mechanism to Case-license the internal arguments of canonical verbs, which we suggest is a KasePhrase whose null head licenses the DP argument that moves into its specifier.
+We propose similar structures for canonical and complex predicates with CP complements in \figref{CP Complement}. Whether the verb is canonical, e.g. \textit{min} ‘hear’ or complex, e.g. \textit{nyina} ‘forget,’ it selects a CP complement, and since the CP does not need to be Case-licensed, it remains in a post-verbal position.  
+
+ \begin{figure}
+ \caption{CP complement}
+   \label{CP Complement}
+ \Forest{
+ [vP
+     [DP [Mɛli, roof, name = S Merge]] [v'
+        [v \xhead \\ [min / nyina\\`hear / forget', name = V Move]] [VP
+            [V \xhead \\ [\tr{v}]] [CP [mbe Jɔn an na mango nu daun \\`that John ate the mangoes', roof]]]]]
+ }
+\end{figure}
+
+
+\section{Coordinated direct objects}
+\label{sec:Coordinated Direct Objects}
+We conclude our argument for the underlying head-initial structure of verb phrases in Kono by looking at some intriguing data related to coordinated direct objects. The verb \textit{daun} ‘eat’ is a canonical verb, and in \REF{ex:Kono: Coord DO} it has a coordinated direct object \textit{mangu-nu ni dumbi-nu} ‘mangoes and oranges.’ As expected, the entire coordinated DP can surface in a pre-verbal position in \REF{ex:Kono:PreVCoord}. Intriguingly, the DP object can also be split, with the first conjunct surfacing pre-verbally, while the coordinator and second conjunct remain in a post-verbal position, as seen in \REF{ex:Kono:SplitCoord}. It is ungrammatical for the entire coordinated direct object to remain in a post-verbal position \REF{ex:Kono:PostCoord}. 
+
+
+\ea \label{ex:Kono: Coord DO}
+\begin{xlist}
+
+\ex \label{ex:Kono:PreVCoord}
+Pre-verbal Object \\
+\gll Jɔ́n à \textbf{mángò-nù} \textbf{ní} \textbf{dùmbí-nù} dàún fán. \\
+John \textsc{pfv} mango-\textsc{pl} and orange-\textsc{pl} eat \textsc{foc} \\
+\glt `John ate the mangoes and oranges.'
+
+\ex \label{ex:Kono:SplitCoord}
+Split Object \\
+\gll Jɔ́n à \textbf{mángò-nù} \textbf{\{*ní\}} dàún fán \textbf{\{ní\}} \textbf{dùmbí-nù}. \\
+John \textsc{pfv} mango-\textsc{pl} and eat \textsc{foc} and orange-\textsc{pl} \\
+\glt `John ate the mangoes and oranges.'
+
+\ex \label{ex:Kono:PostCoord}
+*Post-verbal Object \\
+\gll *Jɔ́n à dàún \textbf{mángò-nú} \textbf{ní} \textbf{dùmbí-nú}. \\
+John \textsc{pfv} eat mango-\textsc{pl} and orange-\textsc{pl}  \\
+\glt `John ate the mangoes and oranges.'
+
+\end{xlist}
+\z 
+
+These data present an interesting puzzle. The basic facts are that one or both DPs can surface in a pre-verbal position, which points towards either the first DP or the entire coordinated phrase raising for Case via phrasal movement. This data aligns with our proposal that DP objects of canonical verbs begin in a post-verbal position and raise for Case. We suggest the derivations in 
+\figref{fig:Split Coordinated Object DP} and \figref{fig:Pre-verbal Coordinated Object DP}, based on the data in \REF{ex:Coord for Tree}. In both cases the canonical verb \textit{daun} ‘eat’ takes a coordinated DP complement to its right. In \figref{fig:Split Coordinated Object DP} the specifier of the coordinated phrase, that is the first conjunct \textit{mangu-nu} ‘the mangoes’ raises for Case-licensing itself, while in \figref{fig:Pre-verbal Coordinated Object DP} it pied-pipes the entire coordinated phrase.\footnote{A reviewer raised the question as to whether this analysis in which only one DP raises out of the coordinate structure points to a violation of the Coordinate Structure Constraint (e.g.\REF{ex:Kono:SplitCoord})? While we don’t have a clear answer for that, we note that this type of construction with a split coordinated DP object occurs in multiple Mande languages, e.g. Mende \citep{SmithDiss}. Mende permits wh-movement, and coordinate structures are strong islands \citep{smith2024absence}. It could be that in Mande languages the CSC holds for Ā-movement but not A-movement, or it could be that these are not true coordinate structures, but rather comitatives. 
+A further question is how the second conjunct is Case-licensed in this construction. Further research is necessary in order to tease out these distinctions.}
+
+
+\ea \label{ex:Coord for Tree}
+Pre-verbal Object \\
+\gll Jɔ́n à \textbf{mángò-nù} \{\textbf{ní} \textbf{dùmbí-nù}\} dàún fán \{\textbf{ní} \textbf{dùmbí-nù}\}. \\
+John \textsc{pfv} mango-\textsc{pl} and orange-\textsc{pl} eat \textsc{foc} and orange-\textsc{pl}\\
+\glt `John ate the mangoes and oranges.'
+\z
+
+ \begin{figure}
+ \caption{Split coordinated object DP}
+       \label{fig:Split Coordinated Object DP} 
+ \Forest{
+ [KaseP 
+     [DP [mangu nu \subs{\textit{k}} \\`mangoes', roof, name = 1Coord Surface]] [Kase\xbar
+        [Kase \xhead \\] [\dots
+            [vP
+                [DP [\tr{Jɔn}]] [v\xbar
+                    [v \xhead \\ [daun \\`eat']] [VP
+                        [V \xhead \\ [\tr{v}]] [CoordP 
+                                                    [DP [\tr{k}, name = 1Coord Merge]] [Coord'
+                                                        [Coord \xhead \\ [ni \\`and'] [DP [dumbi nu \\`oranges', roof]]]]]]]]]]]
+      \draw[->] (1Coord Merge) to[out=south west,in=south] (1Coord Surface); 
+ }
+ \end{figure}
+
+ \begin{figure}
+ \caption{Pre-verbal coordinated object DP}
+       \label{fig:Pre-verbal Coordinated Object DP} 
+ \Forest{
+ [KaseP 
+     [DP [mangu-nu ni dumbi-nu\subs{\textit{j}} \\`mangoes and oranges', roof, name = CoordDP Surface ]] [Kase\xbar
+        [Kase \xhead \\] [\dots
+            [vP
+                [DP [\tr{Jɔn}]] [v\xbar
+                    [v \xhead \\ [daun \\`eat']] [VP
+                        [V \xhead \\ [\tr{v}]] [CoordP [\tr{j}, name = CoordDP Merge]]]]]]]]
+      \draw[->] (CoordDP Merge) to[out=south west,in=south] (CoordDP Surface); 
+    }
+\vspace{-12mm}
+ \end{figure}
+
+
+
+\section{Conclusion}
+\label{sec:Conclusion}
+In this paper, we argued that Kono should be classified as canonically, but not strictly, OV. Though most verbs surface with a pre-verbal internal argument, we introduced a class of verbs whose internal argument obligatorily surfaces in a post-verbal position, encoded in a postpositional phrase. Based on work by \citet{koopman1992absence} and \citet{SmithCLS, SmithDiss}, we suggested that OV word order is derived via leftward movement of the internal argument into the specifier of a KasePhrase. The internal argument of complex predicates does not need to raise, as it is Case-licensed by its postpositional head. Further evidence that this particle is a postposition is that it does not surface when the verb takes a CP complement, which does not need Case. We showed that complex noun-phrase-internal arguments of canonical verbs behave as predicted with the DP portion raising into a Case position, while the CP remains in-situ in a post-verbal position. We concluded by looking at coordinated direct objects, where we show that at least one conjunct must raise into a pre-verbal position, ostensibly for Case-licensing. It is possible for both conjuncts to raise via pied-piping or for the coordinator and second conjunct to remain in a post-verbal position. How the post-verbal conjunct is Case-licensed is a subject for further research. 
+
+This data in this paper aligns with constructions found in many Mande OV languages, as seen in the following examples. In each case, the verb’s complement surfaces in a post-verbal position with a postposition. 
+
+\begin{samepage}
+\ea \label{ex:Mandinka}
+Mandinka (adapted from \citealt[\#3]{creissels2024sketch}) \\
+\gll Kèw-óo làfí-tà \textbf{kódòo} lá.  \\
+man-\textsc{d} want-\textsc{cpl} money-\textsc{d} \textsc{p} \\
+\glt `The man wants money.'
+\z
+\end{samepage}
+
+\ea \label{ex:Lorma}
+Lorma (adapted from \citealt[81-82]{dwyer1981reference})\footnote{Dwyer refers to the verb’s object as ‘the object of a postposition.’} \\
+\gll Gè wɛ́lɛ́ \textbf{másságìì}-và. 	  \\
+\textsc{1sg} see chief-\textsc{p} \\
+\glt `I saw the chief.'
+\z
+
+\ea \label{ex:Susu}
+Susu (adapted from \citealt{duport1865outlines}) \\
+\gll Um nemu \textbf{a} ma.	  \\
+\textsc{1sg} forget \textsc{3sg} \textsc{p}  \\
+\glt `I forget him.'
+\z
+
+\ea \label{ex:Mende: Final}
+Mende \\
+\gll Kpàná lémà-í lɔ́ \textbf{níkè-í-síà} mà. \\
+Kpana forget-\textsc{pst} \textsc{nf} cow-\textsc{def}-\textsc{pl} \textsc{p} \\
+\glt `Kpana forgot the cows.'
+\z
+
+We argue that this data points to a consistent structure across Mande languages, one which greatly resembles Germanic particle verbs, particularly the Danish data in \REF{ex:Danish}. 
+
+
+\ea \label{ex:Germanic}
+Germanic (\citealt{larsen2014particles}, citing \citealt{svenonius1996verb})
+\begin{xlist}
+
+\ex \label{ex:Norwegian}
+Norwegian \\
+\gll Vi slapp \{ut\} hunden \{ut\}. \\
+we let out the.dogs out \\
+\glt `We let the dogs out.'
+
+\begin{samepage}
+    
+
+\ex \label{ex:Danish}
+Danish \\
+\gll Vi slapp \{*ud\} hunden \{ud\}. \\
+we let out the.dogs out \\
+\glt `We let the dogs out.'
+\end{samepage}
+
+\ex \label{ex:Swedish}
+Swedish \\
+\gll Vi slapp \{ut\} hunden \{*ut\}. \\
+we let out the.dogs out \\
+\glt `We let the dogs out.'
+
+\end{xlist}
+\z 
+
+In light of this striking similarity, we will be working on a detailed comparison of particle verbs in Germanic and Hungarian with similar constructions in the Mande languages.
+
+\section*{Abbreviations}
+
+
+\begin{tabular}{llll} 
+1 & first person  & \textsc{nf} & neutral focus \\ 
+2 & second person & \textsc{nr} & nominalizer \\
+3 & third person & \textsc{pfv} & perfective \\
+C & complementizer & \textsc{pl} & plural \\
+\textsc{cop}  & copula  & \textsc{post} & postposition \\
+\textsc{def} & definite & \textsc{prt} & particle \\
+\textsc{foc} & focus & \textsc{sg} & singular \\
+\textsc{imperf} & imperfect & \textsc{spf} & specific \\
+\textsc{neg} & negative & \textsc{vsufx} & verbal suffix \\
+\end{tabular}
+
+
+\sloppy 
+%this command eliminates a quirk that appears in the bibliography, you can just leave it here.
+\printbibliography[heading=subbibliography,notkeyword=this]
+
+\end{document}

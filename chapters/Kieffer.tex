@@ -1,0 +1,517 @@
+\documentclass[output=paper,colorlinks,citecolor=brown
+% ,hidelinks
+% showindex
+]{langscibook}
+\ChapterDOI{10.5281/zenodo.20285198}
+\author{Brandon Kieffer}\affiliation{University of Edinburgh}
+
+%Insert your title here
+\title{A critique of areal-only approaches to Bantu spirantization}
+
+\abstract{Some scholars, such as \citet{Janson2007}, have claimed that Bantu Spirantization was spread primarily by contact, and to such an extent that it is not a useful tool for establishing the taxonomic structure within Bantu. Such areal approaches fail to account for some distribution patterns and spirantization reflexes, especially among languages around Lake Victoria. A preferable explanation is that Bantu Spirantization was spread by a mix of inheritance and contact.
+}
+
+\IfFileExists{../localcommands.tex}{
+   \addbibresource{../localbibliography.bib}
+   \input{../localpackages}
+   \input{../localcommands}
+   \input{../localhyphenation}
+   \boolfalse{bookcompile}
+   \togglepaper[13]%%chapternumber
+}{}
+
+\begin{document}
+\maketitle
+\section{Introduction}
+
+What is traditionally called Bantu Spirantization (BS) is a complex series of sound changes, whose history and distributions are strongly debated. As part of this debate, some have dismissed BS as a tool for establishing taxonomic relations within Bantu, claiming instead that the history and distribution of BS are overwhelmingly contact-based. The quote below, from \citet[99]{Janson2007}, exemplifies this view:
+\begin{quote}
+    Wave-like changes usually can tell nothing or little about prehistoric splits or migrations. [...] spirantisation is such a change. Consequently, as it cannot be used an indicator of major groupings within Bantu, as has been stated before, most recently by \citet[174]{NursePhillipson2003}\footnote{A reviewer points out that \citeauthor{Janson2007}'s (\citeyear{Janson2007}) reference to \citet{NursePhillipson2003} is a misleading representation of their stated position. The reviewer, like myself, interpreted \citet{NursePhillipson2003} as arguing for a mixture of tree and wave, much as I do in this paper.}
+\end{quote}
+
+While it is true that BS as a singular entity proved unreliable for establishing the primary branches of Bantu and immediate daughters of Proto-Bantu (PB), this does not necessitate that the changes it encompasses are useless for establishing the links within and between other levels of Bantu taxonomy. Indeed, components of  BS have been successfully utilized as a taxonomic indicator for families within Bantu such as the Kikongo Language Cluster \citep{bostoen2019} and Northeast Coast Bantu \citep{hinnebusch1981} (see \sectref{sec:kieffer:KLC/NEC}).
+
+\citeauthor{Janson2007}, in a \citeyear{Janson2007} paper where he proposes a model for the areal distribution of BS, dismisses the utility of BS for taxonomy. In this paper I argue instead that we should acknowledge and utilize the shifts collectively identified as BS as a useful tool for taxonomy in Bantu subfamilies, and that we should move past the theory of BS’s distribution being exclusively contact-based. We should look instead to different hybrid models that involve both inheritance and contact as vectors of distribution, which can better account for the data.
+
+While the term BS is used a number of times in this paper, it should be understood that BS is not a single phenomenon, but a conventional term used by Bantuists to describe a set of distinct yet interacting sound shifts in a large number of languages. The BS changes are made up of an initial group of changes targeting a common environment in PB, and the other changes that were fed by the initial shifts. Due to the intertwined histories of these shifts and the opacities this caused, it is hard to isolate the shifts from each other, and so researchers look at them collectively. This does not mean that BS is unitary in any way however. Additionally, one should not take the “spirantization" part of “Bantu Spirantization" to have the same definition it would have in other language traditions, but rather as a component of the conventional name.
+
+\section{Background}
+
+PB is reconstructed as having 11 consonantal phonemes \citep{bastin2002}, but only the six stops are of interest to us, as only they are involved in BS. While it is possible that the PB sounds *c and *j were also stops, and sometimes became affricates and fricatives (as in Luganda and Kinyarwanda, for example \citealt{katamba1974,kieffer2021}), we will not be considering them, as most of the BS literature ignores them \citep{Janson2007,bostoen2008,labroussi2000}. PB is also reconstructed as having 7 vowels, of four heights. The highest two vowels, *i and *u are of the most interest in discussions of BS.
+
+The traditional story is that BS shifted the PB stops into affricates and fricatives when they precede *i and *u. This can be seen in the Kinyarwanda data in \tabref{tab:kieffer:Rwanda} below.
+
+\begin{table}
+\caption{BS in Kinyarwanda
+\citep{bastin2002,kieffer2021,Kinyarwanda}
+}
+\label{tab:kieffer:Rwanda}
+ \begin{tabular}{lllll}
+  \lsptoprule
+           Proto-Bantu & Kinyarwanda & Gloss\\
+  \midrule
+  *g\textbf{i}d  &   /-\textbf{z}iɾ-/ & be.taboo\\
+    *g\textbf{ɪ}d  &   /-\textbf{g}iɾ-/ & have\\
+ *k\textbf{u}nd  &   /-\textbf{pf}und-/ & become.fuller\\
+  *k\textbf{ʊ}nd  &   /-\textbf{k}und-/ & like\\
+ 
+  \lspbottomrule
+ \end{tabular}
+\end{table}
+
+
+There is a lot of variation in the BS reflexes between modern languages. The consonant-vowel sequences *pi, *bi, *tu, and *du show the most variation in their modern reflexes, with little regularity across languages in their place of articulation, and in some languages these sequences even retained their status as stops, like in Kinyarwanda \citep{kieffer2021} and Shi \citep{polak1975}. Many languages had their BS reflexes undergo further changes, such as deaffrication, devoicing, debuccalization, and elision \citep{Janson2007}. The diversity of reflexes can be seen in \tabref{tab:kieffer:BS} below.
+
+\begin{table}
+\caption{BS Reflexes in some East Bantu Languages
+\citep{bastin2002,katamba1974,kieffer2021,poletto1998,hinnebusch1981,Janson2007}
+}
+\label{tab:kieffer:BS}
+\fittable{
+ \begin{tabular}{l*{7}{cc}}
+  \lsptoprule
+           PB & \multicolumn{2}{c}{Rwanda} & \multicolumn{2}{c}{Nkore} & \multicolumn{2}{c}{Ganda} & \multicolumn{2}{c}{Swahili} & \multicolumn{2}{c}{Saamia} & \multicolumn{2}{c}{Ngoni} & \multicolumn{2}{c}{Ruihi}\\
+  \cmidrule(r){2-3} \cmidrule(lr){4-5} \cmidrule(lr){6-7} \cmidrule(lr){8-9} \cmidrule(lr){10-11} \cmidrule(lr){12-13} \cmidrule(lr){14-15}
+    &   *\_i & *\_u & *\_i & *\_u & *\_i & *\_u & *\_i & *\_u & *\_i & *\_u & *\_i &  *\_u & *\_i & *\_u\\
+\midrule
+% need to get underscore to show
+    *p & ç & f & h & h & s & f & f & f & f & f & h & h & $\emptyset$ & $\emptyset$\\
+    *t & s & ʈʂ & s & tʃ & s & f & s & f & s & f & h\textasciitilde s & h & $\emptyset$ & $\emptyset$\\
+       *k & ts & pf & s & f & s & f & ʃ & f & s & f & h & h & $\emptyset$ & $\emptyset$\\
+   *b & bɟ, & v & z & ʒ & z & v & v & v & f & f & h & h & $\emptyset$ & $\emptyset$\\
+  *d & z & v & z & ʒ & z & v & z & v & s & f & h & h & $\emptyset$ & $\emptyset$\\
+    *g & z & v & z & ʒ & z & v & z & v & s & f & h & h & $\emptyset$ & $\emptyset$\\
+% bastin et al 2002, katamba 1974, kieffer 2021, poletto 1998, hinnebusch et al 1981, janson 2007
+
+  \lspbottomrule
+ \end{tabular}
+ }
+\end{table}
+
+Most of the BS languages also underwent the 7>5 vowel merger, which merged the high and near-high vowels of PB, ie: *i,*ɪ>i and *u,*ʊ>u. By merging the BS-triggering highest vowels with non-triggering near-high vowels, the merger obscured that which triggers the initial shifts of BS. Thus it is well agreed upon that the initial BS shifts must have predated the merger, since the merger obscured the triggering environment \citep{schadeberg1994}.
+
+It should be made explicit that the high vowels in five-vowel languages, along with the near-high vowels in seven-vowel languages, have never been found to trigger BS-like rules \citep{schadeberg1994}. It is because of this commonality that earlier work on BS represented the near-high vowels (*ɪ and *ʊ in this work) as <i> and <u>, and used more esoteric symbols for the highest two. Due to the debate over the phonetic identity of the highest PB vowels, there is still a lot of variation in how they are represented orthographically \citep{Janson2007}. I have adapted \citeauthor{schadeberg1994}’s (\citeyear{schadeberg1994}) system, due to its similarity to attested Bantu vowels inventories. His system does raise a question of why *[i] and *[u] triggered BS shifts in seven-vowel languages, yet [i] and [u] cannot in five-vowel languages. While this is a topic ripe for debate, we will not be delving into it in this paper.
+
+\begin{figure}[t]
+    \includegraphics[height=.5\textheight]{figures/KiefferFig1.png}
+%     \includegraphics[width=1\textwidth]{figures/KiefferFig1.pdf}
+    \caption{Isoglosses of BS and Vowel Merger}
+
+    \label{fig:kieffer:isogloss map}
+\end{figure}
+
+
+BS shifts and the vowel merger are now found in around half of the Bantu languages. \figref{fig:kieffer:isogloss map}   shows the distribution and isoglosses for both.\footnote{ The isogloss for BS is an isogloss of the languages that \citet{Janson2007} describes as having “Full Spirantisation”, which will be explained in \sectref{sec:kieffer:janson}} One should note the presence of languages without either shift in South Africa and the areas east of Lake Victoria in addition to the large patch in the northwest. Seven vowel languages that underwent BS shifts can be found on either side of the Great Lakes and Lake Corridor areas. Two BS-free, five-vowel languages can be seen as well, in western Zambia and the north of the DRC. It should be noted that many of the languages said to have BS do not have the vowel merger, and languages with the vowel merger are a subset of languages with BS. This indicates (as comparative and theoretical evidence prove) that the initial BS shifts began earlier, and the vowel merger later spread within the BS-area. Based on the vowel merger’s cross-clade distribution, and the relative simplicity of this single shift, it seems likely that the merger was spread predominantly through contact.\footnote{I devised this map to show the isoglosses of BS and the vowel merger. My list of which languages fall into which category is based on data from \citet{schadeberg1994}, \citet{Janson2007}, and \citet{bostoen2008}. I used the map in \citet{nurse2001} to approximate the locations of the dots to represent the different languages. The base map comes from Wikimedia, (Thuvack, \url{<https://creativecommons.org/licenses/by-sa/3.0>}, via Wikimedia Commons).}
+
+
+
+%\newpage
+
+\largerpage
+
+\begin{figure}[t]
+%     \includegraphics[width=1\textwidth]{figures/kiefferFig2.png}
+    \includegraphics[height=.5\textheight]{figures/kiefferFig2.pdf}
+    \caption{Immediate daughter-clades of Proto-Bantu, and extent of Congo rainforest}
+    \label{fig:kieffer:bostoen map}
+\end{figure}
+
+
+\figref{fig:kieffer:bostoen map}, based on \citet{bostoen2008}, shows both the approximate extent of the Congo rainforest and the locations of the (according to \citealt{bostoen2008}) six primary daughter-clades of PB. By comparing \figref{fig:kieffer:isogloss map} and \figref{fig:kieffer:bostoen map}, we see that the BS languages are predominantly found within the East Bantu, Southwest Bantu, and West Coastal Bantu clades, and that very few of those languages are found within the Congo rainforest.
+
+
+%\newpage
+
+\begin{figure}[t]
+    \centering
+%     \includegraphics[width=.7\textwidth]{figures/KiefferFig3.png}
+    \includegraphics[height=.5\textheight]{figures/KiefferFig3.pdf}
+    \caption{Clades of East Bantu}
+    \label{fig:kieffer:clade map}
+\end{figure}
+
+\figref{fig:kieffer:clade map}   shows the distribution of the subfamilies of East Bantu. By comparing \figref{fig:kieffer:isogloss map} and \figref{fig:kieffer:clade map} we can see that the distribution of BS languages and the isogloss of the vowel merger do sometimes line up with the clades. The Central Kenya clade is outside both isoglosses, while the North Mozambique clade is inside both. The Rufiji-Ruvuma clade is said to have BS in all of its languages, but, as comparing the maps shows, only some of its members underwent the vowel merger. By comparing the two maps again, we can see that while most of Southern Bantu is said to have BS, there are some members that do not, namely Sotho-Tswana.\footnote{This map, of my own making, derives from one in \citet{nurse2001}. The identity and make up of the East Bantu subfamilies comes from \citet{nurse1999}. Since there is debate on the extent of individual languages, and on the makeup of the subfamilies, this map should be viewed as a visual aid to the approximate locations of the clades rather than a precise survey.}
+
+%\newpage
+
+\subsection{Issues with the traditional tree model of BS}
+
+One possible explanation for the distribution of BS and BS-free languages is that BS was an innovation of an early daughter of PB, from which all BS languages are descended, in contrast with the BS-free languages. Such an idea is disproven by some of the established cladistic results, where BS and BS-free languages have been shown to share a recent common ancestor. These clades cut across the imagined division between BS and BS-free languages.
+
+One example is Central Kenya Bantu (E50).  Central Kenya Bantu has been shown to be closely related to several neighboring clades such as Great Lakes Bantu (Zone J), Chaga-Taita (E60+E74), and Northeast Coast Bantu (G10-40+E70). The sisterhood of these clades with Central Kenya Bantu is supported by both lexical evidence \citep{ehret1973,ehret1999,bastin1999} and morpho-phonological works \citep{nurse1999,NursePhillipson2003}. Central Kenya Bantu is entirely BS-free (Nurse 1999), while its sister clades are mostly or entirely made up of BS languages \citep{nurse1999,Janson2007}.
+
+If it were correct that BS reflexes were inherited from a single common ancestor which innovated them, then the presence of BS reflexes in Chaga-Taita would entail that an ancestor of Central Kenya Bantu inherited BS reflexes as well. In order to derive the attested phonologies in Central Kenya Bantu, we would need to posit a Duke of York effect, where BS was undone in Central Kenya Bantu. If a Duke of York effect had actually occurred in Central Kenya Bantu, we would expect it to have effected non-BS-derived affricates and fricatives as well, such as in loans or reflexes of PB *c and *j. I am not aware of any data supporting or works claiming such an across the board fortition rule in Central Kenya Bantu.
+
+ Additional factors, like the diversity of BS reflexes \citep{Janson2007} both within and across clades, pose issues for the single common ancestor model. If BS had occurred in an early daughter of PB, we would expect to see evidence of its BS reflexes across most or all BS languages. However, as \citeauthor{Janson2007} documented, there is a lot of variation in BS reflexes. Without positing any Duke of York effects, one cannot reconstruct a common ancestral BS reflex for all of the BS languages. Even for the PB sequence *ti, which underwent BS quite early according to \citeauthor{Janson2007}, one cannot reconstruct a single ancestral BS reflex, as some BS languages, such as Siha (E621C), retain a coronal stop reflex for *ti, but have fricative reflexes for other BS-triggering sequences \citep{nurse1981}.
+
+There is one taxonomic model which is sometimes claimed to roughly line up with the distribution of BS: the Savanna-Forest theory. This theory proposes a Savannah Bantu family which includes East Bantu (Zones E, F, G, J, K20+40, M, N, P, S), Lega (D20), Luban (L20-40), and South-West Bantu (H20, K10+30, L10+50+60, R) \citep{ehret1999}. \citet[174]{NursePhillipson2003} describe the connection between BS and Savanna Bantu as follows: “The great majority of Forest languages show no signs of BS [...] This seems at first to support a split of Forest vs. Savanna”. As they later point out however, the proposed Savanna Bantu includes several BS-free languages, such as Central Kenya Bantu, Tswana-Sotho, and some of the languages in Zones F and J. Savanna Bantu, as defined by \citeauthor{ehret1999}, also fails to incorporate the Kikongo Language Cluster which has BS. While evaluating Savanna Bantu, \citet[174]{NursePhillipson2003} proceed to say they “found nothing non-lexical supporting the notion of a Savanna branch of Bantu”. Due to their opinions on the weakness of the lexical data supporting the Savanna-Forest theory, they argue against its validity.
+
+In response to the failure of the initial Tree-model approach, an areal, Wave-model of distribution was championed by \citet{Janson2007}. We will look at his argument in more depth in the next section.
+
+
+\section{Janson's argument}
+\label{sec:kieffer:janson}
+
+\citet{Janson2007} makes two main points. The first is a critical look at which types of changes get called BS and the theoretical mechanics of such changes. He also discusses the frequency and distribution of individual changes, and reconstructs an order in which the changes must have happened. This discussion of the minutiae of the components of BS was an important innovation in how BS is discussed, and, in my opinion, contains several breakthroughs. The other point of the paper is to explain the complex data through Wave Theory. I do not aim to argue against the first point on the nature, mechanics, and history of the BS changes, only against \citeauthor{Janson2007}’s conclusion that that data requires or indicates that BS must have been spread areally, and that the BS changes are therefore not useful in determining groupings and clades within Bantu.
+
+\citet[84]{Janson2007} describes BS as being a phenomenon made up of many shifts, as shown by the quote below:
+\begin{quote}
+    Since many changes are involved, and many languages show evidence of only some of the changes, it is in some cases debatable whether a language has undergone spirantisation or not.
+\end{quote}
+This view differs slightly from my own, in that \citeauthor{Janson2007} still seems to consider BS to be an entity in the phonology, instead of an academic concept to describe and collectivize a number of interacting and related shifts. In \citet{Janson2007}, then, BS consists of affricating and spirantizing rules, and their reflexes often underwent further shifts, such as devoicing, debuccalization, and elision. If we follow \citeauthor{Janson2007}’s (\citeyear{Janson2007}) model for areal distribution then, there must be many waves as well, one or more for each individual shift within BS. \citeauthor{Janson2007} seems to suggest that all of the BS changes originated in the Lake Corridor, but if BS was spread by many waves, then we have no reason to think these waves had identical isoglosses and origin points. And indeed, when looking at the distribution for different changes, we can see that their isoglosses do differ. \citeauthor{Janson2007} suggested the Lake Corridor as the origin point, not just because of its relatively central location, but because the BS reflexes there are “full” and “homogenous”. A collection of shifts like BS cannot truly be called “complete” or “full”, it is just that some languages have undergone different sets of innovations than others. Additionally, the homogeneity of outputs in a region is not strongly indicative of how long ago a change started. It simply means that the languages in the area failed to undergo any shifts that differentiated their BS reflexes, or they underwent some shifts that aligned their reflexes. Homogeneity of output does not indicate much useful information on the dating of changes.
+
+\citeauthor{Janson2007} explains the variation and distribution of affricate and fricative reflexes by hypothesizing that the initial stages of BS involved affrication, and that fricative reflexes derive from a spirantization of these proposed affricates. For instance, *ki and *ku would have first had the shift of *ki>*tsi and *ku>*pfu, respectively, before undergoing the shifts *tsi>si and *pfu>fu. In the “*k” row of \tabref{tab:kieffer:BS}, we can see that Rwanda maintained these intermediate forms, while the others underwent deaffrication. \citeauthor{Janson2007} also noted that the languages with affricates are concentrated around the borders of the BS area and claims this is because the deaffrication shifts failed to reach these edges.
+
+I would argue that the largest contribution of \citet{Janson2007} was the discussion of the different reflexes, histories, and orderings of the various PB consonant--vowel pairs. \citeauthor{Janson2007} describes how PB consonant--vowel pairs that agree on the features [+Labial] or [+Coronal], such as *pu or *ti, are the least likely to have an affricate reflex. These agreeing pairs also maintain their places of articulation, such as *pu>fu or *ti>si. In contrast, the PB consonant--vowel pairs that disagree in their [±Labial] and [±Coronal] features, like *pi and *tu, are the most likely to be affricates, and the most likely to have not shifted at all. Additionally, there is a lot of cross-Bantu variation in whether the disagreeing pairs have a labial or coronal reflex, as \tabref{tab:kieffer:BS} shows. The dorsal--vowel pairs, like *ki and *ku, maintain the place of the PB vowel, and sometimes have affricate reflexes. The “Rwanda” column in \tabref{tab:kieffer:BS} exemplifies some of these generalizations.
+
+Since the agreeing pairs are the most likely to have fricative reflexes, \citeauthor{Janson2007} hypothesizes that these pairs shifted before the others, as they have rarely failed to undergo a deaffrication. Since the disagreeing pairs somewhat frequently have plosive or affricate reflexes, he hypothesizes that these shifted most recently, since in many languages they have not undergone BS shifts at all, or have not undergone as many subsequent shifts. The dorsal pairs would therefore have shifted after the agreeing pairs, but before the disagreeing pairs. While there are individual languages whose BS reflexes seem to challenge this hypothesis, it does line up well with the majority of the data, and I find it convincing.
+
+The implication of this ordering of the shifting of different pairs is that each deaffrication for each pair was its own independent phonological operation,\footnote{I avoid the more common terms “sound change" or “phonological rule" here in an attempt to remain agnostic as to whether this is a synchronic or diachronic change.} and that the initial affrication for each pair was its own independent phonological operation too. If we accept \citeauthor{Janson2007}’s areal model, this would mean there must have been dozens of BS waves.
+
+\citeauthor{Janson2007}’s model also implies that each instance of a shift happened once on a BS-wide scale, such that the deaffrication of *ts (deriving from *ki) in Kikongo and Kiswahili were both part of the same wave. However, it is also possible that the same shifts were innovated multiple times, in multiple locales, and spread from multiple centers. 
+
+\citeauthor{Janson2007} provides several maps of BS languages by the type of BS reflexes they have, focusing on affricate versus fricative reflexes; debuccalization, devoicing, and elision; and whether languages have “Full Spirantisation” or not. Before we can get into the details of these maps, however, we need to understand what exactly \citet[84]{Janson2007} means by “Full Spirantisation”. He defines “Full Spirantisation” as below:
+\begin{quote}
+    I have chosen to use one simple criterion for whether a language has undergone Full Spirantisation, namely that both [*ku] and [*ki] have reflexes that are not stops and are not velar
+\end{quote}
+This, of course, presents issues, since many languages have undergone BS shifts, but fail to meet the above criteria. An example is Gogo, which has the reflexes shown in \tabref{tab:kieffer:Gogo}. Gogo has classically BS reflexes for all of its consonant-vowel pairs, except *ki, which never shifted.
+%\footnote{The neighboring Kagulu languages has the same BS reflexes as Gogo, according to \citet{Janson2007}. Gogo and Kagulu are part of the Ruvu clade of Northeast Coast Bantu \citep{nurse2001}, whose other members have classical BS reflexes for all consonant-vowel pairs. I do not know specifically know why the PB *ki sequences did not undergo any BS shifts, but suspect the peripheral location of Gogo and Kagulu may be involved. To the west of Gogo are the Zone F languages, who are known to have an unusual relation with BS. The Zone F languages closest to Gogo, like Nyaturu, are BS-free \citep{Janson2007}. The western Zone F languages, like Nyamwezi, have unusual BS reflexes, as reported in \citeauthor{Janson2007} \citeyear{Janson2007}’s appendix, where they have two BS reflexes, a strident and a stop, reported for many consonant-vowel pairs. Contact effects from the BS-free east or unusual BS west Zone F languages could responsible for Gogo/Kagulu’s failure to shift PB *ki. Gogo and Kagulu are also missing some other common BS shifts in Ruvu as well, such as deaffricating *bv to /v/, so it may just be that Gogo and Kagulu missed out on a number of operations due to their peripheral location.}. 
+
+\begin{table}
+\caption{BS Reflexes of Gogo (G11)
+\citep{Janson2007}
+}
+
+\label{tab:kieffer:Gogo}
+ \begin{tabular}{lrrrrrrrr}
+  \lsptoprule
+           & *p & *t & *k & *b & *d & *g\\
+  \midrule
+    *u & f & f & f & bv & bv & bv\\
+    *i & f & s & \textbf{k} & bv & z & z\\
+% janson 2007
+  \lspbottomrule
+ \end{tabular}
+\end{table}
+
+\citeauthor{Janson2007}’s concept of “Full Spirantisation” is quite prominent is his maps, since it is the metric he uses for determining whether to label a language as BS-free or not. He does acknowledge, though, that his maps “really describe broad categories of changes (and not individual changes)” \citet[90]{Janson2007}, meaning that none of his maps represents a single change and its isogloss, but rather amalgamations of many shifts. 
+
+\begin{figure}[b]
+%     \includegraphics[width=.8\textwidth]{figures/KiefferFig4.png}
+    \includegraphics[width=.8\textwidth]{figures/KiefferFig4.pdf}
+    \caption{Composite Map of \citet{Janson2007}'s Spirantisation Maps}
+    \label{fig:kieffer:rainbow}
+\end{figure}
+
+I compiled the data from \citeauthor{Janson2007}’s maps to produce \figref{fig:kieffer:rainbow}, in lieu of including each of \citeauthor{Janson2007}’s maps. The solid and checkered dark blue sections represent areas that \citeauthor{Janson2007} describes as not having “Full Spirantisation”. The checkered sections are those with at least one affricate BS reflex. The solid yellow represents the most common pattern, “Full Spirantisation” without any affricates and missing any of the devoicing/debuccalizing shifts. The light blue polka dots are languages which have devoiced their BS reflexes, the green horizontal lines are languages which have reduced their BS reflexes to /h/, and the vertical pink lines are the languages which have elided their BS reflexes.
+
+%\newpage
+
+
+
+As mentioned earlier, I do take issue with \citeauthor{Janson2007}’s model for the distribution of BS changes and his assertion that BS shifts “cannot be used as an indicator of major groupings within Bantu” \citep[99]{Janson2007}. The following section looks more closely at his areal model, its implications, and my counterarguments.
+
+\section{Issues with Janson's model}
+
+If the BS shifts were spread as a spirantization/affrication rule from one language to its neighbors, we would have certain expectations about the languages’ BS reflexes: they should have similar BS reflexes to their neighbors'; we should be able to trace paths of contact; and we should find evidence of a dialect continuum of sorts of BS reflexes. And while one can find this in some areas, other groups of BS languages disprove it.
+
+The BS languages around Lake Victoria provide a good example with which to problematize areal BS. To the east of the lake are BS-free, 7-vowel languages like Kuria (JE43), Gusii (JE42), and the other East Nyanza languages \citep{mould1981}. Northeast of the lake is the Luhya dialect continuum (JE30), the majority of which has BS shifts and the vowel merger \citep{mould1981}. North of the lake is Luganda (JE15), a North Nyanza language; northwest is Nkore-Chiga (JE13/14), a Rutara language; and west is Kinyarwanda (JD61), a Kivu language; all of which have BS shifts and the merger. The Victoria region is bound by non-Bantu languages to the north and east, and BS-free Bantu languages to the west, east, and southeast.\footnote{Southeast of Lake Victoria is Zone F. Zone F is made up of BS-free languages and, in the west, languages with unusual BS patterns. It is unclear from \citeauthor{Janson2007}'s notation in his appendix (“ku, fu”), if BS shifts are optional allophony, lexically specific, or some other type of “partial” spirantization.} If the BS changes were indeed spread areally, it must have entered the Victoria area from the southwest, coming through the Kivu, Rutara, and North Nyanza subfamilies before finally entering Luhya. Kinyarwanda, Nkore-Chiga, Luganda, and Saamia are, respectively, representative examples of Kivu, Rutara, North Nyanza, and Luhya subfamilies.
+
+With such a clear path of transmission, one would predict that if the languages adopted BS changes areally from each other that they would have similar BS reflexes or connected evolutions of their BS reflexes. \tabref{tab:kieffer:nyanza}   lays out the BS reflexes of the voiceless stops for the four languages mentioned, taking its data from \citet{kieffer2021}, \citet{poletto1998}, and \citet{mould1981}.
+
+
+\begin{table}
+\caption{Voiceless BS reflexes of languages around Lake Victoria
+\citep{kieffer2021,mould1981,poletto1998}
+}
+\label{tab:kieffer:nyanza}
+ \begin{tabular}{lllllllllll}
+  \lsptoprule
+           PB & *pi & *ti & *ki & *pu & *tu & *ku\\
+  \midrule
+Kinyarwanda & (Kivu) &/ç/ & /s/ & /ts/ & /f/ & /ʈʂ/ & /pf/\\
+Nkore-Chiga &   (Rutara) &/h/ & /s/ & /s/ & /h/ & /tʃ/ & /f/\\
+Luganda &  (North Nyanza) &/s/ & /s/ & /s/ & /f/ & /f/ & /f/\\
+Saamia &(Luhya) &  /f/ & /s/ & /s/ & /f/ & /f/ & /f/\\
+  \lspbottomrule
+ \end{tabular}
+\end{table}
+
+One notices that the reflexes for *ti are all identical, and those for *ku and *ki are almost identical, except for Kinyarwanda’s affricates. In Nkore-Chiga we see that both *pi and *pu have /h/ as their reflex; this is due to P-debuccalization, an East-Bantu phenomenon that affected *p in non-nasal environments \citep{nurse1999}. Unlike other Great Lakes Bantu languages, Nkore-Chiga seems to have progressed further in its P-debuccalization at the advent of the BS shifts of *pu, since it debuccalized *p before *i and *u in addition to the other five PB vowels. The debuccalization in Nkore-Chiga is unconnected to the debuccalization seen in Rufiji-Ruvuma, since it is not a debuccalization of a post-BS fricative, but of a pre-BS stop.
+
+One should also note the split in reflexes for *tu. Kinyarwanda and Nkore-Chiga have posterior /tʃ/ and /ʈʂ/, while Luganda and Saamia have labiodental /f/. Additionally, each language has a different reflex for *pi, with Luganda having a coronal reflex, Saamia having a labial one, and Kinyarwanda having a palatal one.
+
+If the BS shifts were indeed spread from Kinyarwanda, to Nkore-Chiga, to Luganda, to the Luhya continuum, we should see the innovations in the earlier shifts carried along to the later ones. Since Nkore-Chiga did not have a BS reflex for *pi, how could Luganda have gotten its *pi>/s/ rule from Nkore-Chiga? Additionally, how could Luhya have gotten the rule *pi>/f/ from Luganda’s *pi>/s/ rule? There is no labiality left on the Luganda /si/ sequences, nor remembrance of its historical labiality, to motivate labialization. The /tʃ/--/f/ differences in the reflexes of *tu present similar issues, but there is at least a labial vowel in the /tʃu/ sequences that retains the labiality of the PB sequence *tu. The BS languages around Lake Victoria show that not all BS shifts could have spread as a simple affrication or spirantization rule, due to the contrast in their reflexes.
+
+The differences in reflexes among neighbors exemplifies how what we call BS was not a simple shift, nor made up of exclusively areal shifts. In many cases, such as those for *tu and *pi, cross-Bantu BS does not have a clear target, but rather assibilation in some direction. It is hard to imagine a situation where contact with a language with the rule /p/→ [s] /\_i  would prompt its neighbor to adopt the rule /p/→[f] /\_i.
+
+While \citeauthor{Janson2007} may be correct about some of the BS shifts being areal, that does not mean that all are. That some changes, like debuccalization, line up nicely with strong clades like Rufiji-Ruvuma, indicates that inheritance plays a role in some BS shifts as well. Each shift needs to be evaluated distinctly before one can claim it was spread by wave or tree.
+
+Additionally if there were many waves of BS shifts that spread across most of Zones E-S, that would constitute a large and sustained contact zone. We would expect there to be other linguistic innovations spread in such a zone. I am not aware of any study which suggests the existence of such a contact zone.
+
+To summarize, while there are regions where the spread of BS shifts areally can be modeled clearly, there are several regions which pose major challenges to \citeauthor{Janson2007}’s model. In areas with a greater diversity of BS reflexes, such as around Lake Victoria, it is not clear how all of the BS shifts could be spread from neighbor to neighbor using \citeauthor{Janson2007}’s model. The existence of some areal BS shifts does not necessitate that all BS shifts must have been areal too. And lastly, in order to strengthen \citeauthor{Janson2007}’s approach, one would need to demonstrate that there is other evidence for the large contact zone it implies.
+
+\section{Alternative models}
+
+There has been support for a model of BS that incorporates both contact and inheritance since \citet{hinnebusch1981} at the least. While it has not been established what exact mix is needed, it seems clear that the BS shifts were distributed through both. There are many different ways for them to combine, and I shall outline a few below.
+
+\subsection{Parallel evolution}
+
+\citet[309]{bostoen2008} proposes that BS was innovated and propagated multiple times, in multiple areas, saying:
+\begin{quote}
+    The inherited properties of the PB highest vowels obviously allowed BS to be triggered repeatedly and independently and at different times in different Bantu subgroups, producing not only varied results across language, but also frequently identical outcomes.
+\end{quote}
+The current landscape of BS reflexes could then be attributed to inheritance (many ancestors innovated and passed along the shifts), to contact (BS was innovated in many locals, and spread from these various foci), or a mix. While Parallel Evolution does imply that the innovations were separate, \citeauthor{bostoen2008} does float the idea that something in an earlier stage primed the Bantu languages to undergo the initial BS changes.
+
+\subsection{A phonetic rule}
+
+If the Bantu languages were primed for BS at an earlier stage as \citet{bostoen2008} suggested, I believe this priming would have been a phonetic rule. By phonetic rule, I mean a language-specific difference in articulation that has yet to become part of the phonological system. I propose, then, that before any of the BS shifts started, there was a phonetic rule common to much of Bantu, where stops were articulated differently in front of the highest vowels. This could be the “noisiness” \citet{hyman2003} suggested as the phonetic origin of BS changes, the onglides \citet{Janson2007} suggested, aspiration, or any other valid phonetic origin that may be devised. This phonetic rule would then have evolved differently, and entered the phonology differently in the different BS languages, and when combined with the other sound shifts that occurred in the post-PB period, produced the variety of BS reflexes found today. 
+
+As to the origin and distribution of the phonetic rule, one could argue for the Tree model, the Wave Model, or a mixture of the two. This phonetic rule may have started around the PB era, been passed down to PB’s daughters, and only stabilized and phonologized in the daughters described as having BS. As for the BS-free daughters, the rule may have been lost, or may still be present today. While I am not aware of any phonetic studies attesting such a pattern in Bantu, I predict that it can be found in some modern BS-free languages, and hope to verify this prediction in future research. 
+
+One could alternatively argue that the initial propagation and distribution of the proposed phonetic rule could have happened via wave. Said phonetic rule could have been innovated in a BS-language, and then spread via contact to other BS-languages. The phonologization and stabilization of this phonetic rule could have been propagated on a wave as well. 
+	
+\section{Instances of BS being used for cladistics}
+\label{sec:kieffer:KLC/NEC}
+
+As was mentioned earlier, there are a few cases where BS has been used to support taxonomic claims, namely \citet{bostoen2019} and \citet{hinnebusch1981} for the Kikongo Language Cluster and Northeast Coast Bantu, respectively. In this section I will summarize these case studies, as further evidence that BS can be useful to taxonomy.
+
+\subsection{BS in Kikongo Language Cluster}
+
+BS is used as a taxonomic diagnostic in two scenarios in \citet{bostoen2019}. In the first and more explicit case, they show how a specific BS innovation lends support to \citeauthor{deSchryver2015}'s \citeyear{deSchryver2015} phonological and phylogenetic evidence for a branch of West Kikongo that they refer to as the “northwestern cluster of West Kikongo” (B40+H12+H16c). In these languages, BS reflexes that are in the second syllable of a root are always devoiced. The isogloss for this change in West Kikongo also aligns with the distribution of an affrication rule where stem final /si/ regularly becomes /tsi/. The distribution of a component of BS, namely the voicing or devoicing of fricatives, is thus used as evidence for a taxonomic claim.
+
+The other instance of BS as a taxonomic diagnostic in \citet{bostoen2019} does not specifically claim BS as a diagnostic, but does conform to the concept. \citeauthor{bostoen2019} are able to reconstruct the BS system of the Kikongo Language Cluster (KLC) back to Proto-Kikongo. This reconstruction has fricative realizations for all 12 possible CV triggers of BS. Since BS is found throughout all of the KLC languages, and BS can be reconstructed into their last common ancestor, this would strongly imply that BS is both a feature of the KLC and a diagnostic for the clade. The reconstructed BS for Proto-Kikongo contrasts sharply with the BS systems in related clades.
+
+KLC is considered to be part of the larger West Coastal Bantu family \citep{bostoen2019, bostoen2018}. \citet{bostoen2018} include the languages Nzebi (B52), Mbaama (B62), Tege-Kali (B71a), and Yans (B85) in their West Coastal node. \tabref{tab:kieffer:KLC}   shows some of the BS reflexes for these four languages. One can see how BS has not affected the velar stops at all in these languages. While the highest vowels have affected *d, they have not triggered affrication or spirantization at all, but rather blocked lenition. These BS reflexes contrast heavily with those in Proto-Kikongo, which has fricative reflexes for all of the Proto-Bantu CV pairs which trigger BS. That the BS reflexes of the KLC are so homogeneous, and contrast so heavily with some other West Coastal Bantu languages, indicates that BS is a useful taxonomic diagnostic for the KLC, since it sets this branch apart.
+
+\begin{table}
+\caption{Selected BS reflexes in some West Coastal Bantu languages
+\citep{Guthrie}
+}
+
+\label{tab:kieffer:KLC}
+ \begin{tabular}{lllllllllll}
+  \lsptoprule
+ & & *k & *ki & *ku & *g & *gi & *gu & *d & *di & *du\\
+  \cmidrule(lr){2-4}\cmidrule(lr){5-7}\cmidrule(lr){8-10}
+ Nzebi & (B52) &/k/ & /k/ & /k/ & /k/ & /k/ & /k/ & /l/ & /ɗ/ & /ɗ/\\
+ Mbaama & (B62) &/k/ & /k/ & /k/ & /k/ & /k/ & /k/ & /l/ & /d/ & /d/\\
+ Tege-Kali &(B71a) &  /k/ & /k/ & /k/ & /k/ & /k/ & /k/ & /l/ & /d/ & /d/\\
+Yans &  (B85) & /k/ & /kj/ & /k/ & /k/ & /kj/ & /k/ & /l/ & /d/ & /d/\\
+  \lspbottomrule
+ \end{tabular}
+\end{table}
+
+\subsection{BS in Northeast Coast Bantu}
+
+\citet{hinnebusch1981} uses BS to distinguish Northeast Coast Bantu (NEC) from some of its East Bantu neighbors. He notes the lack of BS in Central Kenya Bantu (E50) as distinguishing the clade from NEC. The uniqueness of the BS reflexes in Sukuma-Nyamwezi (F21-22), Chaga-Taita (E60+E74), and Pare-Tavaita (G21-22) leads him to conclude that “the phenomenon is a unique event within these languages” \citet[40]{hinnebusch1981}, a line which, to me, seems to claim that BS underwent a different history in these languages than the path taken by NEC and its southern neighbors. These differences would imply that Proto-NEC underwent its BS processes after separating from Central Kenya Bantu, Sukuma-Nyamwezi, Chaga-Taita, and Pare-Tavaita. 
+
+\citeauthor{hinnebusch1981} contrasts NEC from other neighboring BS languages on the basis of the devoicing and debuccalization rules found in languages to the south. Nyakusa (M30), Kilombero (G50), and Southern Highlands (G60) have devoiced all of their BS reflexes, while the Rufiji-Ruvuma (N10+P10-20) languages went even further and debuccalized many of their BS reflexes \citep{hinnebusch1981}. This implies that these languages underwent innovations in BS after their divergence from NEC. 
+
+\citeauthor{hinnebusch1981} is thus able to use BS to cladistically separate NEC from all of the neighboring clades except Lake Corridor Bantu (M10-20). It should be noted, however, that since he was not able to distinguish NEC from all of the neighboring clades exclusively using BS, he considers it a failed method. Since BS is common to all NEC members, and NEC’s BS is significantly different from that found in most neighboring clades, I would consider it a successful method. 
+
+\section{Conclusion}
+
+The history and evolution of the shifts we collectively call Bantu Spirantization are too complex to be conceptualized as a single phenomenon, or be explained with simple tree splits or waves. Neither the traditional tree model nor \citeauthor{Janson2007}’s areal model is able to perfectly account for the patterns of BS reflexes and existing cladistics, such as those found in the languages around Lake Victoria. This leads us towards a model which utilizes both trees and waves. Such a model allows for the use of BS in cladistic endeavors, as seen in \citet{hinnebusch1981} and \citet{bostoen2019}.
+
+% \section{Guidelines}
+
+% \ea Sentence 1
+% \gll Firipe a-ri-n-h-a igi- tabo \\ Phillipe 1S-FUT-1SGO-give-FV 7- cup \\
+% \glt Phillipe will give me the cup
+% \z
+
+% \ea
+% \gll a- ri- n- h- a igi-tabo \\ 1S- FUT- 1SGO- give- FV 7-cup \\
+% \glt He will give me the cup
+% \z
+
+% \subsection{lists}
+
+% \begin{itemize}
+%     \item ganda
+%     \item rwanda
+%     \item luhya
+% \end{itemize}
+
+% \begin{enumerate}
+%     \item stop
+%     \item fricative
+%     \item nasal
+% \end{enumerate}
+
+% \subsection{deleting stuff} \label{play}
+
+% Highlight text, and click CTRL+/ to silence it.
+
+% To \textbf{bold}, click and hit CTRL+B, to \textit{italics}, click and hit CTRL+I
+
+% \subsection{maps}
+% \begin{figure}
+%     \centering
+%     \includegraphics{Vax Card.jpg}
+%     \caption{Caption}
+%     \label{sec:kieffer:Map}
+% \end{figure}
+
+% Upload and name Jpeg, then type its name into "include graphics", see \sectref{play} and see \ref{sec:kieffer:Map}
+
+
+% \section{What is this document?}
+
+% % This is a template for writing proceedings papers in \LaTeX{} for the \href{https://acal.linguistlist.org}{Annual Conference on African Linguistics}, published as an \href{https://www.overleaf.com/latex/templates/acal-proceedings-template/kxmngmsjvfqq}{Overleaf template}. This is designed for people who are already familiar with \LaTeX{} and with Overleaf, and simply provides an easy template for writing papers for the ACAL proceedings. The main content contained in this document are  instructions that are specific to publishing with Language Science Press. This is not an entire style guide, rather, we include requirements on the \LaTeX{} coding that are specific to Language Science Press and that therefore may be unfamiliar to those who already write in \LaTeX{}. If you are submitting a paper to the ACAL proceedings, please format your document in accordance with the guidelines noted here. 
+
+% If you want help learning \LaTeX{} for publishing in the ACAL Proceedings, please see our \href{https://www.overleaf.com/latex/templates/acal-proceedings-latex-quick-reference-guide/fncrcrtgnxhv}{Quick Reference Guide}, which (like this document) is published as an Overleaf Template.
+
+% % Once you are comfortable with the guidelines below, delete the text in this file and start writing your paper!
+
+% \section{Main formatting requests}
+
+% \textbf{Please do these things:}
+
+% \begin{itemize}
+
+% \item Use a LaTeX template from Language Science Press. You may use the main \href{https://www.overleaf.com/latex/templates/langsci-template-for-papers-in-edited-volumes-2020-slash-05/cpjcmcphbvph}{Language Science Press LaTeX template for papers in edited volumes}, or you may use the ACAL Proceedings template you are reading from now, which is built on LSP’s template but has packages/commands added that we thought would be useful to ACAL authors.\footnote{If you learned LaTeX from our \href{https://www.overleaf.com/latex/templates/acal-proceedings-latex-quick-reference-guide/fncrcrtgnxhv}{Quick Reference Guide}, please use this template to write in, as it matches the structure of the \href{https://www.overleaf.com/latex/templates/acal-proceedings-latex-quick-reference-guide/fncrcrtgnxhv}{Quick Reference Guide}.}
+
+% \item Include first and last names for all authors in all citations. 
+
+% \item Space the code for your \verb|\Tree|s out, as we have suggested in the \href{https://www.overleaf.com/latex/templates/acal-proceedings-latex-quick-reference-guide/fncrcrtgnxhv}{Quick Reference Guide}. That is to say, please put in line breaks rather than coding a tree in one straight line. This 
+
+% \item Labels and cross-references: follow the LSP-requested commands for labels and cross-references outlined in the next section. 
+
+% \item While some linguistics publications typeset all tables, trees, and figures as numbered examples, for Language Science Press, charts/tables are typeset as Tables, and syntactic trees and other larger diagrams are typeset as Figures. See below for specifics commands to cross-reference Tables and Figures for Language Science Press. 
+
+% \item Abbreviations should be included in a separate unnumbered abbreviations section at the end of the paper (as illustrated at the end of this template). Your acknowledgments section should follow this same format.
+
+% \item Bibliographic references should be included in localbibliography.bib.
+
+% \end{itemize}
+
+% \newpage 
+
+% \noindent \textbf{Do not do these things:}
+
+% \begin{itemize}
+
+% \item Do not modify any of the langsci style files (langsi-basic.sty, langsci-optional.sty, langscibook.cls, etc). It is quite difficult for the ACAL Editors to debug it when changes to this file have been made. 
+
+% \item Do not manually cite references and add references to the bibliography with \verb|\nocite.| 
+
+% \item Do not use natbib. Use the bibliography package as given in the LSP template. (natbib commands work for in-text citations)
+
+% \end{itemize}
+
+% \noindent \textbf{For IPA characters:}
+
+% In general, don’t use tipa to format IPA characters. If you have an IPA solution to insert IPA characters into any document (like the \href{https://keyman.com/ipa/}{Keyman IPA keyboard by SIL}), you can use that in \LaTeX{}, just use \XeLaTeX{} as your rendering engine when writing (as is built into this template and the LSP template, which use the fontspec package). You can just add your IPA characters directly into your .tex document and they should format. If you are having issues, please contact the LaTeX team at \href{mailto:acal.latex@gmail.com}{acal.latex@gmail.com}.
+
+% \section{Language Science Press Cross-References} \label{sec:diercks:CrossReferences}
+
+% \begin{enumerate}    
+
+% \item In order to facilitate compiling disparate ACAL papers into a single volume and to avoid potential conflicts in labels, please name each label according to its purpose (section, table, etc), the first author's name, and then your specific label, as shown below. 
+
+% \begin{itemize}
+
+% \item Section label: \verb|\label{sec:author:yourlabel}|
+
+% \item Table label: \verb|\label{tab:author:yourlabel}|
+
+% \item Figure label: \verb|\label{fig:author:yourlabel}|
+
+% \item Example label: \verb|\label{ex:author:yourlabel}|
+
+% \end{itemize}
+
+    
+% \item Rather that just using \verb|\ref{}| for all cross-references, LSP has built specific commands for different kinds of cross-references. Please use these.  
+
+% \begin{itemize}
+
+% \item Section reference (will read `\S \#’ in output):\\ \verb|\sectref{sec:author:yourlabel}|
+
+% \item Table reference (will read `Table \#’ in output):\\ \verb|\tabref{tab:author:yourlabel}|
+
+% \item Figure reference (will read `Figure \#’ in output): \\ \verb|\figref{fig:author:yourlabel}|
+
+% \item Example reference with parens — note caps (will read `(\#)’ in output): \\ \verb|\REF{ex:author:yourlabel}| 
+
+% \item Example reference without parens — note caps (will read `\#’ in output): \\ \verb|\ref{ex:author:yourlabel}|
+
+% \end{itemize}
+% \end{enumerate}
+
+% \section{Linguistic examples as numbered examples}
+
+% All linguistic examples should use the LSP-specific gb4e format, illustrated in the example below. Note in particular the \verb|\z| command which closes the example list environment which is started by \verb|\ea| (see below in the .tex).
+
+% \ea %\label{ex:diercks:Firstexample} Optional caption (Dutch: Citation 2021) \\
+% \gll  dit  is een voorbeeld.\\
+% \textsc{dem} \textsc{cop} \textsc{indef} example\\
+% \glt  ‘This is an example.’
+% \z
+
+% \noindent If you want multiple data examples to appear in one numbered example, you use the xlist environment. 
+
+% \ea \label{ex:diercks:XlistExample}
+% \begin{xlist}
+
+% \ex This is the first example. 
+
+% \ex \label{ex:diercks:SwahiliXlist}
+% \gll hii ni m-fano w-a pili, kwa Ki-swahili \\
+% this is 3-example 3-\Assoc{} second, of 7-Swahili \\
+% \glt `This is a second example, in Swahili.' 
+
+% \end{xlist}
+
+% \z 
+
+% \section{Tables}
+
+% All tables should have a top and bottom rule using the LSP commands for drawing top and bottom rules (a modification of the booktabs package): \verb|\lsptoprule| and \verb|\lspbottomrule|. \verb|\midrule| is recommended under a header row, but not elsewhere (i.e. horizontal lines within tables are discouraged). Likewise, LSP discourages the use of vertical lines in tables. (see below for an example, and you may also consult the \href{https://www.overleaf.com/latex/templates/acal-proceedings-latex-quick-reference-guide/fncrcrtgnxhv}{ACAL Proceedings Quick Reference Guide}, or Language Science Press's guidelines.)
+
+% \begin{table}
+% \caption{BS in Kinyarwanda}
+% \label{tab:kieffer:BS in Kinyarwanda}
+%  \begin{tabular}{lllll}
+%   \lsptoprule
+%            Proto-Bantu & Kinyarwanda & Gloss\\
+%   \midrule
+%   *gid  &   /-\textbf{z}iɾ-/ & be.taboo\\
+%     *gɪd  &   /-giɾ-/ & have\\
+%  *kund  &   /-\textbf{pf}und-/ & become.fuller\\
+%   *kʊnd  &   /-kund-/ & like\\
+ 
+%   \lspbottomrule
+%  \end{tabular}
+% \end{table}
+
+\section*{Abbreviations}
+
+\begin{tabularx}{.45\textwidth}{lQ}
+PB & Proto-Bantu                \\
+BS & Bantu Spirantization       \\
+PK & Proto-Kikongo              \\
+\end{tabularx}
+\begin{tabularx}{.45\textwidth}{lQ}
+KLC & Kikongo Language Cluster    \\
+NEC & Northeast Coast Bantu       \\
+\end{tabularx}
+
+% Abbreviations should be included in this section. It is a required part of volumes with Language Science Press that an abbreviations list be included, so you cannot omit this section.
+
+% \section*{Acknowledgements}
+
+% Acknowledgements must be listed here, not in a footnote in the paper.
+
+% \noindent For our acknowledgments for this template, see our \href{https://www.overleaf.com/latex/templates/acal-proceedings-latex-quick-reference-guide/fncrcrtgnxhv}{Quick Reference Guide}. 
+
+
+\sloppy %this command eliminates a quirk that appears in the bibliography, you can just leave it here.
+
+\printbibliography[heading=subbibliography,notkeyword=this]
+
+\end{document}
+
+%To be added to the ACAL \LaTeX{} template, someday: glossing with leipzig, advanced instructions for arrows

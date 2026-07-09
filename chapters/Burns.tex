@@ -1,0 +1,256 @@
+\documentclass[output=paper,colorlinks,citecolor=brown
+% ,hidelinks
+% showindex
+]{langscibook}
+\ChapterDOI{10.5281/zenodo.20285182}
+\author{Roslyn Burns{}\affiliation{Yale University} and
+        Jason Shaw{}\affiliation{Yale University}}
+\title{Labial-velar stop place identification in Igbo}
+\abstract{Previous research shows that simplex dorsals in the context of /i/-like vowels can be misperceived as coronal, a pattern which is more likely for voiceless segments than for voiced ones. We explore the effect of vowel context on the perception of labial-velar stops, pursing the hypothesis that the pattern observed for simplex velar stops will generalize to complex labial-velars. We opted for a cross-language perception study with Igbo participants listening to stimuli produced by a Nupe speaker. Our results show that while listeners mostly misperceived labial-velars as labials, voiced labial-velars are sometimes perceived as coronal before /i/-like vowels, similar to what is observed for simplex dorsals. Voiceless labial-velars, on the other hand, did not exhibit this pattern.}
+
+
+\IfFileExists{../localcommands.tex}{
+   \addbibresource{../localbibliography.bib}
+   \input{../localpackages}
+   \input{../localcommands}
+   \input{../localhyphenation}
+   \boolfalse{bookcompile}
+   \togglepaper[23]%%chapternumber
+}{}
+
+\begin{document}
+\maketitle
+
+
+\section{Introduction}
+Within West Africa, labial-velar plosives /ɡ͡b/ and /k͡p/ often exhibit distributional restrictions based on vowel context. For example, in Dagbani (Niger-Congo: Gur), labial-velars are reported to become labial-palatals in the context before front vowels as shown in example (\ref{ex:burnsshaw:dagbani}) with [i] and [a].
+\largerpage
+\TabPositions{4cm,6cm,81cm}
+
+\ea \label{ex:burnsshaw:dagbani}
+\ea Labial-velar\\
+k͡páŋ́ ($<$ k͡páŋ--ɡá) \tab ‘guinea fowl’\\
+ɡ͡báŋ \tab ‘squat’\\
+
+\ex Labial-palatal\\
+c͡pín-î \tab ‘guinea fowls.'\\
+ɟ͡bíŋm-ɡ͡báŋ \tab ‘elephant grass’\\
+
+%     \begin{tabular}{lllll}
+%     \multicolumn{2}{l}{Labial-velar}&\multicolumn{2}{l}{Labial-palatal}&\multirow{2}{2.75cm}{\citep{Hudu2014,Bennett2014}}\\
+%     k͡páŋ́&‘guinea fowl’&c͡pín-î&‘guinea fowls.'&\\
+%     ($<$ k͡páŋ--ɡá)&&&\\
+%     ɡ͡báŋ&‘squat’&ɟ͡bíŋm-ɡ͡báŋ&‘elephant grass’&
+%     \end{tabular}
+\z
+\citep{Hudu2014,Bennett2014}
+\z
+
+\noindent In (\ref{ex:burnsshaw:dagbani}), words sharing the same phonological form in the root undergo a vowel alternation to [i] in specific morphological contexts. When the vowel raises, it triggers palatalization on the preceding labial-velar resulting in a labial-palatal segment. The pattern of labial-velars becoming labial-palatal applies more broadly to all front vowels in Dagbani, not only [i] \citep[116]{Bennett2014}.
+
+In Fang (Niger-Congo: Bantoid), however, the high front vowel /i/ reportedly triggers labial-velars in noun class prefixes to become a simplex labial as shown in example (\ref{ex:burnsshaw:fang}).
+
+\ea \label{ex:burnsshaw:fang}
+\ea Labial-velar\\
+    k͡p--ú   \tab ‘my cl.2’
+    k͡p--ɛ́   \tab ‘your sg. cl.2’\\
+    k͡p--ə́sə́ \tab ‘our cl.2’\\
+    k͡p--ə́nə́ \tab ‘your pl. cl.2’
+
+\ex Simplex-labial\\
+    p--í \tab ‘his/her cl.2’\\
+
+%     \begin{tabular}{lllll}
+%     \multicolumn{2}{l}{Labial-velar}&\multicolumn{2}{l}{Simplex Labial}&\multirow{2}{2.75cm}{\citep{Mve2019,Burns2023}}\\
+%     k͡p--ú&‘my cl.2’&p--í&‘his/her cl.2’&\\
+%     k͡p--ɛ́&‘your sg. cl.2’&&\\
+%     k͡p--ə́sə́&‘our cl.2’&&\\
+%     k͡p--ə́nə́&‘your pl. cl.2’&&
+%     \end{tabular}
+
+ \z
+ \citep{Mve2019,Burns2023}
+ \z
+
+\noindent In (\ref{ex:burnsshaw:fang}), the class 2 prefix /k͡p--/ before vowel-initial possessive roots has two forms: [k͡p--] and [p--]. The [p--] allomorph only occurs before the high front vowel [i] which is known to be the most aggressive trigger of palatalization, yet instead of finding a labio-palatal in this environment, like in Dagbani, we find a simplex labial. \citet{Burns2023} argues that an additional allomorph of /k͡p/ is found before consonant-initial roots, [bə--] $<$ * k͡pi--. The reflex of this allmorph also has a simplex labial which developed from a labial-velar before a high front vowel.\footnote{In Fang, class prefix vowels neutralize to [ə] \citep[22]{Burns2023}.}
+
+In addition to distributional restrictions and phonological alternations, like those shown above, upon conducting a preliminary survey of two major Niger-Congo languages spoken in Nigeria, we observed under-attestation of labial-velars in some vowel contexts. The static distributions of labial-velars across the lexicon suggest that labial-velars are less common in similar vowel contexts across Yoruba (Niger-Congo: Yoruboid, \citealt{University2001}) and Igbo (Niger-Congo: Igboid, \citealt{Echeruo1998, Igwe1999}). Specifically, in Yoruba, labial-velars were underattested before both /i/ and /u/ \citep{University2001} whereas in Igbo they were under-attested before high front vowels \citep{Echeruo1998, Igwe1999}.
+
+Production and perception biases often underlie the development of synchronic sound system patterns. Over time, these biases may lead to the diachronic development of specific distributions. Distributional patterns can be \textit{phonologized}, resulting in a grammatical rule that generalizes to new forms. In this way, production and perception biases can serve as the historical source of phonological alternations of the sorts found in \REF{ex:burnsshaw:dagbani} and \REF{ex:burnsshaw:fang} or systematic gaps in the lexicon.
+
+In this paper, we investigate whether a perceptual bias may play a role in the development of distributional restrictions on labial-velars across different vowel environments by means of an open-response cross-language listening task. The motivation for running an experiment testing the influence of vowel context on labial-velar stop-place identification can be found in past work, both experimental and typological, on \textit{velar palatalization}. There are many definitions of velar palatalization. For our purposes, we define it as a contextual change whereby a velar comes to be pronounced further forward in the oral cavity, as a coronal.
+
+Perceptually, velars are confusable with coronals in certain vowel contexts. \citet{Guion1998} found that English listeners are more likely to confuse simplex velars with coronals in the context of /i/ than in the contexts of /ɑ/ and /u/. Misperception is even more likely if the consonant is voiceless (i.e. /k/) rather than voiced (i.e. /ɡ/). \citet{Wilson2006} reports an artifical grammar experiment, in which participants learned velar palatalization. Participants exposed to velar palatalization conditioned by lower front vowels generalized the process to higher front vowels. In contrast, those exposed to velar palatalization in the environment of the high front vowel did not generalize the process to lower front vowels. These results were interpreted as a substantive bias towards high front vowels as palatalization triggers.
+
+The environments in which velars are likely to be misperceived as coronal correspond to the known typological patterns of palatalization with a primary place change \citep{Bhat1978, Bateman2007}. (\ref{ex:burnsshaw:hierarchy}) summarizes the typological behavior of palatalization in simplex segments, as reported in \citet{Bateman2007}.
+
+\ea\label{ex:burnsshaw:hierarchy}
+\begin{xlist}
+\ex Triggers
+    \begin{xlist}
+	\ex Lower front vowels do not trigger palatalization unless higher front vowels do.
+	\ex High back vowels do not trigger palatalization unless high front vowels do.
+    \end{xlist}
+\ex Targets
+    \begin{xlist}
+    \ex Voiced consonants do not undergo a primary place change unless voiceless consonants do.
+	\ex Labials do not undergo a primary place change unless either coronals or dorsals do.
+    \end{xlist}
+ \end{xlist}
+\z
+
+\noindent Notably missing from the typological behavior of targets in (\ref{ex:burnsshaw:hierarchy}b) is what complex segments like labial-velars do. Labial-velars involve the coordination of at least two independent articulators \citep{Ladefoged1968}: the lips and the tongue dorsum.\footnote{Labial-velars fall into three major airstream mechanism types, two of which also involve coordinated laryngeal gestures.} \citet{Burns2023} hypothesizes that vowel-conditioned alternations for labial-velars have their basis in how labial-velars are misperceived in palatalizing contexts. Based on \citeauthor{Connell1994}'s (\citeyear{Connell1994}) analysis of Ibibio (Niger-Congo: Cross-River) consonant place acoustics, \citet{Burns2023} proposes that in palatalizing contexts, labial-velars may exhibit perceptual confusion with both labials and coronals. This contrasts with other vowel contexts, in which labial-velars are confused only with labials. This hypothesized pattern of confusion comes from the assumption that the tongue body will be fronted in palatalizing contexts, which has the effect of raising F2 in the formant transition, a typical cue to consonant place.
+
+There are relatively few perceptual studies on West African languages. Some recent examples are \citet{Rose2023} and \citet{Ozburntoappear} on ATR harmony. We know of only one study on labial-velar perception, which reported data from just a handful of Yoruba speakers \citep{Cahill2006}. Given the relative paucity of perceptual studies, our starting point in investigating labial-velars in different vowel contexts is centered around the typological literature on palatalization. To this end, our perceptual survey assess the questions in (\ref{ex:burnsshaw:researchqs}).
+
+\ea\label{ex:burnsshaw:researchqs}
+\begin{xlist}
+\ex Do labial-velars exhibit the most errors before /i/ (and progressively fewer as one moves away from the ideal palatalization trigger)?
+\ex Do voiceless labial-velars exhibit more errors than voiced labial-velars?
+\ex Do listeners believe that they are hearing a coronal in these contexts?
+\ex Do the patterns of confusion for simplex components of labial-velars mirror the behavior of labial-velars?
+ \end{xlist}
+ \z
+
+\noindent If the answers to the research questions (\ref{ex:burnsshaw:researchqs}a-c) are affirmative and the same confusion patterns are observed with simplex velars, but not simplex labials, then it is likely that the synchronic patterns described above, e.g. \REF{ex:burnsshaw:dagbani} and \REF{ex:burnsshaw:fang}, are due in part to the misperception of the dorsal constriction of the labial-velar.
+
+The rest of this paper is organized as follows. \sectref{sec:burnsshaw:LgBg} provides background information on the two languages involved in the cross-language study, Nupe and Igbo, focusing specifically on the differences in the consonant systems. \sectref{sec:burnsshaw:Materials} describes the Nupe materials used as stimuli. \sectref{sec:burnsshaw:Procedures} describes the procedure that Igbo participants followed and our coding of the responses. \sectref{sec:burnsshaw:Analysis} reports our methods of statistical analysis. \sectref{sec:burnsshaw:Findings} presents the findings of our study and how they compare to the questions presented in \REF{ex:burnsshaw:researchqs} above. \sectref{sec:burnsshaw:Complex} presents how vowel place influences the consonant place responses for labial-velars, thereby addressing (\ref{ex:burnsshaw:researchqs}a-c). \sectref{sec:burnsshaw:Simplex} presents how vowel place influences consonant place responses for simplex labials and simplex velars and how these patterns compare to the labial-velars patterns, thereby addressing (\ref{ex:burnsshaw:researchqs}d). \sectref{sec:burnsshaw:Summary} summarizes how the Igbo listeners' responses for both simplex (labial and velar) and complex (labial-velar) segments align with the general palatalization typology outlined in (\ref{ex:burnsshaw:hierarchy}) above. \sectref{sec:burnsshaw:Discussion} discusses the implications of the findings for previous studies and future research. Finally, \sectref{sec:burnsshaw:Conclusion} closes by summarizing the overall findings of the study.
+
+\section{Methods}\label{sec:burnsshaw:Methods}
+This section presents the methods for our cross-language study involving Nupe (Niger-Congo: Nupoid) stimuli and Igbo (Niger-Congo: Igboid) listeners. We opted for a  cross-language design in order to increase the level of difficulty of the task. Although labial-velars are common across West African languages, the specific phonetic realization of these segments varies substantially across languages (\citealt{Ladefoged1968}). We chose a somewhat less common language, Nupe, to be the language of the stimulus items to increase the level of difficulty of the task for Igbo listeners. Since we are interested in patterns of misperception, we needed to make the task difficult enough to induce errors. The difference between speaker language and listener language served this purpose.
+
+\subsection{Language background}\label{sec:burnsshaw:LgBg}
+The language of the stimuli, Nupe, has approximately 800,000 speakers \citep{EthnologueBurns}; the listener language, Igbo has approximately 29,000,000 speakers \citep{EthnologueBurns}. Both Nupe and Igbo have a full set of voicing contrasts across labial-velar, velar, and labial places: i.e.  /k͡p, ɡ͡b, k, ɡ, p, b/. Nupe has a 5-vowel system and Igbo has an 8-vowel system with additional nasalized vowel contrasts \citep{Ikekeonwu1991, Uguru2015, Phoible}.\footnote{In addition to these plosive contrasts, Igbo has aspiration contrasts, palatalization contrasts in labials, and labial-velarization contrasts in velars.} In some varieties of Igbo, the labial-velars are reportedly plosives; in others, they are often realized as implosives /ɓ̥, ɓ/ \citep{Phoible, Ukaegbu}. The development of bilabial implosives from labial-velars is a common innovation in West Africa \citep{Ladefoged1968, Ponelis1974} as the double articulation is sometimes coupled with a larynx lowering gesture and incomplete dorsal closure.
+
+We make the assumption that Igbo listeners will hear the Nupe labial-velar as either a labial-velar with the same voicing or as a bilabial implosive with the same voicing.\footnote{While voiceless implosives exhibit prevoicing, they are still differentiated from voiced implosives in having a 20--50 ms period of silence prior to the prevoicing \citep[207--209]{McLaughlin2005}. As discussed in \sectref{sec:burnsshaw:Materials}, based on how the stimuli for the experiment were processed, prevoicing cannot be a cue that listeners use to interpret the behavior of plosives in this study.}
+
+\subsection{Materials}\label{sec:burnsshaw:Materials}
+We developed a list of 96 disyllabic nonce words of the shape CVCV. These words were read by Nupe native-speaker linguist Ahmadu \citeauthor{Kawu}. The first C was either a labial, coronal, dorsal, or labial-velar plosive and varied in voicing (either voiced or voiceless). The first vowel was either /i, e, a, u/ and varied in tone (either low or high). The second syllable always began with a coronal and always ended in the vowel /a/ matching in tone with the first syllable. \citeauthor{Kawu} read these words in two Nupe carrier phrases outlined in \REF{ex:burnsshaw:elicitation}.
+
+\ea\label{ex:burnsshaw:elicitation}
+\begin{xlist}
+\ex \gll Wun	ganan	\underline{\hspace{0.5cm}}	be.\\
+3\textsc{sg}	speak	\underline{\hspace{0.5cm}}	again.\\
+\glt ‘He said \underline{\hspace{0.5cm}} again.’
+\ex
+\gll Wun	ka	\underline{\hspace{0.5cm}}	be.\\
+3\textsc{sg}	write	\underline{\hspace{0.5cm}}	again.\\
+\glt ‘He wrote \underline{\hspace{0.5cm}} again.’
+\end{xlist}
+\z
+
+\noindent \citeauthor{Kawu} recorded the phrases on a Zoom H4n digital recorder at a sampling rate of 44.1 khz.
+
+Recordings were annotated in Praat \citep{BoersmaWeenink2019} and aligned using the Montreal Forced Aligner \citep{Mcauliffe2017} with the English pronunciation model and Nupe dictionary created by the researchers. All forced alignment was manually checked and segment boundaries were moved to the nearest zero-crossing. Of the 192 target utterances, we selected 96 tokens for inclusion in the experiment based on (a) vowel peripherality (avoiding heavily centralized utterances), (b) duration (avoiding abnormally long or short tokens), (c) intensity (avoiding abnormally soft tokens), and (d) clarity.\footnote{Linear models evaluating the effect of carrier phrase on formant frequencies returned no significant effect of carrier phrase.} After selecting the tokens for inclusion, we extracted the initial CV of the nonce word from the stop burst to the offset of the vowel. This method removed prevoicing and stop closures from  the stimuli. \citeauthor{Kawu} produced a labial-velar glide instead of a plosive in the token /ɡu/, i.e. [wu] instead of [ɡu]. For this item, we excised the portion from the onset of glide voicing to the offset of the vowel. After extracting the initial CV, which was always less than 140 ms in duration, amplitude was normalized across all tokens in Praat to 70 dB.\footnote{We performed acoustic analysis for stop place cues including investigating the maximum frequency at maximum amplitude in burst, F2 at 7\% of the CV duration, and the change in F2 from 7\% to 14\% of the CV duration. For the results of this analysis see \citet{BurnsShaw2023}.}
+ 
+\subsection{Procedures}\label{sec:burnsshaw:Procedures}
+51 Igbo listeners were recruited to participate in an experiment hosted on the Gorilla platform (\href{https://gorilla.sc/}{https://gorilla.sc/}). All consent forms and prompts were written in English by the authors and then translated from English to Igbo by Dr. Carol Anyagwa of the University of Lagos. After consenting, participants were instructed to listen to a steady tone (75 Hz, 70 dB) and adjust their speakers to a comfortable volume. After this, they were instructed to listen to the normalized CV stimuli (described in \sectref{sec:burnsshaw:Materials}) and type a response indicating what they heard. Participants completed 7 practice trials with stimuli not used in the experiment, and then completed 96 randomized experimental trials. After completing the task, they were asked to fill out a demographic survey.
+
+Responses were downloaded in a tab-delineated file and checked for interpretability (n = 4800). Answers with no response (n = 111), commentary about not being able to hear (n = 3), and uninterpretable orthographic representations (e.g. <q>, <c>, etc., n = 18) were excluded from analysis. One participant was excluded for failure to complete the task. In total, 4668 usable tokens were coded for voicing and response place based on the orthographic representation. The response places were coded as labial, coronal, dorsal, labial-velar, or neither. \REF{ex:burnsshaw:placelabels} shows the break-down of how each orthographic symbol was coded for place.
+
+\ea\label{ex:burnsshaw:placelabels}
+Labial: f, v, m, b, p\\
+Coronal: t, d, ch, l, r, y\\
+Dorsal: k, g\\
+Labial-velar: w, kp, gb, kw, gw, vb\footnote{We treated <vb> as a typographical error for <gb> given the proximity of the <g> and <v> keys.}\\
+Neither: Vowel-initial, h-initial
+\z
+	
+\noindent Errors were coded based on whether the place represented in the response matched the Nupe stimuli place features. Responses to /ɡu/ were coded as correct if Igbo listeners wrote either a velar or a labial-velar as \citeauthor{Kawu} produced [w] instead of [ɡ] in these contexts (see \sectref{sec:burnsshaw:Materials}).
+
+\subsection{Analysis}\label{sec:burnsshaw:Analysis}
+In order to evaluate the statistical reliability of the trends in the data, we fitted logistic regression models with mixed effects. We first investigated error rate. The dependent variable in this case was consonant place identification accuracy, coded as 0 for incorrect and 1 for correct. Our models contained a random intercept for participant. Our fixed effects coded for properties of the stimulus items: \textsc{consonant place} \{labial, velar, labial-velar\}, \textsc{consonant voicing} \{voiceless, voiced\}, and \textsc{vowel} \{/a/, /e/, /i/, /u/\}. We also tested for two-way interactions between \textsc{consonant place} * \textsc{vowel} and between \textsc{consonant voicing} * \textsc{vowel} and for the three-way interaction between \textsc{consonant place} * \textsc{consonant voicing} * \textsc{vowel}.
+
+We evaluated statistical significance through nested model comparison, via ANOVA, and consideration of the Akaike Information Criterion (AIC). We considered a fixed factor to be statistically reliable if it both explained significantly more variance than a model that lacked it and lowered the AIC. In the case of significant interactions, we ran post-hoc models on each level of our fixed factors. For example, separate models with vowel as a fixed factor were fit to each combination of place and voicing, e.g. a model for  /ɡ͡b/, /k͡p/; /ɡ/, /k/; /b/, /p/; and /d/, /t/. All of our fixed factors were treatment-coded. To assess the effect of each level of a fixed factor, such as \textsc{vowel}, we re-ordered the levels so that a different level served as the intercept. The level of a fixed factor was taken to be statistically reliable if it had a p-value equal to or below 0.05.\footnote{P-values are based on an F-test using the Satterwaithe approximation method in the \textsc{lmertest} package.}
+
+In addition to error rate, we also fit logistic models assessing the probability of a coronal response, with coronal coded for 1 and other responses coded for 0. These models followed the same structure and procedure as those fit to error rate (described above). 
+
+\section{Findings}\label{sec:burnsshaw:Findings}
+This section presents the results of our experiment. The presentation follows the research questions in \REF{ex:burnsshaw:researchqs}. We first examine research questions (\ref{ex:burnsshaw:researchqs}a-c) for labial-velars (\sectref{sec:burnsshaw:Complex}) and then (\ref{ex:burnsshaw:researchqs}d) for the simplex components of the labial-velars (\sectref{sec:burnsshaw:Simplex}). We close the section with a summary of the findings (\sectref{sec:burnsshaw:Summary}).
+
+\subsection{Labial-velar error rates and consonant place responses}\label{sec:burnsshaw:Complex}
+Among responses to labial-velar stimuli (/ɡ͡b/ = 1165, /k͡p/ = 1171), /ɡ͡b/ showed fewer errors than /k͡p/ (/ɡ͡b/ errors = 372, /k͡p/ errors = 739). \figref{fig:burnsshaw:labialvelarerrorcounts} shows the error rates for voiced labial-velars (left panel) and voiceless labial-velars (right panel) in each vowel context. Error bars represent the standard error calculated across speakers. Statistical significance, determined according to the procedure described in \sectref{sec:burnsshaw:Analysis}, is indicated with an asterisk.  
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.7\textwidth]{figures/BurnsShawFig1.png}
+    \caption{Average error rates for labial-velar stimuli}
+    \label{fig:burnsshaw:labialvelarerrorcounts}
+\end{figure}
+
+\noindent As shown in the left panel of \figref{fig:burnsshaw:labialvelarerrorcounts}, for /ɡ͡b/, /i/ has the highest error rate. Among the front vowels, there is a significant error rate decreases from /i/ to /e/ and then from /e/ to /a/ as indicated by the asterisk. Thus, among the front vowels, there is a gradual decrease in error rates with /i/ exhibiting the most errors and fewer errors as the front vowel becomes lower. Within the high vowels, /i/ has a numerically higher error rate than  /u/ but this difference was not statistically reliable. 
+
+Among responses for /k͡p/, shown in the right panel of \figref{fig:burnsshaw:labialvelarerrorcounts}, the difference in error rate between /i/, /a/, and /u/ was not statistically reliable. /e/, however, had a reliably lower error rate compared to all other vowels. In this respect, only /ɡ͡b/ exhibits error patterns consistent with the previous literature on palatalization. %This reversal of /k͡p/ and /ɡ͡b/ will be discussed in more detail later.
+
+Turning next to the outcomes of erroneous responses, we find that both voiced and voiceless labial-velars are most frequently confused with simplex labials. \figref{fig:burnsshaw:labialvelarerrortypes} presents the percentage of error types by voicing (separate panels) and vowel context (x-axis).
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.7\textwidth]{figures/BurnsShawFig2.png}
+    \caption{Proportions of incorrect labial-velar response types}
+    \label{fig:burnsshaw:labialvelarerrortypes}
+\end{figure}
+
+\noindent In \figref{fig:burnsshaw:labialvelarerrortypes}, we can see that simplex labial responses comprise over 60\% of the errors in both /ɡ͡b/ (n = 257) and /k͡p/ (n = 601) across all vowel contexts. For /ɡ͡b/, the /i/context triggers a higher percentage of coronal errors (n = 31) than either /e/ or /a/, a difference which was statistically significant. There is also a difference in coronal responses between /e/ and /a/, although this difference was not statistically reliable in our sample. Similarly, coronal responses for /i/ make up a higher percentage of incorrect responses than coronal responses for /u/ (also statistically significant). For /k͡p/ coronal errors (n = 41), /i/ and /u/ pattern together (i.e. are not statistically different) with the lowest incidence of coronal errors. The other two vowel contexts, /a/ and /e/, also pattern together (not significantly different from each other), showing significantly more coronal errors than /i/ and /u/. This suggests that while coronal errors for /ɡ͡b/ follow the typological patterns described for palatalization (i.e. lower front vowels do not trigger palatalization unless higher front vowels do, high back vowels do not trigger palatalization unless high front vowels do), /k͡p/ errors do not.
+
+To follow up the differential effect of vowel context on voiced vs. voiceless labial-velars, we looked at the error types based on the listener’s perception of voicing. This perspective on the data revealed a striking pattern. \figref{fig:burnsshaw:voicingerrors} below shows the place errors of labial-velars grouped by the stimulus voicing property (columns) and the listener’s accuracy in voicing perception (rows).\footnote{These were not tested for statistical significance due to low occurrences across the different categories.}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.7\textwidth]{figures/BurnsShawFig3.png}
+    \caption{Proportions of incorrect labial-velar response types based on voicing perception}
+    \label{fig:burnsshaw:voicingerrors}
+\end{figure}
+
+\noindent As shown in the first row, if listeners hear /ɡ͡b/ and correctly perceive that the consonant is voiced (n = 304), the pattern observed is the one wherein /i/ has the highest percentage of coronal responses and there are progressively fewer as the vowel moves away from /i/ (top right panel). If listeners hear /k͡p/ and correctly perceive that the consonant is voiceless (n = 603), /i/ exhibits no preference for coronal responses (top left panel). Looking at the second row, however, if listeners hear /k͡p/ and perceive it as voiced (i.e. /ɡ͡b/, n = 136), the pattern emerges wherein /i/ receives the highest percentage of coronal responses and other vowels exhibit progressively fewer as they move away from this ideal trigger of palatalization (bottom left panel). When listeners hear /ɡ͡b/ and perceive it as voiceless (i.e. /k͡p/, n = 68) there is no preference for coronal responses before /i/ (bottom right panel). These findings suggest that the perception of voicing is important to how Igbo listeners process labial-velars in palatalizing contexts. Interestingly, the effect of perceived voicing patterns differently than expected from past work on the role of voicing in velar palatalization. We return to this result in the discussion (\sectref{sec:burnsshaw:Summary}). 
+
+\subsection{Simplex consonant errors}\label{sec:burnsshaw:Simplex}
+We close the presentation of the results with errors among simplex labial and simplex velar stimuli. \figref{fig:burnsshaw:simplexerrorcounts} shows the error rate for voiced (left panel) and voiceless (right panel) simplex stimuli by vowel context. The top row shows velar stimuli and the bottom row shows labial stimuli.
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.7\textwidth]{figures/BurnsShawFig4.png}
+    \caption{Simplex dorsal and simplex labial error counts}
+    \label{fig:burnsshaw:simplexerrorcounts}
+\end{figure}
+
+\noindent Statistically, for simplex /ɡ/ (responses = 390, errors = 156), /i/ and /e/ pattern together with the fewest overall errors. /a/ had significantly more errors than other front vowels, /e/ and /i/. /u/ had significantly more errors than /a/, the most errors overall. For simplex /k/ (responses = 390, errors = 94), /i/ and /e/ both have more errors than /a/, a difference which is statistically significant. /u/ has significantly more errors than the other contexts. For simplex /b/ (responses = 386, errors = 214), /a/ has the lowest error rate while /i/, /e/, and /u/ pattern together with a higher error rate. For simplex /p/ (responses = 387, errors = 124), /e/ has the highest error rate, a difference which was statistically significant. /i/ patterns together with /a/ and /u/ with lower error rates. In sum, of the four simplex stops examined, only voiced labials showed high error rates for /i/, which is typologically the most aggressive trigger of palatalization. The voiceless labial has high error rates for /e/, but no other vowel. Among velars, either /a/ or /u/ exhibit the highest error rates.
+
+In order to interpret how the error rate patterns relate to the palatalization hierarchy described in \REF{ex:burnsshaw:hierarchy}, we need to know in particular how coronal responses are distributed across the different place, vowel, and voicing combinations. \figref{fig:burnsshaw:simplexerrortypes} shows the rate of different place responses among the errors for simplex velars and simplex labials.
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.7\textwidth]{figures/BurnsShawFig5.png}
+    \caption{Proportions of incorrect simplex dorsal and simplex labial response types}
+    \label{fig:burnsshaw:simplexerrortypes}
+\end{figure}
+
+\noindent For simplex /ɡ/ coronal errors (n = 49), all front vowels pattern together statistically having higher rates of coronal responses than /u/. For simplex /k/ coronal errors (n = 36), /i/ and /e/ statistically exhibit the most coronal responses. There are significantly fewer coronal responses before /a/ and /u/ . In this respect, both /ɡ/ and /k/ follow the palatalization hierarchy, but in different ways. For both, lower front vowels do not condition the percept of coronals to the exclusion of higher front vowels. This is consistent with the palatalization hierarchy. Additionally, the high back vowel does not condition the percept of coronals to the exclusion of the high front vowel, which is also consistent with the palatalization hierarchy. The difference between the two simplex velars is that coronal responses are more balanced across the front vowels for the voiced velar /ɡ/ than for the voiceless velar /k/, which we did not expect.
+
+When we look at the error pattern for simplex labials, the other closure component of the labial-velar, we find that with simplex /b/ coronal errors (n = 16), there is statistically no preferred vowel environment. For simplex /p/ coronal errors (n = 34), there were statistically more coronal responses in the context of /e/ than in the other vowel contexts. This indicates that simplex labials do not follow the patterns that have been described for the palatalization hierarchy outlined in \REF{ex:burnsshaw:hierarchy}, but simplex velars do.
+
+\subsection{Summary}\label{sec:burnsshaw:Summary}
+The previous typological literature on palatalization identified target place, target voicing, and trigger vowel as important factors in observing palatalization (see example \ref{ex:burnsshaw:hierarchy}). Our investigation of how complex dorsals (i.e. labial-velars) factor into the known typology indicates that while vowel context is important to how listeners perceive labial-velars, there is a split in target voicing properties which runs counter to the known typological behavior. That is, the voiced labial-velar /ɡ͡b/ is more consistent with the palatalization hierarchy than /k͡p/. This behavior appears to be connected specifically to how listeners perceive voicing, as opposed to the actual voicing of the segment.
+
+When comparing complex dorsals (i.e. /ɡ͡b/ and /k͡p/) to their simplex closure components (i.e. /ɡ/, /k/, /b/, /p/), we find that /ɡ͡b/, /ɡ/, and /k/ statistically exhibit behaviors consistent with the palatalization hierarchy concerning coronal response rates. Neither /k͡p/, /b/, nor /p/ exhibit error patterns consistent with the literature on palatalization triggers. While /b/ exhibited no preferences by vowel for coronal responses, both /k͡p/ and /p/ showed a preference for coronal responses before /e/ but never /i/ (with /k͡p/, /e/ and /a/ patterned together).
+
+\section{Discussion}\label{sec:burnsshaw:Discussion}
+We sought to understand if misperception of labial-velars in certain vowel contexts mirrored patterns of underattestation in those same contexts. We tested this hypothesis through the lens of velar palatalization. Underattestation of labial-velars occurred in the same environments which have been reported to trigger changes from simplex dorsals to coronals, in both experimental and typological literature. 
+
+The results of our cross-language Nupe-Igbo study found that all labial-velars are associated with high confusability with simplex labials regardless of vowel context. When looking specifically at confusions of labial-velars as coronal consonants, we found patterns reminiscent of velar palatalization. These findings provide some support for \citeauthor{Burns2023}' (\citeyear{Burns2023}) hypothesis that labial-velars may have two outcomes in palatalizing contexts. In addition to becoming coronal in these contexts, they may also simplify to simplex labials. The latter outcome may develop to avoid confusing lexical items with labial-velars for lexical items with coronals, as labial-velar confusability with coronals increases specifically in palatalizing contexts. A change from a labial-velar to a coronal would increase contrast with a simplex labial in a palatalization context. As simplex labials are already confusable with labial-velars independent of vowel context (and vice versa), there is not much that is lost from an identification standpoint when a labial-velar is replaced by a simplex labial, but there is an added benefit in that simplex labials are not notably more confusable with coronals in palatalizing contexts. Thus, the alternation of labial-velars with labials in palatalizing contexts may support system-wide maintenance of contrast. 
+
+Although our study found that vowel contexts known to condition velar palatalization also conditioned the percept of a labial-velar consonant as coronal, this pattern surfaced for the voiced labial-velar but not the voiceless labial-velar, in an apparent reversal of the voicing hierarchy observed among simplex velars in previous literature. While Igbo perception of simplex velars did exhibit responses that are consistent with the palatalization hierarchy, simplex /ɡ/ appears to exhibit more environments of palatalization (i.e. all front vowels) than simplex /k/. This follows the same apparent voicing reversal as observed for labial-velars. It should be noted that neither simplex labial conformed to the known behaviors of the typological literature on velar palatalization. This is in line with the target place hierarchy, wherein either coronals or dorsal may undergo the process of palatalization to the exclusion of labials, but the inverse does not occur. Interestingly, /k͡p/ appeared to pattern most closely with /p/. The split in the behavior of complex segments, where /ɡ͡b/ patterns with velars and /k͡p/ patterns with labials, leads to the question of whether or not there is some underlying motivation that would lead us to expect complex classes to exhibit disunity in which simplex component of the complex gesture that they pattern with.
+
+Another key finding from our study, regarding the voicing hierarchy reversal, is that it seems to depend on listener perception of voicing. When Igbo listeners misperceived a Nupe voiced labial-velar stimuli as voiceless, the patterns of consonant place misidentification across vowel contexts matched the patterns found for voiceless labial-velar stimuli (\ref{fig:burnsshaw:voicingerrors}). The same was true for Nupe voiceless labial-velar stimuli voicing misperception. Voiceless labial-velar stimuli misperceived as voiced showed the patterns of consonant place misidentification across vowel contexts found for voiced labial-velar stimuli. This pattern could possibly relate to the distribution of voiced vs. voiceless labial-velars across vowel contexts in the lexicon. A cursory examination of these patterns, based on counts in two Igbo sources \citep{Igwe1999, Echeruo1998}, showed that there were differences by voicing. Voiced labial-velars occurred less often before /i/ than voiceless labial-velars. The same was true for the /e/ environment; voiced labial-velars occur less often before /e/ than voiceless labial-velars. Possibly, these distributional facts influenced listener expectations in our study. Listeners that perceived the vowel /i/ or /e/ and voicing may be biased against responding labial-velar, since voiced labial-velars are under-attested in this environment.\footnote{An anonymous reviewer noted that many West African languages lack labial-velars before rounded vowels likely due to their development from *KUV > K͡PV.}
+
+One possible direction for future research is consideration of variation in laryngeal properties found across Nupe and Igbo. Many varieties of Igbo have a glottal gesture that is coupled with the oral gestures (see the discussion of phonemic system alignment in \sectref{sec:burnsshaw:LgBg}). In some varieties, the pairing of these articulatory gestures is such that /ɡ͡b/ > /ɓ/ and /kp/ > /ɓ̥/. The primary cue differentiating voiceless implosives from voiced implosives is a short period of silence during the closure (\citealt{Ladefoged1976} as cited in \citealt{McLaughlin2005}). This is different from the Nupe cues to voicing in labial-velars, which lack voicing during closure, at least in our materials, and contain robust cues to voicing in the burst. The perceptual stimuli we used in this study lack closure information that would allow Igbo listeners to identify the difference between voiced and voiceless implosives using the primary cue of voicing duration during the closure. Our stimuli did, however, retain burst information. For Igbo listeners with the voiced and voiceless implosive distinction, the burst information may differentiate implosives (both voiced and voiceless) from non-implosives. Thus, a cue to voicing in our materials may be reinterpreted as a cue to ingressive airstream for some Igbo users. Any reinterpretation of burst cues for voicing might interact with the effect of vowel quality on stop-place perception because of the distribution of voiced and voiceless labial-velars across vowels, as discussed above.
+
+A possible implication of the differing cues to voicing is that voiceless /k͡p/ in Nupe could be perceived by certain Igbo listeners as /p/. On this note, there were some similarities in how the effect of vowel context patterned across /k͡p/ and /p/. For these two consonants, place identification accuracy was similar across /i/, /a/, and /u/ with /e/ being statistically different. /e/ showed higher place identification accuracy for /k͡p/ (\figref{fig:burnsshaw:labialvelarerrorcounts}) and lower place identification accuracy for /p/ (\figref{fig:burnsshaw:simplexerrorcounts}). Unfortunately, given that simplex dorsals also exhibit reversal of the voicing hierarchy, further studies, both perceptual and articulatory, are needed to determine the exact motivations underlying all voicing reversals. As a first step, it may be informative to conduct a version of our study which provides cues to voicing during closure to see if the voicing hierarchy reversals persist even with more robust cues to voicing. Past work has shown that voicing during closure is an important cue to laryngeal contrasts in some languages with labial-velars \citep{Grawunder2011} and, moreover, excising this cue to voicing from the speech signal can lead to stop place misidentification \citep{Cahill2006}.
+
+\section{Conclusion}\label{sec:burnsshaw:Conclusion}
+We presented the results of a cross-language perception study investigating how vowel context affects stop place perception. In an open response task, Igbo listeners heard eight Nupe stops, /k͡p, ɡ͡b, k, ɡ, p, b/, in four different vowel environments, /a, e, i, u/. Our primary theoretical motivation was a test of whether misperception of labial-velars as coronal would follow the three implicational relationships identified for velar palatalization. Results indicated that voiced labial-velars do indeed follow the velar palatalization hierarchy. There are more coronal percepts of voiced labial-velars in the environment of /i/ followed by /e/ and then /a/. Voiceless labial-velars, on the other hand, did not show this same pattern. This was surprising because it had been claimed that, for simplex velars, voiceless stops are more likely to palatalize than voiced stops. However, simplex velars in Igbo also flouted this generalization about voicing with /ɡ/ exhibiting more coronal errors than /k/. Additionally, the coronal errors for /ɡ/ were more balanced across all front vowel contexts than for /k/, which was also unexpected. A complete account of the voicing hierarchy reversals reported here requires future research, but our results indicate that voicing perception itself plays a key role in conditioning how vowel context impacts stop place perception.  
+
+ 
+\sloppy 
+\printbibliography[heading=subbibliography,notkeyword=this]
+\end{document}

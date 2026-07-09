@@ -1,0 +1,865 @@
+\documentclass[output=paper,colorlinks,citecolor=brown
+% ,hidelinks
+% showindex
+]{langscibook}
+\ChapterDOI{10.5281/zenodo.20285223}
+\author{Willie Myers\affiliation{McGill University}}
+
+%Insert your title here
+\title{Headless relative clauses and anti-agreement in Kirundi}  
+\abstract{Anti-agreement effects have been widely documented in the Bantu language family where they occur in the specific context of Class 1 subject extraction. This paper looks at an instance of apparent Bantu AAEs that occur in an even more restricted context; in Kirundi, AAEs arise only in headless relative clauses but not other Class 1 subject extraction constructions. Drawing on novel fieldwork, I argue that the restricted distribution of AAEs in Kirundi is the result of the restricted distribution of overt relative markers. Both only occur in headless relative clauses. I link this correlation to unique properties of headless relative clauses, specifically proposing that such relative clauses are headed by empty nouns which require a relative operator in D. This proposal, in the spirit of \citet{Jenksetal:2017}, provides a unified account of variation in the structure of relative clauses in Kirundi, and the presence of AAEs, with greater implications for the understanding of relativization and anti-agreement in related Bantu languages. 
+}
+
+\IfFileExists{../localcommands.tex}{
+   \addbibresource{../localbibliography.bib}
+   \input{../localpackages}
+   \input{../localcommands}
+   \input{../localhyphenation}
+   \boolfalse{bookcompile}
+   \togglepaper[23]%%chapternumber
+}{}
+
+\begin{document}
+\maketitle
+
+\section{Introduction}
+
+ Anti-agreement effects (AAEs) occur when the expected agreement relation between an argument and a verb is suppressed or altered. Within the Bantu language family, AAEs have been widely documented; see e.g. \citet{SchneiderZioga:2000,SchneiderZioga:2007} for Kinande, \citet{Diercks:2009, Diercks:2010} for Lubukusu, \citet{Burns:2013} for Abo, \citet{Cheng:2006,BHenderson:2007,BHenderson:2009,BHenderson:2013} for Bemba, and \citet{Baier:2018} for Kikuyu. Notably, Bantu AAEs exhibit several shared properties that further distinguish them from other anti-agreement phenomena: they are expressed with a special morpheme (instead of default agreement or no agreement) and their distribution is restricted, occurring only in the extraction of local Class 1 (i.e. human singular) nouns.
+ 
+ These properties are demonstrated below using examples from Bemba. In a standard clause with a Class 1 subject, the canonical agreement morpheme \emph{a}- appears \REF{ex:myers:noaae}. When this subject is relativized, standard agreement is not allowed \REF{ex:myers:no}; instead, a special morpheme \emph{u}- is required \REF{ex:myers:yesaae}. This does not occur with subjects of any other noun class.
+
+\ea \label{ex:myers:bemba} Bemba (\citealt[197]{Cheng:2006})
+			\begin{xlist}
+ \ex \gll \hspaceThis{*~}Umulendo {\bfseries  a}-ka-belenga ibuku. \\
+	\hspaceThis{*~}1boy {\bfseries  \textsc{1.agr}}-\textsc{fut}-read 5book \\
+	 \glt \hspaceThis{*~}`The boy will read the book.' \label{ex:myers:noaae} 
+\ex \gll  {}*umulendo \'u-{\bfseries  a}-ka-belenga ibuku \\
+	\hspaceThis{*~}1boy \textsc{1.rel}-{\bfseries  \textsc{1.agr}}-\textsc{fut}-read 5book \\
+	 \glt \hspaceThis{*~}`the boy who will read the book' \label{ex:myers:no} 
+	\ex	\gll \hspaceThis{*~}umulendo \'u-{\bfseries  u}-ka-belenga ibuku \\
+	\hspaceThis{*~}1boy \textsc{1.rel}-{\bfseries  \textsc{1.aae}}-\textsc{fut}-read 5book \\
+	\glt \hspaceThis{*~}`the boy who will read the book' \label{ex:myers:yesaae} 
+				\end{xlist}
+				\z
+
+
+
+   One school of thought, including \citet{BHenderson:2007,BHenderson:2009,BHenderson:2013} and \citet{Diercks:2010}, has argued that Bantu AAEs result from a special relation between C and T wherein agreement in C determines agreement in T in local extraction contexts. They argue that agreement in C lacks [person] features so when the local subject moves to C and triggers [person]-less agreement there, a C-T relation then results in agreement in T lacking [person] features as well. This impoverished agreement is the source of AAEs.
+   
+   One implication of this proposal is that languages in which subject extraction does not trigger AAEs must either have full $\phi$-agreement in C, with all features included, or lack C-agreement altogether. The latter analysis has been proposed by \citet{BHenderson:2013} for Kirundi, a language in which standard relative clauses never exhibit AAEs. Both matrix clauses with Class 1 subjects and subject relative clauses with Class 1 heads share the same canonical Class 1 agreement morphology and no relatives display overt relative markers, as seen in \REF{ex:myers:umuceri}.\footnote{Unattributed examples come from the author's fieldwork conducted in collaboration with four native speakers of Kirundi, three of whom currently live in North America and one who lives in Burundi. Three speakers are male and one is female. Two grew up in rural areas and two in the main city of Bujumbura. The research adopts standard theoretically-driven fieldwork methodology (see, e.g., \citealt{Matthewson:2004}, \citealt{Bowern:2008}, \citealt{BochnakMatthewson:2020}).}
+
+ \ea  \label{ex:myers:umuceri}
+ 			\begin{xlist}
+\ex \gll	U-mu-gabo {\bfseries  a}-tēka u-mu-ceri. \\
+			\textsc{aug}-1-man \textsc{{\bfseries  1.agr}}-cook  \textsc{aug}-3-rice\\  
+			\glt `The man cooks rice.'   \hfill{(Matrix)}
+\ex		\gll	u-mu-gabo  {\bfseries  a}-tēká u-mu-ceri \\
+\textsc{aug}-1-man  \textsc{{\bfseries  1.agr}}-cook.\textsc{dep} \textsc{aug}-3-rice \\ 
+		\glt `the man who cooks rice' \hfill{(Headed relative)}  \label{ex:subj}
+  \end{xlist}
+  \z
+ 
+  However, despite past claims, I provide new data which show that Kirundi does \emph{not} lack AAEs entirely. In this paper, I demonstrate that a subset of extraction constructions \textendash{} headless relative clauses \textendash{} \emph{does} exhibit the morphology of AAEs and that these AAEs align with the defining properties of Bantu AAEs. As seen in \REF{ex:myers:HRC1}, a headless relative clause in Kirundi requires alternative subject agreement which exactly resembles the AAE morpheme found in other Bantu AAE languages.
+ 
+
+		\ea \label{ex:myers:HRC1}
+  \gll	u-{\bfseries  u}-têka u-mu-ceri \\ 
+		\textsc{aug}-\textsc{{\bfseries  1.aae}}-cook.\textsc{hrc} \textsc{aug}-3-rice\\
+		\glt `the one who cooks rice '  \hfill{(Headless relative)}
+		\z
+ 
+These data are puzzling for two reasons. First and most crucially, they suggest that headed relative clauses and headless relative clauses may differ structurally such that AAEs are triggered only in the latter. This is surprising if we assume that both are formed through the same relativization process. Second, the presence of Kirundi AAEs casts doubt on \citeauthor{BHenderson:2013}'s (\citeyear{BHenderson:2013}) claim that Kirundi lacks $\phi$-features in C, if we take that the widely accepted stance that AAEs are linked to agreement in C.
+
+In addressing these issues, this paper has two main goals: (1) to document AAEs in Kirundi, correcting past analysis of the language as lacking AAEs; and (2) to present an account of relative clauses in Kirundi that explains why anti-agreement morphology occurs in a smaller subset of possible contexts compared to other Bantu AAE languages. Ultimately, I argue that Kirundi exhibits AAEs only in headless relative clauses due to variation in the realization of elements of the relativized nominal. In the spirit of \citet{Jenksetal:2017}, I propose that D elements in Kirundi are in complementary distribution with the relative marker. I analyze this relative marker as a relative operator, akin to English \emph{which} that only appears overtly when it occurs with empty head nouns \citep{Panagiotidis:2003}. It is this makeup that gives rise to the unique form of headless relative clauses in Kirundi. This proposal explains both the AAE facts in Kirundi as well as related facts regarding the presence of overt relative markers in non-local headless relative clauses.
+
+ The structure of this paper is as follows. \sectref{sec:myers:relative} presents an overview of relative clauses in Kirundi, demonstrating that both headed and headless relative clauses satisfy diagnostics for relative clauses despite exhibiting different morphological forms. \sectref{sec:myers:aaes} assesses Kirundi's AAEs in the context of Bantu AAEs, showing that, despite their restricted distribution, Kirundi AAEs pattern exactly like AAEs in other Bantu languages, including the presence of agreeing relative markers. \sectref{sec:myers:proposal} sketches a syntactic analysis of Kirundi relative clauses which accounts for both the relative marker and AAE facts in the language. Finally, \sectref{sec:myers:conclusion} concludes with a brief summary and discussion of further areas for research.
+
+\section{Relative clauses in Kirundi} \label{sec:myers:relative}
+
+Kirundi is a Great Lakes Bantu language, spoken by $\sim$12.5 million speakers in the country of Burundi where it is the national language. It is part of a dialect continuum with Kinyarwanda (Rwanda) and smaller contiguous communities in Tanzania, Uganda, and the DRC \citep{Bastin:2003}. Linguistically, Kirundi exhibits many common traits of Bantu languages, including a rich noun class system, subject agreement on verbs and concord on nominal modifiers. Phonologically, it possesses a binary H/L tonal system which is important in making both lexical and morphosyntactic distinctions.\footnote{Tone and vowel length are represented in all examples in line with the Kirundi Utwâtuzo system \citep{utwatuzo:2024}. For example, a long /a/ vowel is expressed as \emph{ā}; with high tone on the first mora as \emph{â}; and with high tone on the second mora as \emph{ǎ}.}
+
+This section builds off the author's fieldwork with first-language Kirundi speakers to provide an overview of relative clauses in the language. \sectref{sec:myers:headed} presents data on the most common form of relative clauses in Kirundi: \emph{headed} relative clauses. These relative clauses lack overt relative markers and AAEs but nevertheless satisfy morphosyntactic criteria for relative clauses. \sectref{sec:myers:headless} examines \emph{headless} relative clauses, which lack overt nominal heads but exhibit both AAEs and agreeing relative markers. These properties \textendash{} anti-agreement and overt relative markers \textendash{} have not been included in past analyses of Kirundi relative clause structure. \sectref{sec:myers:empsum} summarizes the Kirundi relative clause paradigm at the heart of this paper's puzzle.
+
+
+\subsection{Headed relative clauses} \label{sec:myers:headed}
+
+Headed relative clauses are those that contain overt nominal heads. In Kirundi, these constructions lack overt relative markers and AAEs. This is demonstrated below in comparing a matrix clause \REF{ex:myers:matrix} with corresponding subject and object relative clauses \REF{ex:myers:subobj}. Unlike headed relatives in other Bantu AAEs, exemplified by the Bemba example in \REF{ex:myers:bemba}, the relativization of a Class 1 local subject in Kirundi results in canonical Class 1 agreement indicated by the morpheme \emph{a}-.
+
+\ea \label{ex:myers:matrix} \gll 	U-mu-gabo {\bfseries  a}-tēka u-mu-ceri. \\
+			\textsc{aug}-1-man \textsc{1.agr}-cook  \textsc{aug}-3-rice\\
+			\glt `The man cooks rice.'  \hfill{(Matrix)}
+			\z
+
+\ea \label{ex:myers:subobj}
+\begin{xlist}			
+\ex		\gll	u-mu-gabo {\bfseries  a}-tēká u-mu-ceri \\
+\textsc{aug}-1-man  \textsc{1.agr}-cook.\textsc{dep} \textsc{aug}-3-rice \\
+		\glt `the man that cooks rice' \hfill{(Subject headed relative)} 
+\ex	 \gll u-mu-ceri u-mu-gabo {\bfseries  a}-tēká \\
+		\textsc{aug-3-rice} \textsc{aug}-1-man \textsc{1.agr}-cook.\textsc{dep}  \\
+		\glt `the rice that the man cooks' \hfill{(Object headed relative)} 
+\end{xlist}
+\z
+
+One thing that is immediately apparent in Kirundi is that relative clauses lack overt relative markers in headed relative clauses. Relative markers, a term used to refer to morphemes that correspond to relative pronouns in English, have been analyzed as both relative complementizers (see, e.g., \citealt{DemuthHarford:1999,SchneiderZioga:2007,BHenderson:2009}) and relative operators \citep{Jenksetal:2017}. Notably, in the vast majority of Bantu AAE languages, AAEs always occur with overt relative markers, driving past analyses which link Bantu AAEs to agreement in C, expressed as an agreeing relative complementizer. Nevertheless, there are a few languages (such as Kinyarwanda) which possess AAEs but lack overt relative markers in headed relative clauses. In this sense, Kirundi patterns differently than previously documented Bantu AAE languages, lacking both AAEs and an overt relative marker in headed relative clauses.
+
+Despite the lack of an overt relative marker, evidence that these constructions are indeed relative clauses can be found in both language-internal and cross-linguistic diagnostics. Externally-headed relative clauses, such as those seen above, are typically defined as dependent clauses with external nominal heads that are linked to a missing constituent in the clause (see, e.g., \citealt[23\textendash24]{Caponigro:2021}). Within Kirundi, relative clauses possess a handful of properties that distinguish them as dependent clauses in line with this definition.
+
+First, dependent clauses in Kirundi exhibit a different tonal patterns than matrix clauses. When a verb with an underlyingly low tone, as seen in the matrix clause in \REF{ex:myers:mattone}, is used in an embedded context, such as with a complement clause, a high tone appears on the second syllable of its root \REF{ex:myers:comptone}. This is also true in relative clauses, as seen in \REF{ex:myers:reltone}.
+
+
+\ea  Dependent clause tone
+\begin{xlist}
+\ex	\label{ex:myers:mattone} \gll	U-mu-gabo a-tēk{\bfseries  a} u-mu-ceri. \label{ex:low}\\
+			\textsc{aug}-1-man \textsc{1.agr}-cook \textsc{aug}-3-rice\\
+			\glt `The man cooks rice.'  \hfill{(Matrix)}
+
+\ex 	\label{ex:myers:comptone}	
+\gll Tū-zi kó [u-mu-gabo a-tēk{\bfseries  á} u-mu-ceri].\\
+we.know \textsc{comp} \textsc{aug}-1-man \textsc{1.agr}-cook.\textsc{dep} \textsc{aug}-3-rice \\
+\glt `We know that the man cooks rice.' \hfill{(Complement)}
+
+\ex	\label{ex:myers:reltone}	\gll	Ndakūnda  u-mu-gabo [{$\_$\_$\_$} a-tēk{\bfseries  á} u-mu-ceri]. \\
+		I.like \textsc{aug}-1-man {} \textsc{1.agr}-cook.\textsc{dep} \textsc{aug}-3-rice \\
+		\glt `I like the man who cooks rice.' \hfill{(Relative)} 
+\end{xlist}
+\z	
+
+Secondly, dependent clauses differ from matrix clauses in the position of negation morphology (see \citealt{Chaperon:2023} for further discussion of negation in Kirundi). Though matrix clauses express negation before subject agreement \REF{ex:myers:neg1}, dependent clauses express it after subject agreement \REF{ex:myers:neg2}. This is shown for a relative clause in \REF{ex:myers:neg3}.
+
+\ea Dependent clause negation
+\begin{xlist}
+\ex \label{ex:myers:neg1} \gll	A-ba-gabo {\bfseries  nti}-ba-tēka u-mu-ceri. \label{ex:neg1}\\
+			\textsc{aug}-2-man \textsc{neg-2.agr}-cook  \textsc{aug}-3-rice\\
+			\glt `The men don't cook rice.' \hfill{(Matrix)}
+			
+\ex \label{ex:myers:neg2}  		
+\gll Tūzi kó [a-ba-gabo ba-{\bfseries  ta}-tēká u-mu-ceri].\\
+we.know \textsc{comp} \textsc{aug}-2-man \textsc{2.agr-neg}-cook\textsc{.dep} \textsc{aug}-3-rice\\
+\glt `We know that the men don't cook rice.' \hfill{(Complement)}
+
+\ex \label{ex:myers:neg3}		\gll	Ndakūnda a-ba-gabo [{$\_$\_$\_$} ba-{\bfseries  ta}-tēká u-mu-ceri]. \\
+		I.like \textsc{aug}-2-man {} \textsc{2.agr-neg}-cook.\textsc{dep} \textsc{aug}-3-rice \\
+		\glt `I like the men who don't cook rice.' \hfill{(Relative)} 
+		
+		\end{xlist}
+		\z
+
+Finally, dependent clauses differ from matrix clauses in the availability of the disjoint morpheme \emph{ra}-. The disjoint marker appears in matrix clauses, such as 
+\REF{ex:myers:dis1}, in which the postverbal element is not focused. It is prohibited in embedded clauses, as shown in \REF{ex:myers:dis2}. Relative clauses pattern like dependent clauses in prohibiting an overt disjoint marker \REF{ex:myers:dis3}. For more on the conjoint/disjoint alternation in Kirundi, see \citet{Ndayiragije:1999} and \citet{NshemezimanaBostoen:2017}.
+
+
+\ea Dependent clause disjoint
+\begin{xlist}
+\ex \label{ex:myers:dis1}		\gll	A-ba-gabo ba-{\bfseries  ra}-tēka. \label{ex:con}\\
+			\textsc{aug}-2-man \textsc{2.agr-dj}-cook\\
+			\glt `The men cook.'  \hfill{(Matrix)}
+			
+\ex \label{ex:myers:dis2}		\label{ex:dis}			\gll Tūzi kó [a-ba-gabo ba-{\bfseries  (*ra)}-tēká].\\
+we.know \textsc{comp} \textsc{aug}-2-man \textsc{2.agr}-\textsc{dj}-cook\textsc{.dep}\\
+\glt `We know that the men cook.' \hfill{(Complement)}
+
+\ex \label{ex:myers:dis3}		\gll	Ndakūnda  a-ba-gabo [{$\_$\_$\_$} a-{\bfseries  (*ra)}-tēká]. \\
+		I.like \textsc{aug}-2-man {} \textsc{2.agr}-\textsc{dj}-cook\textsc{.dep} \\
+		\glt `I like the men who cook.' \hfill{(Relative)} 
+\end{xlist}
+\z
+
+
+In addition to this morphological evidence, Kirundi relative clauses also satisfy common diagnostics of Ā-movement (see, e.g., \citealt{Safir:2019}). Firstly, they can establish long-distance dependencies, by-passing intervening subjects, as in the object relative in \REF{ex:myers:oext}. Relative clauses can also be formed across longer distances; both embedded subjects \REF{ex:myers:subjld} and embedded objects \REF{ex:myers:objld} can be relativized.\footnote{As noted by a reviewer, it is not the case that these sentences involve multiple relative clauses because the presence of the complementizer \emph{kó} can occur in  complement clauses but is disallowed in relative clauses.}
+
+\ea
+\begin{xlist}
+
+\ex  \label{ex:myers:oext} \gll Ndakūnda u-mu-ceri $[$ba-ryá ba-gabo ba-tēká {$\_$\_$\_$} ].\\
+I.like \textsc{aug}-3-rice [2-\textsc{dem} 2-man 2.\textsc{agr}-cook\textsc{.dep} {} ]\\
+\glt `I like the rice [those men cook {$\_$\_$\_$}].'  %\hfill{(Obj. rel.)} 
+
+\ex \gll Ndakūnda ba-ryá ba-gabo [a-vugá kó [ {$\_$\_$\_$} ba-tēká u-mu-ceri]].\\
+I.like 2-\textsc{dem} 2-man [1.\textsc{agr}-say.\textsc{dep} that [ {} 2.\textsc{agr}-cook\textsc{.dep} \textsc{aug}-3-rice]]\\
+\glt `I like those men [she says [{$\_$\_$\_$} cook rice]].' \label{ex:myers:subjld} %\hfill{(Emb. subj. rel.)}
+
+\ex \gll Ndakūnda u-mu-ceri [a-vugá kó [ba-ryá ba-gabo ba-tēká {$\_$\_$\_$} ]].\\
+I.like \textsc{aug}-3-rice [1.\textsc{agr}-say.\textsc{dep} that [2-\textsc{dem} 2-man 2.\textsc{agr}-cook\textsc{.dep} {} ]]\\
+\glt `I like the rice [she says that [those men cook {$\_$\_$\_$}]].' \label{ex:myers:objld}  %\hfill{(Emb. obj. rel.)}
+\end{xlist}
+\z
+
+
+Secondly, Kirundi headed relative clauses are island-sensitive. For example, neither the subject \REF{ex:myers:subjis} nor the object \REF{ex:myers:objis} of a relative clause can move out of said relative clause.
+
+\ea \label{ex:myers:subjis}
+\begin{xlist}
+
+\ex \gll \hspaceThis{*~}Ndakūnda u-mu-ceri [a-ba-gabo ba-tēká {$\_$\_$\_$} ].\\
+\hspaceThis{*~}I.like \textsc{aug}-3-rice [\textsc{aug}-2-man 2.\textsc{agr}-cook\textsc{.dep} {} ]\\
+\glt \hspaceThis{*~}`I like the rice [the men cook {$\_$\_$\_$}].'
+\ex \gll {}*Ūzi a-ba-gabo [nkūndá u-mu-ceri [{$\_$\_$\_$}  ba-tēká {$\_$\_$\_$} ].\\
+\hspaceThis{*~}you.know \textsc{aug}-2-man [I.like.\textsc{dep} \textsc{aug}-3-rice [{}  2.\textsc{agr}-cook\textsc{.dep} {} ]]\\
+\glt \hspaceThis{*~}Intended: `You know the men that [I like the rice [{$\_$\_$\_$} cook {$\_$\_$\_$}]].'
+\end{xlist}
+\z
+
+\ea \label{ex:myers:objis}
+\begin{xlist}
+\ex \gll \hspaceThis{*~}Ndakūnda a-ba-gabo [{$\_$\_$\_$} ba-tēká u-mu-ceri].\\
+\hspaceThis{*~}I.like  \textsc{aug}-2-man [{} 2.\textsc{agr}-cook\textsc{.dep} \textsc{aug}-3-rice]\\
+\glt \hspaceThis{*~}`I like the men that [{$\_$\_$\_$} cook the rice].'
+\ex \gll {}*Ūzi u-mu-ceri [nkūndá a-ba-gabo [{$\_$\_$\_$} ba-tēká {$\_$\_$\_$} ]].\\
+\hspaceThis{*~}you.know \textsc{aug}-3-rice [I.like.\textsc{dep}  \textsc{aug}-2-man [{}  2.\textsc{agr}-cook\textsc{.dep} {} ]]\\
+\glt \hspaceThis{*~}Intended: `You know the rice [I like the men that [{$\_$\_$\_$} cook {$\_$\_$\_$}]].'
+
+\end{xlist}
+\z
+
+
+In sum, Kirundi headed relative clauses pass standard tests for relative clauses, patterning as dependent clauses and satisfying diagnostics for Ā-dependencies. However, unlike prototypical Bantu AAE languages, they lack alternative agreement and overt relative markers.
+
+
+\subsection{Headless relative clauses} \label{sec:myers:headless}
+
+Headless relative clauses are relative clauses that lack overt nominal heads. An example can be seen for Kirundi in \REF{ex:myers:red} which compares a headed relative clauses with its headless counterpart. The two relative clauses differ in that the headed relative \REF{ex:myers:red1} includes an overt nominal head, the noun \emph{banyêshǔre} `students' which is made up of a noun class marker and a noun root. This noun is absent in the corresponding headless relative clause in \REF{ex:myers:red2} which consists solely of an augment vowel followed by an inflected verb.
+
+\ea  \label{ex:myers:red}
+\begin{xlist}
+
+\ex \label{ex:myers:red1} \gll  a-ba-nyêshǔre ba-shāká gutāha \\
+\textsc{aug}-2-student \textsc{2.agr}-want.\textsc{dep} go.home\\
+\glt `the students who want to go home' \hfill{(Headed)}
+\ex \label{ex:myers:red2} \gll a-ba-shâka gutāha \\
+\textsc{aug}-2.\textsc{agr}-want.\textsc{hrc} go.home \\
+\glt `the ones that want to go home' \hfill{(Headless)}
+\end{xlist}
+\z
+
+
+While some accounts of Bantu relatives clauses have proposed that this first vowel on the headless relative is a relative marker (see, e.g., \citealt{Cheng:2006} and \citealt{Diercks:2010} for Bemba and Lubukusu, respectively), I argue that this is really just the augment in Kirundi.\footnote{In the Bantu tradition, the augment, or pre-prefix, refers to the initial morpheme of a DP which is typically associated with definiteness or existence \citep{Katamba:2003}. In Kirundi, it appears on almost all nouns outside of negative existential constructions, vocatives, R-expressions, incorporated nouns, and some locative expressions \citep{Ndayiragijeetal:2012}.}  Crucially, this morpheme patterns like the augment in the rare contexts in which Kirundi nouns can appear unaugmented. When a noun occurs with the negative existential \emph{nta}, the augment cannot appear, as seen in \REF{ex:myers:noaug}. Similarly, headless relative clauses also lose their initial vowel in this context, as seen in \REF{ex:myers:nta}.
+
+\ea 
+\begin{xlist}
+
+\ex \label{ex:myers:noaug} \gll Nta [(*a-)ba-nyêshǔre ba-shāká gutāha]. \\
+there.is.no \textsc{aug}-2-student \textsc{2.agr}-want.\textsc{dep} go.home\\
+\glt `There are no students that want to go home.' \hfill{(Headed)}
+\ex \label{ex:myers:nta} \gll Nta [(*a-)ba-shâka gutāha].\label{ex:nored}\\
+there.is.no  \textsc{aug}-\textsc{2.agr}-want.\textsc{hrc} go.home \\
+\glt `There are none who want to go home.' \hfill{(Headless)}
+\end{xlist}
+\z
+
+Assuming then that this morpheme is an augment, we see that non-Class 1 headless relative clauses look exactly like headed ones except for the absence of an overt head noun. The similarity between the two types of relative clauses is further supported by the fact that headless relative clauses satisfy the same criteria for dependent clauses and Ā-dependencies as headed relative clauses. As dependent clauses, headless relatives exhibit non-matrix tone \REF{ex:myers:hrctone} and dependent clause negation \REF{ex:myers:hrcneg}, and disallow the disjoint morpheme \REF{ex:myers:hrcdj}.\footnote{Notably, the tonal pattern in headless relative clauses is different from those in standard dependent clauses. While a high tone appears on the second syllable of the verb root of a headed relative clause, for instance, it appears on the first syllable of the verb root in headless relative clauses. For now, I take both of these tonal patterns to distinguish relative clauses from matrix clauses but do not present an analysis of why headless relative clauses further differ in tone from other dependent clauses.}
+
+\ea Headless relative clauses are dependent clauses
+\begin{xlist}
+
+\ex \label{ex:myers:hrctone} \gll a-ba-{\bfseries  tê}ka u-mu-ceri\\
+\textsc{aug-2.aae}-cook.\textsc{hrc} \textsc{aug}-3-rice\\
+\glt `the ones who cook rice' \hfill{(Non-matrix tone)}
+
+\ex \label{ex:myers:hrcneg} \gll a-ba-{\bfseries  ta}-têka u-mu-ceri\\
+\textsc{aug-2.aae-neg}-cook.\textsc{hrc} \textsc{aug}-3-rice\\
+\glt `the ones who don't cook rice' \hfill{(Dependent negation)}
+
+\ex \label{ex:myers:hrcdj} \gll a-ba-{\bfseries  (*ra-)}têka u-mu-ceri\\
+\textsc{aug-2.aae-dj}-cook.\textsc{hrc} \textsc{aug}-3-rice\\
+\glt `the ones who cook rice' \hfill{(No disjoint morpheme)}
+\end{xlist}
+\z
+
+
+Additionally, headless relative clauses can have long-distance dependencies \REF{ex:myers:hrclong} and are sensitive to islands \REF{ex:myers:hrcisland}. Notably, in these contexts, an overt relative marker is required. This marker -\emph{ó} displays agreement morphology which indicates the number and noun class of the resulting headless relative construction.
+
+\ea Headless relative clauses involve Ā-dependencies
+\begin{xlist}
+
+\ex \label{ex:myers:hrclong} \gll \hspaceThis{*~}a-b-ó [a-vugá kó [ {$\_$\_$\_$} ba-tēká u-mu-ceri]]\\
+\hspaceThis{*~}\textsc{aug}-2-\textsc{rel} [1.\textsc{agr}-say.\textsc{dep} that [ {} 2.\textsc{agr}-cook\textsc{.dep} \textsc{aug}-3-rice]]\\
+\glt \hspaceThis{*~}`the ones [she says that [{$\_$\_$\_$} cook rice]].' \hfill{(Long-distance)}
+
+\ex  \label{ex:myers:hrcisland} \gll {}*a-b-ó [nkūndá u-mu-ceri [{$\_$\_$\_$}  ba-tēká {$\_$\_$\_$} ]]\\
+\hspaceThis{*~}\textsc{aug}-2-\textsc{rel} [I.like.\textsc{dep} \textsc{aug}-3-rice [{}  2.\textsc{agr}-cook\textsc{.dep} {} ]]\\
+\glt \hspaceThis{*~}Intended: `the ones that [I like the rice [{$\_$\_$\_$} cook {$\_$\_$\_$}]' \hfill{(Island)}
+
+\end{xlist}
+\z
+
+Despite these similarities, Kirundi headless relative clauses differ from their headed counterparts in two striking ways. First, they exhibit AAEs. Subject headless relative clauses that denote Class 1 individuals possess the same alternative Class 1 agreement morpheme \emph{u}- on the verb as seen in other Bantu AAE languages, as demonstrated in \REF{ex:myers:HRCa}. Second, they have overt relative markers. Object headless relative clauses require the presence of a relative marker where the head noun of a headed object relative would occur, as seen in \REF{ex:myers:HRCb}. This relative morpheme -\emph{ó} is identical to that found in several other Bantu languages such as Kinande \citep{SchneiderZioga:2007}.
+
+\ea \label{ex:myers:HRC}
+\begin{xlist}
+ \ex	\label{ex:myers:HRCa}\gll	u-{\bfseries  u}-têka u-mu-ceri \\ 
+		\textsc{aug}-1.{\bfseries  \textsc{aae}}-cook.\textsc{hrc} \textsc{aug}-3-rice\\
+		\glt `the one who cooks rice '  \hfill{(Subject headless relative)}
+\ex \label{ex:myers:HRCb}\gll {\bfseries  u-u-ó} u-mu-gabo {\bfseries  a}-tēká\\
+\textsc{aug-3}-{\bfseries  \textsc{rel}} \textsc{aug}-1-man \textsc{1.agr}-cook.\textsc{dep} \\
+\glt `the one that the man cooks'  \hfill{(Object headless relative)}
+\end{xlist}
+\z
+
+
+Before continuing, a note on the interpretation of Kirundi headless relative clauses is in order. Headed relative clauses are defined semantically by the individual property introduced by the head noun. For instance, the headed relative in \REF{ex:myers:hungrya} must refer to a dog because the head noun contains the root for `dog'. In headless relatives, however, there is no head noun. As a result, the entity which they denote is only defined by the noun class which appears in its agreement. Thus, the headless version of \REF{ex:myers:hungrya}, seen in \REF{ex:myers:hungryb}, can refer to any entity as long as it is a class 9 entity. Because class 9 typically denotes animals, this may lead to an intuition that the speaker is referring to some animal that likes Muco but it is also possible that the construction could refer to any number of other non-animal class 9 entities.
+
+
+\ea \label{ex:myers:hungry}
+\begin{xlist}
+ \ex	\label{ex:myers:hungrya}\gll	i-m-bwá i-kūndá Muco \\ 
+		\textsc{aug}-9-dog 9.\textsc{agr}-like.\textsc{dep} Muco\\
+		\glt `the dog that likes Muco'  \hfill{(Headed relative)}
+\ex \label{ex:myers:hungryb}\gll i-i-kûnda Muco \\ 
+		\textsc{aug}-9-9.\textsc{agr}-like.\textsc{hrc} Muco\\
+		\glt `the one that likes Muco'  \hfill{(Headless relative)}
+\end{xlist}
+\z
+
+\noindent Because English lacks relatives of this type (akin to free relatives), I have chosen to translate Kirundi headless relative clauses with the English `one' in order to approximate their usage across all types of entities and their lack of inherent referentiality. I will return to the interpretation of Kirundi headless relatives in \sectref{sec:myers:nullheads}.
+
+
+\subsection{Empirical summary} \label{sec:myers:empsum}
+
+Both headed and headless relative clauses in Kirundi satisfy commonly accepted criteria for relative clauses. They pattern as dependent clauses and are shown to involve Ā-dependencies. Despite these similarities, variation in agreement and relative morphology, as summarized in \tabref{tab:myers:empsum}, shows that a more complex situation exists.
+
+\begin{table}
+\caption{Kirundi relative clauses}
+\label{tab:myers:empsum}
+ \begin{tabular}{lllll}
+  \lsptoprule
+HEAD & REL & SUBJ & T & OBJ\\
+  \midrule
+  SUBJ     &  & & AGR & OBJ  \\
+OBJ      &  & SUBJ & AGR &  \\ 
+ \rowcolor{lightgray}  SUBJ\textsubscript{$\emptyset$}   &  & & \textbf{AAE} & OBJ  \\
+  \rowcolor{lightgray}   OBJ\textsubscript{$\emptyset$} & \textbf{REL} & SUBJ & AGR &  \\
+  \lspbottomrule
+ \end{tabular}
+\end{table}
+
+While headed relative clauses lack relative markers and AAEs, headless relative clauses, represented in \tabref{tab:myers:empsum} with null HEAD positions, possess both of these features. This suggests that properties of the relativized head \textendash{} e.g. overt vs. null \textendash{} affect the relativization strategy.
+
+
+
+\section{Anti-agreement effects and relative markers in Kirundi} \label{sec:myers:aaes}
+Having established the empirical landscape of relative clauses in Kirundi, this section looks at the unique features of Kirundi headless relative clauses. Unlike standard relative clauses in the language, headless relative clauses possess both anti-agreement effects and, in the case of object relatives, agreeing relative markers.
+
+\sectref{sec:myers:bantuAAEs} assesses Kirundi AAEs against the commonly accepted properties of Bantu AAEs, demonstrating that AAEs in Kirundi pattern exactly like those in other Bantu AAE languages, albeit with a restriction to headless relative contexts. \sectref{sec:myers:unified} proposes an additional property of Bantu AAEs: the presence of agreeing relative markers. This aligns with observations from across the Bantu family as well as the presence of overt, agreeing relative morphology in Kirundi object headless relatives. Building on this, \sectref{sec:myers:kirrel} makes the case for the presence of relative markers in Kirundi \emph{subject} headless relatives, arguing relative markers do occur in these constructions but that their presence is obscured by the effects of morpho-phonological processes such as Kinyalolo's Constraint \citep{Kinyalolo:1991}. This aligns Kirundi AAEs with past proposals for the occurrence of agreeing relative markers in Bantu AAE constructions generally (see, e.g.,  \citealt{BHenderson:2013}). \sectref{sec:myers:sumsum} revises the Kirundi relative clause paradigm to account for these claims, paving the way for a formal analysis of the difference between headed and headless relative clauses in the language.
+
+
+
+\subsection{Kirundi AAEs are Bantu AAEs} \label{sec:myers:bantuAAEs}
+
+AAEs have been documented in a broad variety of languages since \citeauthor{Ouhalla:1993}'s (\citeyear{Ouhalla:1993}) initial work on the topic, including Bantu languages. Crucially, within Bantu languages, AAEs pattern very similarly, suggesting a common phenomenon. The properties of Bantu AAEs are listed in \REF{ex:myers:list}. 
+
+
+\ea Properties of Bantu Anti-Agreement Effects \label{ex:myers:list}
+\begin{xlist}
+
+\ex Special form -- anti-agreement is expressed via a unique morpheme
+\ex Limited distribution -- AAEs are only present with Class 1 nouns
+\ex Local -- AAEs only occur with subject extraction
+\end{xlist}
+\z
+
+These same properties characterize AAEs in Kirundi. Firstly, Kirundi subject headless relatives exhibit alternative agreement morphology when they denote Class 1 arguments. As seen in \REF{ex:myers:comp}, Class 1 subject agreement is typically realized as \emph{a}-. However, in headless relative clauses, the \emph{u}- morpheme appears instead. This is in line with many Bantu AAE languages which have \emph{u}- AAE morphemes.
+
+\ea \label{ex:myers:comp}
+\begin{xlist}
+\ex \gll U-mu-gabo {\bfseries  a}-ra-soma i-bi-tabu.\\
+			\textsc{aug}-1-man \textsc{{\bfseries  1.agr}-dj}-read  \textsc{aug}-8-book\\
+			\glt `The man reads books.'  \hfill{(Matrix)}
+		\ex	\gll	u-{\bfseries  u}-sóma i-bi-tabu \\ 
+		\textsc{aug}-\textsc{{\bfseries  1.aae}}-read.\textsc{dep} \textsc{aug}-8-book\\
+		\glt `the one who reads books '  \hfill{(Headless relative)}
+		\end{xlist}
+		\z
+		
+Like other Bantu AAEs, Kirundi AAEs are limited to Class 1. Headless relative clauses of other classes do not exhibit alternative agreement morphology, as seen in \REF{ex:myers:bagabo} and \REF{ex:myers:class9}.
+
+\ea \label{ex:myers:bagabo}
+\begin{xlist}
+\ex \gll  a-ba-gabo {\bfseries  ba}-somá i-bi-tabu\\
+\textsc{aug}-2-man \textsc{2.agr}-read.\textsc{dep} \textsc{aug}-8-book\\
+\glt `the men who read books' \hfill{(Headed -- Class 2)}
+\ex \gll  a-{\bfseries  ba}-sóma i-bi-tabu \\
+ \textsc{aug}-2.\textsc{agr}-read.\textsc{hrc} \textsc{aug}-8-book\\
+\glt `the ones who read books' \hfill{(Headless -- Class 2)}
+\end{xlist}
+\z
+
+\ea \label{ex:myers:class9}
+\begin{xlist}
+\ex \gll  i-n-ká {\bfseries  zi}-rí mu mu-rimá\\
+\textsc{aug}-10-cow \textsc{10.agr}-be.\textsc{dep} in 3-field\\
+\glt `the cows who are in the field' \hfill{(Headed -- Class 9)}
+\ex \gll  i-{\bfseries  zi}-rí mu mu-rimá\\
+\textsc{aug}-10.\textsc{agr}-be.\textsc{hrc} in 3-field\\
+\glt `the ones who are in the field' \hfill{(Headless -- Class 9)}
+\end{xlist}
+\z
+
+Finally, Kirundi AAEs, like other Bantu AAEs, are limited to local subject extraction. They do not appear on the lower verb of embedded subject extraction constructions \REF{ex:myers:embed} or compound tense constructions \REF{ex:myers:ct}.
+
+\ea No AAEs in embedded agreement \label{ex:myers:embed}
+\begin{xlist}
+\ex \gll {}*u-u-ó [tūzí [kó {\bfseries  u}-kūndá Muco]]\\
+		\hspaceThis{*~}\textsc{aug-1-rel} we.know.\textsc{dep} that \textsc{1.aae}-like.\textsc{dep} Muco\\
+			\glt \hspaceThis{*~}Intended: `the one we know likes Muco'
+\ex \gll \hspaceThis{*~}u-u-ó [tūzí [kó {\bfseries  a}-kūndá Muco]]\\
+	\hspaceThis{*~}\textsc{aug-1-rel} we.know.\textsc{dep} that \textsc{1.agr}-like.\textsc{dep} Muco\\
+			\glt \hspaceThis{*~}`the one we know likes Muco.' 
+			\end{xlist}
+			\z
+			
+\ea No AAEs in lower compound tense agreement \label{ex:myers:ct}
+\begin{xlist}
+\ex \gll {}*u-{\bfseries  u-}ríko {\bfseries  u}-ra-soma\\
+\hspaceThis{*~}\textsc{aug}-1.\textsc{aae}-\textsc{prog.dep} 1.\textsc{aae}-\textsc{dj}-read\\
+\glt \hspaceThis{*~}`the one who is reading' 
+\ex \gll \hspaceThis{*~}u-{\bfseries  u-}ríko {\bfseries  a}-ra-soma\\
+\hspaceThis{*~}\textsc{aug}-1.\textsc{aae}-\textsc{prog.dep} 1.\textsc{agr}-\textsc{dj}-read\\
+\glt \hspaceThis{*~}`the one who is reading' 
+\end{xlist}
+\z
+
+Taken together, these data strongly suggest that Kirundi AAEs pattern like other Bantu AAEs do and should be considered as part of the same phenomenon.
+
+\subsection{Bantu AAEs involve agreeing relative markers} \label{sec:myers:unified}
+
+Along with the characteristics presented in \REF{ex:myers:list}, I argue that Bantu AAEs are further characterized by their co-occurrence with agreeing relative markers. Almost all past descriptions of Bantu AAEs include the presence of such morphemes, typically analyzed as relative complementizers expressing agreement in C. Along with Bemba, shown in \REF{ex:myers:bemba}, AAE constructions in Kinande and Lubukusu have also been described as including agreeing relative markers. This is shown in \REF{ex:myers:kinande} for Kinande and \REF{ex:myers:lubukusu} for Lubukusu.\footnote{I will look closer at Lubukusu in \sectref{sec:myers:lubb} because new data suggest the need for a revised analysis of its relative clauses, in support of a similar approach for Kirundi.}
+
+\ea \label{ex:myers:kinande} Kinande Subject Relative \citep[417]{SchneiderZioga:2007} \\
+\gll omukali {\bfseries  oyo} u-anzire Kambale\\
+1woman 1\textsc{rel} \textsc{1.aae}-like Kambale\\
+\glt `the woman that likes Kambale' 
+\z
+
+\ea \label{ex:myers:lubukusu} Lubukusu Subject Relative \citep[115]{Diercks:2010} \\
+\gll o-mu-seecha {\bfseries  o}-o-eba e-ndika\\
+\textsc{aug}-1-man 1.\textsc{rel}-\textsc{1.aae}-stole 9-bicycle\\
+\glt `the man who stole the bicycle'
+\z
+
+There are only a few documented exceptions to this co-occurrence and in these cases, this apparent divergence can be explained via morpho-phonological processes. Two exceptional Bantu AAE languages are Kinyarwanda and Dzamba which display AAEs but appear to lack overt relative markers, as shown in \REF{ex:myers:rw} and \REF{ex:myers:dz}, respectively.
+
+
+\ea \label{ex:myers:rw} Kinyarwanda anti-agreement \citep[235]{ZorcNibagwire:2007}
+\gll u-mū-ntu u-sába\\
+\textsc{aug}-1-person 1.\textsc{aae}-ask\\
+\glt `the person who asks'
+\z
+
+\ea \label{ex:myers:dz} Dzamba anti-agreement \citep{Bokamba:1976} \\
+\gll o-mo-to ó-kpa-aki imundondo\\
+\textsc{aug}-1-person \textsc{1.aae}-took-\textsc{ipfv} jug\\
+\glt `the person who took the jug'
+\z
+
+Regarding Kinyarwanda, I follow \citet{BHenderson:2013} in assuming that an agreeing relative morpheme exists underlyingly but is not spelled out phonologically. This is in line with the fact that headed relative clauses never have overt relative markers and agreeing complementizers do not appear in any contexts in the language \citep{ZorcNibagwire:2007}. This could be driven by the Doubly-Filled \textsc{comp} Filter \citep{KoopmanSzabolcsi:2000} in that the presence of a relativized element in Spec,C prevents the spell-out of C itself. Ultimately, I assume that an agreeing relative morpheme still accompanies the presence of Kinyarwanda's AAEs underlyingly even if not realized on the surface, allowing for Kinyarwanda AAE facts to remain within the larger Bantu AAE phenomenon.
+
+Regarding Dzamba, I similarly assume an unrealized relative marker in standard relative clauses; however, in this case, I propose that the absence of such a morpheme is driven by the wider Bantu morpho-phonological process called Kinyalolo's Constraint \citep{Kinyalolo:1991,Carstens:2005}, also analyzed as $\upvarphi$-feature dissimilation by \citet{Oxford:2018}. Kinyalolo's Constraint states that ``AGR on a lower head is inert iff its features are predictable from AGR on a higher head'' \citep[253]{Carstens:2005}. In other words, when adjacent heads agree with the same goal, only the higher one is spelled out. This morphological constraint is found in many Bantu languages where it affects both C/T and T/Asp realization.
+
+Kinyalolo's Constraint can be seen in Dzamba in non-AAE contexts such as \REF{ex:myers:dz!}. When nothing intervenes between C and T, there is only one morpheme expressing agreement in between the relativized subject and verb of a subject relative construction \REF{ex:myers:dzamba1}. However, when negation intervenes, both a relative marker and a subject agreement morpheme \textendash{} representing two heads \textendash{} are spelled out \REF{ex:myers:dzamba2}. A similar situation occurs in Sotho where a high adverb intervenes between C and T, as demonstrated in \REF{ex:myers:sotho!}.
+
+\ea Kinyalolo's Constraint in Dzamba \citep{Bokamba:1976} \label{ex:myers:dz!}
+\begin{xlist}
+\ex \gll mukanda mú-tom-aki omwana\\
+5letter 5-\textsc{agr}-send-\textsc{pfv} 1child\\
+\glt `the letter that the child sent' \label{ex:myers:dzamba1}
+\ex \gll ma:kenge {\bfseries  má}-ta-mà-bung-aki o kalasi emba\\
+6slate 6\textsc{rel-neg-6.agr}-lose-\textsc{pfv} at school \textsc{neg}\\
+\glt `the slates which were not lost at school' \label{ex:myers:dzamba2}
+\end{xlist}
+\z
+
+\ea Kinyalolo's Constraint in Sotho \citep{Demuth:1995} \label{ex:myers:sotho!}
+\begin{xlist}
+\ex \gll batho bá-pheháng dijó\\
+2person 2\textsc{.agr}-cook.\textsc{dep} 8food\\
+\glt `people that cook food' \label{ex:myers:sotho1}
+\ex \gll batho {\bfseries  báo} kajéno bá-pheháng dijó\\
+2person 2\textsc{rel} today 2\textsc{.agr}-cook.\textsc{dep} 8food\\
+\glt `people that today cook food' \label{ex:myers:sotho2}
+\end{xlist}
+\z
+
+ Crucially, Kinyalolo's Constraint also affects \textit{AAE constructions} in these languages. And when it does, AAEs are unaffected. If negation is added to a relative clause with AAEs in Dzamba, the resulting construction will contain both a relative marker and a subject agreement morpheme expressing anti-agreement. This is demonstrated in \REF{ex:myers:dz2} where both the relative marker and subject agreement appear.
+
+
+\ea \label{ex:myers:dz2}  
+\gll o-mo-to {\bfseries  ó}-ta-{\bfseries  ò}-kpa-aki imundondo emba\\
+\textsc{aug}-1-person \textsc{1.rel-neg-1.aae}-took-\textsc{ipfv} jug \textsc{neg}\\
+\glt `the person who did not take the jug' \hfill{\citep{Bokamba:1976}}
+\z
+
+
+
+
+Having shown that Kinyalolo's Constraint is in effect in Dzamba, we can now revisit the apparent lack of a relative marker in \REF{ex:myers:dz}. Assuming that Kinyalolo's Constraint applies here, just as it does in other subject relatives without intervening elements between C and T, what we are seeing is not the absence of a relative marker, but the obliteration of subject-verb agreement as the \emph{result} of a relative marker. Therefore, the morpheme glossed as \textsc{AAE} here is actually the relative marker itself, bringing Dzamba and languages with similar relative constructions back into the wider cross-Bantu picture in which AAEs and relative markers go hand in hand. In fact, with this revision, Dzamba patterns strikingly like Kirundi.
+
+
+
+\subsection{Kirundi AAEs also involve agreeing relative markers} \label{sec:myers:kirrel}
+
+In conjunction with the overt presence of agreeing relative markers in many Bantu AAE constructions, I take the morpho-phonological facts from Kinyarwanda and Dzamba to support the larger claim that agreeing relative markers are a necessary component of Bantu AAE constructions. By extension, I propose that AAE constructions in Kirundi must also possess agreeing relative markers even if it doesn't seem like such a morpheme is realized. To motivate this, I propose that Kinyalolo's Constraint applies to Kirundi subject headless relatives such that only one of the two underlying agreement heads \textendash{} \textsc{rel} and \textsc{agr} \textendash{}  is realized when the heads are adjacent. This derivation is represented step by step in \REF{ex:myers:deriv}. 
+
+
+\ea \gll u-u-têka\\
+\textsc{aug}-{\bfseries  \textsc{1.aae}}-cook \\
+\glt `the one who cooks' \label{ex:myers:deriv}
+
+\begin{xlist}
+    \ex \textsc{aug}-{\bfseries  1.\textsc{rel}} {\bfseries  \textsc{1.agr}}-cook \hfill{(Underlying)}
+\ex \textsc{aug}- 1-\textsc{rel} \sout{{\bfseries  \textsc{1.agr}}}-cook  \hfill{(Kinyalolo's Constraint)}
+\ex \textsc{aug}-{\bfseries  \textsc{1.rel}}-cook\hfill{(Surface)}
+ \end{xlist}
+ \z
+
+\noindent Note that what has been glossed in past examples as \textsc{aae} in the surface form is in fact the realization of the relative morpheme, not the subject-verb agreement morpheme. In other words, what appears to be AAEs in Kirundi is the realization of a relative marker in the absence of a subject-verb agreement morpheme from T. I look closer at what this means for AAEs at large in \sectref{sec:myers:implications}.
+
+ Within the Bantu family and within Bantu AAE languages, it is not uncommon for Kinyalolo's Constraint to obfuscate the full array of elements involved in AAE constructions, as seen in the previous section. In languages like Dzamba, alternations between relative clauses with and without high negation or high adverbs provide clear evidence that Kinyalolo's Constraint is in effect. Therefore, it would not be surprising if Kirundi were to pattern similarly. However, unlike these languages, Kirundi does not appear to possess any elements which intervene between the two agreement heads in questions. To my knowledge, the language does not possess any high adverbs and negation in relative clauses always occurs after the subject agreement morpheme. As a result, these sorts of diagnostics cannot be used to prove that Kirundi exhibits Kinyalolo's Constraint.
+
+ That being said, support for the extension of Kinyalolo's Constraint to Kirundi subject headless relatives still exists. Drawing on both language-internal and cross-linguistic data, I argue that the presence of the augment on Kirundi subject headless relatives provides evidence that the proposed approach is on the right track. Specifically, I claim that the anti-agreement morpheme in Kirundi subject headless relatives must be a relative marker and not a subject agreement morpheme because the augment can only occur with nominal morphology such as noun class markers, complementizers, and relative markers.
+
+ \subsubsection{The augment in Kirundi headless relatives}
+
+In Kirundi, the augment primarily occurs with nominal constructions that are phonologically realized and include nominal noun class morphology. This includes all the DPs we've seen so far but it does not include proper nouns or pronouns, which lack noun class prefixes \REF{ex:myers:noaugnonc}.
+
+\ea No augment without noun class markers \label{ex:myers:noaugnonc}
+\begin{xlist}
+\ex \gll {}*{\bfseries  u}-Yohǎni\\
+\hspaceThis{*~}\textsc{aug}-John\\
+\glt \hspaceThis{*~}Intended: `John' \hfill{(Proper noun DP)}
+\ex \gll {}*{\bfseries  u}-jēwé\\
+\hspaceThis{*~}\textsc{aug}-me\\
+\glt \hspaceThis{*~}Intended: `me' \hfill{(Pronoun DP)}
+\end{xlist}
+\z
+
+Syntactically, this aligns with a long line of work which argues that the augment is a D element \citep{Ndayiragijeetal:2012} that selects for \emph{n}/Num (spelled out as a noun class prefix) \citep{FuchsvanderWal:2021}. The presence of this noun class prefix is important because it is from this morpheme that the augment gets its form, via the copying or sharing of phonological features \citep{Ntihirageza:2001,Niyondagara:1993}.
+
+These facts predict that the augment cannot occur when no overt nominal morpheme is realized. This prediction is borne out in examining the distribution of the augment in deverbal nominalizations and CP arguments. 
+
+Regarding deverbal nominalizations, the augment can appear with verb roots if there is also a noun class prefix, as in the case of the deverbal nominalization in \REF{ex:myers:uku}. However, it is impossible for the augment to appear directly on a verb root \REF{ex:myers:uri} or on a verb inflected with subject agreement \REF{ex:myers:ua}. Though noun class prefixes and subject agreement morphemes both express the features of a noun, clearly they differ in their ability to co-occur with the augment. Only a noun class prefix is able to support an augment.
+
+\ea Deverbal nominalization \label{ex:myers:augnc}
+\begin{xlist}
+\ex \label{ex:myers:uku} \gll \hspaceThis{*~}{\bfseries  u}-ku-rima\\
+\hspaceThis{*~}\textsc{aug}-15-cultivate\\
+\glt \hspaceThis{*~}`the farming' \hfill{(Deverbal nominalization)}
+\ex \label{ex:myers:uri} \gll {}*{\bfseries  u}-rima\\
+\hspaceThis{*~}\textsc{aug}-cultivate\\
+\glt \hspaceThis{*~}Intended: `the farming' \hfill{(Verb without noun class prefix)}
+\ex \label{ex:myers:ua} \gll {}*{\bfseries  u}-a-rima\\
+\hspaceThis{*~}\textsc{aug}-\textsc{1.agr}-cultivate\\
+\glt \hspaceThis{*~}Intended: `his farming (the farming by him)' \hfill{(Verb with subject agreement)}
+\end{xlist}
+\z
+
+\noindent Based on this, it would be surprising for the augment to appear as it does in Kirundi subject headless relatives if the anti-agreement morpheme in such constructions were the realization of a verbal T head. A subject agreement morpheme, despite its similarities with a noun class prefix, is not enough to support the presence of the augment.
+
+Evidence that the augment must appear as the result of a relative marker, instead of T agreement, comes from instances in which complement clauses function as DP arguments. Complement clauses in Kirundi typically occur with the complementizer \emph{kó}, as shown in \REF{ex:myers:ko}. This complementizer can be broken down into two pieces: the noun class prefix \emph{ku-}, denoting default Class 15, and the complementizer morpheme -\emph{ó} \citep{Morgunova:2023}.
+
+\ea
+\label{ex:myers:ko} \gll A-ra-vuga [{\bfseries  kó} Yohǎni a-ryá ibitōke.]\\
+\textsc{1.agr-dj}-say that John \textsc{1.agr}-eat.\textsc{dep} 8banana\\
+\glt `She says that John eats bananas.'
+\z
+
+When a complement clause functions as an argument, as in the passive sentence in \REF{ex:myers:augcp}, it appears with an augment which takes its form from \emph{kó}'s noun class prefix \emph{ku-}. The result is a DP argument formed from a CP. When a complement clause is used as an argument, it is not possible for the augment or the complementizer to occur without the other.
+
+\ea \label{ex:myers:augcp} Augment with CP \citep[23]{Morgunova:2023} \\
+\gll Kagabo a-á-tangāj-w-e n(a) *(û)-[*(kó) Kēza a-á-koze icǔmba cîwé].\\
+Kagabo \textsc{1.agr-pst}-surprise-\textsc{pass-pfv} \textsc{prep} \textsc{aug}-that Kēza \textsc{1.agr-pst}-work.\textsc{pfv} 7.room 7.\textsc{poss.3s}\\
+\glt `Kagabo was surprised by (the fact) that Kēza cleaned her room.'
+\z 
+
+\noindent This example demonstrates that even CPs can occur with the augment as long as they have a morpheme that can host a noun class prefix at their left edge. It is not insignificant that the complementizer morpheme in complement clauses resembles the relative marker morpheme in Kirundi's object headless relative clauses (as well as relative markers in many other Bantu languages) in deriving from an -\emph{ó} form. I take these similarities to support the claim that the augment in subject headless relatives is allowed because the apparent AAE morpheme is a relative marker and not an agreement morpheme.
+
+In sum, though Kirundi lacks the straightforward evidence for Kinyalolo's Constraint which exists Dzamba, there is nevertheless a case to be made for the application of Kinyalolo's Constraint to Kirundi headless relative clauses. Based on the properties of the Kirundi augment, it would not be possible for the augment to appear in subject headless relatives as it does unless the morpheme between the augment and the verb is the relative marker, expressing nominal morphology like the complementizer \emph{kó}, and not a subject agreement morpheme expressing verbal morphology. 
+
+ \subsubsection{The augment in Lubukusu} \label{sec:myers:lubb}
+
+ Additional support for this claim comes from Lubukusu in which the application of diagnostics for Kinyalolo's Constraint reveals that the form of relative clauses in Lubukusu is strongly analogous to the Kirundi data. In Lubukusu, subject relative clauses possess two morphemes between the relativized subject and the verb. In past work such as \citet{Diercks:2010}, these have been glossed as the relative marker and the subject agreement morpheme, as shown in \REF{ex:myers:lubukusu} and repeated here.
+
+\ea \label{ex:myers:lubukusu2} Lubukusu Subject Relative \citep[115]{Diercks:2010} \\
+\gll o-mu-seecha {\bfseries  o}-o-eba e-ndika\\
+\textsc{aug}-1-man 1.\textsc{rel}-\textsc{1.aae}-stole 9-bicycle\\
+\glt `the man who stole the bicycle'
+\z
+
+While Diercks analyzes the first \textit{o-} morpheme here as a relative marker, I argue instead that it is better explained as an augment, like we see at the left of Kirundi headless relatives. Notably, this morpheme has the same form as the Lubukusu augment and, as noted by an anonymous reviewer, the construction can function as a headless relative clauses if the head noun \emph{omuseecha} is removed. We would expect any headless relative clauses denoting a definite entity to have an augment and the fact that the augment remains in headed contexts aligns with documented determiner spreading in relative clauses in other Bantu languages (see, e.g., \citealt{SchneiderZioga:2007,Asiimweetal:2023}).
+
+
+An additional point of evidence for this re-analysis is the application of Kinyalolo's Constraint diagnostics to Lubukusu relatives, presented in \REF{ex:myers:lub4}. When a high adverb appears directly before subject agreement, as in \REF{ex:myers:pc2}, the standalone relative marker of object relatives is used and not the alleged relative marker \emph{o-}. In other languages in which both the relative marker and a subject agreement morpheme co-occur (such as Kinande), we do not see the relative marker change form because of an intervening adverb but we \emph{do} see this in cases where Kinyalolo's Constraint affects the realization of these agreement heads (see, for instance, \REF{ex:myers:sotho!} from Sotho, where the relative marker is \emph{bao} when standing alone and \emph{ba}- when adjoined to the verb).
+
+\ea \label{ex:myers:lub4} Kinyalolo's Constraint in Lubukusu (Michael Diercks, p.c.)
+\begin{xlist}
+\ex \gll Wafula {\bfseries  o}-o-akaata ekhaafu\\
+Wafula \textsc{1rel}-\textsc{1.aae}-slaughtered 9cow\\
+\glt `Wafula who slaughtered the cow' \label{ex:myers:pc1}
+\ex \gll Wafula {\bfseries  niye} wakana o-lakaata ekhaafu\\
+Wafula \textsc{1rel} perhaps \textsc{1.aae}-slaughtered 9cow\\
+\glt `Wafula who perhaps slaughtered the cow' \label{ex:myers:pc2}
+\end{xlist}
+\z
+
+Assuming then that this first morpheme in Lubukusu relatives is the augment, I conclude that Lubukusu subject relative clauses have exactly the same form as their counterparts in Kirundi. Both include adjacent agreement heads \textendash{} the relative morpheme and the subject agreement morpheme \textendash{} which are reduced to just a relative morpheme as the result of Kinyalolo's Constraint. The remaining construction occurs with the augment which gets its form from the nominal morphology of the relative marker, as shown in \REF{ex:myers:lubukusu4}. The only difference between the two languages is that this structure occurs in both headed and headless subject relatives in Lubukusu but only headless ones in Kirundi.
+
+\ea \label{ex:myers:lubukusu4} Lubukusu Subject Relative Revised \\
+\gll o-mu-seecha {\bfseries  o}-o-eba e-ndika\\
+\textsc{aug}-1-man \textsc{aug}-\textsc{1.rel}-stole 9-bicycle\\
+\glt `the man who stole the bicycle'
+\z
+ 
+\subsection{Summary} \label{sec:myers:sumsum}
+
+Kirundi AAEs pattern with other Bantu AAEs in that they satisfy all criteria of Bantu AAEs from previously documented analyses, as summarized in \REF{ex:myers:list}. Additionally, Kirundi headless relative clauses contain agreeing relative markers, just like other Bantu AAE constructions. One reason this claim has not been made in the past is that the application of Kinyalolo's Constraint to Kirundi, as in other Bantu AAE languages, makes the empirical picture in regards to anti-agreement morphology harder to assess on the surface. Nevertheless, morpho-phonological evidence from Kirundi and related languages supports the claim that Kirundi's headless relatives contain relative markers. This claim is noteworthy because it brings Kirundi AAEs under the umbrella of Bantu AAEs more generally. 
+
+ With this in mind, a revised overview of Kirundi relative clauses is presented in \tabref{tab:myers:sumsum}.
+
+
+\begin{table}
+\caption{Kirundi relative clauses (revised)}
+\label{tab:myers:sumsum}
+ \begin{tabular}{lllll}
+  \lsptoprule
+NP\textsubscript{REL} & REL & SUBJ & T & OBJ\\
+  \midrule
+  SUBJ     &  & & AGR & OBJ  \\
+OBJ      &  & SUBJ & AGR &  \\ 
+ \rowcolor{lightgray}   SUBJ\textsubscript{$\emptyset$}  &  {\bfseries  REL} & & {\bfseries  AGR\textsubscript{$\emptyset$}} & OBJ  \\
+ \rowcolor{lightgray}   OBJ\textsubscript{$\emptyset$}  & {\bfseries  REL} & SUBJ & AGR &  \\
+  \lspbottomrule
+ \end{tabular}
+\end{table}
+
+\noindent In the next section, we turn to the question of why only \emph{headless} relative clauses contain relative markers, and consequently AAEs.
+
+
+\section{An account of relative markers in Kirundi} \label{sec:myers:proposal}
+
+One question that arises with headless relative clauses is whether a nominal head truly exists in the syntactic representation. In the case of Kirundi, answering this question is linked to determining what the syntactic status of the relative marker is. If it is a complementizer, located in C, then headless relatives look truly headless, composed of a D element selecting a CP with no head noun. If the relative marker is instead nominal, this points towards the presence of a nominal head, albeit one that differs in form from those found in headed relatives. In this section, I 
+draw on evidence of the complementarity between determiners and relative markers to argue that the Kirundi relative marker is indeed a nominal element, in the spirit of \citet{Jenksetal:2017} on Basaá. This claim paves the way for a head-raising analysis of Kirundi's relative clauses from which the restricted distribution of relative markers, and by consequence, AAEs, follows.
+
+
+To support this proposal, \sectref{sec:myers:complementarity} examines the distribution of D elements in Kirundi relative clauses, ultimately demonstrating that the relative marker is in competition with demonstratives and the augment. I propose that this complementarity gives credence to an approach in which the relative marker is an overt relative operator, like English \emph{which}, which competes with determiners for a place in D. Drawing on this, \sectref{sec:myers:nullheads} addresses why overt relative operators only appear in headless relative clauses. Taking up a head-raising analysis of relative clauses, along the lines of \citet{Kayne:1994} and the majority of past work on Bantu relative clauses, I argue that the realization of an overt relative operator in D is a consequence of whether said operator takes an overt or null NP as its complement. \sectref{sec:myers:headraising} presents a full sketch of the derivation of both headed and headless relative clauses based on the established claims. This sketch demonstrates one viable manner in which to generate the expected distribution of relative markers and AAEs in Kirundi. Finally, \sectref{sec:myers:implications} returns to the issue of anti-agreement, discussing the implications of the overall proposal for the status of AAEs in Kirundi in relation to prominent past analyses of the phenomenon.
+
+
+
+\subsection{Complementarity of determiners and relative marker} \label{sec:myers:complementarity}
+
+In their analysis of Basaá, \citet{Jenksetal:2017} show that the relative marker is in complementary distribution with demonstratives. They argue that this complementarity is a result of the fact that demonstratives can function as relative operators (in line with numerous accounts of grammaticalization from demonstratives to relative marker in Bantu; see, e.g., \citealt{Diessel:1999,HeineKuteva:2002}) and that both demonstratives and relative operators occupy the same syntactic position in the noun phrase. In this sense, the relative marker of Basaá functions like English \emph{which} when analyzed as an overt relative operator. 
+
+A similar observation occurs in Kirundi where the relative marker is in complementary distribution with demonstratives as well as the augment. Headless relative clauses cannot appear with demonstratives \REF{ex:myers:dem1}. If a demonstrative is used, it is illicit to have a relative marker \REF{ex:myers:dem2}; in other words, demonstratives can only appear in headed relative clause constructions.
+
+ \ea
+ \begin{xlist}
+ \ex \label{ex:myers:hrca} \gll \hspaceThis{*~}u-u-ó Muco a-kūndá\\
+ \hspaceThis{*~}\textsc{aug}-1-\textsc{rel} Muco 1.\textsc{agr}-like.\textsc{dep}\\
+\glt  \hspaceThis{*~}`the one that Muco likes' \hfill{(REL)}
+ \ex \label{ex:myers:dem1} \gll {}*uwo u-ó Muco a-kūndá\\
+ \hspaceThis{*~}\textsc{1.dem} 1-\textsc{rel} Muco 1.\textsc{agr}-like.{dep}\\
+\glt  \hspaceThis{*~}Intended: `that one that Muco likes' \hfill{(*DEM + REL)}
+\ex \label{ex:myers:dem2} \gll \hspaceThis{*~}uwo Muco a-kūndá\\
+ \hspaceThis{*~}\textsc{1.dem} Muco 1.\textsc{agr}-cook.\textsc{dep}\\
+\glt  \hspaceThis{*~}`that one that Muco likes' \hfill{(DEM)}
+\end{xlist}
+\z
+
+
+As evidenced by the examples above, the demonstrative and relative marker morphemes look quite similar. In fact, the only phonological distinction is the presence of a high tone on the relative marker. That being said, despite their similarities, the two are clearly distinct in their distribution. The relative marker can only appear in relative clauses while demonstratives can occur in any context. Based on this observation, I follow \citet{Jenksetal:2017} in positing that the relative marker in Kirundi is a relative operator in complementary distribution with demonstratives. Like a demonstrative, it appears with NPs; however, unlike standard demonstratives, it only occurs with NPs that head relative clauses, giving credence to its status as a relative morpheme.
+
+One aspect in which Kirundi differs from Basaá is that demonstratives and the augment are also in complementary distribution in Kirundi. In Basaá, demonstratives can occur pre- and post-nominally and when they occur post-nominally, an augment appears on the noun. \citet{Jenksetal:2017} argue that this is because demonstratives are generated post-nominally but can move to Spec,DP to provide focus readings. When this occurs, an augment in D is not expressed due to the Doubly-Filled \textsc{comp} Filter.
+
+In Kirundi, demonstratives can never occur post-nominally and can never appear with an augment, as seen in \REF{ex:myers:dempost}. Note that this same pattern is true for all demonstratives in the language, not just the one form represented here.
+
+\ea  \label{ex:myers:dempost}
+\begin{xlist}
+    \ex \gll \hspaceThis{*~}uwo mū-ntu\\
+    \hspaceThis{*~}\textsc{1dem} 1-person\\
+    \glt \hspaceThis{*~}`that person' \hfill{(Pre-nominal DEM)}
+    \ex \gll {}*uwo u-mū-ntu\\
+    \hspaceThis{*~}\textsc{1dem} \textsc{aug}-1-person\\
+    \glt \hspaceThis{*~}Intended: `that person' \hfill{(*DEM + AUG)}
+     \ex \gll {}*u-mū-ntu uwo\\
+   \hspaceThis{*~}\textsc{aug}-1-person   \textsc{dem}\\
+    \glt \hspaceThis{*~}Intended: `that person' \hfill{(*Post-nominal DEM)}
+\end{xlist}
+\z
+
+\noindent To support this data, I follow \citet{Ndayiragijeetal:2012},\citet{CarstensMletshe:2016}, \citet{Gambarage:2019} and many others in locating both the augment and demonstratives in the same position, D. Crucially, this places the augment, demonstratives, and the relative operator in competition. This claim has a number of benefits. First, as seen in the previous section, the presence of the augment in headless relatives suggests that the relative marker is nominal. Second, treating the morpheme as a functional head allows it to function like other functional heads in Bantu languages which trigger movement and partake in agreement.\footnote{It could also be the case that demonstratives are generated below D and then move to a Spec,DP position, as proposed by \citet{Carstens:1991} and others, or that the augment is only spelled out when D is empty and N finishes N-to-D movement. For the purposes of this paper, it's not crucial exactly where demonstratives originate as long as they are in competition with relative markers and the augment. This can be accounted for in a number of ways depending on one's approach to Bantu DP structure.} This proposed complementarity is borne out in attempts to create relative clauses which include both the augment \textendash{} on an overt NP \textendash{} and the relative marker, as demonstrated in \REF{ex:myers:augrel}. In these examples, we see that if a relativized noun already has an augment, the relative operator cannot occur.
+
+\ea \label{ex:myers:augrel}
+ \begin{xlist}
+ \ex \label{ex:myers:ungram}  \gll {}*u-mū-ntu u-ó Muco a-kūndá\\
+ \hspaceThis{*~}\textsc{aug}-1-person 1-\textsc{rel} Muco 1.\textsc{agr}-like.\textsc{dep}\\
+\glt  \hspaceThis{*~}Intended: `the person that Muco likes' \hfill{(*AUG + REL)}
+\ex  \gll \hspaceThis{*~}u-mū-ntu Muco a-kūndá\\
+\hspaceThis{*~}\textsc{aug}-1-person Muco 1.\textsc{agr}-like.\textsc{dep}\\
+\glt  \hspaceThis{*~}`the person that Muco likes' \hfill{(AUG)}
+\end{xlist}
+\z
+
+In sum, I place the augment, demonstratives, and the relative marker all in the same syntactic position, specifically D, to account for their complementarity. Additionally, I analyze the relative marker as an overt relative operator which originates with the NP head in the relative CP. These claims give us the ingredients needed to account for the distribution of Kirundi's relative markers within a head-raising analysis of relative clauses. However, before presenting a full analysis of the derivation, there is one additional question to address: why overt relative markers are \emph{only} found in headless relatives.
+
+
+\subsection{Overt relative operators in headless relative clauses} \label{sec:myers:nullheads}
+
+As it stands, the current proposal accounts for the lack of an overt relative operator when the nominal head of a relative clause includes another D head. In these cases, a relative operator is in competition with demonstratives and the augment. However, this set-up does not account for the fact that overt nominal heads \emph{cannot} appear with an overt relative operator. To resolve this issue, I make two additional claims. First, I propose that both headed and headless relative clauses in Kirundi have nominal heads but that these heads differ in whether they are phonologically realized. In the case of headless relative clauses, they are overt nouns (noun class prefix + root). In the case of headless relative clauses, I suggest that the heads are empty nouns, in line with \citet{Panagiotidis:2003}, where an empty noun is a functional nominal category which encodes syntacto-semantic features such as noun class. In this sense, an empty noun includes the Num and \emph{n} heads of a standard Bantu noun but lacks a lexical root. This categorization facilitates the open interpretation of headless relative clauses as any entity within a given noun class while allowing for the empty noun to take part in agreement. It also explains how the relative operator can appear in headless relative clauses; the operator takes an empty noun as complement and moves to Spec,CP.
+
+One implication of this claim is that an empty noun is able to appear with other determiners besides the relative operator. In the sense that an empty noun functions like an NP, any D head can take it as a complement. Based on this, we would expect to see relative heads that only consist of a demonstrative or augment. The first is indeed possible, as seen in \REF{ex:myers:dem2} where a demonstrative heads a relative clause with no operator morpheme. However, the second option, in which the augment appears with an empty noun, is not found. I propose that this construction is illicit because the augment requires an overt nominal element in order to appear, barring co-occurrence with an empty noun.
+
+The second additional claim aids in restricting the presence of overt relative operators to relative clauses with empty noun heads. Following \citet{Jenksetal:2017}, I take the relative operator to trigger movement of the head noun to its specifier.\footnote{To avoid movement that is too local, I take that some intervening projection also exists. A projection like Agr is common in the Bantu tradition so there could be such an intervening projection here. For the purposes of simplicity, I will leave this level out in the representations below.} This movement can be justified in a number of ways. In the Bantu fashion, we could say that the operator hosts an [EPP] feature linked to $\upvarphi$-agreement, resulting in both movement and the apparent agreement we see on the operator's -\emph{o} morpheme \citep{Carstens:2005}.\footnote{Alternately, we could propose that the NP moves higher than Spec,DP, for instance, to a higher CP shell \citep{Zwart:2000}, a higher \emph{n} head \citep{deVries:2002}, or to some reprojection above CP \citep{Bhatt:2002}. Regardless of the exact mechanics, what's crucial is that the relative operator triggers movement and featural agreement with the head noun.}
+
+From here, I argue that the presence or absence of the relative operator is determined by whether the head noun in its specifier is phonologically realized or not. In line with a general Doubly-Filled \textsc{comp} Filter, the operator can only be spelled out when its specifier appears empty. When an overt noun appears with the relative operator, its realization is blocked but when an empty noun appears with the operator, its realization is allowed (and required). These two structures are represented in \REF{ex:myers:empty}.
+
+
+\ea Realization of the relative operator with overt and empty nouns \label{ex:myers:empty}
+ \begin{xlist}
+ \ex  $[$\textsubscript{\textsc{dp}} mūntu\textsubscript{i} [\textsubscript{\textsc{d'}} Op [\textsubscript{\textsc{np}} t\textsubscript{i} ]]] \hfill{(Overt head noun)}
+\ex  $[$\textsubscript{\textsc{dp}} $\emptyset$\textsubscript{i} [\textsubscript{\textsc{d'}} -ó [\textsubscript{\textsc{np}} t\textsubscript{i} ]]] \hfill{(Empty head noun)}
+\end{xlist} 
+\z
+
+
+With this in place, we can now account for the distribution of relative markers in Kirundi as a result of the selection of different head nouns by different D elements. Because the relative operator is in competition with the augment and demonstratives, it cannot occur with nouns that are selected by these D elements. When it does select a noun, it is only realized if that noun is phonologically null. As a result, only empty head nouns occur with relative markers. These facts are summarized in \tabref{tab:myers:nouns} which shows the distribution of D elements with head nouns in Kirundi relative clauses.
+
+\begin{table} 
+\caption{Distribution of D elements in relative head nouns} \label{tab:myers:nouns}
+ \begin{tabular}{lcc}
+  \lsptoprule
+& Overt head noun & Empty head noun\\
+  \midrule
+  Augment &  + & \cellcolor{lightgray} - \\
+  Demonstrative & +  & + \\ 
+  Overt Operator & \cellcolor{lightgray} -  & + \\
+  Covert Operator & +  & \cellcolor{lightgray} - \\
+  \lspbottomrule
+ \end{tabular}
+\end{table}
+
+
+
+\subsection{A head-raising analysis of Kirundi relative clauses} \label{sec:myers:headraising}
+Having motivated the distribution of relative markers in Kirundi relative clauses, I turn now to a full derivation of their structures, following a head-raising analysis.\footnote{Unlike other approaches, such as the operator-movement and matching analyses, head-raising lends itself uniquely to our claims about the complementarity of demonstratives and relative operators because head nouns must originate within the relative CP.} First, I present the derivation of a relative clause that lacks an overt relative operator \textendash{} in other words, headed relative clauses. This includes all relative clauses in which the head noun occurs with a demonstrative or augment. The structure shown in \figref{fig:myers:headed} includes a relative head that was selected by a demonstrative.
+
+\begin{figure}
+\caption{Headed relative clause}
+  \label{fig:myers:headed}
+\Forest{
+for tree={s sep=7mm, inner sep=0, l-=2mm}
+[DP\subs{1}
+    [DP\subs{2}, name=DP3
+        [D\textsubscript{2} \\ [uwo, roof]]
+            [NP \\ [mūntu, roof]]
+            ]
+    [
+        [D\subs{1} \\ $\emptyset$]
+            [CP 
+            [\sout{DP\subs{2}}, name=DP2]
+                [
+                [C [$\emptyset$]]
+          [TP 
+            [\sout{DP\subs{2}}, name=DP1]
+               [
+                 [T \\ a-]
+                [VP [têka umuceri, roof] ] ]]
+          ] 
+          ]
+          ]
+          ]
+\draw[->] (DP1) to[out=south west,in=south] (DP2); %Draws arrow
+\draw[->] (DP2) to[out=south west,in=east] (DP3); %Draws arrow
+}
+\end{figure}
+
+Under a head-raising analysis, a D head (D\textsubscript{1}) takes the relative CP as its complement. The DP which includes the relativized nominal moves to the specifier of CP as a result of Ā-movement. C is not spelled out due to the Doubly-Filled \textsc{comp} Filter. At this point, the nominal head (NP) must move again because D\textsubscript{1} requires a noun in its minimal domain \citep{Bianchi:2000} and, at the moment, the presence of the demonstrative in D\textsubscript{2} is preventing this.\footnote{``The minimal domain of a head X includes all categories that are immediately dominated by, and do not immediately dominate, a projection of X'' \citep[128]{Bianchi:2000}.} Consequently, the whole DP moves to the specifier of the higher D (Spec,DP\textsubscript{1}). This satisfies the minimal domain requirement and also prevents the spell-out of an augment in the D below it, again as a result of the Doubly-Filled \textsc{comp} Filter. The resulting structure generates the desired form for relative clauses which lack relative markers.
+
+
+In the case of headless relative clauses, or those which possess an overt relative operator, the derivation is slightly different as a result of differences in the makeup of the relativized nominal. The overall structure of a headless relative clause is shown in \figref{fig:myers:headless}. In this representation, an empty noun is selected by a relative operator. If this noun were overt, the same structure as shown here would occur but the operator would not be realized, as proposed in \sectref{sec:myers:nullheads}.
+
+
+\begin{figure}
+\caption{Headless relative clause}
+  \label{fig:myers:headless}
+\Forest{
+for tree={s sep=7mm, inner sep=0, l-=2mm}
+[DP\subs{1}
+    [D\subs{1} \\ u- ] 
+    [CP
+        [DP\subs{2}, name=DP2 
+            [NP [$\emptyset$, roof, name=NP2] ]
+            [DP\subs{2}
+                [Op [u-ó, roof]]
+                    [\sout{NP}, name=NP1]
+                ]
+                ]
+        [
+          [ C  [$\emptyset$] ] 
+          [TP 
+            [\sout{DP\subs{2}}, name=DP1]
+               [
+                 [T \\ u-]
+                [VP [têka umuceri, roof] ] ]]
+          ]
+        ] 
+    ]
+\draw[->] (NP1) to[out=south,in=south, looseness=1.5] (NP2); %Draws arrow
+\draw[->] (DP1) to[out=south west,in=east, looseness=1.4] (DP2); %Draws arrow
+}
+\end{figure}
+
+\noindent Unlike in the previous derivation, the occurrence of a relative operator in this structure drives movement of the head NP to a higher position, in this case, Spec,DP\textsubscript{2}. As a result, once the relativized nominal reaches Spec,CP, the minimal domain requirement of D\textsubscript{1} is met without further movement. The augment in D\textsubscript{1} is realized and the structure is complete, resulting in the headless relative clause form expected. While explaining the complementarity of demonstratives and relative markers in Kirundi, the above analysis also accurately accounts for the asymmetrical distribution of relative markers, and by extension, anti-agreement effects.
+
+
+\subsection{Kirundi AAEs and implications} \label{sec:myers:implications}
+
+With the structure of Kirundi relative clauses in place, we can return to the issue of anti-agreement effects. As the puzzle at the start of this paper noted, it is surprising that Kirundi appears to exhibit AAEs as this has been argued against in the literature and as these AAEs seem far more restricted than those in other Bantu AAE languages. However, the presence of such morphological facts falls out naturally from the structure adopted here. In addition, this proposal has the potential to fit within past analyses of the phenomenon.
+
+
+
+As shown in \sectref{sec:myers:unified}, the key to this analysis is Kinyalolo's Constraint. In examining other Bantu languages, Kinyalolo's Constraint was applied to duplicative agreement on adjacent heads in C and T. In addition to this, I propose that the D head instantiated by the relative operator in Kirundi headless relative clauses is also a viable agreement head for the purposes of Kinyalolo's Constraint. As a result, when this head appears with no overt intervening elements between it and T, as in the structure presented for Kirundi headless relative clauses above, and these two heads agree with the same element, Kinyalolo's Constraint results in the obliteration of the lower morpheme. This accounts for the surface form of subject headless relative clauses which only possess a relative morpheme and no subject-agreement morpheme. It is this surface form that is interpreted as anti-agreement effects. This also accounts for the absence of AAE morphology in subject headed relative clauses where the relative operator is either blocked by the presence of another D element or is not realized due to the presence of an overt NP in its specifier.
+
+Notably, the result of Kinyalolo's Constraint in this case actually covers up any evidence of true AAEs, as they are defined as the suppression of argument-verb agreement. Because there are no elements that intervene between the two agreement heads in Kirundi, Kinyalolo's Constraint always gets rid of the subject-verb agreement morpheme of T. The only agreement head that is actually realized in these headless relatives is the relative operator which always expresses Class 1 agreement with the morpheme \emph{u}-, in line with other D elements and adnominal modifiers in the language. This is different from languages like Lubukusu where the obliteration of T in subject relatives obfuscates AAEs when nothing intervenes between C and T but the presence of intervention reveals that agreement in T \emph{also} takes the alternative form that agreement in C does. As a result, evidence is ultimately inconclusive on whether true AAEs do exist for Kirundi.\footnote{A reviewer asks why AAEs do not appear on all verbs in compound tense constructions, as seen in \REF{ex:myers:ct} if Kirundi does possess true AAEs. In fact, the absence of alternative morphology on lower verbs in subject relative compound tense constructions is also found in other Bantu AAE languages. I take this cross-linguistic pattern to be evidence for a raising approach to compound tense, as proposed by \citet{Carstens:2008}, wherein the subject raises through the specifier of each verb. In the case of AAE contexts, anti-agreement only occurs after the verb has reached T and lower agreement has already occurred. The absence of AAEs on lower verbs is strong evidence against the competing concord approach, proposed by \citet{BHenderson:2011} wherein agreement in T triggers concord across all lower verbs. This would predict the spread of AAEs across the entire construction.}
+
+That being said, the analysis proposed above opens the door for the derivation of AAEs in Kirundi and can in fact fit into the major past analyses proposed to account for AAEs in Bantu and beyond. To illustrate this, let's take a quick look at how the structure from this proposal can facilitate the AAE analysis of \citet{BHenderson:2013} and \citet{Baier:2018}, two of the most prominent works on AAEs. \citet{BHenderson:2013} argues that Bantu AAEs are the result of agreement between the $\phi$-features in C and T where C's [person]-impoverished features overwrite those in T. C-T agreement must occur when a local subject moves from one position that requires spell-out to another. In the Kirundi picture, this approach can be accommodated if we extend the movement chain in question to include the D head of the relative operator as well. In this way, the necessary spell-out of features in the relative operator leads to the same features, lacking [person], being passed down to C and T. In the case of Kirundi, however, neither C nor T are actually realized in these constructions. In general, then, this analysis, and the importance placed on the spell-out of features above T, meshes well with the current proposal.
+
+However, there is one element of \citeauthor{BHenderson:2013}'s account that requires revision due to the Kirundi data. The account suggests that Kirundi lacks features in C entirely because it does not possess overt relative markers or AAEs. The data above provide a strong case that this is not true, especially in the context of agreement between adjacent heads. If we accept the potential for D-C-T agreement in Kirundi, C would need to have features in order to participate. If we reject the theory proposed in this paper and take that Kirundi's headless AAEs are a result of C-T agreement, C would still need to have features. Additionally, such a claim runs into issues with feature inheritance theory \citep{Chomsky:2008} whereby C must always have features since it passes its features down to T. As a result, it seems necessary to posit the presence of features in C in Kirundi regardless of the theory adopted.
+
+In addition to accommodating the most prominent Bantu AAE theory, the present proposal also fits well within the Ā-driven feature impoverishment approach of \citet{Baier:2018} which aims to account for AAEs across all languages. \citeauthor{Baier:2018} argues that probes copy back both $\upvarphi$- and Ā-features. When feature bundles contain both such features, Ā-features can trigger feature impoverishment with [person] features being the first to be deleted. In the case of Kirundi, this analysis can be applied if we assume that the DP-internal movement triggered by the relative operator is associated with a unique type of Ā-feature which drives feature impoverishment. If so, the copy-back of this feature to T would result in AAEs. Crucially, the feature involved in Ā-movement to Spec,DP must be different than that involved in Ā-movement to Spec,CP. In Kirundi, the DP Ā-feature triggers anti-agreement but the CP one does not; then, in other Bantu languages, the inverse is true.
+
+In sum, then, while it is hard to determine definitively if Kirundi has true AAEs or just the effects of Kinyalolo's Constraint with a nominal functional head, there is room to account for AAEs under past analyses.
+
+\section{Conclusion} \label{sec:myers:conclusion}
+
+This paper presented an overview of relative clauses in Kirundi with a focus on the unique properties of headless relative clauses. Unlike headed relative clauses which lack relative markers and exhibit standard subject agreement, Kirundi's headless relative clauses have both relative markers and apparent anti-agreement effects. I demonstrated that the presence of relative markers in subject headless relatives in Kirundi is obfuscated by the occurrence of Kinyalolo's Constraint, a common morpho-phonological process in related constructions across Bantu languages. To account for the distribution of relative markers in Kirundi, I proposed an analysis based on the complementarity of relative markers and determiners, arguing that Kirundi's relative markers are in fact relative operators in D which are realized only when they agree with empty head nouns. Because only headless relative clauses contain empty head nouns, it is only such relatives that exhibit agreeing relative markers. Having established this syntactic structure, I connected the presence of agreeing relative operators to apparent AAEs, concluding that what appears to be Bantu AAEs in Kirundi could also just be the application of Kinyalolo's Constraint. 
+
+The focus of this paper contributes to the typology of relativization in Bantu as well as our understanding of the anti-agreement cross-linguistically. The presence of AAEs in such a subset of subject extraction contexts has not been documented for any other Bantu language. This empirical picture brings past analyses of anti-agreement effects into question and suggests that the phenomenon may occur in a  wider range of contexts than originally expected.
+
+Finally, this paper brings up several fruitful avenues for future research. First, though I have briefly addressed the connection between the proposed structure and anti-agreement, a deeper analysis would be beneficial. Second, due to the parametrical context of Bantu syntax, it would be interesting to see if other languages which exhibit complementarity in relative markers and determiners may shed more light on the anti-agreement puzzle. Finally, there are elements of Kirundi headless relative clauses which are still not fully understood, such as the alternation between headed and headless relative tone.
+
+
+
+
+\section*{Abbreviations}
+
+Abbreviations used in glosses are as follows:
+
+\begin{tabularx}{.45\textwidth}{lQ}
+\textsc{aae} & anti-agreement morpheme\\
+ \textsc{agr} & agreement morpheme\\
+ \textsc{aug} & augment\\
+ \end{tabularx}
+\begin{tabularx}{.45\textwidth}{lQ}
+ \textsc{dep} & dependent clause\\
+ \textsc{dj} & disjoint\\
+ \textsc{hrc} & headless relative clause. Noun class is marked by number.
+\end{tabularx}
+
+\section*{Acknowledgements}
+
+Murakóze cāne to Christa Bella Mugisha, Alexis Manirakiza, Benilde Mizero, and Jules Nzorijana. Thanks to Jessica Coon, Junko Shimoyama, Terrance Gatchalian, Katya Morgunova, the Montreal Underdocumented Languages Linguistics Lab, ACAL 54, Michael Diercks, and Claire Halpert for comments and discussion. Any errors are my own.
+
+\sloppy %this command eliminates a quirk that appears in the bibliography, you can just leave it here.
+
+\printbibliography[heading=subbibliography,notkeyword=this]
+
+\end{document}

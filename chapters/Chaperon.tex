@@ -1,0 +1,804 @@
+\documentclass[output=paper,colorlinks,citecolor=brown,
+% hidelinks,
+% showindex
+]{langscibook}
+\ChapterDOI{10.5281/zenodo.20285186}
+
+%This is where you put the authors and their affiliations
+\author{Brandon Chaperon\affiliation{McGill University}}
+
+%Insert your title here
+\title{A negative alternation: Negation head movement allomorphy in Igala}  
+\abstract{In Igala (Volta–Niger), pre-verbal negation changes forms depending on the syntactic environment. I argue that these distinct exponents occupy different syntactic positions, as in other Niger-Congo languages [\textit{e.g.}, Kirundi \citep[Bantu JD.62;][]{ndayiragije} and Igbo \citep[Volta–Niger;][]{amaechiinteraction}], and propose that this is the result of Neg-to-C movement being blocked in certain syntactic environments. I show that this explains the distribution of negation in different constructions in Igala as well as embedded clauses in Kirundi (Great Lakes Bantu).
+}
+
+\IfFileExists{../localcommands.tex}{
+   \addbibresource{../localbibliography.bib}
+   \input{../localpackages}
+   \input{../localcommands}
+   \input{../localhyphenation}
+   \boolfalse{bookcompile}
+   \togglepaper[23]%%chapternumber
+}{}
+
+\begin{document}
+\maketitle
+
+\section{Introduction}
+
+In Igala (Volta–Niger), negation is bi-partite where it is expressed as two morphemes: a pre-verbal morpheme and a sentence-final particle, the first of which changes forms depending on the syntactic environment. %In this paper, I investigate the two different exponents of pre-verbal negation. %I argue this to be a result of left peripheral interaction. More specifically, restrictions on movement of negation to the left periphery. 
+Pre-verbal negation surfaces as extra-high tone on the subject in finite clauses similar to some dialects of Igbo \citep{emenanjo1985auxiliaries,ndimele1995phonosyntactic, obiamalu2013role} and the Benue–Congo languages Efik \citep{mensah2001negation} and Ibibio \citep{essien1990grammar}, where negation can be marked by tone only, as in \REF{ex:chaperon:neutralneg}.
+
+\ea \label{ex:chaperon:neutralneg}
+\begin{xlist} 
+    \ex %\underline{\textit{Neutral finite clause}}
+    \gll \circled{\`{ẹ}} j(\={ẹ}) \`{ọ}d\`{a}  \`{ọ}n\'{a}l\'{ẹ}.\\
+        \textsc{2sg}     eat    pear     yesterday\\
+        \glt `You ate a pear yesterday.'
+    \ex %\underline{\textit{Negated finite clause}}
+    \gll \circled{\H{ẹ}} j(\={ẹ}) \`{ọ}d\`{a}  \`{ọ}n\'{a}l\'{ẹ} \'{n}.\\
+        \textsc{2sg}.\textsc{neg}     eat    pear     yesterday     \textsc{sfp}\subs{\textsc{neg}}\\
+        \glt `You did \textbf{not} eat a pear yesterday.'
+\end{xlist}
+\z
+
+On the other hand, in clauses involving A'-movement (and inside nominalizations), it surfaces as the pre-verbal particle \textit{m\H{a}}, shown in \REF{ex:chaperon:extrneg}\footnote{Foci are formatted using \textit{small caps}}.
+
+\ea \label{ex:chaperon:extrneg}
+\begin{xlist}
+\ex\gll\'{ẹ}n(\^{ẹ})\subs{i} \`{ẹ} \circled{m\H{a}} l\'{i} \tr{i} \'{n}?\\
+        who     \textsc{2sg}     \textsc{neg}     see  {}   \textsc{sfp}\subs{\textsc{neg}}\\
+    \glt `\textsc{who} did you \textbf{not} see?'
+    
+    \ex %\underline{\textit{Negation with object extraction}}
+    \gll {*} \'{ẹ}n(\^{ẹ})\subs{i} \circled{\H{ẹ}} l\'{i} \tr{i} \'{n}?\\
+        { } who     \textsc{2sg.neg}      see  {}   \textsc{sfp}\subs{\textsc{neg}}\\
+
+\end{xlist}
+\z 
+
+Likewise, similar alternations are found in other Niger-Congo languages; for instance this is shown by \citet{chaperon2022} in Kirundi (Bantu JD.62) and \citet{amaechiinteraction} in Igbo (Volta–Niger). In Kirundi, negation usually surfaces prior to subject marking on the verb as the prefix \textit{nti-}. In clauses where A'-movement occurs (or within subordinate clauses), negation surfaces as \textit{ta-} following subject marking, as seen in \REF{ex:chaperon:kirneg}.
+
+\ea  \label{ex:chaperon:kirneg}
+\begin{xlist}
+\ex\gll Yohani \circled{nti}-a-a-funguye.\\
+        John {\textsc{neg}\subs{1}}-1\textsc{sm}-\textsc{rec.pst}-eat.{\textsc{pfv}}\\
+        \glt `Yohani did \textbf{not} eat.’
+        
+    \ex\gll Ni-nd\'{e}\subs{i}          Yohani         a-\circled{t(a)}-a-bonye \_\_\subs{i}?\\
+    \textsc{cop}-who    John        1\textsc{sm}-\textsc{neg}\subs{2}-\textsc{rec.pst}-see.{\textsc{pfv}} {}\\
+    \glt `\textsc{who} did John \textbf{not} see?' \hfill \citep[Kirundi;][]{chaperon2022}
+\end{xlist}
+\z
+
+Similarly, in Igbo negation typically surfaces as the suffix \textit{-ghẹ{\'{i}}} on the verb. However, when A'-movement is involved, a pre-verbal particle \textit{n\'{a}} must surface along with this suffix, as in \REF{ex:amaechi:igboneg}.
+
+\ea \label{ex:amaechi:igboneg}
+\begin{xlist}
+\ex\gll  Úchè \'{a}-$^!$hẹ{ú}-\circled{ghẹ{\'{i}}} Òb\'{i}.\\
+            Uche \textsc{pfx}-see-\textbf{\textsc{neg}} Obi\\
+           \glt  `Uche did \textbf{not} see Obi.'
+           
+     \ex\gll Ònyé\subs{i} k\`{a} Úchè \circled{n\'{a}} \'{a}-$^!$hẹ{ú}-\circled{ghẹ{\'{i}}} \_\_\subs{i}?\\
+        who \textsc{sfp}\subs{\textsc{foc}} Uche \textsc{prt} \textsc{pfx}-see-\textsc{neg}\\
+        \glt `\textsc{who} did Uche \textbf{not} see?' \hfill \citep[Igbo;][]{amaechiinteraction}
+\end{xlist}
+\z
+
+Thus, this alternation between different forms of negation is not an independent phenomenon only found in Igala. Moreover, in both languages just presented, negation occurs in relatively distinct surface positions depending on the syntactic context. I use this as part of the evidence suggesting that the negation head moves to a different position in Igala. I argue that negation moves to C\xhead{} where it surfaces as extra-high tone. In cases where it cannot, it surfaces as the particle \textit{m\H{a}} instead. Subsequently, I use a contextual allomorphic approach to account for the different surface forms of the pre-verbal negation morphemes. More specifically, I argue that when negation moves to C, it is realized as an extra-high tone (usually on the subject), otherwise it surfaces as the particle \textit{m\H{a}}.  
+
+%In \ref{background}, I give a general background of Igala along with how negation and A'-movement behave in the language. Next, 
+In \sectref{negation}, I present a full and detailed distribution of negation in different syntactic environments. In \sectref{analysis}, I propose that this distribution can be accounted for with head movement of negation to C\xhead{}. Furthermore, I argue that the different exponents of negation are due to contextual allomorphy. In \sectref{ext}, I present additional evidence for this analysis first with conditionals and modals and then within embedded clauses, which I show can be extended to Kirundi (Great Lakes Bantu). Finally, in \sectref{conclusion} I conclude with a summary along with some avenues for future research.
+
+%\ea 
+%\gll  Lekk-{\bf u(l)}-$\emptyset$=\~nu c\'eeb.\\
+%eat-\textbf{{\sc neg}}-C={\sc 3sg} rice\\
+%\glt  ‘They didn't eat rice.’
+%\z
+%
+%\ea 
+%\gll Jegele-{\bf wu(l)}-$\emptyset$=ma sama j\`ang.\\
+%approach-\textbf{{\sc neg}}-C={\sc 1sg} {\sc 1sg.poss} learn\\
+%\glt  ‘I haven't finished my studies.’
+%\z
+%
+%\ea 
+%\gll Sama j\`ang la=a jegele-{\bf wul}.\\
+%{\sc 1sg.poss} learn C={\sc 1sg} approach-{\sc neg}\\
+%\glt  ‘It's my studies I haven't finished.’
+%\z
+
+\section{Distribution of negation}\label{negation}
+
+In this section, I show the distribution of pre-verbal negation. The extra-high tone which occurs on the subject will be referred to as \textit{tonal negation}. When negation surfaces as the particle \textit{m\H{a}}, it will be referred to as \textit{particle negation}.
+
+\subsection{Tonal negation}
+
+\textit{Tonal negation} occurs in declaratives, polar interrogatives, and imperatives, which \citet{potsdam2013cp} argues are the exact clauses where negation occurs in C in English. This form expones an extra-high tone on the last vowel of the subject, which always precedes the verb, as shown in the finite declarative clause in \REF{ex:chaperon:bark}.
+
+\ea \label{ex:chaperon:bark}
+    \begin{xlist} 
+    \ex\gll  \circled{\`{A}ch\={e}ny\textbf{\`{ọ}}} l(\'{i}) \'{a}júw\={ẹ} l\'{ẹ}.\\
+    Achenyo see chicken the\\
+    \glt `Achenyo saw the chicken.'
+    
+    \ex\gll \circled{\`{A}ch\={e}ny\textbf{\H{ọ}}} l(\'{i}) \'{a}júw\={ẹ} l\'{ẹ} \'{n}.\\
+    Achenyo.\textsc{neg} see chicken the \textsc{sfp}\subs{\textsc{neg}}\\
+    \glt `Achenyo did \textbf{not} see the chicken.'
+\end{xlist}
+\z
+
+Additionally, \textit{tonal negation} can appear in embedded finite clauses. In this case, the negative tone docks onto the embedded subject.
+
+
+\ea \label{ex:chaperon:emb}
+    \begin{xlist} \ex\gll  \`{i} k\`{a} [k\`{a}k\'{i}n\'{i} \circled{\`{i}} m\`{a}].\\
+        \textsc{3sg}            say \textsc{compl}        \textsc{3sg}        know\\
+       \glt  `S/he said that s/he knows.'
+    \ex\gll \`{i}  k\`{a} [k\`{a}k\'{i}n\'{i} \circled{\H{i}}  m\`{a} \'{n}].\\
+        \textsc{3sg}      say   \textsc{compl}       \textsc{3sg}.\textsc{neg}     know            \textsc{sfp}\subs{\textsc{neg}}\\
+       \glt  `S/he said that s/he does \textbf{not} know.'
+\end{xlist}
+\z
+
+Subject markers in Igala, as in \REF{ex:chaperon:emb}, are pronouns and not agreement markers; they are in complementary distribution with R-expressions (see \citeauthor{Ejeba} \citeyear{Ejeba} for a full paradigm). Igala polar questions contain length clause-finally, which I mark as a question particle\footnote{As in (\ref{nq}), question length always occurs clause-finally, even in the presence of other sentence-final particles.}. When negated, \textit{tonal negation} is used; the interrogative length is added to the sentence-final particle \textit{n}.
+
+
+\ea 
+    \begin{xlist} \ex\gll  \`{ẹ} j(\={ẹ}) \`{ọ}d(\`{a}) \`{ọ}n\'{a}l\'{ẹ}\circled{ː{}}.\\
+        \textsc{2sg}     eat     pear     yesterday.\textsc{q}\\
+       \glt  `Did you eat a pear yesterday?'
+    \ex\gll\label{nq}\H{ẹ} j(\={ẹ}) \`{ọ}d(\`{a}) \`{ọ}n\'{a}l\'{ẹ} \circled{\v{n}ː{}}.\\
+        \textsc{2sg}.\textsc{neg}     eat     pear     yesterday     \textsc{sfp}\subs{\textsc{neg}}.\textsc{q}\\
+       \glt  `Did\textbf{n’t} you eat a pear yesterday?'
+\end{xlist}
+\z
+
+Additionally, \textit{tonal negation} is used in imperatives. In Igala imperatives, the subject is usually not overt; otherwise it surfaces with the optative mid tone (see \S\ref{mods} for a broader discussion). However, the subject is required to surface in negative imperatives. I assume that it is because \textit{tonal negation} needs to anchor somewhere, so the subject is realized overtly.
+
+\begin{multicols}{2}
+\ea 
+    \begin{xlist} \ex\gll  \circled{(\={ẹ})} j\={ẹ}!\\
+        \textsc{2sg.opt}  eat\\
+       \glt  `(You may) eat!'
+    \ex\gll\label{imp}\circled{*(\H{ẹ})} j\={ẹ} \'{n}!\\
+        \textsc{2sg}.\textsc{neg} eat \textsc{sfp}\subs{\textsc{neg}} \\
+       \glt  `Do\textbf{n’t} eat!'
+\end{xlist}
+\z
+
+\end{multicols}
+
+I have shown that tonal negation surfaces in declaratives, polar interrogatives, and imperatives. These clauses will be important in arguing for a shared position in the left periphery for negation and C. 
+
+\subsection{Particle negation}\label{partn}
+
+Next, the particle form of pre-verbal negation is used in clauses involving extraction and inside nominalizations. In these cases, it surfaces as the particle \textit{m\H{a}} before the verb. 
+
+\subsubsection{A'-movement}
+
+Particle negation is used when A'-extraction occurs: in \textit{wh}-questions, with focus fronting, and inside relative clauses; these environments all pass the standard A'-movement tests \citep{martinovicresumption}. This is shown with subject focus in \REF{ex:chaperon:subjqst}, non-subject focus in \REF{ex:chaperon:objqst}, and adjunct focus in \REF{ex:chaperon:adjunct}.%\footnote{I do not consider the extra-high tone on the negative particle `ma' as arising from tone-spreading because it also surfaces when other non-extra-high toned material is found between it and foci, as in \REF{ex:chaperon:adjunct}.%Nonetheless, further study is needed to tease out the exact pattern of tone-spreading from the left periphery.}.
+
+
+
+\ea %\textit{Subject extraction}
+\label{ex:chaperon:subjqst}
+    \begin{xlist} \ex\gll  \'{ẹ}n\^{ẹ}\subs{i} \_\_\subs{i} l\'{ọ} t(\'{ẹ}) \'{o}j\'{u}kp\'{ọ}l\'{ọ}gw\={u} \'{i}?\\
+        who  {}       go    to     park             \textsc{sfp}\subs{\textsc{foc}}\\
+       \glt  `\textsc{who} went to the park?'
+    \ex\gll \'{ẹ}n\^{ẹ}\subs{i} \_\_\subs{i} \circled{m\H{a}} l\'{ọ} t(\'{ẹ}) \'{o}j\'{u}kp\'{ọ}l\'{ọ}gw\={u} n\'{i} \`{i}? \\
+        who   {}  \textsc{neg}     go     to     park             \textsc{sfp}\subs{\textsc{neg}} \textsc{sfp}\subs{\textsc{foc}} \\
+       \glt  `\textsc{who} did \textbf{not} go to the park?'\footnote{The sentence-final particle `i' is marked as \textit{focus} as it appears when extracting to the left periphery; it is often optional, although its distribution is not yet well understood. Similarly, the sentence-final particle for negation can surface as /ni/ for emphasis.}
+\end{xlist}
+\z
+%\begin{multicols}{2}
+\ea %\textit{Non-subject extraction}
+\label{ex:chaperon:objqst}
+    \begin{xlist} \ex\gll  \`{ọ}nw\={u}\subs{i}         \`{ẹ}     f\`{ẹ}d\`{ọ}  \_\_\subs{i}   \'{i}.\\
+    \textsc{3sg}.\textsc{str}     \textsc{2sg}     love  {}   \textsc{sfp}\subs{\textsc{foc}}\\
+    \glt `It's \textsc{him} you love.'
+    
+    \ex\gll \`{ọ}nw\={u}\subs{i}         \`{ẹ}     \circled{m\H{a}}     f\`{ẹ}d\`{ọ} \_\_\subs{i} n\'{i} \`{i}.\\
+    \textsc{3sg}.\textsc{str}     \textsc{2sg}     \textsc{neg}     love {} \textsc{sfp}\subs{\textsc{neg}} \textsc{sfp}\subs{\textsc{foc}}    \\
+    \glt `It's \textsc{him} you do \textbf{not} love.'
+\end{xlist}
+\z
+%\end{multicols}
+
+
+\ea %\textit{Adjunct extraction} 
+\label{ex:chaperon:adjunct}
+\gll \`{o}n\'{a}l\'{ẹ}\subs{i}   \`{i}    \circled{m\H{a}}      t(\'{ẹ})         \'{e}nè  \_\_\subs{i}      ń.\\
+yesterday    \textsc{3sg}     \textsc{neg}      ask       question  {}   \textsc{sfp}\subs{\textsc{neg}}\\
+\glt `It's \textsc{yesterday} s/he did \textbf{not}  ask a question.'
+\z
+
+When long distance extraction occurs, \textit{m\H{a}} only appears in the clauses which have been negated. In \REF{embneg}, only the embedded clause is negated, in \REF{matneg} only the matrix clause is, and in \REF{bothneg} both clauses are negated.
+
+
+\ea 
+\begin{xlist} \ex\label{embneg}\gll  \`{ọ}nw\={u}\subs{i} \'{i}p\'{i}t\`{a} m\`{a} [k\`{a}k\'{i}n\'{i} \'{i}j\'{e}n\`{i} \circled{m\H{a}} l\'{i} \_\_\subs{i} \'{n}] \`{i}.\\
+         \textsc{3sg}.\textsc{str} Peter know \textsc{compl} Jane \textsc{neg} see {} \textsc{sfp}\subs{\textsc{neg}} \textsc{sfp}\subs{\textsc{foc}}\\
+    \glt  `It's \textsc{him}\subs{i} that Peter knows that Jane did \textbf{not} see.'
+ 
+    \ex\label{matneg}\gll \`{ọ}nw\={u}\subs{i} \'{i}p\'{i}t\`{a} \circled{m\H{a}} m\`{a} [k\`{a}k\'{i}n\'{i} \'{i}j\'{e}n\`{i} l\'{i} \_\_\subs{i}] \'{i} \'{n}.\\
+        \textsc{3sg}.\textsc{str} Peter \textsc{neg} know \textsc{compl} Jane see {} \textsc{sfp}\subs{\textsc{foc}} \textsc{sfp}\subs{\textsc{neg}}\\
+    \glt `It's \textsc{him}\subs{i} that Peter does \textbf{not} know that Jane saw.'
+
+    \ex\label{bothneg}\gll \`{ọ}nw\={u}\subs{i} \'{i}p\'{i}t\`{a} \circled{m\H{a}} m\`{a} [k\`{a}k\'{i}n\'{i} \'{i}j\'{e}n\`{i} \circled{m\H{a}} l\'{i} \_\_\subs{i}] \'{i} \'{n}.\\
+        \textsc{3sg}.\textsc{str} Peter \textsc{neg} know \textsc{compl} Peter \textsc{neg} see {} \textsc{sfp}\subs{\textsc{foc}} \textsc{sfp}\subs{\textsc{neg}} \\
+    \glt `It's \textsc{him}\subs{i} that Peter does \textbf{not} know that Jane did \textbf{not} see.'
+\end{xlist}
+\z
+
+In long distance extraction, not only does negation occur in the clause containing the extracted element's initial trace, but also in all clauses along the path of A'-movement. Thus, negation in Igala exhibits cyclic effects \citep{chomsky1977wh, chomsky1986barriers, chomsky1993minimalist}. 
+
+\subsubsection{Nominalizations}\label{nomz}
+
+Finally, \textit{particle negation} is used inside nominalizations, as in \REF{nomzneg}. Both the pre-verbal and sentence-final particle surface inside.
+
+\ea\label{nomzneg}\begin{xlist}
+    \ex\gll [\'{e} ch(e) \`{i}sk\'{u}l\`{u} kp\={a}] ch(e) \`{ẹ}nw(u) \`{o}m\`{ẹ}m\`{ẹ}l\`{ẹ}.\\
+        \textsc{nmlz} do school finish \textsc{cop} thing nice\\
+       \glt  `Finishing school is a good thing.'
+       
+    \ex\gll [\'{e} \circled{m\H{a}} ch(e) \`{i}sk\'{u}l\`{u} kp\={a} \circled{\'{n}}] ch(e) \`{ẹ}nw(u) \`{o}m\`{ẹ}m\`{ẹ}l\`{ẹ}.\\
+        \textsc{nmlz} \textsc{neg} do school finish \textsc{sfp}\subs{\textsc{neg}} \textsc{cop} thing nice\\
+       \glt  `\textbf{Not} finishing school is a good thing.'
+\end{xlist}
+\z
+
+I propose that nominalizations do not contain the C domain; I show that they can only take clauses up to \textit{v}P or AspP (or NegP when negated). Two observations illustrate this point; first, they can contain inflectional elements like aspect, as in \REF{nomzinfl}\footnote{Note that these are subject nominalizations (\textit{i.e.,} located in the subject position).}.
+
+\ea \label{nomzinfl}
+    \begin{xlist} \ex\gll  [\'{e} \circled{f(u)} \`{i}sk\'{u}l\`{u} ch\={e} kp\={a}] ch(e) \={ẹ}nw\={u} \`{o}gb\={ọ}g\'{a}g\'{a}.\\
+        \textsc{nmlz}     \textsc{pfv}     school     \textsc{cop}     finish     \textsc{cop}     thing     important\\
+       \glt  `[Having finished school] is an important thing.'
+    \ex\gll [\'{e} \circled{n\^{a}}  ch(e) \`{i}sk\'{u}l\`{u} kp\={a}]  ch(e) \={ẹ}nw\={u} \`{o}gb\={ọ}g\'{a}g\'{a}.\\
+        \textsc{nmlz}     \textsc{prog}        \textsc{cop}  school   finish     \textsc{cop}     thing     important\\
+         \glt    `[Finishing school] is an important thing.'
+\end{xlist}
+\z
+
+Additionally, nominalizations cannot contain an overt subject, unless it is external. In the examples below, the two strategies used to circumvent this are shown; speakers can either use an external subject, as in \REF{extsubj}, or a possessor outside of the nominalized clause, as in \REF{poss}.
+
+\ea
+	\begin{xlist} \ex\label{extsubj}\gll  [\circled{\`{o}nw(u)} [\'{e} l(a) \'{i}m\={o}t\`{o}]] ch(e) \`{ọ}m\`{ẹ}l\`{ẹ}l\={ẹ}.\\
+		3\textsc{sg}.\textsc{str} \textsc{nmlz} buy car  \textsc{cop} good\\
+		\glt `[\textbf{For him} to buy a car] was good.'
+	\ex\label{poss}\gll [\'{i}m\`{o}t\`{o} [\'{e} l\'{a}] \circled{nw\={u}}] ch(e)  \`{ọ}m\`{ẹ}l\`{ẹ}l\={ẹ}.\\
+		car \textsc{nmlz} buy 3\textsc{sg}.\textsc{po}\textsc{ss} \textsc{cop}  good\\
+		\glt `[\textbf{His} buying of a car] was good.'
+\end{xlist}
+\z
+
+By hypothesis, nominalizations still contain a \textit{\textsc{pro}} subject in Spec,\textit{v}P \citep[][among others]{abney1987english, kratzer1996severing}. %I also assume that nominalizations do not contain the C domain. %Crucially,  \textit{particle negation} (\textit{m\H{a}}) along with the sentence-final particle (\textit{n}) are used to negate a nominalized clause.
+Overall, \textit{m\H{a}} surfaces both in negative clauses where extraction has occurred and inside nominalizations. 
+
+We examine this distribution more closely in the next section, where I propose an analysis to account for it. I argue that negation moves to C, but in clauses involving A'-movement its movement is blocked and within nominalization there is no C position for it to move to.
+
+\section{Neg-to-C movement}\label{analysis}
+
+
+%\begin{figure}
+%\caption{some title}
+%  \label{fig:chaperon:nomztree}
+%\Forest{
+%[HP [H
+%        [\text{[\sout{F1*}]}]
+%        [H,tikz={\node [draw,black,inner sep=5,fit to=tree]{};}
+%            [\text{[F2*]}]
+%            [H]
+%        ]
+%    ]
+%    [\dots]
+%]
+%}
+%\end{figure}
+%
+%\begin{figure}
+%\caption{some title}
+%  \label{fig:chaperon:nomztree}
+%\Forest{
+%[HP 
+%    [H,tikz={\node [draw,black,inner sep=5,fit to=tree]{};}
+%            [\text{[F2*]},name=toph]
+%            [H]
+%        ]
+%    [HP
+%        [H
+%            [\text{[\sout{F1*}]}]
+%            [H,gray,tikz={\node [draw,gray,inner sep=5,fit to=tree]{};}
+%                [\text{[F2*]},name=both,edge={gray},gray]
+%                [H,edge={gray},gray]
+%            ]
+%        ]
+%        [\dots]
+%    ]
+%]
+%\draw[->] (both.south east) to[out=-105,in=-105]  node[pos=0.5,yshift=1mm,xshift=-15.5mm]{Head-Splitting} (toph.south east);
+%}
+%\end{figure}
+
+
+%\section{Splitting of negation}\label{negsplit}
+
+In this section, I offer an analysis of the two different instantiations of negation in Igala. I first assume that all finite clauses contain a CP \citep{chomsky2007approaching}. I argue that negation heads its own functional projection in the inflectional domain and that it moves to C\xhead{}. I claim that (i) when movement to C is blocked, negation surfaces as the pre-verbal particle \textit{m\H{a}}, (ii) when it does move to C, pre-verbal negation surfaces as an extra-high tone on the subject, and (iii) the different phonological forms of negation are the result of contextual allomorphy. 
+
+% Negation heads its own functional projection, which is selected by IP \citep[][among others]{ Pollock1989VerbMU, laka1990negation, haegeman1995syntax, zanuttini1997}. \\
+
+\textit{Particle negation} surfaces \textit{in-situ} in clauses involving A'-movement and inside nominalizations. I stipulate that these environments share a common property -- the C-domain is not available for head movement. When A'-movement occurs, the [+\textit{wh}] C\xhead{} blocks movement to it, which blocks Neg-to-C movement\footnote{It has been argued that A'-movement and some types of negation are incompatible \citep{roberts2018two}.}. I have also shown that nominalizations are not clausal (see \sectref{nomz}), so negation has no C to move to. Both of these environments are unified in that the left periphery inaccessible.
+
+On the other hand, tonal negation occurs in declaratives, imperatives, and interrogatives. \citet{potsdam2013cp} argues that in English these exact clauses are examples in which negation occurs in C\xhead{}. Similarly, \citet{dchainew2002negation} argue that negation can be found in or close to C. In fact, they had previously argued that ``the base position for \textsc{neg} in Algonquian is pre-verbal (...) and that \textsc{neg} may raise to higher positions outside of IP'' \citep{dchaine2001negation}. I take this as evidence that negation moves to C\xhead{} (through I\xhead{}) in these syntactic environments. This could also account for the different overt positions of negation shown earlier in Kirundi \citep[Bantu JD.62;][]{chaperon2022} and Igbo \citep[Volta–Niger;][]{amaechiinteraction}.
+
+Finally, I posit that the alternate forms of pre-verbal negation are due to contextual allomorphy \citep{embick2010localism, marantz2013locality}. Pre-verbal negation surfaces as an extra-high tone when it is located in C, otherwise it surfaces as \textit{m\H{a}}. A more formal definition is shown in \REF{ex:chaperon:vocabentry} below.
+
+\ea \label{ex:chaperon:vocabentry}
+Vocabulary entries for pre-verbal negation: \\ 
+\phonc
+{\phonfeat[c]{\textsc{neg}}}
+{\phonfeat[c]{\H{}\\m\H{a}}}
+{\oneof[l]
+    {\Lb{C}\phold] \\ 
+   { }}
+}
+\z
+
+Henceforth, the remainder of this section illustrates that this analysis can account for all cases of negation shown throughout.
+
+\subsection{Blocked Neg-to-C and particle negation}
+
+In this section, I show two cases where pre-verbal negation does not move to C\xhead{} and does not surface as extra-high tone on the subject, but instead as the particle \textit{m\H{a}} -- inside nominalizations and in clauses involving A'-movement.
+
+\subsubsection{Nominalizations}
+
+Here, I show an example derivation of a negated nominalized clause. A derivation for example \REF{ex:chaperon:nomz} is shown in Figure \REF{fig:chaperon:nomztree}\footnote{I follow \citet{Tremblay2022} in assuming that Igala has an underlying SOV word order where the verb moves up to \textit{v}, resulting in an SVO surface order \citep{koopman1984syntax}.}.
+
+\ea \label{ex:chaperon:nomz}
+\gll [\'{e} \circled{m\H{a}}  kp\={a} \`{i}sk\'{u}l\`{u} \'{n}] ch(e) \`{ẹ}nw(u) by\'{ẹ}n\={ẹ}.\\
+    \textsc{nmlz} \textsc{neg} finish school  \textsc{sfp}\subs{\textsc{neg}} \textsc{cop} thing bad\\
+    \glt `\textbf{Not} finishing school is a bad thing.'\footnote{I omit sentence-final particles in trees for simplicity.}
+\z
+
+The nominalized clause is headed by the nominalizer \textit{\'{e}} which can take clauses slightly bigger than \textit{v}P (\textit{e.g.}, negation). Given this, I assume that nominalizations involve a \textit{\textsc{pro}} \citep[][among others]{abney1987english, kratzer1996severing}. The \textit{\textsc{pro}} subject is generated in spec,\textit{v}P which I assume does not move given that no head within the nominalized clauses has an [\textsc{epp}] feature. 
+%The verb moves from its base generated position in V\xhead{} to \textit{v}\xhead{}. 
+Pre-verbal negation does not move up to C\xhead{} within nominalized clauses as they do not contain a CP; it instead surfaces as the particle \textit{m\H{a}}.\\
+
+\begin{figure} 
+\caption{Negation inside a nominalized clause}
+  \label{fig:chaperon:nomztree}
+\Forest{
+[nP 
+    [n\xhead{} \\ \'{e} \\ {\textsc{nmlz}}]
+    [NegP 
+        [Neg\xhead{} \\ \textsc{neg} $\rightarrow$ m\H{a}]
+        [\textit{v}P [\begin{tabular}{ccc} \textit{\textsc{pro}} & kp\={a} & \`{i}sk\'{u}l\`{u} \\ { } & finish & school\end{tabular}, roof]]
+    ]
+]
+}
+\end{figure}
+
+%\ea { }%\label{nomneg}\underline{\textit{Negation in nominalizations}}%\footnote{Assume underlying SOV where the verb moves to \textit{v}, resulting in surface SVO \citep{koopman1984syntax, Tremblay2022}.}
+%\z
+
+%\vspace{-2em}\hspace{4em}\begin{tikzpicture}
+%\Tree 
+%[.nP \node (n) {\begin{tabular}{c} n\\\'{e} \\ {\sc nmlz} \end{tabular}};
+%    [.NegP \node (neg) {\begin{tabular}{c} Neg \\ {\sc neg} $\rightarrow$ m\H{a} \end{tabular}};
+%            [.\textit{v}P \edge[roof]; \node[inner xsep=-15pt] (v) {\begin{tabular}{cc} l(a) & \={i}m\'{o}t\`{o} \\ buy & car\end{tabular}};
+%            ]
+%        ]
+%    ]
+%\end{tikzpicture}
+
+\subsubsection{A'-movement}
+
+Next, I show a derivation for a clause involving A'-movement. The derivation for example \REF{ex:chaperon:abar} below is shown in Figure \REF{fig:chaperon:abartree}. 
+
+\ea \label{ex:chaperon:abar}
+\gll \`{ẹ}nw\={u}\subs{i} \`{ẹ} \circled{m\H{a}} {ny}\`{e}j\={u} \_\_\subs{i} \'{n} \`{i}?\\
+        what     \textsc{2sg}     \textsc{neg}     like  {}   \textsc{sfp}\subs{\textsc{neg}} \textsc{sfp}\subs{\textsc{foc}}\\
+       \glt `\textsc{what} do you \textbf{not} like?'
+\z
+
+The subject generated in spec,\textit{v}P moves to spec,IP to check the [\textsc{epp}] feature on I\xhead{}. %As before, the verb moves to the head of \textit{v}P.
+The focused constituent (here the object) moves to the specifier of the [+\textit{wh}] C head. In this case, since the [+\textit{wh}] C head blocks movement of negation, pre-verbal negation can only move up to I\xhead{}, where it surfaces as the \textit{m\H{a}} particle.
+
+\begin{figure}
+\caption{Negation in a clause involving A'-movement}
+  \label{fig:chaperon:abartree}
+\Forest{
+[CP [DP \\ \`{ẹ}nw\={u}\subs{\textit{wh}} \\ {\textsc{what}}]
+    [C\xbar{}  
+        [C\xhead{}\subs{[+\textit{wh}]},name=c]
+        [IP [{spec,IP}\\\`{ẹ}\subs{\textit{sbj}} \\ \textsc{2sg}]
+            [I\xbar{}
+                [I\xhead{}\subs{[\textsc{epp}]}\\{\textsc{neg}}$\rightarrow$ m\H{a},,name=i]
+                [NegP 
+                    [Neg\xhead{}\\ \tr{neg},name=neg]
+                    [\textit{v}P 
+                        [\begin{tabular}{ccc} \tr{sbj} & {ny}\`{e}j\={u} & \tr{wh} \\ {} & like & {}\end{tabular}, roof]
+                    ]
+                ]
+            ]
+        ]
+    ]
+]
+\draw[->] (neg) [in=-90,out=-90,looseness=2] node[below=15mm, left=10.5mm] {} to (i);
+\draw[->, dotted] (i) [in=-90,out=-90,looseness=2] node[below=15mm, left=22.5mm] {\XSolidBold}  to (c);
+}
+\end{figure}
+
+%This rule is formalized below in \Next. 
+
+%\ea { }%\label{abarneg}\underline{\textit{Negation in clauses involving A'-movement}}
+%\z
+
+%    \vspace{-2em}\hspace{4em}\begin{tikzpicture}[every tree node/.style={align=center,anchor=north}, sibling
+%distance=0.15pt, level distance=25pt]
+%    \Tree 
+%    [.CP \node (specfoc) {\begin{tabular}{c} DP\\ \H{ẹ}nw\H{u}\subs{i} \\ {\sc what}\end{tabular}};
+%        [.{C'} \node (c) {C$\subs{[+\textit{wh}]}}$};
+%                [.NegP \node (i) {\begin{tabular}{c} DP\\ \`{ẹ}\subs{\it sbj} \\ {\sc 2sg} \end{tabular}};
+%                    [.{Neg'} \node (neg) {Neg\\{\sc neg} $\rightarrow$ m\H{a}};
+%                            [.\textit{v}P \edge[roof]; \node[inner xsep=-15pt] (specvp) {\begin{tabular}{ccc} \tr{sbj} & {ny}\`{e}j\={u} & \tr{i} \\ {} & like & {}\end{tabular}};
+%                    ]
+%                ]
+%            ]
+%            ]
+%        ]
+%    \end{tikzpicture}
+
+
+\subsection{Neg-to-C and tonal negation}
+
+In this section, I show the derivation for contexts in which negation moves to C\xhead{} and surfaces as \textit{tonal negation}. More specifically, I only show a derivation for a declarative clause, as imperatives and polar questions would be derived similarly. In these cases, pre-verbal negation surfaces as an extra-high tone (on the subject).
+
+I argue that both I and C have an [EPP] feature that must be checked by the subject \citep{chomsky2000minimalist}. \citet{aboh2006complementation} argues that this is also the case in Gungbe (Volta-Niger). Hence, subjects first move to spec,IP and subsequently move to the specifier position of C. The derivation for \REF{ex:chaperon:decl} is shown in \REF{fig:chaperon:decl}. 
+
+\ea \label{ex:chaperon:decl}
+\gll \circled{\H{ẹ}} ny(i) \'{a}ny\'{i} \'{n}.\\  
+\textsc{2sg.neg} laugh(\textsc{v}) laugh(\textsc{n}) \textsc{sfp}\subs{\textsc{neg}} \\
+\glt `You did \textbf{not} laugh.' 
+\z
+
+Both the I and the C heads have an [EPP] feature which the subject generated in spec,\textit{v}P must check. It first moves up to spec,IP and then to spec,CP. %The verb also moves to \textit{v}\xhead{} as always. 
+Finally, negation moves up to C\xhead{} through I\xhead{} and surfaces as extra-high tone (on the last vowel of the subject) since it is in the left periphery, as per its vocabulary entry rule in \REF{ex:chaperon:vocabentry}. 
+
+\begin{figure}
+\caption{Negation in a finite matrix clause: declarative}
+  \label{fig:chaperon:decl}
+\Forest{
+[CP [DP \\ ẹ\subs{\textit{sbj}} \\ {\textsc{2sg}} ]
+    [C\xbar{}  
+        [C\xhead{}\subs{[{\textsc{epp}}]} \\ \textsc{neg}\subs{\textit{neg}} $\rightarrow$ \H{}, name=c]
+        [IP [{spec,IP}\\ \tr{sbj}]
+            [I\xbar{}
+                [I\xhead{}\subs{[{\textsc{epp}}]},name=i]
+                [NegP 
+                    [Neg\xhead{} \\ \tr{neg}, name=neg]
+                    [\textit{v}P 
+                        [\begin{tabular}{c c c} \tr{sbj} & ny(i) & \'{a}ny\'{i} \\ {} & laugh(\textit{v}) & laugh(\textit{n})\end{tabular}, roof]
+                    ]
+                ]
+            ]
+        ]
+    ]
+]
+\draw[-] (neg) [in=-90,out=-90,looseness=2] node[below=15mm, left=15.5mm] {} to (i);
+\draw[->] (i) [in=-90,out=-90,looseness=2] node[below=15mm, left=22.5mm] {}  to (c);
+}
+\end{figure}
+
+%\bigbreak\noindent\begin{minipage}{\columnwidth}
+%\ea { }%\underline{\textit{Negation in declarative clauses}}
+%\z
+
+%\vspace{-2em}\hspace{4em}\begin{tikzpicture}
+%\Tree 
+%[.CNegP \node (dpsubj) {\begin{tabular}{c} DP\\ ẹ\subs{\it sbj} \\{\sc 2sg} \end{tabular}};
+%    [.{CNeg'} \node (c) {\begin{tabular}{c} CNeg$\subs{[{\sc epp}]}}$\\{\sc neg} $\rightarrow$ \H{} \end{tabular}};
+%        [.\textit{v}P \edge[roof]; \node[inner xsep=-15pt] (specvp) {\begin{tabular}{c c c} \tr{sbj} & ny(i) & \'{a}ny\'{i}\\ {} & laugh({\sc v}) & laugh({\sc n})\end{tabular}};]
+%            ]
+%        ]
+%    ]
+%]
+%\end{tikzpicture}
+%\end{minipage}
+
+I assume that the same applies to polar questions and imperatives. In these clauses, negation also surfaces as tone on the subject; examples \REF{nq} and \REF{imp} are repeated in \REF{ex:chaperon:pol} and \REF{ex:chaperon:imp} respectively. 
+
+\ea \label{ex:chaperon:pol}
+\gll \circled{\H{ẹ}} j(\={ẹ}) \`{ọ}d(\`{a}) \`{ọ}n\'{a}l\'{ẹ} \circled{\v{n}ː{}}.\\
+        \textsc{2sg}.\textsc{neg}     eat     pear     yesterday     \textsc{sfp}\subs{\textsc{neg}.\textsc{q}}\\
+       \glt  `Did\textbf{n’t} you eat a pear yesterday?'
+\z
+
+\ea \label{ex:chaperon:imp}
+\gll \circled{*(\H{ẹ})} j\={ẹ} \'{n}!\\
+        \textsc{2sg}.\textit{neg}     eat     \textsc{sfp}\subs{\textsc{neg}}\\
+        \glt `Do\textbf{n’t} eat!'
+\z
+
+
+I assume that, as in declarative clauses, the C\xhead{} head in these clauses also does not block negation from moving to it.
+
+Given that subjects surface in the specifier to the left of C\xhead{}, pre-verbal negation occurs immediately to its right. This accounts for why \textit{tonal negation} anchors to the last syllable of subjects. More generally, \textit{tonal negation} adjoins to the rightmost vowel of its specifier. This is stated more formally in \REF{linneg} below, although I leave the precise mechanism at hand to PF.
+
+\ea \label{linneg}\textit{Linearization of tonal negation}\\
+ {[\subs{CP}[\subs{spec,CP} (...CV.C)V][\subs{C'}[\subs{C\xhead{}} \H{}][...]]] $\Longrightarrow$ (...CV.C)\textbf{\H{V}}}
+\z
+
+In this section, I have shown that a head-movement analysis can account for the surface position and exponent of negation in different syntactic environments. I have argued that when movement to C is blocked -- in clauses involving A'-movement and inside nominalizations -- negation surfaces as the pre-verbal particle \textit{m\H{a}} and when it does move to C -- in finite clauses -- pre-verbal negation surfaces as an extra-high tone on the subject.
+
+%\ea Linearization of tonal negation
+%\begin{equation*}
+%        [\subs{CP}[\subs{spec,CP} \text{ (...CV.C)V } ][\subs{C\xbar{}}[\subs{C\xhead{}}\text{ \H{} }][...]]] \Longrightarrow \text{(...CV.C)\textbf{\H{V}}}
+%    \end{equation*}
+%\z
+
+\section{Additional evidence}\label{ext}
+
+In this section, I extend my analysis by showing that it can account for the interaction of negation with other elements in the left periphery. I first show that negation surfacing in C is supported by other tonal morphology -- conditional and optative marking -- also surfacing in this position. Additionally, I show that this analysis accounts for the exponent of negation inside embedded clauses.
+
+\subsection{Other left-peripheral tonal morphology}
+
+In this section, I demonstrate that two other instances of tonal morphology in Igala, which also appear on the subject, surface in C. 
+
+\subsubsection{Conditionals}
+
+First, if extra-high tone surfaces on the subject without the presence of the negative sentence-final particle, the sentence is interpreted as a conditional, as in \REF{ex:chaperon:cond}.
+
+\ea \label{ex:chaperon:cond}
+\gll \circled{\H{i}} nēkē l(a) īmótò, y=ǎ wá.\\
+    \textsc{3sg.cond} can buy car \textsc{3sg=impf} come\\
+    \glt `If s/he can buy a car, s/he will come.'
+\z 
+
+When such a conditional clause is negated, the negative particle \textit{m\H{a}} surfaces (along the sentence-final particle) even though no apparent element is in the left periphery or has been extracted, as in \REF{ex:chaperon:ncond}.
+
+\ea \label{ex:chaperon:ncond}
+\gll \circled{ì} 	\circled{ma̋} 	nēkē 	l(a) 	īmótò 	ń, y=ǎ wá.\\     \textsc{3sg.cond} \textsc{neg} can buy car \textsc{sfp}\subs{\textsc{neg}} \textsc{3sg=impf} come\\
+  \glt   `If s/he can\textbf{not} buy a car, s/he will come.'
+\z
+
+According to my analysis in \S\ref{analysis}, \textit{m\H{a}} surfaces as a result of an element in C blocking negation from head-moving to it; I posit that in the case at hand, it is blocked by the conditional head\footnote{I leave the question of the conditional tone no longer being apparent for future research.}. \citet{bolessocolof} propose that conditional extra-high tone in Igala expones a head in the left periphery and involves operator movement. This is not a novel claim as it is commonly assumed that conditionals involve operator movement \citep[{\textit{e.g.,}}][]{haegeman2010movement}.
+
+\subsubsection{Modals}\label{mods}
+
+Next, I demonstrate that the behaviour of the optative (deontic) modal marker, along with its interaction with negation, supports my analysis. Subject clitics typically surface with a low tone; when they surface with a mid tone, an optative reading arises, as in \REF{ex:chaperon:opt}.
+
+\begin{multicols}{2}
+\ea \label{ex:chaperon:opt}
+\begin{xlist}
+
+\ex\gll \circled{\`{i}} 		t(\'{ẹ}) 	énè.\\
+\textsc{3sg}	ask	question\\
+\glt `S/he asked a question.'
+
+\ex\gll \circled{\={i}} 		t(\'{ẹ}) 	énè.\\
+\textsc{3sg.opt}	ask	question\\
+\glt `May s/he ask a question!'
+
+\end{xlist}
+\z
+
+\end{multicols}
+
+Unlike with conditionals, there are two strategies to negate an optative clause: (i) using the optative particle \textit{m\={a}} (notice the mid tone) along with \textit{tonal negation} or (ii) embedding negation within a subjunctive clause, as in \REF{ex:chaperon:optprt} and \REF{ex:chaperon:optsbjv} respectively.
+
+\ea
+\begin{xlist}
+
+\ex \label{ex:chaperon:optprt}
+\gll \circled{\H{i}} 		\circled{m\={a}} 		t(\'{ẹ}) 	énè	\'{n}.\\
+    \textsc{3sg.neg} \textsc{opt} ask	question \textsc{sfp}\subs{\textsc{neg}}\\
+
+\ex \label{ex:chaperon:optsbjv}
+\gll \circled{\={i}} 		[k(i)-\circled{\H{i}} 		t(\'{ẹ}) 	énè	\'{n}].\\
+    \textsc{3sg.opt} C.\textsc{sbjv}-\textsc{3sg.neg} ask	question \textsc{sfp}\subs{\textsc{neg}}\\
+    \glt `May s/he not ask a question!'
+
+\end{xlist}
+\z
+
+Similarly to conditionals, I claim that optative tone surfaces in C. A similar claim has been made by \citet{aboh2006complementation}, who follows \citet{damonte2002complementizer} and \citet{aboh2004morphosyntax} in arguing that Saramaccan (Niger-Congo derived English-Portuguese Creole) and Gungbe (Volta-Niger) deontic \textit{fu} and \textit{n\'{i}} respectively are modal complementizers that surface in Fin\xhead{}. %If optative tone is generated in C, this predicts that it would be incompatible with A'-movement. \REF{inflabar} shows that elements in the inflectional domain are compatible with A'-movement, but this modal is not.
+
+I have proposed that both conditional and optative tonal morphology surface in C in Igala. I then showed that \textit{tonal negation} cannot co-occur with both elements, other strategies must be used instead. This parallel behavior suggests that they all share the same position. This is in line with my proposal that \textit{tonal negation} surfaces in C (via movement). More broadly, this shows that it is not only A'-movement which blocks negation from moving to C, but other left-peripheral material as well.
+
+
+\subsection{Embedding complementizers}
+
+There are two types of languages: (i) those where the complementizer embeds the whole left periphery and projects higher than topic and focus \citep[as \textit{e.g.}, Wolof and Italian;][]{dunigan1994clausal, rizzi1997fine}, and (ii) those where the complementizer only embeds IP and shares the A' slot \citep[as \textit{e.g.}, German and Old English;][]{gelderen2004cp}. This variation in left peripheral structure should affect the type of negation in embedded clauses; languages with high embedding complementizer should allow Neg-to-C movement and those with a low embedding complementizer should block this movement. In this section, I show that this is the exact contrast found between Igala and Kirundi (Bantu JD.62).
+
+\subsubsection{Igala}
+
+In this subsection, I show that Igala has a high embedding complementizer which allows Neg-to-C movement. In this language, constituents can be focus within embedded clauses, as in \REF{igalaembfoc}.
+
+\ea \label{igalaembfoc}%\underline{\textit{Extraction of embedded object}}
+\begin{xlist}
+    \ex\gll \'{i}p\'{i}t\`{a} m\'{a} [k\`{a}k\'{i}n\'{i} \'{i}j\'{e}n\`{i} k(\`{a}) \`{ọ}l\`{a} kp(\`{a}\'{i}) \circled{\'{a}n\`{a}}].\\
+    Peter know \textsc{compl} Jane speak word with Anna\\
+    \glt `Peter knows that Jane spoke to Anna.' 
+    
+    \ex\gll \'{i}p\'{i}t\`{a} m\'{a} [k\`{a}k\'{i}n\'{i} \circled{\'{a}n\`{a}\subs{i}} \'{i}j\'{e}n\`{i} k(\`{a}) \`{ọ}l\`{a} kp(\`{a}\'{i}) \`{o}nwū\subs{i} \'{i}].\\
+    Peter know \textsc{compl} Anna Jane speak word with \textsc{3sg.str} \textsc{sfp}\subs{\textsc{foc}}\\
+    \glt `Peter knows that it's \textsc{anna}\subs{i} that Jane spoke to (her\subs{i}).'    
+\end{xlist}
+\z
+
+This example shows that the complementizer in Igala can embed foci. Following a ``split-CP'' \textit{\'{a} la} \citet{rizzi1997fine}, I posit that \textit{kakini} is a higher embedding complementizer in Force. It follows that Neg-to-C movement should be possible in embedded clauses, so negation should surface in the same form in embedded clauses as in matrix clauses -- with \textit{tonal negation}\footnote{Tonal negation appears on the subject and not the complementizer due to movement not being possible to a higher head.}. This prediction is borne out, as shown in \REF{igalaemb} below.
+
+
+\ea \label{igalaemb}
+    \gll \`{i}  k\`{a} [k\`{a}k\'{i}n\'{i} \circled{\H{i}}  m\`{a} \'{n}].\\
+        \textsc{3sg}   say   \textsc{compl}    \textsc{3sg}.\textsc{neg}  know   \textsc{sfp}\subs{\textsc{neg}} \\
+       \glt `S/he said s/he did \textbf{not} know.'
+\z
+
+I argue that the high embedding complementizer in Igala allows Neg-to-C movement, as it surfaces as extra-high tone on the embedded subject.
+
+%\begin{figure}
+%\caption{some title}
+%  \label{fig:chaperon:embtree}
+%\Forest{
+%[ForceP 
+%    [\begin{tabular}{c} Force\xhead{} \\ kak\'{i}n\'{i} \\ that \end{tabular}]
+%    [CNegP [\begin{tabular}{c} DP\\i\subs{\it sbj} \\ {\sc 3sg} \end{tabular}]
+%        [CNeg\xbar{} [\begin{tabular}{c} CNeg\xhead{}\subs{[{\sc epp}]}\\{\sc neg} $\rightarrow$ \H{}\end{tabular}]
+%            [\textit{v}P 
+%                [\begin{tabular}{c c} \tr{sbj} & m\`{a}\subs{v} \\ {} & know \end{tabular}, roof]
+%            ]
+%        ]
+%    ]
+%]
+%}
+%\end{figure}
+
+\subsubsection{Kirundi}
+
+Next, I show that Kirundi (Bantu JD.62) has a low embedding complementizer which blocks Neg-to-C movement. This language uses the complementizer \textit{ko} to embedded clauses as in \REF{kiremb}, and focus constructions arise from extraction of foci to the left periphery, where they follow the particle \textit{ni} as in \REF{kirfoc}. Various claims have been made about \textit{ni}; \citet{terrance} argues that it is a copula found in the left periphery. 
+  
+
+\ea \label{kiremb}
+\gll Keez\'{a} a-r\'{a}-zi [\circled{ko} Juma a-somye igitabo].\\
+    Keez\'{a} 1\textsc{sm}-\textsc{dj}-know \textsc{compl} Juma 1\textsc{sm}-read.{\textsc{pfv}} 7book \\
+    \glt `Keeza knows that Juma read a book.’
+\z
+
+
+\ea \label{kirfoc}
+\begin{xlist}
+    \ex %\underline{\textit{Extraction of object}}
+    \gll Yohani a-\'{a}-guze igitabo.\\
+    John 1\textsc{sm}-\textsc{pst}-buy.\textsc{pfv} 7book\\
+    \glt `John bought a book.' 
+
+    \ex\gll \circled{ni igitabo} yohani a-\'{a}-guze.\\
+    {\textsc{cop} 7book} John 1\textsc{sm}-\textsc{pst}-buy.\textsc{pfv}\\
+    \glt `It’s \textsc{a book} John bought.'    
+\end{xlist}    
+\z
+
+In contrast to Igala, foci, or the whole left periphery more generally, cannot be embedded in Kirundi, as shown in \REF{kirembfoc}.
+
+\ea \label{kirembfoc}
+\gll {*} Keez\'{a} a-r\'{a}-zi [\circled{ko} \circled{ni igitabo}  Juma a-somye].\\
+    {} Keez\'{a} 1\textsc{sm}-\textsc{dj}-know \textsc{compl} {\textsc{cop}\hspace{0.1em} 7book} Juma 1\textsc{sm}-read.{\textsc{pfv}} \\
+    \glt \textit{Intended}: `Keeza knows that it's \textsc{a book} Juma read.’
+\z
+
+I argue that the complementizer \textit{ko} is located lower in C\xhead{} and not in Force\xhead{} as in Igala. As predicted, the lower non-matrix form (equiv. \textit{particle negation}) must be used instead. In finite matrix clauses, negation surfaces as the prefix \textit{nti-} on the verb, as in \REF{kirmatneg}; in embedded clauses, it cannot be used, the prefix \textit{ta-} following subject marking surfaces instead, as in \REF{kirembneg}.
+
+\ea \label{kirmatneg}
+\gll Yohani \circled{nti}-a-a-funguye.\\
+        John {\textsc{neg}\subs{1}}-1\textsc{sm}-\textsc{rec.pst}-eat.{\textsc{pfv}}\\
+        \glt `Yohani did \textbf{not} eat.’
+\z
+
+\ea \label{kirembneg} %\underline{\textit{Negated embedded clause}}
+\begin{xlist}
+    \ex\gll {*} Keez\'{a} a-r\'{a}-zi [ko Juma \circled{nti}-a-somye igitabo].\\
+    {} Keez\'{a} 1\textsc{sm}-\textsc{dj}-know \textsc{compl} Juma {\textsc{neg}\subs{1}}-1\textsc{sm}-read.\textsc{pfv} 7book \\
+    
+    \ex\gll Keez\'{a} a-r\'{a}-zi [ko Juma a-\circled{ta}-somye igitabo].\\
+    Keez\'{a} 1\textsc{sm}-\textsc{dj}-know \textsc{compl} Juma 1\textsc{sm}-{\textsc{neg}\subs{2}}-read.\textsc{pfv} 7book \\
+    \glt `Keeza knows that Juma did \textbf{not} read a book.’ \hfill \citep{chaperon2022}
+\end{xlist}
+\z
+
+I argue that the low embedding complementizer in Kirundi blocks Neg-to-C movement. This is similar to V-to-C movement being blocked in Germanic subordinate clauses due to the complementizer filling the C\xhead{} position \citep{kiparsky1995indo}.
+
+I have shown that this analysis accounts for the height of complementizers. I have argued that in Igala, the high embedding complementizer in Force\xhead{} allows negation to move to C\xhead{}. On the other hand, in Kirundi the low embedding complementizer in C\xhead{} blocks negation from moving to it. This accounts for both the surface positions and exponents of negation in embedded clauses in both languages.
+
+\section{Conclusion}\label{conclusion}
+
+To conclude, Igala has a bi-partite negation system: a pre-verbal form and a sentence-final particle. Pre-verbal negation can surface either as an extra-high tone on the subject or as the particle \textit{m\H{a}}. In this paper, I have argued that these different exponents of pre-verbal negation are due to head movement (or its restriction) %of negation 
+to C\xhead{}. I claim that its different exponents are a result of contextual allomorphy. I propose that negation surfaces as extra-high tone when it moves to C\xhead{} but surfaces as the particle \textit{m\H{a}} when this movement is blocked. I show that this restriction occurs in two types of clauses. First, in A'-movement clauses due to the [+\textit{wh}] head blocking movement to it. Additionally, in nominalizations, negation has nowhere to move to as C is not contained within them. Subsequently, I show that this analysis can account for other environments where negation occurs -- with conditionals and modals. Furthermore, it accounts for what exponents (and position) negation is realized as in both Kirundi (Great Lakes Bantu) and Igala embedded clauses, which I argue have low and high complementizers respectively. 
+
+A shortcoming of this proposal is that it is not derived; a blocking property has to be stipulated or not for each separate C. For example, I have argued that in Igala the [+\textit{wh}], conditional, and modal C\xhead{}'s block the movement of negation to the left periphery. On the other hand, those in declaratives, imperatives, and polar questions do not block its movement. Hence, a blocking property has to be stipulated for all of these other C heads separately. 
+
+The next step in this research is to see how this could be captured in a more principled way. Given that this is a common phenomenon in Niger-Congo languages, investigating more languages would help in proposing a more attractive and consolidated analysis. Cross-linguistic variation is expected which would aid in distinguishing between all of the mechanisms occurring during the whole derivation. Another question that remains to be answered is the relationship between the pre-verbal and sentence-final forms of negation.
+
+
+
+
+
+
+
+\section*{Abbreviations}
+\label{tab:chaperon:abbrv}
+
+\begin{tabularx}{.45\textwidth}{lQ}
+    1 & noun class 1 \\ 
+    7 & noun class 7 \\ 
+		 \textsc{compl} & complementizer \\
+         \textsc{cond} & conditional \\ 
+        \textsc{cop} & copula \\
+        \textsc{dj} & disjoint marker \\
+        \textsc{fut} & future \\
+        \textsc{impf} & imperfective \\ 
+        \textsc{neg} & negation \\
+        \textsc{neg\subs{1}} & primary negation \\
+        \textsc{neg\subs{2}} & secondary negation \\
+        \textsc{nmlz} & nominalizer \\
+        \textsc{opt} & optative \\ 
+        \end{tabularx}
+\begin{tabularx}{.45\textwidth}{lQ}
+        \textsc{pst} & past \\
+        \textsc{pfv} & perfective \\ 
+        \textsc{pfx} & prefix \\
+        \textsc{pl} & plural \\ 
+        \textsc{prog} & progressive \\
+        \textsc{prt} & particle \\
+        \textsc{q} & question \\
+        \textsc{rec} & recent \\ 
+        \textsc{rem} & remote \\
+        \textsc{sfp} & sentence-final particle \\ 
+        \textsc{sg} & singular \\
+        \textsc{sm} & subject marker \\ 
+        \textsc{str} & strong
+\end{tabularx}
+
+\section*{Acknowledgements}
+
+All non-cited Igala and Kirundi examples are from my own field work elicited with native speakers. I would especially like to thank Salem Ejeba, Dorcas Otu, and Benilde Mizero, to which I will be forever grateful.
+
+Many thanks to Professor Martina Martinović for her immense help and for extensive notes on many drafts. I also thank all members of the MULL Lab and the audience at the 54th Annual Conference on African Linguistics (ACAL) for their comments. Special thanks to Yuzhou Yan for help with tone transcription. Lastly, I thank 2 anonymous reviewers for their comments and suggestions. All errors are my own.
+
+%
+%\section{Main formatting requests}
+%
+%\begin{table}
+%\caption{Selected commands for common ACAL formatting needs}
+%\label{tab:diercks:CommandsTable}
+%
+%	\begin{tabular}[t]{l l l}
+%		\toprule
+%		\textbf{Symbol/Annotation} & \textbf{Example} & \textbf{Code} \\ \midrule
+%		Ellipsis & \dots & \verb|\dots| \\
+%		Underscore & X\textunderscore{}Y & \verb|X\textunderscore{}Y| \\
+%		Subscript & NP\subs{i} & \verb|NP\subs{i}| \\
+%		Superscript & NP\supers{i} & \verb|NP\supers{i}|\\ 
+%		Bold & \textbf{bold} & \verb|\textbf{bold}| \\
+%		Italic & \textit{italic} & \verb|\textit{italic}| \\
+%		Small Caps & {\sc small caps} & \verb|{\sc small caps}| \\
+%		Strikeout & \sout{strikeout} & \verb|\sout{strikeout}| \\
+%		Circle something & \circled{something} & \verb|\circled{something}| \\
+%		Highlight something & \hl{something} & \verb|\hl{something}| \\
+%		Null & \nothing  & \verb|\nothing|\\
+%		Hash & \# & \verb|\#| \\
+%		Trace with index & \tr{k}  & \verb|\tr{k}| \\
+%		Bar-level node & X\xbar & \verb|X\xbar| \\
+%		Head Node & X\xhead{} & \verb|X\xhead| \\
+%		Underline & \textit{do not use} & \textit{do not use} \\
+%		\bottomrule
+%	\end{tabular}
+%\end{table}
+
+\sloppy %this command eliminates a quirk that appears in the bibliography, you can just leave it here.
+\printbibliography[heading=subbibliography,notkeyword=this]
+
+\end{document}
+
+%To be added to the ACAL \LaTeX{} template, someday: glossing with leipzig, advanced instructions for arrows

@@ -1,0 +1,562 @@
+\documentclass[output=paper,colorlinks,citecolor=brown
+% ,hidelinks
+% showindex
+]{langscibook}
+\ChapterDOI{10.5281/zenodo.20285220}
+\author{Matthew Faytak\affiliation{University at Buffalo} and Ivo Forghema Njuasi\affiliation{University of Buea} and Nicholas Mori\affiliation{University at Buffalo} and Angelique Griffith\affiliation{University at Buffalo}}
+\title{A speech corpus of Kom verbal arts and its applications}
+\abstract{The move towards large-scale analysis of corpora in phonetics and phonology requires new approaches to data collection, both for African languages specifically and for less-described languages more generally. 
+We argue that short-form verbal arts, such as proverbs and riddles, offer a convenient and culturally sensitive way to build out suitable language resources in the African context, particularly for less-documented languages.  
+As a proof of concept that use of the verbal arts to construct corpora is an effective strategy, we describe the construction of a corpus of Kom speech (Grassfields Bantu, Cameroon) from more than 150 proverbs (\textit{ngàynsɨ}) and riddles (\textit{mɨtɨtɨ̂}). 
+We illustrate the potential uses of the corpus with two case studies: vowel production under positional prominence and a variably applied phonological process of monophthongization which is sensitive to upcoming segmental content. 
+Throughout, we consider the affordances of proverbs and other short verbal arts for corpus development, how these relate to the typical materials for read-speech corpora, and the potential role of these corpora in the development of language technology. }
+
+\IfFileExists{../localcommands.tex}{
+   \addbibresource{../localbibliography.bib}
+   \input{../localpackages}
+   \input{../localcommands}
+   \input{../localhyphenation}
+   \boolfalse{bookcompile}
+   \togglepaper[23]%%chapternumber
+}{}
+
+\begin{document}
+\maketitle
+
+\section{Introduction}
+
+\subsection{Corpus approaches and Africanist linguistics}
+
+% subsection title? "problem in search of a solution"
+% competing standards and the corpus
+
+African languages have long been influential in the fields of phonetics and phonology, the selection of their objects of documentary and analytical interest, and the development of their theoretical machinery \citep{ladefoged-african, goldsmith1976autosegmental,  olson1999phonetic, casali2008atr, lionnet2018current}. 
+In current phonetics and phonology, research increasingly relies on the collection and analysis of large, annotated, machine-readable corpora of speech,
+with added benefits accruing in the form of a much larger number of observations, a deeper consideration of  variability, and improved naturalness over elicitation \citep{liberman2019corpus}. 
+Most African languages, however, lack the resources needed for researchers to carry out this corpus-based work.   
+
+This leads to an impasse: large-scale corpus-based research is in many ways an important part of the future of phonetics and phonology, but a shortfall in the amount, quality, and type of data available threatens to leave African languages out of this development entirely. 
+% in spite of documentation's huge emphasis on data accessibility,
+Text- and transcription-based corpora of African languages \textit{are} already constructed to a high standard \citep[e.g.][]{prinsloo, deschryver}, but are not suitable for carrying out phonetic analysis without time-alignment of the transcriptions.
+Few existing data collections -- not only for African languages, but for less-documented languages in general -- have data voluminous, well-annotated, and well-recorded enough to be useful for large-scale instrumental phonetic analysis. 
+In a recent survey of 20 corpora deposited in various archives, more than half were found to be unsuitable for automated, large-scale phonetic work due to incomplete or inconsistent metadata, missing annotations, and other structural impediments to large-scale processing \citep{babinski2022usable, yi2022accessibility}. 
+
+As annotated, machine-readable corpora of African languages are in short supply, particularly for the lowest-resourced African languages and those which lack writing systems, the construction of such resources should constitute a long-term priority for the field of linguistics. 
+In this article, we suggest some ways in which interested researchers can advance towards this goal by leveraging proverbs and other short-form verbal arts. 
+These are held in common by many African speech communities; are readily accessible to both community members and linguists; 
+and allow for the production of culturally appropriate and easily processed materials that spark community interest. 
+
+\subsection{Motivating the current work: a double function of verbal arts}
+
+In this article, our focus is on \textit{read-speech} corpora in which a fixed set of materials, usually a written set of sentences, is read by participants. 
+Corpora of verbal arts need not be produced from writing, and so the label of \textit{read} speech does not entirely suit the materials discussed here. 
+They might better be called \textit{controlled} speech to distinguish them from \textit{spontaneous} speech, in which speakers' utterances make no attempt to follow a conventionalized form \citep{simpson}, without making reference to literacy as a mediating factor. 
+The predictability of controlled speech greatly facilitates transcription and annotation of the recorded speech material.
+
+Spontaneous speech, by contrast with controlled speech, must be manually transcribed and parsed after the fact, and the occurrence of particular words, phones, or sequences of items is not guaranteed (see \citealt{xu2010defense}).
+This poses a major impediment to primary data collection work sometimes known as the \textit{transcription bottleneck} \citep{seifart2018language}. 
+In part because of their relative ease of processing, corpora of read or controlled speech have a long history in acoustic and articulatory phonetics \citep{zue1990speech, garofolo1993darpa, wrench1999mocha}, and are frequently used as training data for natural language processing applications \citep[e.g.][]{black2019cmu, bamba2021, van-niekerk-etal-2017}. 
+In addition to speeding up annotation, selection of certain predictable material also allows researchers to approximate phonetic balance, i.e. ensure similarly frequent occurrence of all phones or phone sequences of a given length. 
+
+We wish to make the case that proverbs and other short-form verbal arts are an especially suitable material for constructing audio corpora of spoken African languages. 
+Although verbal arts are not typically performed from writing, they overlap in form with typical read-speech corpus materials (a series of controlled sentences) and do double duty as a repository of cultural information that generates community interest. 
+Because they are based in oral tradition, they are accessible to literate and illiterate speakers alike. 
+Proverbs take relatively predictable forms: they are accessible common knowledge, and as such are expected to be produced in a relatively conventionalized form, facilitating transcription and parsing.
+Furthermore, proverbs are a common target for anthropological, sociological, philological, and linguistic research \citep{yankah-proverbs, nwachukwu2012african, tadi2016}, and published collections of proverbs for particular languages often exist which may be leveraged to rapidly elicit and parse a large amount of speech material. 
+
+These resources are also suitable for future development of speech technology.
+The languages of Africa are dramatically under-served by existing speech technologies and data resources \citep{blasi}, in spite of ongoing efforts to expand access \citep[e.g.][]{masakhane}. 
+Most of the training data for novel speech technology applications takes the form of read-speech corpora \citep{van-niekerk-etal-2017, bamba2021, gauthier-etal-2016-collecting, Schlippe2012HausaLV, Nimaan2014BuildingAE, gutkin2020developing}, but these corpora typically use collections of neutral, randomly chosen sentences that are disconnected from any documentary function or community interest. 
+Short-form verbal arts provide material which has greater relevance to community documentary priorities; taking this approach also does not require that all participants in the corpus creation process are literate. 
+
+In this paper, we put forward a corpus composed of proverbs and riddles in Kom, collected over a single field season in 2022, as a proof of concept for a corpus of verbal arts which can both support scientific and technological work and document a community's cultural heritage.
+The remainder of this paper is structured as follows: an overview of Kom, Kom verbal arts, and their cultural significance follows in \sectref{kom-background}. 
+The construction of a spoken verbal arts corpus is described in \sectref{corpus-construction}, and two exploratory case studies of how such a corpus can be used for phonetic work are included in \sectref{corpus-usage}. 
+\sectref{discussion} concludes with some discussion of ethical considerations and future developments planned for the corpus. 
+
+\section{Kom verbal arts} \label{kom-background}
+
+\subsection{Kom: background}
+
+Kom (\textit{itaŋikom}) is a Grassfields Bantu language spoken by roughly 300,000 people in the North West region of Cameroon \citep{ethnologueFaytak, glottolog2023}, along with a sizeable Kom-speaking diaspora elsewhere in Cameroon and in Europe and North America. 
+It is spoken by the Kom people, who are mainly agriculturalists living on hilly terrain, with systems of matrilineal and patrilineal descent and a centralized political structure under a paramount chief (\textit{fòyn}). 
+
+While some phonological, morphological \citep{hyman1980babanki, hyman-augment, kiessling2010infix, akumbu2019noun, njuasi2022monophthongization}, and morphosyntactic \citep{chia1976kom, shultz1997kom, kawuldim2014relativization} work has been carried out on Kom, no corpus of the spoken language has been collected or maintained. 
+However, in addition to a New Testament translation and a sizeable lexicon \citep{jones2001provisional} in a standard orthography, a collection of proverbs \citep{loh-timlini-i} has been published by SIL Cameroon, and a number of small press books make use of written Kom.
+
+\subsection{Genres of Kom verbal art} % TODO Better section title
+
+The two major genres of verbal arts in Kom focused on in this paper are \textit{ngàynsɨ} `proverbs' and \textit{mɨtɨtɨ̂} `riddles' (singular: \textit{ngàyn}, \textit{fɨtɨtɨ̂}, respectively). These are both typically short utterances, with riddles additionally paired with one or more accepted answers. The format and social function of these genres is reviewed below. 
+
+Proverbs or \textit{ngàynsɨ} are short utterances usually mostly phrased as indirect advice, admonishments, or lessons.
+Proverbs are characteristic of the speech of older adults; even among adults, usage of proverbs increases with age and the attendant social responsibilities.
+The language used tends toward the highly metaphorical, which enhances the perception that proverbs are linked to wisdom and places them in an elevated register compared to everyday speech. 
+
+% riddles
+Riddles or \textit{mɨtɨtɨ̂} have two components: first, a short overt question to be answered or a cryptic description of an object or concept; second, one or more expected responses or answers.
+%
+Riddles may be used with the goal of teaching reasoning to the young, and they occasionally serve a similar didactic function as proverbs; elders may tell younger relatives riddles and stories aimed at educating them on good morals, critical thinking, problem-solving, and resilience. 
+%
+If shared between age-mates or siblings, riddles may simply have entertainment as their function. 
+%
+Traditionally, riddles were most often exchanged in the evening, before longer stories, as an activity before sleeping \citep{jickngam-generic}. 
+
+% The exchange of royal titles as ``currency'' is a central part of the riddling process. 
+If the audience cannot guess the answer to a riddle, the poser of the riddle has the right to earn a royal title from the audience as ``currency'' in exchange for the answer. 
+This may come in the form of a request to be addressed by a title such as \textit{mbæ̀}, which is normally reserved as a polite address for chiefs.
+The riddler may also demand compensation in the form of the names and titles of chiefs or sub-chiefs of chiefdoms in or around Kom, typically with the request \textit{fu fòyn} `give a chief'; the riddler may reject offers 
+deemed not prominent enough for the answer to the riddle. 
+Conversely, if a riddle is guessed by a member of the audience, the winner may demand a royal title from the riddler. 
+
+The Kom verbal arts encompass far more than the short utterances typical of \textit{ngàynsɨ} and \textit{mɨtɨtɨ̂}: 
+\citet{jickngam-generic} make mention of folk tales and explanatory historical texts as two important long-format genres which we do not consider here. 
+Musical verbal art forms such as songs are also not considered here due to the very different nature of the task and the interference of the musical accompaniment in addressing linguistic questions. 
+We do not deny the validity of these genres as topics of study, but rather focus on spoken proverbs and riddles as more suitable for the construction of corpora for research into phonetics and phonology. 
+
+Kom \textit{ngàynsɨ} and \textit{mɨtɨtɨ̂} demonstrate two key affordances for linguists and community members: they are repositories of cultural information \textit{and} sources of compact, easily parsed linguistic material. 
+Proverbs and riddles compare well in some respects to the materials used in read-speech corpora: they are recalled in a fairly consistent form across speakers, and may already have a written form, although speakers typically do not need to read a proverb or riddle to recall it. 
+They differ from typical read-speech corpus materials in other respects. They are in an elevated register and formal in tone: because of their didactic function and association with the wisdom of elders, younger speakers may also produce proverbs in a less natural way than would be desirable. 
+By contrast, read-speech corpora are typically designed to be neutral in content.
+Because true neutrality is actually quite difficult to achieve in corpus materials, however \citep{tripp2021written}, we view this as a concern which is not particular to verbal arts. 
+%Collections of riddles and sayings may also lack phonetic balance, which is typical of large speech corpora in general. 
+
+\subsection{Cultural significance} 
+
+Language and culture are inextricably linked, and the connection is emphasized by the ``double function'' of the corpus materials as sources of both linguistic and cultural information. 
+We explore the latter here as manifested in some of the proverbs which make up the corpus.
+For instance, the topography and natural physical features that characterize Kom land are reflected in many sayings. The proverbs in (\ref{ex:landscape}) use a shared understanding of the natural environment of Kom, which is characterized by hills, cliffs, rivers, and streams, toward their didactic ends. In (\ref{ex:ngeyngeyn}), the well-known stream Ngeyngeyn, which meanders as it travels downhill, stands in for an aimless person in need of direction; a cliff represents a dangerous situation in (\ref{ex:miwum}); and the streams and dry hills in (\ref{ex:fisinge}) are used to illustrate a request made from a position of abundance to one of deprivation.
+
+\ea \label{ex:landscape}
+\begin{xlist}
+\ex \label{ex:ngeyngeyn}
+\gll  Ngeynɨ̂ ta Ngeyngeyn ngeynɨ Ijɨ̀m.\\
+twist.\textsc{prog} like Ngeyngeyn twist.\textsc{prog} Ijɨm\\
+\glt  `Twisting like Ngeyngeyn twists at Ijɨ̀m.'
+\ex \label{ex:miwum}
+\gll Wù bœ̀ a mɨ̂wùm mɨ̀ bo.\\
+\textsc{3sg.subj} escape \textsc{prep} edge \textsc{assoc} cliff\\
+\glt `He has escaped at the edge of a cliff.'
+\ex \label{ex:fisinge}
+\gll Ànkem a kèyn fvɨ̀ a jvâ na loyn mu sɨ̂ fɨ̀siŋgè fɨ a kfɨyn.\\
+crab \textsc{assoc} this come.out \textsc{prep} river \textsc{prog} beg water \textsc{prep} beetle \textsc{assoc} \textsc{prep} hill\\
+\glt `This crab is coming out of the river, begging water from the beetle on the hill.' 
+\end{xlist}
+\z
+
+\noindent Likewise, in the riddles shown in (\ref{landscape-riddle}), the guesser may be guided to a correct answer by their experience of the land: in (\ref{landscape-riddle-ear}), a small cave or spring on the side of a hill is the ear on the head, and in (\ref{landscape-riddle-eyes}), the eyes are cued by the sensory experience of gazing across a valley. 
+
+\ea \label{landscape-riddle}
+\begin{xlist}
+\ex \label{landscape-riddle-ear}
+\gll  Q: Fɨjela fɨ ibɨ i kfɨyn. A: Atuŋlɨ.\\
+{~} landmark \textsc{assoc} hole \textsc{assoc} hill {~} ear\\
+\glt  Q: `A landmark of a hole on a hill.' A: `An ear.'
+\ex \label{landscape-riddle-eyes}
+\gll Q: Dyèyn n-dyɨfa. A: Isɨ.\\
+{~} distance \textsc{n}.be.far {~} eyes\\
+\glt Q: `The distance is far.' A: `The eyes.'
+\end{xlist}
+\z
+
+The built environment is likewise reflected in proverbs and riddles such as those in (\ref{built-env}). 
+%The context for the proverb in (\ref{latrine}) is only clear once it is understood that in Kom, latrines are dug in the bush or farm, away from the house, such that birds will often intrude in latrine pits, and will flee startled when the pit is used for its intended purpose. 
+The references to the use of shelves below the thatch ceiling to store food in (\ref{ceiling}), the back-and-forth movement of the door latch in (\ref{door-riddle}), and the height of the doorpost in (\ref{doorpost-riddle}) are accessible only with knowledge of how traditional Kom houses are constructed.
+
+% built environment examples
+\ea \label{built-env}
+\begin{xlist}
+%\ex \label{latrine}
+%\gll Wù fvɨ̀ ta nyèlà fvɨ̀ ikfɨ̀l.\\
+%\textsc{3sg.subj} come.out like lark come.out latrine\\
+%\glt He came out like a lark comes out of a latrine.
+\ex \label{ceiling}
+\gll Fɨ lu a ngwo ɨ chem a lumi.\\
+\textsc{3sg.subj} go \textsc{prep} ceiling \textsc{consec} fall \textsc{prep} pot\\
+\glt `A bit has come out of the ceiling and fallen into the pot.' % ???
+\ex \label{door-riddle}
+\gll Q: Afo ki a kɨ chwò ko', kɨ chwò kàlì. A: Ifal i ndo.\\
+{~} thing \textsc{rel} \textsc{3sg.subj} only pass go.up only pass go.down {~} ? \textsc{assoc} house\\
+\glt Q: `The thing that goes up, (and) comes down.' A: `The traditional door.' 
+\ex \label{doorpost-riddle}
+\gll Q: Afo ki a kɨ cho' afol atu nɨ foyn. A: Fɨmbe'sɨ.\\
+{~} thing \textsc{rel} \textsc{3sg.subj} only knock.off cap head \textsc{poss} chief {~} doorpost\\
+\glt Q: `The only thing that knocks the cap from the chief's head.' A: `The doorpost'
+\end{xlist}
+\z
+
+Proverbs and riddles also reveal some Kom values and beliefs (see also \citealt{tosam2014philosophical, njwe2015palm}). 
+%Admonishment is a common function of proverbs, particularly when a listener has not fulfilled their moral duties related to support of family and neighbors.
+The saying in (\ref{lack}) is used to admonish people who, on failing to support a needy person materially, cannot even offer sympathetic words. It is a common practice among the Kom people to offer gifts to people who have suffered misfortune; it is expected that those who lack material things should at least visit with the person. 
+The proverb in (\ref{gourd}) shows the typical view that if you cannot succeed at achieving something, you should not impede those who can.
+
+%The saying in (\ref{takes-keeps}) emphasizes moral uprightness as it advises against stealing. 
+
+% morality and rightness of natural order:
+% ka ngo' ye'tɨ ili - let no stone press on another
+% ka nshue antayn a ngvɨ sɨ adya'
+% wa to' asaŋ a wa læ kfi asaŋ, wa lemi ɨyu' a wa læ cho' ɨyu'. - if you plant corn you'll harvest corn, if you plant yams you'll harvest yams. 
+
+\ea \label{ex:moralRiddle}
+\begin{xlist}
+\ex \label{lack}
+\gll Wà wò afo ɨ̀ wò gɨa.\\
+\textsc{2sg.subj} lack thing \textsc{consec} lack voice\\
+\glt `You lack a thing and also lack a voice.'
+\ex \label{gourd}
+\gll Wà wo àtem ka wa n-fsɨ̀ jva.\\
+\textsc{2sg.subj} lack calabash \textsc{proh} \textsc{2sg.subj} \textsc{n}-foul river\\
+\glt `If you lack a calabash, don’t dirty the stream.'
+%\ex \label{takes-keeps}
+%\gll Awu a nɨ n-lî ta kɨ lem.\\
+%hand \textsc{3sg.subj} \textsc{prog} \textsc{n} take like only keep\\
+%\glt `The hand takes as it keeps.'
+\end{xlist}
+\z
+
+The Kom proverbium also reveals the typical belief in magic spells, divine justice, supernatural medicine, and the self-righting nature of society and the world. 
+The saying in (\ref{empty-belly}) echoes the belief in magic spells invoked to punish wrongdoers with illness; an innocent person who has not profited from wrong actions (the ``empty belly'') is unaffected by such magic. 
+The saying in (\ref{pox}) echoes the Kom belief in retribution: if you taunt someone because of a condition they suffer from, you are sure to be struck by something worse. 
+The belief in powers held by diviners or oracles is seen in the saying in (\ref{fortuneteller}), which acknowledges the power of a fortuneteller to direct actions towards health and prosperity. 
+
+\ea \label{ex:moral}
+\begin{xlist}
+\ex \label{empty-belly}
+\gll Chɨ̀sɨ nɨ n-ku wi ɨlvâ ɨ yûm.\\
+spells \textsc{prog} \textsc{n}-catch \textsc{neg} belly \textsc{assoc} empty\\
+\glt `Spells don't catch an empty belly.' 
+\ex \label{pox}
+\gll Wà chye’ àdzi wa li àntàŋ.\\
+\textsc{2sg.subj} laugh sore \textsc{2sg.subj} take smallpox\\
+\glt `If you laugh at scabies, (may) you take smallpox.'
+\ex \label{fortuneteller}
+\gll À n-bì ndo ndà wu fi se’ ifɨeŋ i fɨnya' a?\\
+\textsc{impers} \textsc{n}-be.fortunate house who \textsc{3sg.subj} do.again set.out.for divining \textsc{assoc} god \textsc{q}\\
+\glt
+`Whose house was fortunate and he went out again to consult a diviner?'
+\end{xlist}
+\z
+
+% \subsection{Double suitability of proverbs and riddles}
+
+% Kom \textit{ngàynsɨ} and \textit{mɨtɨtɨ̂} demonstrate two key affordances for linguists and community members: they are repositories of cultural information \textit{and} sources of compact, easily parsed linguistic material. 
+% Proverbs and riddles compare well in some respects to the materials used in read-speech corpora. 
+% Sayings are not spontaneous: they are recalled in a fairly consistent format across speakers. 
+% Though they may be written in published source material, speakers typically do not need to \textit{read} a proverb or riddle to recall it, and verbal prompting from another speaker is often sufficient. 
+%
+% They differ from typical read-speech materials in other respects: they are in an elevated register and formal in tone. 
+%
+% Because of their didactic function and association with the wisdom of elders, younger speakers may also produce proverbs in a less natural way than would be desirable. 
+% By contrast, read-speech corpora are typically designed to be neutral in content.
+% Because true neutrality is actually quite difficult to achieve in corpus materials, however \citep{tripp2021written}, we view this as a concern which is not particular to verbal arts. 
+%Collections of riddles and sayings may also lack phonetic balance, which is typical of large speech corpora in general. 
+
+%There are several clear advantages to using proverbs and riddles to construct a corpus in a low-resource setting such as the one which applies to Kom, and to many low-resource African languages more generally.  
+% Because these sayings are finely attuned to their speakers' human and natural environment, speakers tend to engage better with the process, making data collection easier; cultural appropriateness is basically ensured. 
+%Often, transcriptions are already available, considerably speeding the process of parsing the recited material. 
+%Furthermore, the project can play double duty as a rich record of cultural information, and as such is more likely to be aligned with community priorities in language documentation. 
+% Use of proverbs for corpus construction may thus be uniquely well-adapted for the African context. 
+% Having established this potential double function of proverbs and riddles in Kom, we move to the construction of our corpus. 
+
+
+\section{Corpus creation} \label{corpus-construction}
+
+\subsection{Data collection}
+
+Recruitment of speakers was carried out in consultation with the local chapter of KOMCUDA (Kom Cultural and Development Organization) in Douala. 
+Knowledgeable speakers were selected from KOMCUDA membership and invited to contact the investigators if they wished to participate in recording. 
+No speakers nominated in this way had self-reported speech or hearing disorders, and all reported being frequent users of Kom in their daily lives.\footnote{Although located very distantly from the Kom homelands, participants in community meetings such as KOMCUDA are active and regular users of Kom in the home and in numerous interactions outside the home, including the KOMCUDA meetings themselves; speakers thus easily maintain high fluency in the language.} 
+
+Speakers were recorded in the same quiet room in a suburb of Douala, typically in pairs but sometimes alone, with Shure SM10A head-mounted cardioid condenser microphones for each speaker. Audio was recorded onto a Zoom H4N portable solid-state recorder, using separate channels to record pairs of speakers.
+The room was not sound-treated, but due to the microphones used, very little reverberation and background noise can be perceived in the recordings, and the signal-to-noise ratio of recordings is consistently high.
+
+Proverbs were generally elicited from one of two published sources. The vast majority, in excess of 100, were elicited using a compendium of proverbs published by SIL Cameroon \citep{loh-timlini-i}. 
+Several more pertaining to cultural practices of the chief and traditional council were elicited from \citet{loah-wisdom}. 
+Although the source materials were written, only two participants were literate in Kom, and as such the proverbs were prompted verbally in Kom or English translation by the first author from the written materials. 
+Speakers then produced them in the specific formulation they were familiar with, which often differed from the source materials and from other speakers' formulations. 
+Speakers often spontaneously volunteered conceptually related proverbs, all of which were included in the corpus; many of these are attested in writing for the first time in our corpus, though some can be found in other published work on Kom proverbs \citep{njwe2015palm, jickngam-generic, tosam2014philosophical, chenwiorature}. 
+% Speakers occasionally volunteered literal, normative descriptions of Kom society, which were included as speech material but which we do not consider to constitute proverbs. 
+Riddles were elicited entirely from speaker memory, since no published work on Kom riddles exists except for the notes in \citet{jickngam-generic}. 
+
+After being prompted to produce a saying, speakers were asked to repeat the utterance five times to increase the overall amount of material. This is fairly standard practice in fieldwork situations in which phonetic material is collected \citep{ladefoged2003phonetic}. 
+Occasionally, repetition yielded variations in the utterance's form; further variation emerged for proverbs spontaneously volunteered by multiple speakers, who often recalled relatively verbose or shortened versions of the same saying, shown in (\ref{length}) below for one very commonly volunteered proverb. 
+We included all such variants in the corpus under the shared lemma of the longest version of the proverb; including the shorter variants provides data on conventionalization of fixed phrases in the language which otherwise tends not to be reflected in formalized collections of proverbs.
+Occasionally, multiple answers to riddles were provided, which were all recorded for similar reasons. 
+
+\ea \label{length}
+\begin{xlist}
+
+\ex 
+\gll Tɨm avɨ, kfɨ kɨ iti.\\
+shoot foot die only stone \\
+
+\ex
+\gll Wa tɨm avɨ, a kfɨ kɨ iti.\\
+\textsc{2sg.subj} shoot foot \textsc{res} die only stone \\
+
+\ex 
+\gll Wa tɨm avɨ a kɨa, a kfɨ kɨ iti.\\
+\textsc{2sg.subj} shoot foot \textsc{assoc} \textsc{2sg.poss} \textsc{res} die only stone \\
+
+\ex
+\gll Wa tɨm avɨ a kɨa a ngo', a kfɨ kɨ iti.\\
+\textsc{2sg.subj} shoot foot \textsc{assoc} \textsc{2sg.poss} \textsc{prep} rock \textsc{res} die only stone \\
+\glt `If you stub your foot on a rock, may only the stone break.'  
+\end{xlist}
+\z 
+
+\subsection{Corpus characteristics}
+\largerpage
+The corpus contains contributions from 17 speakers (7F, 10M) producing roughly 133 minutes (2.23 hours) of labeled Kom speech. 
+A total of 30,269 word tokens were produced across all speakers, representing 772 unique word types. 
+These were produced in 4,305 utterances (i.e. continuous spans of diarized speech). 
+A total of 146 proverbs and 14 riddles were elicited, with 39 proverbs and all riddles volunteered by speakers from memory and the remainder drawn from published sources \citep{loh-timlini-i,loah-wisdom}. Some speakers contributed more utterances than others, and some speakers uttered a wider variety of sayings than others. 
+The resulting corpus contains 81,917 phone instances covering the entire phonemic inventory of the language in various prosodic positions, though certain phonemes are markedly more or less frequent than the average.
+This appears to be mediated by word frequency; for instance, the front vowels /e ɛ y \o{}/ and the ``fricative vowel'' /z̩/ occurred four times less frequently than the most common vowels, /a u/, apparently driven by the frequent appearance of the latter set in high-frequency function words, e.g. \textit{w\`a} `\textsc{2sg.subj}'; \textit{a} `in, at'; \textit{w\`ul} `person, someone'; \textit{bu} `\textsc{neg.perf}'.\footnote{Archaic expressions which might be expected in proverbs did not appear to drive any especially high word or phone frequencies. However, a fuller comparison to a spontaneous or conversational speech data set (which does not yet exist) would be necessary to confirm the presence or absence of such an effect.}
+
+The Kom corpus falls within the lower end of the range of speakers, word tokens, and duration of speech material attested in existing annotated audio corpora of African languages \citep[e.g.][]{van-niekerk-etal-2017, bamba2021, gauthier-etal-2016-collecting, Schlippe2012HausaLV, Nimaan2014BuildingAE, gutkin2020developing}. 
+The specific corpora cited here were collected as training data by practitioners of natural language processing (NLP) and vary widely in their particulars; 
+speaker counts range from a minimum of five to a maximum of 102,  the number of utterances ranges from 1,300 to more than 20,000, and duration of target language speech ranges from 80 minutes to 24 hours.  
+The Kom corpus is also somewhat smaller, in terms of word tokens, than typical linguist-produced text corpora of African languages \citep[e.g.][]{prinsloo, deschryver}. 
+ However, the number of speakers and amount of material clearly exceed an acceptable minimum for research applications in both linguistics and NLP: it contains more material and speakers than several of the NLP-related corpora \citep{van-niekerk-etal-2017}, and more material compared to some read-speech corpora traditionally used in phonetics, such as the original TIMIT corpus \citep{zue1990speech, garofolo1993darpa}.
+
+\subsection{Processing and semi-automatic annotation} \label{processing}
+
+Transcripts of recorded material were written and diarized in Praat TextGrids \citep{praat2023} with the help of the third and fourth authors, working from the published text for each utterance and referring to the first author's field notes when no published version existed. 
+Modifications to written forms in published sources were often necessary to reflect the actual utterances produced, since speakers typically recalled a very similar proverb but varied in the precise way it was recited. 
+For instance, tense-aspect or person reference often differed from the published version, 
+mainly through presence or absence of verbal prenasalization \textit{n-}\footnote{This verbal prefix is analyzed in \citet{shultz1997kom} as a progressive aspect marker. In our own corpus, it is not always clear that preverbal \textit{n-} should receive this reading, though it is clear that its presence or absence affects tense-aspect semantics.} and use of second-person subject 
+\textit{w\`a} versus impersonal \textit{ghɨ}. Presence or absence of sub-constituents of complex phrases, including occasional \textit{pro} drop, also exhibited inter-speaker and inter-token variability.  
+An example of a time-aligned transcript for a pair of speakers is shown in \figref{fig:transcript}. 
+
+\begin{figure}[th]
+    \includegraphics[width=\textwidth]{figures/Faytakmboysi-annotation.pdf}
+    \caption{A sample diarized transcript of the proverb \textit{Mboysɨ ɨlva nɨ n-go' gɨa} `Peace in the belly is only a voice' as uttered by two speakers in a dyadic recording.}
+    \label{fig:transcript}
+\end{figure}
+
+\begin{figure}[th]
+    \includegraphics[width=\textwidth]{figures/Faytakmboysi.pdf}
+    \caption{A sample word-level alignment (first and third tiers counting from the top) and phone-level alignment (second and fourth tiers counting from the top) for the recording shown in Figure \ref{fig:transcript}.}
+    \label{fig:alignment}
+\end{figure}
+
+\begin{figure}[th]
+\centering
+\texttt{
+\begin{tabular}{l l}
+n-cha'	& nch a '\\
+fɨnchɨa	& f ɨ0 nch gh a\\
+iŋwa'i	& i0 ŋ w a ' i0\\
+kɨjem	& k ɨ0 j e m\\
+mɨchi	& m ɨ0 ch i\\
+abɨl	& a0 b ɨ l\\
+akɨa	& a0 k gh a\\
+kia	& k i ae\\
+nyamsɨ	& ny a m s ɨ0\\
+ghayn	& gh ay n\\
+n-ko'	& nk o '\\
+ɨyi	& ɨ0 y i\\
+ngaŋ	& ng a ŋ\\
+asɨ	& a0 s ɨ\\
+iyvɨ	& i0 y vɨ\\
+\end{tabular}
+}
+    \caption{A sample of the Kom pronunciation dictionary used for forced alignment. Orthographic forms used for transcription at left; phones to be aligned at right.}
+    \label{fig:dictionary}
+\end{figure}
+
+Orthographic forms were standardized to eliminate ambiguities, mainly relating to whether \textit{y} represented the semivowels [ɨ̯] or [i̯]. These standardized transcripts were used to produce word- and phone-level alignments to the audio using the Montreal Forced Aligner v3.0.0 \citep{mcauliffe2017montreal}. 
+Forced alignment aligns an expected string of words and segmental phones to an audio signal, providing the landmarks necessary for large-scale automatic analysis. A sample word- and phone-level alignment on the present data is shown in \figref{fig:alignment}. 
+The process of forced alignment requires a pronunciation dictionary that maps between the orthographic form and the string of phones to be aligned to that word's portion of the sound file. 
+An example of the pronunciation dictionary for this corpus is given in \figref{fig:dictionary} below. 
+Because lexical tone is not fully marked in the official orthography \citep[see][]{bernard2002does}, it is omitted from the pronunciation dictionary. This omission is not expected to have a substantial negative effect on the quality of segmental alignment \citep{yuan2014automatic}, but it precludes research on tone using the corpus, which is an acknowledged shortcoming of the present materials. 
+We stress that future versions of the corpus annotations will include a full tonal representation for the segments to be aligned. 
+Other suprasegmentals \textit{are} included in the pronunciation dictionary: stem prominence was marked by adding a `\texttt{0}' to vowel phones occurring outside of stems (see \sectref{prominence} for an at-length discussion). 
+
+\section{Case studies} \label{corpus-usage}
+
+In this section, we provide a phonetics case study (\sectref{prominence}) and a phonology case study (\sectref{section:nasals}) which may be carried out on this corpus in spite of its relatively small size and lack of selection for phonetic balance. 
+Probabilistic information about frequencies and distributions of words and phones can also be collected through sufficiently large corpora of connected speech, such as the present corpus.  
+We do not present frequency and distributional data from the Kom corpus here for reasons of topicality and space, rather than a lack of feasibility: 
+more typical African language corpora may reach the hundreds of thousands or millions of tokens, particularly if they are purely text-based (e.g \cite{prinsloo, deschryver}), but African language corpora \textit{smaller} than the Kom corpus (e.g. \cite{bostoen-kikongo}) have also been shown to be effective sources of comparable data. 
+
+\subsection{Stem-based prominence and the vowel space} \label{prominence}
+
+In Grassfields Bantu, prosodic prominence often does not manifest in the same way as a cross-linguistically typical stress system \citep{franich2021metrical}. 
+Elsewhere in the world's languages, prominence is often associated with hyperarticulation, or more extreme vowel articulations \citep{lindblom1990explaining, dejong1995supraglottal}; sonority expansion, in which vowels are produced lower to increase the radiated sound energy \citep{dejong1993interplay, cho2005prosodic, mo2009prosodic}; or some mixture of both. 
+Stem-based prominence in Grassfields Bantu generally, and the Ring family to which Kom belongs specifically, is known to result in an asymmetry in contrast distribution \textit{without} obvious hyperarticulation or sonority expansion: the stem-initial syllable bears the most segmental and tonal contrasts \citep{hyman2019niger, franich2021metrical, faytak2021kejom}. 
+
+This same pattern holds in Kom \citep{shultz-1993, shultz1997kom, faytak2017sonority, hyman-augment}. 
+% The distribution of consonants, vowels, and tones in Kom is affected by prominence in the same way that \citet{franich2021metrical} observes for Med\textipa{0}mb\textipa{A}: the stem-initial syllable hosts the most consonantal and vocalic contrasts \citep{}. 
+Looking specifically at vowels, Kom's vowel inventory consists of eleven monophthongs per an update to earlier analysis in \citet{shultz1997kom}:\footnote{The analysis in \citet{shultz1997kom} and earlier in \citet{shultz-1993} derives the vowels /y \o{} ɛ/ through coalescence of VV sequences, and incorrectly treats the fricative vowels /z̩ v̩/ as CV sequences.}
+the qualities /i y e \o{} ɛ a o u ɨ/, joined by two ``fricative vowels'' typically transcribed as /z̩ v̩/ \citep{faytak2017sonority}, may occur in the first stem syllable. 
+In closed syllables, /e/ is realized as [ə]; otherwise it is realized as [e].
+Outside of the initial stem syllable, only /i ɨ a/ occur. 
+Based on the impression of the authors, the \textit{prominent} vowels /i ɨ a/ which occur in stem-initial syllables are produced differently from those \textit{non-prominent} vowels produced elsewhere. 
+To facilitate comparison with other Grassfields Bantu languages such as Medʉmbɑ, we use the assembled corpus materials to investigate whether prominence in Kom conditions hyperarticulation, sonority expansion, or neither.
+
+\begin{figure}[th]
+        \includegraphics[width=.85\textwidth]{figures/Faytakf1f2.png}
+        %\includegraphics[width=.75\textwidth]{f2f3}       
+    \caption{F1, F2, and F3 frequencies of the Kom vowels. Data more than one standard deviation from vowel-speaker means is removed; dotted ellipses include 75\% of remaining data, and solid ellipses include 50\%.}
+    \label{fig:vowelspace}
+\end{figure}
+
+\begin{figure}[th]
+        \includegraphics[width=.85\textwidth]{figures/Faytakexp.png}    
+    \caption{F1, F2, and F3 frequencies for the Kom vowels which occur in both prominent and non-prominent positions. Non-prominent position is indicated with `0'.}
+    \label{fig:exp-plot}
+\end{figure}
+
+To assess vowel quality using the acoustic data available, the frequencies of the first, second, and third formants (F1, F2, and F3) were extracted from all aligned phones in the corpus using Parselmouth \citep{jadoul}. Prominence, coded by the addition of a `\texttt{0}' to non-prominent vowels (located outside of the first stem syllable), was also extracted. 
+Each formant was $z$-score normalized by speaker.
+The resulting F1-F2-F3 space for Kom is shown in Figures \ref{fig:vowelspace} and \ref{fig:exp-plot}. 
+Not all vowels are displayed here: it was not possible to reliably extract formant frequencies from the fricative vowels /z̩, v̩/ due to fricative noise frequently obscuring the formants.
+An apparent effect of prominence is clearly visible in Figure \ref{fig:exp-plot}: small differences in the typical F1 and F2 of each vowel which occurs in prominent and non-prominent environments can be seen. 
+Based on inspection of the data in Figure \ref{fig:exp-plot}, only F1 and F2 are considered for the quantitative analysis: F3 does not appear to contribute substantially to the stress difference.
+
+\largerpage
+To quantitatively assess this apparent effect of stem prominence, linear mixed-effects regressions were carried out in R using \textit{lme4}; $p$-values were calculated using the \textit{lmerTest} library \citep{lme4, lmerTest}. Models assessed formant frequency with respect to fixed effects of vowel, prominence, and their interaction, with random intercepts for speaker and word.\footnote{Using the \textit{lme4} syntax: \texttt{formant $\sim$ vowel * prominence + (1|speaker) + (1|word)}.}
+In both the models run for F1 and F2, non-prominent /a/ is taken as baseline. 
+% To further assess the differences conditioned by prominence, post-hoc planned comparisons were carried out using \textit{emmeans} \citep{emmeans}. 
+
+The models indicate that prominence mediates the formant frequencies of all vowels examined here. The main effects of vowel type are highly significant in both the F1 and F2 models (all $p<$ 0.001). This is unsurprising, given the large differences in formant frequencies expected among /i ɨ a/. The main effect of prominence reaches significance in the F1 model ($\beta$ = 0.122, $p<$ 0.001), indicating that regardless of vowel type, stress has an effect on F1 frequency, and specifically that prominence increases F1 for the baseline vowel /a/. The interactions of stress and vowel identity reveal the specific effect of stress for the other vowels: for /i/, the interaction is strongly negative relative to baseline ($\beta$ = -0.288, $p<$ 0.001), as is the interaction for /ɨ/ ($\beta$ =-0.442, $p<$ 0.001). That is, prominence \textit{decreases} F1 for the high vowels, the opposite of its effect on /a/. The main effect of prominence also reaches significance in the F2 model ($\beta$ = 0.138, $p<$ 0.001), indicating that prominence slightly increases F2 for all vowels and the baseline in particular. The interactions of vowel type and prominence on F2 all reach significance. The interaction for /i/ is negative and almost the same magnitude as the main effect ($\beta$ = -0.122, $p<$ 0.001), indicating little difference for this category specifically. The interaction for /ɨ/ is strongly positive ($\beta$ = 0.239, $p<$ 0.001), indicating that prominence increases F2 more than baseline.
+
+To further assess the differences conditioned by prominence, post-hoc comparisons of estimated marginal means were carried out using \textit{emmeans} \citep{emmeans}, in order to compare the formant frequencies for prominent and non-prominent vowels of each quality. 
+The comparisons, summarized in \tabref{tab:posthoc}, confirm that prominence significantly affects the formant frequencies of all three vowels considered. The sole exception is that prominence has no significant effect on the F2 of /i/. 
+
+\begin{table}
+    \begin{tabular}{l l l}
+    \lsptoprule
+    F1 comparison & estimate & $p$\\
+    \midrule
+        \texttt{a}-\texttt{a0} & 0.122 & $<$ 0.001 \\
+        \texttt{ɨ}-\texttt{ɨ0} & -0.320  & $<$ 0.001 \\
+        \texttt{i}-\texttt{i0} & -0.166 & $<$ 0.001 \\
+    \midrule
+        F2 comparison & estimate & $p$\\
+    \midrule
+        \texttt{a}$-$\texttt{a0} & 0.138 & $<$ 0.001 \\
+        \texttt{ɨ}$-$\texttt{ɨ0} & 0.377 & $<$ 0.001 \\
+        \texttt{i}$-$\texttt{i0} & 0.016 & 0.920 \\
+    \lspbottomrule
+    \end{tabular}
+    \caption{Planned comparisons of estimated marginal means for /i a ɨ/ under prominent and non-prominent conditions.}
+    \label{tab:posthoc}
+\end{table}
+
+To sum up, unlike some other Grassfields Bantu languages such as Medʉmbɑ \citep{franich2021metrical}, positional prominence in Kom does have an effect on vowel quality, rather than merely restricting the inventory outside of prominent syllables. 
+This effect is best characterized as hyperarticulation rather than sonority expansion, given the relative centralization of non-prominent vowels. 
+This observation provides a starting point for further research on prosodic modulation of vowel quality in Grassfields Bantu, with other factors known to be implicated in hyperarticulation such as duration, intensity, and fundamental frequency left for future research. 
+
+
+\subsection{Monophthongization of /Vn/} \label{section:nasals}
+
+We next explore the usefulness of the corpus for assessing variable phonological processes which may otherwise only be approached less naturally through elicitation. 
+In Kom, coda /n/ before pause and consonants (/Vn\#/, /Vn\#C/) co-occurs with diphthongal vowels; the diphthongs which may occur are realized as [ɨi̯n əi̯n ai̯n oi̯n ui̯n]. (Recall that in closed syllables generally, /e/ is realized as [ə].)
+\citet{njuasi2022monophthongization} observes that these diphthongs are realized instead as monophthongs (i.e. [ɨn\*V ən\*V an\*V on\*V un\*V]) when the segment following the /n/ is a vowel (i.e., /Vn\#V/). The pattern is summarized in (\ref{ex:nasalexamples}).
+\footnote{The underlying sequences at issue have been treated in a variety of ways: as underlying diphthongs /ɨi̯n əi̯n ai̯n oi̯n ui̯n/ \citep{njuasi2022monophthongization} and as vowels followed by palatal nasal codas /ɨɲ eɲ aɲ oɲ uɲ/ \citep{shultz-1993,shultz1997kom}. We assume here a more straightforward representation of /ɨn en an on un/, based on evidence from the alternations themselves (ruling out the option with coda /ɲ/) 
+and because the diphthongs are best viewed as conditioned variants of monophthongs, which occur in a more diverse set of environments than diphthongs.}  
+
+% get more examples from your notes on remarkable
+%\ea \label{ex:nasalexamples1}
+%\begin{xlist}
+%\ex 
+%\gll ngàyn \\
+%proverb\\
+%\glt `proverb'
+%\ex 
+%\gll ngàyn kom \\
+%proverb Kom \\
+%\glt `Kom proverb'
+%\ex 
+%\gll ngàn atum \\
+%proverb foreign.place \\
+%\glt `foreign proverb'
+%\ex 
+%\gll ngàn ìdyèyn \\
+%proverb Noni\\
+%\glt `Noni saying'
+%\end{xlist}
+%\z
+
+\ea \label{ex:nasalexamples}
+\begin{xlist}
+\ex 
+\gll fòyn \\
+chief\\
+\glt `chief'
+\ex 
+\gll fòyn kom \\
+chief Kom\\
+\glt `chief of Kom'
+\ex 
+\gll fòn atum \\
+chief foreign.place \\
+\glt `foreign chief'
+\ex 
+\gll fòn ìdyèyn \\
+chief Noni \\
+\glt `chief of Noni'
+\end{xlist}
+\z
+
+%\ea \label{ex:nasalexamples3}
+%\begin{xlist}
+%\ex 
+%\glt gveyn 
+%`farm'
+%\ex gveyn kom 
+%`Kom farm'
+%\ex gven atum 
+%`foreign farm'
+%\ex gven ìdyèyn 
+%`Noni farm'
+%\end{xlist}
+%\z
+
+The reappearance of the underlying monophthongs in the pre-vowel context may relate most straightforwardly to syllabification of the /n/ if the process is treated as operating within-syllable: when a vowel follows, syllabification as /V.nV/ occurs, depriving the vowel of the trigger for diphthongization. 
+As a categorical phonological process sensitive to upcoming content, monophthongization in Kom bears some resemblance to other phonological processes such as French liaison \citep{kilbourn2016speech} and North American English flapping \citep{kilbourn2021variable}. 
+Both of these processes, however, are variable in their application, due to variation inherent to planning speech in real time \citep{eddington2008phonetic, smolensky2020learning, kilbourn2021variable}. 
+It remains to be seen whether the behavior in Kom is totally categorical, or also varies in a similar way. 
+As such, to make a first step toward better understanding of the process, we examine whether speakers actually categorically engage in monophthongization in the /Vn\#V/ sequence. 
+
+A largely automatic analysis of the corpus data was carried out as follows: all /Vn\#V/ sequences were extracted from the corpus, a total of 417 tokens. 
+The forced aligner which produced word- and phone-level alignments (see \sectref{processing}) was given the choice of aligning either a diphthong [Vi̯n] or a monophthong [Vn] to any /Vn/ sequence. 
+The interval corresponding to the /VnV/ sequences was automatically checked for the presence of an aligned phone [i̯] and the outcome recorded.\footnote{Future work on this topic will involve a more labor-intensive manual determination of whether the outcome is a monophthong or a diphthong.}
+
+\begin{figure}[th]
+    \includegraphics[width=.85\textwidth]{figures/Faytaknasals.png}
+    \caption{Incidence of [Vi̯n] versus [Vn] pronunciations of /Vn/ in /Vn\#V/ sequences in the corpus.}
+    \label{fig:nasals}
+\end{figure}
+
+Count results for each outcome are shown in \figref{fig:nasals}. 
+Counter to initial expectations from the description in \citet{njuasi2022monophthongization}, the output is not entirely categorical; both expected [Vn] and unexpected [Vi̯n] pronunciations are observed in the [Vn\#V] environment. 
+Variation in this phonological outcome, paralleling the cases from French and English above, suggests the need to investigate the role of factors such as lexical frequency, frequency of particular sequences of words, and prosody (such as the intrusion of pauses or phrase boundaries, which the aligner may not have recorded) in determining a probabilistic outcome.
+
+
+\section{Discussion} \label{discussion}
+
+This article has aimed to present a proof of concept for the collection and annotation of proverbs and other verbal arts as an efficient means of investigating the sound structure of African languages, with benefits accruing to both the community and the analyst. 
+Proverbs act as a repository of cultural information and hold deeper relevance to community interests than neutral corpus materials might; because they are short and consistent in content, they are also easily transcribed and parsed, facilitating annotation and processing of the data at a large scale. 
+The case studies demonstrate that one field season's worth of materials is sufficient to carry out quantitative and qualitative studies of sound structure.  
+It is hoped that the article can provide a model for interested researchers, which may support the creation of resources suitable for phonetic, phonological, and NLP work for a wider variety of languages, particularly smaller and less-documented African languages. 
+
+Future plans for the corpus include the addition of tone annotation, which presents a non-trivial challenge given the complexity of Kom's tonal phonology \citep{jones-tone, hyman-augment} and its systematic undermarking in the official orthography \citep{bernard2002does}. 
+Given the need to annotate tone, annotation of materials at a scale sufficient for technological development likely hinges on the contributions of experts in the Kom community who are literate in the official orthography. 
+Collection of spontaneous speech materials, though subject to the ``transcription bottleneck'' \citep{seifart2018language}, are also planned in order to complement the corpus' controlled speech and allow for analysis of different speech production styles. 
+
+%\section*{Abbreviations}
+%
+%Abbreviations should be included in this section. 
+
+\section*{Acknowledgements}
+
+We extend our thanks to the Douala meeting of KOMCUDA, especially then-acting president Acho Primus; the fon's representative in Douala, Ntumfoin Nsom Samuel Kfutua; and members of the Key Pluridisciplinary Advances in African Multilingualism - Cameroon project (KPAAM-CAM) for their logistical support: Achuo Christopher Ikom, Jeff Good, and Pierpaolo Di Carlo. Finally, thanks go to those Kom experts who shared their knowledge with us to build the corpus. 
+
+\sloppy %this command eliminates a quirk that appears in the bibliography, you can just leave it here.
+
+\printbibliography[heading=subbibliography,notkeyword=this]
+
+\end{document}

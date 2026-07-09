@@ -1,0 +1,1430 @@
+\documentclass[output=paper,colorlinks,citecolor=brown
+% ,hidelinks
+% showindex
+]{langscibook}
+\ChapterDOI{10.5281/zenodo.20285218}
+
+%This is where you put the authors and their affiliations
+%\author{Katherine Johnson\affiliation{Stanford University} \lastand Michael Diercks\affiliation{Pomona College}}
+
+\author{Katherine Johnson{}\affiliation{Stanford University} and Michael Diercks{}\affiliation{Pomona College}}
+%\author{Authors removed for review}
+
+%Insert your title here
+\title[Interpretive properties of perception verbs in Tiriki]{Interpretive properties of perception verbs in Tiriki: Hyperraising and copy-raising}
+\abstract{Tiriki allows hyperraising constructions, similar to many other Bantu languages \citep{CarstensDiercks:2013:Hyper-Raising,Halpert2019RaisingUnphased}. In this paper, we document a range of nuanced interpretive properties that arise in parallel constructions in Tiriki hyperraising and copy-raising contexts. We show that there are connectivity effects in apparent copy-raising constructions, while those same constructions nonetheless behave as if the matrix predicate assigns a thematic role to the matrix subject. Assignment of a matrix thematic role to a subject is traditionally thought to be in complementary distribution with movement from the embedded clause. Instead, we suggest that all perception verbs assign thematic roles to their subjects, even when those subjects move from an embedded position where they were already assigned a first thematic role.  
+}
+
+
+\IfFileExists{../localcommands.tex}{
+   \addbibresource{../localbibliography.bib}
+   \input{../localpackages}
+   \input{../localcommands}
+   \input{../localhyphenation}
+   \boolfalse{bookcompile}
+   \togglepaper[29]%%chapternumber
+}{}
+
+\begin{document}
+\maketitle
+
+% \section{Overall edit comments}
+
+% \begin{itemize}
+
+% \item frame it not as an analysis, but about the information structure and thematic effects in copy-raising predicates 
+
+% \item Interpretive nuances of perception predicates 
+
+% \item Tiriki perception verb constructions show a host of subconstructions. Agreeing vs non-agreeing raising, different kinds of predicates that allow agreeing vs. non-agreeing raising, and the question of movement vs non-movement, which is not present in traditional (English) raising but bc hyperraising has finite embedded clauses so it's not obvious why you move ever at all out of embedded clause. The intricate array of facts shows promise to elucidating our understanding of hyperraising more generally, but before it can do that we need to understand the empirical situation more thoroughly. This paper marks significant progress towards understanding the empirical subtleties of Tiriki/Luyia raising constructions, which is a step towards a more precise, accurate and explanatory analysis of perception verb constructions (hyperraising and copy-raising).
+
+% \item 
+
+% \end{itemize}
+
+\section{Introduction} \label{sec:johnson:intro}
+
+\subsection{A copy-raising puzzle} \label{sec:johnson:puzzle}
+
+Perception verbs have long played a central role in syntactic theory. Most attention has been on so-called subject-to-subject raising constructions, but there is a growing focus on a variety of related constructions such as hyperraising and copy-raising. English allows raising and copy-raising constructions. In raising constructions, the subject appears to be shared between the main and embedded clauses (e.g., \REF{ex:johnson:TrueRaising}). There also tends to be coreference between subjects in copy-raising constructions with finite embedded clauses such as \REF{ex:johnson:EnglishCopyRaising2}, but in these constructions there is also a pronoun in the embedded clause.
+
+\ea \label{ex:johnson:EnglishCopyRaisingContrast}
+\begin{xlist}
+
+\ex Tania seems \sout{Tania} to be sick.\label{ex:johnson:TrueRaising} \hfill {Raising}
+\ex Tania seems like she is sick. \label{ex:johnson:EnglishCopyRaising2} \hfill {Copy-raising}
+
+\end{xlist}
+\z 
+
+
+On canonical analyses of raising constructions, the subject moves from the embedded clause to a position in the main clause \citep{DaviesDubinsky2008RaisingControl,Polinsky2013RaisingControlOverview}. Raising is allowed from non-finite clauses, as \REF{ex:johnson:EnglishGoodRaising} illustrates: the subject is generated inside the embedded clause \REF{ex:johnson:EnglishGoodRaisingBase} and then raises to the matrix clause \REF{ex:johnson:EnglishGoodRaisingSurface}.
+
+\ea \label{ex:johnson:EnglishGoodRaising}
+
+{{Raising allowed from non-finite clause}}
+
+\begin{xlist}
+
+\ex\label{ex:johnson:EnglishGoodRaisingBase}
+\gap{} seems [\textsubscript{TP} \sout{Tania} to be happy ] .
+
+
+\ex\label{ex:johnson:EnglishGoodRaisingSurface}
+Tania seems [\textsubscript{TP} \sout{Tania} to be happy ] .
+
+\end{xlist}
+\z 
+
+
+\noindent A central part of the canonical analysis of \REF{ex:johnson:EnglishGoodRaisingSurface} is that raising predicates do not assign a thematic role to an external argument; they are unaccusative predicates with an internal argument (the embedded proposition) but no external argument. This analysis ensures that these derivations abide by the Theta Criterion, wherein arguments must be assigned exactly one thematic role and no more \citep{chomsky1993lectures}. 
+
+In contrast, \REF{ex:johnson:EnglishBadHr} illustrates that raising from a finite clause (i.e., hyperraising) is not allowed in English.\footnote{See \citet{Greeson2023EnglishHr} for claims that certain hyperraising constructions are in fact acceptable in English. We briefly discuss this proposal in \S\ref{sec:johnson:DraftAnalysis}.} In \REF{ex:johnson:EnglishBadHrA}, the subject remains in the finite embedded clause and is acceptable. In these constructions, the canonical analysis is that a non-thematic subject (expletive \textit{it}) appears in the matrix clause. But when the subject is moved out of the finite embedded clause, as in \REF{ex:johnson:EnglishBadHrB}, the result is unacceptable.
+
+\ea \label{ex:johnson:EnglishBadHr}
+
+{{Raising not allowed from finite clause}}
+
+\begin{xlist}
+
+\ex \label{ex:johnson:EnglishBadHrA}
+
+It seems [\textsubscript{CP} that Tania is happy ] .
+
+\ex \label{ex:johnson:EnglishBadHrB}
+*Tania seems [\textsubscript{CP} (that) \sout{Tania} is happy ] .
+
+\end{xlist}
+\z 
+
+In canonical copy-raising constructions\textemdash the other kind of raising-type construction that English allows\textemdash an overt noun phrase is present in the matrix clause, and an anaphorically linked pronoun appears in the embedded clause. A commonly assumed analysis of copy-raising is that the matrix subject is base-generated in the matrix clause as a thematic argument of \textit{seems} \citep{PotsdamRunner:2001:CopyRaising}.\footnote{This comment undersells the complexity of the analytical situation, but it suffices for this introduction. See \citet{Landau:2009:CopyRaising,Landau:2011:CopyRaising}, \citet{AsudehToivonen2012CopyRaising}, and \citet{DenDikken:2017:HyperRaising} for additional commentary.}
+
+\ea\label{ex:johnson:EnglishCopyRaising}
+{{``Copy-raising:" Complement clause is finite}}
+
+Tania\textsubscript{\textit{k}} seems [\textsubscript{CP} like she\textsubscript{\textit{k}} is happy ] .
+
+\z 
+
+\noindent This traditional story predicts a complementary distribution between connectivity effects and assigment of thematic roles to perception predicates' subjects. On this traditional account, arguments can only be assigned one thematic role. Thus, if a matrix predicate assigns a thematic role, the argument that receives it must have originated in the matrix clause (and the construction will therefore not exhibit connectivity effects). If the matrix predicate does not assign a thematic role, the subject of this predicate must have raised from the embedded clause, where it was assigned a theta role (leading to connectivity effects). The primary contribution of this paper is an observation that this traditionally-proposed complementary distribution is not empirically supported. 
+
+To illustrate the relevant patterns in English, consider the constructions in which the idiomatic meaning of \REF{ex:johnson:CatIdiom} is (un)available (see \citealt{PotsdamRunner:2001:CopyRaising} for some early comments on this topic). 
+
+\ea \label{ex:johnson:CatIdiom}
+The cat is out of the bag. = \textit{The secret has been revealed.}
+\z 
+
+\noindent When the subject remains in the embedded clause, as in (\ref{ex:johnson:CatIdiomUnraiseda}) and (\ref{ex:johnson:CatIdiomUnraisedb}), the idiomatic interpretation is natural. 
+
+\ea \label{ex:johnson:CatIdiomUnraised}
+\begin{xlist}
+
+\ex\label{ex:johnson:CatIdiomUnraiseda} It \textbf{seems that} the cat is out of the bag.  \hfill {Raising Predicate}
+\ex\label{ex:johnson:CatIdiomUnraisedb} It \textbf{looks like} the cat is out of the bag. \hfill {Copy-raising Predicate}
+
+\end{xlist}
+\z 
+
+\noindent The idiomatic interpretation remains natural in a canonical raising construction such as \REF{ex:johnson:CatIdiomRaising},  despite the fact that the subject of the idiom is not adjacent to the rest of the idiom. In raised constructions with copy-raising predicates such as \REF{ex:johnson:CatIdiomSeemsLike} and \REF{ex:johnson:CatIdiomLooksLike}, the idiomatic reading is also still accessible for many speakers, although in \REF{ex:johnson:CatIdiomLooksLike} \textit{looks like} places some empirical restrictions on the speaker's perception (i.e., their reason for thinking the secret is out must come from visual evidence). The judgments reported here reflect the relative naturalness of the idiomatic reading (not grammatical acceptability).
+
+\ea \label{ex:johnson:CatIdiomRaisedConstructions}
+\begin{xlist}
+
+\ex \label{ex:johnson:CatIdiomRaising} The cat \textbf{seems to} be out of the bag.  \hfill {Raising}
+\ex \label{ex:johnson:CatIdiomSeemsLike} \%The cat \textbf{seems like} it is out of the bag. \hfill {Copy-raising}
+\ex \label{ex:johnson:CatIdiomLooksLike} \%The cat \textbf{looks like} it is out of the bag. \hfill {Copy-raising}
+
+\end{xlist}
+\z 
+
+\noindent The pattern becomes more complex with different predicates. When the perception predicate encodes more limitations on the source of information, the idiomatic interpretation tends to be less accessible. The idiomatic reading in \REF{ex:johnson:CatIdiomSoundsLike} is somewhat accessible as long as the evidence is via sound (either directly, or via someone narrating an account of a secret coming out). But \REF{ex:johnson:CatIdiomSmellsLike} makes it much harder to access the idiomatic reading and instead lends itself to an interpretation of a smelly feline that has escaped.
+
+\ea \label{ex:johnson:CatIdiomCopyRaising}
+\begin{xlist}
+
+\ex \label{ex:johnson:CatIdiomSoundsLike} \%The cat \textbf{sounds like} it is out of the bag. \hfill {Copy-raising}
+\ex \label{ex:johnson:CatIdiomSmellsLike} ??The cat \textbf{smells like} it is out of the bag. \hfill {Copy-raising}
+
+\end{xlist}
+\z 
+
+\noindent So idiomatic interpretations (as we will see below) seem to be possible even in copy-raising constructions where it is not obvious that the subject has moved from the embedded clause (i.e., there is no gap in the lower clause). But despite the presence of connectivity effects, the matrix predicate nonetheless seems to place thematic restrictions on the subject, suggesting that there is also a matrix thematic role that is assigned to the subject. 
+
+These kinds of effects are not well-researched, to our knowledge.\footnote{The availability of idiomatic readings in copy-raising is discussed by \citet{PotsdamRunner:2001:CopyRaising}, \citet{AsudehToivonen2012CopyRaising}, and \citet{DenDikken:2017:HyperRaising}, but to our knowledge the interaction with different perception predicates is not.} That is, there is empirical complexity amongst the range of perception verbs that is still under-explored: there seems to be variation in idiomatic interpretations' accessibility based on the particular lexical predicate that is used. In this paper, we explore a complex array of connections between morphosyntactic variation and interpretive distinctions in Tiriki perception verb constructions. These patterns will point to a way that the English facts above can be considered. This paper mainly makes empirical and analytical contributions to lay the foundation to better understanding perception verb constructions in Bantu languages and cross-linguistically, but in \sectref{sec:johnson:DraftAnalysis} we also offer an initial analysis of hyperraising constructions that takes these findings into account. 
+
+
+% \subsection{Background: Perception Predicates in English} \label{sec:johnson:EngPerceptionPredicates}
+
+\subsection{Raising constructions in Tiriki}
+
+Tiriki (Luyia, Bantu, Kenya) also allows various raising constructions. \REF{ex:johnson:TirikiUnraisedConstruction} shows that unraised constructions in Tiriki, as in English, are acceptable. But hyperraising, wherein the embedded clause that the subject moves from is finite, is also acceptable; this is shown in \REF{ex:johnson:IntroAgreeingRaising}. \REF{ex:johnson:IntroAgreeingRaising} is an instance of \textit{agreeing} hyperraising: the matrix verb exhibits agreement with the hyperraised subject.\footnote{Judgments and commentary on Tiriki data come from our research assistant and language consultant, Kelvin Alulu.}
+
+\ea \label{ex:johnson:TirikiHrParadigm}
+\begin{xlist}
+
+\ex\label{ex:johnson:TirikiUnraisedConstruction} {{Unraised}}
+
+\gll Ka-/i-lolekh-a khuli va-ana va-tukh-i.\\
+\textsc{6sm-/9sm-}seem-\textsc{fv} that 2-child \textsc{2sm}-arrive-\Pst{}\\ 
+\glt `It seems that the children arrived.'
+
+\citep[97]{diercksetal2022luyia}
+
+\ex \label{ex:johnson:IntroAgreeingRaising} {{Agreeing raising}}
+
+\gll Va-ana \circled{va-}lolekh-a khuli \sout{vaana} va-tukh-i.\\
+2-child \textsc{2sm-}seem-\textsc{fv} that {} \textsc{2sm}-arrive-\Pst{} \\
+\glt `The children seem to have arrived.'\\
+(Lit: `The children seem that arrived.')
+
+(Adapted from \citealt[98]{diercksetal2022luyia})
+\end{xlist}
+\z 
+
+Notably, Tiriki also exhibits \textit{non-agreeing} hyperraising constructions, in which the matrix clause exhibits atypical subject agreement that does not match the DP subject's \ph-features.\footnote{Similar agreeing and non-agreeing raising patterns have been documented in Zulu \citep{Halpert2019RaisingUnphased}, Logoori \citep{GluckmanBowler:2017:LogooriExpletives}, and Wanga (Diercks field notes).} In \REF{ex:johnson:IntroNonAgrRaising}, observe that the raised subject is class 2, but the matrix verb can be marked with a class 6 or class 9 subject marker.\footnote{Both class 6 and class 9 are available in non-agreeing constructions. Throughout, we typically give the class 6 non-agreeing form for simplicity.}
+
+\ea \label{ex:johnson:IntroNonAgrRaising}{{Non-agreeing raising}}
+
+\gll Va-ana \circled{ka-/i-}lolekh-a khuli \sout{vaana} va-tukh-i.\\
+2-child \textsc{6sm-/9sm-}seem-\textsc{fv} that {} \textsc{2sm}-arrive-\Pst{}\\
+\glt `The children seem to have arrived.'
+
+(Adapted from \citealt[98]{diercksetal2022luyia})
+\z 
+
+\citet{diercksetal2022luyia} address many central questions that arise from hyperraising constructions. They show that in Tiriki, both agreeing and non-agreeing raising are instances of A-movement to typical subject position in the matrix clause. This conclusion is based on a variety of typical raising diagnostics (retention of idiomatic interpretations, perceptual source readings, creation of new positions for binding, subject/non-subject diagnostics, etc.). We summarize these findings in \sectref{sec:johnson:TirikiRaisingBackground}. Crucially, \citet{diercksetal2022luyia} show that these hyperraising constructions are not covertly copy-raising constructions with a null subject in the embedded clause (i.e., not `The children\textsubscript{\textit{k}} seem like \textit{pro}\textsubscript{\textit{k}} arrived.'). Likewise, they demonstrate that hyperraising is also not left-dislocation of the embedded subject: the subject in \REF{ex:johnson:IntroAgreeingRaising} and in \REF{ex:johnson:IntroNonAgrRaising} behaves like a typical matrix subject. 
+
+This paper focuses on additional questions prompted by these hyperraising constructions. \sectref{sec:johnson:VarCRConnectivity} introduces apparent copy-raising constructions and explores questions regarding those agreeing and non-agreeing constructions, specifically around issues similar to those introduced in \sectref{sec:johnson:puzzle} where connectivity effects seem to vary in different instances of the (apparent) same kind of grammatical construction. We ultimately conclude that what we call ``copy-raising" constructions in Tiriki are in fact structurally identical to hyperraising constructions (i.e., they involve movement rather than a coreferent \textit{pro} in the embedded clause). To be clear about how these relate to previous work on the issue, we still refer to these constructions as copy-raising constructions throughout.
+
+\sectref{sec:johnson:ThematicProperties} addresses the question of what the class 6 and class 9 subject markers agree with in non-agreeing raising constructions, concluding that they agree with null arguments that are expletive-like in some ways but are in fact referential subjects (we will refer to them as quasi-expletives). \sectref{sec:johnson:ThematicProperties}'s conclusion is that the non-agreeing raising constructions are in fact multiple subject constructions (one subject is the raised lexical DP, the other is the null quasi-expletive). \sectref{sec:johnson:RaisedVsUnraised} shows that raised subjects have a topicality reading that unraised subjects lack. 
+
+We use these conclusions in \sectref{sec:johnson:analysis} to sketch a direction of analysis in a Minimalist analytical framework \citep{Chomsky:2000:MI,Chomsky:2001:DbP}. While the paper primarily makes an empirical contribution rather than a theoretical one, \sectref{sec:johnson:DraftAnalysis} considers how we can explain the empirical distinction between agreeing and non-agreeing raising while also capturing what drives movement of the embedded subject to the matrix clause. This is an initial proposal, however, and more work is necessary to solidify an analysis of Tiriki hyperraising.\footnote{There are a number of critical issues that are not discussed in this paper. The main one is the question of how the hyperraised subject escapes the finite embedded clause. It is somewhat ironic that we don't address this, as it is a fundamental puzzle about hyperraising and is the precise issue that most of the literature is dedicated to. It may well be that the issues we tackle here will lead to insights about escaping finite clauses, but we leave the question for future research. For relevant discussion, see: \citet{MartinsNunes2005BpHyperRaising,Nunes2008BpHyperRaising,BoeckxHornsteinNunes:2010,MartinsNunes2010ApparentHyperRaising,ObataEpstein:2011:FeatureSplittingMerge,CarstensDiercks:2013:Hyper-Raising,Fong:2018:MongolianHyperRaising,Fong2019HyperRaisingGlossa,Deal:2017:HyperRaisingNezPerce,Zyman2023HRoverview,}.} Our main contribution is to show the various interpretive effects that are present in fine-grained variations of Tiriki perception verb constructions; the main takeaway is that, contrary to traditional assumptions, perception verbs seem to assign matrix thematic roles to their subjects even in contexts that show evidence of A-movement out of another theta-role-assigning position in the embedded clause. We suggest that this conclusion points to an analytical solution for hyperraising, although more work is necessary to exhaustively articulate and defend such an analysis.
+
+\section{Diagnostics for Tiriki hyperraising \citep{diercksetal2022luyia}} \label{sec:johnson:TirikiRaisingBackground}
+
+There are two salient alternative analyses for apparent hyperraising constructions. First, apparent agreeing hyperraising could in principle be covert copy-raising.  Tiriki is a null subject language, so \textit{pro} could be a ``copy" pronoun in the embedded clause, which would derive the same word order seen in hyperraising constructions.
+
+\ea\label{ex:johnson:TirikiCPRaised2}
+
+\begin{xlist}
+
+\ex\label{ex:johnson:TirikiCPRaisedHR}
+% \textbf{\underline{Hyperraising analysis}}\\
+% \gll Va-ana va-lolekh-a khuli \sout{va-ana} va-tukh-i.\\
+% 2-child \textsc{2sm}-seem-\textsc{fv} that {} \textsc{2sm}-arrive-\textsc{fv}\\
+% \glt `The children seem to have arrived.'
+
+% (Adapted from \citealt[(98)]{diercksetal2022luyia})
+
+{{Hyperraising analysis}}
+
+[ \textsc{subj}\textsubscript{\textit{k}} seems [\textsubscript{CP} that \sout{\textsc{subj}}\textsubscript{\textit{k}} [\textsubscript{TP} ...] ] ]
+
+\ex\label{ex:johnson:TirikiCPRaisedCR}
+% \textbf{\underline{Copy-raising analysis (to be discarded)}}\\
+% \gll Va-ana_{i} va-lolekh-a khuli \textit{pro}_{i} va-tukh-i.\\
+% 2-child \textsc{2sm-}seem-\textsc{fv} that {} \textsc{2sm}-arrive-\textsc{fv}\\
+% \glt `The children seem to have arrived.'
+
+{{Copy-raising analysis}}
+
+[ \textsc{subj}\textsubscript{\textit{k}} seems [\textsubscript{CP} that \textit{pro}\textsubscript{\textit{k}} [\textsubscript{TP} ... ] ] ]
+
+\end{xlist}
+\z 
+
+\noindent Second, apparent non-agreeing raising could in principle involve a left-dislocated argument with an expletive subject, as opposed to hyperraising to canonical subject position with noncanonical subject agreement.
+
+\begin{exe}
+\ex \label{ex:johnson:PossibleGaAnalyses} 
+\begin{xlist}
+
+\ex \label{ex:johnson:SampleNonAgreeingRaising}
+{{Non-Agreeing raising analysis}}
+
+\Lb{TP} \textsc{subj}\textsubscript{\textit{k}} \textbf{ka}\textsubscript{\textit{i}}-seems [\textsubscript{CP} that \tr{k} [\textsubscript{TP} ... ] ] ]
+
+\ex \label{ex:johnson:ExpletivePlusDislocation}
+{{Expletive + Dislocation analysis}}
+
+\Lb{CP} \textsc{subj}\textsubscript{\textit{k}} \Lb{TP} \textbf{expl}\textsubscript{\textit{i}} \textbf{ka}\textsubscript{\textit{i}}-seems \Lb{CP} that \tr{k} \Lb{TP} ... ] ] ] ]
+
+\end{xlist}
+\end{exe}
+
+However, \citet{diercksetal2022luyia} argue at length that both agreeing and non-agreeing raising constructions in Tiriki are true hyperraising constructions: they are derived via movement of the embedded subject from the embedded clause to matrix subject position. 
+
+\ea {{Properties of Tiriki hyperraising \citep{diercksetal2022luyia}}}
+
+\begin{itemize}
+
+\item \textbf{Not left-dislocation}: Hyperraising is possible in contexts where left-dislocation is not, suggesting that apparent hyperraising constructions are not in fact left-dislocation constructions.
+
+\item \textbf{A-movement}: Hyperraising behaves like A-movement to canonical subject position, rather than like \abar-movement.
+
+\item \textbf{Connectivity effects}: Idiomatic readings are maintained in hyperraising constructions, but they are not retained in left-dislocation or control constructions. (Other connectivity effects hold as well.) 
+
+\end{itemize}
+\z 
+
+Space constraints preclude a full summary of these effects, but we illustrate idiom connectivity effects here to set the stage for this paper's contributions. By assumption, idioms must enter syntactic constructions as a constituent to maintain their idiomatic interpretations. Raising constructions retain idiomatic interpretations because the raised subject is originally part of an idiom inside the embedded clause. The same does not happen with control constructions: idiomatic readings are lost because the main clause subject is base-generated in the main clause (on standard assumptions), and as such the idiom does not enter the sentence as a constituent.
+
+\ea \label{ex:johnson:EngRaisingControlIdiom}
+\begin{xlist}
+
+\ex
+{{Raising construction (Traditional analysis)}}
+
+The cat seems to \sout{the cat} be out of the bag.
+
+% (can mean \textit{The secret appears to have come out}.)
+
+Lit: An actual cat seems to be out of an actual bag.
+
+Fig: The secret seems to have come out.
+
+\ex
+{{Control Construction (Traditional Analysis)}}
+
+The cat wants \textsc{pro} to be out of the bag.
+
+% (\Checkmark as an actual cat, ?? as a secret)
+
+Lit: An actual cat desires to be out of an actual bag.
+
+?? on the figurative reading
+
+\end{xlist}
+\z 
+
+\noindent The Tiriki constructions that we claim are hyperraising constructions retain idiomatic interpretations: the idiom in \REF{ex:johnson:Idiom} retains its meaning in both agreeing and non-agreeing hyperraising constructions, as in \REF{ex:johnson:TirikiIdiomsHr}.\footnote{\citet{Halpert2019RaisingUnphased} shows the same for Zulu, and \citet{diercksetal2022luyia} show the same for Logoori.} 
+
+ 
+
+\ea \label{ex:johnson:Idiom}
+
+\smash{\textbf{Tiriki Idiom}}
+
+\gll I-mbisi i-hurir-e mu-riro.\\
+9-hyena 9\Sm-feel-\textsc{fv} 3-fire\\
+\glt Lit: `The hyena has felt the fire.'\\
+Fig: `Someone has eaten too much.'
+
+\citep[99]{diercksetal2022luyia}
+\z
+
+\REF{ex:johnson:TirikiIdiomsHr} shows that with the hyperraising predicate \textit{-lolekha}, the idiomatic reading is still acceptable. Hyperraising consistently shows these connectivity effects (wherein idiomatic meanings are maintained in hyperraising constructions), indicating that the matrix subject raises from the idiomatic constituent in the embedded clause rather than originating in the matrix clause.
+
+
+%\newpage
+
+\ea \label{ex:johnson:TirikiIdiomsHr}
+\begin{xlist}
+
+\ex \label{ex:johnson:AgreeingHRIdiom}
+{{Hyperraising (Agreeing)}}
+
+\gll I-mbisi i-lolekh-a khuli i-hurir-e mu-riro.\\
+9-hyena 9\Sm-seem-\Fv{} that 9\Sm-feel-\Fv{} 3-fire\\
+\glt Lit: `The hyena seems to have felt the fire.'\\
+Fig: `Someone seems to have overeaten.' 
+% Luyia raising book page 312
+
+\ex \label{ex:johnson:NonAgreeingHRIdiom}
+{{Hyperraising (Non-agreeing)}}
+
+\gll I-mbisi ka-lolekh-a khuli i-hurir-e mu-riro.\\
+9-hyena 6\Sm-seem-\Fv{} that 9\Sm-feel-\Fv{} 3-fire\\
+\glt Lit: `The hyena seems to have felt the fire.'\\
+Fig: `Someone seems to have overeaten.' 
+
+\end{xlist}
+\z 
+
+\noindent The idiom does not retain its figurative reading in \REF{ex:johnson:IdiomCR} with the apparent copy-raising predicate \textit{-manyia} `show/look like' \citep[28-29]{diercksetal2022luyia}. (Although it is worth noting that we will introduce more complication on this point in \sectref{sec:johnson:VarCRConnectivity}.)
+
+\ea \label{ex:johnson:IdiomCR}
+{{Copy-raising Construction}}
+
+\gll I-mbisi i-manyi-a khuli i-hurir-e mu-riro.\\
+9-hyena 9\Sm-show-\textsc{fv} that 9\Sm-feel-\textsc{fv} 3-fire\\
+\glt Lit: `The hyena looks like it felt the fire.'\\
+*Fig: `Someone looks like they have overeaten.'
+
+\citep[102]{diercksetal2022luyia}
+\z
+
+\noindent Likewise, control constructions also lose the idiomatic interpretation.
+
+ 
+
+\ea
+{{Control construction}}
+
+\gll I-mbisi i-cherits-a khu-hurir-e mu-riro.\\
+9-hyena 9\Sm-try-\Fv{} 15-feel-\Fv{} 3-fire\\
+\glt Lit: `The hyena tried to feel the fire.'\\
+*Fig: `Someone tried to overeat.'
+
+\citep[100]{diercksetal2022luyia}
+\z
+
+\noindent Idioms also generally resist participating in left-dislocation constructions: 
+
+\ea
+\begin{xlist}
+
+\ex
+{{Canonical word order}}
+
+\gll Isaka a-vor-i khuli i-mbisi i-hurir-e mu-riro.\\
+Isaka 1\Sm-say-\Fv{} that 9-hyena 9\Sm-feel-\Fv{} 3-fire\\
+\glt Lit: `Isaka said that the hyena has felt the fire.'\\
+Fig: `Isaka said that someone has overeaten.'
+
+\ex
+{{Left-dislocation construction}}
+
+\gll I-mbisi, Isaka a-vor-i khuli i-hurir-e mu-riro.\\
+9-hyena	Isaka 1\Sm-say-\Fv{} that 9\Sm-feel-\Fv{} 3-fire	\\
+\glt Lit: `The hyena, Isaka said that it has felt the fire.'\\
+*Fig: `Isaka said that someone has overeaten.'
+
+\end{xlist}
+\z
+
+
+
+\noindent This suggests that both agreeing and non-agreeing raising constructions are movement constructions. A summary of Tiriki's hyperraising vs. left-dislocation behavior is given in \tabref{tabex:johnson:tablesec4}:
+
+\begin{table}
+
+\caption{Summary: Raising diagnostics by construction
+(Adapted from \citealt[130]{diercksetal2022luyia})
+\label{tabex:johnson:tablesec4}
+}
+
+\begin{tabular}[t]{l c c c c}
+\lsptoprule
+{} & \multicolumn{3}{c}{\textbf{\textit{-lolekha}}} & \textbf{LD Phrases} \\ \midrule
+
+\textbf{Diagnostic} & \textbf{\textsc{agr-}} & \textbf{ka-} & \textbf{i-} \\ \midrule
+
+Idiomatic reading retained & \Checkmark & \Checkmark & \Checkmark & * \\
+
+Fronted DP can be new information & \Checkmark & \Checkmark & \Checkmark & * \\
+
+Fronted quantified DP & \Checkmark & \Checkmark & \Checkmark & * \\
+
+Cleft constructions: \textsc{agr}-\textit{a}? & * & opt & opt & n/a \\
+
+Possible inside relative clause? & \Checkmark & \Checkmark & \Checkmark & * \\
+
+Principle C: coreference? & * & * & * & n/a \\
+
+Cyclic raising & \Checkmark & \Checkmark & \Checkmark & * \\
+\lspbottomrule
+\end{tabular}
+
+
+\end{table}
+
+% \item Zulu shares a similar construction, as extensively documented by \citet{Halpert:2016:Book,Halpert2019RaisingUnphased}:
+
+% \jkl 
+
+% \ea
+% \label{halpert.ex.2}
+% \begin{xlist}
+
+% \ex 
+% \gll ku-bonakala [ukuthi \textbf{uZinhle} u-zo-xova ujeqe ] \\
+% 17\textsc{s}-seem  that \textsc{aug}.1Zinhle 1\textsc{s}-\textsc{fut}-make \textsc{aug}.1steam.bread \\ \hfill {Zulu}
+
+% \ex
+% \gll \textbf{uZinhle}\textsubscript{i} \textbf{u}-bonakala [ukuthi \textit{t}\textsubscript{i} \textbf{u}-zo-xova ujeqe ] \\
+% \textsc{aug}.1Zinhle\textsubscript{i} 1\textsc{s}-seem  that \textit{t}\textsubscript{i} 1\textsc{s}-\textsc{fut}-make \textsc{aug}.1steam.bread \\
+
+% \ex \label{ZuluNonAgreeingRaising}
+% \gll uZinhle\subs{i} \textbf{ku}- bonakala [ukuthi t\subs{i} u- zo- xova ujeqe] \\
+% \textsc{aug}.\textbf{1}Zinhle\subs{i} \textsc{\textbf{17s}}- seems that t\subs{i} \textsc{1s-} \textsc{fut-} make \textsc{aug}.1steamed.bread \\
+% \glt `It seems that Zinhle will make steamed bread.' \hfill \citep{Halpert:2015a}
+
+% \end{xlist}
+% \z
+
+These diagnostics are built on Halpert's (\citeyear{Halpert2019RaisingUnphased}) argumentation about Zulu hyperraising, which shows the same properties. In short, Zulu likewise allows non-agreeing raising, wherein the raised subject behaves like a main clause subject despite not triggering canonical subject agreement. The conclusion from \tabref{tabex:johnson:tablesec4} is that both agreeing and non-agreeing hyperraising exist in Tiriki (as in Zulu, Logoori, and Wanga) and that plausible alternative analyses (base generation of subjects in matrix clauses, left-dislocation of subjects) do not match the evidence.
+
+Specifically relevant for our purposes is that hyperraising shows connectivity effects with the lower clause; the evidence we illustrated here is that idioms introduced in the lower clause maintain their figurative readings in raising constructions. This specifically contrasts with copy-raising predicates and control predicates, where idiomatic readings are generally lost or degraded in parallel constructions. 
+
+\section{Apparent copy-raising predicates show variable connectivity effects}\label{sec:johnson:VarCRConnectivity}
+
+Copy-raising constructions generally do not show the same connectivity effects with the embedded clause that hyperraising constructions do. However, an interesting distinction appears between agreeing and non-agreeing constructions with copy-raising predicates: some copy-raising constructions do in fact show connectivity effects.
+
+\subsection{Idiomatic meanings in apparent copy-raising constructions}\label{sec:johnson:CRConnectivity}
+
+%\katie{Just trying to explain to myself what the point/takeaways from this section should be:} We know that in general copy-raising doesn't have connectivity effects. And hyperraising does. So it's interesting that with the same predicate, we have connectivity effects with non-agr raising but no connectivity effects with agr raising. So that suggests that there's some significant derivational difference, because it's the same predicate behaving differently in these two constructions.
+
+
+
+Consider the examples below with the apparent copy-raising predicate \textit{-sasa} `seem/appear like' and the idiom in \REF{ex:johnson:ThePotBroke}.
+
+\ea\label{ex:johnson:ThePotBroke}
+\gll I-nyungu ya-atikh-a.\\
+9-pot 9\Sm-break-\Fv{}\\
+\glt Lit: `The pot broke.'\\
+Fig: `The secret came out.’
+\z 
+
+\REF{ex:johnson:AgrCRIdiomA} demonstrates that the idiomatic reading is available in an unraised construction, as expected. \REF{ex:johnson:AgrCRIdiomB} shows the lack of connectivity effect that is typical of copy-raising constructions.
+
+\ea \label{ex:johnson:AgreeingCopyRaisingIdiom}
+\begin{xlist}
+
+\ex \label{ex:johnson:AgrCRIdiomA}
+\gll Ka-sas-a i-nyungu ya-atikh-a.\\
+6\Sm-appear-\textsc{fv} 9-pot 9\Sm-break-\Fv{}\\\hfill\textbf{Unraised}
+\glt Lit: `It appears like the pot broke.'\\
+Fig: `It appears like the secret came out.’
+
+\ex \label{ex:johnson:AgrCRIdiomB}
+\gll I-nyungu i-sas-a ya-atikh-a.\\
+9-pot 9\Sm-appear-\textsc{fv} 9\Sm-break-\Fv{}\\\hfill\textbf{Raised (Agreeing)}
+\glt Lit: `The pot appears like it broke.'\\
+??Fig: `The secret appears to have come out.' % it would be more appropriate if people are making a joke about something
+% MJKD is wondering whether this is like “the cat wants to be out of the bag” 
+
+\end{xlist}
+\z 
+
+\noindent In a non-agreeing raising context, however, the idiomatic reading surprisingly reemerges. 
+
+\ea \label{ex:johnson:NonAgrCRIdiom}
+\gll I-nyungu \circled{ka-}sas-a ya-atikh-a. \\
+9-pot 6\Sm-appear-\textsc{fv} 9\Sm-break-\Fv{}\\\hfill\textbf{Raised (Non-agreeing)}
+\glt Lit: `The pot appears like it broke.' \\
+Fig: `The secret appears to have come out.'
+%both of these meanings are equally natural
+\z 
+
+\noindent The same pattern appears with the copy-raising predicate \textit{-hulikha} `sound like.' 
+
+\ea \label{ex:johnson:PotSoundsLikeBroke}
+\begin{xlist}
+
+\ex \label{ex:johnson:PotSoundsLikeBrokeAgreeing}
+\gll I-nyungu \circled{i-}hulikh-a ya-atikh-e.\\
+9-pot 9\Sm-sound.like-\Fv{} 9\Sm-break-\Pst{}\\\hfill\textbf{Raised (Agreeing)}
+\glt Lit: `The pot sounds like it broke.'\\
+*Fig: `The secret sounds like it came out.’
+
+\ex\label{ex:johnson:NonAgrCRPotSoundsLikeItBroke}
+\gll I-nyungu \circled{ka-}hulikh-a ya-atikh-e.\\
+9-pot 6\Sm-sound.like-\Fv{} 9\Sm-break-\Pst{}\\\hfill\textbf{Raised (Non-agreeing)}
+\glt Lit: `The pot sounds like it broke.’\\
+Fig: `The secret sounds like it came out.’\\
+%for the idiomatic meaning, it sounds natural if a third friend comes to tell you that the secret came out (e.g., in the context above (from the elicitation doc), but it doesn’t sound so natural if you just hear the wife yelling at your friend)
+
+\end{xlist}
+\z 
+
+The agreeing ``copy-raising" construction behaves as expected: the matrix subject acts like a thematic argument of the main clause (i.e., apparent non-movement, lacking connectivity effects that are present in hyperraising constructions in Tiriki). But non-agreeing constructions with the same predicates surprisingly exhibit connectivity effects (which are typical of movement constructions). It would be surprising for the same raising predicate to sometimes assign a theta role to its subject (in the constructions without connectivity effects and thus with apparent base-generation of the argument in matrix Spec,\textit{v}P), but sometimes not assign a theta role (in the constructions with connectivity effects and thus with apparent movement) when they otherwise appear to be structurally identical.\footnote{In English, the difference between \textit{seems} and \textit{seems like} presents a similar conundrum. A common analysis of English \textit{seems} is that there is simply homophony between two separate predicates (one that assigns an external thematic role and one that does not). In this paper, however, we argue that such an analysis misses a broader generalization that appears in English with \textit{seems} and in Tiriki with apparent copy-raising predicates: often the same predicate can behave like a raising predicate in one context and a copy-raising predicate in another. Here, we propose that this difference in behavior is not caused by the existence of two different homophonous predicates, but by the different constructions in which a single predicate can appear.
+%But in Tiriki, it is curious that these are predicates that do not regularly allow connectivity effects, instead always behaving like they assign a thematic role: this is evidenced by the lack of connectivity effects in the agreeing apparent copy-raising constructions, as in \REF{ex:johnson:AgrCRIdiomB} and \REF{ex:johnson:PotSoundsLikeBrokeAgreeing}. Yet non-agreeing raising constructions with those same predicates do exhibit connectivity effects (as in \REF{ex:johnson:NonAgrCRIdiom} and \REF{ex:johnson:NonAgrCRPotSoundsLikeItBroke}). That is to say, when an apparent copy-raising predicate appears in what seems like a non-agreeing hyperraising construction, connectivity effects emerge.
+}
+
+To address this puzzle, we advance the hypothesis that predicates such as \\
+\textit{-sasa} ``appear like'' and \textit{-hulikha} ``sound like'' (as well as other raising predicates in Tiriki) do in fact always assign theta roles to their subjects. These thematic roles can be assigned to either a raised lexical DP (in the agreeing constructions) or to the null argument that the class 6 and class 9 subject markers agree with (in the non-agreeing constructions). Of course, this means that we are proposing that a DP can be assigned two theta roles in the agreeing raising constructions (one from the matrix predicate and one from the embedded predicate); see \citet{BoeckxHornsteinNunes:2010} for similar claims within the Movement Theory of Control.
+
+
+\subsection{Perceptual sources: Interpretive effects with apparent copy-raising predicates}
+
+This section offers another argument that apparent copy-raising predicates place thematic restrictions on their overt lexical DP subjects in agreeing constructions but not in non-agreeing constructions. In general, copy-raising constructions induce a perceptual-source reading of their subjects, requiring that the speaker have direct perception of the referent of the matrix subject; raising constructions do not \citep{CarstensDiercks:2013:Hyper-Raising,PotsdamRunner:2001:CopyRaising}. Therefore a non-specific subject like \textit{somebody} is not possible with a copy-raising construction (e.g., \REF{ex:johnson:ReconstructedReadingDiagnosticSomeone}), which requires that a speaker have direct perception of the referent of the lexical subject and therefore presupposes an identifiable referent of the subject. 
+
+\ea \label{ex:johnson:ReconstructedReadingDiagnostic} \textit{Context: You look in the refrigerator, only to find that it is empty.}
+
+\begin{xlist}
+
+\ex It seems like somebody has eaten all the food!\hfill\textbf{Unraised}
+
+\ex Somebody seems to have eaten all the food!\hfill\textbf{Raising}
+
+\ex \label{ex:johnson:ReconstructedReadingDiagnosticSomeone}  \#Somebody seems like they have eaten all the food!\hfill\textbf{Copy-raising} \\ (\textit{requires direct perception of the food-eater}) \\  (Adapted from \citealt{CarstensDiercks:2013:Hyper-Raising}) 
+
+\end{xlist}
+\z 
+
+\noindent We can thus use the availability of perceptual source readings in apparent copy-raising constructions to diagnose a thematic relationship between the raising predicate and its grammatical subject.
+
+Returning to Tiriki, \REF{ex:johnson:MonsterSoundsLike} shows a similar pattern to the idiom pattern seen in \sectref{sec:johnson:CRConnectivity}, this time with perceptual sources. In unraised \REF{ex:johnson:MonsterSoundsLikeUnraised} and non-agreeing raising \REF{ex:johnson:MonsterSoundsLikeNonAgrRaising} constructions, the subject is less clearly thematically-linked to the raising predicate.\footnote{We demonstrate these patterns with the class 6 non-agreeing subject marker \textit{ka-}, although the class 9 non-agreeing subject marker \textit{i-} behaves the same way.} In the examples below, a narrator reports variable constructions meaning something akin to \textit{it sounds like a monster is walking in the forest.} vs. \textit{a monster sounds like it is walking in the forest.} In English, the copy-raising construction induces an odd effect in a non-fictional narrative, as it presupposes that the monster is real and perceivable. The same effect is evident in the agreeing construction in Tiriki as well.\footnote{\textit{-sasa} `seem/appear like' behaves in the exact same way.}
+
+%\newpage
+
+\ea\label{ex:johnson:MonsterSoundsLike}
+
+\begin{xlist}
+
+\ex\label{ex:johnson:MonsterSoundsLikeUnraised} 
+\gll Ka-hulikh-a khuli li-nani li-chend-a mu-mu-rirhu.\\
+6\Sm-sound.like-\textsc{fv} that 5-monster 5\Sm-walk-\Fv{} 18-3-forest\\ 
+\glt `It sounds like a monster is walking in the forest.'\\
+\textit{Monsters are not necessarily real}
+% you have to hear the branches snapping/heavy footsteps/other scary sounds.
+% the monsters don’t have to be real. Sounds like monsters.
+
+\ex\label{ex:johnson:MonsterSoundsLikeAgrRaising} 
+\gll Li-nani \circled{li-}hulikh-a khuli li-chend-a mu-mu-rirhu.\\
+5-monster 5\Sm-sound.like-\Fv{} that 5\Sm-walk-\Fv{} 18-3-forest \\ 
+\glt `A monster sounds like it is walking in the forest.' \\
+\textit{Monsters must be real}
+% it becomes less natural (but not wrong) when you’re only hearing the branches
+% most natural context if when you’re hearing anything that the monster is doing. So it sounds like you’re saying that there is a real monster.
+% you can’t say this without implying that monsters are real
+% speaker is believing that the monster is real here.
+
+\ex\label{ex:johnson:MonsterSoundsLikeNonAgrRaising} %\uline{Metaphorical Reading} 
+
+\gll Li-nani \circled{ka-}hulikh-a khuli li-chend-a mu-mu-rirhu.\\
+5-monster 6\textsc{sm}-sound.like-\textsc{fv} that 5\textsc{sm}-walk-\textsc{fv} 18-3-forest\\ 
+\glt `A monster sounds like it is walking in the forest.'\\
+\textit{Monsters are not necessarily real}
+% this is OK if you just hear the sound from the branches
+% you don’t have to believe that a monster is real to say this sentence
+
+\end{xlist}
+\z
+
+In \REF{ex:johnson:MonsterSoundsLikeUnraised} and \REF{ex:johnson:MonsterSoundsLikeNonAgrRaising}, the ``monster" does not literally have to be the perceptual source: that is to say, the monster does not have to be real in order for the sentence to be felicitous (as in English \textit{It sounds like a monster is walking in the forest}, which makes no presupposition or claim that monsters exist). The construction in \REF{ex:johnson:MonsterSoundsLikeAgrRaising}, however, is only licit if the speaker is saying that monsters are real: a real monster must be doing the ``sounding like." This is an instance of apparent copy-raising placing a perceptual-source requirement on its subject as is typically expected, meaning that there is a thematic relationship between \textit{-hulikha} `sound like' and its surface subject. In the non-agreeing raising construction in \REF{ex:johnson:MonsterSoundsLikeNonAgrRaising} with the same predicate, it is surprising that the perceptual source requirement disappears and that again (like in the unraised construction), it is possible for this to be a way of describing what the noises in the forest sound like (without claiming or assuming that monsters exist). 
+
+% \REF{ex:johnson:MonsterAppearsLike} duplicates the same pattern from \REF{ex:johnson:MonsterSoundsLike} with a different predicate, \textit{-sasa} `seem/appear like:' \textit{-sasa} likewise is a copy-raising predicate that places a perceptual-source requirement on its subject (distinct from the behaviors of hyperraising constructions). 
+
+% \ea\label{ex:johnson:MonsterAppearsLike}
+
+% \begin{xlist}
+
+% \ex
+% \gll Ka-sas-a khuli li-nani li-chend-a mu-mu-rirhu.\\
+% 6\textsc{sm}-appear.like-\textsc{fv} that 5-monster 5\textsc{sm}-walk-\textsc{fv} 18-3-forest\\ 
+% \glt `It seems/appears like the monster is walking in the forest.' \\
+% \textit{Metaphorical reading: the perceptions being described are akin to a monster walking in the forest}
+
+% % this time, you don’t believe in monsters
+% % you’re hearing some evidence and then you’re trying to link it with monsters
+
+% \ex
+% \gll Li-nani \circled{li-}sas-a khuli li-chend-a mu-mu-rirhu.\\
+% 5-monster 5\textsc{sm}-appear.like-\textsc{fv} that 5\textsc{sm}-walk-\textsc{fv} 18-3-forest\\ 
+% \glt `The monster seems/appears like it is walking in the forest.' \\
+% \textit{Requires a Literal reading: a monster is being directly perceived as walking in the forest}
+
+% % You’re saying that a monster is real
+
+% \ex \label{ex:johnson:nonagrCRmetaphorical}
+% \gll Li-nani \circled{ka-}sas-a khuli li-chend-a mu-mu-rirhu.\\
+% 5-monster 6\Sm{}-appear.like-\textsc{fv} that 5\Sm{}-walk-\Fv{} 18-3-forest\\ 
+% \glt `The monster seems/appears like it is walking in the forest.' \\
+% \textit{Metaphorical reading: the perceptions being described are akin to a monster walking in the forest}
+
+% \end{xlist}
+% \z
+
+We see that apparent copy-raising predicates place a perceptual source requirement on their subjects when their subject marker agrees with the subject, distinguishing them from hyperraising predicates like \textit{-lolekha} `seem' and \textit{-fwaana} `seem/appear.' But they can also appear with the non-agreeing subject markers (class 6 and 9) in apparent non-agreeing raising constructions, and in these instances the perceptual source reading disappears. 
+
+Our interpretation of these facts is akin to what we concluded for the idiom effects: in the so-called non-agreeing constructions that appear with class 6 and class 9 subject markers, those subject markers agree with null arguments that are expletive-like. But these quasi-expletives are not nonreferential subjects: we propose that they are referential (referring to direct/indirect evidence -- see \sectref{sec:johnson:InterpretExpletives}), and when they appear, they are the thematic subject of the perception verb. This suggestion that the quasi-expletives are referential presupposes that verbs that appear in these constructions (both hyperraising predicates and apparent copy-raising predicates) do in fact have thematic subjects, assigning a ``lightweight'' thematic role that is something like ``provides evidence.'' 
+
+What we suggest below is that non-agreeing raising constructions are in fact multiple subject constructions: the quasi-expletive is the thematic and grammatical subject, and the raised lexical DP is another subject that takes on the topic role that subjects normally take. We suggest that this holds for both non-agreeing hyperraising constructions like \REF{ex:johnson:IntroNonAgrRaising} and non-agreeing apparent copy-raising constructions like \REF{ex:johnson:MonsterSoundsLikeNonAgrRaising} (i.e., there is no syntactic difference between these constructions).
+
+\section{Thematic properties of raising predicates: Evidence from quasi-expletives} \label{sec:johnson:ThematicProperties}
+
+In this section, we look more closely at the class 6 and class 9 subject markers that we have suggested agree with null quasi-expletives (arguments that are expletive-like in some ways but not in others).
+
+\subsection{Interpretation of agreeing vs. non-agreeing raising} \label{sec:johnson:AgrVsNonAgr}
+
+There are subtle interpretive differences between the agreeing and non-agreeing variants of raising constructions themselves. Non-agreeing raising draws attention to the situation/evidence being addressed, while agreeing raising tends to be interpreted relatively neutrally. We will argue that this difference in interpretation is a result of the thematic properties of perception predicates and of the quasi-expletives that appear in non-agreeing constructions. 
+
+In \REF{ex:johnson:DisorganizedHouse}, the context is designed to require an inference based on the available evidence from context, and non-agreeing raising is more natural than agreeing raising. Our language consultant, Kelvin Alulu, comments that \REF{ex:johnson:NonAgrRaisingDisorganizedHouse} ``addresses the context directly,'' while \REF{ex:johnson:AgrRaisingDisorganizedHouse} does not. 
+
+\ea\label{ex:johnson:DisorganizedHouse}
+
+\textit{Context: You walk into the house and find that it is in good order. You are used to finding it messy when children are around. From what you see, you can tell that the children have left, because if they were still here they would have created a mess. So the situation presents evidence that the children have left.}
+
+\begin{xlist}
+
+\ex\label{ex:johnson:AgrRaisingDisorganizedHouse}
+\gll ?Va-ana \circled{va-}lolekh-a va-tsiir-e.\\
+2-child 2\Sm-seem-\Fv{} 2\Sm-leave-\Pst{} \\\hfill\textbf{Agreeing Raising}
+\glt `The children seem to have left.'
+
+\ex\label{ex:johnson:NonAgrRaisingDisorganizedHouse}
+\gll Va-ana \circled{ka-}lolekh-a va-tsiir-e.\\
+2-child 6\Sm-seem-\Fv{} 2\Sm-leave-\Pst{} \\\hfill\textbf{Non-agreeing Raising}
+\glt `The children seem to have left.'
+
+%glossed with one question mark just to show that it's not the most preferred option.
+
+\end{xlist}
+
+% They’re not equally good bc the first one addresses the context directly. It’s direct from what you’re seeing. 
+
+% The second one is addressing the issue, but it’s not specifically about seeing the evidence. It’s less direct about addressing the evidence that you’re looking at. 
+
+% the state of the room is the “ka-” That’s where the kalolekha are coming from. 
+
+% But with va- you’re talking about the children. 
+
+% \REF{ex:johnson:NonAgrRaisingDisorganizedHouse} sounds better than \REF{ex:johnson:AgrRaisingDisorganizedHouse} because of the difference. But this doesn’t make \REF{ex:johnson:AgrRaisingDisorganizedHouse} wrong.
+
+% From 4/1/23 elicitation
+\z
+
+In \REF{ex:johnson:AgrVsNonAgr}, the context is designed to draw attention in a different direction, and the preferred raising construction changes as well. There is still no direct observation of the children, but the evidence is specifically of things that the children do. 
+
+\ea\label{ex:johnson:AgrVsNonAgr}
+
+\textit{Context: You walk into the house and find that it is disorganized. You know well that when children play in the house, they disorganize a lot of things. From the evidence, you can tell that the children are the ones who were here but have left.}
+
+\begin{xlist}
+
+\ex\label{ex:johnson:AgrRaisingOrganizedHouse}
+\gll Va-ana \circled{va-}lolekh-a va-tsiir-e.\\
+2-child 2\Sm-seem-\Fv{} 2\Sm-leave-\Pst{} \\
+\glt `The children seem to have left.'
+
+\ex\label{ex:johnson:NonAgrRaisingOrganizedHouse}
+\gll ?Va-ana \circled{ka-}lolekh-a va-tsiir-e.\\
+2-child 6\Sm-seem-\Fv{} 2\Sm-leave-\Pst{} \\
+\glt `The children seem to have left.'
+
+%glossed with one question mark just to show that it's not the most preferred option.
+
+\end{xlist}
+
+% From 4/1/23 elicitation
+\z
+
+\noindent In \REF{ex:johnson:AgrVsNonAgr}, Alulu comments that ``you are relying more on what you know about the children. This sounds more natural to put more emphasis on the children. You’re not so bothered with the state of the room, it’s about the children’s behavior. So [\REF{ex:johnson:AgrRaisingOrganizedHouse}] is {[more natural]} than [\REF{ex:johnson:NonAgrRaisingOrganizedHouse}].''
+
+We therefore see that there are demonstrable empirical distinctions between agreeing and non-agreeing raising constructions that are otherwise identical (\textit{contra} the predictions of Halpert's \citeyear{Halpert2019RaisingUnphased} analysis of Zulu if it were applied directly to Tiriki). In particular, non-agreeing raising emphasizes the evidence/situation, while agreeing raising is more neutral. The reason for this difference will become clearer based on what we see in the following section.
+
+\subsection{Quasi-expletives and their interpretive properties} \label{sec:johnson:InterpretExpletives}
+
+As we have already mentioned, Tiriki has two different non-agreeing subject markers: the class 6 subject marker (\textit{ka-}) and the class 9 subject marker (\textit{i-}). As reported by \cite{diercksetal2022luyia}, these different subject markers prompt interpretive differences. \textit{ka-} (class 6) is associated with indirect evidence, while \textit{i-} (class 9) is associated with more direct evidence. These effects are also not exclusive to Tiriki:  \citet{GluckmanBowler:2017:LogooriExpletives} and \citet{Gluckman2021Expletives} document similar effects in Logoori, \citet{Gluckman2023Perspectival} does so for Nyala East, and the second author has done so for Wanga as well (Diercks, field notes).
+
+% \item In \REF{ExDirectEvidenceSoccer}, the speaker has direct evidence of what she says, and thus using \textit{i-} is licit.
+
+% \jkl
+
+% \ea\label{ExDirectEvidenceSoccer}
+
+% \textit{Context: The speaker is at a soccer game, watching Manchester United play. She would say:}
+
+% \begin{xlist}
+
+% \ex
+% \#\gll Ka-lolekh-a Manchester va-vay-a vulahi.\\
+% 6\Sm-seem-\Fv{} Manchester 2\Sm-play-\Fv{} well\\
+% \glt `It seems that Manchester is playing well.'
+
+% \ex
+% \gll I-lolekh-a Manchester va-vay-a vulahi.\\
+% 9\Sm-seem-\Fv{} Manchester 2\Sm-play-\Fv{} well\\
+% \glt `It seems that Manchester is playing well.'
+
+% \end{xlist}
+
+% \cite[(144)]{diercksetal2022luyia}
+
+% \z 
+
+% \jkn
+
+% \item In contrast, when the speaker does not have direct evidence of their claim, as in \REF{ExIndirectEvidenceSoccer}, the pattern reverses. \textit{I-} becomes infelicitous, and \textit{ka-} is more acceptable.
+
+% \jkl
+
+% \ea\label{ExIndirectEvidenceSoccer}
+
+% \textit{Context: The speaker is listening to a newscast or someone else telling her about the game. She would say:}
+
+% \begin{xlist}
+
+% \ex
+% \gll Ka-lolekh-a Manchester va-vay-a vulahi.\\
+% 6\Sm-seem-\Fv{} Manchester 2\Sm-play-\Fv{} well\\
+% \glt `It seems that Manchester is playing well.'
+
+% \ex
+% \#\gll I-lolekh-a Manchester va-vay-a vulahi.\\
+% 9\Sm-seem-\Fv{} Manchester 2\Sm-play-\Fv{} well\\
+% \glt `It seems that Manchester is playing well.'
+
+% \end{xlist}
+
+% \cite[(145)]{diercksetal2022luyia}
+
+% \z
+
+% \jkn
+
+% \item \citeauthor{diercksetal2022luyia} show that this pattern\textemdash \textit{ka-} appearing with indirect evidence and \textit{i-} appearing with direct evidence\textemdash also appears in hyperraising constructions. 
+
+We have been referring to these subject markers as agreeing with null ``quasi-expletives." These quasi-expletives are expletive-like in that they occur where expletives occur in many other languages (e.g., as subjects of perception verbs). They are not expletive-like in that they are clearly associated with interpretations. For example, when the context specifies that the speaker has indirect evidence of their claim, \textit{ka-} is more natural than \textit{i-}.
+
+\ea\label{ex:johnson:HrWithIndirectEvidence}
+
+\textit{Context: You hear the children making noise as they are leaving school (but you don't see them directly).}
+
+\begin{xlist}
+
+\ex
+\gll Va-ana \circled{ka-}lolekh-a khuli va-mal-i kasi y-a mu-sukulu.\\
+2-child 6\Sm-seem-\Fv{} that 2\Sm-finish-\Pst{} 9work 9-\textsc{assc} 18-school\\
+\glt `The children seem to have finished their schoolwork.'
+
+\ex         
+\#\gll Va-ana \circled{i-}lolekh-a khuli va-mal-i kasi y-a mu-sukulu.\\
+2-child 9\Sm-seem-\Fv{} that 2\Sm-finish-\Pst{} 9work 9-\textsc{assc} 18-school\\
+\glt `The children seem to have finished their schoolwork.' \\\citep[151]{diercksetal2022luyia}
+
+\end{xlist}
+
+
+\z
+
+\noindent In contrast, the speaker's relatively direct evidence in \REF{ex:johnson:HrWithDirectEvidence} makes \textit{i-} more natural than \textit{ka-}.
+
+\ea\label{ex:johnson:HrWithDirectEvidence}
+
+\textit{Context: You come across the students leaving the gate of the school.}
+
+\begin{xlist}
+
+\ex
+\#\gll Va-ana \circled{ka-}lolekh-a khuli va-mal-i kasi y-a mu-sukulu.\\
+2-child 6\Sm-seem-\Fv{} that 2\Sm-finish-\Pst{} 9work 9-\textsc{assc} 18-school\\
+\glt `The children seem to have finished their schoolwork.'
+
+\ex         
+\gll Va-ana \circled{i-}lolekh-a khuli va-mal-i kasi y-a mu-sukulu.\\
+2-child 9\Sm-seem-\Fv{} that 2\Sm-finish-\Pst{} 9work 9-\textsc{assc} 18-school\\
+\glt `The children seem to have finished their schoolwork.' \\ \citep[150]{diercksetal2022luyia}
+
+\end{xlist}
+
+\z
+
+It is worth noting that these interpretive differences are not exclusive to hyperraising: they also appear in unraised constructions and other kinds of modal constructions, with the same evidence-based interpretive effects.
+
+
+We assume (as is widespread for Bantuist syntacticians) that in null subject contexts, subject markers agree with null pronominal elements (\textit{pro}). Here, we assume that the class 6 and class 9 subject markers agree with null quasi-expletives (\textit{pro\subs{\textsc{expl}}}) which are in fact referential DPs that refer to different kinds of evidence. On this approach, the quasi-expletives are the thematic subjects of the perception verbs they can appear with. In effect, in constructions such as \REF{ex:johnson:HrWithIndirectEvidence} and \REF{ex:johnson:HrWithDirectEvidence}, the evidence is doing the ``seeming."
+\ea \label{ex:johnson:QuasiExpletiveContent}
+\begin{xlist}
+
+\ex \textit{ka-} = agreement with \textit{pro\subs{\textsc{expl.indirect.evidence}}}
+
+\ex \textit{i-}   = agreement with \textit{pro\subs{\textsc{expl.direct.evidence}}}
+
+
+\end{xlist}
+\z 
+
+\subsection{Thematic quasi-expletives as perceptual sources}
+
+For some time, it appeared that copy-raising constructions were in part typified by a requirement of the so-called ``copy'' (a pronoun coferential with the matrix subject) in the embedded clause. Constructions lacking such a copy are often unacceptable:
+
+\ea \label{ex:johnson:CrLackOfCopyPragmaticProblem}
+\ea *Bill seems as if Mary is intelligent.
+
+\citep[(16b)]{Lappin1984Raising}
+\ex *Tina seems like Chris has been baking sticky buns.
+
+\citep[(14a)]{AsudehToivonen2012CopyRaising} 
+\z \z
+
+One of the observations of \citet{Landau:2009:CopyRaising, Landau:2011:CopyRaising} is that the term ``copy-raising" is a misnomer: so-called copy-raising constructions may optionally involve \textit{neither} raising \textit{nor} a copy in the embedded clause. For example, consider a situation where it is known that the speaker's mother is not a very good cook. If they see smoke in the house, they can say in both English and Tiriki: 
+
+\ea \label{ex:johnson:HouseLooksMamaCooking}
+\gll I-nzu i-manyiny-a khuli Mama a-tekh-aang-a.\\
+9-house 9\Sm-look.like-\Fv{} that 1Mama 1\Sm-cook-\Hab-\Fv{}.\\
+\glt `The house looks like Mama is cooking.'
+\z
+
+\noindent In such a construction, the subject of the embedded clause is crucially not a copy: it is not coreferent with the matrix subject. \citet{Landau:2009:CopyRaising,Landau:2011:CopyRaising} notes similar patterns in Hebrew and English, exemplified in \REF{ex:Johnson:landau'sexample}:
+
+\newpage
+\ea \label{ex:Johnson:landau'sexample}
+\begin{xlist}
+\ex The car sounds like a trip to the mechanic is necessary.
+\ex The house looks like the kids had a party last night. \\ (Based on \citealt{Landau:2011:CopyRaising})
+\end{xlist}
+\z
+
+As Landau points out, however, there are also instances where pronominal copies in the embedded clause are obligatory. \citet{Landau:2011:CopyRaising} proposes that in copy-raising constructions, a coreferent pronoun in the embedded clause is optional in general but is required in one specific context\textemdash in the event that the subject of the copy-raising construction is not the speaker's perceptual source for the perceptual report.
+
+ 
+
+\ea \label{ex:johnson:LandauGeneralization} \textit{The P-source-Copy Generalization} \citep[(26)]{Landau:2011:CopyRaising} \\
+Given a sentence ``DP\subs{i} V\subs{perc} (to DP\subs{j}) \textit{like} CP'',\\
+where V\subs{perc} $\in$ \{\textit{seem, appear, look, sound, feel, smell, taste}\}: \\
+A copy (= pronoun coindexed with DP\subs{i}) is necessary in CP iff DP\subs{i} is not a P-source.
+\z 
+
+As Landau points out, two sorts of evidence support this claim. ``First, [copy-raising] examples whose subject can be construed as a P-source \textit{allow} a copy-less complement. Second, [copy-raising] examples whose subject cannot be construed as a P-source \textit{require} a copy in their complement.'' Therefore, for Hebrew and English (the main languages Landau considers), each copy-raising predicate appears in three variations of the copy-raising construction that are distinguished by the properties of the matrix subject\textemdash an expletive, a non P-source DP, or a P-source DP\textemdash which are illustrated in the examples below. 
+
+\ea
+\begin{xlist}
+\ex
+\smash{Expletive Subject (\textit{sound\subs{1}})}
+
+\textit{Context: I read about the nutritional merits of Tibetan food, and remark:}\\
+It \textit{sounds}\subs{1} like Tibetans are healthier than us.
+
+\ex
+\smash{Non P-source DP Subject (\textit{sound\subs{2}})}
+
+\textit{Context: I read about the nutritional merits of \textit{tsampa}, the Tibetan flour (made of roasted barley and butter tea) and remark:}\\
+Tsampa \textit{sounds}\subs{2} like Tibetans are healthier *(eating \circled{it}).
+
+\ex
+\smash{P-source DP Subject (\textit{sound\subs{3}})}
+
+\textit{Context: My friend tells me about the nutritional merits of Tibetan food. I respond:}\\
+You \textit{sound}\subs{3} like Tibetans are healthier than us. \\ \citep[41]{Landau:2011:CopyRaising}
+\end{xlist}
+\z
+
+\citet{Landau:2011:CopyRaising} constructs a set of  paradigms to test his P-source generalization wherein the presence of a required copy in the embedded clause in copy-raising constructions is dependent on the thematic status of the matrix subject. Specifically, when the matrix subject is \textit{not} the perceptual source of the perception that the lower clause reports, then a copy is required; we replicate his diagnostics from Hebrew and English in Tiriki here. In \REF{ex:johnson:HearAboutGardenDescription}, we can see that in a context where the matrix subject is the source of the perceptual report, it is possible to have a complement clause with no overt or covert pronominal that is coreferent with the matrix clause in both Tiriki and English: 
+
+ 
+
+\ea \textit{Context: Your friend describes to you how well-kept and flourishing her garden is. You remark:} \label{ex:johnson:HearAboutGardenDescription}
+%\begin{xlist}
+
+%\ex
+\gll Li-vola lyolyo \circled{li}-hulikh-a khuli mu-seemberi y-its-a vuri li-tukhu.\\
+5-description your.5 5\Sm-sound.like-\Fv{} that 1-gardener 1\Sm-come-\Fv{} every 5-day \\
+\glt `Your description sounds like a gardener comes every day.' 
+%•	this is OK, even just hearing the description, without seeing/hearing the garden 
+
+%\ex
+%\gll livola lyolyo kahulikha khuli museemberi yitsa %vuri litukhu \\
+%gloss here \\
+%\glt `Your description sounds like a gardener comes every day.'
+%•	this is OK, even just hearing the description, without seeing/hearing the garden 
+
+%\ex
+%\gll livola lyolyo ihulikha khuli museemberi yitsa vuri litukhu  \\
+%gloss here \\
+%\glt `Your description sounds like a gardener comes every day.'
+%•	this is OK, even just hearing the description, without seeing/hearing the garden 
+
+%\end{xlist}
+%\z
+
+
+%\ea \textit{Context: My friend describes to me how well-kept and flourishing her garden is. I remark:} \label{HearAboutGardenUnraised}
+
+%\begin{xlist}
+
+%\ex 
+%\gll kahulikha khuli museemberi yitsa vuri litukhu  \\
+%gloss here \\
+%\glt `it sounds like a gardener comes every day.'
+
+%\ex
+%\gll kahulikha khuli museemberi yitsa vuri litukhu khuseembera murimi kwokwo  \\
+%gloss here \\
+%\glt `It sounds like a gardener comes every day to maintain your garden.'
+
+%\end{xlist}
+\z 
+
+We see a distinction, however, when the matrix subject is not the perceptual source of the report. In the context below, the speaker has received a report about the garden in question but has not directly observed the garden themselves. Therefore, even though \textit{murimi kwokwo} `your garden' is the subject of the copy-raising construction, it is not the perceptual source of the reported information because the speaker in this context has not directly observed the garden. In such an instance, it is impossible to have a complement clause that lacks an overt or covert pronominal element that is coreferent with the matrix clause, as \REF{ex:johnson:GardenSoundsCopyRequired} shows. If such a pronominal is added by including additional information in the sentence, then the sentence becomes perfectly natural (precisely as Landau's  \citeyear{Landau:2011:CopyRaising} P-source generalization in \REF{ex:johnson:LandauGeneralization} predicts).
+
+\ea\label{ex:johnson:GardenSoundsCopyRequired}  \textit{Context: Your friend describes to you how well-kept and flourishing her garden is. You remark:} 
+
+%\ex \label{GardenSoundsCopyRequiredBad}
+%%\gll *?murimi kwokwo kuhulikha khuli museemberi yitsa vuri litukhu   \\
+%gloss here \\
+%\glt `Your garden sounds like a gardener comes every day.'
+%•	that’s a correct sentence (but, when we discussed the sentence below, this one started seeming not as good)
+%•	this is definitely not as good as the unraised version above. 
+%•	you receive a description, and when you try to internalize it, you feel like that gardener attends to it on a daily basis
+%•	it doesn’t sound 100% unnatural but it doesn’t fit quite as well.
+
+\gll Mu-rimi kwokwo ku-hulikh-a khuli mu-seemberi y-its-a vuri li-tukhu *(khu-\circled{ku-}seember-a).\\
+3-garden your.3 3\Sm-sound.like-\Fv{} that 1-gardener 1\Sm-come-\Fv{} every 5-day \phantom{*(}15\textsc{sm}-3\Om-maintain-\Fv{} \\
+\glt `Your garden sounds like a gardener comes every day *(to maintain it).'
+%•	this is OK just hearing the description
+%•	adding “khukuseembera” sounds much better in this circumstance
+%•	this “khukuseembera” makes it a complete sentence when you put it there. 
+
+%\ex
+%\gll murimi kwokwo kahulikha khuli museemberi yitsa vuri litukhu khukuseembera   \\
+%gloss here \\
+%\glt `Your garden sounds like a gardener comes every day to maintain it.'
+%•	this is an OK sentence
+%•	it is OK just on hearing a description 
+%•	this sounds equally as good as the one above. 
+
+%\ex
+%\gll murimi kwokwo kahulikha khuli museemberi yitsa vuri litukhu   \\
+%gloss here \\
+%\glt `Your garden sounds like a gardener comes every day.'
+%•	this one sounds the same as the first one. i.e. it’s quite OK just hearing the description. 
+
+\z
+
+It is instructive to apply this paradigm to the non-agreeing constructions. The context shown in \REF{ex:johnson:HearAboutGardenNonAgr6} is one in which the speaker has not directly perceived the garden that is being described, but the matrix subject (\textit{livola lyolyo} `your description') is nonetheless a P-source. Per Landau, a construction with a P-source subject in the matrix clause does not require a pronoun copy in the lower clause. Here, we see no distinction between the agreeing \REF{ex:johnson:HearAboutGardenDescription} and non-agreeing \REF{ex:johnson:HearAboutGardenNonAgr6} constructions. Given the ``indirect evidence'' interpretation of the class 6 expletive with perception verbs, this overlapping distribution is unsurprising.
+
+ 
+
+\ea \label{ex:johnson:HearAboutGardenNonAgr6} \textit{Context: Your friend describes to you how well-kept and flourishing her garden is. You remark:} %\label{ex:johnson:HearAboutGardenDescription2}
+
+
+% \label{ex:johnson:HearAboutGardenAgreeing}
+%\gll Li-vola lyolyo \circled{li-}hulikh-a khuli mu-seemberi y-its-a vuri li-tukhu.\\
+%5-description your.5 5\Sm-sound.like-\Fv{} that 1-gardener 1\Sm-come-\Fv{} every 5-day \\
+%\glt `Your description sounds like a gardener comes every day.'
+%•	this is OK, even just hearing the description, without seeing/hearing the garden 
+
+%\ex 
+\gll Li-vola lyolyo \circled{ka-}hulikh-a khuli mu-seemberi y-its-a vuri li-tukhu.\\
+5-description your.5 6\Sm-sound.like-\Fv{} that 1-gardener 1\Sm-come-\Fv{} every 5-day \\
+\glt `Your description sounds like a gardener comes every day.'
+%•	this is OK, even just hearing the description, without seeing/hearing the garden 
+
+%\ex \label{HearAboutGardenNonAgr9}
+%\gll livola lyolyo ihulikha khuli museemberi yitsa vuri litukhu  \\
+%gloss here \\
+%\glt `Your description sounds like a gardener comes every day.'
+%•	this is OK, even just hearing the description, without seeing/hearing the garden 
+
+\z
+
+An important contrast emerges, however, when the matrix subject is a non-P-source, as in the context in \REF{ex:johnson:HearAboutGardenSubject2}. We see the same fact shown above in \REF{ex:johnson:HearAboutGardenNonPsourceSubj}, where a pronominal copy is required in the lower clause when the matrix subject is not the perceptual source of the embedded report (precisely as predicted by \citealt{Landau:2011:CopyRaising}). The curious fact that emerges is in \REF{ex:johnson:HearAboutGardenNonPsourceSubjNonAgr}: this is the same sentence as in \REF{ex:johnson:HearAboutGardenNonPsourceSubj} with the exception that it utilizes the non-agreeing class 6 subject marker. In this instance, the pronominal copy in the lower clause becomes optional again. 
+
+\ea \textit{Context: Your friend describes to you how well-kept and flourishing her garden is. You remark:} \label{ex:johnson:HearAboutGardenSubject2}
+\begin{xlist}
+
+\ex \label{ex:johnson:HearAboutGardenUnraised2}
+\gll Ka-hulikh-a khuli mu-seemberi y-its-a vuri li-tukhu (khu-seember-a mu-rimi kwokwo).\\
+6\Sm-sound.like-\Fv{} that 1-gardener 1\Sm-come-\Fv{} every 5-day \phantom{(}15\textsc{sm}-maintain-\Fv{} 3-garden your.3 \\
+\glt `It sounds like a gardener comes every day to maintain your garden.'
+
+\ex \label{ex:johnson:HearAboutGardenNonPsourceSubj}
+\gll Mu-rimi kwokwo ku-hulikh-a khuli mu-seemberi y-its-a vuri li-tukhu *(khu-\circled{ku-}seember-a).\\
+3-garden your.3 3\Sm-sound.like-\Fv{} that 1-gardener 1\Sm-come-\Fv{} every 5-day \phantom{*(}15\textsc{sm}-3\Om-maintain-\Fv{}  \\
+\glt `Your garden sounds like a gardener comes every day *(to maintain it).'
+
+ 
+
+\ex \label{ex:johnson:HearAboutGardenNonPsourceSubjNonAgr}
+\gll Mu-rimi kwokwo ka-hulikh-a khuli mu-seemberi y-its-a vuri li-tukhu (khu-\circled{ku-}seember-a).\\
+3-garden your.3 6\Sm-sound.like-\Fv{} that 1-gardener 1\Sm-come-\Fv{} every 5-day \phantom{(}15\textsc{sm}-3\Om-maintain-\Fv{}  \\
+\glt `Your garden sounds like a gardener comes every day (to maintain it).'
+
+\end{xlist}
+\z 
+
+If Landau's (\citeyear{Landau:2011:CopyRaising}) P-source generalization is on the right track, then why is it possible for the coreferent pronominal in \REF{ex:johnson:HearAboutGardenNonPsourceSubjNonAgr} to be omitted, when the lexical DP matrix subject is not a P-source? We suggest that there is in fact a P-source argument of the matrix copy-raising predicate in \REF{ex:johnson:HearAboutGardenNonPsourceSubjNonAgr}: the ``non-agreeing'' subject markers agree with null arguments that are expletive-like but are in fact thematic arguments of the verb and carry their own interpretations. This analysis follows the conclusions of \citet{GluckmanBowler:2017:LogooriExpletives} for Logoori and is also consistent with Ruys' (\citeyear{Ruys:2010:Expletives}) analysis of CP-linked expletives in English and Dutch. It also shares some similarities with how \citet{Greeson2023EnglishHr} analyzes expletive \textit{it} in English constructions that he argues are hyperraising constructions.  
+
+
+\section{Interpretation of raised vs. unraised subjects} \label{sec:johnson:RaisedVsUnraised}
+
+Before we present a direction of analysis, we turn to the question of what motivates hyperraising in Tiriki. This section demonstrates that there is an interpretive difference between raised and unraised subjects: raised subjects are topical. We propose that this topicality is what prompts them to raise.
+
+\subsection{Background: What canonically motivates raising?}
+
+A key proposal in analyses of raising constructions is that the argument moves to the matrix clause when the lower clause is defective or truncated in some way. For example, in English, the embedded subject arguably cannot be Case-licensed within a non-finite embedded clause and therefore must move to the subject position of the finite matrix clause to be Case-licensed, as seen in \REF{ex:johnson:EnglishDefectiveComp}.
+
+
+\ea \label{ex:johnson:EnglishDefectiveComp}
+Tania seems {[} \sout{Tania} to be happy {]} .
+\z 
+
+
+When the embedded clause is not defective (in English, when it is finite and can license nominative Case), raising out of the embedded clause is illicit. 
+
+
+\ea\label{ex:johnson:EnglishRaiseCP}
+
+*Tania seems {[} (that) \sout{Tania} is happy {]} .
+
+\z
+
+\newpage
+\noindent There is arguably no motivation (for Case-licensing or otherwise) for the embedded subject to raise out of the embedded clause in situations like \REF{ex:johnson:EnglishRaiseCP} (in addition to other barriers to such movement, such as an intervening phase). 
+
+\subsection{Interpretation of non-agreeing raising in Tiriki}
+
+Given that it is possible for the embedded subject to remain in the lower clause in Tiriki, as in \REF{ex:johnson:TirikiUnraisedConstruction2}, why does the subject move to the main clause in non-agreeing hyperraising constructions like \REF{ex:johnson:IntroAgreeingRaising2}, when everything else about the construction appears identical?\footnote{The same question exists for agreeing hyperraising, but it is even more salient in the non-agreeing constructions where there is no obvious morphological change in the raising contexts.}
+
+\ea 
+\begin{xlist}
+\ex \label{ex:johnson:TirikiUnraisedConstruction2} {{Unraised}}
+
+\gll Ka-lolekh-a khuli va-ana va-tukh-i.\\
+\textsc{6sm-}seem-\textsc{fv} that 2-child 2\Sm-arrive-\Fv{}\\ 
+\glt `It seems that the children arrived.'
+
+\ex  \label{ex:johnson:IntroAgreeingRaising2} {{Non-Agreeing Raising}}
+
+\gll Va-ana ka-lolekh-a khuli va-tukh-i.\\
+2-child \textsc{6sm-}seem-\textsc{fv} that \textsc{2sm}-arrive-\textsc{fv}\\
+\glt `The children seem to have arrived.'\\
+(Lit: `The children seem that arrived.')
+\end{xlist}
+\z 
+
+% This raises questions about DP-licensing, since the raised subject is presumably appropriately licensed in the embedded clause. This raises the related question, then, of what motivates movement to the matrix clause.
+If there is an interpretive difference between potential hyperraising constructions based on whether the subject is in the main clause or the embedded clause, that could point towards an explanation of what motivates raising. The concern is especially salient in Tiriki (and Logoori and Zulu) hyperraising due to the presence of non-agreeing hyperraising constructions, where there is no evident morphological difference between the unraised and raised constructions (apart from the position of the subject). 
+
+In Tiriki, there is such a property: raised subjects tend to be interpreted as topical. For example, in \REF{ex:johnson:RaisedVsUnraised}, the speaker declares what they are going to talk about (\textit{vaana} `the children'), establishing that as the aboutness topic. In this context, raising the topical subject is more natural than leaving it in the embedded clause, even though \REF{ex:johnson:UnraisedTopicalSubj} is typically a perfectly acceptable sentence.
+
+\ea\label{ex:johnson:RaisedVsUnraised}
+\gll Nd-eny-a khu-vol-er-e khu-va-ana.\\
+1\Sg.\Sm-want-\Fv{} 15\Sm-say-\Appl-\Fv{} 17-2-children \\
+\glt `I want to tell you about the children.'
+
+\begin{xlist}
+
+\ex\label{ex:johnson:UnraisedTopicalSubj}
+{{Unraised}}
+
+\gll \#? ... Ka-lolekh-a va-ana va-tsiir-e.\\
+{} {} 6\Sm{}-seem-\Fv{} 2-child 2\Sm-leave-\Pst{}  \\
+\glt `It seems that the children have left.'
+
+\ex
+{{Raised}}
+
+\gll ... Va-ana ka-/va-lolekh-a va-tsiir-e.\\
+{} 2-child 6\Sm-/2\Sm-seem-\textsc{fv} 2\Sm-leave-\Pst{} \\
+\glt `The children seem to have left.'
+
+\end{xlist}
+
+% from 4/1/23 elicitation
+%re \REF{ex:johnson:RaisedVsUnraised}, the lead-in is specifically about the children, but in this instance it isn’t directly addressing the children, it’s as if ``the children have gone." The second option follows less directly than  first does 
+\z
+
+
+The inverse is also true: in a context where the embedded subject is not topical, an unraised construction is preferred.
+
+\ea\label{ex:johnson:UnexpectedGuests}
+
+\textit{Context: You have been out in the fields all morning. You come back and the living room is empty of people, but you see a tea tray with dirty mugs and some bread and fruit along with empty plates and crumbs. You have not been expecting guests, but it appears that guests have been here and been entertained.}
+
+\begin{xlist}
+
+\ex\label{ex:johnson:UnraisedGuests}
+{{Unraised}}
+
+\gll Ka-lolekh-a va-cheni va-tukh-i.\\
+6\Sm-seem-\Fv{} 2-guest 2\Sm-arrive-\Pst{}\\
+\glt `It seems that guests have arrived.'
+
+\ex\label{ex:johnson:RaisedGuests}
+{{Raised}}
+
+\gll ?Va-cheni ka-/va-lolekh-a va-tukh-i.\\
+2-guest 6\Sm-/2\Sm-seem-\textsc{fv} 2\Sm-arrive-\Pst{} \\
+\glt `Guests seem to have arrived.'
+
+%glossed as one ? above just to indicate the difference between a and b. Not actually bad/ungrammatical.
+
+\end{xlist}
+
+\z
+
+\noindent In the words of Alulu, ``[In \REF{ex:johnson:UnraisedGuests}], based on the situation of the room, you are able to tell that the guests have arrived. ... You would use [\REF{ex:johnson:RaisedGuests}] more naturally if you were expecting the guests to arrive.'' Agreeing and non-agreeing raising behave identically in this respect. %To be clear, both are acceptable and natural here: the question mark is being used to clarify which is the preferred formulation.
+
+In summary, in these particular configurations of hyperraising constructions, topical subjects more naturally raise to the main clause, while non-topical subjects more naturally remain in the embedded clause. We consider one way to analytically derive this pattern in \sectref{sec:johnson:DraftAnalysis}. 
+
+\section{Empirical summary and directions of analysis} \label{sec:johnson:analysis}
+
+There is still much to be done to document the properties of Tiriki raising constructions, so a comprehensive analysis is yet to be completed. Here, we summarize the state of our empirical conclusions about Tiriki raising and suggest the direction of analysis that we find most promising.
+
+\subsection{Properties of Tiriki hyperraising}
+
+\citet{diercksetal2022luyia} conclude that apparent hyperraising in Tiriki is true hyperraising, not copy-raising or left-dislocation of the subject. Agreeing and non-agreeing hyperraising constructions involve movement, per connectivity effects of idioms and non-perceptual source readings \citep{diercksetal2022luyia}. Both agreeing and non-agreeing hyperraising constructions are A-movement to canonical subject position \citep{diercksetal2022luyia}.
+
+\ea \smash{\textbf{Empirical contributions from \citet{diercksetal2022luyia}}} 
+\begin{itemize}
+
+\item \textbf{Not left-dislocation}: Hyperraising is possible in contexts where left-dislocation is not, suggesting that apparent hyperraising constructions are not in fact left-dislocation constructions.
+
+\item \textbf{A-movement}: Hyperraising behaves like A-movement to canonical subject position, rather than like \abar-movement.
+
+\item \textbf{Connectivity effects}: Idiomatic readings are maintained in hyperraising constructions, but they are not retained in left-dislocation or control constructions. (Other connectivity effects hold as well.)
+
+\end{itemize}
+\z 
+
+\ea 
+\smash{\textbf{Empirical contributions from this paper}}
+
+\begin{itemize}
+
+\item There is no uniform distinction between hyperraising predicates and copy-raising predicates in Tikiri. Some predicates lack connectivity effects in their agreeing versions but maintain connectivity effects constructions with non-agreeing subject markers (class 6/9) (\sectref{sec:johnson:ThematicProperties}).
+
+\item Non-agreeing raising draws attention to circumstances and evidence in a way that agreeing raising does not (\sectref{sec:johnson:AgrVsNonAgr}).
+
+\item Class 6 and 9 subject markers (when not agreeing with the overt subject) agree with null quasi-expletives, which have evidential interpretations (\sectref{sec:johnson:InterpretExpletives}) and are thematic arguments of perception predicates.
+
+\item Raised subjects are topical, while unraised subjects are not (\sectref{sec:johnson:RaisedVsUnraised}).
+
+\end{itemize}
+\z 
+
+\subsection{Direction of analysis}\label{sec:johnson:DraftAnalysis}
+
+In this section, we sketch a direction of analysis of Tiriki hyperraising that incorporates these conclusions. We begin by focusing on hyperraising predicates, and in the end of this section we extend the same analysis to the apparent copy-raising predicates that we have discussed throughout the paper, unifying all of these predicates as hyperraising predicates. This analysis is not exhaustive in either details or empirical defense, but it is a way of conceptualizing hyperraising constructions that is consistent with the evidence presented here. The intuition that we pursue here is that subjecthood in Tiriki is a composite of three syntactic functions that are all represented grammatically: topicality, grammatical subjecthood (marked by agreement on the verb), and thematic subjecthood. Perceptual verb constructions make available the possibility that these three functions can be shared between multiple subjects. 
+
+First, we propose that all raising verbs have thematic subjects\textemdash either an overt lexical subject or a null quasi-expletive. The thematic roles assigned to these subjects are all some variant of \textsc{evidence} (i.e., the thematic role from the predicate specifies that the referent of the argument provides evidence relevant to the perception). Quasi-expletives differ in the kinds of evidence that they denote; class 6 quasi-expletives denote indirect evidence, while class 9 quasi-expletives denote direct evidence. And likewise, predicates can differ with respect to how robust of a perceptual requirement they place on their subjects, which we comment on below. Second, we suggest that a topic feature on T°, \topFeat, drives movement to the matrix clause (see \citealt{Grishin2018ZuluCPs} and \citealt{Greeson2023EnglishHr} for similar proposals).\footnote{We also assume there is an EPP quality associated with T°: some phrase must raise to Spec,TP.}\textsuperscript{,}\footnote{It is worth noting that information structure features in the syntax are not uncontroversial: there is a rich literature arguing against information structure in syntax \citep{Fanselow2006PureSyntax,NeelemanVanDeKoot2008DutchScrambling,Horvath2010StrongModularity}. This is in no small part due to Minimalist assumptions that narrow syntax acts on lexical items to produce sentences; information structure features are plausibly \textit{not} assigned to lexical items in the lexicon, leaving open the question of how they would end up in the syntax. But this state of affairs is paired with an equally rich literature arguing \textit{for} the presence of information structure features in the narrow syntax \citep{Rizzi1997LeftPeriphery,Kallulli:2008:CliticsInfoStrucAlbanian,Aboh2010InfoStrucNumeration,KratzerSelkirk2020InfoStruc}. These references barely scratch the surface, and the empirically-focused nature of this paper precludes a proper theoretical exploration of the point. We do assume that information structure features are assigned to lexical items sometime \textit{after} the lexicon; for present purposes, it is sufficient to assume that information structure features are assigned to lexical items in the Numeration.} 
+
+Agreeing raising works as follows: the embedded subject  raises to matrix Spec,\textit{v}P and is assigned a theta role by the matrix predicate (\textsc{evidence}).\footnote{This analysis allows a single argument to be assigned multiple theta roles, as in the Movement Theory of Control \citep{BoeckxHornsteinNunes:2010}.} The subject then raises further, to matrix Spec,TP, to satisfy the topic feature on matrix T°. We assume an interaction/satisfaction model of Agree for reasons that will become apparent in the following analysis of non-agreeing raising \citep{Deal2015IntSat}.\footnote{For the purposes of this paper, we set aside the question of how DPs can A-move out of phases. We follow \citet{Fong:2018:MongolianHyperRaising,Fong2019HyperRaisingGlossa} in assuming successive-cyclic A-movement through CP is possible. There is much more to be said on this topic, but we must leave the question for future research.}
+
+\ea\label{ex:johnson:AgrHRTreeList}
+
+{{Agreeing hyperraising}}
+
+\begin{xlist}
+
+\ex\label{ex:johnson:AgrHRForTree1}
+
+\gll Va-ana va-lolekh-a khuli va-tukh-i.\\
+2-child \textsc{2sm-}seem-\textsc{fv} that \textsc{2sm}-arrive-\textsc{fv}\\
+\glt `The children seem to have arrived.'
+
+(Adapted from \citealt[(98)]{diercksetal2022luyia})
+
+\ex\label{fig:johnson:TreeAgrHR1}
+
+\scalebox{0.7}{
+\Forest{
+[CP
+    [C°
+    ]
+    [TP
+        [DP\textsubscript{\topFeat}
+              [\textit{Vaana}, roof, name=matrixHighSpecTP]
+        ]
+        [TP
+            [T°\\\textit{va-}\\$\begin{bmatrix} \textsc{int}:\phi\\ \textsc{sat}:\topFeat \end{bmatrix}$,
+                name=matrixTHead
+            ]
+            [\textit{v}P
+                [\sout{DP\textsubscript{\topFeat}}
+                    [\sout{\textit{vaana}}, roof, name=matrixSpecvP]
+                ]
+                [\textit{v}P
+                    [\textit{v}°\\\textit{-lolekha}
+                    ]
+                    [VP
+                        [V°\\\sout{\textit{-lolekha}}
+                        ]
+                        [CP
+                            [\sout{DP\textsubscript{\topFeat}}
+                                [\textit{\sout{vaana}}, roof, name=embeddedSpecCP]
+                            ]
+                            [CP
+                                [C°\\\textit{khuli}
+                                ]
+                                [TP
+                                    [\textit{\sout{vaana} vatukhi}, roof,name=embeddedTP]
+                                ]
+                            ]
+                        ]
+                    ]
+                ]
+            ]
+        ]
+    ]
+]
+\draw[-,dotted] (matrixTHead) to[out=south,in=west] (matrixSpecvP);
+\draw[->] (embeddedSpecCP) to[out=south west,in=south] (matrixSpecvP);
+\draw[->] (matrixSpecvP) to[out=south west,in=south] (matrixHighSpecTP);
+\draw[->] (embeddedTP) to[out=south west,in=south] (embeddedSpecCP);
+}
+}
+
+\end{xlist}
+
+\z
+
+
+Non-agreeing raising introduces an additional complication.\footnote{While space precludes appropriate discussion, \citeauthor{Halpert2019RaisingUnphased}'s (\citeyear{Halpert2019RaisingUnphased}) analysis of similar constructions in Zulu as agreement with the embedded CP cannot be extended to Tiriki; a variety of the Tiriki facts are incompatible with her approach.} A null quasi-expletive is merged in matrix Spec,vP and receives a theta role from the matrix predicate. When T° probes, the probe first Agrees with the expletive in Spec,vP and raises it to Spec,TP. When the quasi-expletive is not topical, the probe's satisfaction condition, [TOP]. has not been met.\footnote{Non-raising constructions may be derived when the quasi-expletive is itself topical, or it may be the case that quasi-expletives cannot be topical (similar to how non-specific DPs are generally unable to function as sentence topics -- see \citealt{ErteschikShir2007InfoStrucBook}) and that non-raising constructions thus result from either a different probe on T° that does not probe for [TOP] or from matrix T°'s probe remaining unsatisfied for [TOP].} So the probe continues searching until it finds the topical DP in embedded Spec,CP and raises that DP to matrix Spec,TP.\footnote{This analysis assumes multiple specifiers of TP.} 
+
+%Non-agreeing raising introduces additional complication.\footnote{While space precludes appropriate discussion, \citeauthor{Halpert2019RaisingUnphased}'s (\citeyear{Halpert2019RaisingUnphased}) analysis of similar constructions in Zulu as agreement with the embedded CP cannot be extended to Tiriki; a variety of the Tiriki facts are incompatible with her approach.} A null quasi-expletive is merged in matrix Spec,\textit{v}P and receives a theta role from the matrix predicate. We assume that this quasi-expletive cannot be topical, similar to how non-specific DPs are generally unable to function as sentence topics \citep{ErteschikShir2007InfoStrucBook}. When T° probes, the probe first Agrees with the expletive in Spec,\textit{v}P and raises it to Spec,TP. But the probe's satisfaction condition, \topFeat, has not been met, because quasi-expletives are not viable topics. So the probe continues searching until it finds the topical DP in embedded Spec,CP and raises that DP to matrix Spec,TP.\footnote{Tiriki has multiple preverbal subject positions, which we assume to be multiple specifiers of TP; space precludes presenting the evidence for this.}
+
+\ea\label{ex:johnson:NonAgrHRStructure2}
+
+{{Non-agreeing Hyperraising}}
+
+\begin{xlist}
+
+\ex\label{ex:johnson:NonAgrHRForTree2}
+
+\gll Va-ana ka-lolekh-a khuli va-tukh-i.\\
+2-child \textsc{6sm-}seem-\textsc{fv} that \textsc{2sm}-arrive-\textsc{fv}\\
+\glt `The children seem to have arrived.'
+
+(Adapted from \citealt[(98)]{diercksetal2022luyia})
+
+\ex\label{fig:johnson:TreeNonAgrHR2}
+
+\hspace*{-1cm}
+\scalebox{0.7}{
+\Forest{
+[CP
+    [C°
+    ]
+    [TP
+        [DP\textsubscript{\topFeat}
+              [\textit{Vaana}, roof, name=matrixHighSpecTP]
+        ]
+        [TP
+            [DP
+              [\textit{pro}\textsubscript{[\textsc{class:} 6]}, roof, name=matrixLowSpecTP]
+            ]
+            [TP
+                [T°\\\textit{ka-}\\$\begin{bmatrix} \textsc{int}:\phi\\ \textsc{sat}:\topFeat \end{bmatrix}$,
+                    name=matrixTHead
+                ]
+                [\textit{v}P
+                    [\sout{DP}
+                        [\sout{\textit{pro}\textsubscript{[\textsc{class:} 6]}}, roof, name=matrixSpecvP]
+                    ]
+                    [\textit{v}P
+                        [\textit{v}°\\\textit{-lolekha}
+                        ]
+                        [VP
+                            [V°\\\sout{\textit{-lolekha}}
+                            ]
+                            [CP
+                                [\sout{DP\textsubscript{\topFeat}}
+                                    [\textit{\sout{vaana}}, roof, name=embeddedSpecCP]
+                                ]
+                                [CP
+                                    [C°\\\textit{khuli}
+                                    ]
+                                    [TP
+                                        [\textit{\sout{vaana} vatukhi}, roof,name=embeddedTP]
+                                    ]
+                                ]
+                            ]
+                        ]
+                    ]
+                ]
+            ]
+        ]
+    ]
+]
+\draw[-,dotted] (matrixTHead) to[out=south,in=west] (matrixSpecvP);
+\draw[-,dotted] (matrixTHead) to[out=south,in=west] (embeddedSpecCP);
+\draw[->] (matrixSpecvP) to[out=south west,in=south] (matrixLowSpecTP);
+\draw[->] (embeddedSpecCP) to[out=south west,in=south] (matrixHighSpecTP);
+\draw[->] (embeddedTP) to[out=south west,in=south] (embeddedSpecCP);
+}
+}
+
+\end{xlist}
+
+\z
+
+\noindent The result, then, is that non-agreeing raising constructions are multiple subject constructions. The thematic and grammatical subject of the matrix clause is the quasi-expletive, and the topic-subject is the DP that has raised from the embedded subject position of the complement clause.
+
+On this approach, there is no structural distinction between hyperraising and copy-raising in Tiriki. Both are constructions that raise embedded subjects to a matrix subject position, similar to control constructions (on the Movement Theory of Control: \citealt{BoeckxHornsteinNunes:2010}).\footnote{By ``matrix subject position," we mean a grammatical, thematic, and topical subject position in the agreeing raising constructions, or only a topical subject position in non-agreeing raising constructions.} Our suggestion is that the distinct empirical behaviors between them are based on the relative narrowness of the entailments imposed by the perception predicate on the referent of its subject. Hyperraising predicates such as \textit{-lolekha} `seem' convey something like ``evidence exists,'' which is fairly readily compatible with any raised argument. In contrast, an apparent copy-raising predicate such as \textit{-hulikha} `sound like' places more specific entailments on the kind of evidence offered by the referent of its thematic subject (specifically, the source of evidence must be sound-related). In general, therefore, connectivity effects more readily arise in contexts where there are not strict requirements placed by the matrix thematic predicate (\textit{seems}/\textit{appears}-type verbs), because there are fewer potential incompatibilities between the raised argument and the thematic role of the matrix predicate. (This is the same approach to explaining distinctions between raising and control on the Movement Theory of Control: \citealt{BoeckxHornsteinNunes:2010}.)
+
+It is worth noting that the approach sketched here has a lot in common with the proposal set forward by \citet{Greeson2023EnglishHr} for a newly documented English construction that parallels what we have proposed for Tiriki. Greeson argues that constructions such as \REF{ex:johnson:EnglishHr} are in fact hyperraising constructions akin to what we have suggested for Tiriki: multiple subject constructions where the expletive is a thematic subject of the matrix predicate and the DP subject has raised from the embedded clause to another subject position in the matrix clause. 
+
+\ea \label{ex:johnson:EnglishHr}
+\ea Mei\textsubscript{\textit{k}} it seems \tr{k} is happy. 
+\ex The kids\textsubscript{\textit{k}} it seems all \tr{k} know what they're doing. \\ \citep{Greeson2023EnglishHr}
+\z 
+\z 
+
+\noindent \citet{Greeson2023EnglishHr} suggests various possible analytical approaches to these constructions, including a topic-driven analysis of the moved DP like we have suggested for Tiriki. Further work on English and Tiriki (and related Bantu languages with similar patterns, for example Zulu, Lubukusu, Wanga, and Logoori) is necessary in order to evaluate the empirical similarities and differences, but these parallels are intriguing. 
+
+% \section{Standing Questions}
+
+% \begin{itemize}
+
+% \item how is the CP-linked nature of the expletives explained? 
+
+% \item wtf is a quasi-expletive? 
+
+% \item wtf is a quasi-theta role? 
+
+% \item If Topic features drive movement to the matrix clause, what drives movement in agreeing raising to Spec,vP?
+
+% \item How to A-move out of the embedded clause? Lots of proposals about this (lower clause is secretly defective, there is an A feature at the edge of the embedded CP, HR is in principle possible bc no horizons, etc. 
+
+% \item Space precludes appropriate discussion, but \citet{Halpert2019RaisingUnphased} offers an analysis of similar constructions in Zulu. A variety of Tiriki facts are incompatible with Halpert's approach, however. 
+
+% \end{itemize}
+
+% \begin{itemize}
+%     \item Be sure to include somewhere
+%         \begin{itemize}
+
+%         \item ``non-agreeing copy-raising'' - i.e., showing the differences between thematic predicates (can even bring in Wanga if we want to)
+
+%         \item The Tiriki obligatory raising in absence of CP (non-finite lower clause), along with the lack of non-agreeing raising there - bc it shows something like Case-theoretic properties (obligatory raising) and it also shows the CP-linked-ness of the quasi-expletives
+
+% \item English copy-raising: the cat looks/sounds/smells like it's out of the bag
+
+%         \end{itemize}
+% \end{itemize}
+
+% \ea \label{EnglishIdiomCr}
+% \begin{xlist}
+
+% \ex 
+% *The cat smells like it's out of the bag.
+
+% \ex 
+% The cat sounds like it's out of the bag. 
+% - \textit{acceptable in response to auditory evidence, including speech, regarding a secret coming out}.
+
+% \ex The cat looks like it's out of the bag. 
+% - \textit{acceptable in response to visual evidence regarding a secret coming out}. 
+
+% \end{xlist}
+% \z 
+
+\subsection{Analytical/theoretical conclusions}
+
+We have shown that there are fine-grained interpretive differences between agreeing and non-agreeing raising (and unraised constructions) in Tiriki, especially when predicates with different thematic properties are considered. Raised subjects are topical, whereas their parallels in non-raising constructions are not. We also showed that there is a difference in interpretation between agreeing raising constructions and non-agreeing raising constructions: non-agreeing raising constructions induce a reading where some salient evidence (rather than the referent of the raised subject itself) leads to the conclusion, whereas agreeing raising constructions are more neutral. This pattern accords with the interpretations of quasi-expletives more generally, which have to do with (in)directness of evidence. Finally, we showed that there appears to be a thematic relationship between raising predicates and their subjects by showing that even apparent copy-raising constructions have non-agreeing variants that show the same connectivity effects that typical hyperraising predicates do. In short, we have suggested that less distinguishes hyperraising and copy-raising than is typically thought. All of these predicates assign thematic roles to their subjects, and these thematic roles have to do with the evidence being perceived. However, there is variation in the degree of restriction imposed by the perception predicate: underspecified (hyperraising) or more highly specified (copy-raising). This analysis contributes to the unification of raising and control predicates under the Movement Theory of Control \citep{BoeckxHornsteinNunes:2010}. 
+
+Concerning perception predicates in particular, this helps to explain how some predicates can behave like canonical copy-raising predicates when they agree with the lexical DP subject (lacking connectivity effects, requiring perceptual source readings of their subject) but can behave the opposite way when appearing with class 6 and class 9 non-agreeing subject markers. We suggest that canonical raising predicates (like \textit{seems}) assign thematic roles that are bleached of most semantic entailments, so these predicates give the appearance of lacking thematic roles for their subjects. The traditional differences between movement and non-movement constructions (raising vs. control/copy-raising) could be explained based on the properties of these thematic roles. That is, the lack of connectivity effects in control and so-called copy-raising constructions can be explained by the relative incompatibility of the interpretation of the matrix thematic role with the interpretation of the raised subject (whether it is non-referential as part of an idiom or is a referential subject that is inconsistent with the selectional restrictions of the matrix verb). But if that is the case, we expect variability between predicates based on nuances of their selectional restrictions. This prediction is borne out, as seen in the differences between the predicates that behave like canonical hyperraising predicates (e.g., \textit{-lolekha}) and those that behave like canonical copy-raising predicates (e.g., \textit{-hulikha}). Of course, more work will be needed to further explore and formalize this analysis.
+
+\section*{Abbreviations}
+
+%\printglosses
+\begin{tabularx}{.45\textwidth}{lQ}
+\textsc{appl} & applicative\\
+ \textsc{fv} & final vowel\\
+ \textsc{hab} & habitual\\
+ \textsc{om} & object marker\\
+ \end{tabularx}
+\begin{tabularx}{.45\textwidth}{lQ}
+ \textsc{pst} & past\\
+ \textsc{sg} & singular\\
+ \textsc{sm} & subject marker
+\end{tabularx}
+
+\section*{Acknowledgements}
+
+First, our financial support comes from a  variety of places. Diercks has benefited from research leaves from Pomona College that facilitated this research. Portions of this research were funded from a Hirsch Research Initiation Grant from Pomona College, and a NSF Collaborative Research Grant (Structure and Tone in Luyia: BCS-1355749), and ongoing research support from Pomona College including from the Fletcher Jones Foundation and from Pomona College's faculty research grants.
+
+Diercks benefited from conversations about hyperraising related to these topics with many colleagues over the years, including Vicki Carstens, Ruth Kramer, Jenneke van der Wal, John Gluckman, Claire Halpert, and others. Thank you also to the ACAL conference organizers, the ACAL proceedings editors, and the two reviewers of this paper. We are also grateful for ongoing relevant discussions with Franco Liu and Boris Harizanov. The audience at ACAL54 provided many helpful comments and critiques as well. 
+
+\sloppy %this command eliminates a quirk that appears in the bibliography, you can just leave it here.
+\printbibliography[heading=subbibliography,notkeyword=this]
+
+
+\end{document}
+
+%To be added to the ACAL \LaTeX{} template, someday: glossing with leipzig, advanced instructions for arrows

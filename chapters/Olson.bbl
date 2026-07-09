@@ -1,0 +1,977 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nyt/global//global/global/global}
+    \entry{bender1997}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=8496f12cf3d039d566a507ea23b0380d}{%
+           family={Bender},
+           familyi={B\bibinitperiod},
+           given={Lionel\bibnamedelima M.},
+           giveni={L\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Munich}%
+      }
+      \list{publisher}{1}{%
+        {LINCOM EUROPA}%
+      }
+      \strng{namehash}{8496f12cf3d039d566a507ea23b0380d}
+      \strng{fullhash}{8496f12cf3d039d566a507ea23b0380d}
+      \strng{fullhashraw}{8496f12cf3d039d566a507ea23b0380d}
+      \strng{bibnamehash}{8496f12cf3d039d566a507ea23b0380d}
+      \strng{authorbibnamehash}{8496f12cf3d039d566a507ea23b0380d}
+      \strng{authornamehash}{8496f12cf3d039d566a507ea23b0380d}
+      \strng{authorfullhash}{8496f12cf3d039d566a507ea23b0380d}
+      \strng{authorfullhashraw}{8496f12cf3d039d566a507ea23b0380d}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{2}
+      \field{number}{6}
+      \field{series}{{LINCOM} {Handbooks} in {Linguistics}}
+      \field{title}{The {{Nilo}}-{{Saharan}} languages: {A} comparative essay}
+      \field{year}{1997}
+    \endentry
+    \entry{bolter2021}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=1695af9b5169da1286b4ea60e86d0ebe}{%
+           family={Bolter},
+           familyi={B\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{1695af9b5169da1286b4ea60e86d0ebe}
+      \strng{fullhash}{1695af9b5169da1286b4ea60e86d0ebe}
+      \strng{fullhashraw}{1695af9b5169da1286b4ea60e86d0ebe}
+      \strng{bibnamehash}{1695af9b5169da1286b4ea60e86d0ebe}
+      \strng{authorbibnamehash}{1695af9b5169da1286b4ea60e86d0ebe}
+      \strng{authornamehash}{1695af9b5169da1286b4ea60e86d0ebe}
+      \strng{authorfullhash}{1695af9b5169da1286b4ea60e86d0ebe}
+      \strng{authorfullhashraw}{1695af9b5169da1286b4ea60e86d0ebe}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Glossa: A Journal of General Linguistics}
+      \field{number}{1. 22}
+      \field{title}{Vowel prothesis before /r/ revisited: {Acoustics} and typology}
+      \field{volume}{6}
+      \field{year}{2021}
+      \field{pages}{1\bibrangedash 23}
+      \range{pages}{23}
+      \verb{doi}
+      \verb 10.5334/gjgl.1406
+      \endverb
+    \endentry
+    \entry{boyeldieu2006}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=6cc78bb4250b06a3a4aa6568ba3a6395}{%
+           family={Boyeldieu},
+           familyi={B\bibinitperiod},
+           given={Pascal},
+           giveni={P\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Paris}%
+      }
+      \list{publisher}{1}{%
+        {LLACAN-CNRS}%
+      }
+      \strng{namehash}{6cc78bb4250b06a3a4aa6568ba3a6395}
+      \strng{fullhash}{6cc78bb4250b06a3a4aa6568ba3a6395}
+      \strng{fullhashraw}{6cc78bb4250b06a3a4aa6568ba3a6395}
+      \strng{bibnamehash}{6cc78bb4250b06a3a4aa6568ba3a6395}
+      \strng{authorbibnamehash}{6cc78bb4250b06a3a4aa6568ba3a6395}
+      \strng{authornamehash}{6cc78bb4250b06a3a4aa6568ba3a6395}
+      \strng{authorfullhash}{6cc78bb4250b06a3a4aa6568ba3a6395}
+      \strng{authorfullhashraw}{6cc78bb4250b06a3a4aa6568ba3a6395}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Présentation des langues {{Sara}}-{Bongo}-{Baguirmiennes}}
+      \field{year}{2006}
+      \verb{urlraw}
+      \verb https://llacan.cnrs.fr/SBB/
+      \endverb
+      \verb{url}
+      \verb https://llacan.cnrs.fr/SBB/
+      \endverb
+    \endentry
+    \entry{boyeldieuetal2006}{book}{}{}
+      \name{author}{3}{}{%
+        {{hash=6cc78bb4250b06a3a4aa6568ba3a6395}{%
+           family={Boyeldieu},
+           familyi={B\bibinitperiod},
+           given={Pascal},
+           giveni={P\bibinitperiod}}}%
+        {{hash=eac93fca9c2c2d47facd229a9452550c}{%
+           family={Nougayrol},
+           familyi={N\bibinitperiod},
+           given={Pierre},
+           giveni={P\bibinitperiod}}}%
+        {{hash=785cadb1043ae70572cbaba2fe4f6972}{%
+           family={Palayer},
+           familyi={P\bibinitperiod},
+           given={Pierre},
+           giveni={P\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Paris}%
+      }
+      \list{publisher}{1}{%
+        {LLACAN-CNRS}%
+      }
+      \strng{namehash}{c720d17bfd27d7a85d5f9956c11b7ebf}
+      \strng{fullhash}{9fcaa502def0a04d103d18858c336ee6}
+      \strng{fullhashraw}{9fcaa502def0a04d103d18858c336ee6}
+      \strng{bibnamehash}{9fcaa502def0a04d103d18858c336ee6}
+      \strng{authorbibnamehash}{9fcaa502def0a04d103d18858c336ee6}
+      \strng{authornamehash}{c720d17bfd27d7a85d5f9956c11b7ebf}
+      \strng{authorfullhash}{9fcaa502def0a04d103d18858c336ee6}
+      \strng{authorfullhashraw}{9fcaa502def0a04d103d18858c336ee6}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Lexique comparatif historique des langues {{Sara}}-{Bongo}-{Baguirmiennes}}
+      \field{year}{2006}
+      \verb{urlraw}
+      \verb https://llacan.cnrs.fr/SBB/
+      \endverb
+      \verb{url}
+      \verb https://llacan.cnrs.fr/SBB/
+      \endverb
+    \endentry
+    \entry{branks1973}{incollection}{}{}
+      \name{author}{2}{}{%
+        {{hash=6f7def539f5d9b976de3effdf1de7eed}{%
+           family={Branks},
+           familyi={B\bibinitperiod},
+           given={Thomas\bibnamedelima H.},
+           giveni={T\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{hash=700aa0b24737651d07e3d2968460ef27}{%
+           family={Branks},
+           familyi={B\bibinitperiod},
+           given={Judith},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Bogotá}%
+      }
+      \list{publisher}{1}{%
+        {Ministerio de Gobierno}%
+      }
+      \strng{namehash}{c7d8ee6190494b40e781443c167e90a1}
+      \strng{fullhash}{c7d8ee6190494b40e781443c167e90a1}
+      \strng{fullhashraw}{c7d8ee6190494b40e781443c167e90a1}
+      \strng{bibnamehash}{c7d8ee6190494b40e781443c167e90a1}
+      \strng{authorbibnamehash}{c7d8ee6190494b40e781443c167e90a1}
+      \strng{authornamehash}{c7d8ee6190494b40e781443c167e90a1}
+      \strng{authorfullhash}{c7d8ee6190494b40e781443c167e90a1}
+      \strng{authorfullhashraw}{c7d8ee6190494b40e781443c167e90a1}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Sistemas Fonológicos de Idiomas Colombianos}
+      \field{title}{Fonología del guambiano}
+      \field{volume}{2}
+      \field{year}{1973}
+      \field{pages}{39\bibrangedash 56}
+      \range{pages}{18}
+    \endentry
+    \entry{catford1977}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=0810410ee18e4b389a842fe1d75f017e}{%
+           family={Catford},
+           familyi={C\bibinitperiod},
+           given={J.\bibnamedelimi C.},
+           giveni={J\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Edinburgh}%
+      }
+      \list{publisher}{1}{%
+        {Edinburgh University Press}%
+      }
+      \strng{namehash}{0810410ee18e4b389a842fe1d75f017e}
+      \strng{fullhash}{0810410ee18e4b389a842fe1d75f017e}
+      \strng{fullhashraw}{0810410ee18e4b389a842fe1d75f017e}
+      \strng{bibnamehash}{0810410ee18e4b389a842fe1d75f017e}
+      \strng{authorbibnamehash}{0810410ee18e4b389a842fe1d75f017e}
+      \strng{authornamehash}{0810410ee18e4b389a842fe1d75f017e}
+      \strng{authorfullhash}{0810410ee18e4b389a842fe1d75f017e}
+      \strng{authorfullhashraw}{0810410ee18e4b389a842fe1d75f017e}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Fundamental problems in phonetics}
+      \field{year}{1977}
+    \endentry
+    \entry{dimmendaal2019}{incollection}{}{}
+      \name{author}{4}{}{%
+        {{hash=9dcbac06afeb066a31cb0797051193bf}{%
+           family={Dimmendaal},
+           familyi={D\bibinitperiod},
+           given={Gerrit\bibnamedelima J.},
+           giveni={G\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=61d4b5832abd5613ee4dd9f877a3c2ba}{%
+           family={Ahland},
+           familyi={A\bibinitperiod},
+           given={Colleen},
+           giveni={C\bibinitperiod}}}%
+        {{hash=eb0d94f406c54301c0e0517a94265c1e}{%
+           family={Jakobi},
+           familyi={J\bibinitperiod},
+           given={Angelika},
+           giveni={A\bibinitperiod}}}%
+        {{hash=56cef39b344670b68580fe843260af70}{%
+           family={Kutsch\bibnamedelima Lojenga},
+           familyi={K\bibinitperiod\bibinitdelim L\bibinitperiod},
+           given={Constance},
+           giveni={C\bibinitperiod}}}%
+      }
+      \name{editor}{1}{}{%
+        {{hash=1e2f910886ab166a10bdd9c741c522d9}{%
+           family={Wolff},
+           familyi={W\bibinitperiod},
+           given={H.\bibnamedelimi Ekkehard},
+           giveni={H\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Cambridge}%
+      }
+      \list{publisher}{1}{%
+        {Cambridge University Press}%
+      }
+      \strng{namehash}{ee9706d1a9496704ada81b681e00cf18}
+      \strng{fullhash}{ac64a1a717ea4c7d9c015edc0c43ae62}
+      \strng{fullhashraw}{ac64a1a717ea4c7d9c015edc0c43ae62}
+      \strng{bibnamehash}{ac64a1a717ea4c7d9c015edc0c43ae62}
+      \strng{authorbibnamehash}{ac64a1a717ea4c7d9c015edc0c43ae62}
+      \strng{authornamehash}{ee9706d1a9496704ada81b681e00cf18}
+      \strng{authorfullhash}{ac64a1a717ea4c7d9c015edc0c43ae62}
+      \strng{authorfullhashraw}{ac64a1a717ea4c7d9c015edc0c43ae62}
+      \strng{editorbibnamehash}{1e2f910886ab166a10bdd9c741c522d9}
+      \strng{editornamehash}{1e2f910886ab166a10bdd9c741c522d9}
+      \strng{editorfullhash}{1e2f910886ab166a10bdd9c741c522d9}
+      \strng{editorfullhashraw}{1e2f910886ab166a10bdd9c741c522d9}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{The {{Cambridge}} handbook of {{{African}}} {Linguistics}. {Part} {{II}} - {Comparative} and descriptive {{{African}}} {Linguistics}}
+      \field{title}{Linguistic features and typologies in languages commonly referred to as ‘{{Nilo}}-{{Saharan}}’}
+      \field{year}{2019}
+      \field{pages}{326\bibrangedash 381}
+      \range{pages}{56}
+      \verb{doi}
+      \verb 10.1017/9781108283991.011
+      \endverb
+    \endentry
+    \entry{eberhard2024}{book}{}{}
+      \name{editor}{3}{}{%
+        {{hash=1e38ee8637223269fb53d2cb4eb57ffb}{%
+           family={Eberhard},
+           familyi={E\bibinitperiod},
+           given={David\bibnamedelima M.},
+           giveni={D\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=a1364c293dd9115aa707a9600c201001}{%
+           family={Simons},
+           familyi={S\bibinitperiod},
+           given={Gary\bibnamedelima F.},
+           giveni={G\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+        {{hash=5e8e404644223e9415ccddebd395284d}{%
+           family={Fennig},
+           familyi={F\bibinitperiod},
+           given={Charles\bibnamedelima D.},
+           giveni={C\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Dallas}%
+      }
+      \list{publisher}{1}{%
+        {SIL International}%
+      }
+      \strng{namehash}{b4a21b50e44780c5e8e7d78429c64085}
+      \strng{fullhash}{464c78608bcbec0c0a45560085117d60}
+      \strng{fullhashraw}{464c78608bcbec0c0a45560085117d60}
+      \strng{bibnamehash}{464c78608bcbec0c0a45560085117d60}
+      \strng{editorbibnamehash}{464c78608bcbec0c0a45560085117d60}
+      \strng{editornamehash}{b4a21b50e44780c5e8e7d78429c64085}
+      \strng{editorfullhash}{464c78608bcbec0c0a45560085117d60}
+      \strng{editorfullhashraw}{464c78608bcbec0c0a45560085117d60}
+      \field{sortinit}{E}
+      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{editor}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{{Ethnologue}: {Languages} of the world}
+      \field{edition}{27}
+      \field{title}{{Ethnologue}: {Languages} of the world}
+      \field{year}{2024}
+      \verb{urlraw}
+      \verb www.ethnologue.com
+      \endverb
+      \verb{url}
+      \verb www.ethnologue.com
+      \endverb
+    \endentry
+    \entry{hammarstrom2024}{book}{}{}
+      \name{author}{4}{}{%
+        {{hash=15347a08468131ff7bf0aae9d41f41f3}{%
+           family={Hammarström},
+           familyi={H\bibinitperiod},
+           given={Harald},
+           giveni={H\bibinitperiod}}}%
+        {{hash=951238340aa8b7462747dcf6168e4cd3}{%
+           family={Forkel},
+           familyi={F\bibinitperiod},
+           given={Robert},
+           giveni={R\bibinitperiod}}}%
+        {{hash=6554cfb014a9427af44c63f16722a3dd}{%
+           family={Haspelmath},
+           familyi={H\bibinitperiod},
+           given={Martin},
+           giveni={M\bibinitperiod}}}%
+        {{hash=a288f90871ff97ee3402490ca2632307}{%
+           family={Bank},
+           familyi={B\bibinitperiod},
+           given={Sebastian},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Leipzig}%
+      }
+      \list{publisher}{1}{%
+        {Max Planck Institute for Evolutionary Anthropology}%
+      }
+      \strng{namehash}{5e4046aeabbf02b77b6c0d1fbb05aba9}
+      \strng{fullhash}{026a601e7470667c18bb527f393cfc7c}
+      \strng{fullhashraw}{026a601e7470667c18bb527f393cfc7c}
+      \strng{bibnamehash}{026a601e7470667c18bb527f393cfc7c}
+      \strng{authorbibnamehash}{026a601e7470667c18bb527f393cfc7c}
+      \strng{authornamehash}{5e4046aeabbf02b77b6c0d1fbb05aba9}
+      \strng{authorfullhash}{026a601e7470667c18bb527f393cfc7c}
+      \strng{authorfullhashraw}{026a601e7470667c18bb527f393cfc7c}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Glottolog 5.0}
+      \field{year}{2024}
+      \verb{urlraw}
+      \verb https://glottolog.org
+      \endverb
+      \verb{url}
+      \verb https://glottolog.org
+      \endverb
+    \endentry
+    \entry{ipa2006}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=c3f8cba8b04ac12b452d88b521a5debb}{%
+           family={IPA},
+           familyi={I\bibinitperiod}}}%
+      }
+      \strng{namehash}{c3f8cba8b04ac12b452d88b521a5debb}
+      \strng{fullhash}{c3f8cba8b04ac12b452d88b521a5debb}
+      \strng{fullhashraw}{c3f8cba8b04ac12b452d88b521a5debb}
+      \strng{bibnamehash}{c3f8cba8b04ac12b452d88b521a5debb}
+      \strng{authorbibnamehash}{c3f8cba8b04ac12b452d88b521a5debb}
+      \strng{authornamehash}{c3f8cba8b04ac12b452d88b521a5debb}
+      \strng{authorfullhash}{c3f8cba8b04ac12b452d88b521a5debb}
+      \strng{authorfullhashraw}{c3f8cba8b04ac12b452d88b521a5debb}
+      \field{sortinit}{I}
+      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of the International Phonetic Association}
+      \field{number}{1}
+      \field{title}{{{IPA}} news}
+      \field{volume}{36}
+      \field{year}{2006}
+      \field{pages}{133\bibrangedash 135}
+      \range{pages}{3}
+      \verb{doi}
+      \verb 10.1017/S0025100306002465
+      \endverb
+    \endentry
+    \entry{ladefoged1996}{book}{}{}
+      \name{author}{2}{}{%
+        {{hash=ee50d5fae1323a80cddc05b09f356e54}{%
+           family={Ladefoged},
+           familyi={L\bibinitperiod},
+           given={Peter},
+           giveni={P\bibinitperiod}}}%
+        {{hash=e6814f62a21c83c74d5e64592fcff2a8}{%
+           family={Maddieson},
+           familyi={M\bibinitperiod},
+           given={Ian},
+           giveni={I\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Oxford}%
+      }
+      \list{publisher}{1}{%
+        {Blackwell}%
+      }
+      \strng{namehash}{92d44f650843ac0e55f4ebd846d02d3b}
+      \strng{fullhash}{92d44f650843ac0e55f4ebd846d02d3b}
+      \strng{fullhashraw}{92d44f650843ac0e55f4ebd846d02d3b}
+      \strng{bibnamehash}{92d44f650843ac0e55f4ebd846d02d3b}
+      \strng{authorbibnamehash}{92d44f650843ac0e55f4ebd846d02d3b}
+      \strng{authornamehash}{92d44f650843ac0e55f4ebd846d02d3b}
+      \strng{authorfullhash}{92d44f650843ac0e55f4ebd846d02d3b}
+      \strng{authorfullhashraw}{92d44f650843ac0e55f4ebd846d02d3b}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{The sounds of the world’s languages}
+      \field{year}{1996}
+    \endentry
+    \entry{maddieson1994}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=e6814f62a21c83c74d5e64592fcff2a8}{%
+           family={Maddieson},
+           familyi={M\bibinitperiod},
+           given={Ian},
+           giveni={I\bibinitperiod}}}%
+        {{hash=882869c7eedf9bbe2b8a8567b7e7caff}{%
+           family={Anderson},
+           familyi={A\bibinitperiod},
+           given={Victoria},
+           giveni={V\bibinitperiod}}}%
+      }
+      \strng{namehash}{12b4042e8be3cfa2ec0e07aa8b9f1d3e}
+      \strng{fullhash}{12b4042e8be3cfa2ec0e07aa8b9f1d3e}
+      \strng{fullhashraw}{12b4042e8be3cfa2ec0e07aa8b9f1d3e}
+      \strng{bibnamehash}{12b4042e8be3cfa2ec0e07aa8b9f1d3e}
+      \strng{authorbibnamehash}{12b4042e8be3cfa2ec0e07aa8b9f1d3e}
+      \strng{authornamehash}{12b4042e8be3cfa2ec0e07aa8b9f1d3e}
+      \strng{authorfullhash}{12b4042e8be3cfa2ec0e07aa8b9f1d3e}
+      \strng{authorfullhashraw}{12b4042e8be3cfa2ec0e07aa8b9f1d3e}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{UCLA Working Papers in Phonetics}
+      \field{title}{Phonetic structures of {{Iaai}}}
+      \field{volume}{87}
+      \field{year}{1994}
+      \field{pages}{163\bibrangedash 182}
+      \range{pages}{20}
+      \verb{urlraw}
+      \verb https://escholarship.org/uc/item/0942x2jv
+      \endverb
+      \verb{url}
+      \verb https://escholarship.org/uc/item/0942x2jv
+      \endverb
+    \endentry
+    \entry{moehama2021}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=6aad2bebb7ac0650c333713f08a45c63}{%
+           family={Moéhama},
+           familyi={M\bibinitperiod},
+           given={Elisée},
+           giveni={E\bibinitperiod}}}%
+      }
+      \strng{namehash}{6aad2bebb7ac0650c333713f08a45c63}
+      \strng{fullhash}{6aad2bebb7ac0650c333713f08a45c63}
+      \strng{fullhashraw}{6aad2bebb7ac0650c333713f08a45c63}
+      \strng{bibnamehash}{6aad2bebb7ac0650c333713f08a45c63}
+      \strng{authorbibnamehash}{6aad2bebb7ac0650c333713f08a45c63}
+      \strng{authornamehash}{6aad2bebb7ac0650c333713f08a45c63}
+      \strng{authorfullhash}{6aad2bebb7ac0650c333713f08a45c63}
+      \strng{authorfullhashraw}{6aad2bebb7ac0650c333713f08a45c63}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Language Survey Reports}
+      \field{title}{Rapport d’enquête sociolinguistique : {Première} évaluation parmi les {{Lutos}}.}
+      \field{volume}{2021-005}
+      \field{year}{2021}
+      \verb{urlraw}
+      \verb https://www.sil.org/resources/archives/88038
+      \endverb
+      \verb{url}
+      \verb https://www.sil.org/resources/archives/88038
+      \endverb
+    \endentry
+    \entry{mololi2011}{thesis}{}{}
+      \name{author}{1}{}{%
+        {{hash=5420aebb30404a9e57530a6a57ce73b8}{%
+           family={Mololi},
+           familyi={M\bibinitperiod},
+           given={André},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Université de Bangui (Faculté des Lettres et Sciences Humaines)}%
+      }
+      \list{location}{1}{%
+        {Bangui}%
+      }
+      \strng{namehash}{5420aebb30404a9e57530a6a57ce73b8}
+      \strng{fullhash}{5420aebb30404a9e57530a6a57ce73b8}
+      \strng{fullhashraw}{5420aebb30404a9e57530a6a57ce73b8}
+      \strng{bibnamehash}{5420aebb30404a9e57530a6a57ce73b8}
+      \strng{authorbibnamehash}{5420aebb30404a9e57530a6a57ce73b8}
+      \strng{authornamehash}{5420aebb30404a9e57530a6a57ce73b8}
+      \strng{authorfullhash}{5420aebb30404a9e57530a6a57ce73b8}
+      \strng{authorfullhashraw}{5420aebb30404a9e57530a6a57ce73b8}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Phonologie et morphologie du ndoka de {Ndélé} en {Centrafrique}}
+      \field{type}{Mémoire de {Master} 2 en {Linguistique}}
+      \field{year}{2011}
+      \verb{urlraw}
+      \verb https://www.sil.org/resources/archives/86976
+      \endverb
+      \verb{url}
+      \verb https://www.sil.org/resources/archives/86976
+      \endverb
+    \endentry
+    \entry{monino1988}{book}{}{}
+      \name{editor}{1}{}{%
+        {{hash=30919b1b2392b81da689a6fbc47fcd81}{%
+           family={Moñino},
+           familyi={M\bibinitperiod},
+           given={Yves},
+           giveni={Y\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Paris}%
+      }
+      \list{publisher}{1}{%
+        {Geuthner}%
+      }
+      \strng{namehash}{30919b1b2392b81da689a6fbc47fcd81}
+      \strng{fullhash}{30919b1b2392b81da689a6fbc47fcd81}
+      \strng{fullhashraw}{30919b1b2392b81da689a6fbc47fcd81}
+      \strng{bibnamehash}{30919b1b2392b81da689a6fbc47fcd81}
+      \strng{editorbibnamehash}{30919b1b2392b81da689a6fbc47fcd81}
+      \strng{editornamehash}{30919b1b2392b81da689a6fbc47fcd81}
+      \strng{editorfullhash}{30919b1b2392b81da689a6fbc47fcd81}
+      \strng{editorfullhashraw}{30919b1b2392b81da689a6fbc47fcd81}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{editor}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Lexique comparatif des langues oubanguiennes}
+      \field{title}{Lexique comparatif des langues oubanguiennes}
+      \field{year}{1988}
+    \endentry
+    \entry{moundo1975}{thesis}{}{}
+      \name{author}{1}{}{%
+        {{hash=91e057ff47c9717eeeaa3f5827c3c809}{%
+           family={Moundo},
+           familyi={M\bibinitperiod},
+           given={E.},
+           giveni={E\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Université de Tchad (Langues Vivantes et Sciences Humaines)}%
+      }
+      \list{location}{1}{%
+        {N'Djamena}%
+      }
+      \strng{namehash}{91e057ff47c9717eeeaa3f5827c3c809}
+      \strng{fullhash}{91e057ff47c9717eeeaa3f5827c3c809}
+      \strng{fullhashraw}{91e057ff47c9717eeeaa3f5827c3c809}
+      \strng{bibnamehash}{91e057ff47c9717eeeaa3f5827c3c809}
+      \strng{authorbibnamehash}{91e057ff47c9717eeeaa3f5827c3c809}
+      \strng{authornamehash}{91e057ff47c9717eeeaa3f5827c3c809}
+      \strng{authorfullhash}{91e057ff47c9717eeeaa3f5827c3c809}
+      \strng{authorfullhashraw}{91e057ff47c9717eeeaa3f5827c3c809}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Les {Ruto} ou {Rito} et leur langue}
+      \field{type}{Mémoire de licence}
+      \field{year}{1975}
+    \endentry
+    \entry{ndoko1991}{thesis}{}{}
+      \name{author}{1}{}{%
+        {{hash=e35ca4288823b897a9679c0d9cbb82e0}{%
+           family={Ndoko},
+           familyi={N\bibinitperiod},
+           given={Benoît-Roger},
+           giveni={B\bibinithyphendelim R\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Université de Bangui (Faculté des Lettres et Sciences Humaines)}%
+      }
+      \list{location}{1}{%
+        {Bangui}%
+      }
+      \strng{namehash}{e35ca4288823b897a9679c0d9cbb82e0}
+      \strng{fullhash}{e35ca4288823b897a9679c0d9cbb82e0}
+      \strng{fullhashraw}{e35ca4288823b897a9679c0d9cbb82e0}
+      \strng{bibnamehash}{e35ca4288823b897a9679c0d9cbb82e0}
+      \strng{authorbibnamehash}{e35ca4288823b897a9679c0d9cbb82e0}
+      \strng{authornamehash}{e35ca4288823b897a9679c0d9cbb82e0}
+      \strng{authorfullhash}{e35ca4288823b897a9679c0d9cbb82e0}
+      \strng{authorfullhashraw}{e35ca4288823b897a9679c0d9cbb82e0}
+      \field{sortinit}{N}
+      \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Esquisse phonologique du lútò}
+      \field{type}{Mémoire}
+      \field{year}{1991}
+    \endentry
+    \entry{nougayrol1990}{inproceedings}{}{}
+      \name{author}{1}{}{%
+        {{hash=eac93fca9c2c2d47facd229a9452550c}{%
+           family={Nougayrol},
+           familyi={N\bibinitperiod},
+           given={Pierre},
+           giveni={P\bibinitperiod}}}%
+      }
+      \name{editor}{2}{}{%
+        {{hash=a4f834e5312f2e4d8214293d07580ddc}{%
+           family={Barreteau},
+           familyi={B\bibinitperiod},
+           given={Daniel},
+           giveni={D\bibinitperiod}}}%
+        {{hash=67bf932bcbdefd6b1a7db56cb9805017}{%
+           family={Tourneux},
+           familyi={T\bibinitperiod},
+           given={Henry},
+           giveni={H\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Paris}%
+      }
+      \list{publisher}{1}{%
+        {ORSTOM}%
+      }
+      \strng{namehash}{eac93fca9c2c2d47facd229a9452550c}
+      \strng{fullhash}{eac93fca9c2c2d47facd229a9452550c}
+      \strng{fullhashraw}{eac93fca9c2c2d47facd229a9452550c}
+      \strng{bibnamehash}{eac93fca9c2c2d47facd229a9452550c}
+      \strng{authorbibnamehash}{eac93fca9c2c2d47facd229a9452550c}
+      \strng{authornamehash}{eac93fca9c2c2d47facd229a9452550c}
+      \strng{authorfullhash}{eac93fca9c2c2d47facd229a9452550c}
+      \strng{authorfullhashraw}{eac93fca9c2c2d47facd229a9452550c}
+      \strng{editorbibnamehash}{6374bbc9b9e8291a5c476f037d98abb9}
+      \strng{editornamehash}{6374bbc9b9e8291a5c476f037d98abb9}
+      \strng{editorfullhash}{6374bbc9b9e8291a5c476f037d98abb9}
+      \strng{editorfullhashraw}{6374bbc9b9e8291a5c476f037d98abb9}
+      \field{sortinit}{N}
+      \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Relations interethniques et culture matérielle dans le bassin du lac {Tchad}}
+      \field{title}{Langues et populations du nord-est centrafricain}
+      \field{year}{1990}
+      \field{pages}{65\bibrangedash 80}
+      \range{pages}{16}
+    \endentry
+    \entry{olson2005}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=7dc5203c78af9752350eb1710ff526f9}{%
+           family={Olson},
+           familyi={O\bibinitperiod},
+           given={Kenneth\bibnamedelima S.},
+           giveni={K\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Dallas}%
+      }
+      \list{publisher}{2}{%
+        {SIL International}%
+        {the University of Texas at Arlington}%
+      }
+      \strng{namehash}{7dc5203c78af9752350eb1710ff526f9}
+      \strng{fullhash}{7dc5203c78af9752350eb1710ff526f9}
+      \strng{fullhashraw}{7dc5203c78af9752350eb1710ff526f9}
+      \strng{bibnamehash}{7dc5203c78af9752350eb1710ff526f9}
+      \strng{authorbibnamehash}{7dc5203c78af9752350eb1710ff526f9}
+      \strng{authornamehash}{7dc5203c78af9752350eb1710ff526f9}
+      \strng{authorfullhash}{7dc5203c78af9752350eb1710ff526f9}
+      \strng{authorfullhashraw}{7dc5203c78af9752350eb1710ff526f9}
+      \field{extraname}{1}
+      \field{sortinit}{O}
+      \field{sortinithash}{2cd7140a07aea5341f9e2771efe90aae}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{number}{140}
+      \field{series}{{SIL} {International} and the {University} of {Texas} at {Arlington} {Publications} in {Linguistics}}
+      \field{title}{The phonology of {{Mono}}}
+      \field{year}{2005}
+    \endentry
+    \entry{olson2013}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=7dc5203c78af9752350eb1710ff526f9}{%
+           family={Olson},
+           familyi={O\bibinitperiod},
+           given={Kenneth\bibnamedelima S.},
+           giveni={K\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+      }
+      \strng{namehash}{7dc5203c78af9752350eb1710ff526f9}
+      \strng{fullhash}{7dc5203c78af9752350eb1710ff526f9}
+      \strng{fullhashraw}{7dc5203c78af9752350eb1710ff526f9}
+      \strng{bibnamehash}{7dc5203c78af9752350eb1710ff526f9}
+      \strng{authorbibnamehash}{7dc5203c78af9752350eb1710ff526f9}
+      \strng{authornamehash}{7dc5203c78af9752350eb1710ff526f9}
+      \strng{authorfullhash}{7dc5203c78af9752350eb1710ff526f9}
+      \strng{authorfullhashraw}{7dc5203c78af9752350eb1710ff526f9}
+      \field{extraname}{2}
+      \field{sortinit}{O}
+      \field{sortinithash}{2cd7140a07aea5341f9e2771efe90aae}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Presentation at the 43rd Colloquium on African Languages \& Linguistics, Leiden, Netherlands, University of Leiden, 26--28 August 2013}
+      \field{title}{A sketch of {{Lutos}} phonology}
+      \field{year}{2013}
+      \verb{urlraw}
+      \verb http://www.sil.org/resources/archives/60749
+      \endverb
+      \verb{url}
+      \verb http://www.sil.org/resources/archives/60749
+      \endverb
+    \endentry
+    \entry{olson2024}{inproceedings}{}{}
+      \name{author}{1}{}{%
+        {{hash=7dc5203c78af9752350eb1710ff526f9}{%
+           family={Olson},
+           familyi={O\bibinitperiod},
+           given={Kenneth\bibnamedelima S.},
+           giveni={K\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+      }
+      \name{editor}{4}{}{%
+        {{hash=ca271daade8db0543c7de28e508be5d6}{%
+           family={Essegbey},
+           familyi={E\bibinitperiod},
+           given={James},
+           giveni={J\bibinitperiod}}}%
+        {{hash=4944166f34a4ce34953190b68c63dc27}{%
+           family={Henderson},
+           familyi={H\bibinitperiod},
+           given={Brent},
+           giveni={B\bibinitperiod}}}%
+        {{hash=6b2661fa762957c934c82cebcbcc0575}{%
+           family={McLaughlin},
+           familyi={M\bibinitperiod},
+           given={Fiona},
+           giveni={F\bibinitperiod}}}%
+        {{hash=589506a246175b1f8236cf81189090c2}{%
+           family={Diercks},
+           familyi={D\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Berlin}%
+      }
+      \list{publisher}{1}{%
+        {Language Science Press}%
+      }
+      \strng{namehash}{7dc5203c78af9752350eb1710ff526f9}
+      \strng{fullhash}{7dc5203c78af9752350eb1710ff526f9}
+      \strng{fullhashraw}{7dc5203c78af9752350eb1710ff526f9}
+      \strng{bibnamehash}{7dc5203c78af9752350eb1710ff526f9}
+      \strng{authorbibnamehash}{7dc5203c78af9752350eb1710ff526f9}
+      \strng{authornamehash}{7dc5203c78af9752350eb1710ff526f9}
+      \strng{authorfullhash}{7dc5203c78af9752350eb1710ff526f9}
+      \strng{authorfullhashraw}{7dc5203c78af9752350eb1710ff526f9}
+      \strng{editorbibnamehash}{faecf6f864333ed5d30448d506f5a04e}
+      \strng{editornamehash}{a9facdac80b64be91ebab20826551f9e}
+      \strng{editorfullhash}{faecf6f864333ed5d30448d506f5a04e}
+      \strng{editorfullhashraw}{faecf6f864333ed5d30448d506f5a04e}
+      \field{extraname}{3}
+      \field{sortinit}{O}
+      \field{sortinithash}{2cd7140a07aea5341f9e2771efe90aae}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Pushing the boundaries: {Selected} papers from the 51-52 {Annual} {Conference} on {{African}} {Linguistics}}
+      \field{number}{10}
+      \field{series}{Contemporary {African} {Linguistics}}
+      \field{title}{Labial-velar to labial sound changes in {Luto}}
+      \field{year}{2024}
+      \field{pages}{135\bibrangedash 145}
+      \range{pages}{11}
+      \verb{doi}
+      \verb 10.5281/zenodo.14038741
+      \endverb
+    \endentry
+    \entry{parker2009}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=27ed4a736b53ce79d228cc3241651473}{%
+           family={Parker},
+           familyi={P\bibinitperiod},
+           given={Steve},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{27ed4a736b53ce79d228cc3241651473}
+      \strng{fullhash}{27ed4a736b53ce79d228cc3241651473}
+      \strng{fullhashraw}{27ed4a736b53ce79d228cc3241651473}
+      \strng{bibnamehash}{27ed4a736b53ce79d228cc3241651473}
+      \strng{authorbibnamehash}{27ed4a736b53ce79d228cc3241651473}
+      \strng{authornamehash}{27ed4a736b53ce79d228cc3241651473}
+      \strng{authorfullhash}{27ed4a736b53ce79d228cc3241651473}
+      \strng{authorfullhashraw}{27ed4a736b53ce79d228cc3241651473}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{GIALens}
+      \field{number}{2}
+      \field{title}{An affix-specific phoneme in {Arammba}}
+      \field{volume}{3}
+      \field{year}{2009}
+      \verb{urlraw}
+      \verb https://diu.edu/gialens/vol3num2/
+      \endverb
+      \verb{url}
+      \verb https://diu.edu/gialens/vol3num2/
+      \endverb
+    \endentry
+    \entry{quigley2003}{thesis}{}{}
+      \name{author}{1}{}{%
+        {{hash=d106bc02b4955cb97c958a5adc03764b}{%
+           family={Quigley},
+           familyi={Q\bibinitperiod},
+           given={Edward\bibnamedelima C.},
+           giveni={E\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {University of North Dakota}%
+      }
+      \list{location}{1}{%
+        {Grand Forks}%
+      }
+      \strng{namehash}{d106bc02b4955cb97c958a5adc03764b}
+      \strng{fullhash}{d106bc02b4955cb97c958a5adc03764b}
+      \strng{fullhashraw}{d106bc02b4955cb97c958a5adc03764b}
+      \strng{bibnamehash}{d106bc02b4955cb97c958a5adc03764b}
+      \strng{authorbibnamehash}{d106bc02b4955cb97c958a5adc03764b}
+      \strng{authornamehash}{d106bc02b4955cb97c958a5adc03764b}
+      \strng{authorfullhash}{d106bc02b4955cb97c958a5adc03764b}
+      \strng{authorfullhashraw}{d106bc02b4955cb97c958a5adc03764b}
+      \field{sortinit}{Q}
+      \field{sortinithash}{ce69a400a872ddd02ee7fdb3b38c6abd}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Awara phonology}
+      \field{type}{mathesis}
+      \field{year}{2003}
+      \verb{urlraw}
+      \verb https://commons.und.edu/theses/3070
+      \endverb
+      \verb{url}
+      \verb https://commons.und.edu/theses/3070
+      \endverb
+    \endentry
+    \entry{tucker1956}{book}{}{}
+      \name{author}{2}{}{%
+        {{hash=8ca3d9553338d4633387d12d68026a67}{%
+           family={Tucker},
+           familyi={T\bibinitperiod},
+           given={A.\bibnamedelimi N.},
+           giveni={A\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+        {{hash=9d0442675bb2f09b11bb959715a628c9}{%
+           family={Bryan},
+           familyi={B\bibinitperiod},
+           given={M.\bibnamedelimi A.},
+           giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {London, New York}%
+      }
+      \list{publisher}{1}{%
+        {Oxford University Press (for the International African Institute)}%
+      }
+      \strng{namehash}{c1f0e0ef5bb1a8420f252c83655fb7bc}
+      \strng{fullhash}{c1f0e0ef5bb1a8420f252c83655fb7bc}
+      \strng{fullhashraw}{c1f0e0ef5bb1a8420f252c83655fb7bc}
+      \strng{bibnamehash}{c1f0e0ef5bb1a8420f252c83655fb7bc}
+      \strng{authorbibnamehash}{c1f0e0ef5bb1a8420f252c83655fb7bc}
+      \strng{authornamehash}{c1f0e0ef5bb1a8420f252c83655fb7bc}
+      \strng{authorfullhash}{c1f0e0ef5bb1a8420f252c83655fb7bc}
+      \strng{authorfullhashraw}{c1f0e0ef5bb1a8420f252c83655fb7bc}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{The {Non}-{{{Bantu}}} languages of {{North}}-{{{E}astern}} {{{Africa}}} (with a supplement on the {Non}-{{{Bantu}}} languages of {{Southern}} {{{Africa}}}, by {{E}}. {O}. {J}. {Westphal}). {Handbook} of {{{Africa}}n} {Languages}, {Part} {{III}}}
+      \field{year}{1956}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

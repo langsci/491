@@ -1,0 +1,772 @@
+\documentclass[output=paper,colorlinks,citecolor=brown,
+% hidelinks,
+% showindex
+]{langscibook}
+\ChapterDOI{10.5281/zenodo.20285192}
+
+%This is where you put the authors and their affiliations
+ \author{John Gluckman\affiliation{University of Kansas}}
+
+%Insert your title here
+\title{Towards a typology of Bantu complementizers}  
+\abstract{This paper provides a preliminary overview of the lexical sources and functions of complementizers used for finite, non-interrogative, syntactically selected embedded clauses in Narrow Bantu languages. It identifies five distinct sources for complementizers in Bantu languages: `say,' `be,' demonstratives, manner deictics, and pronouns. The paper further discusses languages which have more than one such complementizer, and investigates three factors that correlate with complementizer choice. Based on these initial findings, the paper concludes that there is a general dichotomy between complementizers, which is framed in terms of ``perspectival'' vs.\ ``situational'' anchoring. 
+}
+
+
+% \input{AcalProceedingsTemplatePackages.tex}
+% \input{AcalProceedingsTemplateCommands.tex}
+
+% \input{localpackages.tex}
+% \input{localcommands.tex}
+
+\IfFileExists{../localcommands.tex}{
+   \addbibresource{../localbibliography.bib}
+   \input{../localpackages}
+   \input{../localcommands}
+   \input{../localhyphenation}
+   \boolfalse{bookcompile}
+   \togglepaper[23]%%chapternumber
+}{}
+
+\begin{document}
+\maketitle
+
+\section{Introduction}\label{sec:gluckman:introduction}
+
+In this paper, I provide a preliminary typology of \textit{complementizers} in the Narrow Bantu languages.\footnote{The classification ``Narrow Bantu'' applies to roughly 600 Bantoid languages, ranging from West to East Africa and into Southern Africa. Narrow Bantu specifically excludes the Grassfields Bantu languages of Western Africa. The classification of individual Bantu languages follows the Guthrie code system (updated in \citealt{Hammarstrom:2019}), which consists of one or two letters indicating sub-family and number indicating the specific language in that sub-family. In this paper, Guthrie codes are given following each language.} This typology covers three aspects. First, I address the lexical source of complementizers across Bantu languages, building on typological work in e.g., \citet{Cristofaro:2003, Kutevaetal:2019}. 
+Second, Bantu complementizers are widely documented as having various ``effects'' on the utterance. I illustrate some of those effects, noting the range of syntactic, semantic, and morphological variation. I finally conclude by looking briefly at some correlations between the lexical source of a complementizer and the effect it can have, observing that there is a general split among the Bantu complementizers.
+
+Based on these preliminary findings, I suggest an informal classification in terms of \textit{anchoring}, that is, how the embedded clause is integrated into the superordinate material. ``Perspectival'' complementizers anchor the embedded clause to a relevant \textit{individual}; ``situational'' complementizers anchor the embedded clause to a relevant \textit{situation} (or event). Ultimately, I suggest that all Bantu complementizers fall into one of these two camps -- at least historically.  
+
+
+Before beginning, a note on terminology is in order. I use the term \textit{complementizer} atheoretically to cover a number of potentially disparate categories, including clausal conjunction and (clausal) subordinator. I also assume that there is no formal distinction between a complementizer and a quotative marker \citep{Guldemann:2002}. 
+
+Finally, I am confining my investigation to finite noninterrogative clausal complementation. Thus, I put aside nonfinite complementation and interrogative complementation, as well as other clause-types, like relative clauses, causal clauses, temporal clauses, conditional clauses, etc. This is purely to constrain the scope of the study.\footnote{The data presented here draws on over 100 languages (not all of them cited here for space) and is collected mainly from existing descriptive and theoretical sources on Bantu languages. Additional data comes from the authors' fieldnotes. I emphasize the preliminary nature of this study; more data are needed to paint an accurate picture. An attempt was made to include data from all of the Guthrie Zones (the classificatory system for Bantu languages; I will rely on \citeauthor{Hammarstrom:2019}'s (\citeyear{Hammarstrom:2019}) updated Guthrie codes). However,  Eastern Bantu is  over-represented in the language sample due to the prevalence of material on those languages. When a citation is not present, the data was collected through  fieldwork by myself.} 
+ 
+
+
+
+\section{Sources of complementizers}\label{sec:gluckman:sources}
+%\begin{itemize}
+%\item \textit{nga, nkaaho}
+%\item \textit{-ti} 
+%\item \textit{ni}
+%\item \textit{mbo/ngo}
+%\end{itemize}
+
+
+Crosslinguistically, a number of distinct sources for complementizers are recognized \citep{HopperTraugott:1993, Guldemann:2008, Kutevaetal:2019}. \citet{Chappell:2008} summarizes the known sources in \REF{ex:gluckman:list}, with the bolding to indicate sources that Bantu languages instantiate.
+%(Lord (1976, 1993), Güldemann (2001), Heine et al (1991: 216-217; 246-247), Heine and Kuteva (2002: 37; 211-212; 254; 257-258; 261-269; 295 ; 2007: chapter 5 \& §6.4) , Hock (1982), Hopper and Traugott (1993: 180-184), Noonan (1985: 47-48) and Ransom (1988). 
+
+\ea\label{ex:gluckman:list}
+\begin{xlist}
+\ex[]{
+nouns such as ‘thing’, ‘fact’ or ‘place’
+}
+%e.g. Korean kEs ‘thing’; Japanese koto ‘thing’
+\ex[]{\textbf{demonstrative}, interrogative and \textbf{relative pronouns}
+}
+%e.g. Faroese tadh; German daß, Georgian raytamca
+\ex[]{dative, allative and locative case markers or prepositions
+}
+%, e.g. Maori ki LOC/DAT; English ‘to’
+\ex[]{\textbf{SAY verbs}
+}
+%, e.g.; Chantyal b'i, Nepali bhan, Yoruba kpé, Vietnamese r\v{a}ng
+\ex[]{ similative verbs meaning ‘resemble’ or ‘be like’
+}
+\ex[]{  \textbf{similative manner adverbials and deictics}
+} \hfill adapted from \citet[3]{Chappell:2008}
+%, e.g. Idoma bE ‘resemble’; íti ‘thus’ in Sanskrit; ti in Shona ‘be/do thus’\\
+
+\end{xlist}
+\z
+
+As expected, in these data, we find considerable variation between languages (and even within languages) in the form of the complementizer and its diachronic or synchronic source. Bantu languages robustly instantiate at least three of these tendencies: demonstratives (including pronominal complementizers), \textit{say}-verbs, and manner deictics. Bantu languages additionally employ a strategy not described in \REF{ex:gluckman:list} above: \textit{be}-complementizers, i.e., complementizers derived from or related to the copula. As these are distinct from similative verbs and particles (the latter also attested to a lesser extent in these data), I treat \textit{be-}complementizers as a distinct lexical source. I note that my goal below is not to provide a diachronic trajectory for these transitions; I will not explain \textit{why} certain lexical categories are recruited as complementizers. I believe that this motivation has been fleshed out for most categories in \citet{Kutevaetal:2019} and related work -- save \textit{be}-complementizers, which I leave for future work.
+
+%\subsection{Agent-oriented complementizers}
+
+\subsection{\textit{Say}-complementizers}\label{sec:gluckman:saycomplementizers}
+
+The appearance of \textit{say}-complementizers is widespread across the world's languages (cf. \citealt[14]{HopperTraugott:1993}; \citealt[375]{Kutevaetal:2019}). Accordingly, a large number of Bantu languages employ a form of the verb meaning, or diachronically related to,  `say.' In \REF{ex:gluckman:say.kimwani}, Mwani's (G403) \textit{kamba} is derived from proto-Bantu \textit{*-(g)amb} `word, speak' (cf. \citealt[94]{Meeussen:1967}). In \REF{ex:gluckman:say.bena}, Bena's (G63) \textit{uhutig{\'\i}la} functions synchronically as a \textit{say}-verb, as does Kisi's (G67) \textit{kujobha}, in \REF{ex:gluckman:say.kisi}. (Note that, despite the different lexicalizations, these are all Zone G languages.)\footnote{Here and throughout, examples are provided with the glossing as given in the source material. See \sectref{sec:gluckman:abbrev} for a list of abbreviations.}
+
+\ea
+	\begin{xlist}
+	\ex \label{ex:gluckman:say.kimwani} Mwani (G403) \citep[55]{LIDEMO:2010} \\
+	\gll Amadi akwijiwa kamba Ali kawa nao nzuruku.\\
+	Amadi knows \textsc{comp} Ali be with money\\
+	\glt `Amadi knows that Ali had money.' 
+
+\newpage
+	\ex \label{ex:gluckman:say.bena} Bena (G63) \citep[417]{Morrison:2011} \\
+	\gll a-va-anu va-i-pulih-a uhutig\'\i la u-mu-yeesu a-taagih-ile\\
+	\textsc{aug}.2-\textsc{cl}2-person \textsc{cl}2-\textsc{pres}-hear-\textsc{fv} \textsc{comp} \textsc{aug}.1-\textsc{cl}1-our.friend \textsc{cl}1-die-\textsc{fv}\\
+	\glt `People hear that our friend died.' 
+
+	\ex \label{ex:gluckman:say.kisi} Kisi (G67) \citep[13]{Nicolleetal:2018} \\
+	\gll Lɨngɨ.na.lɨngɨ. bha-ka-n'-jobh-el-a kujobha, ``Bɨt-agh-e ka-kot-agh-e ku=bhulongolo\\
+	after.a.while 3\textsc{pl}-\textsc{cons}-3\textsc{sg}-say-\textsc{appl}-\textsc{fv} \textsc{quot} go-\textsc{ipfv}-\textsc{sbv} \textsc{itive}-ask-\textsc{ipfv}-\textsc{sbv} 17.\textsc{loc}=ahead\\
+	\glt `After a while they said to him, ``Go and ask up ahead...''' 
+	\end{xlist}
+%Kisi: kujobha `say'
+%%Swahili: kwamba `say'
+%Nandi: ko `say verb'
+\z
+
+The examples above illustrate that multiple languages have \textit{independently} developed a \textit{say}-complementizer from distinct sources. However, extending across nearly all subfamilies are derivatives of proto-Bantu \textit{*-t\`\i}, which in many languages has evolved into an element meaning `say' as well as a complementizer \citep{Meeussen:1967, Guldemann:2002}. Note that for many languages it is used primarily to introduce direct speech, and thus has a quotative function \citep{Guldemann:2008}. The examples in \REF{ex:gluckman:say.ti} demonstrate an infinitival, thus verbal, form of \textit{*-t\`\i}.\footnote{\citet{Gunnink:2018} explains that in Fwe, the form \textit{k\`ut\'\i} and the variant \textit{k\`ut\^ey\`e} are ``contractions of the verb \textit{k\`utá} `to say', with the complementizer {\'\i}yé.''}
+
+%Pimbwe: ukuti, -ti, Nandi, -ti
+
+\ea\label{ex:gluckman:say.ti}
+	\begin{xlist}
+	\ex Nyakyusa (M31)  \citep[314]{Persohn:2017} \\
+	\gll ʊ-meenye ʊkʊt{\i} Asia a-ka-kʊ-gan-a?\\
+	2\textsc{sg}-know.\textsc{pfv} \textsc{comp} A. 1-\textsc{neg}-2\textsc{sg}-love-\textsc{fv}\\
+	\glt `Do you know that Asia doesn't love you?' 
+	
+	\ex Zulu (S42) \citep[1]{Halpert:2016} \\
+	\gll ku-bonakala ukuthi uZinhle u-zo-xova ujeqe\\
+	17\textsc{s}-seem that \textsc{aug}.1Zinhle 1\textsc{s}-\textsc{fut}-make \textsc{aug}.1steamed.bread\\
+	\glt `It seems that Zinhle will make steamed bread.' 
+
+	\ex Fwe (K402) \citep[432]{Gunnink:2018} \\	
+	\gll mbo-{{á̱}}-bo\textsubscript{H}n-{{é̱}} kut{\'\i} $\emptyset$-ci-pepa bu-ry\'o ci-bá-mu-dara\\
+	\textsc{near.fut}-\textsc{sm}\textsubscript{1}-see-\textsc{pfv.sbjv} \textsc{comp} \textsc{cop}-\textsc{np}\textsubscript{7}-paper \textsc{np}\textsubscript{14}-only \textsc{pp}\textsubscript{7}-\textsc{np}\textsubscript{2}-\textsc{np}\textsubscript{1}-old.man\\
+	\glt `She will see that it is just a paper of her husband.' 
+	
+%	\ex[]{\label{ndebele}
+%	\gll ngicabanga ukuthi usukile\\
+%	1\textsc{sg}.thought \textsc{comp} 1.left\\
+%	\glt `I thought that (s)he left.' \hfill $[$Ndebele (S44)$]$ \citep[68]{Pietraszko:2019}
+%	}
+	\end{xlist}
+\z
+
+%As noted in \citet[xx]{Guldemann:2008}, a wide number of Bantu complementizers are derived from proto-Bantu \textit{*-t\`\i}. 
+%
+
+In the data, derivatives of \textit{*-t\`\i} are prevalent in Eastern and Southern families. Though often correlating with a verb of speech in modern languages, \citet{Guldemann:2002, Guldemann:2008}, following the reconstruction in \citet[105]{Guthrie:1970}, argues that the original function of \textit{*-t\`\i} was that of a manner deictic, a demonstrative element that is anaphoric (or cataphoric) to an expression of manner or kind.  Over time, in some languages, the manner deixis meaning transitioned to a speech verb (often defective). The manner deictic use of \textit{*-t\`\i} is still found in a number of Bantu languages;  I return to  this in \sectref{sec:gluckman:mannercompsection}.
+%In Nyala East, \textit{-chi} appears in adnominal and adverbal positions as well as introducing embedded clauses. 
+%
+%\ea
+%\ex 
+%	\begin{xlist}
+%	\ex[]{
+%	\gll o-mw-aana a-chi mu-layi\\
+%	1\textsc{aug}-\textsc{1nc}-child 1\textsc{agr}-\textsc{dem} 1\textsc{agr}-good\\
+%	\glt `A child like this is good.'
+%	}
+%	\ex[]{
+%	XXXX
+%	}
+%	\ex[]{
+%	\gll Masika a-paar-a a-chi Wekesa ka-chi-e Nairobi\\
+%	Masika \textsc{sm}-think-\textsc{fv} 1\textsc{agr}-\textsc{comp} Wekesa 1\textsc{sm}-go-\textsc{fv} Nairobi\\
+%	\glt `Masika thinks that Wekesa went to Nairobi.'
+%	}
+%	\end{xlist}
+%
+%
+%\z
+%
+
+Still, it is undeniable that some languages have derivatives of \textit{*-t\`\i} which are verbal.\footnote{A reviewer notes that there are multiple paths to being a verb for \textit{*-t\`i}. It could develop verbal properties and then become a complementizer, or alternatively, it could be co-opted as a quotative and then develop verbal properties subsequently.} This is clear from the fact that many \textit{ti}-based complementizers may still bear vestiges of verbal inflectional marking, like tense, aspect, and voice morphology \citep{Persohn:2017, LetsholoSafir:2019, Dembetembe:1976}.
+
+However, it is sometimes unclear how much of this inflectional material is completely fossilized as part of the complementizer. For instance, should Xhosa's (S41) invariant complementizer \textit{sengathi} be analyzed synchronically as consisting of \textit{se-} `aspect', \textit{nga-} `possibility modal', and \textit{-thi} `say' (cf. \citealt[33]{Halpert:2019})? Moreover, it is also clear that some \textit{say}-complementizers have nominal properties. This is the core finding  of \pcite{Pietraszko:2019} work on the Ndebele (S44) complementizer \textit{ukuthi} (again derived from \textit{*-t\`\i}), which is argued to be housed inside of a nominal layer. 
+
+Finally, I note that \citet{DevosBostoen:2012} discuss a variant of the \textit{say}-comple\-men\-tizer strategy: some Bantu languages employ a complementizer that is related to (again, either synchronically or diachronically) a word meaning `do.'\footnote{The data reported here draws heavily on the discussion in \citet{DevosBostoen:2012}. Any errors in reporting and interpreting their data  are my own.}  This is shown for Shangaci (P312) in \REF{ex:gluckman:do} with the verb \textit{-ira}, translated variously as `do, say, (be) like.' As reported in \citet{DevosBostoen:2012}, the same polysemy is found in  Lunda (L52), Nkore-Kiga (JE13/14), Rundi (JE62), Rwanda (JE61), and Mongo (C61).
+
+%See list in \citep[121ff]{DevosBostoen:2012}
+%
+%\begin{itemize}
+%\item Shangaci
+%\item Lunda
+%\item Nkore
+%\item Rundi
+%\item Kinyarwanda (``reflections'')
+%\item Mongo
+%\end{itemize}
+%
+%\ea
+%\ex
+%	\begin{xlist}
+%	\ex[]{
+%	EXAMPLES
+%	}
+%	\end{xlist}
+%
+%\z
+
+\ea\label{ex:gluckman:do} Shangaci (P312) \citep[99]{DevosBostoen:2012} 
+	\begin{xlist}
+	\ex[]{
+	\gll ki-ao-ir-i $<$ni-law-e o-mu-ti$>$\\
+	\textsc{sc}\textsubscript{1\textsc{sg}}-\textsc{pst-qv-pfv} $<$\textsc{sc}\textsubscript{1pl}-go-\textsc{sbjv} \textsc{np}\textsubscript{17}-\textsc{np}\textsubscript{3}-town$>$\\
+	\glt `I \textit{said}: `Let's go home.''
+	}
+	\ex[]{
+	\gll ir-an-i tono mu-mu-thuul-e ontu\\
+	\textsc{qv}-\textsc{imp}-\textsc{pla} thus \textsc{sc}\textsubscript{2pl}-\textsc{oc}\textsubscript{1}-take-\textsc{sbjv} \textsc{pp}\textsubscript{1}.\textsc{dem}\textsubscript{i}\\
+	\glt `\textit{Do} it as follows: Take this one\ldots'
+	}
+	\ex[]{
+	\gll mu-khira  o-awe o-sal-a o-ir-a khong'ongoo\\
+	\textsc{pp}\textsubscript{3}-tail \textsc{pp}\textsubscript{3}-\textsc{poss}\textsubscript{1} \textsc{pp}\textsubscript{3}-remain-\textsc{pfv} \textsc{pp}\textsubscript{3}-\textsc{qv}-\textsc{psit} \textsc{ideo}\\
+	\glt `His tail remains \textit{like} a stump.'
+	} 
+	\end{xlist}
+\z
+
+%As discussed in \citet{DevosBostoen:2012}, a number of other Bantu languages have 
+
+It is likely that there is a single proto-Bantu source for \textit{do}-complementizers in Bantu: \textit{*-g{\`\i}d-} \citep{Bastinetal:2002}. As noted in \citet{DevosBostoen:2012}, given the polysemy of \textit{*-g{\`\i}d} across Bantu, it may ultimately be possible to list \textit{do-}complementizers as a sub-type of \textit{say}-complementizer.\footnote{An interesting though perhaps exceptional case is Mwimbi-Muthambi (E531), which uses \textit{taka}, plausibly derived from a verb meaning `want' as the complementizer \citep{Kaburo:2022}. If this is truly the etymology of the complementizer, then it may also be grouped together with the other ``action''-oriented complementizers like \textit{say} and \textit{do}.} 
+
+
+
+
+
+
+
+
+
+\subsection{\textit{Be}-complementizers}\label{sec:gluckman:becompsection}
+
+In this study, I found a number of Bantu languages which introduce embedded clauses using a form of the copula.\footnote{I refer the reader to the discussion in \citet{Gibsonetal:2018, Finholt:2024} concerning the varities of copular predication in Bantu. This is a complex topic. As it applies to complementizers, it is clear from the data collected that there are a limited number of \textit{be-}complementizers, related to only a subset of possible copulas across Bantu.} In the examples in \REF{ex:gluckman:be.comp}, all the complementizers are \textit{synchronically} multi-functional as infinitival forms of a verb meaning `be.'
+
+\ea\label{ex:gluckman:be.comp}
+	\begin{xlist}
+	\ex Haavu (JD52) \\
+	\gll Mugisha a-yubah-ire okuba o-lu-juki lu-a-mu-lume.\\
+	Mugisha 1\textsc{sm}-be.afraid.\textsc{pfv} \textsc{comp} 11\textsc{aug}-11\textsc{nc}-bee 11\textsc{sm}-\textsc{fut}-1\textsc{om}-sting\\
+	\glt `Mugisha is afraid that the bee will sting her.' 
+
+	\ex Ikoma (JE45) \citep[94]{Roth:2018} \\
+	\gll nih\'o N\'uhu a-ka-mɛny-a kuβá amánche ɣa-aɣá-tiβok-a mose\\
+	so Noah 3\textsc{sg}-\textsc{narr}-come.to.know-\textsc{fv} that waters 6-\textsc{nucl}-decrease-\textsc{fv} on.land\\
+	\glt `So Noah knew that the waters had subsided from the earth.'  
+	
+	\newpage
+	\ex Xhosa (S41) \citep[44]{DuPlessis:1989} \\
+	\gll ndafumana ukuba mandifunde isiXhosa\\
+	I.found that I.must.study Xhosa\\
+	\glt `I found that I must study isiXhosa.' 
+	\ex Mbundu (H21a) \citep[77-78]{Johnson:1931} \\
+	\gll mwane wambe kuma ``eme maza ngendele mu-nyanga''\\
+	he said that { }I \textsc{aux} hunt yesterday\\
+	\glt `He said ``I went hunting yesterday.''' 
+	\end{xlist}
+\z
+
+The majority of \textit{be-}complementizers in our sample appear to be derived from proto-Bantu \textit{*-bá} `be, become' (\citealt[17]{Guthrie:1970a}; \citealt[86]{Meeussen:1967}), retaining a bilabial place feature (/b, β, m, w/) in  all subsequent forms.\footnote{\citet[78]{Johnson:1931} observes that \textit{kuma} is an ``impersonal expression,'' generally used for ``there/it is\ldots'' The source of the nasality here is not clearly *b however.} Still, there are some languages, particularly those in Zone E, which appear to have independently developed complementizers from other forms of the copula. Digo (E73) and Giryama (E72a) both use \textit{kukala} `be.' This verb is likely derived from proto-Bantu \textit{*-k\`ad} `dwell, be' \citep[258]{Guthrie:1970a} or \textit{*-y\c{\`\i}kad} `dwell, be' \citep[179]{Guthrie:1970}, with the d/l alternation, already attested in proto-Bantu. Likewise, I believe that \textit{kana}, found in a few disparate languages like  Kamba (E55) has a similar origin, with *d$>$n.\footnote{The *d$>$n trajectory is not common, but it is not unheard of either. \citet{Guthrie:1970a} lists reflexes of \textit{*-y\c{\'\i}kad/*-k\`ad} as \textit{*-\c{i}kan} and \textit{*-\c{i}an} in East Holoholo (D28b) and Bembe (D54) respectively.}
+
+\ea
+	\begin{xlist}
+	\ex Digo (E73) \citep[55]{Nicolle:2014} \\
+	\gll Ndipho atu a-chi-many-a kukala iye ndi=ye a-ri-ye-hend-a mambo higo. \\
+	then 2-people 3\textsc{pl}-\textsc{cons}-know-\textsc{fv} \textsc{comp} 3\textsc{sg} \textsc{cop}=1.\textsc{ref} 3\textsc{sg}-\textsc{pst}-1.\textsc{rel}-do-\textsc{fv} 6.things 6.\textsc{dem.np}\\
+	\glt `then people knew that it was her who did those things.'  
+	
+	\ex Giryama (E72a) \citep[273]{Lax:1996} \\
+	\gll yuyu ŋ͡manamu\v{c}e were walagiza kukala a-so-zik͡p-e\\
+	that woman \textsc{aux} instructed \textsc{comp} 1\textsc{sm}-\textsc{neg}-bury.\textsc{pass}-\textsc{sbjv}\\
+	\glt `The woman had instructed that she should not be buried.' 
+	
+	\ex Kamba (E55) \citep[186]{Myers:1975} \\
+	\gll aisye kana n\~uk\~uka \~um\~unthi\\
+	he.say.\textsc{past} that he.come.\textsc{pres} tomorrow\\
+	\glt `He said that he's coming tomorrow.'
+	\end{xlist}
+\z
+%While almost all \textit{be}-complementizers appear to be cognate with proto-Bantu \textit{*-ba}, there are cases in which an independent copular form has been recruited for a complementation function. This is the case in Cuwabo. The verb \textit{okála} `be, stay, live' appears to be the source of the dubitative complementizer `if'.
+%
+
+
+%The same holds for Cuwabo. While both \textit{oli} and \textit{okála} are available as copulas, only \textit{okála} functions as a complementizer.
+%And in fact, it appears that, when given a choice between copular forms, \textit{be}-complementizers in Bantu languages are always related to the form of the copula that indicates  ``a persistent event,'' as described in \citep[464]{Guerois:2015}. And this meaning is widely associated with derivatives of \textit{*-ba}.
+
+Beyond the copular elements above, I found a few Bantu languages that use the morpheme \textit{n(i)} as complementizer. In Bembe (D54) in \REF{ex:gluckman:ni.comp1}, \textit{ni} appears with an invariant class 8 form of the relative pronoun \textit{-bo} (and thus also falls under the pronominal category of complementizer, discussed in \sectref{sec:gluckman:procompsection}). In Luba-Kasai (L31a), I believe that \textit{ne} is the cognate form in \REF{ex:gluckman:ni.comp2}. 
+%\footnote{Indeed, Tshiluba's \textit{bwa=se} alternates with \textit{bwa=ne}, presumably historically related to \textit{ni}. Note that \textit{ne} is not a copular form in Tshiluba.}
+
+\ea\label{ex:gluckman:ni.comp}
+	\begin{xlist}
+	\ex \label{ex:gluckman:ni.comp1} Bembe (D54) \\
+\gll Aachi a-le-ngany-a nibo Mswakeecha a-le mu-lwaala.\\
+Aachi 1\textsc{sm}-\textsc{pres}-think-\textsc{fv} \textsc{comp} Mswakeecha 1\textsc{sm}-\textsc{cop} 1\textsc{agr}-sick\\
+\glt `Aachi thinks that Mswakecha is sick.' 
+	
+%	\ex[]{
+%	\gll o-a-bwon-ire ni bu-ku-emb-a o-lulimi lwa-abwe o-lwa Bunyala\\
+%	2\textsc{sgS}-\textsc{pst}-watch-\textsc{fv} \textsc{comp} 14\textsc{s}-\textsc{prog}-sing-\textsc{fv} \textsc{aug}-language(11) 11-2\textsc{poss} \textsc{aug}-11.\textsc{gen} Bunyala(14)\\
+%	\glt `Did you see how $[$=when$]$ they sang their language of Bunayala?' \hfill $[$Ruuli (XX)$]$ \citep[94]{Sorensonetal:2020}
+%	}
+	\ex \label{ex:gluckman:ni.comp2} Luba-Kasai (L31a) \\
+	\gll Kalombo mu-sw-e ne Mujinga a-y-e ku Tshinsansa.\\
+	Kalombo 1\textsc{sm}-want-\textsc{fv} \textsc{comp} Mujinga 1\textsc{sm}-go-\textsc{sbjv} to Kinshasa\\
+	\glt `Kalombo wants Mujinga to go to Kinshasa.' 
+	\end{xlist}
+\z
+
+%Forms of \textit{n(i)-} are commonly found as a prefix on the embedded verb, introducing an embedded question. 
+%\ea
+%\ex
+%	\begin{xlist}
+%	\ex[]{
+%	XXXX
+%	}
+%	\ex[]{
+%	\gll si-many-ere Ingwe ni=ya=khire\\
+%	1\textsc{sg.neg}-know-\textsc{pfv} Ingwe \textsc{foc}=9\textsc{sm}-win\\
+%	\glt `I don't know if Ingwe won.' \hfill $[$Nyala East$]$
+%	}
+%	\end{xlist}
+%\z
+ Across Bantu, ``$[$as$]$ proclitic or prefix, $[$ni$]$ has a number of functions easily relatable to the copula''  \citep[53]{Nurse:2008}. I thus choose to list examples like \REF{ex:gluckman:ni.comp} as \textit{be-}complementizers. However, it is also  observed that \textit{ni} is strongly associated with \textit{focus} \citep{Nurse:2008, Guldemann:2013}. Therefore, we may ultimately want to list \textit{ni}-based complementizers as \textbf{focus complementizers}. Still, there is a tight connection between copulas and focus  \citep[125]{Kutevaetal:2019}, whereby focus markers are often grammaticalized from copulas. Therefore, it is not surprising that we see a link between focus and complementizers; however, it is unclear whether that link is always through the shared connection with copulas. 
+ 
+\subsection{Deictic complementizers}\label{sec:gluckman:deicticcompsection}
+Bantu languages contain a diverse range of complementizers related to deixis. I divide up the class  of deictic complementizers into three distinct subclasses: demonstrative, manner, and pronominal deixis.
+
+\subsubsection{Demonstrative complementizers}\label{sec:gluckman:demcompsection}
+
+Our data reveals that a number of Bantu languages employ a complementizer that elsewhere has (or had) a demonstrative function. All languages in Zone JD have as a complementizer a form of the class 15 form of the proximal demonstrative, realized as \textit{uku} `this\textsubscript{15}' in Rwanda (J61).
+
+\newpage
+\ea
+	\begin{xlist}
+	\ex Shi (JD53) Aron Finholt (p.c.) \\
+	\gll Mugisho a-lá:-waz-a ku Murhula a-li Bujumbura.\\
+	Mugisha 1\textsc{sm}-\textsc{pres}-think-\textsc{fv} \textsc{comp} Murhulla 1\textsc{sm}-\textsc{cop} Bujumbura\\
+	\glt `Mugisho thinks that Murhula is in Bujumbura.' 
+	
+	\ex Rundi (JD62) \citep[200]{Sabimana:1986} \\
+	\gll y-a-vuz-e ko Maria y-a-ri u-mu-nyeshuri\\
+	1-\textsc{RPast}-say-\textsc{asp} that Mary 1-\textsc{FPast}-be \textsc{A}-1-student\\
+	\glt `He said that Mary was a student.' 
+	\end{xlist}
+\z
+
+
+\noindent Lega's (D25) complementizer is homophonous with the proximal demonstrative \textit{-nɔ} with class 14 marking, \textit{bo-}.
+
+\ea Lega (D25) \citep[214]{Botne:1995} \\
+	\gll ámb\'undɛ b\'onɔ \'ɛkwɛndá ko Za{\'\i}lɛ\\
+	3\textsc{s.1s.}tell.\textsc{pst} that \textsc{3s.pr}-go to Zaire\\
+	\glt `S/he told me that s/he is going to Zaire.' 
+\z
+
+In our data, deictic complementizers always show invariant noun class inflection, though the form is not predictable for any one language as far as I can tell.  However, based on the available data, some generalizations can be made. Specifically, demonstrative complementizers broadly reflect noun classes that are otherwise used for abstract concepts and/or mass terms. For instance, Class 15 in JD60 is used elsewhere exclusively for infinitival forms of the verb. Class 14 in Lega is used for abstract nouns (and also gelatinous substances and body parts; \citealt{Botne:2003}). In Mbugwe (F34), the complementizer \textit{k\'oko} is recorded as being identical to the class 17 locative form of the proximal demonstrative \citep{Mous:2004}.
+
+   %Nyankore (agreeing derived from demonstrative)
+%Luba-Lulua?: ne
+%
+%Mboka: (o)vo
+%Kinyamulenge: yuko
+%Kihavu: oku
+%Mashi: oku?
+%Eton: na
+
+\subsubsection{Manner deictics}\label{sec:gluckman:mannercompsection}
+
+Included among the deictic complementizers are manner deictics. As observed originally in \citet[105]{Guthrie:1970} (and argued for explicitly in \citealt{Guldemann:2002, Guldemann:2008}), this is probably a relevant derivative function of proto-Bantu \textit{*-t\`\i}. Though a speech verb in some Bantu languages (\sectref{sec:gluckman:saycomplementizers}), in fact Guthrie traces the original meaning to `that, namely', which later in some languages is ``best expressed in English as `saying'{''} \citep[105]{Guthrie:1970}. In many Bantu languages, though, the manner deictic use persists. For instance, in Nyala East it is clear that \textit{-chi},\footnote{This is, again, historically \textit{*-t\`i}. In much of JE30, stops (af)fricated over time \citep{Guthrie:1970a}} has the distribution of a manner deictic outside of embedding contexts.
+
+\ea
+	\begin{xlist}
+	\ex Nyala East (JE32f) \\
+	\gll o-mw-aana a-chi\\
+	1\textsc{aug}-1\textsc{nc}-child 1\textsc{sm}-\textsc{dem}\\
+	\glt `a child like this' 
+	
+	\ex Nyala East (JE32f) \citep{Gluckman:2023} \\
+	\gll Masika a-paar-a a-chi Wekesa ka-chi-a Nairobi\\
+	Masika 1\textsc{sm}-think-\textsc{fv} 1\textsc{agr}-\textsc{comp} Wekesa 1\textsc{sm}-go-\textsc{fv} Nairobi\\
+	\glt `Masika thinks that Wekesa went to Nairobi.' 
+	
+	\end{xlist}
+\z 
+
+It is possible that manner deictics other than \textit{*-t\`i} have independently developed into complementizers. In Eton, \textit{n\^a} introduces selected embedded clauses as well as anaphorically describes a manner.
+
+\ea
+	\begin{xlist}
+	\ex Eton (A71) \citep[351]{VandeVelde:2008} \\
+	\gll \`a-Lt\'ɛ L-k\`ad H b-\`od n\^a H-b\'ə-z\`u-L\\
+	\textsc{i-pr} \textsc{inf}-tell \textsc{lt} 2-person \textsc{cmp} \textsc{sb-ii}-come-\textsc{sb}\\
+	\glt `He tells the men to come.' 
+	
+	\ex Eton (A71) \citep[170]{VandeVelde:2008} \\
+	\gll m\`ə-Lt\'ɛ k\`ɔm n\^a\\
+	1\textsc{sg}-\textsc{pr} \textsc{inf}-do thus\\
+	\glt `I do it this way.' 
+	\end{xlist}
+\z
+
+
+\subsubsection{Pronominal complementizers}\label{sec:gluckman:procompsection}
+
+
+ A number of Bantu languages have developed complementizers from ostensibly pronominal sources, a pattern that is well-attested outside of Bantu languages  \citep{DiesselBreunesse:2020}. This is explicitly argued by \citet{Botne:1995} to be true of the complementizers \textit{ngo} and \textit{mbo}, found throughout Bantu languages. 
+
+	\ea
+		\begin{xlist}
+		\ex Rwanda (JD61) \citep[38]{Rugege:1984} \\
+		\gll Mary ya-inubwa ngo abana ba-tah-e kare.\\
+		Mary 1\textsc{sm}-resent \textsc{comp} 2\textsc{nc}.children 2\textsc{nc}-get.home-\textsc{sbjv} early\\
+		\glt `Mary resents it that the children get home early.' 
+
+	\ex Nyambo (JE21) \citep[96]{Rugemalira:2005} \\
+	\gll akajira ngu muri abas\'uma\\
+	she.imagine.\textsc{past} \textsc{comp} you.were thieves\\
+	\glt `She imagined that you were thieves.' 
+	
+	\ex Ruuli (JE103) \citep[94]{Sorensonetal:2020} \\
+	\gll naye abandi ba-kob-a mbu o-Bunyala bu-a-ikang-a o-ku Nammanve\\
+	but \textsc{aug}.2.other 2\textsc{s}-say-\textsc{fv} \textsc{comp} \textsc{aug}-Bunyala(14) 14\textsc{s}-\textsc{pst}-reach-\textsc{fv} \textsc{aug}-17.\textsc{loc} Nammanve(9)\\
+	\glt `But others says that the Bunyala reached Nammanve.' 
+
+
+	\ex Mongo (C61) \citep[126]{Rop:1958} \\
+	\gll básanga mbɔ bas\'uwa b\v{a}os\'\i l'\v{ɔ}kɛnda\\
+	2\textsc{sm}.claim that boats 2\textsc{sm.}left\\
+	\glt `They claim that the boats have left.'\footnote{In original, \textit{Ze beweren, dat de boten vertrokken zijn}.} 
+		\end{xlist}
+	\z
+
+
+\citet{Botne:1995} argues that these forms are historically related to (emphatic) pronouns. Note that, since they derive from pronouns, pronominal complementizers are often ``agreeing,'' in that they co-vary with the subject of the embedding verb. Compare the ``discourse markers,'' which can be used to introduced any kind of embedded clause (and are preceded by the ``particle'' \textit{a}), with the pronominal forms in \tabref{tab:gluckman:particletable}. An example of the discourse particle use is shown in \REF{ex:gluckman:intomba.particle}. 
+
+\begin{table}
+\caption{Ntomba (C35a) \citep[209]{Botne:1995}}
+\label{tab:gluckman:particletable}
+\begin{tabular}{l l l l l l}
+\lsptoprule
+& \multicolumn{2}{l}{Direct discourse markers} & & \multicolumn{2}{l}{Personal pronouns}\\
+\cmidrule(lr){2-3}\cmidrule(lr){5-6}
+& Singular & Plural & & Singular & Plural\\
+\midrule
+1 & \textit{a mi} & \textit{a nso} & & \textit{mi} & \textit{so}\\
+2 & \textit{a we} & \textit{a nyo} & & \textit{we} & \textit{nyo}\\
+3 & \textit{a nde} & \textit{a mbo} & & \textit{nde} & \textit{bo}\\
+\lspbottomrule
+\end{tabular}
+\end{table}
+
+\ea\label{ex:gluckman:intomba.particle} Ntomba (C35a)$]$ \citep[69]{Gilliard:1928}, cited in \citep[208]{Botne:1995} 
+\gll bayoye batepela, a mbo: ntaba inkuma isolota\\
+3\textsc{p}-come-\textsc{pst} 3\textsc{sp}-say-\textsc{fv} \textsc{prt} 3\textsc{p} 10-goats 10-all 10-\textsc{prf}-run.off\\
+\glt `They came and said: all the goats have run off.'  
+\z
+
+\noindent Not all Bantu pronominal complementizers are related to \textit{ngo} or \textit{mbu}. In particular, \citet{Kawasha:2006, Kawasha:2007} reports that complementizers in Chokwe (K11), Luchazi (K13), Lunda (L52) and Luvale (52) are directly related to the possessive pronouns in those languages. 
+
+\subsection{Other categories}\label{sec:gluckman:minorcompsection}
+The above categories (\textit{say-}complementizers, \textit{be-}compementizers, deictics) were found fairly robustly throughout these data. I report below on two additional strategies that I feel should be mentioned, but did not appear as frequently in our language sample. 
+
+First, there are \textit{similatives}, words meaning ``like'' or ``as'' \citet{Kutevaetal:2019}. In this study, we find derivatives of \textit{*-ŋg\`a} `as, like' \citep[243]{Guthrie:1970} serving as complementizers, like Ruuli (JE103), shown in \REF{ex:Ruuli}. 
+
+
+\ea \label{ex:Ruuli} Ruuli (JE103) \citep[94]{Sorensonetal:2020} \\
+	\gll a-baana a-iz-a ku-bon-a nga ba-ku-ikiriz-a\\
+	\textsc{aug}-child(2) 2\textsc{sg.s}-\textsc{aux-fv} \textsc{inf}-see-\textsc{fv} \textsc{comp} 2\textsc{s}-2\textsc{sg.o}-believe-\textsc{fv}\\
+	\glt `You will see the children believe you.' 
+\z
+
+Second, I feel obligated to mentioned that not all finite embedded clauses require an overt complementizer. In many cases, the complementizer can be omitted, with no discernable meaning difference, like in Kikuyu (E51), shown in \REF{ex:gluckman:Kikuyu}.
+
+\ea \label{ex:gluckman:Kikuyu} Kikuyu (E51) \citep[150]{Englebretson:2015} \\
+	\gll m\~u-timia a-k\~u-\~\i t\~\i k-\~\i t-i-e (at{\~\i}) m\~u-thuri n\~\i-a-$\emptyset$-iy-ir-e N-g\~uk\~u\\
+	\textsc{nc}\textsubscript{1}-woman \textsc{sc}\textsubscript{1}-\textsc{cr.pst}-believe-\textsc{perf}-\textsc{trns}-\textsc{fv} \textsc{comp} \textsc{nc}\textsubscript{1}-man \textsc{foc}-\textsc{sc}\textsubscript{1}-\textsc{cr.pst}-steal-\textsc{compl}-\textsc{fv} \textsc{nc}\textsubscript{9}-chicken\\
+	\glt `The woman believed (today) (that) the man stole the chicken.' 
+
+\z
+
+Very little documentary work addresses whether null complementizers are possible in a given language -- though see \citet[section 3.10]{Edelstenetal:2022}.\footnote{\citet{Edelstenetal:2022} ultimately suggest that optionally expressed complementizers are more likely in East African Bantu languages. Thus, outside of East Africa, Bantu languages are more likely to have embedded clauses with obligatorily overt complementizers.} Nonetheless, in at least some languages, all finite, declarative embedded clauses must be headed by an overt complementizer. For instance, as reported in \citet[8]{Masatu:2015} for Simbiti (JE431), ``Both direct and indirect speech is marked with the complementizer \textit{igha} `that.' This complementizer appears with almost every occurrence of direct or indirect speech, and it seems to be extremely ungrammatical to omit it.''
+
+
+\section{Functions of Bantu complementizers}\label{sec:gluckman:factorsection}
+We now turn to the functions of Bantu complementizers. This is a pertinent question because in our sample, many languages have multiple complementizers. Conservatively, 40 languages out of 103 have two or more complementizers used in finite non-interrogative embedding. What factors then affect the  distribution of the complementizers within a language? And what factors influence when a speaker chooses one complementizer over another? I discuss here three factors that correlate with complementizer choice: commitment (``evidentiality''), information structure, and agreement. This is far from an exhaustive list. However, these three factors have been  discussed in a number of sources, and so are amenable for making cross-linguistic comparison. Still, I emphasize that the documentary picture remains fairly weak when it comes to the functions of complementizers in Bantu languages, and so my findings here should be taken as preliminary. 
+Nonetheless, based on the factors discussed below, I motivate a two-way distinction among Bantu complementizers. Across all three factors, \textit{say}-complementizers, manner deictics, and pronominal complementizers pattern similarly, while \textit{be-}complementizers and demonstratives pattern similarly. 
+
+\subsection{Commitment (``evidentiality'')}\label{sec:gluckman:commitmentsection}
+
+Many sources that document Bantu language complementizers mention ``evidentiality'' (see in particular \citealt{Botne:1995, Botne:2020}),   with the caveat that the term ``evidentiality'' covers a lot of ground. Rather than evidentiality \textsl{per se},  Bantu complementizers more often reflect an individual's -- often the speaker's -- commitment to the embedded proposition (cf. \citealt{Gluckman:2021syntax, Gluckman:2023}). For example, in \citet{Kihara:2017}, Kikuyu's (E51) complementizer \textit{at\~\i} is argued to function as a dubitative marker (in some contexts). The speaker is ``non-committal about the relayed information, rendering the information unreliable'' \citep[114]{Kihara:2017}. In this way, \textit{at\~\i} is distinct from the ``true'' quotatives \textit{at{\~\i}r{\~\i}} and \textit{at{\~\i}r{\~\i}r{\~\i}}.
+
+\ea Kikuyu (E51) \citep[114]{Kihara:2017} \\
+\gll nd{\~\i}-ra-igu-ir-e at{\~\i} n{\~\i} ma-ra-cok-ir-e ka-ao\\
+1\textsc{sg}-\textsc{rcpst}-hear-\textsc{pfv}-\textsc{fv} \textsc{dub} \textsc{am} 2-\textsc{rcpst}-return-\textsc{pfv}-\textsc{fv} 16-theirs\\
+\glt `I heard that they returned to their home.' 
+ \z
+
+In \pcite{GivonKimenyi:1974}  study of Rwanda's (JD61) complementizer system, they note a contrast between \textit{k\'o} and \textit{ngo} (which are not in complementary distribution). Similar to Kikuyu above, the pronominal complementizer \textit{ngo} gives rise to a reading of speaker-doubt.
+
+\ea Rwanda (JD61) \citep[96]{GivonKimenyi:1974} \\
+	\gll ya-m-bgiye ngo u-a-koraga cyaana\\
+	he-\textsc{past}-me-tell ngo you-\textsc{past}-work-\textsc{hab} hard\\
+	\glt `He told me that you worked hard (but I personally doubt it).'
+\z
+
+This contrasts with the demonstrative complementizer \textit{k\'o}, which, in some contexts, correlates  with stronger speaker belief. For example, with a verb like \textit{kubeeka} `to lie,' with \textit{k\'o} (as opposed to \textit{ngo}) in \REF{ex:gluckman:kin.ko.evid}, the speaker's commitment to ``the belief `John didn't come' is the \textbf{weakest}'' \citep[102, emphasis in original]{GivonKimenyi:1974}. 
+
+\ea\label{ex:gluckman:kin.ko.evid} Rwanda (JD61) \citep[102]{GivonKimenyi:1974} \\
+\gll ya-mu-bee\v{s}ye k\'o Yohani yaa\v{z}e\\
+1\textsc{sm}-\textsc{1om}-lie.\textsc{perf} \textsc{comp} John come.\textsc{perf}\\
+\glt `She lied to him that John came.' 
+\z
+
+Thus, with \textit{k\'o}, the speaker is more committed to the truth of the embedded clause -- even contradicting the lexical semantics of the embedding predicate. 
+
+Another example of stronger speaker commitment is observed in Kamba (E55), for which \citet{Myers:1975} reports that the \textit{be}-complementizer \textit{kana} (as opposed to no complementizer) in \REF{ex:gluckman:kana.kamba.evid} indicates ``the speaker believes that the promise will be kept'' \citep[190]{Myers:1975}.
+
+\ea\label{ex:gluckman:kana.kamba.evid} Kamba (E55) \citep[190]{Myers:1975} \\
+	\gll aisye kana n\~uk\~uka \~um\~unthi\\
+	he.said that he.comes today\\
+	\glt `He said that he is coming today.' 
+\z
+
+A parallel distinction is reported in \citet{FinholtGluckman:2023}. In Swahili (G42), the \textit{be-}complementizer \textit{kuwa} contrasts with the \textit{say-}complementizer \textit{kwamba} under verbs of epistemic possibility. When the speaker is relatively sure of the outcome, \textit{kuwa} is better \REF{ex:gluckman:kuwa.evid}; otherwise \textit{kwamba} is preferred \REF{ex:gluckman:kwamba.evid}.
+
+\ea\label{ex:gluckman:kuwa.evid}
+\textit{We’re watching Tanzania play in a football $[$soccer$]$ match. There are five minutes left to play, and Tanzania is up by three.} \\
+\gll i-na-onekan-a kuwa/\#kwamba Tanzania i-ta-shind-a\\
+9\textsc{sm-pres}-seem-\textsc{fv} \textsc{comp}/\textsc{comp} 9Tanzania 9\textsc{sm-fut}-win-\textsc{fv}\\
+\glt `It seems like Tanzania will win.'
+\z
+
+\ea\label{ex:gluckman:kwamba.evid}
+\textit{We’re watching Tanzania play in a football [soccer] match. It’s halftime, and Tanzanian is
+up one to nil.} \\
+\gll i-na-onekan-a kwamba/\#kuwa Tanzania i-ta-shinda\\
+15\textsc{sm-pres}-seem-\textsc{fv} \textsc{comp/comp} 9Tanzania 9\textsc{sm-fut}-win\\
+\glt `It seems like Tanzania will win.'
+\z
+
+We therefore find both weak and strong commitment readings associated with complementizer choice. Interestingly, there are correlations between the lexical source of the complementizer and the associated reading. When we find a weak reading, it is always in the presence of a \textit{say-}complementizer, manner deictic, or  pronominal complementizer. Strong readings only ever arise in the presence of \textit{be-}complementizers and demonstratives.\footnote{There is an interesting wrinkle here, however. \textit{Be}-complementizers are often used to head embedded polar interrogatives (`if/whether'), which also entail a lack of commitment on the part of an individual. However, polar interrogatives differ in that they reflect \textit{ignorance} rather than \textit{doubt}. As mentioned earlier, we have to put aside embedded interrogatives.} Note that this does not entail that all complementizers have a ``commitment'' meaning component; the observation is simply that when such a meaning arises (in embedded clauses), the lexical source of  complementizer is largely predictable. 
+
+
+\subsection{Information structure}
+
+
+Complementizers often interact with the information structure of the embedded clause (cf. \citealt{Djarv:2019}). In Bantu languages, the clearest instance of such ``embedded clause effects'' is observed in the presence of \textit{predicate focus}, i.e., a morpho-syntactic configuration in which the predicate (or something inside of the predicate) is in focus. This distinction is often seen in Eastern and Southern Bantu languages. In some of those languages, certain complementizers prohibit the predicate focus operator \textit{ni-} found in many Bantu languages \citep{Guldemann:2003, Guldemann:2013} (cf. \sectref{sec:gluckman:becompsection}). In Subi (JE26),\footnote{In \citet{Maho:2009, Hammarstrom:2019} Subi is listed as JD64. There appears to be some confusion about distinct languages called Subi in the region. The Subi discussed here is more likely in within JE20 (according to native speaker linguists), and so I have chosen to give it the code ``JD26.''} the predicate focus operator is banned in clauses introduced by \textit{nkikwo}, but permitted in clauses introduced by \textit{ngu}.\footnote{\citet{HymanWatters:1984} assume that this restriction is ``grammatical'' (i.e., synchronically idiosyncratic). I respectfully find this to be an unsatisfying solution. Indeed, as Hyman \& Watters note, such restrictions tend to occur in ``backgrounded'' (256) clauses, already suggesting a link to information structure. Moreover, the fact that this same restriction keeps appearing in unrelated languages begs a more general explanation.} 
+%\footnote{It is worth noting that Mood of the embedded clause only has an indirect effect on the choice of complementizer. That is, while many complementizers correlate with subjunctive mood, the predicting factor for mood choice is almost always lexical class of the embedded verb. (See e.g. \citealt{DuPlessis:1998, XXXX}.)  Insomuch as the embedding verb may influence the choice of complementizer, then it may appear that complementizer and mood are interacting. For instance, in Eton (XX), the following classes of verbs are reported to appear with the complementizer \textit{n\^a}: manipulative, commentative, propositional attitudes, immediate perception predicates, and predicates of knowledge \citep[351ff]{VandeVelde:2008}. However, only the first two classes, manipulative and commentative, require the embedded clause to be in the subjunctive mood. 
+%%This point is made explicitly in \citet{Rop?}, who observes that, ``XXXX.''
+%}
+
+%\ea
+%\ex
+%	\begin{xlist}
+%	\ex[]{
+%	\gll ni-bha-teka\\
+%	\textsc{foc}-2\textsc{sm}-cook\\
+%	\glt `They are cooking.'
+%	}
+%	\ex[]{
+%	\gll 
+%	}
+%	\end{xlist}
+%
+%\z
+
+\ea Subi (JE26) (Cyprian Vumilia, p.c.)
+	\begin{xlist}
+	\ex[]{
+	\gll bha-ka-tu-gambira nkikwo tu-liku-bha-tel-era endulu\\
+	2\textsc{sm}-\textsc{pst}-1\textsc{pl.om}-tell \textsc{comp} 1\textsc{pl.sm}-\textsc{pres}-2\textsc{om}-make-\textsc{appl} noise\\
+	\glt `They told us that we are making noise to them.'
+	}
+	\ex[]{
+	\gll bha-ka-tu-gambira ngu ni-tu-bha-tel-era endulu\\
+	2\textsc{sm}-\textsc{pst}-1\textsc{pl.om}-tell \textsc{comp} \textsc{foc}-1\textsc{pl.sm}-2\textsc{om}-make-\textsc{appl} noise\\
+	\glt `They told us that we are making noise to them.' 
+	} 
+	\end{xlist}
+\z
+
+
+
+An identical pattern is found in languages with a \textit{conjoint/disjoint} system. While it remains  debated about the function of the conjoint/disjoint alternation (it is likely to have multiple functions across languages), it is reasonably thought to be connected with predicate (internal) focus: disjoint forms are found when the predicate is in focus, while conjoint forms are found elsewhere \citep{VanderWal:2016conjoint}. 
+
+In languages with a conjoint/disjoint system,  disjoint forms of the verb are often banned in certain embedding contexts. It is common to find restrictions inside of nonselected clauses (e.g., relatives and temporal clauses), but we also find that certain selected embedded clauses restrict the verbal morphology. For instance, in Rwanda (JD61) and Rundi (JD62), under the complementizer \textit{k\'o}, only conjoint forms are found \citep{NgobokaZeller:2016, NshemezimanaBostoen:2016}. The disjoint form (in this context, marked with \textit{ra-}) is available under \textit{ngo}-clauses.\footnote{Note that the main-clause verb is also affected, but the correlations between complementizer and main-clause morphology are less systematic, so I exclude them from the discussion here.}
+\ea
+	\begin{xlist}
+	\ex Rwanda (JD61) \citep[366]{NgobokaZeller:2016} \\
+	\gll a-ra-v\'ug-ye ngo a-ra-som-a\\
+	1\textsc{sm}-\textsc{dj}-say-\textsc{pfv} that 1\textsc{sm}-\textsc{dj}-read-\textsc{fv}\\
+	\glt `He says that he reads.'  
+	
+	\ex Rwanda (JD61) \citep[365]{NgobokaZeller:2016} \\
+	\gll a-v\'ug-ye k\'o a-som-a\\
+	1\textsc{sm}-say-\textsc{pfv} that 1\textsc{sm}-read-\textsc{fv}\\
+	\glt `He says that he reads.' 
+	\end{xlist}
+\z
+
+The prohibition on predicate focus in an embedded clause must stem from an interaction with constraints on information structure imposed by the clause itself -- parallel to the fact that negation, a focus-sensitive operator, also blocks disjoint forms. 
+
+Interestingly, the same dichotomy described for commitment above holds here. Only selected embedded clauses headed by \textit{be-}complementizers or demonstratives block focus operators in the embedded clause. Clauses  headed by \textit{say-}complementizers, manner deictics, and pronouns generally have no effect on the information structure -- specifically predicate focus -- in the embedded clause.\footnote{\citet{VanderWal:2014} makes a similar claim with respect to \textit{situative} clauses; she is largely concerned with nonselected adverbial clauses.}  Again, I emphasize that not all \textit{be-} or demonstrative complementizers prohibit predicate focus in selected embedded clause. But when it is blocked, the complementizer is always a \textit{be-} or demonstrative complementizer. 
+
+
+\subsection{Agreement}\label{sec:gluckman:agreementsection}
+
+The final distinction I mention here is morpho-syntactic. It is well-known that a relatively large number of Bantu languages have so-called \textit{agreeing complementizers}. These are complementizers which exhibit morphological concordance with an element in the matrix clause, almost always the embedding subject,\footnote{\citet{Gluckman:2023} reports that certain speakers of Nyala East (JE32f) permit an implicit subject to control the agreement of the complementizer \textit{-chi}, though he notes that this is the exception, not the rule.}  like Bukusu's (JE31c) well-discussed \textit{-li}.
+
+\ea Bukusu (JE31c) \citep[358]{Diercks:2013} \\
+	\gll ba-ba-ndu ba-bol-el-a Alfredi ba-li a-kha-khil-e\\
+	2-2-people 2\textsc{s}-said-\textsc{ap}-\textsc{fv} 1Alfred 2-that 1\textsc{s}-\textsc{fut}-conquer\\
+	\glt `The people told Alfred that he will win.' 
+\z
+
+There is no single lexical source for agreeing complementizers across Bantu languages;  they are derived from disparate sources. While the majority of the cases in our sample are related to \textit{*-t\`\i}, there are numerous exceptions. Most prominently, there are agreeing complementizers derived from pronouns,  discussed in \sectref{sec:gluckman:procompsection}. 
+
+While productive agreeing complementizers are robustly attested in Bantu, we also find that the agreement has fossilized on many Bantu complementizers. Some languages, like Nyengo (K16),  have a complementizer inflected with what is presumably invariant 1\textsc{sg} morphology, \REF{ex:gluckman:nyengo.comp}. (\textit{Nji} is also found throughout the K30 language group.)\footnote{Indeed, this appears to be an innovation in some dialects of Rwanda/Rundi (JD61/62). In the ``standard'' languages, \textit{-ti} is fully agreeing. Based on conversations with speakers, however, some dialects only use \textit{nti}, which can only plausibly be a fossilized 1st-person form.}
+
+\ea\label{ex:gluckman:nyengo.comp} Nyengo (K16) \citep[166]{Lisimba:1982} \\
+	\gll tu-faa nji tu-ful-e\\
+	1\textsc{pl.sm}-want \textsc{comp} 2\textsc{pl.sm}-beat-\textsc{sbjv}\\
+	\glt `We want to beat.' 
+
+\z
+
+
+
+In other languages, what is fossilized appears to be 3rd person agreement. In Lamba (M54)  in \REF{ex:gluckman:lamba.comp}, \textit{ati} likely bears 3rd singular (Class 1) agreement.  \textit{Baatɪ} in Nyakyusa (M31a) in \REF{ex:gluckman:nyak.comp} shows 3rd person plural fossilized agreement.
+
+\ea 
+	\begin{xlist}
+	\ex \label{ex:gluckman:lamba.comp} Lamba (M54) \citep[144]{Doke:1922} \\
+	\gll na li bwene ati ta \^{w}a pyaŋgile\\
+	I \textsc{pst} see \textsc{comp} \textsc{neg} they sweep\\
+	\glt `I saw that they did not sweep.'
+	
+	\ex \label{ex:gluckman:nyak.comp} Nyakyusa (M31a) \citep[315]{Persohn:2017} \\
+	\gll  {\ldots}  ``keet-a ʊ-t-ile baatɪ n-heesya gw-ɪtu!? \ldots''\\
+	{ }  look-\textsc{fv} 2\textsc{sg}-say-\textsc{pfv} hearsay 1-guest 1-\textsc{poss.1pl}\\
+	\glt `\ldots ``Look, you said he is our guest!?''' 
+	\end{xlist}
+\z
+
+Pronominal complementizers, too, show similar variation. The invariant complementizers \textit{mbo} and \textit{ngo} discussed above are also  complementizers  with fossilized agreement. \textit{Mbo} has 3rd plural (Class 2) invariant  ``agreement'' while \textit{ngo} is reconstructed in \citet{Botne:1995} as a complementizer/evidential particle with invariant 3rd singular (Class 1) morphology.\footnote{Nduumo (B63) and Mbete (B61) have a more unique situation, as reported in \citet{Adam:1954}. With 3rd person (singular/plural) subjects, invariant \textit{ndi} is the complementizer used. With 1st and 2nd person (singular/plural) subjects, \textit{mbidi} (for Nduumo) and \textit{meti} (for Mbete) are used. Thus, these languages show partially fossilized agreement, collapsing the speech-act participants.}
+
+
+ In our sample, systemically excluded from the class of agreeing complementizers -- including those with fossilized agreement -- are \textit{be-}complementizer and demonstrative complementizers.\footnote{Similatives  also do not show evidence of co-variation with the main-clause subject in our language sample.}  For demonstratives, while these do reflect noun classes, they (i) never \textit{change} noun class within a language, (ii) never reflect 1st, 2nd, or 3rd person (human) morphology, and (iii) never reflect agreement with something overt in the superordinate clause. More strikingly, the lack of person/number marking is particularly relevant for \textit{be-}complementizers, which can and often do, exhibit agreement synchronically. 
+ 
+
+\subsection{The (lack of) selection}
+
+
+Most typological studies of complementizers start by looking at the interaction between complementizer/complementation choice and the lexical semantics of the embedding predicate. Such studies are interested in whether there are selectional restrictions on complementation. Certainly, selection plays an important role in Bantu languages:  we find a general divide between those predicates which embed nonfinite clauses (e.g., modals, aspectuals), and those which embed finite clauses (belief verbs, utterances predicates, etc.). Within the finite clauses, we also find that there are general divisions between interrogative and non-interrogative clauses. But in general, there is limited evidence that the lexical class of the embedding predicate plays a direct role in the choice of the complementizers described in this paper. Works that note correlations between complementizer choice and category of the embedding predicate are relatively sparse (cf. \citealt{GivonKimenyi:1974}; \citealt{VandeVelde:2008}; \citealt{FinholtGluckman:2023}).
+
+
+I believe, in fact, that the importance of selection is often over-emphasized, or at the very least, not the main factor in complementizer selection. The issue is one of confirmation bias. The starting place for all investigations of Bantu complementizers is always lexical class of the embedding verb -- a sensible place to start (see for instance \citealt{Safir:2008}). But this sometimes leads to the conclusion that any distinctions in complementizers that arise are  solely attributable to the lexical class of the embedding predicate. But more often than not in the descriptive sources (even beyond Bantu languages) and in my own fieldwork, the same embedding predicate may appear with multiple kinds of embedded clause, yielding slightly distinct readings. Thus, \citet[189]{Myers:1975} reports that in Chewa  (N31b) ``the choice of complementizers is controlled in part by the syntactic elements of the sentence, and in part by the pragmatics of its use.''
+
+In other languages, there is essentially no effect of predicate class. In Kamba (E55)  the two complementizers \textit{kana} and \textit{at\~\i} are in free variation \citep[187]{Myers:1975}. Likewise, in Nyala East (JE32f), the complementizers \textit{mbo}, \textit{-chi}, and \textit{vachi} are entirely interchangeable under all embedding verbs (and nouns).\footnote{It is worth noting that Mood of the embedded clause only has an indirect effect on the choice of complementizer as well. That is, while many complementizers correlate with subjunctive mood, the predicting factor for mood choice is almost always lexical class of the embedded verb. For instance, desire predicates like \textit{want} strongly prefer subjunctive mood (particularly with disjoint subjects), regardless of the complementizer used to introduce the embedded clause.  (See e.g., discussion concerning Gyeli (A801) in \citealt{Grimm:2021}.) Insomuch as the embedding verb  influences the choice of complementizer, then it may appear that complementizer and mood are interacting.} 
+ 
+ Finally, there are additional factors that can influence complementizer choice, though these are restricted in their distribution. \citet{LetsholoSafir:2019} discuss instances of Voice affecting the choice of complementizer in Nande (JD42) and Kalanga (S16). Similarly, Shona (S10) has both an active and passive complementizer, \textit{kuti} and \textit{kunzi}, respectively \citep{Dembetembe:1976}.  In Iwoyo (H16d), as discussed in \citet{Mingas:1994}, the \textit{say-}complementizer \textit{t\'\i} appears in affirmative statements, but the complementizer \textit{k\`an\'\i} appears when the main verb is negated. In Fuliiru (JD63), the pronominal complementizer \textit{mbu} is used in ``frustrative'' constructions \citep{Otterloo:2011}. And in Rufumbira (JD62a), as reported in \citet{Nassenstein:2016}, the choice of \textit{ngo} versus \textit{mbu} is intermixed with language attitudes and identity.  These additional distinctions deserve a more detailed crosslinguistic study than I can provide here.
+
+
+
+\section{Classifying the dichotomy}\label{sec:gluckman:analysissection}
+
+I summarize my initial findings in \tabref{tab:gluckman:summarytable}.
+
+\begin{table}
+\caption{Summary of the correlations between form and function}
+\small
+\label{tab:gluckman:summarytable}
+\begin{tabularx}{\textwidth}{Q ccccc  }
+\lsptoprule
+& {\textit{say-}comps} &  {manner}  & {pronouns} & {\textit{be-}comps}  &  {demonstratives}    \\
+\midrule
+{Speaker/subject commitment} & weak & weak & weak & strong & strong\\
+\tablevspace
+{Can restrict \textsc{foc.} in emb. clause} & \ding{55} & \ding{55} & \ding{55} & \Checkmark & \Checkmark\\
+\tablevspace
+{Can show agreement} &  \Checkmark & \Checkmark & \Checkmark & \ding{55} & \ding{55}\\
+\lspbottomrule
+\end{tabularx}
+\end{table}
+
+If these generalizations hold up, it suggests a striking correlation between form and function that deserves an explanation. I suggest the following tentative, intuitive explanation. We start with the assumption that embedded clauses can be related to main clause to various ways. I refer to this as \textit{anchoring}. One way to anchor the embedded clause to the main clause is via an individual: the embedded clause reflects information conveyed by, or held to be true/false by, or rejected by (etc.), some individual, possibly the  subject of the embedding verb, or possibly the speaker. For instance, quotation can be anchored to an individual: the speaker of the quoted utterance. This idea can extend to attitudinal embedding as well. The sentence \textit{Maina believes that it's raining} is judged true if the proposition ``It's raining'' is among Maina's beliefs. 
+
+On the other hand, embedded clauses can be anchored to a situation (or eventuality). For example, a quotation can be anchored to  ``the event denoted by the quote'' \citep[362]{Guldemann:2008}. Again this idea can extend beyond quotation to cover propositions which are judged true or false at a particular time and place. This is the approach taken across a number of theoretical works, including \citep{Aboh:2004, Kratzer:2006, Moulton:2008, Hacquard:2009, Haegeman:2010, Moulton:2013, Hegarty:2016}. The basic idea across these works is that embedded clauses (can) describe propositional content that is evaluated with respect to an event(uality). Conceptually, according to the latter authors' view, in \textit{Maina believes that it's raining}, the embedded proposition ``It is raining'' is evaluated relative to the beliefs held at the event described by \textit{believe}. The attitude holder \textit{Maina} only plays an indirect role in that it happens to be Maina's beliefs in this case. 
+
+Based on this dichotomy, I suggest that the division among Bantu complementizers reflects this individual/situation divide: some complementizers are ``perspectival,'' anchoring the embedded clause to an individual. \textit{Say}-complementizers, manner deictics, and pronouns all fall into this category: they are are all linked morphologically or semantically to an individual's perspective. This can be seen directly in the morphology, through agreement with a local subject. The effect of anchoring to an individual can have semantic effects as well. The weak commitment readings observed in \sectref{sec:gluckman:commitmentsection} may be understood as  the result a ``subjective'' attitudinal stance. That is, using a perspectival complementizer signals that the embedded clause is evaluated relative to a particular individual who is not the speaker, and is not common/shared knowledge. 
+
+The other complementizers, \textit{be-}complementizers and demonstratives, are ``situational,'' anchoring the embedded clause to a situation. The lack of agreement follows naturally. The interaction with predicate focus also follows on the assumption that if the complementizer introduces or foregrounds  a salient situation, that situation  can interacts with a forgrounded (focused) situation in the embedded clause. Indeed, clear evidence of the relationship between predicate focus and  complementizers comes from shared morphology: the predicate focus operator in some languages \textit{ni} is also a complementizer, as discussed in \sectref{sec:gluckman:becompsection}.
+
+
+
+To account for stronger speaker commitment, we can make reference to \textit{definite} situations, which commit the speaker to the belief in a situation that is relevant in evaluating the embedded clause. As discussed in \citet{Ozyildiz:2017, BochnakHanink:2021} (for non-Bantu languages), presupposing a situation in which the embedded clause is true can lead to a factive inference, i.e., a ``stronger'' commitment towards the embedded proposition.
+
+\section{Conclusion}\label{sec:gluckman:conclusion}
+
+In this paper, I have provided a preliminary typology of Bantu complementizers. Even with limited data, this study reveals rich variation within the broader family. Additionally, I have explored three factors that correlate with complementizer choice in languages which have more than one copmlementizer. Based on the available data, I  suggested a dichotomy between perspectival and situational complementizers. Though I caution again that these results need further evaluation, with closer inspection of Bantu complementizer systems, I nonetheless believe that the emerging patterns offer an important and novel window into the typology and function of complementizers crosslinguistically. 
+
+\section*{Abbreviations}\label{sec:gluckman:abbrev}
+
+\begin{tabularx}{.45\textwidth}{lQ}
+    1--20 &  noun classes/person\\
+    \textsc{agr} &  agreement\\
+    \textsc{am} &  assertive marker\\
+    \textsc{appl/ap} &  applicative\\
+    \textsc{asp} &  aspect\\
+    \textsc{aug} &  augment\\
+    \textsc{aux} &  auxiliary\\
+    \textsc{cl/nc/np} &  noun class marker\\
+    \textsc{comp/cmp} &  complementizer\\
+    \textsc{compl} &  completive\\
+    \textsc{cons} &  consecutive\\
+    \textsc{cop} &  copula\\
+    \textsc{dem} &  demonstrative\\
+    \textsc{dj} &  disjoint\\
+    \textsc{dub} &  dubitative\\
+    \textsc{FPast} &  far past\\
+    \textsc{fut} &  future\\
+    \textsc{fv} &  final vowel\\
+    \textsc{hab} &  habitual\\
+    \textsc{ideo} &  ideophone\\
+    \textsc{imp} &  imperative\\
+    \end{tabularx}
+\begin{tabularx}{.45\textwidth}{lQ}
+    \textsc{inf} &  infinitive\\
+    \textsc{ipfv} &  imperfective\\
+    \textsc{itive} &  itive\\
+    \textsc{lnk} &  linker\\
+    \textsc{loc} &  locative\\
+    \textsc{lt} &  linking tone\\
+    \textsc{near.fut} &  near future\\
+    \textsc{neg} &  negative\\
+    \textsc{nucl} &  nucleative\\
+    \textsc{oc/om/o} &  object marker/concord\\
+    \textsc{p} &  person marker\\
+    \textsc{pfv/prf} &  perfective\\
+    \textsc{pl} &  plural\\
+    \textsc{poss} &  possessive\\
+    \textsc{pp} &  pre-prefix or pronominal prefix\\
+    \textsc{pr} &  pronoun\\
+    \textsc{pres} &  present\\
+    \textsc{prt} &  particle\\
+    \textsc{pst} &  past\\
+\end{tabularx}
+
+\begin{tabularx}{.5\textwidth}{lQ}
+    \textsc{quot/qv} &  quotative\\
+    \textsc{ref} &  referential\\
+    \textsc{RPast/rcpast} &  recent past\\
+    \textsc{s/sa/sc/sm} &  subject agreement{\slash}concord{\slash}marker\\
+    \end{tabularx}
+\begin{tabularx}{.45\textwidth}{lQ}
+    \textsc{sb/sbv/sbjv} &  subjunctive\\
+    \textsc{sg} &  singular\\
+    \textsc{tam} &  tense/aspect/mood\\
+    \\
+    \\
+\end{tabularx}
+\section*{Acknowledgements}
+
+Thanks to Aron Finholt and other members of KUBantu at the University of Kansas for helping to collect, organize, and understand the data. Thanks especially to Jacques Alimasi, Antoinette Bifuko, Fudjo Jeannot, Raphael Kayembe, JP Sabimpa, and Cyprian Vumilia for their time sharing their languages with me. And thanks as well to audience members at ACAL 54 for their helpful feedback. This work was supported by a grant from the National Science Foundation (2140837).
+
+\sloppy %this command eliminates a quirk that appears in the bibliography, you can just leave it here.
+
+\printbibliography[heading=subbibliography,notkeyword=this]
+
+\end{document}
+
+%To be added to the ACAL \LaTeX{} template, someday: glossing with leipzig, advanced instructions for arrows

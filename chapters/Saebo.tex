@@ -1,0 +1,792 @@
+\documentclass[output=paper,colorlinks,citecolor=brown,draftmode]{langscibook}
+\author{Lilja Sæbø\affiliation{University of Oxford}}
+%\ORCIDs{}
+\ChapterDOI{10.5281/zenodo.20285208}
+
+\title{Non-prototypical usages of the Lugwere causative extension}  
+
+\abstract{Lugwere is an under-studied Great Lakes Bantu language spoken in Eastern Uganda, and this paper presents a thorough investigation of non-prototypical usages of the causative suffix in Lugwere, including usages that would be classified as applicative. Causative and applicative isomorphism has been reported for a range of language cross-linguistically (\cite{peterson2006applicative}), and within Bantu, reflexes  of the inherited Proto-Bantu causative \emph{*-ici} has instrumental usages in a handful of languages (\cite{jerro2017causative}, \cite{schadeberg2019word}). This is also found in Lugwere, alongside  examples of  a comitative usage that has not been reported elsewhere. There are also examples  where the causative suffix does not affect either the semantic or the syntactic argument structure.
+}
+
+\IfFileExists{../localcommands.tex}{
+   \addbibresource{../localbibliography.bib}
+   \input{../localpackages}
+   \input{../localcommands}
+   \input{../localhyphenation}
+   \boolfalse{bookcompile}
+   \togglepaper[23]%%chapternumber
+}{}
+
+\begin{document}
+\maketitle
+
+\section{Introduction }
+
+Lugwere (JE.17) is a Bantu language spoken by around 621 000 people in Eastern Uganda \citep{EthnologueSaebo}. It belongs to the Great Lakes branch of the Bantu family, and is closely related to Luganda and Lusoga. Lugwere retains reflexes of many of the Proto-Bantu extensions; a group of derivational suffixes that often, but not always, affect the valency of the verb.
+
+This article focuses of the Lugwere reflex of the Proto-Bantu causative suffix *\textit{-ici}. The affix still functions as a causative, but has additional usages as well, some of which could be termed applicative. The goal of this article is to provide a descriptive account of some of these non-canonical usages of the causative morphology, and I will not propose a systematic analysis of these phenomena here. To this end, \sectref{sec:Saebo:proto} lays out definitions for prototypical causatives and applicatives, while \sectref{sec:Saebo:Lugwere} gives an overview of the Lugwere reflexes of relevant Proto-Bantu morphology, and describes the different strategies for causativization in Lugwere. Sections \ref{sec:Saebo:sociative}--\ref{sec:Saebo:diathesis} then look at different non-causative usages of the causative suffix, and \sectref{sec:Saebo:discussion} discusses the possible diachronic paths to the current Lugwere usages of the causative suffix.
+
+\section{Prototypical causatives and applicatives} \label{sec:Saebo:proto}
+
+Bantu languages frequently have a causativising and applicativising affixes, and this is a morphological feature that has been reconstructed back to Proto Bantu \citep{schadeberg2019word}. Mostly commonly, modern languages have applicative morphemes that are reflexes of Proto-Bantu \emph{*-ɪd} and causative morphemes that are reflexes of Proto-Bantu \emph{*-i} and \emph{*-ici}.
+
+Frequently, Bantu languages use one applicative marker to promote a range of different adjuncts to the object position, such as beneficiary, instrument, location, cause, goal and instrument. \citet{pacchiarotti2020bantu} shows that there is wide variation in the functions and semantics of the reflexes of Proto-Bantu \emph{*-ɪd}. Reflexes of \emph{*-ici} tend to function as a causative, but also have instrumental usages in quite a few languages, which will be illustrated for Lugwere below (and see \sectref{sec:Saebo:discussion} for more on this). The affixes also differ in productivity between languages. The reflex of \emph{*-ici} has for instance become fully lexicalized in Mbuun \citep{bostoen2011causative}. 
+
+The literature has also reported cases of deponency and ``pseudo'' forms involving these affixes (\citealt{deponencyGood}, \citealt{pacchiarotti2020bantu}). That is, lexicalized verbs that appear to have the relevant affixes, but where no base form exists as an independent verb, and where the meaning can no longer easily be interpreted as applicativising or causativising. While such forms are fascinating, and some also found in Lugwere (especially with the applicative \emph{-ir}), this article will focus on forms where the causativized form exists alongside a base verb without a causative suffix.  
+
+While there is a lot of variation in how the term `causative' is used, this paper will rely on the definition given in \citet{zuniga2019grammatical}, which lays out a list of characteristics of the prototypical causative, reproduced below.
+
+\ea 
+\textbf{Prototypical causatives:}
+\begin{itemize}
+    \item The syntactic valency of a causative clause is one higher than that of the base, non-causativized, clause.
+    \item A new A (the causer) is added into the semantic argument structure. 
+    \item The new A (the causer) is introduced as the subject of the causative clause; the base subject of the non-causative clause (the causee) may be a core argument or an adjunct in the causative clause.
+    \item Causativization is formally coded on the predicate complex. 
+\end{itemize}
+\z 
+
+This definition makes it clear that the causative includes changes both to the syntactic and the semantic argument structure of the verb, and in order to qualify there must be formal coding on the predicate, which would exclude for instance the English causative alternation from inclusion (``The door closed''/``She closed the door'').
+
+\citeauthor{zuniga2019grammatical}'s (\citeyear{zuniga2019grammatical}) definition of the applicative, reproduced below, is quite similar, but differs in a couple of ways. In both cases a new argument is added both to the semantic and the syntactic argument structure. However, in the case of the causative the new argument is an agent, and is installed into the subject position. In the case of the applicative, the new argument can have a lot of different thematic roles (beneficiary, location, instrument), and is installed as the primary object. 
+
+\ea 
+\textbf{Prototypical applicatives:}
+\begin{itemize}
+    \item Its syntactic valency is one more than that of the non-applicative diathesis.
+    \item Its subject corresponds to the subject of the non-applicative diathesis
+    \item It's primary/direct object corresponds to an adjunct or non-core argument in the non-applicative voice, or to a participant that is introduced to the clause as primary/direct object
+    \item Applicativization is formally coded on the predicate complex 
+\end{itemize}
+\z 
+
+The next section will give examples of causatives from Lugwere, which fit the definition given above. Sections \ref{sec:Saebo:sociative} -- \ref{sec:Saebo:diathesis} will then give some examples of cases where the inherited causative marker does not behave like a causative; in some cases functioning more like a prototypical applicative (\sectref{sec:Saebo:applicative}), in other cases having no effect on the argument structure (\sectref{sec:Saebo:no-change}).
+
+\section{Causative strategies in Lugwere}\label{sec:Saebo:Lugwere}
+\subsection{Methodology} \label{sec:Saebo:methodology}
+
+This study is based on a combination of elicitation and the use of a corpus. The corpus consists of a combination of written texts (a translation of the New Testament, some storybooks and teaching materials for children) and various recordings from 2021-2023 which have been transcribed and translated by a native speaker. The recordings are of a range of genres, from natural conversations, narratives and monologues, to radio programs and songs, as well as some more structured narratives (based on the stories provided by \cite{Storyboards}) and some conversations where participants were asked to act out different scenarios (going to the doctor, shopping at the market, gossiping about a neighbour). Altogether the corpus has just below 435 000 words. FieldWorks 9.1 (SIL 2003) was used to search through the corpus for relevant examples. The searches looked for the causative suffix \emph{-isy-} or \emph{-isisy-} by searching for these either in combination with the final vowel \emph{-a} or the past tense suffix \emph{-ire} (the combination of the causative and the past tense suffix becomes \emph{-isirye}). A similar search for the applicative suffix was also conducted. 
+
+Additionally, there is a dictionary of Lugwere \citep{Nzogi2012dictionary} which has proven helpful in finding words to investigate, and for investigating the lexicalized meanings of verbs with the causative suffix. 
+
+The elicitation was carried out on field trips to Uganda in 2022 and 2023, as well as online. The elicited examples given in this paper come from two speakers, both from the Nakooma village in Kibuku district, in their twenties and with higher education. Examples found in the corpus were tested in elicitation to make sure that the linguist had an accurate understanding of the sentence in the context.
+
+The examples given in this paper are taken both from the corpus and from elicitation sessions. Whether an example is from the corpus or from elicitation will be indicated by a letter (C) or a letter (E) in parentheses following the first line of the example. Examples from elicitation are either translations of sentences given in English, or Lugwere sentences that have been considered by native speakers to be acceptable when asked for grammaticality judgement. 
+
+
+
+\subsection {Proto-Bantu extensions and Lugwere reflexes} \label{sec:Saebo:proto-Bantu}
+\largerpage[-1]
+Proto-Bantu has been reconstructed to have had 11 extensions \citep{schadeberg2019word}. These are suffixes that follow the verb root and typically have an effect on the valency of the verb. \tabref{tab-proto} shows the extensions reconstructed by \citet{schadeberg2019word}, alongside the Lugwere reflexes. 
+
+\begin{table}
+\caption{Proto-Bantu extensions and Lugwere reflexes}
+\label{tab-proto}
+	\begin{tabular}{llll}
+	 \lsptoprule
+            & Proto-Bantu   & Lugwere  \\
+\midrule
+Causative           &     *-i/*-ici      &   -y,-isy        \\
+Applicative         &     *-ɪd           &    -ir       \\
+Impostive           &     *-ɪk           &    -ik        \\
+Neuter              &     *-ɪk           &     -ik      \\
+Positional          &      *-am          &      -am            \\
+Reciprocal          &      *-an          &      -an, -angan    \\
+Tentive             &      *-at          &       -at           \\
+Separative          &      *-ʊd, *-ʊk    &       -ul, -uk          \\
+Repetitive          &      *-ag $\sim$ -ang   &       -iag, -ang   \\
+Passive             &      *-ʊ/-ibʊ    &       -w/-ibw   \\           
+ \lspbottomrule
+
+		\end{tabular}
+		\end{table}
+
+
+Most relevant for the current study are the causative suffixes. Two affixes have been reconstructed for Proto-Bantu, which are considered to have been in complementary distribution, where \emph{*-i} followed a consonant and \emph{*-ici} followed a vowel (\cite{schadeberg2019word}). Considering the shape of Proto-Bantu verb roots, this meant that for the most part the longer form was found on CV roots, while the shorter extension was used after stems of a -CVC(-VC)- shape, although later developments have typically extended the context in which the longer suffix is used. (\cite{schadeberg2019word}). 
+
+A similar variation exists in Lugwere between \emph{-y} and \emph{-isy}. Additionally, there is a reduplicated version of the longer suffix; \emph{-isisy}. Their distribution is only partially decided by the shape of the stem that the suffixes attach to. For CV stems, the \emph{-y} extension is never found, while both the \emph{-isy} and the \emph{-isisy} affixes are possible.  
+For the most part, other factors determine the distribution of the different extensional suffixes, and this will be discussed in more detail below. 
+
+Lugwere also has a reflex of the Proto-Bantu applicative suffix, and a reduplicated version of this also exists: \emph{-irir}. In both Lugwere and Proto-Bantu one (or more) extensions would come after the verb root, and be followed by another suffix, often called the `final vowel'. This suffix relates to tense, aspect and/or mood. 
+
+\subsection{Lugwere causative strategies}
+
+Lugwere has five different strategies for causative formation. Firstly, it is possible to create a analytic causative by use of the verb \emph{kuleta} `to bring', as illustrated in (\ref{ex-leta}).
+
+\newpage
+\ea
+\begin{xlist}   \label{ex-leta}
+ \ex \emph{Nga ontama, baleta ontama} (C)\\
+  \gll  Nga o-n-tama ba-let-a o-n-tama. \\ 
+\textsc{nar} \textsc{aug}-NF9-sheep 2S-bring-\textsc{fv} \textsc{aug}-NF9-sheep\\
+    \glt  `When the sheep, they brought the sheep.' 
+ \ex \emph{ (...) ekyakuletera okukobera omuntu ogondi} (C)\\
+  \gll  e-ky-a-ku-let-er-a o-ku-kob-er-a o-mu-ntu o-g-ondi. \\ 
+\textsc{rel}-7S-\textsc{fut}-2sgO-bring-\textsc{appl-fv} \textsc{aug-inf-}say-\textsc{appl-fv} \textsc{aug-nf1}-person \textsc{aug-agr1-other} \\
+    \glt  `... which will make you tell someone else.' 
+ 
+ \ex \emph{ Andeteire okulya} (E) \\
+  \gll A-n-let-er-ere o-ku-ly-a. \\ 
+1S-1sgO-bring-\textsc{appl}-\textsc{pst} \textsc{aug-inf}-eat-\textsc{fv} \\
+    \glt  `He made me eat.' 
+
+      \end{xlist}     
+      \z
+
+
+ %\ex \emph{Kubba ekiri kuletera omubiri gwo okwonda} (C) \\
+ % \gll  kubba	 	e-ki-ri 		ku-let-er-a 		o-mu-biri 		gw-o o-kw-ond-a \\
+%because	\textsc{rel}-7S-\textsc{cop}	\textsc{inf}-bring-\textsc{appl}-\textsc{fv}	\textsc{aug}-NF3-body	\textsc{agr3-2sg.poss} \textsc{aug-inf}-get.slim-\textsc{fv}\\	
+  %  \glt  `Because what is causing your body to get slim…' 
+
+Then there are the three suffixes discussed above, \emph{-y, -isy} and \emph{-isisy}. The vowels of the latter two harmonize with the last vowel of the verb root. If there is a mid vowel, the affixes are pronounced \emph{-esy} and \emph{-esesy}, while following any non-mid vowel the suffixes have the high vowel /i/. 
+
+\emph{-isy} is perhaps the most widespread of the causative suffixes. In the corpus, it is most commonly found with verbs of learning and with the verb \emph{kulya} `to eat'. Examples of the first are \emph{kwega} `to learn' and \emph{kusoma} `to read, to study', which become \emph{kwegesya} and \emph{kusomesya}, both meaning `to teach'. \emph{Kulisya} can mean `to make someone eat', but it also commonly used to mean `to graze'. Elicitation has shown that \emph{-isy} is very productive, and can be used with most verbs. (\ref{ex-isy}) gives some examples of causative sentences with \emph{-isy}.
+
+\ea
+\begin{xlist}   \label{ex-isy}
+ \ex \emph{Mbu oodi owamugangulisya amaizi nti pa} (C) \\
+  \gll  Mmbu oo-di ow-a-mu-gangul-isy-a a-ma-izi nti pa\\ 
+\textsc{hrs} \textsc{agr1}-\textsc{dem.dist} \textsc{sbr}-1S-1O-overturn-\textsc{caus}-\textsc{fv} \textsc{nf6}-water like \textsc{onom}\\
+    \glt  `When the other makes her throw down the water like `pah'...' 
+      \ex \emph{Musomesya asomesya primary seven
+} (C)\\
+  \gll  mu-somesya a-som-esy-a primary seven \\ 
+\textsc{nf1}-teacher \textsc{rel.}1S-learn-\textsc{caus}-\textsc{fv} primary seven \\
+    \glt  `A teacher who teaches primary seven' 
+ \ex \emph{Emumala bababisya ameizi} (C) \\
+  \gll  E-mu-mal-a ba-ba-ab-isy-a a-ma-izi. \\ 
+\textsc{sbr}-\textsc{2pl}S-finish-\textsc{fv} 2S-2\textsc{pl}O-go-\textsc{caus}-\textsc{fv} \textsc{aug}-\textsc{nf6}-water \\
+    \glt  `When you finish, they make you fetch water.' (lit. go water) 
+    
+      \end{xlist}     
+      \z
+
+\emph{-isisy} also seems to be quite productive, and can be used with most verbs, while \emph{-y} is somewhat more restrictive in its distribution. Examples of each are given in (\ref{ex-y-isisy}).
+
+\ea
+\begin{xlist}   \label{ex-y-isisy}
+ \ex \emph{Kaisi nomwirukya aina? Omwidwaliro.
+ } (C) \\
+  \gll  Kaisi n-o-mw-iruk-y-a aina? O-mw-i-dwaliro. \\ 
+then \textsc{nar}-2\textsc{sg}S-1O-run-\textsc{caus}-\textsc{fv} where \textsc{aug}-\textsc{nf18}-\textsc{nf5}-hospital \\
+    \glt  `Then where do you rush him? To the hospital.' 
+     \ex \emph{Amugingisisya amaizi} (E)\\
+  \gll A-mu-ging-isisy-a 		a-ma-izi.  \\ 
+1S-1O-carry-\textsc{caus}-\textsc{fv} \textsc{aug-nf6}-water \\
+    \glt  `S/he makes her/him carry water.' 
+      \end{xlist}     
+      \z
+
+In many cases, speakers report that these can all be used, without change to the meaning. For instance, the causative of \emph{kubimba} `to swell' can be either \emph{kubimbya, kubimbisya}, or \emph{kubimbisisya} all meaning `to cause something to swell'. In other cases, there might be differences. The causative of \emph{kunaaba} `to bathe' is \emph{kunaabisisya} or \emph{kunaabisya}, while \emph{kunaabya} means `to do the dishes'.  Particularly the \emph{-y} has sometimes become lexicalized, so while \emph{kukoba} means `to say', \emph{kukobya} means `to court/flirt'.
+%kunyuma	be enjoyable, relished, savoured; pleasurable.
+%kunyumya	chat, talk with, discuss.
+
+While there is a lot of overlap in the usage of each of these three suffixes, there are also some differences. One of the usages of \emph{-y} is to turn verbs for entering a state (\emph{kukala} `to dry' \emph{kudoda} `to get wet') into causatives, as in (\ref{ex-y}). 
+
+
+\ea
+\begin{xlist}   \label{ex-y}
+ \ex \emph{Olugoye lukalire} (E)\\
+  \gll  O-lu-goye lu-kal-ire. \\ 
+\textsc{aug-nf11}-dress 11S-dry-\textsc{pst} \\
+    \glt  `The dress dried.' (earlier today) 
+     \ex \emph{Eisana likalirye olugoye mangu} (E) \\
+  \gll  E-i-sana li-kal-ir-y-e o-lu-goye mangu. \\ 
+\textsc{aug-nf5}-sun 5S-dry-\textsc{pst-caus-pst} \textsc{aug-nf11}-dress quickly \\
+    \glt  `The sun dried the dress quickly.' (earlier today) 
+      \end{xlist}     
+      \z
+
+\emph{-isy} and \emph{-isisy} can often be used in the same contexts, but there are some differences between them. \emph{-isisy} is sometimes used when more than one additional argument is introduced, as in (\ref{ex-double}) below. However, note that while the speaker originally gave a sentence with \emph{-isisy} when asked to translate (\ref{ex-double}b), he also accepted a sentence with \emph{-isy} when asked for grammaticality judgments. Note also that the preposition \emph{ne} can optionally be included even when the verb has the causative suffix. In these examples we see the causative suffix used to promote an instrumental argument, something that will be discussed further in \sectref{sec:Saebo:instrumental}. (\ref{ex-tuition}) shows a sentence where \emph{-isisy} is used, probably due to there being another level of causation. If teaching is `causing someone to learn', then paying school fees could be considered `causing someone to cause someone to learn'. 
+
+\ea
+\begin{xlist}   \label{ex-double}
+ \ex \emph{Asalisya ebijo (n=a)kambe} (E) \\
+  \gll  A-sal-isy-a 		e-bi-jo 		(n=a-)ka-mbe. \\ 
+1S-cut-\textsc{caus-fv} \textsc{aug-nf8}-sweet-potato (with-\textsc{aug}-)\textsc{nf12}-knife\\
+    \glt  `S/he cuts sweet potatoes with a knife.' 
+     \ex \emph{Imusalisisya ebijo (n=a)kambe} (E) \\
+  \gll  I-mu-sal-isisy-a 		e-bi-jo 		(n=a-)ka-mbe. \\ 
+1\textsc{sg}S-1O-cut-\textsc{caus-fv} \textsc{aug-nf8}-sweet.potato (with=\textsc{aug-})\textsc{nf12}-knife \\
+    \glt  `I make her/him cut potatoes with a knife.'
+      \end{xlist}     
+      \z
+
+\ea\label{ex-tuition} \emph{Kukola niki? Kusomesesya baana} (C) \\
+  \gll Ku-kol-a 	niki? Ku-som-esesy-a 		ba-ana.  \\ 
+\textsc{inf}-do-\Fv{} what \textsc{inf}-learn-\textsc{caus-fv} \textsc{nf2}-child\\
+    \glt  `To do what? To pay fees for children.' 
+      \z
+
+Additionally, in elicitation speakers report that forms with \emph{-isisy} can in some contexts be interpreted as less direct than forms with \emph{-isy}, so that in (\ref{ex-direct}), sentence \REF{ex-directA} was interpreted as someone physically putting a child down, while in \REF{ex-directB} it could be either a matter of physically making the child in question sit, or by giving it instructions to sit. Similarly, \emph{kulisya} is interpreted as physically feeding someone, while \emph{kulisisya} can mean making someone eat in a more indirect way.
+
+\ea
+\begin{xlist}   \label{ex-direct}
+ \ex \label{ex-directA} \emph{Otyamisye omwaana ooyo} (E)\\
+  \gll  O-tyam-isy-e 		o-mw-ana 	oo-yo. \\ 
+\textsc{2sg}S-sit-\textsc{caus}-\textsc{sbj} \textsc{aug-nf1}-child \textsc{aug-agr1-dem.mid} \\
+    \glt  `Make that child sit!' (by physically putting them down)
+    \newpage
+    \ex \label{ex-directB} \emph{Otyamisisye omwaana ooyo} (E) \\
+     \gll  O-tyam-isisy-e 		o-mw-ana 	oo-yo. \\ 
+\textsc{2sg}S-sit-\textsc{caus}-\textsc{sbj} \textsc{aug-nf1}-child \textsc{aug-agr1-dem.mid} \\
+    \glt  `Make that child sit!' 
+      \end{xlist}     
+      \z
+
+ For simplicity, in the remainder of the paper \emph{-isy} will be referred to as `the causative suffix', even though of course the purpose of this paper is to show that that particular label is not sufficient to describe the full range of usage of the suffix. The other two suffixes will be referred to by their form, i.e. \emph{-y} and \emph{-isisy}.
+
+A final causative strategy relates to the separative extensions. Lugwere has two separative extensions, \emph{-uk} and \emph{-ul}, where the latter often functions as a causativised version of the former. A couple of examples are given in \REF{ex:Saebo:separative}. 
+
+\ea
+\begin{xlist}   \label{ex:Saebo:separative}
+        \ex \emph{kusinduuka} ‘to become loose'
+         \ex \emph{kusinduula} ‘to loosen'
+         \ex \emph{kusetuka} ‘arise, get up'
+         \ex \emph{kusetula} ‘lift, raise'
+\end{xlist}     
+\z
+
+%spirantalization
+\subsection{Subject- and objecthood in Lugwere}
+
+Before moving on to look at the non-causative usages of these affixes, however, it is worth first briefly looking at what the properties of an object or a subject are in Lugwere. 
+
+As is common for Bantu languages, Lugwere has no case marking on the nouns themselves. The clearest evidence of a nouns subject- or objecthood are therefore found in the word order, the indexation on the verb, and the presence or absence of prepositions. Additionally, a direct object can be the subject of a passivised verb. 
+
+Lugwere has SVO word order, and so we therefore expect to see the subject preceding the verb and the object(s) following it. Verbs obligatorily agree with their subjects, and determining what the subject is, is therefore fairly straightforward. Objects can also be indexed on the verb, and this most commonly happens with pronominal objects. For nominal objects, there is typically no indexation.  Lugwere allows for up to three object markers, and the ordering of these is very flexible, as example \REF{ex:Saebo:object-markers} shows.
+
+\newpage
+\ea
+\begin{xlist}   \label{ex:Saebo:object-markers}
+ \ex \emph{Jenny asumbisya oShanita matooke (ne) egaasi} (E)\\
+  \gll Jenny a-sumb-isy-a o-Shanita ma-tooke (ne) e-gaasi.  \\ 
+\textsc{pn.f}  1S-cook-\textsc{caus-fv} \textsc{aug-pn.f}  \textsc{nf6-}matooke (with) \textsc{aug}-9.gas.cooker \\
+    \glt  `Jenny makes/helps Shanita cook matooke with the gas cooker.'
+     \ex \emph{Jenny agigamusumbisya} (E)\\
+  \gll  Jenny a-gi-ga-mu-sumb-isy-a.\\ 
+\textsc{pn.f} 1S-9O-6O-1O-cook-\textsc{caus-fv} \\
+\ex \emph{Jenny agagimusumbisya} (E)\\
+  \gll  Jenny a-ga-gi-mu-sumb-isy-a.\\ 
+\textsc{pn.f} 1S-6O-9O-1O-cook-\textsc{caus-fv}\\
+ \ex \emph{Jenny agamugisumbisya}(E) \\
+  \gll  Jenny a-ga-mu-gi-sumb-isy-a.\\ 
+\textsc{pn.f} 1S-6O-1O-9O-cook-\textsc{caus-fv}\\
+\ex \emph{Jenny agimugasumbisya} (E) \\
+  \gll  Jenny a-gi-mu-ga-sumb-isy-a.\\ 
+\textsc{pn.f} 1S-9O-1O-6O-cook-\textsc{caus-fv}\\
+    \glt  (b.) -- (e.): `Jenny helps/makes her cook it with it.' 
+      \end{xlist}     
+      \z
+      
+As is also common for Bantu languages, Lugwere does not have a lot of prepositions, and instead relies to a large extent on locative nominal classes or locative verbal suffixes. The most common preposition is \emph{ne}, which has a range of functions, some similar to English `with, by'. The preposition is needed to introduce certain arguments when there is no applicative morphology on the verb, and the preposition can still be present even with such applicative morphology, as was illustrated in example (\ref{ex-double}) above. 
+
+Causee objects of causativised verbs can also become the subject of a passive verb, as shown by \REF{ex:Saebo:causee-objectC}. \REF{ex:Saebo:causee-objectA}-\REF{ex:Saebo:causee-objectB} show that the two objects can both occur right after the verb.
+
+\ea
+\begin{xlist}   \label{ex:Saebo:causee-object}
+    \ex \label{ex:Saebo:causee-objectA} \emph{Omusawo amenyeserye omwana ekikopu. } (E) \\
+  \gll  O-mu-sawo a-meny-es-erye o-mw-ana e-ki-kopu.\\ 
+\textsc{aug-nf1}-doctor 1S-break-\textsc{caus-pst.caus} \textsc{aug-nf1}-child \textsc{aug-nf7}-cup \\
+    \glt  `The doctor made the child break the cup.' (earlier today) 
+
+\ex \label{ex:Saebo:causee-objectB} \emph{Omusawo amenyeserye  ekikopu omwana}  (E) \\
+  \gll O-mu-sawo a-meny-es-erye  e-ki-kopu o-mw-ana. \\ 
+\textsc{aug-nf1}-doctor 1S-break-\textsc{caus-pst.caus} \textsc{aug-nf7}-cup \textsc{aug-nf1}-child \\
+    \glt  `The doctor made the child break the cup.' (earlier today) 
+
+\ex \label{ex:Saebo:causee-objectC} \emph{Omwana amenyesewirwe ekikopu n'omusawo }  (E)\\
+  \gll  O-mw-ana a-meny-es-ew-irwe e-ki-kopu n=o-mu-sawo. \\ 
+\textsc{aug-nf1}-child 1S-break-\textsc{caus-pass-pst.pass} \textsc{aug-nf7}-cup by=\textsc{aug-nf1}-doctor\\
+    \glt  `The child was made to break the cup by the doctor.' (earlier today) 
+  
+%     \ex \emph{ekikopu kimenyesewirwe omwana n'omusawo } \\
+%    \gll  e-ki-kopu ki-meny-es-ew-irwe o-mw-ana n=o-mu-sawo\\ 
+%\textsc{aug-nf7}-cup 7S-break-\textsc{caus-pass-pst.pass} \textsc{aug-nf1}-child by=\textsc{aug-nf1}-doctor\\
+%    \glt  `The cup was made to be broken by the child by the doctor' 
+
+    
+      \end{xlist}     
+      \z
+
+
+\section{Sociative usage of \emph{-isy}} \label{sec:Saebo:sociative}
+
+The Lugwere causative can have a sociative interpretation. That is, the causative suffix can be used to indicate that an action was done alongside someone or as an effort to help someone. An example is given in \REF{ex:Saebo:sociative}. This usage seems to be fairly productive, and given the right context most causative verbs can be interpreted this way. %This function has been termed `sociative'  (\cite{shibatani2002causative}, \cite{zuniga2019grammatical}).  %Often the locative suffix \emph{-ku} is present in these cases as in (\ref{ex-sociative}), although it is not necessary.  
+
+\ea \label{ex:Saebo:sociative} \emph{Ooba 	ofunireku abaala basatu bakusesesyaku eidebbe} (C) \\
+  \gll Ooba o-fun-ire-ku a-ba-ala ba-satu ba-ku-s-esesy-a-ku e-i-debbe. \\ 
+or \textsc{2sg}S-get-\textsc{pst-loc} \textsc{aug-nf2}-girl \textsc{agr2}-three 2S-\textsc{2sg}O-grind-\textsc{caus-fv-loc} \textsc{aug-nf5}-container\\
+    \glt  `Or you got three girls and they help you grind in the container.'     
+      \z
+
+Example \REF{ex:Saebo:grief} below can be said in a context where your sibling has lost a friend, and you come along with her to the funeral. It is therefore clear that the `primary mourner' is the sibling, and in \REF{ex:Saebo:griefB} the speaker is accompanying her or helping her in her grief. The sibling would therefore be the subject of the base verb, as in \REF{ex:Saebo:griefA}, where the direct object is the theme - the person that is being mourned. The sociative in \REF{ex:Saebo:griefB} installs a new subject, and the direct object is now an agent, much like what happens in prototypical causatives. The main difference is, that in sociative constructions the subject does not necessarily directly or indirectly cause the object to perform the action, but the focus is rather on the fact that the new subject performs the action alongside or in aid of the base subject, which is now the direct object.
+
+\ea
+\begin{xlist}   \label{ex:Saebo:grief}
+ \ex \label{ex:Saebo:griefA} \emph{Mwonyoko wange akunga mukagwa we.} (E)\\
+  \gll Mw-onyoko w-a-nge a-kung-a mu-kagwa w-e.\\ 
+\textsc{nf1}-cross.sibling \textsc{agr1-poss-1sg} 1S-cry-\textsc{fv} \textsc{nf1}-friend \textsc{agr1-agr1.poss}\\ 
+    \glt  `My cross-sibling is mourning her/his friend.' 
+ \ex \label{ex:Saebo:griefB} \emph{Nkungisya mwonyoko wange.} (E)\\
+  \gll  N-kung-isy-a mw-onyoko w-a-nge. \\ 
+\textsc{1sg}S-cry-\textsc{caus-fv} \textsc{nf1}-cross.sibling \textsc{agr1-poss-1sg}\\
+    \glt  `I am mourning someone on behalf of/for my cross-sibling.' 
+      \end{xlist}     
+      \z
+
+Sociative constructions do often utilize the same morphology as the causative, and it is considered a semantic subtype of the causative, occupying an intermediary space between direct and indirect causation (\cite{shibatani2002causative}, \cite{zuniga2019grammatical}). While the sociative resembles more prototypical causatives in many ways, they differ from the definition given in \sectref{sec:Saebo:proto} in that the newly installed subject is not a prototypical `causer'. 
+
+In Lugwere these sociative readings are context dependent, as the form is ambiguous with a more direct causative meaning. The semantic range of causatives in Lugwere is quite broad, and the \emph{-isy} marker can be used for both direct and indirect causation, sociative constructions like in \REF{ex:Saebo:sociative}, and can be used in contexts where the newly installed agent is simply facilitating an action, as in \REF{ex:Saebo:facilitate} below, where the relevant person is bringing drinks, causing drinking in so far as they make drinking possible. In contrast, example \REF{ex:Saebo:direct2} can be interpreted as someone giving the child milk from a bottle, thus very directly making it drink. 
+
+\ea \label{ex:Saebo:facilitate} \emph{Nti onani niiye ayanwisya} (C) \\
+  \gll  Nti o-nani ni-iye a-y-a-nw-isy-a. \\ 
+that \textsc{aug}-who \textsc{cop.id}-\textsc{1.pro} \textsc{rel}-1S-\textsc{fut}-drink-\textsc{caus-fv}\\
+    \glt  `This one is the one who will provide drink.' 
+      \z
+\ea \label{ex:Saebo:direct2} \emph{Anwisirye omwana amata} (E) \\
+  \gll A-nw-is-irye o-mw-ana a-ma-ta. \\ 
+1S-drink-\textsc{caus-pst.caus} \textsc{aug-nf1}-child \textsc{aug-nf6}-milk \\
+    \glt  `S/he made the child drink milk.' 
+      \z
+
+\section{Applicative usages of \emph{-isy}} \label{sec:Saebo:applicative}
+
+\citet{dixon2010basic} provides a classification of the thematic roles of applied objects cross-linguistically, and recognizes the four broad categories of Goal, Instrument, Comitative and Locative. Two of these, the Instrument and Comitative, can be promoted to direct object position by \emph{-isy}. These two will be discussed separately below, and as will be seen, the examples fit perfectly within the definition of a prototypical applicative as given above. The other two types, Goal and Locative, can only be promoted by use of the \emph{-ir} applicative. 
+
+\citet{pacchiarotti2020bantu} gives many examples of Bantu languages using \emph{*-ɪd}
+with Goal, Instrument and Locative arguments. She also gives examples of functions that fall outside of Dixon's categories, such as indicating repetition, completeness, or thoroughness of the action. I have not seen references to \emph{*-ɪd} being used for comitatives elsewhere, so this migh be a new development in Lugwere. It should be mentioned that in Lugwere this is not a very productive function, and only happens with certain predicates. 
+
+\subsection{Instrumental} \label{sec:Saebo:instrumental}
+A fairly common function for the \emph{-isy} suffix is to introduce an instrumental argument. The suffix can be used productively to introduce an instrument, and this reading seems to be quite highly available to speakers, who will often translate a verb with the \emph{-isy} suffix out of context as some variant of `to V with' or `use something to V."
+
+ \citet{dixon2010basic} categorizes instrumental applicative arguments as falling into five main semantic groups. The causative suffix can be used to introduce instrumental arguments from all of these categories.
+
+The first of \citeauthor{dixon2010basic}'s (\citeyear{dixon2010basic}) categories is what calls ‘Implement’. This refers to a tool, weapon or other implement that physically changes the state of the original object. Examples of predicates that can take such an instrumental argument would be ‘hit’ or ‘break’. 
+
+\REF{ex:Saebo:implementA} shows how the causative suffix can be used to promote such an instrumental argument to the direct object position, while \REF{ex:Saebo:implementB} shows an example of the applicative marker fulfilling the same function. Going back to the definitions in \sectref{sec:Saebo:proto}, \REF{ex:Saebo:implementA} clearly does not fit the description of a prototypical causative. The new argument introduced, the instrument \emph{nkumbi} `hoe', appears as a direct object: it is following the verb and without the preposition \emph{ne}. Semantically it is not a causer, but rather an instrument. In fact, this instance of valency change fulfills all the criteria for a prototypical applicative. 
+
+\ea
+\begin{xlist}   \label{ex:Saebo:implement}
+ \ex \label{ex:Saebo:implementA} \emph{Tulimisyanga 		enkumbi 	egyo} (C)\\
+  \gll Tu-lim-isy-a-nga 		e-n-kumbi 	e-gy-o. \\ 
+\textsc{1pl}S-dig-\textsc{caus-fv-hab} \textsc{aug-nf10}-hoe \textsc{aug-agr10-dem.mid} \\
+    \glt  `We used to dig with those hoes.' 
+ \ex \label{ex:Saebo:implementB} \emph{ Bamukubbira 	omwigo 	buli 	lunaku} (E)\\
+  \gll   Ba-mu-kubb-ir-a 	o-mw-igo 	buli 	lu-naku. \\ 
+2S-1O-hit-\textsc{appl-fv}  with=\textsc{aug-nf3}-stick every \textsc{nf11}-day\\
+    \glt  `They hit her/him with a stick every day.' 
+      \end{xlist}     
+      \z
+
+The next group are those that have what \citet{dixon2010basic} terms a ‘surface effect’, and includes instruments used with predicates like ‘wipe’, ‘sweep’ and ‘touch’, which only affects the surface of the original object. \REF{ex:Saebo:surface} gives examples of this kind of instrument being promoted to direct object by the causative suffix (a) and the applicative suffix (b). The examples also show that in these cases \emph{ne} can optionally be used. 
+
+
+\ea
+\begin{xlist}   \label{ex:Saebo:surface}
+
+ \ex \label{ex:Saebo:surfaceA} \emph{Asimulisya 		emenza 	(n'e-)kitimbo } (E)\\
+  \gll A-simul-isy-a 		e-menza 	(n=e-)ki-timbo.  \\ 
+1S-wipe-\textsc{caus-fv} \textsc{aug}-table (with=\textsc{aug-}) \textsc{nf7-}cloth\\
+    \glt  `S/he wipes the table with a cloth.' 
+     \ex \label{ex:Saebo:surfaceB} \emph{Asimulira 	emenza 	(n'e-)kitimbo} (E) \\
+  \gll  A-simul-ir-a 		e-menza 	(n=e-)ki-timbo. \\ 
+1S-wipe-\textsc{appl-fv} \textsc{aug}-table (with=\textsc{aug-})\textsc{nf7-}cloth \\
+    \glt  `S/he wipes the table with a cloth.' 
+      \end{xlist}     
+      \z
+
+The next category is what \citet{dixon2010basic} terms `something which assists’, which includes cases such as `ascend with a rope’ or `cook with pan.' Examples of both the causative and the applicative suffix promoting such arguments to direct object position are found in \REF{ex:Saebo:assists} below, where the relevant predicates are `to calculate with the brain' and `to lie using money'. 
+
+\ea
+\begin{xlist}   \label{ex:Saebo:assists}
+ \ex \emph{Nasomere 	nga iswe imeite nti okubala otekwa 	kubalisya 		buwongo} (C) \\
+  \gll N-a-som-ere nga iswe i-meite nti o-ku-bal-a 	o-teek-w-a 		ku-bal-isy-a 	bu-wongo. \\ 
+\textsc{1sg}S-\textsc{pst}-study-\textsc{pst} \textsc{rel.tns} \textsc{1pl.pro} \textsc{1sg}S-know.\textsc{pres} \textsc{sbr} \textsc{aug-inf}-count\textsc{fv} \textsc{2sg}S-put-\textsc{pass-fv} \textsc{inf}-count-\textsc{caus-fv} \textsc{nf14}-brain\\
+    \glt  `I studied knowing that for us math, you must calculate with the brain.' 
+ \ex \emph{Ate imwe 	bababbeyera niki? Sente} (C) \\
+  \gll  Ate 	imwe ba-ba-bbey-er-a niki sente. \\ 
+and \textsc{2pl.pro} 2S-\textsc{2pl}O-lie-\textsc{appl-fv} what money\\
+    \glt  `And for you, what do they use to lie to you? It is money.' 
+      \end{xlist}     
+      \z
+
+The next group is ‘materials used’, which would include the instrument in phrases such as  ‘build with bricks’ or ‘cover with a shawl’. Examples of this kind of instrumental arguments are found in \REF{ex:Saebo:material} below. 
+
+\newpage
+\ea
+\begin{xlist}   \label{ex:Saebo:material}
+ \ex \emph{Nga muzimbisya bisaale ...} (C) \\
+  \gll Nga 		mu-zimb-isy-a 		bi-saale ... \\ 
+\textsc{rel.tns}  \textsc{2pl}S-build-\textsc{caus-fv} \textsc{nf8}-tree\\
+    \glt  `When you would build with wood...' 
+ \ex \emph{Abantu bazimbira 	amanyumba	matafali} (E) \\
+  \gll A-ba-ntu ba-zimb-ir-a a-ma-nyumba ma-tafali.  \\ 
+\textsc{aug-nf2}-person 2S-build-\textsc{appl-fv} \textsc{aug-nf6}-house \textsc{nf6}-brick \\
+    \glt  `People build houses out of bricks.' 
+      \end{xlist}     
+      \z
+
+Finally, the last category specified by \citet{dixon2010basic} is ‘reason/cause’ which specifies the reason, cause or motive for the action. While this seems to be rather different from the other categories in that it is not what one would think of as a typical instrument, \cite{dixon2010basic} categorises it as a type of instrumental applicative, as languages tend to use similar strategies and morphology with reasons and instruments. In Lugwere as well this is the case, and the causative suffix can be used in these contexts. \REF{ex:Saebo:reason} illustrates the causative and applicative suffixes promoting a reason or cause to direct object position. 
+
+\ea
+\begin{xlist}   \label{ex:Saebo:reason}
+ \ex \emph{Era mudi iiye tete atandika okifuula nga talowoza nti 	kinu ebyokola binu obikolesya mukago } (C) \\
+  \gll Era mu-di iiye tete a-tandik-a o-ki-fuul-a nga t-a-lowoz-a nti 	ki-nu e-by-o-kol-a bi-nu o-bi-kol-esy-a mu-kago.  \\ 
+and \textsc{agr18-dem.dist} \textsc{1.pro} again  1S-begin-\textsc{fv} \textsc{aug-}7O-overturn-\textsc{fv} \textsc{rel.tns} \textsc{neg}-1S-think \textsc{sbr} \textsc{agr7-dem.prox} \textsc{rel}-8O.\textsc{rel-2sg}S-do-\textsc{fv} \textsc{agr8-dem.prox} \textsc{2sg}S-8O-do-\textsc{caus-fv} \textsc{nf3}-friendship
+\\
+    \glt  `For her there again she starts to change as she doesn't understand that this you are doing, you do it for love.' 
+     \ex \emph{Asabira 		enzala} (E)\\
+  \gll A-sab-ir-a 		e-n-zala. \\ 
+1S-beg-\textsc{appl-fv}  \textsc{aug-1}\\
+    \glt  `S/he begs because of hunger.' 
+      \end{xlist}     
+      \z
+
+Another verb where the causative suffix can promote a reason to direct object is \emph{kwesiima} `to be proud'. In the base form, it can take a CP an argument, either headed by the subordinator \emph{nti} or not. To take a NP argument, however, the \emph{-isy} suffix is required, as illustrated in \REF{ex:Saebo:proud}. As \REF{ex:Saebo:proudC} shows, \emph{kwesiima} cannot take a direct object without an extension, and \REF{ex:Saebo:proudD} shows that with the causative suffix it can no longer take a CP argument. 
+
+
+\ea
+\begin{xlist}   \label{ex:Saebo:proud}
+ \ex \label{ex:Saebo:proudA} \emph{Nesiima (nti) nasomere ino} (E) \\
+  \gll  N-e-siim-a (nti) n-a-som-ere ino. \\ 
+\textsc{1sg}S-\textsc{refl}-proud-\textsc{fv} (\textsc{sbr}) \textsc{1sg}S-\textsc{pst}-study-\textsc{pst} very \\
+    \glt  `I am proud that I studied a lot.' 
+ \ex \label{ex:Saebo:proudB} \emph{Nesiimisya empapula gyange} (E) \\
+  \gll N-e-siim-isy-a e-m-papula gy-a-nge. \\ 
+\textsc{1sg}S-\textsc{refl}-proud-\textsc{caus-fv} \textsc{aug-nf10}-paper \textsc{agr10-poss-1sg}\\
+    \glt  `I am proud of my papers.' 
+     \ex \label{ex:Saebo:proudC} \emph{*Nesiima empapula gyange} \\
+  \gll N-e-siim-a e-m-papula gy-a-nge. \\
+  \textsc{1sg}S-\textsc{refl}-proud-\textsc{fv} \textsc{aug-nf10}-paper \textsc{agr10-poss-1sg}\\ 
+    \glt  Intended: `I am proud of my papers.' 
+ \ex \label{ex:Saebo:proudD} \emph{*Nesiimisya (nti) nasomere ino} \\
+  \gll  N-e-siim-isy-a nti n-a-som-ere ino. \\ 
+\textsc{1sg}S-\textsc{refl}-proud-\textsc{caus-fv} \textsc{sbr} \textsc{1sg}S-\textsc{pst}-study-\textsc{pst} very \\
+    \glt  Intended: `I am proud that I studied a lot.' 
+      \end{xlist}     
+      \z
+
+The two other causative suffixes can also be used to introduce instrumental arguments, as illustrated in (\ref{ex-instrumental}). 
+
+\ea
+\begin{xlist}   \label{ex-instrumental}
+ \ex \emph{Asibya ombuli muguwa} (E) \\
+  \gll A-sib-y-a 		o-m-buli 		mu-guwa. \\ 
+1S-tie-\textsc{caus-fv} \textsc{aug-nf9}-goat \textsc{nf3}-rope  \\
+    \glt  `S/he ties the goat with a rope.' 
+ \ex \emph{Alumisisya 	maino} (E) \\
+  \gll  A-lum-isisy-a 		ma-ino. \\ 
+\textsc{aug}-bite-\textsc{caus-fv} \textsc{nf6}-tooth\\
+    \glt  `S/he bites with the teeth.' 
+      \end{xlist}     
+      \z
+
+The syntactic causative construction, on the other hand, can not be used in this way. This is illustrated in \REF{ex:Saebo:doll}, where an attempt to use this construction to express something like `he plays with the doll' can only give the somewhat odd interpretation `he makes the doll play'.
+
+\ea
+\begin{xlist}   \label{ex:Saebo:doll}
+ \ex \emph{azenyesya 		odole } (E)\\
+  \gll A-zeny-esy-a 		o-dole.  \\ 
+1S-play-\textsc{caus-fv}  \textsc{aug}-doll\\
+    \glt  `S/he is playing with the doll.' 
+     \ex \emph{Aletera 		omwana 	okuzenya } (E) \\
+  \gll  A-let-er-a 		o-mw-ana 	o-ku-zeny-a. \\ 
+1S-bring-\textsc{appl-fv} \textsc{aug-nf1}-child \textsc{aug-inf}-play-\textsc{fv}\\
+    \glt  `S/he makes the child play.' 
+     \ex \emph{?Aletera 		odole 		okuzenya} \\
+  \gll  A-let-er-a 		o-dole 		o-ku-zeny-a. \\ 
+1S-bring-\textsc{appl-fv} \textsc{aug}-doll \textsc{aug-inf}-play-\textsc{fv}\\
+    \glt  `?He makes the doll play' \\
+    Intended: `S/he plays with the doll.'
+      \end{xlist}     
+      \z
+
+Like the causee object shown in \REF{ex:Saebo:causee-object}, these instrumental objects also display all the properties of a direct object in Lugwere. \REF{ex:Saebo:obj-prop} shows that the new instrumental object can follow the verb without any preposition (although \emph{ne} can optionally be added), and that the new instrumental object can be indexed on the verb. \REF{ex:Saebo:obj-prop2} shows that both the instrumental and the original objects can be the subject of a passive sentence. 
+
+\ea
+\begin{xlist}   \label{ex:Saebo:obj-prop}
+ \ex \emph{Alisya ngalo gye.} \\
+  \gll A-l-isy-a n-galo gy-e. \\ 
+1S-eat-\textsc{caus-fv} \textsc{nf10}-hand \textsc{agr10-poss} \\
+    \glt  `He eats with his hand.' 
+     \ex \emph{Agilisya. } \\
+  \gll A-gi-l-isy-a.  \\ 
+1S-10O-eat-\textsc{caus-fv} \\
+    \glt  `He eats with them.' 
+      \end{xlist}     
+      \z
+
+\ea
+\begin{xlist}   \label{ex:Saebo:obj-prop2}
+\ex \emph{Omugai  gumenyesiwirwe kikopu n'omwana } (E)\\
+  \gll O-mu-gai  gu-meny-es-iw-irwe ki-kopu n=o-mw-ana. \\ 
+\textsc{aug-nf3-}mingling.stick 3S-break-\textsc{caus-pass-pst.pass} \textsc{nf7}-cup by=\textsc{aug-nf1-}child\\
+    \glt  `The mingling stick was used by the child to break the cup.' 
+    
+      \ex \emph{Ekikopu  kimenyesiwirwe mugai n'omwana} (E)\\
+  \gll  E-ki-kopu  ki-meny-es-iw-irwe mu-gai n=o-mw-ana. \\ 
+\textsc{aug-nf7}-cup 7S-break-\textsc{caus-pass-pst.pass} \textsc{aug-nf3-}mingling.stick by=\textsc{aug-nf1-}child\\
+    \glt  `The cup was broken with a mingling stick by the child.' 
+    
+      \end{xlist}     
+      \z
+      
+\subsection{Comitative} \label{sec:Saebo:comitatve}
+
+There is a group of verbs where the causative suffix can be used to promote a comitative argument to direct object position. Many of the relevant verbs describe actions that by their nature require more than one agent, such as \emph{kulwana} `to fight', \emph{kukaayana} `to argue'  and \emph{kusyana} `to reconcile.'\footnote{Note that all the relevant verbs end in \emph{-an}. This is a marker of reciprocity (see the reconstructed form for Proto-Bantu in \tabref{tab-proto}), lexicalised on quite a few verbs that have reciprocity as an integarl part of their semantics. However, it is no longer prouductive, and the productive suffix for reciprocity is \emph{-angan}.} In the base form, the person that the action is done with (i.e. the one that is argued \emph{with}) can be introduced as an adjunct headed by \emph{ne} `and, with', as in \REF{ex:Saebo:comitativeA}. With the causative suffix, however, that argument can be a direct object, as in \REF{ex:Saebo:comitativeB}. \REF{ex:Saebo:comitativeC} shows that without the causative suffix, there cannot be a direct object.  
+
+\ea
+\begin{xlist}   \label{ex:Saebo:comitative}
+ \ex \label{ex:Saebo:comitativeA} \emph{Lwaki muli kukaayana nomukagwa wanyu}? (E) \\
+  \gll Lwaki mu-li ku-kaayan-a ne o-mu-kagwa w-a-nyu.  \\ 
+why 2plS-\textsc{cop} \textsc{inf}-argue-\textsc{fv} with \textsc{aug}-\textsc{nf1}-friend \textsc{agr1-poss-2pl} \\
+    \glt  `Why are you arguing with your friend?' 
+    \ex \label{ex:Saebo:comitativeB} \emph{Lwaki mukaayanisya omukagwa wanyu}? (E)\\
+  \gll Lwaki mu-kaayan-isy-a o-mu-kagwa w-a-nyu.  \\ 
+why \textsc{2pl}S-argue-\textsc{caus-fv} \textsc{aug}-\textsc{nf1}-friend \textsc{agr1-poss-2pl} \\ 
+\textsc{} \\
+    \glt  `Why are you arguing with your friend?' 
+    \ex \label{ex:Saebo:comitativeC} \emph{* Lwaki muli kukaayana omukagwa wanyu}? \\
+  \gll Lwaki mu-li ku-kaayan-a o-mu-kagwa w-a-nyu.  \\ 
+why 2plS-\textsc{cop} \textsc{inf}-argue-\textsc{fv} \textsc{aug}-\textsc{nf1}-friend \textsc{agr1-poss-2pl} \\
+    \glt  Intended: `Why are you arguing with your friend?' 
+      \end{xlist}     
+      \z
+
+An example of a verb that does not necessarily include more than one participant, but where a similar process can be applied, is \emph{kubina} `to dance', as in \REF{ex:Saebo:dance}.
+
+\ea \label{ex:Saebo:dance} \emph{Abina nomwala, amubinisya.} (C)\\
+  \gll  A-bin-a n=o-mw-ala a-mu-bin-isy-a. \\ 
+1S-dance-\textsc{fv} with=\textsc{aug-nf1}-girl 1S-1O-dance-\textsc{caus-fv}\\
+    \glt  `He dances with a girl, he dances with her.' 
+      \z
+
+The applicative marker can not be used in this way with these verbs, and the object instead gets a beneficiary interpretation, as in \REF{ex:Saebo:fight}. 
+
+\ea \label{ex:Saebo:fight} \emph{Alwanira muganda we} (E) \\
+  \gll  A-lwan-ir-a mu-ganda w-e. \\ 
+1S-fight-\textsc{appl-fv} \textsc{nf1}-parallel.sibling \textsc{agr1-agr1.poss}\\
+    \glt  `S/he fights for her/his parallel sibling.' 
+      \z
+
+
+It is worth noting that these cases differ from the sociative examples discussed in \REF{ex:Saebo:sociative} above. In the comitative cases, a new direct object is installed, while the subject remains the same as in the base form. There is also no change to the semantic argument structure. The sociative usage, however, installs a new subject, and is therefore closer to a prototypical causative. It also changes the semantic argument structure by introducing a new agent.  
+
+\section{Other non-prototypical usages}\label{sec:Saebo:diathesis}
+\subsection{Other changes to valency}
+There are also other cases where the addition of \emph{-isy} does have an effect on either the semantic or syntactic argument structure of the verb, but which do not fit into the categories discussed so far. Here we will look at a couple of examples.
+
+One particularly interesting case of valency change is what happens with the verb \emph{kufa} `to die'. In its base form, this is a one argument predicate that takes the experiencer as the subject. When the causative suffix is added, we get the somewhat unexpected meaning `to lose someone', where the subject is the experiencer, and the direct object is the theme, this is illustrated in \REF{ex:Saebo:die}. Syntactically, this is what would be expected from a causative: the new argument that is added is installed as subject, and the base subject has been demoted to object. Semantically, however, this is odd, as the thematic role of the new subject is as experiencer, rather than agent, and the subject is in no sense the `causer'. There is a separate lexical item for `to cause someone to die', i.e. \emph{kwita} `to kill'.
+
+\ea \label{ex:Saebo:die} \emph{Ne 	nfisya 			abanyoko 	bange} (C)\\
+  \gll  Ne 	n-f-isy-a 			a-ba-nyoko 	b-a-nge. \\ 
+\textsc{nar} \textsc{1sg}S-die-\textsc{caus-fv} \textsc{aug-nf2}-cross.sibling \textsc{agr2-poss-1sg} \\
+    \glt  `I lost my cross-siblings.' 
+      \z
+
+Another example is found with the verb \emph{kweta} `to call'. With the causative suffix, as in \REF{ex:Saebo:call} we get the meaning `call for something', as in a restaurant when you request food. \REF{ex:Saebo:call} is referring to a husband that goes into town to eat. As the argument that is introduced is an object, this is closer to the applicative definition in \sectref{sec:Saebo:proto} than the causative definition. However, the argument that is introduced is not really an adjunct, as its semantic role is the theme, it is therefore a more central argument than what is generally found with the applicative. 
+
+\ea \label{ex:Saebo:call} \emph{N'atuuka eeyo nayetesya ochapati, nayetesya aamo bwita, muceere, nayetesya aawo obumere mere nyama} (C) \\
+  \gll N=a-tuuk-a eeyo n=a-yet-esy-a o-chapati n=a-yet-esy-a aamo bw-ita mu-ceere, n=a-yet-esy-a aawo o-bu-mere-mere ny-ama. \\ 
+\textsc{nar}=1S-reach-\textsc{fv} there \textsc{nar=}1S-call-\textsc{caus-fv} \textsc{aug}-chapati \textsc{nar=}1S-call\textsc{caus-fv} together \textsc{nf14}-bwita \textsc{nf3}-rice \textsc{nar=}1S-call-\textsc{caus-fv} there \textsc{aug-nf14}food-\textsc{nar=}1S-call-\textsc{rdp} \textsc{nf9}-meat\\
+    \glt  `He reaches the place, and he calls for chapati, rice, bwita and meat.' 
+      \z
+
+\subsection{No change in argument structure} \label{sec:Saebo:no-change}
+
+There are also examples where adding \emph{-isy} does not  change either the semantic or the syntactic argument structure. In \REF{ex:Saebo:show}, for instance, both the subject and the object of the sentences remain the same, regardless of whether the causative suffix is present or not. The two sentences are ditransitive, in that they have two direct objects. The subject and the objects retain their thematic roles as agent, goal and theme. Semantically the sentences are very similar, although one speaker who was consulted suggested that in  \REF{ex:Saebo:showB} the friend being introduced needs to be in front of them, whereas in \REF{ex:Saebo:showA} it could be a matter of pointing at someone from a distance. Another speaker said there was no difference.  
+
+\ea
+\begin{xlist}   \label{ex:Saebo:show}
+ \ex \label{ex:Saebo:showA} \emph{Njaba kumulaga omukagwa wange } (E)\\
+  \gll  Nj-ab-a ku-mu-lag-a o-mu-kagwa w-a-nge. \\ 
+\textsc{1sg}S-go-\textsc{fv} \textsc{inf-}1O-show-\textsc{fv} \textsc{aug-nf1}-friend \textsc{agr1-poss-1sg}\\
+    \glt  `I am going to show him my friend.' 
+     \ex \label{ex:Saebo:showB} \emph{Njaba kumulagisya mukagwa wange } (E)\\
+  \gll  Nj-ab-a ku-mu-lag-isy-a o-mu-kagwa w-a-nge. \\ 
+\textsc{1sg}S-go-\textsc{fv} \textsc{inf-}1O-show-\textsc{caus-fv} \textsc{aug-nf1}-friend \textsc{agr1-poss-1sg} \\
+    \glt  `I am going to show him my friend.' 
+      \end{xlist}     
+      \z
+The explanation for why the causative suffix does not change the argument structure in this particular case is probably linked to the fact that `to show' has an inherent causative meaning, i.e. `to make someone see'. \emph{Kwita} `to kill', another verb with an inherent causative meaning, is likewise often found with the causative suffix in the corpus, as in \REF{ex:Saebo:kill}. \emph{Kulema}  and \emph{kulemesya}, both meaning `to hinder' also seems to allow similar variation. 
+
+\ea \label{ex:Saebo:kill} \emph{Omufu aitisya omwomi} (C)\\
+  \gll  O-mu-fu a-it-isy-a o-mw-omi. \\ 
+\textsc{aug-nf1}-dead.person 1S-kill-\textsc{caus-fv}  \textsc{aug-nf1}-living.person\\
+    \glt  `The dead person kills the living person.' 
+      \z
+
+It is not only verbs that are inherently causative that can behave this way, however. \REF{ex:Saebo:intenseA} was found in the corpus, and a consultant accepted \REF{ex:Saebo:intenseB} as possible and meaning the same thing. The only difference seems to be an intensifying effect of the causative suffix, as  \REF{ex:Saebo:intenseA} was seen as emphasising the fact that one was just starting for real more than in \REF{ex:Saebo:intenseB}.
+
+\ea
+\begin{xlist}   \label{ex:Saebo:intense}
+ \ex \label{ex:Saebo:intenseA} \emph{Ne nga 		okutandikisya 		okusoma 	okunyerenyere...} (C)\\
+  \gll  Ne nga 		o-ku-tandik-isy-a 		o-ku-som-a 	o-ku=nyere-nyere ... \\ 
+but when \textsc{aug-inf}-start-\textsc{caus-fv} \textsc{aug-inf}-study-\textsc{fv} \textsc{aug-loc}=real-\textsc{rdp}\\
+    \glt  `But starting to study for real...' 
+      \ex \label{ex:Saebo:intenseB} \emph{Ne nga okutandika okusoma okunyerenyere...} (E)\\
+  \gll  Ne nga o-ku-tandik-a o-ku-som-a o-ku=nyere-nyere ... \\ 
+but when \textsc{aug-inf}-start-\textsc{-fv} \textsc{aug-inf}-study-\textsc{fv} \textsc{aug-loc}=real-\textsc{rdp}\\
+    \glt  `But starting to study for real...' 
+      \end{xlist}     
+      \z
+
+Another example is seen in \REF{ex:Saebo:find} where \REF{ex:Saebo:findA} comes from the corpus, and \REF{ex:Saebo:findB} was accepted by a speaker as more or less equivalent. Again the syntactic and semantic argument structure remains the same, however, the speaker said that in the \REF{ex:Saebo:findA} example it sounds more like the person that was found had left because they were guilty, and subsequently been found, where as in \REF{ex:Saebo:findB} this connotation is missing. Again, we might say that there is something of an `intensifying' effect of the causative suffix, in that the finding event of someone you have been looking for because they are guilty of something might in a sense be more intense than finding someone without those surrounding circumstances. 
+
+\ea
+\begin{xlist}   \label{ex:Saebo:find}
+ \ex \label{ex:Saebo:findA} \emph{O'Langha nanjagirisya owenairire} (C)\\
+  \gll  O-Langha n=a-nj-agir-isy-a owe-n-a-ir-ire. \\ 
+\textsc{aug}-L. \textsc{nar-}1S-1\textsc{sg}O-find-\textsc{caus-fv} \textsc{sbr-1sg}S-\textsc{pst}-return-\textsc{pst}       \\
+    \glt  `Langha found me, when I returned.' 
+
+     \ex \label{ex:Saebo:findB} \emph{O'Langha nanjagirya owenairire} (E)\\
+  \gll  O-Langha n=a-nj-agir-a owe-n-a-ir-ire. \\ 
+\textsc{aug}-L. \textsc{nar-}1S-1\textsc{sg}O-find-\textsc{fv} \textsc{sbr-1sg}S-\textsc{pst}-return-\textsc{pst}   \\
+    \glt  `Langha found me, when I returned.' 
+      \end{xlist}     
+      \z
+
+%okume ayakubisya, ayakubisyaa
+
+There are other cases where the semantic and the syntactic argument structure stays the same, but the causative verb has a different meaning to the base form. This is the case for \emph{kupanga} `to arrange' and \emph{kupangisya} `to rent', illustrated in \REF{ex:Saebo:rent}. 
+
+\ea
+\begin{xlist}   \label{ex:Saebo:rent}
+ \ex \emph{Twaba kupanga amatafali aago} (E)\\
+  \gll  Tw-ab-a ku-pang-a a-ma-tafali aa-g-o. \\ 
+\textsc{1pl}S-go-\textsc{fv} \textsc{inf}-arrange-\textsc{fv} \textsc{aug-nf6}-brick \textsc{aug-agr6-dem.mid} \\
+    \glt  `We are going to arrange those bricks.' 
+ \ex \emph{Napangisirye enyumba} (E) \\
+  \gll N-a-pang-is-irye e-nyumba.  \\ 
+\textsc{1sg}S-\textsc{pst}-arrange-\textsc{caus-caus.pst} \textsc{aug}-house\\
+    \glt  `I rented the house.' 
+      \end{xlist}     
+      \z
+      
+A few other examples from the dictionary (\cite{Nzogi2012dictionary}) are listed in \REF{ex:Saebo:dictionary}. In these cases the causative verb has a meaning that is a more specific or more intense version of the base meaning. Another example, although less straightforward, is \emph{kuwulira} `to hear', and \emph{kuwulisisya} `to listen'. There is no base form \emph{*kuwula}, and the first form has the applicative suffix. However, this also appears to be a case where causative morphology is associated with a more intense meaning, to listen rather than just hear. 
+
+\ea
+\begin{xlist}   \label{ex:Saebo:dictionary}
+        \ex \emph{kubala} ‘count, add up.'
+         \ex \emph{kubalisya} ‘calculate, evaluate, budget, weigh, count, take into account'
+         \ex \emph{kugezya} ‘to try'
+         \ex \emph{kugezesya} ‘to experiment'
+       %  \ex \emph{kubbeya} ‘deceive, lie, delude; be false or dishonest with.'
+       % \ex \emph{kubbeyesya} ‘betray, lead astray; cause s.b. to believe an untruth.'
+        \ex \emph{kubebenya} ‘destroy, damage, contaminate, destruct, corrupt, defile, `
+         \ex \emph{kubebenyesya} ‘waste, squander.'
+\end{xlist}     
+\z
+%ADD: Kuwulira, kuwulisisya
+\section{Discussion} \label{sec:Saebo:discussion}
+
+The preceding sections have shown that the Lugwere reflexes of the Proto-Bantu causative suffix have a range of functions that do not adhere to the characteristics of a prototypical causative, as outlined in \sectref{sec:Saebo:proto}. The next questions is then to consider what diachronic forces might have resulted in the synchronic situation described in previous sections, and whether or not there are any unifying features of the various usages of \emph{-isy}.
+
+\subsection{The typology of causative-applicative isomorphism } \label{sec:Saebo:typology}
+
+A causative-applicative isomorphism is not unique to Lugwere, but rather is found in multiple languages worldwide, as observed by large cross-lingustic studies of applicatives and causatives such as \citet{peterson2006applicative} and \citet{dixon2010basic}. Both \citet{peterson2006applicative} and \citet{dixon2010basic} note that it is not uncommon for languages to have one valency increasing strategy that gives causative readings with monovalent verbs and applicative readings with bivalent verbs. 
+
+This, however, is not descriptive of the situation in Lugwere, as there are examples of both monovalent verbs (\emph{kulima} `to dig', see example \REF{ex:Saebo:implement}) and bivalent verbs (\emph{kusimula} `to wipe' see example \REF{ex:Saebo:surface}) having applicative (instrumental) readings. 
+
+The situation is different if we look at the comitative. Most of the examples of comitative usage of the causative suffix that have been observed have been with verbs that semantically require more than one participant (i.e. \emph{kulwana} `to fight', \emph{kukaayana} `to argue'), however syntactically they are intransitive, as in \REF{ex:Saebo:transitivity}. Example \REF{ex:Saebo:dance} also showed that the intransitive verb \emph{kubina} `to dance' can get a comitative reading. I have not found any clear examples of an underlyingly transitive verb with a comitative meaning. 
+
+\ea \label{ex:Saebo:transitivity} \emph{Bali kulwana} (E) \\
+  \gll  Ba-li ku-lwan-a. \\ 
+2S-\textsc{cop} \textsc{inf}-fight-\textsc{fv} \\
+    \glt  `They are fighting.' 
+      \z
+
+According to \citet{peterson2006applicative} the most common kind of causative-applicative isomorphism is with beneficiary/maleficiary arguments.  A less common form, he notes, is isomorphism between causatives and comitative/instrumental applicatives, which is what we have in Lugwere. 
+
+\citet{peterson2006applicative} notes that causatives with an inanimate causee are by their very nature semantically close to instrumentals. `I made the key open the door' and `I opened the door with the key'  describe the same set of events. Through such bridging contexts it is easy to understand how the instrumental connotation might then later become part of the semantics of the causative strategy. In Lugwere we find  examples such as \REF{ex:Saebo:notcaus}, which although similar to something like `I made the key open the door,' seem to be firmly within the camp of the instrumental, as it would not make sense to say `He makes the stick walk' or `He makes his hands eat,' as one would not consider the stick to be `walking' or the hand to be `eating'. 
+
+\ea
+\begin{xlist}   \label{ex:Saebo:notcaus}
+ \ex \emph{Atambulisya mwigo} (E)\\
+  \gll A-tambul-isy-a mw-igo.  \\ 
+1S-walk-\textsc{caus-fv} \textsc{nf4}-stick \\
+    \glt  `S/he walks with a walking stick.' 
+     \ex \emph{Alisya ngalo gye} (E)\\
+  \gll A-l-isy-a n-galo gy-e.  \\ 
+1S-eat-\textsc{caus-fv} \textsc{nf10}-hand \textsc{agr10-1.poss} \\
+    \glt  `S/he eats with her/his hands.' 
+      \end{xlist}     
+      \z
+
+For Kinyarwanda, a language where there is a similar synchretism between a causative and instrumental \emph{-ish}, \citet{jerro2017causative} proposes an analysis of underspecification, where the marker ``adds a new causal subevent and argument to the argument structure of a verb, but the exact position of the subevent licensed by \emph{-ish} is variable, although constrained by general and verb-specific constraints on possible verb meanings as well as general constraints on argument realization" (\citeauthor{jerro2017causative}\citeyear{jerro2017causative}:785). This analysis also seems applicable to Lugwere.
+
+\citet{peterson2006applicative} also notes that causatives can become markers of a comitative construction through the development of sociative causative semantics. As pointed out in \sectref{sec:Saebo:comitatve} the syntax of the comitative and the sociative are different, in that the comitative installs a new object, while the sociative installs a new subject. However, by the very nature of these usages, the thematic role of both subject and object are very agent-like. In the comitative usage, with predicates like \emph{kulwana} `to fight' \emph{kubina} `to dance' and \emph{kukayaana} `to argue', both the subject and the object need to be active participants in the action. Similarly, with the sociative, both the subject and the object are engaging in the relevant activity. It may therefore be that the syntax-semantics mapping could have shifted historically, giving us the two different processes we observe today. 
+
+The change from causative to comitative can perhaps also be explained in terms of the subject initiating the action, thus causing the other participant to engage in it. If I am fighting with you, I am, perhaps, in a sense also making you fight. The syntactic-semantic mapping of the arguments in the comitative would fit with such a bridging context. 
+
+\subsection{Non-prototypical usages of the causative in Bantu}
+
+\sectref{sec:Saebo:typology} examined the typology of causative-applicative isomorphism, and investigated some plausible semantic paths from causative to the applicative functions observed for \emph{-isy} in Lugwere. This section will examine what is known about this phenomena from other Bantu languages, to see what that can tell us about the diachrony of the phenomenon in Lugwere. 
+
+There are reports in the literature of cognates of PB \emph{*-ici} having instrumental functions in Rwanda (JD.61), Ganda (JE15), Soga (JE16), and Haya (JE22) (\cite{pacchiarotti2020bantu}), Ruuli (JE.103, based on corpus data shared with me by Alena Witzlack-Makarevich), as well as Shona (S11-15) (\cite{peterson2006applicative}), Cuwabo (P34) (\cite{pacchiarotti2020bantu}), Nen (A44) Ila (M63) Tonga (M64) Kwanyama (R21), Zulu (S42) and Kagulu (G12) (\cite{schadeberg2019word}). It would seem then, that this kind of isomorphism is very common in zone J languages, to which Lugwere belongs, but it is also reported in zones P, A, M, R, G and S. Zone M is close to zones J,  S, and G, which in turn is adjacent to zone P. Zone S and zone R are also adjacent to each other, but A is quite far from the other ones. Note also that in many langauges where reflexes of \emph{*-ici} are used with instrumental arguments, it is no longer possible to use the \emph{*-ɪd} applicative in these contexts \citep{pacchiarotti2020bantu}.
+
+
+The suffix has always been considered to have been causative in PB, and cognates with causative functions are found even outside of Narrow Bantu, in Bantoid languages such as Cicipu (Kainji), Sama Mum (Dakoid) and Noone (East Beboid) \citep{blench2022relevance}, so it would seem that the causative function is the oldest, and that the instrumental functions have developed later. However, the fact that it is found is so many parts of the Bantu area, alongside the fact that \citet{peterson2006applicative} reports causative/instrumental isomorphism to be a less common form of causative/applicative isomorphism (in fact, the only example he gives is from Bantu), would suggest that this might be inherited. It is possible that the instrumental usage has existed alongside the causative for quite some time. However, the question would then be why this particular function of the causative extension has been lost in zones where there are no reports of such an isomorphism. One might also wonder why the instrumental usage has been lost in so many cases, while I am unaware of any cases where the causative function has been lost and only the instrumental remains.  As many Bantu languages remain understudied, future research might show that this kind of isomorphism is more common than what we currently have data for.
+
+ Alternatively, we could be looking at cases of parallel innovation. 
+ Mbuun is another language that is reported to have a causative/applicative synchronism \citep{bostoen2011causative}. In this case, however, there are lexical causatives that use the same morphology as the productive applicative. This therefore seems like a different case from the instrumental usages of \emph{*-ici} seen in Lugwere and many other languages, and can probably safely be assumed to have come about through parallell innovation. It is possible that the causative/instrumental \emph{*-ici} syncretism could also have been invented in a few separate branches, and spread areally.  In zone J, however, it is so widespread that it is hard to imagine that the usage developed independently in the different languages. At least in zone J, then, we can assume that we are looking at either a shared inheritance or an areal feature that has spread through contact, or there might have been elements of both. The fact that the instrumental/causative isomorphism has likely been around for a while, would suggest that the situation can be fairly stable. 
+
+The comitative usage of the causative suffix has not been reported in any of the accounts that I have seen, and \citet{peterson2006applicative} writes that he has not come across any case of the Bantu \emph{*-ici} used with comitative arguments. This might therefore represent a new development in Lugwere.  
+
+According to \citet{schadeberg2019word} sociative functions, particularly the adjutive (helping someone do something) can be found in other Bantu languages as well, particularly in the South, such as in Zulu (S42). As Zulu and other southern languages are quite distantly related to Lugwere, it might be a case of parallel developments, as it is not uncommon for causatives to develop sociative meanings. 
+
+Finally, the examples given in \sectref{sec:Saebo:no-change} where there is no change to the argument structure, but where there often is an intensifying sense to the version with the causative suffix, also has parallels in other languages. \citet{schadeberg2019word} write that the intensive is `another recurrent meaning of the causative extension'. In some languages there is a formal distinction between causatives and intensives. In Shona (S10) and Zulu (S42) , for instance, a reduplicated causative suffix is used for the intensive meaning. In other languages the reduplicated applicative has this function. In Lugwere, as we have seen, both the reduplicated (\emph{-isisy}) and the simple causative (\emph{-isy}) can have intensifying functions, and they can both function as prototypical causatives. 
+
+\section{Conclusion}
+This article has illustrated different causative strategies in Lugwere, and shown how the inherited causative suffixes \emph{-isy} and \emph{-y}, as well as innovative \emph{-isisy}, can be used in several ways that do not fit the definition of a prototypical causative. The suffix can be used to introduce instrumental object arguments, as well as comitative objects, two functions that fall under the umbrella of the applicative. The causative suffix can also be used in context where it has a sociative meaning. Additionally, there are cases where the presence of the causative suffix does not actually change the semantic or syntactic argument structure of the verb.  
+
+Most of these functions of the causative extension have been observed in other Bantu languages. The comitative usage, however, has not been mentioned elsewhere, and might be a new development in Lugwere. 
+
+\section*{Abbreviations}
+ \begin{tabularx}{\textwidth}{lQ}
+\textsc{aug} & augment \\
+ \textsc{appl} & applicative \\
+ \textsc{caus} & causative  \\
+ \textsc{cop} & copula  \\
+ \textsc{cop.id} & identificational copula  \\
+ \textsc{dem.dist} & distal demonstrative \\
+ \textsc{dem.med} & medial demonstrative \\
+ \textsc{dem.prox} & proximal demonstrative \\
+ \textsc{fv} & final vowel (default verbal ending used when no other suffix appears) \\
+ \textsc{inf} & infinitive  \\
+ \textsc{nar} & narrative tense \\
+  \textsc{neg} & negation  \\
+  \textsc{nf1, nf2, nf3} (...) & Nominal form class - indicates what agreement class the nominal prefix typically corresponds to, but there are mismatches between nominal morphology and agreements.  \\
+  \textsc{onom} & onomatopoeia \\
+  \textsc{pass} & passive \\
+ \textsc{pl} & plural (only used for 1st and 2nd person. For 3rd person number is indicated by the prefix/agreement class) \\
+ \textsc{pn} & personal name \\
+ \textsc{poss} & possessive pronoun  \\
+ \textsc{pst} & past \\
+ \textsc{pst.caus} & past suffix used with causative stems \\
+ \textsc{pst.pass} & past suffix used with passive stems \\
+ \textsc{pro} & personal pronouns \\
+ \textsc{rel} & relativizer \\
+ \textsc{refl} & reflexive \\
+ \end{tabularx}
+ \begin{tabularx}{\textwidth}{p{3cm}Q}
+ S & subject agreement \\
+ \textsc{rel.obj} & object relative marker \\
+ \textsc{sg} & singular (only used for 1st and 2nd person. For 3rd person number is indicated by the prefix/agreement class) \\
+ \textsc{sbr} & subordinator \\
+ \textsc{o} & object agreement \\
+ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15=17, 16, 18, 20, 22   &  Agreement classes
+\end{tabularx}
+
+
+\section*{Acknowledgements}
+
+
+\sloppy %this command eliminates a quirk that appears in the bibliography, you can just leave it here.
+
+\printbibliography[heading=subbibliography,notkeyword=this]
+
+\end{document}

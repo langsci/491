@@ -1,0 +1,593 @@
+\documentclass[output=paper,colorlinks,citecolor=brown
+% ,hidelinks
+% showindex
+]{langscibook}
+\ChapterDOI{10.5281/zenodo.20285216}
+\author{Qi\={u}sh\'{i} Ch\'{e}n \affiliation{University of Connecticut}}
+
+%Insert your title here
+\title{A scattered deletion account of Chichewa partial dislocation}
+
+\abstract{A Chichewa object DP with [N modifier] structure can be made discontinuous by displacing the noun to the left periphery and leaving the modifier postverbal \citep{mchombo2006linear}. Contra \citet{branan2022edges}, I argue based on novel data that the whole DP moves, but only the leftmost noun is pronounced in the highest copy. This explains why a quantifier that appears to be stranded postverbally has obligatory wide scope over negation: It raises with the noun but is pronounced in situ. I propose that this follows from a requirement that the verb form a phonological phrase with its local complement. I also show that for the same reason, Chichewa \textit{wh}-objects surface in situ but show island effects, indicating that they undergo movement not reflected in surface word order.}
+
+\IfFileExists{../localcommands.tex}{
+   \addbibresource{../localbibliography.bib}
+   \input{../localpackages}
+   \input{../localcommands}
+   \input{../localhyphenation}
+   \boolfalse{bookcompile}
+   \togglepaper[28]%%chapternumber
+}{}
+
+\begin{document}
+\maketitle
+\section{Introduction}\label{sec:chen:1}
+This paper examines the status of partial dislocation (henceforth PD) of Chichewa objects in \REF{ex:chen:basicPD}. I will argue that \REF{ex:chen:basicPD} involves \textit{scattered deletion} (\citealp{bovskovic2001interface}; \citealp{fanselow2002distributed}; \citealp{boskovic2007copy}, inter alia): The adjective \textit{z\'{a}k\'{u}da} moves with the noun from the postverbal position in the syntax, but is pronounced in situ. Note that the basic order of a Chichewa sentence is \textsc{svo} \REF{ex:chen:basicSVO} and Chichewa DPs are N-initial; also notice the total dislocation (henceforth TD) option is disallowed in this context \REF{ex:chen:basicTD}:\footnote{I follow \citeauthor{downing2017phonology}'s \citeyear{downing2017phonology} system in transcribing Chichewa data. The acutes marking high tones reflect the tone system of the Ntcheu variety. The penult vowel of a prosodic phrase-final element is automatically lengthened (indicated as vowel doubling in the examples).}
+
+\ea\label{ex:chen:basicpattern}
+  \begin{xlist}
+
+  \ex[]
+  {\gll A-ts\'{i}k\'{a}na \'{a}=mf\'{u}umu a=a=gul-\'{a} \textbf{mb\'{u}zi} \textbf{z\'{a}k\'{u}uda}\\
+  2-girls 2.\textsc{assoc}=9.chief 2\textsc{sm}=\textsc{perf}=buy-\textsc{fv} 10.goats 10.black\\
+  \glt `The chief’s girls have bought black goats.'}\label{ex:chen:basicSVO}
+
+  \ex[*]
+  {\gll \textbf{Mb\'{u}zi} \textbf{z\'{a}k\'{u}uda} a-ts\'{i}k\'{a}na \'{a}=mf\'{u}umu a=a=gu\'{u}l-\'{a}\\
+  10.goats 10.black 2-girls 2.\textsc{assoc}=9.chief 2\textsc{sm}=\textsc{perf}=buy-\textsc{fv}\\
+  \glt intended: `Black goats, the chief’s girls have bought.'}\label{ex:chen:basicTD}
+
+  \ex[]
+  {\gll \textbf{Mb\'{u}uzi} a-ts\'{i}k\'{a}na \'{a}=mf\'{u}umu a=a=gul-\'{a} \textbf{z\'{a}k\'{u}uda}\\
+  10.goats 2-girls 2.\textsc{assoc}=9.chief 2\textsc{sm}=\textsc{perf}=buy-\textsc{fv} 10.black\\
+  \glt \textit{lit}. `Goats, the chief’s girls have bought black [ones].'}\label{ex:chen:basicPD}
+
+  \ex[*]
+  {\gll \textbf{Z\'{a}k\'{u}uda} a-ts\'{i}k\'{a}na \'{a}=mf\'{u}umu a=a=gul-\'{a} \textbf{mb\'{u}uzi}\\
+  10.black 2-girls 2.\textsc{assoc}=9.chief 2\textsc{sm}=\textsc{perf}=buy-\textsc{fv} 10.goats\\}\label{ex:chen:badPD} \hfill (\citealp{mchombo2006linear}; also personal fieldnotes)\footnote{Data from the literature are also confirmed by my own fieldnotes; examples in the rest of the paper are solely from elicitation notes if no reference is given.}
+
+  \end{xlist}
+\z
+
+\largerpage[2]
+ Since the copy theory of movement was incorporated into the modern syntactic theory from \citet{chomsky1993minimalist,chomsky1995minimalist}, it has been generally accepted that what is left behind by a moved element is not a \textit{trace}, but a \textit{copy} of the element itself, which by definition must bear all the features contained in that element at the point when the copy is created. It is also often assumed that the phonological and semantic features of all but one copy of the moved element are deleted at the interfaces. On the PF side, where the phonological features are dealt with, the standard assumption is that the deletion is highly restrictive: Only those of the \textit{highest} copy survive. Multiple authors have argued that this is so due to reasons of economy (\citealp{franks1998clitics,nunes2004linearization}, among many others; for a thorough literature review on this topic see \citealp{boskovic2007copy}): Pronouncing the highest copy is claimed to be the most economical option and thus is preferred. Importantly, this line of research gives the prediction that pronouncing a lower copy should in principle be possible in contexts where the pronouncing-the-highest-copy option is ruled out for independent PF reasons. Such cases are indeed attested. One clear example from Romanian is discussed in \citet{bovskovic2002multiple}:
+
+\begin{multicols}{2}
+
+\ea\label{ex;chen:WHATWHO}
+  \begin{xlist}
+  \ex[]
+  {\gll Cine ce precede?\\
+  who what precedes\\}\label{ex;chen:WHATWHO1}
+
+  \ex[*]
+  {\gll Cine precede ce?\\
+  who precedes what\\
+  \glt `Who precedes what?'}
+  \end{xlist}
+\z
+
+\columnbreak
+
+\ea
+  \begin{xlist}
+  \ex[*]
+  {\gll Ce ce precede?\\
+  what what precedes\\}\label{ex:chen:WHOWHO1}
+
+  \ex[]
+  {\gll Ce precede ce?\\
+  what precedes what\\
+  \glt `What precedes what?'}\label{ex:chen:WHOWHO2}
+  \end{xlist}
+\z
+
+\end{multicols}
+
+ As in \REF{ex;chen:WHATWHO}, Romanian is a multiple \textit{wh}-movement language, where all \textit{wh}-phrases obligatorily move to the left of a clause. However, if the movement would create a consecutive homophonous sequence *\textit{ce ce}, the multiple fronting is ruled out \REF{ex:chen:WHOWHO1}; instead, the lower \textit{wh}-phrase may occur in situ as shown in \REF{ex:chen:WHOWHO2}. \citet{bovskovic2002multiple} proposes that the second \textit{ce} nevertheless moves in \REF{ex:chen:WHOWHO2} in narrow syntax; the apparently in-situ \textit{ce} is in fact the pronunciation of a lower copy. It is a low-level PF constraint excluding \REF{ex:chen:WHOWHO1} (i.e., to avoid a \textit{ce ce} sequence) that makes the otherwise less economical \REF{ex:chen:WHOWHO2} possible:
+
+\ea[]
+{ce \sout{ce}\subs{i} precede ce\subs{i}?}\z
+
+ It should be mentioned that there is direct syntactic evidence that the lower \textit{ce} in \REF{ex:chen:WHOWHO2} indeed moves: It licenses parasitic gaps. This is illustrated in \REF{ex:chen:PG} (notice the literal English translation is ungrammatical):
+
+\ea[]
+  {\gll Ce precede ce fără să influenţeze?\\
+  what precedes what without \textsc{subj}.particle influence.3\textsc{p}.\textsc{sg}\\
+  \glt \textit{lit}. `*What precedes what without influencing?’ \hfill\citep{bovskovic2002multiple}}\label{ex:chen:PG}
+\z
+
+ Within this line of research, scattered deletion refers to cases where different pieces of an element are pronounced in different copies, as illustrated in \REF{ex:chen:SD}. \REF{ex:chen:SD1} and \REF{ex:chen:SD2} differ in the direction of the deletion. Suppose in both that the copy on the left is the structurally higher one. I will call the two cases as leftward and rightward deletion, respectively:
+
+\begin{multicols}{2}
+
+\ea\label{ex:chen:SD}
+  \begin{xlist}
+  \ex <\sout{X} Y>\subs{i} ... <X \sout{Y}>\subs{i}\label{ex:chen:SD1}
+  \saveex
+  \end{xlist}
+\z
+
+\columnbreak
+
+\begin{exe}
+\sn
+  \begin{xlist}
+  \resumeex
+  \ex <X \sout{Y}>\subs{i} ... <\sout{X} Y>\subs{i}\label{ex:chen:SD2}
+  \end{xlist}
+\end{exe}
+
+\end{multicols}
+
+ Things may get more complicated if more pieces and more copies of an element are involved. In any case, it should be borne in mind that scattered deletion is a costly option: It only becomes possible if other more economical options are ruled out, for independent PF reasons. I will show that this is exactly the case of Chichewa PD. In addition, if the scattered deletion account is indeed on the right track, as I will argue in detail, we need to explain why \REF{ex:chen:badPD} (a case of leftward deletion) cannot be derived while rightward deletion cases like \REF{ex:chen:basicPD} are possible. I will show that this direction constraint is expected under the analysis to be spelled out in this paper.
+
+The remainder of the paper is organized as follows. I first argue in \sectref{sec:chen:2} that DP splits in Chichewa do not involve base-generated topics in the left periphery but call for a movement account. However, it will be shown that a direct what-you-see-is-what-you-get analysis does not work: It is not just the noun or the smallest projection of it that is moved. In \sectref{sec:chen:3}, the scattered deletion approach to Chichewa PD is discussed in detail, which I show not only captures the distribution of PD, but also manages to explain why PD should keep the original N>modifier order. A language-particular PF constraint is proposed in this section to restrict scattered deletion. More evidence for the account is provided in \sectref{sec:chen:4}: In a PD case, a low-pronounced quantifier cannot be interpreted low, a fact that I suggest can only be explained by the analysis illustrated in \sectref{sec:chen:3}. \sectref{sec:chen:5} gives some brief comments on (i) the absence in Chichewa of the so-called conjoint-disjoint alternation found in many other Bantu languages, and (ii) \textit{wh}-in-situ in Chichewa, suggesting the latter is shaped by the same PF constraint proposed in \sectref{sec:chen:3}. \sectref{sec:chen:6} concludes.
+
+
+\section{The discontinuity puzzles}\label{sec:chen:2}
+As mentioned, it is in principle possible for a Chichewa object DP to split. One other example of this phenomenon is given in \REF{ex:chen:PDbasic}:\footnote{In this paper I will only be concerned with PD cases without object markers, which essentially will change the dislocation pattern. It has been shown by \citealp{bresnan1987topic} that the object marker in Chichewa is a (non-doubling) incorporated pronominal clitic, i.e., the real object; a lexical DP associated with it is always adjoined to the clause.\label{ex:chen:fn1}}
+
+\ea\label{ex:chen:basepattern2}
+  \begin{xlist}
+  \ex[*]
+  {\gll \textbf{Ci-th\'{u}nzi} \textbf{c\'{a}=\'{o}phunziila} ndi=n\'{a}=p\'{e}\'{e}z-\'{a}\\
+  7-picture 7.\textsc{assoc}=1.student 1\textsc{p.sg}=\textsc{pst}=find-\textsc{fv}\\
+  \glt intended: `The/a picture of the student, I found.'}\label{ex:chen:TDbasic}
+
+  \ex[*]
+  {\gll \textbf{C\'{a}=\'{o}phunziila} ndi=n\'{a}=p\'{e}z-\'{a} \textbf{ci-th\'{u}unzi}\\
+  7.\textsc{assoc}=1.student 1\textsc{p.sg}=\textsc{pst}=find-\textsc{fv} 7-picture\\}\label{ex:chen:PDbasicbad}
+
+  \ex[]
+  {\gll \textbf{Ci-th\'{u}unzi} ndi=n\'{a}=p\'{e}z-\'{a} \textbf{c\'{a}=\'{o}phunziila}\\
+  7-picture 1\textsc{p.sg}=\textsc{pst}=find-\textsc{fv} 7.\textsc{assoc}=1.student\\}\label{ex:chen:PDbasic}
+  \end{xlist}
+\z
+
+ Again, TD is ruled out in the same context \REF{ex:chen:TDbasic}, and dislocating the modifier, rather than the noun, also causes ungrammaticality \REF{ex:chen:PDbasicbad}. \citet{mchombo2006linear} observes that in Chichewa `discontinuity ... seems to require preservation of the `base’ order.' Since Chichewa DPs are N-initial, in cases where there is one noun \textit{plus} one modifier, it is always the noun that is dislocated, so the N>modifier order is kept. Because \REF{ex:chen:PDbasicbad} gives the modifier>N order, it violates this order preservation constraint (it should be mentioned that the type of the modifier (e.g., adjectives, possessives, numerals, etc.) does not really affect the PD pattern).\footnote{There seem to be some exceptions. For example, clitic demonstratives are phonologically weak (they are monosyllabic whereas independent prosodic words in Chichewa are minimally disyllabic; see \citealp{downing2017phonology}) and cannot be left alone postverbally. I will not deal with these cases in the current study.}
+
+One may wonder if the PD cases like \REF{ex:chen:basicPD} and \REF{ex:chen:PDbasic} in fact involve a hanging/aboutness topic base-generated at the left periphery, as inferred by the English translation of \REF{ex:chen:basicPD}: `(As for) goats, the chief's girls have bought black ones.' I suggest that PD is a result of syntactic movement. The evidence comes from island effects. \REF{ex:chen:adjunct} shows that PD cannot happen out of an adjunct; \REF{ex:chen:complexDP} indicates that a noun cannot be dislocated from a complex DP. By contrast, \REF{ex:chen:longdistance} demonstrates that the dislocation can be long-distance as long as islands are not involved, as expected under a movement analysis.
+
+\ea[*]
+{\gll \textbf{Mweezi} ndi=n\'{a}=g\'{u}l-a b\'{u}ukhu \textbf{w\'{a}a=tha}\\
+3.month 1\textsc{p.sg}=\textsc{pst}=buy-\textsc{fv} 5.book 3.\textsc{assoc}=last\\
+\glt intended: `I bought a book last month.’}\label{ex:chen:adjunct}
+\z
+
+\ea[*]
+{\gll \textbf{V\'{u}uto} cikoondi a=n\'{a}=p\'{e}z-\'{a} yankho li-m\'{e}n\'{e} l\'{i}=ma=k\'{o}nz-\'{a} \textbf{l\'{a}=k\'{a}le} \textbf{lii-ja}\\
+5.problem 1.Chikondi 1\textsc{sm}=\textsc{pst}=find-\textsc{fv} 5.answer 5-\textsc{comp} 5\textsc{sm}=\textsc{hab}=solve-\textsc{fv} 5.\textsc{assoc}=old 5-that\\
+\glt intended: `Chikondi found an answer which solves that old problem.’}\label{ex:chen:complexDP}
+\z
+
+\ea[]
+{\gll \textbf{Mb\'{u}uzi} mav\'{u}uto a=ku=g\'{a}n\'{i}z-a kuti cikoondi a=a=gul-\'{a} \textbf{z\'{a}k\'{u}uda}\\
+10.goats 1.Mavuto 1\textsc{sm}=\textsc{prog}=think-\textsc{fv} that 1.Chikondi 1\textsc{sm}=\textsc{perf}=buy-\textsc{fv} 10.black\\
+\glt \textit{lit}. `Goats, Mavuto thinks that Chikondi bought black [ones].'}\label{ex:chen:longdistance}
+\z
+
+ The above facts argue that PD does involve movement, but they do not tell us what is moving. Now, the direct what-you-see-is-what-you-get solution is to say that PD involves extraction of the DP-initial N(P) (as explicitly assumed by \citealp{branan2022edges}). However, it is generally assumed that N-initiality in Bantu is a result of N-to-D head movement (I will not go into this rather independent issue; see \citealp{carstens1991morphology,carstens2008DP,carstens2010head,zeller2013defence} for arguments; \citealp{carstens1997empty} proposes N-to-D specifically for Chichewa): If this is so, the noun in D\xhead does not even form a phrasal constituent by itself. It becomes not immediately clear how a head can be extracted from the DP to the clause-initial position.
+
+Besides, to the best of my knowledge, it is cross-linguistically very rare for a language to have PD of the object while ruling TD out. For example, Serbo-Croatian allows both \REF{ex:chen:SC1} and \REF{ex:chen:SC2}:
+
+\ea
+\begin{xlist}
+  \ex[]
+  {\gll \textbf{Koju} Jovan mrzi \textbf{knjigu}?\\
+  which Jovan hates book\\
+  \glt \textit{lit}. `Which does Jovan hate book?’}\label{ex:chen:SC1}
+
+  \ex[]
+  {\gll \textbf{Koju} \textbf{knjigu} Jovan mrzi?\\
+  which book Jovan hates\\
+  \glt `Which book does Jovan hate?’}\label{ex:chen:SC2} 
+\end{xlist}
+\z
+
+ Recall that Chichewa, by contrast, in general does not allow TD \REF{ex:chen:basicTD} (but see immediately below), a fact that is left unexplained if one simply posits that the noun can move by itself from the DP. Why cannot the DP move?
+
+Perhaps more interestingly, there are in fact cases where TD becomes possible, and it is exactly in those cases where PD is ruled out. As pointed out by \citet{downing2017phonology}, \REF{ex:chen:goodTD} as a case of TD is totally acceptable:
+
+\ea\label{ex:chen:imperative}
+\begin{xlist}
+  \ex[]
+  {\gll \textbf{Gal\'{a}s\'{i}} \textbf{l\'{a}=l\'{i}-k\'{u}l\'{u}} \textbf{iili} kankhaa\circled{=ni}\\
+  5.glass 5.\textsc{assoc}=5-big 5.this push=\textsc{pl}\\
+  \glt `Push this big glass.’}\label{ex:chen:goodTD}
+
+  \ex[*]
+  {\gll \textbf{Gal\'{a}as\'{i}} kankhaa\circled{=ni} \textbf{l\'{a}=l\'{i}-k\'{u}l\'{u}} \textbf{iili}\\
+  5.glass push=\textsc{pl} 5.\textsc{assoc}=5-big 5.this\\}\label{ex:chen:badbadPD}
+\end{xlist}
+\z
+
+ Notice that \REF{ex:chen:imperative} involves an imperative where the enclitic \textit{=ni} expresses politeness towards the addressee (it is glossed as \textsc{pl} since it is also used to mark 2nd person plural objects in declaratives; note plural-as-politeness is a typologically well-attested strategy). What is important to us here is that this is exactly when PD becomes impossible \REF{ex:chen:badbadPD}.
+
+A similar case where TD becomes possible involves \textit{wh}-adjuncts. As shown by \citet{downing2017phonology}, a non-subject \textit{wh}-word can optionally occur in the so-called Immediately After the Verb (\textsc{IAV}) position and form a phonological phrase with the verb.\footnote{Moving \textit{wh}-non-subjects to the IAV position is an obligatory operation in many Bantu languages but is optional in Chichewa.} In \REF{ex:chen:IAVbasic}, for instance, the \textit{wh}-element \textit{liti} `when' occurs immediately after the verb stem:
+
+\ea\label{ex:chen:IAV}
+\begin{xlist}
+  \ex[]
+  {\gll Mav\'{u}uto a=n\'{a}=k\'{o}nz-a \circled{liiti} \textbf{g\'{a}limoto} \textbf{l\'{a}=ts\'{o}pa\'{a}n\'{o}}?\\
+  1.Mavuto 1\textsc{sm}=\textsc{pst}=fix-\textsc{fv} when 5.car 5.\textsc{assoc}=new\\
+  \glt `When did Mavuto fix the car?'}\label{ex:chen:IAVbasic}
+  
+  \ex[]
+  {\gll \textbf{G\'{a}limoto} \textbf{l\'{a}=ts\'{o}pa\'{a}n\'{o}} Mav\'{u}uto a=n\'{a}=k\'{o}nz-a \circled{liiti}?\\
+  5.car 5.\textsc{assoc}=new 1.Mavuto 1\textsc{sm}=\textsc{pst}=fix-\textsc{fv} when\\}\label{ex:chen:IAVgood}
+
+  \ex[*]
+  {\gll \textbf{G\'{a}limooto} Mav\'{u}uto a=n\'{a}=k\'{o}nz-a \circled{liiti} \textbf{l\'{a}=ts\'{o}pa\'{a}n\'{o}}?\\
+  5.car 1.Mavuto 1\textsc{sm}=\textsc{pst}=fix-\textsc{fv} when 5.\textsc{assoc}=new\\}\label{ex:chen:IAVbad}
+  
+\end{xlist}
+\z
+
+ As in \REF{ex:chen:IAVgood}, TD is good when the IAV position is filled in, and PD of the object DP will lead to ungrammaticality \REF{ex:chen:IAVbad}. It can be concluded that PD and TD in Chichewa show complementary distribution, a fact that is unexpected under a what-you-see-is-what-you-get account (i.e., PD involves sub-extraction of the initial N(P) from the object DP). I now show that all these puzzles discussed in this section can be solved or simply disappear under the scattered deletion account.
+
+\section{A scattered deletion analysis}\label{sec:chen:3}
+
+I first propose a language-particular PF constraint \REF{ex:chen:Constraint} for Chichewa:
+
+\ea\label{ex:chen:Constraint}
+A verb and its internal argument must be adjacent sub-constituents of a phonological phrase if they share phi-features.
+\z
+
+ \REF{ex:chen:Constraint} is inspired by \citeauthor{clemens2014prosodic}'s (\citeyear{clemens2014prosodic, clemens2016argument}) \textit{argument condition on phonological phrasing} (\textsc{arg}-$\varphi$). It states that if a verb is transitive in Chichewa, it must form a prosodic phrase with its complement that immediately follows it. \REF{ex:chen:Constraint} will not apply if the verb of concern is intransitive, since there is independent evidence that only transitive verbs phi-agree with the internal argument in Chichewa, as illustrated by the contrast between \REF{ex:chen:omgood} and \REF{ex:chen:ombad} (the latter involves an unaccusative verb and locative inversion): Only in \REF{ex:chen:omgood} can the verb stem be attached to by an object marker, which I take to be a consequence of Agree (\REF{ex:chen:ombad} is grammatical without the object marker):\footnote{Recall from footnote \ref{ex:chen:fn1} that the object marker is not a pure agreement marker in Chichewa, but a clitic pronoun. At any rate, the latter must also be a result of Agree; see \citealp{baker2018OM} for directly relevant discussion. Again, in this paper we set aside the dislocation patterns with the occurrence of object markers.}
+
+\ea[]
+  {\gll Mi-k\'{a}ango i=ku=\circled{z\'{i}=}saak-a zi-gaw\'{e}enga \\
+  4-lions 4\textsc{sm}=\textsc{prog}=8\textsc{om}=hunt-\textsc{fv} 8-terrorists \\
+ \glt `The lions are hunting them, the terrorists.’\hfill(\citealp{mchombo2004syntax}; adapted)}\label{ex:chen:omgood}
+\z
+
+
+\ea[*]
+  {\gll Pa=mu-dz\'{i} p\'{a}=d\'{a}=\circled{\'{ii}=}gw-a njaala\\
+  16.in=3-village 16\textsc{sm}=\textsc{pst}=9\textsc{om}=fall-\textsc{fv} 9.hunger\\
+  \glt intended: `Famine ravaged the land.’ (\textit{lit}. `In the village fell hunger.')}
+  \hfill (\citealp{mchombo2004syntax}; adapted)\label{ex:chen:ombad}
+\z
+
+ Unsurprisingly, the internal argument of an intransitive verb can occur preverbally freely:
+
+\ea[]
+  {\gll Njovu i=n\'{a}a=gw-a\\
+  9.elephant 9\textsc{sm}=\textsc{pst}=fall-\textsc{fv}\\
+  \glt `An elephant fell.’\hfill(\citealp{mchombo2004syntax}; adapted)}
+\z
+
+\ea[]
+  {\gll Ma-\'{u}ng\'{u} a=ku=ph\'{i}k-iidw-a\\
+  6-pumpkins 6\textsc{sm}=\textsc{prog}=cook-\textsc{pass}-\textsc{fv}\\
+  \glt `The pumpkins are being cooked.’\hfill(\citealp{mchombo2004syntax}; adapted)}
+\z
+
+ Turning back to transitives, \REF{ex:chen:Constraint} immediately rules out TD cases such as \REF{ex:chen:basicTD} and \REF{ex:chen:TDbasic}. The following is another such example:
+
+\ea[*]
+  {\gll \textbf{A-leenje} nj\'{u}uci zi=n\'{a}=luum-a\\
+  2-hunters 10.bees 10\textsc{sm}=\textsc{pst}=bite-\textsc{fv}\\
+  \glt intended: `The hunters, the bees bit.' \hfill\citep{bresnan1987topic}}\label{ex:chen:1987badTD}
+\z
+
+ Assuming a multiple spell-out framework (\citealp{uriagereka1999multiple, chomsky2000minimalist}) and following a number of recent studies arguing that what is sent to spell-out is phases, not phasal complements (\citealp{bovskovic2016sent, bovskovic2017tone, Cecchetto2022}, among others), I further argue that \REF{ex:chen:Constraint} becomes effective when the vP phase is spelled out. Suppose an element to be extracted from a phase has to move to the edge of that phase first, in the current case being SpecvP. At the point of the spell-out of vP, The structure of \REF{ex:chen:1987badTD} will be like \REF{ex:chen:vPhunter}:
+
+\ea\label{ex:chen:vPderivation}\begin{xlist}
+  \ex[]{\Lb{vP} alenje\subs{i} luma alenje\subs{i} ]}\label{ex:chen:vPhunter}
+  \saveex
+\end{xlist}\z
+
+ Now, the PF interface will decide which copy of \textit{alenje} `hunters' is to be deleted. There are three options, which we discuss in turn:
+
+\begin{exe}
+\exr{ex:chen:vPderivation}
+\begin{xlist}
+  \resumeex
+  \ex[]{\Lb{vP} alenje\subs{i} luma \sout{alenje}\subs{i} ]}\label{ex:chen:vPopt1}
+  \ex[]{\Lb{vP} \sout{alenje}\subs{i} luma alenje\subs{i} ]}\label{ex:chen:vPopt2}
+  \ex[]{\Lb{vP} alenje\subs{i} luma alenje\subs{i} ]}\label{ex:chen:vPopt3}
+\end{xlist}
+\end{exe}
+
+ Firstly, though the higher copy of the DP and the verb stem are still adjacent in \REF{ex:chen:vPopt1}, I would like to suggest that it is already problematic regarding \REF{ex:chen:Constraint} at this point. This is simply because a preverbal lexical DP is unable to form a prosodic phrase with the verb following it. Due to the agglutinative nature and the prefixal/proclitical preference of Chichewa/Bantu, what can occur preverbally and form a prosodic phrase with the verb stem should always be a prefix/proclitic. Note that proclitic objects, namely object markers, do occur in this position (the object marker and the stem form what Bantuists call the macrostem):\footnote{\citealp{downing2018dom} reports that there is a human/non-human asymmetry in object marking in some modern colloquial Chichewa varieties: With a human object the object marker is always present, whether the object is dislocated or not, whereas the object marker is not necessary for a non-human object even when the object undergoes TD. This pattern is in contradiction with the dislocation pattern described in \citealp{bresnan1987topic} and in the current paper, the latter two being mutually compatible (where the object marker is a clitic pronoun). Object markers in the system described by \citealp{downing2018dom} are purely agreement markers, which she argues are historically derived from a pronominal clitic system. I assume that there may be dialectal variation regarding the status of object markers (and how they affect the PD/TD pattern) in Chichewa, though the data from my consultants seem to only reflect the arguably more conservative pronominal clitic system. I thank an anonymous reviewer for raising this issue.}
+
+\ea[]
+  {\gll Mj\'{u}uci zi=n\'{a}= \Lb{macrostem} \circled{w\'{a}=}luum-a ]\\
+  10.bees 10\textsc{sm}=\textsc{pst}= {} 2\textsc{om}=bite-\textsc{fv}\\
+  \glt `The bees bit them.'}
+\z
+
+ Secondly, I suggest that the second option \REF{ex:chen:vPopt2} is in fact not problematic with regard to \REF{ex:chen:Constraint}. However, the surface PF form it derives is just the same as that where the movement has never occurred. Thus \REF{ex:chen:vPopt2} may cause a severe learnability problem: Children have no evidence to learn it. Finally, consider \REF{ex:chen:vPopt3}, which involves pronouncing multiple copies of the same element. I assume that this option is excluded by \citeauthor{fox2005cyclic}'s (\citeyear{fox2005cyclic}) proposal that the ordering of elements should be established at the point of spell-out. In \REF{ex:chen:vPopt3} \textit{alenje} precedes and follows the verb stem simultaneously, causing a self-contradictory situation, i.e., it is not pronounceable. Note that this approach will rule out all multiple pronunciation cases in general.
+
+Now we turn to cases with DP splits. Take \REF{ex:chen:basepattern2} as an example. Suppose that the whole object DP undergoes topicalization. At the point of vP spell-out, the relevant structure is illustrated as follows:
+
+\ea\label{ex:chen:PDderivation}\begin{xlist}
+  \ex[]{\gll \Lb{vP} < cith\'{u}nzi c\'{a}=\'{o}phunzila>\subs{i} pez\'{a} < cith\'{u}nzi c\'{a}=\'{o}phunzila>\subs{i} ]\\
+  {} {} picture of=student find {} picture of=student\\}\label{ex:chen:PDatvP}
+  \saveex
+\end{xlist}\z
+
+ \citet{bovskovic2002multiple} argues that when determining whether a higher/lower copy is pronounced when a PF violation requires a lower copy pronunciation, the structure is scanned left to right, with the decision of which copy to pronounce made locally, without look-ahead. That is, the PF interface will first decide where to pronounce the left piece, namely \textit{cith\'{u}nzi}, in \REF{ex:chen:PDatvP}.\footnote{It needs to be noted that `pronunciation' can only be understood abstractly under the current multiple spell-out framework. Since \REF{ex:chen:PDatvP} as the spell-out of vP is not the ultimate pronunciation of a sentence, `pronunciation' simply refers to the realization/reservation of phonological features, which are still abstract.} Assuming that the default option is to realize the phonological features in the highest copy, we get \REF{ex:chen:PDstep1}:
+
+\begin{exe}
+\exr{ex:chen:PDderivation}
+\begin{xlist}
+  \resumeex
+  \ex[]{\Lb{vP} <cith\'{u}nzi \textcolor{gray}{c\'{a}=\'{o}phunzila}>\subs{i} pez\'{a} <\sout{cith\'{u}nzi} \textcolor{gray}{c\'{a}=\'{o}phunzila}>\subs{i} ]}\label{ex:chen:PDstep1}
+
+  \ex[*]{\Lb{vP} <cith\'{u}nzi c\'{a}=\'{o}phunzila>\subs{i} pez\'{a} <\sout{cith\'{u}nzi c\'{a}=\'{o}phunzila}>\subs{i} ]}\label{ex:chen:PDstep2}
+
+  \ex[]{\Lb{vP} <cith\'{u}nzi \sout{c\'{a}=\'{o}phunzila}>\subs{i} pez\'{a} <\sout{cith\'{u}nzi} c\'{a}=\'{o}phunzila>\subs{i} ]}\label{ex:chen:PDstep3}
+\saveex
+\end{xlist}
+\end{exe}
+
+ Then the next piece \textit{c\'{a}=\'{o}phunzila} is scanned. At this point, the pronouncing-the-highest-copy option for it is no longer available since that will essentially give \REF{ex:chen:PDstep2} and violate \REF{ex:chen:Constraint}. In this case \REF{ex:chen:PDstep3} becomes the only available option: The phonological features of the lower piece of \textit{c\'{a}=\'{o}phunzila} is kept, and PD is derived, as expected.
+
+The current approach explains directly why PD in Chichewa shows the order preservation constraint: Deleting the left piece in the highest copy is simply never a possibility at PF, since the preferred option, i.e., pronouncing that piece, causes no PF violations and is obligatorily selected (thus a structure like \REF{ex:chen:PDstep4} is not considered at any point at PF). After that, things only get wrong if the right piece of the highest copy is also pronounced. To put it in another way, we have explained why scattered deletion can only occur rightward in Chichewa.\footnote{This of course does not mean that scattered deletion is universally rightward. The direction issue is an empirical one, subject to specific PF constraints. See \citealp{bovskovic2001interface} for a leftward deletion case in Bulgarian.}
+
+\begin{exe}
+\exr{ex:chen:PDderivation}
+\begin{xlist}
+  \resumeex  
+  \ex[*]{\Lb{vP} <\sout{cith\'{u}nzi} c\'{a}=\'{o}phunzila>\subs{i} pez\'{a} <cith\'{u}nzi \sout{c\'{a}=\'{o}phunzila}>\subs{i} ]}\label{ex:chen:PDstep4}
+\end{xlist}
+\end{exe}
+
+ Recall that \REF{ex:chen:imperative} and \REF{ex:chen:IAV} show a reversed pattern, where TD is possible and PD is ruled out. I propose that the PF constraint \REF{ex:chen:Constraint} is simply not applicable in those cases because of the presence of an intervening element: (i) The enclitic \textit{=ni} in \REF{ex:chen:imperative}, and (ii) the \textit{wh}-adjunct in the IAV position in \REF{ex:chen:IAV}. They intervene between the verb stem and the complement when the vP is transferred to spell-out, as illustrated below:
+
+\ea
+\begin{xlist}
+  \ex[]
+  {\gll \Lb{vP} < gal\'{a}s\'{i} l\'{a}=l\'{i}k\'{u}l\'{u} ili>\subs{i} kankha\circled{=ni} < gal\'{a}s\'{i} l\'{a}=l\'{i}k\'{u}l\'{u} ili>\subs{i} ]\\
+  {} {} glass of=big this open=\textsc{pl} {} glass of=big this\\}\label{ex:chen:goodTD1}
+
+  \ex[]
+  {\Lb{vP} <gal\'{a}s\'{i} l\'{a}=l\'{i}k\'{u}l\'{u} iili>\subs{i} kankha\circled{=ni} <\sout{gal\'{a}s\'{i} l\'{a}=l\'{i}k\'{u}l\'{u} ili}>\subs{i} ]}\label{ex:chen:goodTD2}
+
+  \ex[*]
+  {\Lb{vP} <gal\'{a}s\'{i} \sout{l\'{a}=l\'{i}k\'{u}l\'{u} ili}>\subs{i} kankha\circled{=ni} <\sout{gal\'{a}s\'{i}} l\'{a}=l\'{i}k\'{u}l\'{u} iili>\subs{i} ]}\label{ex:chen:goodTD3}
+\end{xlist}
+\z
+
+\ea
+\begin{xlist}
+  \ex[]
+  {\gll \Lb{vP} < g\'{a}limoto l\'{a}=ts\'{o}pan\'{o}>\subs{i} k\'{o}nza \circled{liti} < g\'{a}limoto l\'{a}=ts\'{o}pan\'{o}>\subs{i}]\\
+  {} {} car of=new fix when {} car of=new\\}\label{ex:chen:IAVvP1}
+  
+  \ex[]
+  {\Lb{vP} <g\'{a}limoto l\'{a}=ts\'{o}pa\'{a}n\'{o}>\subs{i} k\'{o}nza \circled{liti} <\sout{g\'{a}limoto l\'{a}=ts\'{o}pan\'{o}}>\subs{i}]}\label{ex:chen:IAVvPgood}
+
+  \ex[*]
+  {\Lb{vP} <g\'{a}limooto \sout{l\'{a}=ts\'{o}pan\'{o}}>\subs{i} k\'{o}nza \circled{liti} <\sout{g\'{a}limoto} l\'{a}=ts\'{o}pa\'{a}n\'{o}>\subs{i}]}\label{ex:chen:IAVvPbad}
+\end{xlist}
+\z
+
+
+ In \REF{ex:chen:goodTD1}, although the verb stem and its complement might have been adjacent when they merge in the first place, they are not adjacent when \REF{ex:chen:Constraint} comes into play. Consequently, the default option \REF{ex:chen:goodTD2} is selected, and \REF{ex:chen:goodTD3} is automatically ruled out. The same logic applies to \REF{ex:chen:IAVvP1}, where I argue that the \textit{wh}-adjunct already moves into the IAV position when vP is spelled out.\footnote{I leave the question open on how to analyze the exact syntactic status of the IAV position, which is an independently important issue. What is crucial to us is that this position may intervene between the verb and the in-situ complement at the vP level.} Since at this point the verb stem simply does not have a linearly adjacent complement, \REF{ex:chen:IAVvPgood} causes no problem and is thus grammatical, and \REF{ex:chen:IAVvPbad} is not a possibility.
+
+An anonymous reviewer points out that the current account predicts that, in ditransitive constructions, where only one of the objects can be adjacent to the verb, TD of the other non-linearly adjacent object should be possible. The following data from my consultants shows that this prediction is borne out:
+
+\ea\label{ex:chen:ditr}
+\begin{xlist}
+  \ex[]
+  {\gll Ndi=na=p\'{a}ts-\'{a} cikondi b\'{u}ukhu\\
+  1\textsc{p.sg}=\textsc{pst}=give-\textsc{fv} 1.Chikondi 5.book\\
+  \glt `I gave Chikondi a book.'}\label{ex:chen:ditrbasic}
+
+  \ex[]
+  {\gll \textbf{B\'{u}ukhu} ndi=na=p\'{a}ts-\'{a} cikoondi\\
+  5.book 1\textsc{p.sg}=\textsc{pst}=give-\textsc{fv} 1.Chikondi\\
+  }\label{ex:chen:ditrDO}
+
+  \ex[*?]
+  {\gll \textbf{Cikoondi} ndi=na=p\'{a}ts-\'{a} búukhu\\
+  1.Chikondi 1\textsc{p.sg}=\textsc{pst}=give-\textsc{fv} 5.book\\
+  }\label{ex:chen:ditrIO}
+  \saveex
+
+\end{xlist}
+\z
+
+ While \REF{ex:chen:ditrIO} is ruled out by \REF{ex:chen:Constraint} in the same way as \REF{ex:chen:1987badTD}, \REF{ex:chen:ditrDO} is grammatical. Since the direct object is not adjacent to the verb as in the V>IO>DO order, this pattern is unsurprising. However, it is interesting to mention that the relative order of DO and IO in Chichewa is in fact flexible; \REF{ex:chen:ditrreverse} is grammatical alongside \REF{ex:chen:ditrbasic}:
+
+\begin{exe}
+\exr{ex:chen:ditr}
+\begin{xlist}
+  \resumeex  
+  \ex[]
+  {\gll Ndi=na=p\'{a}ts-\'{a} b\'{u}khu cikoondi\\
+  1\textsc{p.sg}=\textsc{pst}=give-\textsc{fv} 5.book 1.Chikondi\\
+  \glt `I gave a book to Chikondi.'}\label{ex:chen:ditrreverse}
+\end{xlist}
+\end{exe}
+
+ Note, however, that Chichewa is a typical `asymmetrical' language in that only the IO (which always c-commands the DO regardless of the linear order) shows typical object behaviors (\citealt{mchombo2004syntax,van2022featural}). What is important to us is the fact that only the IO agrees with the verb:
+
+\ea
+  \begin{xlist}
+  \ex[]
+  {\gll A-leenje a=ku=ph\'{i}k-\'{i}l-\'{a} a-nyan\'{i} z\'{i}-t\'{u}mb\'{u}uwa\\
+  2-hunters 2\textsc{sm}=\textsc{prog}=cook-\textsc{appl}-\textsc{fv} 2-baboons 8-pancakes\\
+  \glt `The hunters are cooking pancakes for the baboons.’}
+
+  \ex[]
+  {\gll A-leenje a=ku=\circled{w\'{a}=}ph\'{i}k-\'{i}l-\'{a} z\'{i}-t\'{u}mb\'{u}uwa\\
+  2-hunters 2\textsc{sm}=\textsc{prog}=2\textsc{om}=cook-\textsc{appl}-\textsc{fv} 8-pancakes\\}
+
+  \ex[*]
+  {\gll A-leenje a=ku=\circled{z\'{i}=}ph\'{i}k-\'{i}l-\'{a} a-nya\'{a}n\'{i}\\
+  2-hunters 2\textsc{sm}=\textsc{prog}=8\textsc{om}=cook-\textsc{appl}-\textsc{fv} 2-baboons\\}
+  \hfill (\citealp{mchombo2004syntax}; adapted)\label{ex:chen:DOagree}
+
+  \end{xlist}
+\z
+
+ If what is implied by the ungrammaticality of \REF{ex:chen:DOagree} is that DO is unable to agree with the verb in ditransitives in any case, we can conclude that \REF{ex:chen:Constraint} (which is stated in terms of feature sharing) should not apply to DO in general, so the TD of DO should always be possible, as in \REF{ex:chen:ditrDO}. The DO>IO order in \REF{ex:chen:ditrreverse} is at any rate not base-generated (and it does not feed an Agree relationship between DO and the verb).\footnote{It is not immediately obvious why \REF{ex:chen:ditrIO} is still degraded, since it may start from (i) (which will give \REF{ex:chen:ditrreverse} if topicalization does not happen):
+\begin{exe}
+   \exi{(i)}\label{ex:chen:IODOvP} \Lb{vP}  cikondi\supers{IO}\subs{i} patsa\supers{V} b\'{u}khu\supers{DO} cikondi\supers{IO}\subs{i} ]
+\end{exe}
+Here the IO is not adjacent to the verb and thus should be possible to undergo TD. One possibility is that (i) is in fact not a licit structure per se (i.e., postverbally only IO>DO is possible at the point vP is spelled out), the DO>IO order in \REF{ex:chen:ditrreverse} being derived via further order readjustment after the entire structure is built. I will not go further into this issue.}
+
+In summary, it is clear now how the puzzles discussed in \sectref{sec:chen:2} can be resolved under the scattered deletion account with the language-particular PF constraint \REF{ex:chen:Constraint} being posited. First, the potential non-constituent movement puzzle does not arise, since what undergoes syntactic movement is the whole DP, not the head noun.\footnote{Assuming N-initiality involves NP-raising in Chichewa is also compatible with the scattered deletion account, so the current discussion by itself is orthogonal to the head vs. phrasal movement debate.} Second, the fact that Chichewa (in most cases) allows object PD but disallows TD is no longer a typological mystery: It is in fact expected because PD as a case of scattered deletion only becomes possible if the pronouncing-the-highest-copy option (which gives TD) is excluded. We have seen that TD is possible in some cases in Chichewa, and that TD and PD are crucially in complementary distribution. Finally, the so-called order preservation constraint is accounted for: Only rightward deletion is possible regarding Chichewa PD because the pieces of a copy are scanned left to right at PF.
+
+\section{Scattered deletion and scopal relations}\label{sec:chen:4}
+I have argued that the scattered deletion account of Chichewa PD derives cases like \REF{ex:chen:basicPD} and \REF{ex:chen:PDbasic} as in the following:
+
+\ea[]
+  {\gll < mb\'{u}uzi \sout{z\'{a}k\'{u}da}>\subs{i} ats\'{i}k\'{a}na \'{a}=mf\'{u}umu a=a=gul\'{a} < \sout{mb\'{u}zi} z\'{a}k\'{u}uda>\subs{i}\\
+  {} goats black girls of=chief they.have.bought {} goats black\\}\label{ex:chen:PDex1}\z
+\ea[]
+  {\gll < cith\'{u}unzi \sout{c\'{a}=\'{o}phunzila}>\subs{i} ndi=n\'{a}=p\'{e}z\'{a} < \sout{cith\'{u}nzi} c\'{a}=\'{o}phunziila>\subs{i}\\
+  {} picture of=student I.found {} picture of=student\\}\z
+
+ Notice that all cases of scattered deletion, or lower copy pronunciation in general, may involve some syntax-phonology or semantic-phonology mismatch, since pronouncing (part of) the lower copy is purely a PF phenomenon, and should not affect the formal and semantic features of an element. For example, in \REF{ex:chen:PDex1} the phonological features of \textit{z\'{a}k\'{u}da} are not realized in the highest copy, but its semantic features that are not deleted earlier in the derivation should be visible at LF at this position. That is, the current approach predicts that the dislocated topic here is \textit{mb\'{u}zi z\'{a}k\'{u}da} `black goats', rather than \textit{mb\'{u}zi} `goats'. Besides, recall from \REF{ex:chen:PG} that an in-situ \textit{wh} element in Romanian licenses parasitic gaps, indicating that it is just left behind at PF, but in fact structurally high in narrow syntax.\footnote{There is unfortunately no evidence of this sort in Chichewa, where parasitic gaps are not independently attested.}
+
+In this section I provide scopal facts that strongly support the scattered deletion approach to Chichewa PD. Consider first \REF{ex:chen:scope}, which shows a typical PD pattern:
+
+\ea\label{ex:chen:scope}
+\begin{xlist}
+  \ex
+  {\gll S\'{i}=nd\'{i}=na=\'{o}n-\'{e} \textbf{a-phunzitsi} \textbf{\'{o}onse} mu=kal\'{a}asi\\
+  \textsc{neg}=1\textsc{p.sg}=\textsc{pst}=see-\textsc{fv} 2-teachers 2-all 18=5.classroom\\
+  \glt \textit{lit}. `I didn't see all the teachers in the classroom.' \hfill{(\neg>\forall; (*)\forall>\neg)}}\label{ex:chen:scope1}
+
+  \ex
+  {\gll \textbf{A-phunziitsi} s\'{i}=nd\'{i}=na=\'{o}n-\'{e} \textbf{\'{o}onse} mu=kal\'{a}asi\\
+  2-teachers \textsc{neg}=1\textsc{p.sg}=\textsc{pst}=see-\textsc{fv} 2-all 18=5.classroom\\}\label{ex:chen:scope2}\hfill (*\neg>\forall; \forall>\neg)
+\end{xlist}
+\z
+
+ Interestingly, the interpretation of \REF{ex:chen:scope1} and \REF{ex:chen:scope2} is very different. \REF{ex:chen:scope1} can used either in contexts where I saw no teachers in the classroom, or in contexts where I saw some, but not all of the teachers. By contrast, \REF{ex:chen:scope2} can only mean that all the teachers are such that I did not see them, i.e., I did not see any teachers in the classroom. This indicates that the universal \textit{\'{o}nse} `all' must scope over negation in \REF{ex:chen:scope2}. On the other hand, however, it is not readily evident whether \REF{ex:chen:scope1} shows real scopal ambiguity, i.e., \textit{\'{o}nse} `all' can either scope over negation or not. This is because in terms of truth conditions, \neg>\forall {} holds as long as there are some teachers that I did not see, and it is just one possibility that I by chance did not see any of them. That is, while the \neg>\forall {} reading must be available in \REF{ex:chen:scope1}, the status of \forall>\neg {} is not clear. I thus put an asterisk in parentheses for the \forall>\neg {} reading in \REF{ex:chen:scope1}. What is important here is the observation that although in both cases \textit{\'{o}nse} `all' occurs postverbally on the surface, its interpretation changes radically.
+
+Now consider a slightly more complicated case to illustrate the point further. In \REF{ex:chen:modscope}, where the noun has two modifiers, the noun can be dislocated alone \REF{ex:chen:modscope2} or with one modifier immediately following it \REF{ex:chen:modscope3}:\footnote{The PD pattern keeps more or less similar with some complication when more than one modifier is involved. If both \REF{ex:chen:modscope2} and \REF{ex:chen:modscope3} are a result of topicalization of the whole object DP \textit{plus} scattered deletion, we apparently are observing some optionality here. Both cases can be seen as rightward deletion (i.e., they are both cases of \REF{ex:chen:SD2}), but differ in how the two pieces are grouped. I tentatively suggest that the two are only different in phonological phrasing, but leave this important issue for future study.}
+
+\ea\label{ex:chen:modscope}
+\begin{xlist}
+  \ex
+  {\gll S\'{i}=nd\'{i}=na=\'{o}n-\'{e} \textbf{a-phunzitsi} \textbf{\'{o}nse} \textbf{\'{a}=nz\'{e}\'{e}l\'{u}} mu=kal\'{a}asi\\
+  \textsc{neg}=1\textsc{p.sg}=\textsc{pst}=see-\textsc{fv} 2-teachers 2-all 2.\textsc{assoc}=10.intelligence 18=5.classroom\\
+  \glt \textit{lit}. `I didn't see all intelligent teachers in the classroom.' \hfill{(\neg>\forall; (*)\forall>\neg)}}\label{ex:chen:modscope1}
+
+  \ex
+  {\gll \textbf{A-phunziitsi} s\'{i}=nd\'{i}=na=\'{o}n-\'{e} \textbf{\'{o}nse} \textbf{\'{a}=nz\'{e}\'{e}l\'{u}} mu=kal\'{a}asi\\
+  2-teachers \textsc{neg}=1\textsc{p.sg}=\textsc{pst}=see-\textsc{fv} 2-all 2.\textsc{assoc}=10.intelligence 18=5.classroom\\}\label{ex:chen:modscope2}\hfill (*\neg>\forall; \forall>\neg)
+
+  \ex
+  {\gll \textbf{A-phunzitsi} \textbf{\'{o}onse} s\'{i}=nd\'{i}=na=\'{o}n-\'{e}  \textbf{\'{a}=nz\'{e}\'{e}l\'{u}} mu=kal\'{a}asi\\
+  2-teachers 2-all \textsc{neg}=1\textsc{p.sg}=\textsc{pst}=see-\textsc{fv} 2.\textsc{assoc}=10.intelligence 18=5.classroom\\}\label{ex:chen:modscope3}\hfill (*\neg>\forall; \forall>\neg)
+\end{xlist}
+\z
+
+ Interestingly, while the in-situ case \REF{ex:chen:modscope1} allows narrow scope for \textit{\'{o}nse}, only the wide scope option is available in the PD cases (\ref{ex:chen:modscope2}--\ref{ex:chen:modscope3}).
+
+This pattern strongly suggests that in both cases (\ref{ex:chen:modscope2}--\ref{ex:chen:modscope3}) \textit{\'{o}nse} moves in narrow syntax. The position in which \textit{\'{o}nse} is pronounced is different in \REF{ex:chen:modscope2} and \REF{ex:chen:modscope3}, i.e., in \REF{ex:chen:modscope2} \textit{\'{o}nse} is pronounced after the verb while in \REF{ex:chen:modscope3} it occurs preverbally along with the noun, but the interpretation keeps the same. I consider this a decisive argument for the scattered deletion approach to PD. The structures of \REF{ex:chen:modscope2} and \REF{ex:chen:modscope3} are illustrated in \REF{ex:chen:scopecase1} and \REF{ex:chen:scopecase2}, respectively. Note I am assuming here that only the highest copy of \textit{\'{o}nse} is responsible for its scope property (as for \REF{ex:chen:scope1} and \REF{ex:chen:modscope1}, where \textit{\'{o}nse} is in situ in narrow syntax, the inverse \forall>\neg {} reading, if available at all, may result from QR in LF).
+
+\ea
+  \begin{xlist}    
+  \ex[]
+  {\gll <aphunziitsi \sout{\textbf{\'{o}nse} \'{a}=nz\'{e}l\'{u}}>\subs{i} s\'{i}=nd\'{i}=na=\'{o}n\'{e} <\sout{aphunzitsi} \'{o}nse \'{a}=nz\'{e}\'{e}l\'{u}>\subs{i} mu=kal\'{a}asi\\
+  {} {\textcolor{gray}{\uparrow interpreted at LF}}\\}\label{ex:chen:scopecase1}
+
+  \ex[]
+  {\gll <aphunzitsi {\textbf{\'{o}onse} \sout{\'{a}=nz\'{e}l\'{u}}}>\subs{i} s\'{i}=nd\'{i}=na=\'{o}n\'{e} <\sout{aphunzitsi \'{o}nse} \'{a}=nz\'{e}\'{e}l\'{u}>\subs{i} mu=kal\'{a}asi\\
+  {} {\textcolor{gray}{\uparrow interpreted at LF}}\\}\label{ex:chen:scopecase2}
+\end{xlist}
+\z
+
+\section{The loss of conjoint-disjoint alternation and \textit{wh}-in-Situ in Chichewa}\label{sec:chen:5}
+Recall the PF-constraint \REF{ex:chen:Constraint} proposed in \sectref{sec:chen:3}, which is crucial for the current scattered deletion account. It essentially rules out TD in cases where PD is attested, explaining the complementary distribution of the two. In this section, I provide two further independent arguments for the presence of the constraint. The first argument, being perhaps indirect and speculative, comes from the conjoint-disjoint (CJ/DJ) alternation widely attested in Bantu. As is well-known, verbs in many Bantu languages may have different forms depending on whether there is a complement following the verb. In Kirundi, for example, the verb takes the CJ form if it has a complement directly following it \REF{ex:chen:kirundi1}; otherwise it surfaces in the DJ form \REF{ex:chen:kirundi2}. Importantly, the CJ form is zero-marked while the DJ form is marked by an extra affix:
+
+
+\ea\label{ex:chen:kirundi}
+\begin{xlist}
+  \ex[]
+  {\gll Imu\'{u}ngu \Lb{vP} zi=ry-a i-g\v{i}ti ]\\
+  10.woodworms {} 10\textsc{sm}=eat-\textsc{fv} 7-wood\\
+  \glt `(The) woodworms eat wood (and nothing but wood).’}\label{ex:chen:kirundi1}
+
+  \ex[]
+  {\gll Imu\'{u}ngu \Lb{vP} zi=\textbf{ra-}ry-\'{a} ] uruugi\\
+  10.woodworms {} 10\textsc{sm}=\textsc{pres.dj}=eat-\textsc{fv} {} 11-door\\
+  \glt `(The) woodworms eat through the door.’}\hfill {(\citealp[Kirundi,][216]{meeussen1959essai}; adapted)}\label{ex:chen:kirundi2}
+\end{xlist}
+\z
+
+ On the one hand, Chichewa lacks the CJ/DJ alternation; on the other hand, the alternation is found in Bantu languages that are not necessarily geographically adjacent, and multiple scholars have argued that the alternation existed in Proto-Bantu (\citealp{meeussen1967bantu,nurse2008tense}). This means that Chichewa used to be a CJ/DJ language at an earlier historical stage, but has lost the alternation entirely. In other words, Chichewa has lost the DJ morpheme.\footnote{Or one could say that the loss of CJ/DJ is a templatic one, because the DJ markers in different Bantu languages do not necessarily share the same lexical origin. Chichewa has lost the morphological slot that could host the DJ marking.}
+
+The conjecture, then, is that the PF constraint \REF{ex:chen:Constraint} or something similar to it is directly correlated to the CJ/DJ alternation. In a comparative sense, a Chichewa verb trivially takes the CJ form, so \REF{ex:chen:Constraint} can be rewritten as follows:
+
+\ea\label{ex:chen:Constraint2}
+A verb \textit{in the conjoint/unmarked form} and its internal argument must be adjacent sub-constituents of a phonological phrase if they share phi-features.
+\z
+
+ \REF{ex:chen:Constraint2} can be viewed as a statement of the distribution of the CJ form. Suppose it is not only active in Chichewa, but is in fact present in some other Bantu languages as well, perhaps with some micro-variation. One can say that the DJ morpheme is added exactly when the verb does not form a prosodic phrase with its complement, in which case the DJ morpheme is used to satisfy/avoid \REF{ex:chen:Constraint2}. I suggest the reason why a lot of Bantu languages have the CJ/DJ alternation is precisely because of the presence of this PF constraint (or something alike: The constraints of course do not have to be stated in the same way in different languages). In Chichewa, where the alternation is lost, TD is ruled out in general by \REF{ex:chen:Constraint2}, and PD becomes possible via scattered deletion. Consequently, some syntax-phonology or semantic-phonology mismatches are attested in \sectref{sec:chen:4}. If the current thought is on the right track, on the one hand, there is good reason for the striking Bantu CJ/DJ alternation to exist---to avoid potential syntax-phonology or semantic-phonology mismatches produced by \REF{ex:chen:Constraint2}; on the other hand, we have good historical reasons to explain why Chichewa DP splits show such a complex pattern: It is a result of the morphological loss of DJ. In any case, the picture is far from crystal clear, and a thorough comparative study among Bantu is needed. I leave this issue for future research.
+
+The second argument is probably more direct and telling. Chichewa shows an interesting subject/object asymmetry that subject \textit{wh}-words cannot occur in situ (they must be clefted) while object \textit{wh}-words normally do.\footnote{Recall that non-subject \textit{wh}-words can optionally occur in the so-called IAV position. I will not go into this issue in this paper.} One may take it for granted that Chichewa \textit{wh}-objects in this respect are just like \textit{wh}-objects in a `canonical' \textit{wh}-in-situ language such as Chinese or Japanese. However, I propose that this is not the case. In-situ \textit{wh} objects in Chichewa essentially show island effects:\footnote{Note that this is not the case in many other \textit{wh}-in-situ Bantu languages, though \citealt{bergvall1983wh} claims that \textit{wh}-in-situ in Kikuyu also shows island sensitivity. It is also interesting to mention that beyond Bantu, Vietnamese is another language where \textit{wh}-in-situ is shown to be sensitive to islands; see \citealt{bruening2006wh}.}
+
+\ea[*]
+  {\gll Mu=n\'{a}=k\'{u}man-a nd\'{i}=m\'{u}-nthu a-m\'{e}n\'{e} \'{a}=ma=phuz\'{i}ts-\'{a} \textbf{ci-y\'{a}ani}?\\
+  2\textsc{p.pl}=\textsc{pst}=meet-\textsc{fv} with=1-person 1-\textsc{comp} 1\textsc{sm}=\textsc{hab}=teach-\textsc{fv} 7-what\\
+  \glt `*What did you meet a person who teaches?'}\label{ex:chen:whcomplexDP}
+\z
+
+\ea[*]
+  {\gll Ku=\'{i}mb-il-a \textbf{nda\'{a}n\'{i}} ndi=k\'{o}s\'{a}v\'{u}uta?\\
+  \textsc{inf}=call-\textsc{appl}-\textsc{fv} who \textsc{cop}=not.hard\\
+  \glt `*Whom is to call easy?'}\label{ex:chen:whsubject}
+\z
+
+\ea[*]
+  {\gll Mav\'{u}uto a=n\'{a}=g\'{u}l-a g\'{a}limooto ci-fukw\'{a} w=a=mang-a \textbf{ciy\'{a}ani}?\\
+  1.Mavuto 1\textsc{sm}=\textsc{pst}=buy-\textsc{fv} 5-car 7-for.reason 1\textsc{sm}=\textsc{perf}=build-\textsc{fv} 7-what\\
+  \glt `*What did Mavuto buy a car because he built?'}\label{ex:chen:whadjunct}
+\z
+
+ As exemplified above, an object cannot be questioned if it occurs in a complex DP \REF{ex:chen:whcomplexDP}, a subject \REF{ex:chen:whsubject}, or an adjunct \REF{ex:chen:whadjunct}.\footnote{(\ref{ex:chen:whcomplexDP}--\ref{ex:chen:whadjunct}) become grammatical if the \textit{wh}-object receives an echo reading, which I ignore here.} By contrast, the counterparts of these cases are grammatical in `canonical' \textit{wh}-in-situ languages like Chinese or Japanese. I take this contrast to mean that \textit{wh}-objects in Chichewa in fact move in narrow syntax, while in Chinese or Japanese they do not. Therefore, \textit{wh}-in-situ in Chichewa is no more than a superficial phenomenon: The seemingly in-situ \textit{wh}-phrase reflects the pronunciation of a lower copy. It is (\ref{ex:chen:Constraint}/\ref{ex:chen:Constraint2}) that excludes overt fronting of the \textit{wh}-phrase. Though \textit{wh}-in-situ in Chichewa does not directly involve PD, it strongly suggests that the proposed PF constraint exists, and eventually supports the analysis offered in this paper.
+
+\section{Conclusion}\label{sec:chen:6}
+
+Discontinuous DPs in Chichewa without object markers have been examined carefully in this paper. I conclude that the patterns concerned can only be captured by a scattered deletion account: The whole object DP undergoes topicalization, but pronouncing it in the highest copy as a whole will violate a language-particular PF-constraint (\ref{ex:chen:Constraint}/\ref{ex:chen:Constraint2}), so as a last resort part of it is pronounced low. The approach explains why in most cases a left-dislocated object DP with more than one phonological piece has to split (total dislocation in Chichewa is rare and is in complementary distribution with partial dislocation). The observation that the proposed deletion can only be rightward is also expected.
+
+The scattered deletion approach is strongly supported by the scope properties of the universal quantifier \textit{\'{o}nse}, which may take narrow scope in the object position but only allows the wide scope reading if the apparently in-situ quantifier is part of a DP split. I also showed that the proposed PF constraint (\ref{ex:chen:Constraint}/\ref{ex:chen:Constraint2}) is empirically well-supported by \textit{wh}-in-situ in Chichewa, which shows island effects and should involve \textit{wh}-fronting in syntax and lower copy pronunciation at PF. By briefly discussing the CJ/DJ alternation in Bantu, I tentatively suggested that the PF constraint may also be active in some other Bantu languages.
+
+
+\section*{Abbreviations}
+\begin{tabularx}{.45\textwidth}{lQ}
+  1/2/3\textsc{p} & 1st/2nd/3rd person\\
+ \textsc{appl}&applicative\\
+ \textsc{assoc} & associative\\
+ \textsc{comp} & complementizer\\
+ \textsc{cop} & copula\\
+ \textsc{dj} & disjoint\\
+ \textsc{fv} & final vowel\\
+ \textsc{hab} & habitual\\
+ \textsc{inf}& infinitive\\
+ \textsc{neg} & negation\\
+ \end{tabularx}
+\begin{tabularx}{.45\textwidth}{lQ}
+ \textsc{om} & object marker\\
+ \textsc{pass} & passive\\
+ \textsc{perf} & perfective\\
+ \textsc{pres} & present\\
+ \textsc{pst} & past\\
+ \textsc{prog} & progressive\\
+ \textsc{sg} & singular\\
+ \textsc{sm} & subject marker\\
+ \textsc{subj} & subject\\
+\end{tabularx}\\\medskip
+
+
+\noindent
+ \textbf{Numbers} indicate noun classes and agreement/concord associated with noun classes.
+
+\section*{Acknowledgements}
+Thanks to helpful comments from Željko Bošković, Vicki Carstens, Mamoru Saito, and the audience of ACAL 54. I am especially grateful to my Chichewa consultants, Chifuniro Chagomerana and Chioma Okafor. All errors are mine.
+
+\sloppy
+\printbibliography[heading=subbibliography,notkeyword=this]
+
+\end{document}

@@ -1,0 +1,312 @@
+\documentclass[output=paper,colorlinks,citecolor=brown,
+% hidelinks,
+% showindex
+]{langscibook}
+\ChapterDOI{10.5281/zenodo.20285212}
+
+%This is where you put the authors and their affiliations
+\author{Laura McPherson\affiliation{Dartmouth College}}
+
+%Insert your title here
+\title{A collaborative methodology for grammatical tone acquisition in Seenku}  
+\abstract{Most research on L1 acquisition of tone focuses on East Asian languages, which are typologically distinct from tone systems in other parts of the world, such as Africa. One important difference is the greater prevalence of grammatical tone in African tone systems. This paper reports on a collaborative longitudinal study of the acquisition of Seenku (Mande, Burkina Faso), with a focus on the methodology for building a naturalistic, longitudinal and cross-sectional corpus, at a distance through community collaboration. While analysis of the tonal patterns is ongoing, preliminary findings corroborate the conclusion that tone is acquired early, with the novel finding that this may extend to grammatical tone. 
+}
+
+ \IfFileExists{../localcommands.tex}{%hack to check whether this is being compiled as part of a collection or standalone
+   \input{../localpackages}
+ \input{../localcommands} 
+\togglepaper[23]
+}{}
+
+\begin{document}
+\maketitle
+
+\section{Introduction}
+
+First language acquisition research has long privileged Indo-European languages \citep{KiddGarcia22}, leaving many linguistic structures understudied due to their absence or rarity in the language family. Among these is tone. Though recent decades have seen an increase in studies on the acquisition of tone, the vast majority of this work has focused on high-resource East Asian languages such as Mandarin or Cantonese. This poses an issue not just for diversity in language acquisition research but also skews our understanding of tonal acquisition, since East Asian tone systems are typologically distinct from tone in many other parts of the world, including Africa. For instance, East Asian lexical tone systems are often characterized by a larger number of contour tones, which may act as indivisible units, while African tone systems tend to privilege level tones, with contours more transparently made up of combinations thereof. Another important difference is that African tone systems often make extensive use of grammatical tone, which is comparatively rare in East Asia. This may have important ramifications for tonal acquisition, since tone is not simply a part of lexical representations but also an active part of the language's morphosyntax. 
+
+A large part of the bias towards European and other high-resource languages comes down to where the researchers are based (primarily Europe, North America and other wealthy nations) and what their primary languages are \citep{KiddGarcia22}. Studying children's speech requires a good grasp of the adult language, making research on understudied languages a challenge given the under-representation of first-language speakers of these languages in academia and the years of prior research required for non-speakers to reach a sufficient level of proficiency. Further, many child language studies are carried out in lab settings that may be inaccessible or unfamiliar to minority language communities; instead, studies of the acquisition of understudied languages tend to rely on naturalistic data collection, which on the one hand provides a better understanding of the child's linguistic input and surroundings but on the other hand makes it more difficult to target particular linguistic structures. 
+
+In recent years, there has been a push to diversify child language acquisition research, including by harnessing the methodology of language documentation. For instance, the Sketch Acquisition Project lays out a methodology for building a five-hour language acquisition corpus based on the speech of 2--4 year-olds as well as guidelines for an accompanying sketch of language acquisition \citep{Hellwigetal21, Definaetal23a, Definaetal23b}. The goal is to make language acquisition more accessible to a broader range of researchers, including field linguists and community members. This paper likewise seeks to broaden participation in language acquisition research by laying out a collaborative methodology that can be used by linguists and community members to build a longitudinal corpus of child speech. I report on an ongoing project in Burkina Faso to document the acquisition of Seenku, a northwestern Mande language spoken by roughly 15,000 people. The ultimate analytical goal is to understand how a complex tone system, replete with grammatical tone, is acquired, but the naturalistic data corpus can be used to investigate myriad topics in child language acquisition, from the emergence of morphosyntax to child-directed speech. For similar conclusions on the multipurpose nature of large, naturalistic acquisition corpora, see \citet{Snyder21} and \citet{Demuth22}. It should be noted that this acquisition project is ongoing, and as such, data analysis is in its early stages. The focus of this paper will be methodological, though I highlight some of the research questions the corpus aims to answer and sketch out some preliminary results. In-depth tonal analysis will await future work. 
+
+The paper is laid out as follows: In \sectref{sec:mcpherson:previous}, I provide an overview of previous work on the acquisition of tone and African languages to highlight the need for further studies. In \sectref{sec:mcpherson:Seenku}, I introduce the target language, Seenku, and its tonal characteristics. The heart of the paper is in \sectref{sec:mcpherson:methodology}, which carefully describes the methodology used such that it could be replicated in other linguistic communities. \sectref{sec:mcpherson:findings} sketches out some preliminary findings with regard to grammatical tone acquisition, and \sectref{sec:mcpherson:conclusion} concludes. 
+
+\section{Previous work on African languages}\label{sec:mcpherson:previous}
+
+As noted in the introduction, languages of the ``Global South'' are underrepresented in the literature on child language acquisition \citep{Kellyetal15, KiddGarcia22}. African languages are no exception. \citet{Kunene79} represents an early influential study in Bantu language acquisition focusing on the acquisition of the Siswati noun class system. This work was followed up by similar studies of nominal morphology in a range of other Bantu languages, including IsiZulu \citep{Suzman91}, Setswana \citep{Tsonope87}, Sesotho \citep{Connelly84, Demuth88, Demuth00}, and Sangu \citep{Idiata98}. Other morphosyntactic phenomena studied in Bantu languages include agreement (IsiZulu, \citealt{Suzman82}; Sesotho, \citealt{Demuth88, Demuth00, Demuthetal09}; Swahili, \citealt{Deen05}), passives (IsiZulu, \citealt{Suzman85, Suzman87}; Sesotho, \citealt{Demuth89, Demuth90, Demuthetal10, Crawford12}), applicatives (Sesotho, \citealt{Demuthetal05}), and negation (Chichewa, \citealt{Chimombo81}). For an overview of the Bantu acquisition literature, see \citet{Demuth03}. Studies on the acquisition of morphosyntax outside of Bantu are rare, but see \citet{Sagnaetal22} for the acquisition of demonstratives in Jóola-Eegimaa. 
+
+Various studies have focused on broader questions of phonological acquisition in African languages, both Bantu and, more recently, non-Bantu. Among Bantu studies, we find \citet{MowrerBurger91} on the acquisition of IsiXhosa consonants, with \citet{Lewis94} and \citet{LewisRoux96} looking more specifically at click consonants. \citet{Demuth92} likewise includes a study of consonant acquisition in Sesotho. Outside of Bantu languages, \citet{Cisse14} looks at segment acquisition in Bambara- and Fulfulde-speaking children, both monolingual and bilingual in the two languages. \citet{Amoakaetal20} study the phonological acquisition of Akan, and \citet{Kpogoetal21} focus on the acquisition of labiovelars in Ga. 
+
+There are comparatively fewer studies of the acquisition of African tone. \citet{ChimomboMtenje89}, who look at the acquisition of negation in Chichewa, make a mention of grammatical tone in particular, showing that tone patterns associated with negative constructions are acquired earlier than segments, but that the specific tone rules for different constructions are not in place until age 2;6. In a study of the acquisition of Sesotho verbal tone, \citet{Demuth89, Demuth93} found that the tone of subject agreement prefixes was acquired earlier than lexical tone on verbs, which may be due to the fact that verb tone is often obscured by postlexical tone processes like H tone doubling or H tone delinking. Likewise, \citet{Suzman91} reports that in IsiZulu, noun tone is acquired before verbal tone, likely for the same reasons. Outside of Bantu, the only other tonal studies I am aware of on L1 tone acquisition are \citet{Bakare95} and \citet{Harrison00}, who investigated infants' acquisition of Yorùbá tone. 
+
+From this brief survey, it is clear that much more work is needed, as the vast majority of African language families remain completely unstudied, and even the extant studies focus on just a tiny slice of the language's structure. My goal in sharing our methodology is to encourage other scholars working with African languages to help fill these lacunae. 
+
+
+\section{Seenku and its tone system}\label{sec:mcpherson:Seenku}
+
+The target language of our acquisition study is Seenku, a northwestern Mande language spoken by approximately 15,000 people in southwestern Burkina Faso \citep{McPherson20}. It is part of the Samogo group of languages, which also includes Jowulu \citep{Djillaetal04}, Dzùùngoo \citep{Solomiac14}, Duungoma \citep{Hochstetler94}, and Bankagooma. All of the children in our study are being raised in the village of Bouendé (Gbéné-gṵ̏), and many of the primary caretakers are bilingual in Jula, the local lingua franca, though the children are exposed primarily to Seenku.
+
+From a morphosyntactic perspective, Seenku is a typical Mande language. It displays S-Aux-O-V-X word order and has largely isolating morphology (outside of grammatical tone):
+
+\begin{exe}
+\ex \gll məni̋ nǎ bi̋ sɔ̋ɔ səgḭ̂ḭ nɛ̏ \\
+woman \textsc{prosp} goat.\textsc{pl} sell.\textsc{irr} market \textsc{loc} \\
+\glt `The woman will sell goats at the market.' \\
+\end{exe}
+
+It has no noun classes and no verbal or nominal agreement. Further, most words in Seenku are either monosyllabic or sesquisyllabic \citep{Matisoff90}, consisting of a syllable and a half, as illustrated by \textit{məni̋} `woman' or \textit{səgḭ̂ḭ} `market' above. 
+
+This morphosyntactic simplicity is counterbalanced by a highly complex tone system. Seenku displays four contrastive levels of tone, as evidenced by the near-minimal set in \tabref{tab:mcpherson:tonelevels}. 
+
+\begin{table}
+    \caption{Seenku's four level tones}
+    \label{tab:mcpherson:tonelevels}
+    \begin{tabular}{lll}
+    \lsptoprule
+    Tone & Example & Gloss \\
+    \midrule
+       Super-high (S)  & si̋ & `tree sp.' \\
+       High (H)  & (í) sí & \textsc{reciprocal} \\
+       Low (L) & sì & `first son' (proper name) \\
+       Extra-low (X) & sȉ & `water jar' \\
+       \lspbottomrule
+    \end{tabular}
+\end{table}
+
+These four tones can combine to create a wide array of two- and three-tone contours, including HX (e.g., \textit{bî} `goat'), LS (e.g., \textit{nǎ} \textsc{prospective}), SX (e.g., \textit{sɔ̈ɔ} `sold \textsc{perf}'), HS (e.g., \textit{ŋáa̋}  `yawn'), XHX (e.g., \textit{gɔ̏ɔ̂n} `sorrel'), LSX (e.g., \textit{nàä} `come \textsc{perf}'), etc. Two-tone contours can be found on both short and long vowels, though three-tone contours require a long vowel to be realized.
+
+
+
+Seenku's tone system presents an interesting case study in acquisition, as it has characteristics of both African and Asian tone systems. Like East Asian tone systems, Seenku employs a large number of contour tones on largely monosyllabic vocabulary. Like other African tone systems, however, there is clear evidence that these contour tones are composed of combinations of level tones and, importantly to our study, it makes extensive use of grammatical tone. 
+
+We can divide Seenku's grammatical tone patterns into two broad categories: morphological tone, i.e., cases in which tone is a primary marker of a morphosyntactic feature, and argument-head tone sandhi, in which tone is sensitive to morphosyntactic structure but does not directly expone any feature. As a shorthand, we refer to these categories as ``meaningful'' grammatical tone and ``meaningless'' grammatical tone. Examples of the former include plural tone raising (e.g. \textit{bɛ̏ɛ} `pig' vs. \textit{bɛ̀ɛ} `pigs', \citealt{McPherson17a}), perfective tone lowering (e.g. \textit{jɔ̋} `brew' vs. \textit{jɔ́} `brewed', \citealt{McPherson17b}), and perfect formation through the suffixation of -SX (e.g. \textit{jɔ̋} `brew' vs. \textit{jɔ̈} `has brewed', \citealt{McPherson20}). 
+
+Argument-head tone sandhi involves tone changes on a syntactic head triggered by its internal argument. It is found between an inalienable noun and its preceding possessor, a postposition and its preceding NP argument, and between a verb and its direct object. Sandhi is sensitive to more than simply syntactic structure, however, as verbal sandhi only occurs when the verb is in its irrealis form (prospective, imperative, etc.). The tone changes themselves are not always phonologically predictable, with different outputs depending on whether the argument is a noun or a pronoun and even small differences in outputs depending on the syntactic category of the head. For details, see \citet{McPherson19}. 
+
+Given this tone system, the questions guiding our acquisition study include: 
+
+\begin{enumerate}
+    \item How do Seenku-speaking children acquire the tone system? 
+    \item When is grammatical tone acquired? 
+    \item Are there differences between the acquisition of morphological tone vs. morphosyntactically-sensitive sandhi? 
+    \item Can children's acquisition of grammatical tone patterns shed any light on where sandhi belongs in the adult grammar (phonological, morphology, lexicon, etc.)? 
+\end{enumerate}
+
+Further analysis of the data corpus is required to answer these questions. We offer them here to provide insight into how we designed our study and how we hope to use the data we have gathered. Once analyzed, the Seenku data will enrich the literature on the acquisition of tone sandhi, as the tone changes are paradigmatic like Chinese sandhi (see, e.g., \citealt{Tangetal19}) but sensitive to morphosyntactic information like Bantu tone (see, e.g., \citealt{Demuth93}). 
+
+
+\section{A collaborative methodology}\label{sec:mcpherson:methodology}
+
+In this section, I turn to the collaborative methodology our team has used to build a yearlong corpus that will allow us to answer these and other questions in Seenku L1 acquisition. The collaboration involves an international team, including Burkinabe and American university students. The methodology we use was designed in consultation with Dr. Ibrahima Abdoul Hayou Cissé (formerly University of Bamako, now UNESCO), who compiled a similar corpus through his dissertation work on Bambara and Fulfulde acquisition \citep{Cisse14} and helped train the Burkinabe acquisition team, as laid out below. 
+
+\subsection{Training the team}\label{sec:mcpherson:training}
+
+The project began with identifying a team of six Seenku-speaking university students who would commit to gathering data twice a month for a year. I had already been working with the Seenku-speaking community for 8 years, and so I left this identification to one of my primary consultants, Emma Traoré, who is also part of the acquisition team. The other members of the team are Sibiri Traoré, Louise Traoré, Siaka Traoré, Gérard Traoré, and Abou Traoré. It is important to note that none of these students study linguistics (their studies range from nursing to economics), so a lack of linguistics students should not be seen as a hindrance to doing this type of work.  
+
+In October 2021, I held a training workshop for the team at our project base in Bobo Dioulasso, Burkina Faso. On the first day, we covered some basic linguistic background on Seenku, focusing on transcription; Seenku does not have a widely adopted orthographic tradition, and the combination of complex tone, a contrast between nasal vowels and a nasal coda, and a rich vowel system makes orthography development a challenge. I trained the team on the transcription system I use in my own work, using handouts and exercises. As part of this training, I introduced them to the Keyman IPA keyboard on the Windows laptops purchased for the project. 
+
+The second day focused on technology: how to use the video recorders (Canon Vixia HF R62), audio recorders (Zoom H4N), lavalier microphones (Shure SM93, plugged into the Zoom H4N), and tripods, and how to set this equipment up for a recording session with a child. The Zoom H4N is placed into a toddler backpack, with the lavalier mic clipped to the front of one of the straps (a technique learned from Barbara Kelly at the 2019 workshop ``Talking about child language documentation: Experiences, barriers, methods \& outcomes'' at the International Conference on Language Documentation and Confirmation). After practicing recording each other, we covered the use of external hard drives, file naming conventions, and adding files to Google Drive. In the second half of the day, the team took the equipment out to record practice sessions with small children in their neighborhood to work with the following day. 
+
+The final day of the workshop added ELAN to the workflow, teaching the team how to create new files from a template and transcribe child and caregiver speech on different tiers, including a French translation.
+
+The original plan was to run this workshop together with Dr. Ibrahima Cissé, but due to a number of logistical and scheduling challenges, his portion of the training was held in Bamako, Mali in early March 2022. He complemented the students' training with a theoretical overview of child language acquisition, the ethics of working with children and families, practical strategies for creating a natural environment for children to speak, and pre-study surveys of children and their caretakers to better understand their linguistic ecosystem (who is the primary caregiver, what languages are spoken in the child's environment, etc.). 
+
+\subsection{Data collection and corpus design}
+
+With this training in place, the team was ready to begin data collection in late March 2022. The goal was to build a corpus that is both cross-sectional, including children of different age groups, as well as longitudinal, looking at the same children over time. To capture both the emergence of lexical tone as well as more complex patterns of grammatical tone, we chose to include children between the ages of 1;0 and 3;0 at the start of data collection. We identified 10 subjects in Bouendé, two children in each age group (1;0, 1;6, 2;0, 2;6, and 3;0) at the start of data collection. One subject in the 3;0 group never got comfortable in front of the camera and was replaced after two months with another child of a similar age. Four of the children are female and six are male (seven including the first 3;0 child, who was replaced with another male child). For most children, the primary caregiver is the mother, though for one child it is the grandmother. All are predominantly Seenku-speaking, though a few of the caregivers report the use of Jula, which does appear in some of the recordings. 
+
+Each child was recorded twice a month over the course of a year (March 2022 -through March 2023), with each recording consisting of one hour of interaction with their primary caregiver. The students traveled to Bouendé in pairs to make the recordings and would leave the camera running on a tripod (with the Zoom H4N in the child's backpack), letting the child and caregiver interact without a direct observer. Families received financial compensation of 2000 CFA (roughly \$4 USD) per recording session, with a final bonus of 10,000 CFA at the end of the year. 
+
+With the number of recordings ranging from 22 to 25 per child, the final corpus consists of around 236 hours of audio and video child language data. 
+
+\subsection{Data management}
+
+One of the challenges of an international project such as this is data management and sharing. With such a large corpus, it was also imperative to stay organized as we went. The first step was for the Burkinabe team to transfer and rename all recordings to external hard drives for safe keeping. File names consisted of the following format: Child's initials\textunderscore YYYY\textunderscore MM\textunderscore DD (though this was eventually changed when archiving for consistency with the rest of the collection). Twice a year, hard drives with copies of all original files were brought back to the US by a colleague or shipped from Burkina Faso. However, in order to facilitate access to data throughout the year, Sibiri Traore of the Burkinabe team would reduce the file sizes of the audio and video and upload them to a private Google Drive with permissions set only to team members. As I have unlimited Drive space through my institution, I would make copies of all of these files so the originals could be deleted from Sibiri's account.
+
+At this stage, with available data in the US, a team of undergraduate research assistants at Dartmouth College took over data management. This included managing an organizational spreadsheet of the data in Google Sheets, as well as producing IMDI metadata using Lameta \citep{Lameta}. The spreadsheet allows us to double check for missing files and keep track of transcription progress, both on the Burkinabe side for the original transcriptions and on our side for tone transcriptions; we turn to transcription in the next subsection. US team members to date have included Yuanhao Chen, Daniel Chen, Simon Lamontagne, Sofia Lee, and Zhuoxin Ma. 
+
+
+\subsection{Transcription}
+
+For the recordings to be usable for analysis, they must be transcribed, and as any fieldworker knows, this is the bottleneck. Transcription is time consuming under the best of circumstances, and child language data is even more challenging, especially for the younger children in the corpus. Nevertheless, the Burkinabe team was able to transcribe a large number of recordings before funding ran out, with 93 out of 236 recordings transcribed (nearly 40\% of the corpus). 
+
+Before transcribing the sessions, the Burkinabe team combined the two video files for the session (the camera automatically splits the file once it reaches a certain size) and clipped the audio such that it aligns with the video file. This ensures that both files can be added to ELAN, and the (typically) cleaner audio produced by the Zoom H4N can be listened to in conjunction with the video. 
+
+Transcriptions were done in ELAN, using a simple template with two participants: child and caregiver. Each participant has a transcription tier, where the Seenku is transcribed using the practical orthography I discussed in \sectref{sec:mcpherson:training} above. The French translation is then put on a daughter of this tier. Where the child's speech is unintelligible, the Burkinabe team puts \textit{pas compris} `not understood'. By and large, the Burkinabe team's transcriptions represent the adult targets rather than phonetically reflecting the child's pronunciations, though they occasionally pointed out divergences between the child's speech and adult speech. 
+
+Once these transcriptions are uploaded, the US team adds tiers for children's tone (phonetic), children's tone (phonological categories), adult tone (phonological categories), and grammatical notes. The phonetic transcriptions are done using Chao tone numbers (where 5 is the highest pitch and 1 is the lowest). This was chosen for convenience, as the three undergraduate tone transcribers are speakers of Mandarin/Shanghainese and are familiar with the transcription system, but it also allows a more neutral rendition of pitch contours rather than trying to fit the f0 contours directly to Seenku tone targets. This is especially useful for young children's speech, which often includes pitch contours that are not always easily identifiable as an adult target. None of the undergraduate transcribers had any familiarity with the Seenku tone system, eliminating the possibility of bias (i.e., that they would hear the tone they expected to hear). For the first couple recordings, I would independently produce phonetic transcriptions, and comparison of our transcriptions revealed a very high degree of reliability, with most discrepancies related to pitch scaling rather than overall contours. As a final step, I go back through all transcriptions and produce a tier for the adult tone target of the child's speech (correcting any inconsistencies from the Burkinabe team) and a tier mapping the child's phonetic contours to their closest phonological category match, a non-trivial task that can involve difficult judgment calls in such a complex tone system (e.g. was that falling tone the child aiming for HX but falling short, or did the child miscategorize the word as HL?). Such methodological questions for tonal acquisition will be addressed in future work. 
+
+At the time of writing, the team has produced 11 hours of phonetic tone transcription, with three hours mapped to phonological categories. In other words, each step of the transcription process presents a new bottleneck, but with time and, crucially, collaboration, a large corpus of tonal acquisition data for Seenku is possible.  
+
+
+\section{Preliminary findings}\label{sec:mcpherson:findings}
+
+The main focus of this paper is the collaborative methodology, described with enough detail to serve as a ``how-to'' guide for others interested in expanding their work to encompass child speech. We are still in the early stages of data analysis as we continue to transcribe enough tone data to be able to systematically address the emergence of phonemic categories, the honing of f0 contours, and the relative timing of when grammatical tone appears as compared to lexical tone. Nevertheless, we offer some preliminary results here based on the available data thus far. 
+
+The results draw from 11 hours that have been transcribed phonetically for tone. This includes at least one hour for each age quartile between 1;0 and 2;0, plus one hour for each of 2;9 and 3;0; we currently have no tone transcribed for children around the ages 2;3 or 2;6.
+
+Examination of our youngest participants reveals evidence for lexical tone acquisition. Of course, to be able to identify whether or not a child has accurately acquired lexical tone, we need identifiable words. I provide here some examples from FRST, aged 1;0 at the start of data collection. At 1;2, he produced 63 utterances, of which all but 6 were interjections without a clear lexical tone target. He independently produced a short phrase, \textit{kɛ́ tɛ́} `who is it?', and both repetitions of the phrase showed level tone consistent with the adult H H sequence. His pronunciation of \textit{tȁtá} `auntie' likewise shows a rising sequence of pitches, though with a smaller interval than his mother's repetition of the word; nevertheless, he demonstrates knowledge of its overall lexical tone contour. He even demonstrates some evidence for grammatical tone in a short phrase, responding to an older child he is playing with. Consider the following exchange:
+
+\ea\label{ex:mcpherson:will-hit}
+\begin{xlist}
+\ex\label{ex:mcpherson:older-child}
+\gll Ń bá̰! \\
+\textsc{1sg} hit.\textsc{irreal}  \\
+\glt `Hit me!' \\
+
+\ex\label{ex:mcpherson:child-hit}
+\gll Na̋ bá̰ . (adult target: ń !na̋ á bá̰)\\
+\textsc{1sg.prosp} hit.\textsc{irreal} \\
+\glt `I'm going to hit you.' \\
+
+\end{xlist}
+\z
+
+The imperative and prospective are constructions that show argument-head tone sandhi, with the tone of the verb changing depending upon the tone of its argument. Here, the H-toned pronoun causes the lexically S-toned verb \textit{ba̰̋} to lower to H. FRST's short phrase elides the initial moraic nasal of the 1sg pronoun, and the fall from S on the prospective \textit{na̋} to H on the 2sg pronoun \textit{á} is rendered as simply S. However, the verb is pronounced with the correct H tone for this environment. It is likely at this age that he is simply repeating back the tone produced by the older child rather than productively applying the rules of sandhi (which I turn to below), but more data are required to test this hypothesis. The only lexical tone error FRST produces at this age is the proper name \textit{Sà}; a L-toned name, FRST instead pronounces it with a high falling pitch (phonetically 43). 
+
+
+By 1;5, FRST displays a lot of mimicking of his mother's speech, with quite good pitch mimicry. He still does not independently produce a lot of words; out of 170 utterances, only one consists of independent identifiable words. However, this short phrase shows surprisingly good tone. Consider the adult target in \REF{ex:mcpherson:adult-nnananno} versus what the child produces in \REF{ex:mcpherson:child-nnananno}:
+
+\ea\label{ex:mcpherson:adult-1-6}
+\begin{xlist}
+\ex\label{ex:mcpherson:adult-nnananno}
+\gll Ń !na̋ nân nɔ̏. \\
+\textsc{1sg} \textsc{prosp} sauce eat.\textsc{irreal} \\
+\glt `I will eat sauce.' \\
+
+\ex\label{ex:mcpherson:child-nnananno}
+\gll Náa̋ nän nɔ̏. \\
+\textsc{1sg.prosp} sauce eat.\textsc{irreal} \\
+\glt `I will eat sauce.' 
+
+\end{xlist}
+\z
+
+The child produces a rise from H to S seen in adult speech between \textit{ń} and \textit{na̋}, though for the child, this rise is produced on a lengthened vowel instead. The child likewise produces a fall on `sauce', though while this is a HX contour in adult speech, the child begins the fall on S instead. Finally, the irrealis verb takes on the X from the end of the object (argument-head tone sandhi), and this is reflected in this child's speech; I will return to more cases of grammatical tone below. In short, this example shows that at 1;5, FRST may begin to command both lexical and phrasal tone rules, though the exact phonetic implementation is not yet adult-like.
+
+If we look at a child in the next age bracket (DET, 1;6 at the start of the study), we see more lexical items as well as more phrases, giving us the opportunity to examine grammatical tone. At 1;8, DET produced 88 utterances, ranging from interjections to mimicry to independent novel phrases. By and large, his lexical tone is accurate, though he did display a few errors and inconsistencies. Specifically, he shows some confusion between the lexical melodies L-S, X-S, and X-HX; all three involve a lower first syllable and a higher second syllable, though for X-HX, the second syllable falls. For instance, the L-S word \textit{sàki̋} `bag' (borrowed from French \textit{sac}) is pronounced twice as something close to L-S (3-4 and 4-5 phonetically) and once as X-HX (3-42). The word \textit{tɔ̏ntɔ̋n} `uncle' shows similar variation; out of 14 tokens, 5 show a larger pitch interval consistent with the melody X-S (2-4, 3-5, 1-3, etc.), 4 show a smaller interval consistent with the melody L-S (3-4, 4-5), one shows a pronunciation 2-31, consistent with the melody X-HX, and the remainder show rising contour tones on either the first or second syllable, such that the overall pitch contour is rising (like the adult target) but with the alignment of the pitch rise incorrectly mapped to syllable boundaries. Interestingly, the two X-HX pronunciations of \textit{sàki̋} and \textit{tɔ̏ntɔ̋n} occur just seconds apart in the recording, suggesting a confusion of lexical tone categories rather than individual lexical items. 
+
+At this age, we see more short phrases where we can investigate the (non-)application of grammatical tone processes, both ``meaningful" and ``meaningless''. In terms of ``meaningful", i.e., morphological, grammatical tone, most of what we see at this age is verbal tone, especially perfect verbs (suffixed with a -SX contour); there are surprisingly few plurals in the data we have transcribed thus far. Even in mimicking, grammatical tone application is not always consistent for DET. He repeats a short phrase back and forth with his mother, and while the adult pronunciation is consistent, as shown in \REF{ex:mcpherson:adult-jedonkaa}, his pronunciation of the verb's tone varies, as shown in \REF{ex:mcpherson:child-jedonkaa}:
+
+\ea
+\begin{xlist}
+ \ex\label{ex:mcpherson:adult-jedonkaa}
+\gll Jɛ̀ dó-dőn kàä. \\
+first.girl \textsc{red-}child go.\textsc{perf} \\
+\glt `Little Jɛ (birth order name) has left.' \\
+
+\ex\label{ex:mcpherson:child-jedonkaa}
+\gll Jɛ̀-dőn kàä $\sim$ \ast ká $\sim$ \ast káà. \\
+first.girl-child go.\textsc{perf} \\
+\glt `Little Jɛ has left.' \\
+ 
+\end{xlist}
+
+\z
+
+The adult pronunciation of the verb is a LSX tri-tone contour (the result of suffixing -SX to an underlyingly X-toned verb). In one repetition, the child correctly produces this morphological tone. In a second, he shows no contour whatsoever with a H-toned pronunciation that reflects neither lexical tone nor grammatical tone. In a final pronunciation, he shows a HL fall, perhaps approximating the grammatical tone melody, though without the concatenation with lexical tone. Later in the recording, DET produces a perfect verb unprompted with correct falling tone in the phrase \textit{tɔ̏ntɔ̋n sïɔ} `uncle has arrived' (though DET produces incorrect segments for the verb, rendering it as \textit{küɔ}). Since the verb in question is H-toned rather than X-toned, the tonal realization is simply the grammatical melody SX rather than the tritone LSX, so we cannot explicitly see in this case whether DET is aware of the verb's lexical tone or not. 
+
+Finally, we take a brief look at argument-head tone sandhi, which from an outside perspective would appear to be a more challenging pattern for children to acquire, as it carries no discernible meaning and is dependent on a host of factors, including lexical tone, syntactic category, and aspect/mood (in the case of verbs). At 1;8, 8 of DET's utterances contain contexts for tone sandhi. His application is inconsistent, with 3 correct applications and 5 incorrect or unanalyzable due to segmental and other errors. For instance, we can consider the phrase in (\ref{ex:mcpherson:det-sandhi}), which contains two environments for sandhi, the first between the 2sg pronoun \textit{á} and the postposition \textit{wɛ̏} (which would become \textit{wɛ̋}), and the second between the 3sg pronoun \textit{ȁ} and the verb \textit{nɔ̋} `eat' (which would become \textit{nɔ́}). Lexical tone is shown in slashes in the top line:
+
+\ea\label{ex:mcpherson:det-sandhi} 
+\glll /ń nǎ cɛ́ á wɛ̏ ȁ nɔ̋/ \\
+(ń) !na̋ cɛ́ á \ast \textbf{wɛ̏} ȁ \textbf{nɔ́}. (correct: ...á wɛ̋ ȁ nɔ́) \\
+\textsc{1sg} \textsc{prosp} give \textsc{2sg} with \textsc{3sg} eat.\textsc{irreal} \\
+\glt `I will give it to you to eat.' \\
+
+\z
+
+\noindent DET fails to apply tone sandhi to the postposition \textit{wɛ̏} but appears to apply sandhi on the verb `eat', with a smaller interval between the object and verb than we would expect for a lexical X to S sequence; however, the phonetic implementation is not adult-like, with a small rise the verb rather than a level H tone. 
+
+In another context for object-verb tone sandhi, DET commands his mother `give (me) candy', which in adult speech would be \textit{bɔ̏nbɔ̋n bɛ̋}, with the X-toned verb \textit{bɛ̏} `give/put' taking on the final S of \textit{bɔ̏nbɔ̋n} `candy'. However, in his speech, the verb is instead pronounced as \textit{bɛ́}, that is, with neither lexical tone nor correct sandhi tone. One hypothesis is that this reflects interference from the verb's lower lexical tone, i.e., the raising to S is incomplete, but we will need more examples to see if this is a broader pattern or a single error. 
+
+By 2;0, however, DET's Object+Verb tone is categorically good; that is, he appears to have internalized the rules of changing verb tone depending on the tone of the object, even if his phonetic implementation is not yet adult-like. Out of 37 tokens of sandhi contexts, 29 were clearly correct, 3 were borderline, and 1 was incorrect; 4 were impossible to assess due to either missing segmental material or uncertainty about the adult tone target. 
+
+Another child at 2;1, SRDT, shows evidence of tone alternations resulting from sandhi. For instance, consider the following two phrases produced in close proximity; once again, the first line represents lexical tone while the second line represents the child's utterance with sandhi rules applying:
+
+\ea
+\begin{xlist}
+    \ex\label{ex:mcpherson:SRDTa}
+    \glll /tərɛ́ kʊ́ bʊ́ ń cɛ̏/ \\
+    Tərɛ́ kʊ́ \textbf{bʊ̏} ń cɛ̋. \\
+    \textsc{rel.pro} \textsc{d.def} take.out.\textsc{irreal} \textsc{1sg} give \\
+    \glt `Take that one and give it to me.' \\
+
+    \ex\label{ex:mcpherson:SRDTb} 
+    \glll /tsɛ̋ bʊ́ ń cɛ̏/ \\
+    Tsɛ̋ \textbf{bʊ̋} ń cɛ̋. \\
+    \textsc{indef} take.out.\textsc{irreal} \textsc{1sg} give \\
+    \glt `Take one and give it to me.' \\
+\end{xlist}
+
+\z
+
+\noindent In \REF{ex:mcpherson:SRDTa}, the object of the verb \textit{bʊ́} `take out' is the discourse definite pronoun \textit{kʊ́}; this triggers X tone on the verb, which SRDT produces. In \REF{ex:mcpherson:SRDTb}, however, the object is the indefinite pronoun \textit{tsɛ̋} which spreads its S tone onto the verb. SRDT correctly produces both of these forms. 
+
+We should note, however, that all children acquire language at their own pace. While DET and SRDT are producing complex grammatical tone, another participant at 2;1 is still speaking in single words. This demonstrates the importance of having a sufficiently large sample size of participants lest we draw conclusions from a single child, or a couple of children, who may be either ahead or behind the language acquisition curve. 
+
+Turning to an older child, DEMT, we see that by around 2;8, the grammatical tone system is largely in place, including both morphological tone and tone sandhi. Preliminary analysis of over 400 utterances shows few tonal errors, either lexical or grammatical. The following example demonstrates DEMT's grasp of complex interacting grammatical tone processes:
+
+\ea 
+\glll /ń ȁ dzḭ̋ ń gȕ nɛ́/ \\ 
+Ń ȁ dzḭ̈ ń gű nɛ̋. \\
+\textsc{1sg} \textsc{3sg} put.\textsc{perf} \textsc{1sg} neck \textsc{loc} \\
+\glt `I have put it on my neck.' \\
+
+\z
+
+\noindent In the top line, we see the lexical tone of each word. First, the verb \textit{dzḭ̋} `put' is realized as \textit{dzḭ̈} (SX falling tone) to mark perfect aspect. Because the verb is not irrealis, there is no interaction between it and the preceding object pronoun \textit{ȁ}. Second, we see argument-head tone sandhi between the \textsc{1sg} \textit{ń} and the noun \textit{gȕ}, rendering it S-toned \textit{gű}. Finally, this S tone then spreads onto the locative postposition \textit{nɛ́}, rendering it \textit{nɛ̋}. The child accurately produces all of these complex grammatical tone changes. 
+
+While these are only preliminary examples, the acquisition trajectory that they suggest echoes the literature on East Asian tone languages, namely that tone is acquired earlier than segments but that adult-like pronunciations take more time \citep{Wong12}. In other words, tone is acquired both early and late. With Seenku's complex grammatical tone system, we can add the finding that both lexical and grammatical tone appear to be in place by around 2;6--2;8, with morphological tone acquired earlier than argument-head tone sandhi. Future work will test this hypothesis, with quantitative results drawn from a larger set of transcribed data. 
+
+
+\section{Conclusions}\label{sec:mcpherson:conclusion}
+
+In this paper, I have laid out the motivations and the methodology for a collaborative approach to children's acquisition of Seenku tone. An international team consisting of trained native speaker students of Seenku as well as linguistics students and faculty in the US allows data collection, transcription, and analysis to persist across time and national boundaries and has resulted in a yearlong longitudinal and cross-sectional corpus. To my knowledge, at 236 hours of recorded speech, this represents the largest extant corpus of African language acquisition. 
+
+Acquisition of African languages remains radically understudied and yet it stands to shed light on a range of important topics for how children acquire the language faculty, from multilingualism to noun class systems to complex grammatical tone. This lack of attention paid to languages of the Global South likely comes from a vicious cycle, whereby most language acquisition research is focused on high resource languages, and so those interested in languages of Africa or other parts of the world gravitate to other areas of linguistics (phonology, syntax, language documentation); hence these gaps in the literature are never filled, and few mentors are available to inspire the next generation's work. This is thankfully beginning to change, with initiatives such as the Sketch Acquisition Project laying out a path for those interested in language documentation to make a meaningful contribution to the study of child language, but more work must be done. Here, I hope to have shown how those already working in language communities but without formal training in language acquisition (as was the case for myself) can still set up a project to collect child language data. Doing so not only helps fill the gaps in child language acquisition research but also enriches a documentary corpus by including children's speech and child-directed speech patterns.
+
+The Seenku acquisition project may have completed its data collection phase, but much work remains to be done. As the number of transcribed sessions grows, we will be able to get more quantitative measurements to better understand the trajectory of tonal acquisition. For instance, we could ask what percentage of lexical and grammatical tones are accurately produced, and how do these numbers increase over time? Does accuracy differ by tonal category, such as higher accuracy for H tones (as shown by \citealt{Suzman91} for IsiZulu or \citealt{LiThompson77} for Mandarin)? With access to both longitudinal and cross-sectional data, we can also study when errors begin to decrease for a particular child, in what order, and whether these patterns are similar across children. Finally, as the data corpus contains hours of naturalistic speech, it can serve as a resource to study a range of other topics in language acquisition, from segmental phonology to morphosyntax, to how caregivers interact with their children. 
+
+
+
+\section*{Abbreviations}
+
+
+\begin{tabularx}{.45\textwidth}{lQ}
+\textsc{d.def} & discourse definite \\
+\textsc{indef} & indefinite \\
+H & high tone \\
+\textsc{irreal} & irrealis \\
+L & low tone \\
+\end{tabularx}
+\begin{tabularx}{.45\textwidth}{lQ}
+\textsc{pl} & plural \\
+\textsc{loc} & locative \\
+\textsc{perf} & perfect \\
+\textsc{pro} & pronoun \\
+\textsc{prosp} & prospective \\
+\end{tabularx}
+
+\begin{tabularx}{.45\textwidth}{lQ}
+\textsc{red} & reduplicant \\
+\textsc{rel} & relative \\
+S & super-high tone \\
+\end{tabularx}
+\begin{tabularx}{.45\textwidth}{lQ}
+\textsc{sg} & singular \\
+X & extra-low tone \\
+\\
+\end{tabularx}
+
+
+\section*{Acknowledgements}
+
+This material is based upon work supported by the National Science Foundation under Grant No. BCS-1664335. I am indebted to the other members of our team, American, Malian, and Burkinabè, for their hard work bringing this project to fruition. I am also grateful to Barbara Kelly, Katherine Demuth, and Birgit Hellwig for conversations and guidance in the early stages of planning this work. Many thanks to the audience at ACAL54 and two anonymous reviewers for their helpful comments and suggestions. All errors are my own.
+
+
+\sloppy %this command eliminates a quirk that appears in the bibliography, you can just leave it here.
+
+\printbibliography[heading=subbibliography,notkeyword=this]
+
+\end{document}
